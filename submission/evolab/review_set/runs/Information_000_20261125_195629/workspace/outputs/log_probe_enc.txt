@@ -1,0 +1,39 @@
+/usr/local/lib/python3.12/site-packages/transformers/models/auto/image_processing_auto.py:513: FutureWarning: The image_processor_class argument is deprecated and will be removed in v4.42. Please use `slow_image_processor_class`, or `fast_image_processor_class` instead
+  warnings.warn(
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+Some kwargs in processor config are unused and will not have any effect: mask_prompt, num_image_tokens, sft_format, add_special_token, image_tag, ignore_id. 
+Python version is above 3.10, patching the collections module.
+Add image tag = <image_placeholder> to the tokenizer
+loaded in 6.4s
+n01440764 tench 12 382s
+n02102040 springer 24 908s
+n02979186 cassette player 36 1432s
+n03000684 chainsaw 48 1742s
+n03028079 church 60 1926s
+n03394916 French horn 72 2112s
+n03417042 garbage truck 84 2296s
+n03425413 gas pump 96 2481s
+n03445777 golf ball 108 2675s
+n03888257 parachute 120 2866s
+Traceback (most recent call last):
+  File "/workspace/code/probe_encoders.py", line 50, in <module>
+    thp = cross_val_predict(reg, v, TH, cv=cv); r2 = float(r2_score(TH, thp, multioutput="variance_weighted"))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sklearn/model_selection/_validation.py", line 1218, in cross_val_predict
+    splits = list(cv.split(X, y, **routed_params.splitter.split))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sklearn/model_selection/_split.py", line 411, in split
+    for train, test in super().split(X, y, groups):
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sklearn/model_selection/_split.py", line 142, in split
+    for test_index in self._iter_test_masks(X, y, groups):
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sklearn/model_selection/_split.py", line 845, in _iter_test_masks
+    test_folds = self._make_test_folds(X, y)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/sklearn/model_selection/_split.py", line 788, in _make_test_folds
+    raise ValueError(
+ValueError: Supported target types are: ('binary', 'multiclass'). Got 'continuous-multioutput' instead.

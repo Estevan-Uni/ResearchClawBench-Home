@@ -1,0 +1,270 @@
+{
+ "imo_2000_p6": [
+  {
+   "clause": "aux = midpoint aux t2 z",
+   "family": "midpoint",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux a c i",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux b a i",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = orthocenter aux t1 i x2",
+   "family": "orthocenter",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = on_line aux b c, on_line aux i t2",
+   "family": "line_line",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = on_line aux a c, on_line aux i t1",
+   "family": "line_line",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2004_p1": [
+  {
+   "clause": "aux = midpoint aux m n",
+   "family": "midpoint",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux b a r",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = reflect aux a o r",
+   "family": "reflect",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = reflect aux n a r",
+   "family": "reflect",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = reflect aux m a r",
+   "family": "reflect",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = circle aux a m n",
+   "family": "circumcenter",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux c a r",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2008_p1a": [
+  {
+   "clause": "aux = reflect aux h e f",
+   "family": "reflect",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2009_p2": [
+  {
+   "clause": "aux = reflect aux a m w",
+   "family": "reflect",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2010_p2": [
+  {
+   "clause": "aux = mirror aux i d",
+   "family": "mirror",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2015_p3": [
+  {
+   "clause": "aux = mirror aux a o",
+   "family": "mirror",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux a b h",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux a c h",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2018_p1": [
+  {
+   "clause": "aux = orthocenter aux a f g",
+   "family": "orthocenter",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2019_p6": [
+  {
+   "clause": "aux = foot aux a b i",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux a c i",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = foot aux i a d",
+   "family": "foot",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  },
+  {
+   "clause": "aux = on_line aux a d, on_circle aux i d",
+   "family": "line_circle",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ],
+ "imo_2020_p1": [
+  {
+   "clause": "aux = reflect aux p c o; aux2 = on_line aux2 c o, on_line aux2 a y",
+   "family": "depth2",
+   "results": [
+    "ok",
+    "ok",
+    "ok",
+    "ok"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+DIDS-MFL proto {'all_K1': np.float64(0.604), 'all_K5': np.float64(0.717), 'all_K10': np.float64(0.758), 'dedup_K1': np.float64(0.566), 'dedup_K5': np.float64(0.672), 'dedup_K10': np.float64(0.688)}
+DIDS-MFL cos {'all_K1': np.float64(0.609), 'all_K5': np.float64(0.725), 'all_K10': np.float64(0.761), 'dedup_K1': np.float64(0.579), 'dedup_K5': np.float64(0.687), 'dedup_K10': np.float64(0.71)}
+DIDS-MFL LR {'all_K1': np.float64(0.609), 'all_K5': np.float64(0.803), 'all_K10': np.float64(0.85), 'dedup_K1': np.float64(0.579), 'dedup_K5': np.float64(0.779), 'dedup_K10': np.float64(0.828)}
+3D-IDS proto {'all_K1': np.float64(0.588), 'all_K5': np.float64(0.672), 'all_K10': np.float64(0.7), 'dedup_K1': np.float64(0.548), 'dedup_K5': np.float64(0.625), 'dedup_K10': np.float64(0.638)}
+3D-IDS cos {'all_K1': np.float64(0.557), 'all_K5': np.float64(0.637), 'all_K10': np.float64(0.657), 'dedup_K1': np.float64(0.525), 'dedup_K5': np.float64(0.6), 'dedup_K10': np.float64(0.608)}
+3D-IDS LR {'all_K1': np.float64(0.557), 'all_K5': np.float64(0.77), 'all_K10': np.float64(0.828), 'dedup_K1': np.float64(0.525), 'dedup_K5': np.float64(0.743), 'dedup_K10': np.float64(0.801)}

@@ -1,0 +1,39 @@
+{
+  "source_workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Math_000/g1/solve/attempt-00001/Math_000/workspace",
+  "source_score": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Math_000/g1/carbon/score.json",
+  "source_score_sha256": "8b98576231b51ab02fa07549ba169a4cbc29c1b0f0367ad7bd5e2338a10591ad",
+  "source_report_sha256": "afe7b68ad39693eb7f88dca85501bc886d48e494a35a86cff087660faaa00c60",
+  "source_output_sha256": "e933e82c37e0ceb6f8ff5b31873f876de6d3e707de1d96b94afb4b3049e43937",
+  "exported_paths": [
+    "INSTRUCTIONS.md",
+    "code/common.py",
+    "code/diagnostics.py",
+    "code/diagnostics_helpers.py",
+    "code/figures.py",
+    "code/metrics.py",
+    "code/pdf_peek.py",
+    "code/run_experiments.py",
+    "code/tables.py",
+    "code/tracker.py",
+    "outputs/E1_main.json",
+    "outputs/E2_grid.json",
+    "outputs/E3_lowlevels.json",
+    "outputs/E4_density.json",
+    "outputs/table_density_paired.csv",
+    "outputs/table_main.csv",
+    "report/images/fig1_data_overview.png",
+    "report/images/fig2_main_comparison.png",
+    "report/images/fig3_level_gate_sweeps.png",
+    "report/images/fig4_density.png",
+    "report/images/fig5_mechanism.png",
+    "report/images/fig6_occlusion_breakdown.png",
+    "report/images/fig7_identity_timelines.png",
+    "report/images/fig8_hota_alpha.png",
+    "report/report.md"
+  ],
+  "omitted_outputs": {
+    "large_or_binary_output_files": 2,
+    "large_or_binary_output_bytes": 5279901
+  },
+  "judge_model": "google/gemini-4-carbon"
+}

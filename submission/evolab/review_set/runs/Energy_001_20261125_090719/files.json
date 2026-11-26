@@ -1,0 +1,454 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "figures.py",
+    "path": "code/figures.py",
+    "type": "file",
+    "size": 20277,
+    "mtime": 1795598422.0376978,
+    "exported": true
+  },
+  {
+    "name": "model.py",
+    "path": "code/model.py",
+    "type": "file",
+    "size": 12424,
+    "mtime": 1795597836.0256953,
+    "exported": true
+  },
+  {
+    "name": "pypsa_crosscheck.py",
+    "path": "code/pypsa_crosscheck.py",
+    "type": "file",
+    "size": 3976,
+    "mtime": 1795598173.030599,
+    "exported": true
+  },
+  {
+    "name": "run_experiments.py",
+    "path": "code/run_experiments.py",
+    "type": "file",
+    "size": 7771,
+    "mtime": 1795597777.3087156,
+    "exported": true
+  },
+  {
+    "name": "zonal_comparison.py",
+    "path": "code/zonal_comparison.py",
+    "type": "file",
+    "size": 2950,
+    "mtime": 1795598377.8131697,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "NTC_boundary_x2_generation.csv",
+    "path": "outputs/NTC_boundary_x2_generation.csv",
+    "type": "file",
+    "size": 114263,
+    "mtime": 1795597877.142355,
+    "exported": true
+  },
+  {
+    "name": "NTC_boundary_x2_link_flows.csv",
+    "path": "outputs/NTC_boundary_x2_link_flows.csv",
+    "type": "file",
+    "size": 27339,
+    "mtime": 1795597877.1703553,
+    "exported": true
+  },
+  {
+    "name": "NTC_boundary_x2_lmp.csv",
+    "path": "outputs/NTC_boundary_x2_lmp.csv",
+    "type": "file",
+    "size": 24069,
+    "mtime": 1795597877.146355,
+    "exported": true
+  },
+  {
+    "name": "NTC_boundary_x2_shed.csv",
+    "path": "outputs/NTC_boundary_x2_shed.csv",
+    "type": "file",
+    "size": 47730,
+    "mtime": 1795597877.1623552,
+    "exported": true
+  },
+  {
+    "name": "NTC_boundary_x2_storage_soc.csv",
+    "path": "outputs/NTC_boundary_x2_storage_soc.csv",
+    "type": "file",
+    "size": 4429,
+    "mtime": 1795597877.1623552,
+    "exported": true
+  },
+  {
+    "name": "NTC_electrolyser_10GW_generation.csv",
+    "path": "outputs/NTC_electrolyser_10GW_generation.csv",
+    "type": "file",
+    "size": 113877,
+    "mtime": 1795597877.1943557,
+    "exported": true
+  },
+  {
+    "name": "NTC_electrolyser_10GW_link_flows.csv",
+    "path": "outputs/NTC_electrolyser_10GW_link_flows.csv",
+    "type": "file",
+    "size": 26612,
+    "mtime": 1795597877.222356,
+    "exported": true
+  },
+  {
+    "name": "NTC_electrolyser_10GW_lmp.csv",
+    "path": "outputs/NTC_electrolyser_10GW_lmp.csv",
+    "type": "file",
+    "size": 24261,
+    "mtime": 1795597877.198356,
+    "exported": true
+  },
+  {
+    "name": "NTC_electrolyser_10GW_shed.csv",
+    "path": "outputs/NTC_electrolyser_10GW_shed.csv",
+    "type": "file",
+    "size": 49693,
+    "mtime": 1795597877.210356,
+    "exported": true
+  },
+  {
+    "name": "NTC_electrolyser_10GW_storage_soc.csv",
+    "path": "outputs/NTC_electrolyser_10GW_storage_soc.csv",
+    "type": "file",
+    "size": 5710,
+    "mtime": 1795597877.2183561,
+    "exported": true
+  },
+  {
+    "name": "boundary_sweep.csv",
+    "path": "outputs/boundary_sweep.csv",
+    "type": "file",
+    "size": 5123,
+    "mtime": 1795597856.0180187,
+    "exported": true
+  },
+  {
+    "name": "closed_form_check.csv",
+    "path": "outputs/closed_form_check.csv",
+    "type": "file",
+    "size": 12453,
+    "mtime": 1795597876.9823525,
+    "exported": true
+  },
+  {
+    "name": "constrained_DCOPF_generation.csv",
+    "path": "outputs/constrained_DCOPF_generation.csv",
+    "type": "file",
+    "size": 114198,
+    "mtime": 1795597877.0943542,
+    "exported": true
+  },
+  {
+    "name": "constrained_DCOPF_link_flows.csv",
+    "path": "outputs/constrained_DCOPF_link_flows.csv",
+    "type": "file",
+    "size": 22783,
+    "mtime": 1795597877.1223545,
+    "exported": true
+  },
+  {
+    "name": "constrained_DCOPF_lmp.csv",
+    "path": "outputs/constrained_DCOPF_lmp.csv",
+    "type": "file",
+    "size": 24064,
+    "mtime": 1795597877.1023543,
+    "exported": true
+  },
+  {
+    "name": "constrained_DCOPF_shed.csv",
+    "path": "outputs/constrained_DCOPF_shed.csv",
+    "type": "file",
+    "size": 49702,
+    "mtime": 1795597877.1103544,
+    "exported": true
+  },
+  {
+    "name": "constrained_DCOPF_storage_soc.csv",
+    "path": "outputs/constrained_DCOPF_storage_soc.csv",
+    "type": "file",
+    "size": 4260,
+    "mtime": 1795597877.1143546,
+    "exported": true
+  },
+  {
+    "name": "constrained_NTC_generation.csv",
+    "path": "outputs/constrained_NTC_generation.csv",
+    "type": "file",
+    "size": 114145,
+    "mtime": 1795597877.0143528,
+    "exported": true
+  },
+  {
+    "name": "constrained_NTC_link_flows.csv",
+    "path": "outputs/constrained_NTC_link_flows.csv",
+    "type": "file",
+    "size": 20540,
+    "mtime": 1795597877.0383532,
+    "exported": true
+  },
+  {
+    "name": "constrained_NTC_lmp.csv",
+    "path": "outputs/constrained_NTC_lmp.csv",
+    "type": "file",
+    "size": 22636,
+    "mtime": 1795597877.022353,
+    "exported": true
+  },
+  {
+    "name": "constrained_NTC_shed.csv",
+    "path": "outputs/constrained_NTC_shed.csv",
+    "type": "file",
+    "size": 49695,
+    "mtime": 1795597877.030353,
+    "exported": true
+  },
+  {
+    "name": "constrained_NTC_storage_soc.csv",
+    "path": "outputs/constrained_NTC_storage_soc.csv",
+    "type": "file",
+    "size": 2776,
+    "mtime": 1795597877.0343533,
+    "exported": true
+  },
+  {
+    "name": "demand_sensitivity.csv",
+    "path": "outputs/demand_sensitivity.csv",
+    "type": "file",
+    "size": 9749,
+    "mtime": 1795597876.9703522,
+    "exported": true
+  },
+  {
+    "name": "electrolyser_sweep.csv",
+    "path": "outputs/electrolyser_sweep.csv",
+    "type": "file",
+    "size": 4248,
+    "mtime": 1795597865.2221658,
+    "exported": true
+  },
+  {
+    "name": "pypsa_crosscheck.json",
+    "path": "outputs/pypsa_crosscheck.json",
+    "type": "file",
+    "size": 1660,
+    "mtime": 1795599287.5446029,
+    "exported": true
+  },
+  {
+    "name": "run_log.txt",
+    "path": "outputs/run_log.txt",
+    "type": "file",
+    "size": 4880,
+    "mtime": 1795597877.2463565,
+    "exported": true
+  },
+  {
+    "name": "scenario_summary.csv",
+    "path": "outputs/scenario_summary.csv",
+    "type": "file",
+    "size": 5682,
+    "mtime": 1795597876.9943526,
+    "exported": true
+  },
+  {
+    "name": "unconstrained_copperplate_generation.csv",
+    "path": "outputs/unconstrained_copperplate_generation.csv",
+    "type": "file",
+    "size": 126102,
+    "mtime": 1795597877.0623536,
+    "exported": true
+  },
+  {
+    "name": "unconstrained_copperplate_lmp.csv",
+    "path": "outputs/unconstrained_copperplate_lmp.csv",
+    "type": "file",
+    "size": 24198,
+    "mtime": 1795597877.0663538,
+    "exported": true
+  },
+  {
+    "name": "unconstrained_copperplate_shed.csv",
+    "path": "outputs/unconstrained_copperplate_shed.csv",
+    "type": "file",
+    "size": 16499,
+    "mtime": 1795597877.0703537,
+    "exported": true
+  },
+  {
+    "name": "unconstrained_copperplate_storage_soc.csv",
+    "path": "outputs/unconstrained_copperplate_storage_soc.csv",
+    "type": "file",
+    "size": 3112,
+    "mtime": 1795597877.074354,
+    "exported": true
+  },
+  {
+    "name": "validation.json",
+    "path": "outputs/validation.json",
+    "type": "file",
+    "size": 799,
+    "mtime": 1795597876.9903526,
+    "exported": true
+  },
+  {
+    "name": "zonal_vs_nodal.csv",
+    "path": "outputs/zonal_vs_nodal.csv",
+    "type": "file",
+    "size": 937,
+    "mtime": 1795598385.6892645,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig01_network_schematic.png",
+    "path": "report/images/fig01_network_schematic.png",
+    "type": "file",
+    "size": 106433,
+    "mtime": 1795599297.8487217,
+    "exported": true
+  },
+  {
+    "name": "fig02_data_overview.png",
+    "path": "report/images/fig02_data_overview.png",
+    "type": "file",
+    "size": 282175,
+    "mtime": 1795599299.2007375,
+    "exported": true
+  },
+  {
+    "name": "fig03_wind_dispatched_vs_curtailed.png",
+    "path": "report/images/fig03_wind_dispatched_vs_curtailed.png",
+    "type": "file",
+    "size": 94697,
+    "mtime": 1795599299.9607463,
+    "exported": true
+  },
+  {
+    "name": "fig04_wind_curtailment_by_zone.png",
+    "path": "report/images/fig04_wind_curtailment_by_zone.png",
+    "type": "file",
+    "size": 64702,
+    "mtime": 1795599300.5447528,
+    "exported": true
+  },
+  {
+    "name": "fig05_boundary_link_loading.png",
+    "path": "report/images/fig05_boundary_link_loading.png",
+    "type": "file",
+    "size": 251130,
+    "mtime": 1795599303.2527843,
+    "exported": true
+  },
+  {
+    "name": "fig06_link_loading_heatmap.png",
+    "path": "report/images/fig06_link_loading_heatmap.png",
+    "type": "file",
+    "size": 122303,
+    "mtime": 1795599304.7368014,
+    "exported": true
+  },
+  {
+    "name": "fig07_loading_duration.png",
+    "path": "report/images/fig07_loading_duration.png",
+    "type": "file",
+    "size": 132026,
+    "mtime": 1795599305.4208093,
+    "exported": true
+  },
+  {
+    "name": "fig08_lmp_heatmap.png",
+    "path": "report/images/fig08_lmp_heatmap.png",
+    "type": "file",
+    "size": 91714,
+    "mtime": 1795599306.2928193,
+    "exported": true
+  },
+  {
+    "name": "fig09_dispatch_stack.png",
+    "path": "report/images/fig09_dispatch_stack.png",
+    "type": "file",
+    "size": 94563,
+    "mtime": 1795599307.1008284,
+    "exported": true
+  },
+  {
+    "name": "fig10_boundary_sweep.png",
+    "path": "report/images/fig10_boundary_sweep.png",
+    "type": "file",
+    "size": 114554,
+    "mtime": 1795599307.7328358,
+    "exported": true
+  },
+  {
+    "name": "fig11_flexibility_electrolyser.png",
+    "path": "report/images/fig11_flexibility_electrolyser.png",
+    "type": "file",
+    "size": 101533,
+    "mtime": 1795599308.2888422,
+    "exported": true
+  },
+  {
+    "name": "fig12_validation.png",
+    "path": "report/images/fig12_validation.png",
+    "type": "file",
+    "size": 215120,
+    "mtime": 1795599309.3808548,
+    "exported": true
+  },
+  {
+    "name": "fig13_demand_sensitivity.png",
+    "path": "report/images/fig13_demand_sensitivity.png",
+    "type": "file",
+    "size": 74010,
+    "mtime": 1795599309.9848619,
+    "exported": true
+  },
+  {
+    "name": "fig14_curtailment_by_bus.png",
+    "path": "report/images/fig14_curtailment_by_bus.png",
+    "type": "file",
+    "size": 42969,
+    "mtime": 1795599310.5328681,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 32270,
+    "mtime": 1795599326.2130485,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6172,
+    "mtime": 1795597639.1622047,
+    "exported": true
+  }
+]

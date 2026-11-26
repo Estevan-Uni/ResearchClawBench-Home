@@ -1,0 +1,1534 @@
+{
+    "input": [
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:35",
+            "file_name": "flexref_1.pdb",
+            "file_type": {
+                "py/reduce": [
+                    {
+                        "py/type": "haddock.libs.libontology.Format"
+                    },
+                    {
+                        "py/tuple": [
+                            "pdb"
+                        ]
+                    }
+                ]
+            },
+            "full_name": "flexref_1.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_25.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_1.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "data",
+                            "4_flexref",
+                            "hotspot.tbl"
+                        ]
+                    }
+                ]
+            },
+            "score": -320.81389999999993,
+            "seed": 942,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "created": "2026-11-25 16:50:07",
+                    "file_name": "barnase_haddock.psf",
+                    "file_type": {
+                        "py/reduce": [
+                            {
+                                "py/type": "haddock.libs.libontology.Format"
+                            },
+                            {
+                                "py/tuple": [
+                                    "psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "full_name": "barnase_haddock.psf",
+                    "md5": null,
+                    "path": "/workspace/outputs/docking/run_bound_hotspot/0_topoaa",
+                    "py/object": "haddock.libs.libontology.TopologyFile",
+                    "rel_path": {
+                        "py/reduce": [
+                            {
+                                "py/type": "pathlib.PosixPath"
+                            },
+                            {
+                                "py/tuple": [
+                                    "..",
+                                    "0_topoaa",
+                                    "barnase_haddock.psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "restr_fname": null
+                },
+                {
+                    "created": "2026-11-25 16:50:07",
+                    "file_name": "barstar_haddock.psf",
+                    "file_type": {
+                        "py/id": 11
+                    },
+                    "full_name": "barstar_haddock.psf",
+                    "md5": null,
+                    "path": "/workspace/outputs/docking/run_bound_hotspot/0_topoaa",
+                    "py/object": "haddock.libs.libontology.TopologyFile",
+                    "rel_path": {
+                        "py/reduce": [
+                            {
+                                "py/type": "pathlib.PosixPath"
+                            },
+                            {
+                                "py/tuple": [
+                                    "..",
+                                    "0_topoaa",
+                                    "barstar_haddock.psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "restr_fname": null
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 2688.21,
+                "bonds": 357.507,
+                "bsa": 1364.48,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.1289,
+                "dihe": 1047.66,
+                "elec": -274.005,
+                "improper": 332.124,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -301.041,
+                "vdw": -27.0352,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:35",
+            "file_name": "flexref_2.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_2.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_2.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_2.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -284.82459401421994,
+            "seed": 919,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0001598578,
+                "angles": 2485.67,
+                "bonds": 344.691,
+                "bsa": 1617.74,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.71281,
+                "dihe": 1042.59,
+                "elec": -230.591,
+                "improper": 325.092,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -261.935,
+                "vdw": -31.3434,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_3.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_3.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_65.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_3.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -336.90155000000004,
+            "seed": 982,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 2654.51,
+                "bonds": 358.682,
+                "bsa": 1491.86,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -9.37045,
+                "dihe": 1052.45,
+                "elec": -289.058,
+                "improper": 336.7,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -312.612,
+                "vdw": -23.5545,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_4.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_4.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_16.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_4.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -193.772484,
+            "seed": 933,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 2.78246,
+                "angles": 2649.14,
+                "bonds": 356.398,
+                "bsa": 1041.7,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -8.17833,
+                "dihe": 1043.5,
+                "elec": -157.466,
+                "improper": 332.598,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -172.673,
+                "vdw": -17.9894,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_5.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_5.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_70.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_5.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -220.0870894,
+            "seed": 987,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.415006,
+                "angles": 2562.64,
+                "bonds": 347.878,
+                "bsa": 1483.22,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -5.55179,
+                "dihe": 1040.52,
+                "elec": -161.674,
+                "improper": 328.648,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -199.33,
+                "vdw": -38.0706,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_6.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_6.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_1.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_6.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -245.10361000000003,
+            "seed": 918,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 2591.07,
+                "bonds": 351.312,
+                "bsa": 1400.84,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -7.53191,
+                "dihe": 1024.5,
+                "elec": -184.586,
+                "improper": 333.423,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -223.563,
+                "vdw": -38.9773,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_7.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_7.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_51.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_7.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -219.1690556,
+            "seed": 968,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.353644,
+                "angles": 2556.4,
+                "bonds": 350.584,
+                "bsa": 1059.53,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 7.38918,
+                "dihe": 1042.05,
+                "elec": -197.309,
+                "improper": 328.509,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -215.645,
+                "vdw": -18.6893,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_8.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_8.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_91.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_8.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -358.2622,
+            "seed": 1008,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 2447.21,
+                "bonds": 344.061,
+                "bsa": 1789.37,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.7814,
+                "dihe": 1044.71,
+                "elec": -276.039,
+                "improper": 323.386,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -333.587,
+                "vdw": -57.5481,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_9.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_9.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_7.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_9.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -293.64618999999993,
+            "seed": 924,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 2698.96,
+                "bonds": 358.359,
+                "bsa": 1287.44,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.79139,
+                "dihe": 1054.01,
+                "elec": -246.017,
+                "improper": 332.146,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -273.98,
+                "vdw": -27.9634,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 16:57:36",
+            "file_name": "flexref_10.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "flexref_10.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "rigidbody_84.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/4_flexref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "4_flexref",
+                            "flexref_10.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -182.88147429999998,
+            "seed": 1001,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 0.998157,
+                "angles": 2693.76,
+                "bonds": 357.52,
+                "bsa": 1003.91,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -9.71719,
+                "dihe": 1045.63,
+                "elec": -148.851,
+                "improper": 337.212,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -162.226,
+                "vdw": -14.374,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        }
+    ],
+    "output": [
+        {
+            "aa_topology": {
+                "py/id": 3
+            },
+            "cgtoaa_tbl": {
+                "py/id": 4
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_1.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_1.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_1.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_1.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "data",
+                            "5_emref",
+                            "hotspot.tbl"
+                        ]
+                    }
+                ]
+            },
+            "score": -130.36615,
+            "seed": 942,
+            "shape": {
+                "py/id": 8
+            },
+            "topology": {
+                "py/id": 9
+            },
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 127.392,
+                "bonds": 27.0129,
+                "bsa": 1454.72,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -3.33545,
+                "dihe": 1020.68,
+                "elec": -424.886,
+                "improper": 43.9077,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -466.939,
+                "vdw": -42.0535,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 17
+            },
+            "cgtoaa_tbl": {
+                "py/id": 18
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_2.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_2.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_2.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_2.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -128.85742,
+            "seed": 919,
+            "shape": {
+                "py/id": 20
+            },
+            "topology": {
+                "py/id": 21
+            },
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 121.572,
+                "bonds": 26.6414,
+                "bsa": 1670.23,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.58712,
+                "dihe": 1034.13,
+                "elec": -379.769,
+                "improper": 40.5074,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -426.086,
+                "vdw": -46.3165,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 24
+            },
+            "cgtoaa_tbl": {
+                "py/id": 25
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_3.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_3.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_3.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_3.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -141.37946,
+            "seed": 982,
+            "shape": {
+                "py/id": 27
+            },
+            "topology": {
+                "py/id": 28
+            },
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 124.89,
+                "bonds": 26.8928,
+                "bsa": 1541.06,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -4.27756,
+                "dihe": 1021.8,
+                "elec": -437.778,
+                "improper": 43.292,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -487.324,
+                "vdw": -49.5463,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 31
+            },
+            "cgtoaa_tbl": {
+                "py/id": 32
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_4.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_4.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_4.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_4.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -85.9309571176,
+            "seed": 933,
+            "shape": {
+                "py/id": 34
+            },
+            "topology": {
+                "py/id": 35
+            },
+            "unw_energies": {
+                "air": 0.005228824,
+                "angles": 132.427,
+                "bonds": 29.4435,
+                "bsa": 1137.95,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -9.51268,
+                "dihe": 1016.94,
+                "elec": -271.382,
+                "improper": 47.5905,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -293.519,
+                "vdw": -22.1424,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 38
+            },
+            "cgtoaa_tbl": {
+                "py/id": 39
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_5.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_5.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_5.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_5.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -118.9796748,
+            "seed": 987,
+            "shape": {
+                "py/id": 41
+            },
+            "topology": {
+                "py/id": 42
+            },
+            "unw_energies": {
+                "air": 0.276352,
+                "angles": 120.232,
+                "bonds": 27.0789,
+                "bsa": 1638.99,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -7.96871,
+                "dihe": 1036.94,
+                "elec": -331.807,
+                "improper": 41.3654,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -376.208,
+                "vdw": -44.6772,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 45
+            },
+            "cgtoaa_tbl": {
+                "py/id": 46
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_6.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_6.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_6.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_6.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -126.21127999999999,
+            "seed": 918,
+            "shape": {
+                "py/id": 48
+            },
+            "topology": {
+                "py/id": 49
+            },
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 125.289,
+                "bonds": 27.7812,
+                "bsa": 1551.01,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -9.13888,
+                "dihe": 1017.54,
+                "elec": -352.827,
+                "improper": 43.7957,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -399.334,
+                "vdw": -46.507,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 52
+            },
+            "cgtoaa_tbl": {
+                "py/id": 53
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_7.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_7.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_7.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_7.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -75.77390430000001,
+            "seed": 968,
+            "shape": {
+                "py/id": 55
+            },
+            "topology": {
+                "py/id": 56
+            },
+            "unw_energies": {
+                "air": 0.411957,
+                "angles": 127.532,
+                "bonds": 27.077,
+                "bsa": 1133.55,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 7.3385,
+                "dihe": 1031.95,
+                "elec": -309.728,
+                "improper": 43.8119,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -330.524,
+                "vdw": -21.208,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 59
+            },
+            "cgtoaa_tbl": {
+                "py/id": 60
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_8.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_8.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_8.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_8.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -173.40706,
+            "seed": 1008,
+            "shape": {
+                "py/id": 62
+            },
+            "topology": {
+                "py/id": 63
+            },
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 123.782,
+                "bonds": 27.7852,
+                "bsa": 1857.38,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -4.87936,
+                "dihe": 1029.76,
+                "elec": -476.422,
+                "improper": 41.0977,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -549.666,
+                "vdw": -73.2433,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 66
+            },
+            "cgtoaa_tbl": {
+                "py/id": 67
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_9.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_9.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_9.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_9.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -116.69683000000002,
+            "seed": 924,
+            "shape": {
+                "py/id": 69
+            },
+            "topology": {
+                "py/id": 70
+            },
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 127.617,
+                "bonds": 27.6739,
+                "bsa": 1298.65,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -5.97893,
+                "dihe": 1027.42,
+                "elec": -394.677,
+                "improper": 41.7365,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -426.459,
+                "vdw": -31.7825,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": {
+                "py/id": 73
+            },
+            "cgtoaa_tbl": {
+                "py/id": 74
+            },
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 17:06:55",
+            "file_name": "emref_10.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_10.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_10.pdb",
+            "path": "/workspace/outputs/docking/run_bound_hotspot/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_10.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 82
+            },
+            "score": -92.4091609,
+            "seed": 1001,
+            "shape": {
+                "py/id": 76
+            },
+            "topology": {
+                "py/id": 77
+            },
+            "unw_energies": {
+                "air": 0.836991,
+                "angles": 129.654,
+                "bonds": 27.1761,
+                "bsa": 1094.47,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -9.29006,
+                "dihe": 1029.32,
+                "elec": -288.723,
+                "improper": 42.9452,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -313.344,
+                "vdw": -25.4582,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+/workspace/code/audit.py:73: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  tab = tab[tab.sum(1) >= 5]  # drop sparse rows
+                              0         1          2
+set                    pretrain  finetune  candidate
+graphs                     5000      2000       1000
+positives                  2474        99         43
+pos_frac                 0.4948    0.0495      0.043
+meta_pos_ratio              0.5      0.05       0.05
+onehot_valid               True      True       True
+edge_symmetric             4359      1773        875
+consecutive_pairs          4394      1784        881
+self_loops                    0         0          0
+odd_atoms                     0         0          0
+odd_mag                       0         0          0
+dup_exact                     0         0          0
+dup_invariant                 0         0          0
+atoms_min                     4         4          4
+atoms_max                    24        24         24
+mean_undirected_bonds    5.9247    5.8485      5.879
+cross-set duplicates {'finetune-pretrain': {'exact': 0, 'invariant': 0}, 'candidate-pretrain': {'exact': 0, 'invariant': 0}, 'candidate-finetune': {'exact': 0, 'invariant': 0}}
+       descriptor  pretrain  finetune  candidate
+0         n_atoms     0.510     0.531      0.456
+1           n_mag     0.509     0.527      0.472
+2        frac_mag     0.503     0.510      0.497
+3            n_3d     0.503     0.509      0.483
+4            n_4f     0.510     0.533      0.469
+5       n_species     0.512     0.530      0.450
+6   n_mag_species     0.513     0.524      0.468
+7         n_bonds     0.509     0.519      0.467
+8    bond_density     0.509     0.508      0.475
+9   frac_isolated     0.494     0.507      0.483
+10        max_deg     0.509     0.525      0.489
+11      mean_bond     0.507     0.467      0.528
+12       std_bond     0.500     0.507      0.437
+13       min_bond     0.496     0.465      0.604
+14       max_bond     0.503     0.495      0.507
+15        n_type0     0.511     0.475      0.465
+16        n_type1     0.504     0.556      0.487
+17        n_type2     0.502     0.495      0.500
+18           n_MM     0.505     0.557      0.484
+19           n_ML     0.502     0.492      0.499
+20           n_LL     0.511     0.482      0.466
+21   mean_bond_MM     0.506     0.541      0.476
+22   mean_bond_ML     0.493     0.479      0.543
+23   mean_bond_LL     0.508     0.472      0.450
+24   mag_deg_mean     0.504     0.524      0.514
+25   lig_deg_mean     0.506     0.489      0.502
+26   n_components     0.502     0.522      0.472
+27            n_O     0.511     0.487      0.505
+28       n_halide     0.507     0.534      0.500
+29        n_chalc     0.499     0.512      0.422
+element chi2: n tests 84 min p 0.01994376708678697 n p<0.05 1
+          set   variable       chi2  dof         p
+0    pretrain    n_atoms  17.330903    9  0.043779
+1    pretrain      n_mag   5.139084    7  0.642995
+2    pretrain    n_bonds  45.132413   37  0.168502
+3    pretrain  n_species  18.235872   15  0.250468
+4    finetune    n_atoms  16.320163    9  0.060489
+5    finetune      n_mag   6.235393    6  0.397345
+6    finetune    n_bonds  21.652469   31  0.893626
+7    finetune  n_species   8.638339   15  0.895656
+8   candidate    n_atoms   8.313181    9  0.502919
+9   candidate      n_mag   1.693544    6  0.945619
+10  candidate    n_bonds  16.348480   24  0.875089
+11  candidate  n_species  19.221522   14  0.156656
+                                0         1          2
+set                      pretrain  finetune  candidate
+auc_index                0.507947  0.503892   0.493402
+runs_z                   0.177391 -0.047402  -0.889472
+runs_p                   0.859202  0.962193   0.373749
+auc_first_atom_magnetic  0.495601  0.500863   0.481373
+auc_first_edge_src_pos   0.490221  0.501838   0.480887
+auc_mean_mag_position     0.50466  0.469697   0.508031
+auc_edges_sorted         0.505587  0.474745   0.494374
+frac_edges_sorted           0.941     0.947      0.941
+n_atoms   4    6    8    10   12   14   16  18   20  24
+y                                                      
+0        368  540  522  384  237  108  129  66  113  59
+1        367  481  505  373  227  157  138  73  114  39

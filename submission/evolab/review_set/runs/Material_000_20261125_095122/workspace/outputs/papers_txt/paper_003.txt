@@ -1,0 +1,243 @@
+communications materials Article
+A Nature Portfolio journal
+https://doi.org/10.1038/s43246-025-00928-7
+Materials Expert-Artiﬁcial Intelligence for
+materials discovery
+Check for updates
+Yanjun Liu1, Milena Jovanovic 2,3, Krishnanand Mallayya1, Wesley J. Maddox1,4,
+Andrew Gordon Wilson 1,4, Sebastian Klemenz 5,LeslieM.Schoop 2 &Eun-AhKim 1,6
+Advances in materials databases create an opportunity to uncover descriptors that predict emergent
+properties, yet most studies rely on high-throughput ab initio calculations that can diverge from
+experiment. Experimentalists instead depend on intuition honed by hands-on work. We present
+“Materials Expert-Artiﬁcial Intelligence” (ME-AI), a machine-learning framework that translates this
+intuition into quantitative descriptors extracted from curated, measurement-based data. Using a set of
+879 square-net compounds described using 12 experimental features, we train a Dirichlet-based
+Gaussian-process model with a chemistry-aware kernel. ME-AI reproduces established expert rules
+for spotting topological semimetals (TSMs) and reveals hypervalency as a decisive chemical lever in
+these systems. Remarkably, a model trained only on square-net TSM data correctly classiﬁes
+topological insulators in rocksalt structures, demonstrating transferability. Complementing
+electronic-structure theory, our framework scales with growing databases, embeds expert
+knowledge, offers interpretable criteria, and guides targeted synthesis, accelerating materials
+discovery and rapid experimental validation across diverse chemical families.
+Global efforts of the last decade established vast databases of materials1–11,
+allowing researchers to query data associated with individual entries. This
+coming age of materials data presents an unprecedented opportunity to
+discover descriptors of physical properties by inferring and articulating
+correlations and trends from the collection of entries. If successful, such
+efforts can lead to guided discovery of new materials. Historically, the most
+successful of such efforts was that by Mendeleev, who predicted properties of
+elemental materials from the empirical trends articulated in the periodic
+table. However, discoveries of atomistic features that capture the physical
+properties of non-elemental materials remain challenging. The combina-
+torial phase space of non-elemental materials and the large dimensionality
+of the feature space render the quest out of manual reach.
+The increasing availability of machine-learning (ML) tools has enabled
+recent developments in ﬁnding stable materials by scaling up ab initio
+calculations4,12 and synthesis13,14. However, much of the literature focused on
+leveraging ML for computational predictions in the tradition of ab initio
+calculations15–21. Left untapped are the intuition and insights that expert
+materials growers have honed through many years of experience. We
+propose to “bottle” the insights latent in the expert growers’ human intellect
+to arrive at descriptors that articulate the insights. Our strategy will be to
+supply information and data curated by a materials expert (ME) following
+his/her intuition to an ML model, together with expert annotation of the
+desired material properties. The mission for the model we dubbed ME-AI
+will be to learn the descriptor that can predict the desired properties from
+readily available information (see Fig. 1a). By letting ME-AI investigate
+expert-curated experimental information, we hope to accelerate discoveries
+of empirical laws and allow for the research community to expand upon
+explicit articulation of the insight latent to the curated information.
+Given the challenging nature of this problem, the likelihood of success
+will depend on the reliability of the data and the scope of the search. A
+reliable database starts with the ME curating a reﬁned dataset with
+experimentally accessible primary features chosen based on intuition from
+literature, ab initio calculations, or chemical logic. Regarding the scope of the
+search, setting a scope that makes ample use of chemical understanding can
+increase the likelihood of success. Based on these criteria, we focus on
+learning the descriptor of topological nodal-line semimetals (TSMs) derived
+from basic atomistic and structural features, limiting the pool of candidate
+materials to square-net structures. Remarkably, we ﬁnd that ME-AI trained
+on square-net structures to predict TSMs can also successfully predict
+topological insulators among rocksalt structures, exhibiting surprising
+generalization ability.
+TSMs are of interest due to their novel physical properties and potential
+applications in energy conversion22, electrocatalysts23, and sensing24.ATSM
+is characterized by two key features: (1) the presence of nodal lines where
+1Department of Physics, Cornell University, Ithaca, NY, USA. 2Department of Chemistry, Princeton University, Princeton, NJ, USA. 3Department of Chemistry,
+North Carolina State University, Raleigh, NC, USA. 4New York University, New York, NY, USA. 5Fraunhofer Research Institution for Materials Recycling and
+Resource Strategies IWKS, Hanau, Germany. 6Department of Physics, Ewha Womans University, Seoul, South Korea. e-mail: ek436@cornell.edu
+Communications Materials |           (2025) 6:212 1
+1234567890():,;
+1234567890():,;two spin-degenerate bands cross, and (2) the Fermi level tuned to the nodal
+lines. Conventional identiﬁcation of TSMs requires a detailed analysis of
+materials’ symmetry through the derivation of band representations and the
+number of electron ﬁlling25. However, some of us observed that chemical
+intuition can be instructive in predicting TSMs among 2D “square-net”
+materials- crystalline solids with a 2D-centered square-net motif (Fig. 1b, c).
+Following this intuition, some of us introduced a structural descriptor called
+the “tolerance factor (t-factor)” in refs. 26,27,deﬁned as the ratio of square
+lattice distance to the out-of-plane nearest neighbor distance (Fig. 1c). The t-
+factor has proven effective in identifying target materials where speciﬁc
+physical properties relate to lower-dimensional bonding motifs in a 3D unit
+cell, such as materials with Kagome lattice signatures in their band structure2
+8). The t-factor notably distinguishes TSMs, which have smaller t-values,
+from trivial materials (see Fig. 1d). However, at intermediate values (t ~1),it
+is clear that additional descriptors are necessary. The simplicity of the t-
+factor and strong domain knowledge incorporated into the choice of 2D
+square-net compounds make this problem an ideal starting point for
+developing and testing ME-AI.
+For completeness, we ﬁrst review the structural and chemical insight
+that led to the t-factor. Square-net materials have 2D square-net motifs
+stacked with other atoms in between. When the effects of out-of-plane
+atoms are minimally accounted for through the symmetry of a 2D tight-
+binding model with the out-of-plane atoms projected to the center of the
+squares and the square-net atoms have px and py orbitals partially ﬁlled, such
+a tight-binding band structure predicts symmetry-protected topological
+nodal lines (see Fig. 1e,f).Ifthissimplepictureholdsinthefullband
+Fig. 1 | "Materials Expert-Artiﬁcial Intelligence” (ME-AI) for topological semi-
+metals in square-net materials. a The conceptual framework of ME-AI. b Crystal
+structure of some 2D square-net materials. c The 3D square-net structure where the
+out-of-plane magenta and cyan atoms are separated by distances d1 and d2,
+respectively, from the square-net plane (purple). The tolerance factor t ≡ dsq/dnn,
+where dnn /C17 minðd1; d2Þ is the out-of-plane nearest neighbor distance. d The dis-
+tribution of tolerance factor (t) for the compounds in our dataset labeled as TSMs
+(teal) and trivial (orange) materials, where t ≡ dsq/dnn and dnn is the out-of-plane
+nearest neighbor distance. We ﬁnd t ≈ 0.96 (dashed line) as the value that separates
+TSMs and trivial materials with maximum accuracy. e The tight-binding band
+structure for hypothetical px (pink) and py (green) orbitals on the formation of the
+squarenet, plotted along the path shown in panel (f). Two symmetry-protected
+crossings with the band inversions are shown. The location of the Fermi level
+determines whether the material is a band insulator (EF3), metal (EF2) or TSM (EF1).
+f BZ with the nodal line as the Fermi surface when the Fermi level is tuned through
+the nodal lines.
+https://doi.org/10.1038/s43246-025-00928-7 Article
+Communications Materials |           (2025) 6:212 2structure and the Fermi level is tuned to thread the nodal line, such a square-
+net material will be a TSM29. This inspired Klemenz et al.27 to propose a ratio
+between two structural parameters to quantify the deviation from a 2D
+square-net plane structure, given by t-factor ≡ dsq/dnn,wheredsq is the
+square-net distance and dnn is the out-of-plane nearest neighbor distance
+(see Fig. 1c). While the tight-binding model of pure lattice motifs can be
+informative, whether such insight can dominate the low-energy electronic
+property of the 3D crystal crucially depends on the ﬁlling, the existence of
+other interfering bands, and the location of the Fermi level30.
+In this work, we introduce ME-AI, a machine-learning framework that
+leverages experimentally curated expert intuition to uncover quantitative
+descriptors predictive of TSMs. Applying this approach to a dataset of 879
+square-net compounds characterized by 12 primary features, ME-AI not
+only recovers the known structural descriptor, the “tolerance factor,” but
+also identiﬁes four new emergent descriptors. Remarkably, one purely
+atomistic descriptor aligns with classical chemical concepts of hypervalency
+and the Zintl line. ME-AI demonstrates excellent predictive capabilities and
+generalizes beyond square-net compounds to accurately identify topological
+insulators within the rocksalt structure family. Our ﬁndings highlight the
+potential of combining human expertise with artiﬁcial intelligence to
+facilitate targeted materials discovery.
+Results
+ME-AI Workﬂow
+ME-AI aims to reveal the expert intuition (t-factor) and further insights. This
+starts with the ME curating a dataset of square-net materials (see Supple-
+mentary Methods A). With this curated data, the AI part of ME-AI reveals
+the correlations between different primary features (PFs) and discovers the
+emergent descriptors composed of primary features using a Gaussian pro-
+cess (GP). We choose the PFs to be atomistic or structural, such that we can
+interpret the ML results from a chemical perspective. For atomistic features,
+wefocuson(a):electronafﬁnity, the change in energy after a neutral atom
+gains an electron; (b): (Pauling) electronegativity, the relative ability of an
+atom to attract a shared electron pair; and (c): valence electron count, cor-
+responding to the number of electrons in a neutral atom. Since each com-
+pound consists of different numbers of elements, we built primary atomistic
+features in a uniform structure by choosing maximum and minimum values
+of these features and the square-net element features (see Fig. 2a). The last
+atomistic feature is (d) the estimated face-centered cubic lattice parameter fcc
+of the square-net element, which reﬂects the radius of the square-net atom.
+Given the prior choice of square-net compounds, two lengths are sufﬁcient
+to represent the structural feature variations: (e) the crystallographic char-
+acteristic distances dsq and dnn.Intotal,wechose12PFs(seeFig.2a).
+Having determined the PFs, we curated an experimentally measured
+database of PFs for 879 compounds belonging to the 2D-centered square-
+net class in the inorganic crystal structure database (ICSD)31.Thestructure
+types of these compounds include PbFCl, ZrSiS (ZrSiTe, AmTe2−x,and
+UP2), PrOI, Cu2Sb, ZrCuSiAs-HfCuSi2,LaZn0.5Sb2,PrNiSb2 and CaBe2Ge2.
+While we focus on the space group 129, the methodology and features we
+have found would work in other space groups, as long as one can deﬁne a
+centrosymmetric square net. The expert labeling of the materials is a critical
+part of the data curation, where the expert insight is passed on to the model
+(see Fig. 1a). The ambitious goal of ME-AI is to go beyond mechanical
+scraping of data, but to use the logic routinely employed by materials
+experimentalists to give the ML model the opportunity to articulate the
+expert’s insight. Our priority in the labeling process was to capture as
+comprehensive information as possible. When experimental or computa-
+tional band structure is available for a given entry, we label the material
+through visual comparison of the band structure to the square-net tight-
+binding model band structure in Fig. 1e. This applies to 56% of the entire
+database. For alloys, we use the expert chemical logic to label the material
+based on the labels of the parent materials. This applies to 38% of the
+database. For instance, since HfSiS, HfSiSe, ZrSiS, and ZrSiSe are all TSM, we
+expect (Hf,Zr)Si(S,Se) to also be TSM. 6% of the database consists of sto-
+chiometric compounds without available band structure information, but
+that are closely related to materials with band structure, for instance, by
+cation substitution. We again used chemical logic in such cases. Once our
+GP model is trained, we inspect the distribution of different labeling
+mechanisms in the space of learned emergent features to conﬁrm that
+consistent and uniform feature learning occurred across different branches
+of the labeling process.
+See Supplementary Methods A for details.
+From the machine-learning perspective, the task at hand is to use this
+relatively small labeled dataset of 12-dimensional PFs to discover effective
+descriptors that predict TSMs automatically. The simplest dimensional
+reduction approach of principal component analysis (PCA) fails (see Sup-
+plementary Discussion A) since PCA cannot incorporate prior knowledge
+of the labels. On the other hand, the go-to supervised learning architectures
+using neural networks are also inadequate due to the small dataset, lack of
+interpretability, and the danger of overﬁtting. ME-AI treats this problem as a
+Gaussian Process (GP) classiﬁcation task32 and obtains the descriptors by
+learning a purposefully chosen factor analysis matrix parameterizing the
+kernel for the GP33. ME-AI achieves a classiﬁcation accuracy above 0.98
+(see Supplementary Methods C for hyperparameters for training and sta-
+bility testing). While random forest offers a comparable accuracy, it fails to
+reveal scientiﬁc insight due to limited interpretability (see Supplementary
+Discussion B).
+The emergent descriptors
+The correlation matrix learned from the GP classiﬁer (see Methods) reveals
+the emergent descriptors that identify TSMs. The elements of the
+normalized-correlation matrix, {Cmn}[eq:(4)]showninFig.3a reveal the
+relative strengths and signs of interaction among all the 72 pairs of PFs. Five
+elements of {Cmn} clearly stand out in their magnitudes with varying signs.
+We hypothesize that positive (negative) and strong {Cmn} can be effectively
+captured by emergent descriptors formed from products (ratios) of PF m
+and PF n. To test this hypothesis, we plot the distribution of the products and
+ratios, i.e., dsq/dnn, dsq/fcc, χsq/dsq, χsq*dnn,andχsq*fcc,asshowninFig.3b–f.
+As shown in Supplementary Discussion C, the distributions conﬁrm small
+values of dsq/dnn, dsq/fcc and intermediate values of χsq/dsq, χsq*fcc, and
+χsq*dnn as successful descriptors of TSM. These descriptors synthesize
+atomistic information of elements forming the material and the structural
+information of the compound in three different ways: (1) dsq/dnn relies solely
+on structural features, (2) dsq/fcc, χsq*dsq,andχsq*dnn combine structural
+and atomistic features, and (3) χsq*fcc is a descriptor solely based on ato-
+mistic features. It is noteworthy that ME-AI reproduces t = dsq/dnn as one of
+the emergent descriptors without prior knowledge. This bolsters the insight
+underlying the t-factor and establishes ME-AI’s capability to “bottle” expert
+insight latent to the expert curation of the data.
+We now turn to our four newly discovered descriptors. Among these,
+the distribution of dsq/fcc (Fig. 3c) is similar to the distribution of the t-factor
+(Fig. 3b), although dsq/fcc does a better job in separating TSM from trivial
+materials (see Supplementary Discussion C for quantitative analysis of the
+distributions). Since fcc estimates the size of the unbonded square-net
+atoms, small values of dsq/fcc and that of the t-factor both point to a che-
+mically and electronically signiﬁcant role of the square-net planes.
+The distributions of the remaining three descriptors, χsq*dnn, χsq/dsq,
+and χsq*fcc, are similar in that TSM favors intermediate values of these
+descriptors (Fig. 3d, f). This result reveals the underappreciated signiﬁcance
+of hypervalency for TSM. The concept of hypervalency accounts for the
+seeming violation of the octet rule in molecules and solids, a classic chemical
+rule, the main group elements want to reach noble gas conﬁguration with 8
+valence electrons to ﬁll the s and p shells34. Hypervalent bonds connect more
+than two atoms and allow cases with the seeming violation of the octet rule
+to satisfy the octet rule in an extended sense35,36. Hypervalent bonds make
+the desired electron count for placing the Fermi level at the right position
+possible: it stabilizes half-ﬁlled px and py orbitals by creating covalent bonds
+with only one electron per bond. While hypervalent bonds were known to be
+possible in square-net materials, a descriptor quantifying hypervalency was
+not known. The three descriptors address complementary but distinct
+https://doi.org/10.1038/s43246-025-00928-7 Article
+Communications Materials |           (2025) 6:212 3

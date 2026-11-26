@@ -1,0 +1,45 @@
+{
+ "base": 40,
+ "n_files": 40,
+ "mutants": {
+  "perturb_premise": {
+   "n": 120,
+   "rejected": 120
+  },
+  "forge_premise": {
+   "n": 120,
+   "rejected": 119,
+   "accepted_examples": [
+    "imo_2009_p2/cand00397.json"
+   ]
+  },
+  "delete_step": {
+   "n": 120,
+   "rejected": 120
+  },
+  "swap_goal": {
+   "n": 120,
+   "rejected": 120
+  },
+  "drop_citation": {
+   "n": 120,
+   "rejected": 118,
+   "accepted_examples": [
+    "proofs_ddar/imo_2017_p4.json",
+    "imo_2008_p1a/cand00410.json"
+   ]
+  },
+  "statement_goal": {
+   "n": 120,
+   "rejected": 120
+  },
+  "move_point": {
+   "n": 120,
+   "rejected": 118,
+   "accepted_examples": [
+    "imo_2000_p6/cand00518.json",
+    "imo_2008_p1a/cand00410.json"
+   ]
+  }
+ }
+}

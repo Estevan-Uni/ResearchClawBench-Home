@@ -1,0 +1,57 @@
+finished code/static.py --method raw --protocol fewshot --seed 0
+finished code/static.py --method raw --protocol fewshot --seed 0 --feat F
+finished code/static.py --method protonet --protocol fewshot --seed 0
+finished code/static.py --method relationnet --protocol fewshot --seed 0
+finished code/static.py --method baselinepp --protocol fewshot --seed 0
+finished code/static.py --method bsnet --protocol fewshot --seed 0
+finished code/static.py --method mlp --protocol fewshot --seed 0
+finished code/static.py --method egs --protocol fewshot --seed 0
+finished code/static.py --method rf --protocol known --seed 0
+finished code/static.py --method mlp --protocol known --seed 0
+finished code/static.py --method egs --protocol known --seed 0
+finished code/static.py --method protonet --protocol fewshot --seed 1
+finished code/static.py --method relationnet --protocol fewshot --seed 1
+finished code/static.py --method baselinepp --protocol fewshot --seed 1
+finished code/static.py --method bsnet --protocol fewshot --seed 1
+finished code/static.py --method mlp --protocol fewshot --seed 1
+finished code/static.py --method egs --protocol fewshot --seed 1
+finished code/static.py --method rf --protocol known --seed 1
+finished code/static.py --method mlp --protocol known --seed 1
+finished code/static.py --method egs --protocol known --seed 1
+finished code/static.py --method protonet --protocol fewshot --seed 2
+finished code/static.py --method relationnet --protocol fewshot --seed 2
+finished code/static.py --method baselinepp --protocol fewshot --seed 2
+finished code/static.py --method bsnet --protocol fewshot --seed 2
+finished code/static.py --method mlp --protocol fewshot --seed 2
+finished code/static.py --method egs --protocol fewshot --seed 2
+finished code/static.py --method rf --protocol known --seed 2
+finished code/static.py --method mlp --protocol known --seed 2
+finished code/static.py --method egs --protocol known --seed 2
+finished code/static.py --method rf --protocol known --seed 0 --feat F
+finished code/static.py --method mlp --protocol known --seed 0 --feat F
+finished code/static.py --method protonet --protocol fewshot --seed 0 --feat F
+finished code/static.py --method bsnet --protocol fewshot --seed 0 --feat F
+finished code/static.py --method rf --protocol unknown --holdout 1 --seed 0
+finished code/static.py --method mlp --protocol unknown --holdout 1 --seed 0
+finished code/static.py --method egs --protocol unknown --holdout 1 --seed 0
+finished code/static.py --method rf --protocol unknown --holdout 3 --seed 0
+finished code/static.py --method mlp --protocol unknown --holdout 3 --seed 0
+finished code/static.py --method egs --protocol unknown --holdout 3 --seed 0
+finished code/static.py --method rf --protocol unknown --holdout 5 --seed 0
+finished code/static.py --method mlp --protocol unknown --holdout 5 --seed 0
+finished code/static.py --method egs --protocol unknown --holdout 5 --seed 0
+finished code/static.py --method rf --protocol unknown --holdout 7 --seed 0
+finished code/static.py --method mlp --protocol unknown --holdout 7 --seed 0
+finished code/static.py --method egs --protocol unknown --holdout 7 --seed 0
+finished code/static.py --method rf --protocol unknown --holdout 1 --seed 1
+finished code/static.py --method mlp --protocol unknown --holdout 1 --seed 1
+finished code/static.py --method egs --protocol unknown --holdout 1 --seed 1
+finished code/static.py --method rf --protocol unknown --holdout 3 --seed 1
+finished code/static.py --method mlp --protocol unknown --holdout 3 --seed 1
+finished code/static.py --method egs --protocol unknown --holdout 3 --seed 1
+finished code/static.py --method rf --protocol unknown --holdout 5 --seed 1
+finished code/static.py --method mlp --protocol unknown --holdout 5 --seed 1
+finished code/static.py --method egs --protocol unknown --holdout 5 --seed 1
+finished code/static.py --method rf --protocol unknown --holdout 7 --seed 1
+finished code/static.py --method mlp --protocol unknown --holdout 7 --seed 1
+finished code/static.py --method egs --protocol unknown --holdout 7 --seed 1

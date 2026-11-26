@@ -1,0 +1,183 @@
+{
+  "task": "Neuroscience_000",
+  "generation": 2,
+  "model": "google/gemini-4-carbon",
+  "weighted_score": 37.4,
+  "items": [
+    {
+      "score": 38,
+      "reasoning": "Evaluated under Mode A, the agent generates genuine held-out precision-recall curves and probability-based AP scores for both Attack and Sniffing, properly populating the Sniffing panel that is blank in the target figure. However, all six simulated conditions (Lab1, Lab2, Male, Female, RI, CSDS) are absent, and the baseline AP scores (0.709 for Attack, 0.761 for Sniffing) along with the inverted PR curve shapes caused by 1-frame label gaps deviate notably from the paper's >0.85 and 0.88 benchmarks. Despite rigorous threshold-aware methodology and gap-closed sensitivity diagnostics, the missing multi-condition curves and lower raw metrics place the result below the target benchmark.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795603853-RtV4PPM2PyQzUnfKzDqa",
+      "usage": {
+        "prompt_tokens": 22601,
+        "completion_tokens": 3610,
+        "total_tokens": 26211,
+        "cost": 0.081302,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.081302,
+          "upstream_inference_prompt_cost": 0.045202,
+          "upstream_inference_completions_cost": 0.0361
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3433,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 0,
+      "weight": 0.2,
+      "criterion": "Precision-recall curves for Attack classifiers across all six simulated conditions (Lab1, Lab2, Male, Female, RI, CSDS) show strong performance with average precision (AP) values consistently above 0.85. The right panel displays the PR curve for Sniffing (Lab1 only) with AP=0.88. This confirms that supervised classifiers can reliably distinguish behaviors across varied experimental contexts, supporting the paper's emphasis on threshold-aware evaluation.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 45,
+      "reasoning": "Evaluated under Mode B, the agent appropriately computed test-set TreeSHAP attributions aggregated by biological feature categories (distance, movement, shape) and animal roles across the two available recordings as an analogue to cross-laboratory comparison, demonstrating distinct classifier decision rules despite high within-video metrics. While `Attack · Reference` vs `Together_1` captures higher distance reliance in one classifier and higher movement/intruder weight in the other alongside deeper confound diagnostics, the plots separate category from animal role rather than isolating crossed categories like `intruder_movement` and use normalized `|SHAP|` shares instead of the target figure's signed Lab 1 vs Lab 2 comparison.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795603940-kC69TJeKgMLZwXMdNK2S",
+      "usage": {
+        "prompt_tokens": 22596,
+        "completion_tokens": 3161,
+        "total_tokens": 25757,
+        "cost": 0.076802,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.076802,
+          "upstream_inference_prompt_cost": 0.045192,
+          "upstream_inference_completions_cost": 0.03161
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3009,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 1,
+      "weight": 0.2,
+      "criterion": "SHAP value comparison between Lab1 and Lab2 attack classifiers reveals that Lab2 relies more heavily on animal distance features, while Lab1 places greater importance on intruder movement. This demonstrates how SHAP can quantify cross‑laboratory differences in behavioral classifiers, echoing the paper's multi‑site consortium analysis (Fig. 3c).",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 5,
+      "reasoning": "Evaluated under Mode B (mechanistic and interpretive analysis of sex-specific behavioral strategies via SHAP), this criterion is nearly absent because the report performs no Male vs. Female attack classifier comparison, explicitly noting only in passing that sex conditions are not present in the provided dataset. Although the agent computed TreeSHAP attributions aggregated by general feature categories (distance, movement, shape, angle, tracking) and separate animal roles (M1, M2) across Attack vs. Sniffing and reference recordings, those plots show unsigned |SHAP| shares rather than signed mean SHAP values over combined role-specific categories like resident_shape and intruder_movement. Consequently, the target Male vs. Female SHAP figure and the key finding regarding sex-specific behavioral motifs (resident shape in males vs. intruder movement in females) are completely missing.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795604008-3o1KpYGnHCtVe8TYIsTY",
+      "usage": {
+        "prompt_tokens": 22410,
+        "completion_tokens": 5105,
+        "total_tokens": 27515,
+        "cost": 0.09587,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.09587,
+          "upstream_inference_prompt_cost": 0.04482,
+          "upstream_inference_completions_cost": 0.05105
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4925,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 2,
+      "weight": 0.2,
+      "criterion": "SHAP comparison between Male and Female attack classifiers shows that Male attacks are more influenced by resident shape, whereas Female attacks depend more on intruder movement. This aligns with the paper's finding that sex differences in aggression are reflected in distinct behavioral motifs (Fig. 5d).",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 34,
+      "reasoning": "Evaluated under Mode B, the report omits the RI versus CSDS environmental comparison, neither reproducing the signed category-level SHAP plot nor demonstrating the shift from resident movement to intruder shape and distance across arena protocols. Although the agent computed TreeSHAP category and role attributions across two recordings as a cross-context analogue, the target environmental analysis is absent.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795604094-v94Zt3MTq5ygRhtZfsgD",
+      "usage": {
+        "prompt_tokens": 22584,
+        "completion_tokens": 2727,
+        "total_tokens": 25311,
+        "cost": 0.072438,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.072438,
+          "upstream_inference_prompt_cost": 0.045168,
+          "upstream_inference_completions_cost": 0.02727
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2642,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 3,
+      "weight": 0.2,
+      "criterion": "SHAP comparison between RI and CSDS environments indicates that the RI attack classifier emphasizes resident movement, while CSDS relies more on intruder shape and distance. This reflects the differing arena sizes and protocols, consistent with the paper's demonstration that environmental context alters behavioral classification rules (Fig. 6c).",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 65,
+      "reasoning": "Evaluated under Mode B (Subjective/Interpretive Analysis), the AI report exceeds the baseline paper figure—which plots single-run Gini importance on Lab1—by computing true held-out F1-drop permutation importance with repeat error bars alongside AP-drop, impurity, grouped-category permutation, and TreeSHAP diagnostics on the provided Together_1 dataset. Its engineered-feature F1-drop ranking clearly labels the top 15 Attack features with distance (8/15) and movement (4/15) dominating, while critically extending the transparency analysis to uncover dataset-specific distance inversions and collinearity effects.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795604165-TA8fWwBU4efGtzE40bel",
+      "usage": {
+        "prompt_tokens": 22564,
+        "completion_tokens": 2471,
+        "total_tokens": 25035,
+        "cost": 0.069838,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.069838,
+          "upstream_inference_prompt_cost": 0.045128,
+          "upstream_inference_completions_cost": 0.02471
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2328,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 4,
+      "weight": 0.2,
+      "criterion": "Permutation importance ranking for the Lab1 attack classifier identifies the top 15 features, with distance and movement features dominating. This provides feature‑level interpretability and confirms that the classifier relies on biologically meaningful pose‑derived measurements, supporting the paper's claim that SimBA enables model transparency.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    }
+  ]
+}

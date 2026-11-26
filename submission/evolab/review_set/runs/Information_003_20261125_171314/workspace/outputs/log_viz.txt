@@ -1,0 +1,115 @@
+{
+ "tsne_novel": {
+  "Raw features [F||h]": {
+   "silhouette_with_benign": 0.1320607215166092,
+   "kmeans_nmi_with_benign": 0.47168705177610354,
+   "silhouette_novel_only": 0.2113969475030899
+  },
+  "BSNet-style": {
+   "silhouette_with_benign": 0.17015086114406586,
+   "kmeans_nmi_with_benign": 0.39667851465259363,
+   "silhouette_novel_only": 0.16551068425178528
+  },
+  "E-GraphSAGE": {
+   "silhouette_with_benign": 0.1388343870639801,
+   "kmeans_nmi_with_benign": 0.4184130846932081,
+   "silhouette_novel_only": 0.15453402698040009
+  },
+  "TGN": {
+   "silhouette_with_benign": 0.3608115017414093,
+   "kmeans_nmi_with_benign": 0.4206352604053729,
+   "silhouette_novel_only": 0.3613191545009613
+  },
+  "DIDS-MFL": {
+   "silhouette_with_benign": 0.31299924850463867,
+   "kmeans_nmi_with_benign": 0.4379684935601652,
+   "silhouette_novel_only": 0.3313364088535309
+  }
+ },
+ "tsne_known": {
+  "E-GraphSAGE": {
+   "silhouette": 0.15110258758068085,
+   "kmeans_nmi": 0.5567139456311577
+  },
+  "TGN": {
+   "silhouette": 0.2736305296421051,
+   "kmeans_nmi": 0.6383721294985338
+  },
+  "DIDS-MFL": {
+   "silhouette": 0.2532406151294708,
+   "kmeans_nmi": 0.6550576767169958
+  }
+ },
+ "corr": {
+  "E-GraphSAGE  z": 0.4006660993280566,
+  "TGN  z": 0.4629295524881944,
+  "DIDS-MFL  z": 0.3373592752296543,
+  "TGN  memory-scale z_m": 0.54733772876524,
+  "DIDS-MFL w/o RD  z_m": 0.6137911801923916,
+  "DIDS-MFL  z_m": 0.27122862008701737
+ },
+ "corr_by_class": {
+  "E-GraphSAGE": {
+   "Analysis": 0.2989512140623064,
+   "Backdoor": 0.3431281669782006,
+   "Benign": 0.3165409124929046,
+   "DoS": 0.27716585244722425,
+   "Exploits": 0.2755901877941438,
+   "Fuzzers": 0.3098036185266266,
+   "Generic": 0.4296351979641732,
+   "Reconnaissance": 0.4056455929477268,
+   "Shellcode": 0.3931025644087097
+  },
+  "TGN": {
+   "Analysis": 0.5428468951490795,
+   "Backdoor": 0.39765505864752665,
+   "Benign": 0.524814137961016,
+   "DoS": 0.314723180069143,
+   "Exploits": 0.3405193697370205,
+   "Fuzzers": 0.3923659009046373,
+   "Generic": 0.7201463475045227,
+   "Reconnaissance": 0.567984864038704,
+   "Shellcode": 0.5040448586352428
+  },
+  "DIDS-MFL": {
+   "Analysis": 0.4473385827496074,
+   "Backdoor": 0.4477641564977106,
+   "Benign": 0.4058715101505278,
+   "DoS": 0.2733072341045251,
+   "Exploits": 0.33410229521703216,
+   "Fuzzers": 0.39923320559958697,
+   "Generic": 0.6875683271391088,
+   "Reconnaissance": 0.43251976802324926,
+   "Shellcode": 0.4111253948375528
+  }
+ },
+ "scale_attention_known": {
+  "Analysis": [
+   0.9939454197883606,
+   0.0005464701098389924,
+   0.005508204456418753
+  ],
+  "Backdoor": [
+   0.7917158603668213,
+   0.0490809865295887,
+   0.15920302271842957
+  ],
+  "Benign": [
+   0.9963283538818359,
+   0.0012238436611369252,
+   0.0024775925558060408
+  ],
+  "DoS": [
+   0.8659493923187256,
+   0.016769669950008392,
+   0.11728055030107498
+  ],
+  "Exploits": [
+   0.9262369275093079,
+   0.006930960342288017,
+   0.06683176755905151
+  ],
+  "Fuzzers": [
+   0.7500026822090149,
+   0.0152871860191226,
+   0.234

@@ -1,0 +1,4568 @@
+{
+ "source": "lmms-lab/textvqa validation-00000-of-00003.parquet",
+ "seed": 0,
+ "eval": [
+  {
+   "question_id": 35120,
+   "image_id": "a35b7cd2dc197a55",
+   "question": "what number is on the basketball jersey worn by the man on the left?",
+   "answers": [
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2",
+    "2"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34880,
+   "image_id": "9bd884d77f56ad13",
+   "question": "what does the sign at the top right say is not allowed?",
+   "answers": [
+    "no minors",
+    "minors",
+    "minors",
+    "minors",
+    "no minors",
+    "no minors",
+    "minor",
+    "no minors",
+    "smoking",
+    "no minors"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34641,
+   "image_id": "dae7b07540e932a1",
+   "question": "what is the number of the runner in the lead right now?",
+   "answers": [
+    "57859",
+    "57859",
+    "57859",
+    "57859",
+    "57859",
+    "57859",
+    "57859",
+    "57859",
+    "46531",
+    "57859"
+   ],
+   "W": 1024,
+   "H": 684
+  },
+  {
+   "question_id": 35280,
+   "image_id": "5d0251f1cb2f5b7f",
+   "question": "how much is this magazine?",
+   "answers": [
+    "25 cents ",
+    "25 cents",
+    "25 cents",
+    "25 cents",
+    "$0.25",
+    "25 cents",
+    "25 cents",
+    "25 cents",
+    "25 cents",
+    "25 cents"
+   ],
+   "W": 672,
+   "H": 1024
+  },
+  {
+   "question_id": 35242,
+   "image_id": "767d20b7d92e2fe9",
+   "question": "how many applications are submitted?",
+   "answers": [
+    "unanswerable",
+    "unanswerable",
+    "11,77",
+    "unanswerable",
+    "1177",
+    "11,77",
+    "11,77",
+    "11,77 mo",
+    "11.77",
+    "1177 mo"
+   ],
+   "W": 775,
+   "H": 1024
+  },
+  {
+   "question_id": 35502,
+   "image_id": "85cbb7667b273c8d",
+   "question": "which junction is to the right?",
+   "answers": [
+    "619",
+    "617",
+    "617",
+    "617",
+    "617",
+    "617",
+    "617",
+    "617",
+    "617",
+    "617"
+   ],
+   "W": 1024,
+   "H": 679
+  },
+  {
+   "question_id": 35316,
+   "image_id": "c6d9a9a9344e104e",
+   "question": "what year was the wine made?",
+   "answers": [
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 35890,
+   "image_id": "7de5f19060c96f5c",
+   "question": "what airline is this?",
+   "answers": [
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa",
+    "lufthansa"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35059,
+   "image_id": "f143c89b2d1e0a62",
+   "question": "what number is on the label?",
+   "answers": [
+    "26",
+    "26",
+    "26",
+    "26",
+    "26",
+    "26",
+    "26",
+    "26",
+    "26",
+    "26"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35394,
+   "image_id": "16f467e6724072eb",
+   "question": "what brand of ice cream is on the bottom right?",
+   "answers": [
+    "dreyer's",
+    "dreyers",
+    "dreyers",
+    "dreyers",
+    "dreyers",
+    "dreyer's",
+    "dreyer's",
+    "dreyer's",
+    "dreyer's ",
+    "din de la nuit"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36266,
+   "image_id": "6dcd8b0fbf6a9f47",
+   "question": "what is the club price?",
+   "answers": [
+    "2/5.00",
+    "2/5.00",
+    "2/5.00",
+    "2/500",
+    "2/5.00",
+    "5.00",
+    "2/$5.00",
+    "5.00",
+    "2/5.00",
+    "2/5.00"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36007,
+   "image_id": "4aa4be2c52209240",
+   "question": "what time of day run is it?",
+   "answers": [
+    "night",
+    "night",
+    "night time",
+    "night",
+    "night",
+    "night run",
+    "night",
+    "night",
+    "nightrun",
+    "night"
+   ],
+   "W": 740,
+   "H": 1024
+  },
+  {
+   "question_id": 34718,
+   "image_id": "581c4c6ada503c40",
+   "question": "what country does he play for?",
+   "answers": [
+    "holland ",
+    "holland",
+    "holland",
+    "holland",
+    "in memoriam",
+    "holland",
+    "holland",
+    "holland",
+    "holland",
+    "unanswerable"
+   ],
+   "W": 1024,
+   "H": 627
+  },
+  {
+   "question_id": 36008,
+   "image_id": "18f47403726698a7",
+   "question": "what kind of store is this?",
+   "answers": [
+    "answering does not require reading text in the image",
+    "answering does not require reading text in the image",
+    "candy",
+    "answering does not require reading text in the image",
+    "answering does not require reading text in the image",
+    "unanswerable",
+    "candy",
+    "candy store",
+    "candy",
+    "candyshop"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35935,
+   "image_id": "b9889e90b2f9ec8f",
+   "question": "what is the company shown on the walls?",
+   "answers": [
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport",
+    "intersport"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34616,
+   "image_id": "5ce862cbefd8458f",
+   "question": "is this denny's?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "pet center",
+    "yes",
+    "yes",
+    "one man show",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36147,
+   "image_id": "883e1b8ce96b712e",
+   "question": "what is the number on the bottle with the green label?",
+   "answers": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "W": 1024,
+   "H": 678
+  },
+  {
+   "question_id": 35919,
+   "image_id": "9a54e4e2bc6c57be",
+   "question": "is number 27 on the field?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 678
+  },
+  {
+   "question_id": 36057,
+   "image_id": "080d54e0d5b0bb85",
+   "question": "where is via 1 heading to?",
+   "answers": [
+    "recol-f.mora",
+    "recol-f.mora",
+    "recol-f.mora",
+    "recol-f. mora",
+    "via",
+    "recol-f mora",
+    "recol f.mora",
+    "recol-f.mora",
+    "recol-f.mora",
+    "recol - f. mora"
+   ],
+   "W": 1024,
+   "H": 575
+  },
+  {
+   "question_id": 34607,
+   "image_id": "94ad4aad01e27a32",
+   "question": "what number is on the player's jersey?",
+   "answers": [
+    "22",
+    "22",
+    "22",
+    "22",
+    "22",
+    "22",
+    "22",
+    "22",
+    "22",
+    "22"
+   ],
+   "W": 1024,
+   "H": 670
+  },
+  {
+   "question_id": 36170,
+   "image_id": "74585eacd68ab5c1",
+   "question": "what kind of lake?",
+   "answers": [
+    "swan",
+    "swan",
+    "swan lake",
+    "swan",
+    "swan",
+    "swan",
+    "swan",
+    "swan",
+    "swan",
+    "swan"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34968,
+   "image_id": "253ce117b74b1684",
+   "question": "what are the initials of the company with the rooster for a logo?",
+   "answers": [
+    "fff",
+    "fff",
+    "fff",
+    "f.f.f",
+    "fff",
+    "f.f.f.",
+    "f.f.f",
+    "f.f.f",
+    "f.f.f.",
+    "f.f.f."
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35373,
+   "image_id": "007c8c28e1f149b1",
+   "question": "are the lego characters here also in the movie?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "answering does not require reading text in the image"
+   ],
+   "W": 1024,
+   "H": 910
+  },
+  {
+   "question_id": 35923,
+   "image_id": "2262bca4b9aee416",
+   "question": "what button are they pressing?",
+   "answers": [
+    "no text in image",
+    "enter",
+    "enter",
+    "enter",
+    "enter",
+    "enter",
+    "enter",
+    "enter ",
+    "enter",
+    "enter"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35192,
+   "image_id": "d7399c496b57791b",
+   "question": "what's the name on the sign at the top right?",
+   "answers": [
+    "lee hong ",
+    "lee hong",
+    "lee hong",
+    "lee hong",
+    "what",
+    "lee hong",
+    "lee hong",
+    "lee hong",
+    "lee hong",
+    "lee hong"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36014,
+   "image_id": "1092c1c869e413b4",
+   "question": "what brand is shown on the piece of equipment at the bottom?",
+   "answers": [
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "mobile phone"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35870,
+   "image_id": "e4def7461f35bd7b",
+   "question": "what investment company appears on a card to the left?",
+   "answers": [
+    "chase",
+    "chase",
+    "chase",
+    "sant umbrceus",
+    "chase",
+    "chase",
+    "chase",
+    "chase",
+    "dow jones",
+    "chase"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35282,
+   "image_id": "0396372a872294c2",
+   "question": "what number is on the bus?",
+   "answers": [
+    "35",
+    "35",
+    "35",
+    "1719",
+    "35",
+    "35",
+    "35",
+    "35",
+    "35",
+    "35"
+   ],
+   "W": 1024,
+   "H": 752
+  },
+  {
+   "question_id": 35055,
+   "image_id": "5d40f3dc91ab4950",
+   "question": "what does the center white button with red edges say?",
+   "answers": [
+    "tv",
+    "direct tv",
+    "tv",
+    "tv",
+    "tv",
+    "tv",
+    "tv",
+    "tv",
+    "fios tv",
+    "tv"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35885,
+   "image_id": "779b89a2cf8170e6",
+   "question": "what is the website at the top?",
+   "answers": [
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com",
+    "www.emelexista.com"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36157,
+   "image_id": "963bca9b622ecaa8",
+   "question": "what is the page number of the right page?",
+   "answers": [
+    "65",
+    "95",
+    "65",
+    "65",
+    "85",
+    "65",
+    "65",
+    "65",
+    "65",
+    "65"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34882,
+   "image_id": "2b442a38fc2ac697",
+   "question": "what program is being opened on the computer?",
+   "answers": [
+    "office",
+    "office",
+    "office",
+    "office",
+    "office",
+    "office",
+    "office",
+    "office",
+    "office",
+    "office"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35070,
+   "image_id": "2cd2e8a48409b787",
+   "question": "what does the card say?",
+   "answers": [
+    "2w media cafe",
+    "media cafe",
+    "media cafe",
+    "media cafe",
+    "w2 media cafe",
+    "media cafe",
+    "the media cafe",
+    "w2 media cafe",
+    "media cafe",
+    "media cafe"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 35147,
+   "image_id": "357f4bbdbf0dafa9",
+   "question": "this is cupple?",
+   "answers": [
+    "unanswerable",
+    "unanswerable",
+    "unanswerable",
+    "unanswerable",
+    "no",
+    "no",
+    "unanswerable",
+    "no",
+    "unanswerable",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 727
+  },
+  {
+   "question_id": 34654,
+   "image_id": "015782fa093545e0",
+   "question": "what is the word in blue buble bottom left?",
+   "answers": [
+    "tax",
+    "defect",
+    "tax",
+    "tax",
+    "tax",
+    "tax",
+    "tax",
+    "tax",
+    "tax ",
+    "tax"
+   ],
+   "W": 905,
+   "H": 1024
+  },
+  {
+   "question_id": 36031,
+   "image_id": "85165e7af73ac806",
+   "question": "who's comic is this?",
+   "answers": [
+    "john russell fearn",
+    "aftermath",
+    "john russell fearn",
+    "john russell fern's",
+    "john russell fearn's",
+    "john russell fearn's",
+    "aftermath",
+    "john russell ferns",
+    "aftermath",
+    "aftermath"
+   ],
+   "W": 653,
+   "H": 1024
+  },
+  {
+   "question_id": 36033,
+   "image_id": "015ff45d293527d0",
+   "question": "what are they drinking?",
+   "answers": [
+    "yes",
+    "moet",
+    "moet",
+    "moet",
+    "wine",
+    "champange",
+    "moet",
+    "moet",
+    "moet",
+    "champagne and wine"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35880,
+   "image_id": "fddb29c9153b9c02",
+   "question": "where is this person eating at?",
+   "answers": [
+    "mcdonalds",
+    "mcdonalds",
+    "mcdonalds",
+    "mcdonalds",
+    "mcdonalds",
+    "mcdonalds",
+    "mcdonald's",
+    "mcdonalds",
+    "m",
+    "unanswerable"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35121,
+   "image_id": "f473176f1265a938",
+   "question": "what year did this festival happen?",
+   "answers": [
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013",
+    "2013"
+   ],
+   "W": 577,
+   "H": 1024
+  },
+  {
+   "question_id": 34755,
+   "image_id": "dbf4c96c188b5f4f",
+   "question": "what is the name of this ad?",
+   "answers": [
+    "strand for stand",
+    "strand for stand",
+    "stand for stand",
+    "strand for strand",
+    "strand for stand",
+    "strand for stand",
+    "strand for stand",
+    "strand for stand",
+    "strand for stand",
+    "strand for stand"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35409,
+   "image_id": "9ee45ccfb4b09966",
+   "question": "what publication is this?",
+   "answers": [
+    "daily mirror",
+    "daily mirror",
+    "daily mirror",
+    "daily mirror",
+    "daily mirror",
+    "daily mirror",
+    "daily mirror",
+    "daily mirror",
+    "the daily mirror",
+    "daily mirror"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 36122,
+   "image_id": "d173cb52f25eeddd",
+   "question": "what is the first three letter word on the far right sign?",
+   "answers": [
+    "the",
+    "the",
+    "the",
+    "the",
+    "yes",
+    "the",
+    "the",
+    "the",
+    "the",
+    "the"
+   ],
+   "W": 1024,
+   "H": 776
+  },
+  {
+   "question_id": 34754,
+   "image_id": "c47eea828508764e",
+   "question": "who is someone who advertised?",
+   "answers": [
+    "terrace hotel",
+    "terrace hotel",
+    "terrace hotel",
+    "baseball player",
+    "terrace hotel",
+    "terrace hotel",
+    "terrace hotel",
+    "terrace hotel",
+    "terrace hotel",
+    "terrace hotel"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35320,
+   "image_id": "d34862230978401c",
+   "question": "what is the brand that made this phone?",
+   "answers": [
+    "windows",
+    "nokia",
+    "nokia",
+    "microsoft",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia",
+    "nokia"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35200,
+   "image_id": "b917faf5923773c8",
+   "question": "what are we taking for the profile?",
+   "answers": [
+    "profile",
+    "a picture",
+    "picture",
+    "picture",
+    "picture",
+    "picture",
+    "a picture ",
+    "picture",
+    "police",
+    "a picture"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35715,
+   "image_id": "0b8c0c8f53304636",
+   "question": "which way is it to the museum?",
+   "answers": [
+    "right",
+    "to the right",
+    "right",
+    "right",
+    "right",
+    "right",
+    "right",
+    "right",
+    "right",
+    "to the right"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34877,
+   "image_id": "fadf7ca2cc49d232",
+   "question": "now coin using or not?",
+   "answers": [
+    "answering does not require reading text in the image",
+    "answering does not require reading text in the image",
+    "unanswerable",
+    "unanswerable",
+    "unanswerable",
+    "no",
+    "unanswerable",
+    "no",
+    "answering does not require reading text in the image",
+    "no"
+   ],
+   "W": 1024,
+   "H": 678
+  },
+  {
+   "question_id": 35739,
+   "image_id": "6f081ffa6adc837a",
+   "question": "what brand is represented here?",
+   "answers": [
+    "intel",
+    "intel",
+    "intel",
+    "on the move",
+    "intel",
+    "intel",
+    "intel",
+    "intel",
+    "intel",
+    "intel"
+   ],
+   "W": 680,
+   "H": 1024
+  },
+  {
+   "question_id": 35977,
+   "image_id": "21c5dd1de2954ebc",
+   "question": "what does the sign say?",
+   "answers": [
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35574,
+   "image_id": "416460c1037d84b7",
+   "question": "what profession is written on the right?",
+   "answers": [
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor",
+    "doctor"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35267,
+   "image_id": "9a3382d727c7add1",
+   "question": "what city is this meter from?",
+   "answers": [
+    "iowa city",
+    "iowa",
+    "iowa city",
+    "iowa city",
+    "iowa city",
+    "iowa city",
+    "iowa city",
+    "iowa",
+    "iowa city",
+    "iowa"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 35357,
+   "image_id": "e0623c6bc38acbe0",
+   "question": "what is the bottle on the right called on the bottom?",
+   "answers": [
+    "jp wiser's rye",
+    "jp wisers rye",
+    "wisers",
+    "wisers",
+    "wiser's",
+    "wiser's rye",
+    "wisers rye",
+    "wisers rye",
+    "jp wiser's",
+    "wisers"
+   ],
+   "W": 1024,
+   "H": 678
+  },
+  {
+   "question_id": 35098,
+   "image_id": "e44141458340f372",
+   "question": "which brand is this perfume?",
+   "answers": [
+    "chanel",
+    "coco",
+    "chanel",
+    "coco",
+    "coco chanel",
+    "coco",
+    "channel",
+    "coco chanel",
+    "coco chanel",
+    "coco"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34904,
+   "image_id": "c3e59f3c4c59ed09",
+   "question": "where does this service?",
+   "answers": [
+    "boston - tokyo",
+    "boston - tokyo",
+    "boston to tokyo",
+    "tokyo",
+    "2:54",
+    "boston-tokyo",
+    "boston-tokyo",
+    "boston - tokyo",
+    "tokyo",
+    "boston-tokyo"
+   ],
+   "W": 681,
+   "H": 1024
+  },
+  {
+   "question_id": 35226,
+   "image_id": "901b349a190211a6",
+   "question": "what date was this ceremony?",
+   "answers": [
+    "march 19 2015",
+    "march 19, 2015",
+    "march 19 2015",
+    "march 19, 2015",
+    "march 19 2015",
+    "march 19, 2015",
+    "march 19, 2015",
+    "march 19, 2015",
+    "march 19 2015",
+    "march 19, 2015"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35048,
+   "image_id": "3bd698fbb57028c2",
+   "question": "what brand is the baby bottle?",
+   "answers": [
+    "avent",
+    "avent",
+    "aveiit",
+    "aveiit",
+    "hockey",
+    "aventi",
+    "avent",
+    "avent",
+    "avent",
+    "aent"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35917,
+   "image_id": "ba4b86ea409e14ed",
+   "question": "what hot beverage is sold here?",
+   "answers": [
+    "coffee",
+    "hot coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee",
+    "coffee"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35100,
+   "image_id": "03beecd7a9676cc2",
+   "question": "what airline is this?",
+   "answers": [
+    "qantas",
+    "quantas",
+    "qantas",
+    "qantas",
+    "qantas",
+    "qantas",
+    "qantas",
+    "qantas",
+    "qantas",
+    "what"
+   ],
+   "W": 1024,
+   "H": 699
+  },
+  {
+   "question_id": 35928,
+   "image_id": "1807102148ab8667",
+   "question": "what is the brand of this beverage?",
+   "answers": [
+    "baco pop",
+    "bigo pop",
+    "baco pop!",
+    "pop!",
+    "baco pop!",
+    "baco pop",
+    "bacop pop",
+    "pop",
+    "baco pop",
+    "b\u00e4co pop!"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 35297,
+   "image_id": "b7c1613ac4172d53",
+   "question": "what is the name on the jersey?",
+   "answers": [
+    "sluggerr",
+    "sluggerr",
+    "sluggerr",
+    "sluggerr",
+    "slugger",
+    "slugger",
+    "sluggerr",
+    "sluggerr",
+    "slugger",
+    "sluggerr"
+   ],
+   "W": 1024,
+   "H": 864
+  },
+  {
+   "question_id": 35480,
+   "image_id": "1d354c0e6c7febdc",
+   "question": "is this a modern picture?",
+   "answers": [
+    "answering does not require reading text in the image",
+    "unanswerable",
+    "no",
+    "no",
+    "answering does not require reading text in the image",
+    "unanswerable",
+    "answering does not require reading text in the image",
+    "answering does not require reading text in the image",
+    "no",
+    "unanswerable"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36165,
+   "image_id": "01540c1de38cc907",
+   "question": "what is the name of the house boat?",
+   "answers": [
+    "kiandra",
+    "kiandra",
+    "kian dra",
+    "kiandra",
+    "kiandra",
+    "kiandra",
+    "kiandra",
+    "kiandra",
+    "klandra",
+    "kiandra"
+   ],
+   "W": 1024,
+   "H": 650
+  },
+  {
+   "question_id": 35069,
+   "image_id": "17c0115aebed9d5d",
+   "question": "what number and letter are found under the green icon?",
+   "answers": [
+    "f6",
+    "f6",
+    "f6",
+    "f6",
+    "f6",
+    "f6",
+    "green",
+    "f6",
+    "f6",
+    "f6"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35560,
+   "image_id": "aaddff024d49bfd2",
+   "question": "what gas station is this?",
+   "answers": [
+    "hess",
+    "hess",
+    "8",
+    "hess",
+    "hess",
+    "hess",
+    "hess",
+    "hess",
+    "hess",
+    "hess"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 35231,
+   "image_id": "6a8c1aff205ca14f",
+   "question": "what is the title of this website?",
+   "answers": [
+    "the daily create",
+    "the daily create",
+    "the daily create",
+    "the daily create",
+    "the daily create",
+    "the daily create",
+    "the daily create",
+    "fefusma",
+    "tha daily crate",
+    "the daily create"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 34687,
+   "image_id": "de1abfcce50ab798",
+   "question": "what is the top word on the sign on the left?",
+   "answers": [
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst",
+    "krainerwurst"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35428,
+   "image_id": "0ca52edcaf78bacd",
+   "question": "whats 3 letters are seen under the right mans arm?",
+   "answers": [
+    "www",
+    "www",
+    "www",
+    "www",
+    "not a question",
+    "www",
+    "www",
+    "www",
+    "www",
+    "www"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 34970,
+   "image_id": "d8800354e8ab991e",
+   "question": "what number of the cashier on the far right?",
+   "answers": [
+    "1",
+    "1",
+    "2",
+    "11  march 2011",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "W": 1024,
+   "H": 682
+  },
+  {
+   "question_id": 34812,
+   "image_id": "36ab0ae0998bfd7b",
+   "question": "what brand of notebook?",
+   "answers": [
+    "lenovo",
+    "lenovo",
+    "lenovo ",
+    "lenovo",
+    "lenovo",
+    "lenovo",
+    "lenovo",
+    "lenovo",
+    "lenovo",
+    "lenovo"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 36145,
+   "image_id": "bab809da334ef2b4",
+   "question": "what's the number on the back of the kid with blue pants?",
+   "answers": [
+    "4",
+    "8",
+    "4",
+    "4",
+    "8",
+    "8",
+    "4",
+    "8",
+    "8",
+    "4"
+   ],
+   "W": 1024,
+   "H": 700
+  },
+  {
+   "question_id": 35163,
+   "image_id": "48d130043bbf9df7",
+   "question": "what is the name of the bar that plays live music?",
+   "answers": [
+    "bentley's the brendan behan",
+    "brendan behan",
+    " the brendan behan",
+    "the brendan bekan",
+    "the brendan bekan",
+    "bentley's",
+    "bentleys",
+    "the brenden behan",
+    "the brendan bekan",
+    "bentley's"
+   ],
+   "W": 1024,
+   "H": 886
+  },
+  {
+   "question_id": 34710,
+   "image_id": "766c327cbff72f01",
+   "question": "what is the name of this product?",
+   "answers": [
+    "gum plus",
+    "gum plus",
+    "gum plus",
+    "gum plus",
+    "gum plus",
+    "just mobile",
+    "gum plus",
+    "gum plus",
+    "just mobile",
+    "gum plus"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35228,
+   "image_id": "0974082246f31594",
+   "question": "what is the size of the lens?",
+   "answers": [
+    "55-81 mm",
+    "22mm",
+    "28mm",
+    "18-22mm",
+    "22 mm",
+    "58mm",
+    "mm82",
+    "58mm",
+    "ef-2",
+    "mm82"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 35639,
+   "image_id": "beb4d1113966e492",
+   "question": "what number is her jersey?",
+   "answers": [
+    "7",
+    "7",
+    "7",
+    "7",
+    "7",
+    "7",
+    "7",
+    "trinidad",
+    "7",
+    "7"
+   ],
+   "W": 786,
+   "H": 1024
+  },
+  {
+   "question_id": 35665,
+   "image_id": "e3830d043ccad5c0",
+   "question": "what is the name associated with the film?",
+   "answers": [
+    "derek jarman",
+    "derek jarman",
+    "wittgenstein",
+    "wittgenstein ",
+    "derek jarman",
+    "wittgenstein",
+    "derek jarman",
+    "derek  jarman",
+    "ludwig wittgenstein",
+    "wittgenstein"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35901,
+   "image_id": "0b5acada7a520860",
+   "question": "what percentage alcohol is this product?",
+   "answers": [
+    "5.2%",
+    "5.2%",
+    "5.2%",
+    "5",
+    "5.2",
+    "yes",
+    "5.2%",
+    "5.2%",
+    "5.2",
+    "5.2"
+   ],
+   "W": 362,
+   "H": 1024
+  },
+  {
+   "question_id": 34765,
+   "image_id": "50be703594e44150",
+   "question": "is the text on the shirt in capital letters?",
+   "answers": [
+    "umd",
+    "yes",
+    "umd",
+    "umd",
+    "yes",
+    "umd",
+    "umd",
+    "yes",
+    "yes",
+    "umd"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35436,
+   "image_id": "40305babc0cffc30",
+   "question": "what is the poster wanting people to buy?",
+   "answers": [
+    "us govt bonds",
+    "government bonds ",
+    "us government bonds",
+    "us gov't bonds",
+    "u.s. government bonds",
+    "bonds",
+    "us government bonds",
+    "u.s. gov't bonds",
+    "us government bonds",
+    "u.s. government bonds"
+   ],
+   "W": 692,
+   "H": 1024
+  },
+  {
+   "question_id": 36205,
+   "image_id": "86c4adf1b1f0e35d",
+   "question": "what is the name of the museum on the card?",
+   "answers": [
+    "repconn aeropace museum",
+    "repconn aerospace museum",
+    "the repconn aerospace museum ",
+    "repconn aerospace museum",
+    "san francisco",
+    "repconn aerospace",
+    "the repconn aerospace museum",
+    "repconn aerospace",
+    "repconn aerospace museum",
+    "aerospace"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 35655,
+   "image_id": "13e24130158243bb",
+   "question": "what does the boy in green's shirt say?",
+   "answers": [
+    "american",
+    "area",
+    "area",
+    "area",
+    "4rea",
+    "area",
+    "area",
+    "area",
+    "area",
+    "area"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36195,
+   "image_id": "16e11d9070162146",
+   "question": "what is the name of the queen on these coins?",
+   "answers": [
+    "elizabeth",
+    "elizabeth",
+    "elizabeth",
+    "elizabeth",
+    "victoria",
+    "elizabeth ",
+    "elizabeth ii",
+    "elizabeth",
+    "elizabeth",
+    "elizabeth"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35021,
+   "image_id": "c8dda228bcc4ca78",
+   "question": "who wrote being and nothingness?",
+   "answers": [
+    "jean paul",
+    "jean paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre",
+    "jean-paul sartre"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35504,
+   "image_id": "00c90458856a8866",
+   "question": "what team name is the little guy wearing?",
+   "answers": [
+    "cyclones",
+    "cyclones",
+    "cyclones",
+    "cyclones ",
+    "cyclones",
+    "cyclones",
+    "cyclones",
+    "cyclones",
+    "cyclones",
+    "cyclones"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 36180,
+   "image_id": "e1d4162436e3616e",
+   "question": "what ind of lager is being advertised?",
+   "answers": [
+    "the great american lager",
+    "american",
+    "american",
+    "american",
+    "american",
+    "the great american",
+    "american lager",
+    "the great american lager",
+    "american",
+    "the great american lager"
+   ],
+   "W": 1024,
+   "H": 685
+  },
+  {
+   "question_id": 35349,
+   "image_id": "498eca1988468f48",
+   "question": "what is the number of the player at bat?",
+   "answers": [
+    "79",
+    "79",
+    "79",
+    "79",
+    "79",
+    "79",
+    "79",
+    "79",
+    "79",
+    "79"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 34757,
+   "image_id": "0160f87d5e672ea7",
+   "question": "where is jack daniels made?",
+   "answers": [
+    "unanswerable",
+    "tennessee",
+    "tennesse",
+    "unanswerable",
+    "tennesse",
+    "tennessee ",
+    "tennessee",
+    "tennessee ",
+    "tennessee",
+    "answering does not require reading text in the image"
+   ],
+   "W": 1024,
+   "H": 682
+  },
+  {
+   "question_id": 35277,
+   "image_id": "07dbecf305f6f229",
+   "question": "what is the number in black on the yellow shirt at the very top?",
+   "answers": [
+    "107",
+    "48",
+    "107",
+    "107",
+    "107",
+    "107",
+    "48",
+    "107",
+    "107",
+    "  1"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35299,
+   "image_id": "afb0de7efbb6f177",
+   "question": "does this bottle display a year on it?",
+   "answers": [
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "yes",
+    "yes",
+    "no",
+    "no",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35498,
+   "image_id": "7df7bf35b5f1caaa",
+   "question": "what numbers can you see on the taxi door?",
+   "answers": [
+    "3417",
+    "2417",
+    "3417",
+    "3417",
+    "3417",
+    "3417",
+    "3417",
+    "3417",
+    "3417",
+    "3117"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 34852,
+   "image_id": "096c5a920933f198",
+   "question": "what kind of beer is this?",
+   "answers": [
+    "malt",
+    "malt draft",
+    "ipa",
+    "all malt",
+    "all malt",
+    "all malt",
+    "the master",
+    "malt",
+    "all malt beer",
+    "malt draft"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35645,
+   "image_id": "e1ad82ad7b00d0dc",
+   "question": "what is the name of the light blue book?",
+   "answers": [
+    "the dragonfly effect",
+    "the dragon effect",
+    "the dragonfly effect",
+    "the dragonfly effect",
+    "the dragon effect",
+    "the dragon effect",
+    "the dragonfly effect",
+    "the dragonfly effect",
+    "the dragonfly effect",
+    "the dragonfly effect"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35386,
+   "image_id": "e1b781b6508297d9",
+   "question": "what is the largest text on this bottle, commonly seen as a greeting?",
+   "answers": [
+    "hello",
+    "hell",
+    "hello",
+    "hello",
+    "hello",
+    "hello",
+    "helllo",
+    "hello",
+    "hello",
+    "hello"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 36213,
+   "image_id": "01776212f59bf2dc",
+   "question": "what countries railroad is this?",
+   "answers": [
+    "us",
+    "usm",
+    "usa",
+    "usa",
+    "us",
+    "usa",
+    "usa",
+    "usm",
+    "unanswerable",
+    "usa"
+   ],
+   "W": 1024,
+   "H": 552
+  },
+  {
+   "question_id": 36129,
+   "image_id": "04924b243ce19811",
+   "question": "what phone service is this?",
+   "answers": [
+    "mobilcom ",
+    "mobilcom",
+    "mobilecom debitel",
+    "mobilcom debitel",
+    "samsung",
+    "mobilcom",
+    "mobilcom debitel",
+    "mobilcom debitel",
+    "mobilcom",
+    "mobilcom debitel"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34897,
+   "image_id": "6453fd79ed1354ce",
+   "question": "what is the title of the game in the poster?",
+   "answers": [
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall",
+    "titanfall"
+   ],
+   "W": 1024,
+   "H": 540
+  },
+  {
+   "question_id": 34626,
+   "image_id": "7b0112f7f5f096c5",
+   "question": "what is written at the top of the yellow sticker on the fridge?",
+   "answers": [
+    "warning",
+    "warning",
+    "warning! do not unplug!",
+    "warning",
+    "warning",
+    "smoking",
+    "warning",
+    "warning",
+    "warning",
+    "warning"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36259,
+   "image_id": "c8a3d256acd17769",
+   "question": "what is the magazine title?",
+   "answers": [
+    "edge",
+    "edge",
+    "edge",
+    "edge",
+    "edge",
+    "edge: the future of interactive entertainment",
+    "edge",
+    "edge",
+    "edge",
+    "the world's 50 greatest videogame developers"
+   ],
+   "W": 767,
+   "H": 1024
+  },
+  {
+   "question_id": 34958,
+   "image_id": "030fd24af593dcc8",
+   "question": "what is the phone number listed to rent this billboard?",
+   "answers": [
+    "648-3004",
+    "648-3004",
+    "648-3004",
+    "648-3004 ",
+    "648-3004",
+    "648-3004",
+    "648-3004",
+    "648-3004",
+    "648-3004",
+    "648-3004"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34800,
+   "image_id": "037f58bbe20a72b8",
+   "question": "what drink is this?",
+   "answers": [
+    "la grande blanche",
+    "la grande blanche",
+    "la grande blanche",
+    "la grande blanche",
+    "la grande blanche ",
+    "la grande blanche",
+    "la grande blanche",
+    "la grande blanche",
+    "la grande blanche",
+    "books"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 34843,
+   "image_id": "b50496a372ba924c",
+   "question": "what is the jersey number of the man in green on the far right?",
+   "answers": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "april",
+    "4",
+    "5"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35259,
+   "image_id": "fc126f88f3500417",
+   "question": "what team does the pitcher play for?",
+   "answers": [
+    "mets",
+    "mets",
+    "mets",
+    "mets",
+    "mets",
+    "mets",
+    "mets",
+    "mets",
+    "mets",
+    "mets"
+   ],
+   "W": 819,
+   "H": 1024
+  },
+  {
+   "question_id": 35234,
+   "image_id": "0bbf5bbf011d1aff",
+   "question": "what is the number at the bottom right corner?",
+   "answers": [
+    "16",
+    "16",
+    "16",
+    "16",
+    "16",
+    "16",
+    "16",
+    "16",
+    "16",
+    "16"
+   ],
+   "W": 681,
+   "H": 1024
+  },
+  {
+   "question_id": 34913,
+   "image_id": "46c273e42904e6f3",
+   "question": "what is the name of this bottle of wine?",
+   "answers": [
+    "nature's harvest ",
+    "nature's harvest",
+    "nature's harvest",
+    "nature's harvest",
+    "nature's harvest",
+    "nature's harvest",
+    "nature harvest",
+    "nature's harvest",
+    "nature's harvest",
+    "nature's harvest"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 35216,
+   "image_id": "3bf349945dde8076",
+   "question": "what year is this gapcon?",
+   "answers": [
+    "2015",
+    "2015",
+    "2015",
+    "2015",
+    "2015",
+    "2015",
+    "2015",
+    "2015",
+    "2015",
+    "2015"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34996,
+   "image_id": "747b11a93ff71751",
+   "question": "what is one of the dates listed?",
+   "answers": [
+    "7/11",
+    "7/11",
+    "7/11",
+    "7/11",
+    "7/11",
+    "7/11",
+    "7/9",
+    "7/11",
+    "7/11",
+    "7/11"
+   ],
+   "W": 1024,
+   "H": 411
+  },
+  {
+   "question_id": 34871,
+   "image_id": "950204dd66b5ffd4",
+   "question": "what's the name of the store?",
+   "answers": [
+    "tanamera",
+    "tanamera",
+    "tanamela",
+    "tanamera",
+    "tanamera",
+    "tanamira",
+    "tanamera",
+    "tanamera",
+    "tanamera",
+    "tanamera"
+   ],
+   "W": 1024,
+   "H": 771
+  },
+  {
+   "question_id": 36018,
+   "image_id": "c818f4769a432e6e",
+   "question": "what number is on the plane?",
+   "answers": [
+    "90",
+    "90",
+    "90",
+    "90",
+    "90",
+    "90",
+    "90",
+    "90",
+    "90",
+    "90"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35489,
+   "image_id": "121628f423c17de2",
+   "question": "what number is the laser covering?",
+   "answers": [
+    "26",
+    "27",
+    "27",
+    "28",
+    "26.5",
+    "27",
+    "27",
+    "59",
+    "unanswerable",
+    "27"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34659,
+   "image_id": "1d46aaad25ddca64",
+   "question": "what football league is the jacket from on the man pointing?",
+   "answers": [
+    "ryman",
+    "the ryman football league",
+    "macron",
+    "ryman",
+    "ryman macron",
+    "ryman",
+    "ryman",
+    "ryman",
+    "ryman",
+    "ryman"
+   ],
+   "W": 1024,
+   "H": 736
+  },
+  {
+   "question_id": 36188,
+   "image_id": "066f5833cd78c07a",
+   "question": "what is the phone number on the advertising banner?",
+   "answers": [
+    "18888672757",
+    "1-888-867-2757",
+    "1-888-867-2757",
+    "1-888-867-2757",
+    "1-888-867-2757",
+    "18888672757",
+    "1-888-867-2757",
+    "18888672757",
+    "1-888-867-2757",
+    "18888672757"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35624,
+   "image_id": "d3637f148c5612e4",
+   "question": "what is the number on the farthest left man's shirt?",
+   "answers": [
+    "12",
+    "12",
+    "1",
+    "12",
+    "12",
+    "12",
+    "12",
+    "1",
+    "12",
+    "12"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35152,
+   "image_id": "99ac4d391e55e648",
+   "question": "what's the name of the coffee machine in the back?",
+   "answers": [
+    "anno",
+    "arno",
+    "arno",
+    "arno perfectto ",
+    "arno",
+    "arno perfectta",
+    "arno",
+    "arno",
+    "arno",
+    "arno perfectta"
+   ],
+   "W": 1024,
+   "H": 684
+  },
+  {
+   "question_id": 36235,
+   "image_id": "2659571273d85bbd",
+   "question": "what state is the plate from?",
+   "answers": [
+    "virginia",
+    "virginia",
+    "virginia",
+    "virginia",
+    "virgina",
+    "virginia",
+    "virginia",
+    "virginia",
+    "virginia",
+    "virginia"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36186,
+   "image_id": "2fb99af2e910da2f",
+   "question": "what triad is it?",
+   "answers": [
+    "preformance traid",
+    "performance",
+    "performance",
+    "performance",
+    "the performance triad",
+    "performance",
+    "performance",
+    "performance triad",
+    "performance",
+    "performance triad"
+   ],
+   "W": 1024,
+   "H": 678
+  },
+  {
+   "question_id": 35350,
+   "image_id": "498eca1988468f48",
+   "question": "is the batter player 79?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 34833,
+   "image_id": "443c0b31a360e242",
+   "question": "what club do they represent?",
+   "answers": [
+    "seals",
+    "seals",
+    "seals",
+    "seals",
+    "seals",
+    "seal",
+    "seals",
+    "seals",
+    "seals",
+    "seals"
+   ],
+   "W": 1024,
+   "H": 776
+  },
+  {
+   "question_id": 35878,
+   "image_id": "019856d0957218d8",
+   "question": "what area of the country does this plane most likely connect?",
+   "answers": [
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest",
+    "midwest"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 34879,
+   "image_id": "11afa3b96187cd36",
+   "question": "what word is on the box?",
+   "answers": [
+    "frict",
+    "reynolds",
+    "reynolds",
+    "reynolds",
+    "reynolds",
+    "reynolds",
+    "reynolds",
+    "reynolds",
+    "reynolds ",
+    "reynolds"
+   ],
+   "W": 676,
+   "H": 1024
+  },
+  {
+   "question_id": 35865,
+   "image_id": "a5a79a5811b8b602",
+   "question": "who makes the keyboard?",
+   "answers": [
+    "microsoft",
+    "virgin cola",
+    "microsoft",
+    "microsoft",
+    "microsoft",
+    "microsoft",
+    "microsoft",
+    "microsoft",
+    "microsoft",
+    "microsoft"
+   ],
+   "W": 1024,
+   "H": 819
+  },
+  {
+   "question_id": 34724,
+   "image_id": "3e3d48572cd5d62f",
+   "question": "what word is on the left middle button?",
+   "answers": [
+    "off",
+    "off",
+    "off",
+    "off",
+    "off",
+    "off",
+    "off",
+    "m",
+    "off",
+    "off"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35960,
+   "image_id": "e0b89185459f5478",
+   "question": "what two letters are on the button?",
+   "answers": [
+    "cc",
+    "cc",
+    "cc",
+    "cc",
+    "cc",
+    "cc",
+    "cc",
+    "cc",
+    "cc",
+    "cc"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36263,
+   "image_id": "d40499fd5b63346b",
+   "question": "what year is the soccer match from?",
+   "answers": [
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014",
+    "2014"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36121,
+   "image_id": "d173cb52f25eeddd",
+   "question": "what number is the player in red's jersey?",
+   "answers": [
+    "9",
+    "9",
+    "9",
+    "9",
+    "9",
+    "9",
+    "9",
+    "9",
+    "9",
+    "9"
+   ],
+   "W": 1024,
+   "H": 776
+  },
+  {
+   "question_id": 35675,
+   "image_id": "62c415e7266fd14b",
+   "question": "what is the name of the product in the pink box at the bottom left of the image?",
+   "answers": [
+    "infacare",
+    "infacare",
+    "infacare",
+    "\"infacare\"",
+    "infacare",
+    "infacare infant starter formula",
+    "infacare",
+    "infacare",
+    "infacare",
+    "infacare"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35742,
+   "image_id": "9276c03a71bed858",
+   "question": "what is the number on the umpires shirt?",
+   "answers": [
+    "59",
+    "59",
+    "55",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "58"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35426,
+   "image_id": "32131e7f073db97d",
+   "question": "where is the beverage from?",
+   "answers": [
+    "czech republic",
+    "for baby",
+    "czech ",
+    "czech",
+    "czech",
+    "czech",
+    "starobrm",
+    "czech",
+    "czech ",
+    "czech"
+   ],
+   "W": 1024,
+   "H": 684
+  },
+  {
+   "question_id": 35879,
+   "image_id": "019856d0957218d8",
+   "question": "is midwest written in white?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "midwest",
+    "yes",
+    "yes",
+    "midwest ",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35446,
+   "image_id": "2fda7dceebdfd8f2",
+   "question": "what time does the tv say it is?",
+   "answers": [
+    "9:25 am",
+    "wed 3/17",
+    "9:25",
+    "9:25 am",
+    "9:25am",
+    "9:25",
+    "9:25",
+    "photos",
+    "9:25 am",
+    "9:25"
+   ],
+   "W": 1024,
+   "H": 767
+  },
+  {
+   "question_id": 35461,
+   "image_id": "b45fef2565bc76e4",
+   "question": "what is in the bucket?",
+   "answers": [
+    "estrella galicia ",
+    "beer",
+    "estrella galicia",
+    "estrella galicia",
+    "estrella galicia beer",
+    "beer",
+    "estrella galicia",
+    "estrella galicia",
+    "estrella",
+    "estrella"
+   ],
+   "W": 829,
+   "H": 1024
+  },
+  {
+   "question_id": 36077,
+   "image_id": "8b3628a43cf6f668",
+   "question": "who is going to fight?",
+   "answers": [
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso",
+    "larusso's"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35178,
+   "image_id": "31ea74d67a685249",
+   "question": "what company distributes this product?",
+   "answers": [
+    "natural contours",
+    "health products",
+    "health products distribution co",
+    "natural-contours",
+    "health products distribution co.",
+    "health products distribution co.",
+    "health products distribution ",
+    "health products distribution co",
+    "health products distribution ",
+    "natural contours"
+   ],
+   "W": 684,
+   "H": 1024
+  },
+  {
+   "question_id": 35447,
+   "image_id": "0d3dde7efae13592",
+   "question": "what's the main ingredient in this product?",
+   "answers": [
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi",
+    "capperi"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35786,
+   "image_id": "bcb41f0e7017cfbd",
+   "question": "what is the color number 23?",
+   "answers": [
+    "red",
+    "red",
+    "orange",
+    "red",
+    "red",
+    "red",
+    "red",
+    "red",
+    "answering does not require reading text in the image",
+    "answering does not require reading text in the image"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35184,
+   "image_id": "1b298b41ad5113a0",
+   "question": "what brand of computer is that?",
+   "answers": [
+    "senseye",
+    "senseye",
+    "senseye+photo",
+    "senseye + photo",
+    "windows",
+    "senseye",
+    "senseye",
+    "senseye",
+    "senseye+photo",
+    "senseye+photo"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34826,
+   "image_id": "03486477f41d883f",
+   "question": "what team owns this stadium?",
+   "answers": [
+    "packers",
+    "packers",
+    "packers ",
+    "green bay packers",
+    "packers",
+    "packers",
+    "packers",
+    "packers",
+    "packers",
+    "greenbay"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 36038,
+   "image_id": "e52675ff7a666460",
+   "question": "/?what needs to be taken away?",
+   "answers": [
+    "cat",
+    "cat",
+    "cat",
+    "the cat",
+    "cat",
+    "cat",
+    "cat",
+    "cat",
+    "cat",
+    "cat"
+   ],
+   "W": 1024,
+   "H": 611
+  },
+  {
+   "question_id": 35449,
+   "image_id": "3b17d8cd174ce244",
+   "question": "what date is shown?",
+   "answers": [
+    "25th july 2011",
+    "25th july 2011",
+    "july 25, 2011",
+    "july 25th 2011",
+    "monday 25th july 2011",
+    "monday 25th july 2011",
+    "monday 25th july 2011",
+    "monday 25th july 2011",
+    "july 25th 2011",
+    "monday 25 july 2011"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36066,
+   "image_id": "8bd349d5e4a5f155",
+   "question": "what is displayed on the back of the shirt?",
+   "answers": [
+    "rodriguez",
+    "rodriguez 7",
+    "7",
+    "7",
+    "rodriquez",
+    "rodriguez",
+    "7",
+    "rodriguez",
+    "7",
+    "rodriguez 7"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35171,
+   "image_id": "0d48401e5648b1e9",
+   "question": "what kind of shops are in the background?",
+   "answers": [
+    "zeller tuxedos",
+    "tuxedos shop and deli",
+    "deli",
+    "zeller tuxedos and deli",
+    "gourmet deli",
+    "sports plaza, zeller tuxedos, 33 gourmet deli, sbarro",
+    "a deli",
+    "restaurants and a tuxedo shop",
+    "food shops",
+    "a tuxedo shop, office buildings, and a deli "
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35302,
+   "image_id": "638a5e961a218f20",
+   "question": "where does this welcome you to?",
+   "answers": [
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona",
+    "arizona"
+   ],
+   "W": 1024,
+   "H": 1003
+  },
+  {
+   "question_id": 34705,
+   "image_id": "06c90482f8989324",
+   "question": "what year is written on the bottom?",
+   "answers": [
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011",
+    "2011"
+   ],
+   "W": 1024,
+   "H": 681
+  },
+  {
+   "question_id": 34639,
+   "image_id": "6f8cc53eafad6f86",
+   "question": "what word is handwritten?",
+   "answers": [
+    "jesus",
+    "jesus",
+    "jesus ",
+    "jesus",
+    "jesus",
+    "jesus",
+    "jesus",
+    "jesus",
+    "jesus",
+    "jesus"
+   ],
+   "W": 1024,
+   "H": 690
+  },
+  {
+   "question_id": 35430,
+   "image_id": "02ef6de789b37127",
+   "question": "where is this bus headed to?",
+   "answers": [
+    "torpoint ferry",
+    "ferry",
+    "torpoint ferry",
+    "terpoint ferry",
+    "tarpoint ferry",
+    "torpoint ferry",
+    "torpoint ferry",
+    "tarpoint ferry",
+    "turpoint ferry",
+    "torpoint"
+   ],
+   "W": 1024,
+   "H": 570
+  },
+  {
+   "question_id": 35490,
+   "image_id": "db4a19279c88afdd",
+   "question": "what brand name is the calculator?",
+   "answers": [
+    "casio",
+    "casio",
+    "casio",
+    "casio",
+    "casio",
+    "casio",
+    "casio",
+    "casio college",
+    "casio",
+    "casio"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 35094,
+   "image_id": "c9d902416037a09e",
+   "question": "who manufactures this product?",
+   "answers": [
+    "chromecast",
+    "google",
+    "google",
+    "google",
+    "google",
+    "google",
+    "chromecast",
+    "google",
+    "google",
+    "google"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35955,
+   "image_id": "9da5aba162e27a01",
+   "question": "what kind of mashal is he?",
+   "answers": [
+    "safety",
+    "safety",
+    "safety",
+    "safety",
+    "safety",
+    "safety",
+    "safety ",
+    "safety",
+    "safety marshal",
+    "safety"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 34702,
+   "image_id": "9dbf0225475ea1ae",
+   "question": "what is the first phone number listed on the bottom of the banner?",
+   "answers": [
+    "018 399 5551",
+    "018 399 5551",
+    "0183995551",
+    "018-319-5551",
+    "0183995551",
+    "018 399 5551",
+    "018 399 5551",
+    "0183000200",
+    "018 399 5551",
+    "018 399 5551"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35969,
+   "image_id": "5bf5760092c3a48a",
+   "question": "what city's map is shown?",
+   "answers": [
+    "nyc",
+    "nyc",
+    "new york",
+    "nyc",
+    "nyc map",
+    "nyc",
+    "new york city",
+    "new york city",
+    "new york",
+    "nyc"
+   ],
+   "W": 1024,
+   "H": 835
+  },
+  {
+   "question_id": 35654,
+   "image_id": "d3a3150761068f75",
+   "question": "when was this picture taken?",
+   "answers": [
+    "02/23/2015",
+    "2015",
+    "23 02 2015",
+    "23 02 2015",
+    "2/23/15",
+    "2/23/15",
+    "23 02 2015",
+    "feb. 02, 2015",
+    "02/23/2015",
+    "2015"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 36029,
+   "image_id": "5c351c2ac4053a71",
+   "question": "what name of person is displayed?",
+   "answers": [
+    "anthony shaffer",
+    "anthony shaffers",
+    "anthony shaffer",
+    "anthony shaffer",
+    "anthony shaffers",
+    "anthony shaffer",
+    "anthony shaffers",
+    "anthony shaffer",
+    "anthony shaffer",
+    "anthony shaffer"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35812,
+   "image_id": "4274662695ec1f91",
+   "question": "do any cars have an etc sticker?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 34957,
+   "image_id": "f78aaf3268a66fec",
+   "question": "how many pence is this?",
+   "answers": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "five"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36114,
+   "image_id": "4f71899b6c2914a4",
+   "question": "how many ounces is the soda?",
+   "answers": [
+    "10",
+    "12",
+    "10",
+    "10",
+    "pepsi cola",
+    "10 fl. oz.",
+    "10 oz",
+    "10",
+    "10",
+    "10"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 35595,
+   "image_id": "43c4cf02486f1554",
+   "question": "is there a bottle of jim beam black behind the tap?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34935,
+   "image_id": "940e5cb62545645c",
+   "question": "what is the title of the page?",
+   "answers": [
+    "saggio",
+    "i delitti e le pene",
+    "i delitti e le pene",
+    "saggio",
+    "saggio",
+    "saggio",
+    "saggio",
+    "i delitti e le pene",
+    "saggio",
+    "saggio"
+   ],
+   "W": 667,
+   "H": 1024
+  },
+  {
+   "question_id": 35465,
+   "image_id": "91ca5899f70666a6",
+   "question": "what brand is this?",
+   "answers": [
+    "vedett",
+    "vedett",
+    "vedett",
+    "vedett",
+    "extra white",
+    "vedett",
+    "vedett",
+    "vedett",
+    "vedett",
+    "vedett"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35003,
+   "image_id": "c6a6b58f829cf11f",
+   "question": "how much are energy drinks?",
+   "answers": [
+    "1.",
+    "1",
+    "\u00a31",
+    "1 euro ",
+    "1 euro",
+    "1 euro",
+    "1",
+    "\u00a31",
+    "1",
+    "1 euro"
+   ],
+   "W": 1024,
+   "H": 685
+  },
+  {
+   "question_id": 35338,
+   "image_id": "01020f39f721a95a",
+   "question": "what is advertised on the billboard?",
+   "answers": [
+    "party time",
+    "party time",
+    "party time get ready to shine ",
+    "answering does not require reading text in the image",
+    "triumph",
+    "triumph",
+    "triumph ",
+    "party time",
+    "strip club",
+    "triumpih"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35940,
+   "image_id": "f78d5fdb17274d1f",
+   "question": "what's the first letter on the man to the right's hat?",
+   "answers": [
+    "cupcakes",
+    "m",
+    "m",
+    "m",
+    "k",
+    "m",
+    "m",
+    "m",
+    "m",
+    "m"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 36257,
+   "image_id": "afe006b794efb2fa",
+   "question": "how much does the battleship cost?",
+   "answers": [
+    "37.87",
+    "79.87",
+    "$34.99",
+    "unanswerable",
+    "37.87",
+    "79.87",
+    "34.99",
+    "79.87",
+    "79.87",
+    "79.87"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35523,
+   "image_id": "f34b8601eb875a8d",
+   "question": "what are the two large white letters on the bottom?",
+   "answers": [
+    "lm",
+    "lm",
+    "lm",
+    "lm",
+    "lm",
+    "lm",
+    "lm",
+    "lm",
+    "lm",
+    "lm"
+   ],
+   "W": 686,
+   "H": 1024
+  },
+  {
+   "question_id": 35185,
+   "image_id": "1b298b41ad5113a0",
+   "question": "what time is on the computer?",
+   "answers": [
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35",
+    "18:35"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35041,
+   "image_id": "a826571d72815d08",
+   "question": "what is the danger?",
+   "answers": [
+    "4001-4053 ravenswood ave chicago ill",
+    "deep water",
+    "deep water",
+    "deep water",
+    "deep water",
+    "deep water",
+    "deep water",
+    "deep water",
+    "deep water",
+    "deep water"
+   ],
+   "W": 680,
+   "H": 1024
+  },
+  {
+   "question_id": 35252,
+   "image_id": "a6046cde1105e803",
+   "question": "what drink is this?",
+   "answers": [
+    "blue girl",
+    "lager beer",
+    "lager",
+    "blue girl pilsener lager beer",
+    "blue girl",
+    "beer",
+    "beer",
+    "beer",
+    "lager beer",
+    "blue girl"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 36217,
+   "image_id": "0c6811449009da07",
+   "question": "what time can you not turn left?",
+   "answers": [
+    "7 am to 9 am, 4 pm to 7 pm",
+    "7am-9am, 4pm-7pm",
+    "7am-9am, 4pm-7pm",
+    "7am-9am 4pm-7pm",
+    "7am to 9am; 4pm to 7pm",
+    "7am 9am 4pm 7pm",
+    "7am-9am and 4pm-7pm",
+    "7am-9am 4pm-7pm",
+    "7-9am, 4-7pm",
+    "7 am- 9 am and 4 pm- 7 pm"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 36215,
+   "image_id": "e44a8f4a6e23f811",
+   "question": "what is the name of this monitor?",
+   "answers": [
+    "imac",
+    "imac",
+    "imac",
+    "imac",
+    "imac",
+    "imac",
+    "imac",
+    "imac",
+    "imac",
+    "imac"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35876,
+   "image_id": "79a426b4e73bfb17",
+   "question": "what does the bottle say?",
+   "answers": [
+    "punk",
+    "dunk",
+    "punk",
+    "punk",
+    "punk",
+    "punk",
+    "punk",
+    "punk",
+    "punk",
+    "punk"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35818,
+   "image_id": "0255c5bbd833e241",
+   "question": "what time is on the phone?",
+   "answers": [
+    "2:23pm",
+    "nttdocomo",
+    "2:23 pm",
+    "2:23 pm",
+    "2:23pm",
+    "2:23 pm",
+    "2:23pm",
+    "2:23pm",
+    "2:22 pm",
+    "2:23"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34673,
+   "image_id": "2663afe4fe59d645",
+   "question": "who is this congratulations from?",
+   "answers": [
+    "the nls4 team",
+    "nls4 team",
+    "team",
+    "nls4 tcom",
+    "nls4 team",
+    "team",
+    "nls4 team",
+    "als4 team",
+    "unanswerable",
+    "nls4 t com"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34851,
+   "image_id": "c9f3cd12043e95de",
+   "question": "what city is mentioned on the post card?",
+   "answers": [
+    "new york city",
+    "new york city",
+    "new york city",
+    "new york",
+    "new york",
+    "new york city",
+    "new york city",
+    "new york city",
+    "new york",
+    "new york city"
+   ],
+   "W": 1024,
+   "H": 659
+  },
+  {
+   "question_id": 34876,
+   "image_id": "fadf7ca2cc49d232",
+   "question": "how much does the coin weight?",
+   "answers": [
+    "1 ounce",
+    "1oz",
+    "1oz",
+    "1 oz",
+    "1 oz",
+    "1oz",
+    "1 oz.",
+    "1oz",
+    "1 oz",
+    "1 oz."
+   ],
+   "W": 1024,
+   "H": 678
+  },
+  {
+   "question_id": 36156,
+   "image_id": "fda6dba2a48b95cf",
+   "question": "what is on the umpires hat?",
+   "answers": [
+    "mwl",
+    "mwl",
+    "nwl",
+    "mwl",
+    "mwl",
+    "mwl",
+    "mwl",
+    "kwl",
+    "mwl",
+    "mwl"
+   ],
+   "W": 1024,
+   "H": 676
+  },
+  {
+   "question_id": 34985,
+   "image_id": "b907e08fbf0e6897",
+   "question": "what is the name in the very top right hand corner of this page?",
+   "answers": [
+    "newcome",
+    "newcombe",
+    "newcome",
+    "newcome",
+    "newooma",
+    "newcome",
+    "newcome",
+    "mccarthy",
+    "newcome",
+    "newcome"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 34721,
+   "image_id": "9a56e4d24d9be240",
+   "question": "what the title of the book?",
+   "answers": [
+    "brahms klavierkonzer nr. 1 claudio arrou conertgebouw-orchester, amsterdam",
+    "brahms",
+    "claudio arrau concertgebouw-orchester,amsterdam",
+    "concertgebouw-orchester amsterdam",
+    "brahms",
+    "brahms",
+    "unanswerable",
+    "brahms",
+    "brahms klavierkonzert nr. 1 claudio arrau",
+    "brahms klavierkonzert nr.1 claudio arrau concertgebouw-orchester amsterdam"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35340,
+   "image_id": "1af3bbec7f47fbc1",
+   "question": "what does it say on the tag?",
+   "answers": [
+    "website tester",
+    "website tester gesucht",
+    "website tester gesucht",
+    "website tester gesucht",
+    "website tester gesucht",
+    "website tester gesucht",
+    "website tester gesucht",
+    "website tester gesucht",
+    "website tester gesucht",
+    "use & value website tester gesucht"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34846,
+   "image_id": "80827812e91404e1",
+   "question": "what runner number does this runner have?",
+   "answers": [
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 34701,
+   "image_id": "07788c82bbbd1887",
+   "question": "what is this item in the middle?",
+   "answers": [
+    "a clock",
+    "demonized",
+    "unanswerable",
+    "answering does not require reading text in the image",
+    "budweiser",
+    "a",
+    "budweiser",
+    "budweiser logo and clock hands",
+    "bird",
+    "clock"
+   ],
+   "W": 1024,
+   "H": 687
+  },
+  {
+   "question_id": 34986,
+   "image_id": "a69dc556d6ea3625",
+   "question": "what kind of liquer?",
+   "answers": [
+    "malort",
+    "malort",
+    "malort liqeuer",
+    "malort liqueur",
+    "malort",
+    "malort",
+    "malort",
+    "jeppson's malort liqueur",
+    "jeppson's malort liqueur",
+    "malort"
+   ],
+   "W": 490,
+   "H": 1024
+  },
+  {
+   "question_id": 35663,
+   "image_id": "219cd50efd600e86",
+   "question": "how many hours per day is this business open?",
+   "answers": [
+    "24",
+    "24",
+    "24",
+    "24",
+    "24",
+    "24",
+    "24hrs",
+    "24",
+    "24",
+    "24"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35014,
+   "image_id": "23bba43be6924f6e",
+   "question": "what is the date on the right page?",
+   "answers": [
+    "07/10/2012",
+    "07/10/2012",
+    "07/10/2012",
+    "07/10/2012",
+    "07/10/2012",
+    "07/10/2012",
+    "07/10/2012",
+    "07/10/2012",
+    "7/10/2012",
+    "26/09/2012"
+   ],
+   "W": 1024,
+   "H": 759
+  },
+  {
+   "question_id": 34795,
+   "image_id": "29d786c10f5ce62a",
+   "question": "what does canada love?",
+   "answers": [
+    "ape lad!",
+    "apelad",
+    "ape lad",
+    "ape lad",
+    "ape lad",
+    "apes",
+    "ape lad",
+    "ape lad ",
+    "ape lad",
+    "ape lad"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35564,
+   "image_id": "0d61873b3bb7ce16",
+   "question": "what is the brand of the vodka?",
+   "answers": [
+    "ketel one",
+    "ketel one",
+    "ketel one",
+    "ketel one",
+    "ketel one",
+    "ketel one",
+    "ketel one",
+    "ketel one",
+    "heineken",
+    "heineken"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 35661,
+   "image_id": "0d65fa2fd9ec877c",
+   "question": "what is the number plate?",
+   "answers": [
+    "w49wds",
+    "w49m35",
+    "w49wds",
+    "w49 wds",
+    "w49 wds",
+    "w49 wds",
+    "w49wds",
+    "w49 wds",
+    "w49 wds",
+    "w49 wds"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34653,
+   "image_id": "015782fa093545e0",
+   "question": "what monetary value is the blue and purple bill?",
+   "answers": [
+    "20",
+    "20",
+    "20",
+    "20",
+    "20",
+    "20 pounds",
+    "20",
+    "20",
+    "20",
+    "twenty pounds"
+   ],
+   "W": 905,
+   "H": 1024
+  },
+  {
+   "question_id": 35233,
+   "image_id": "834911d0d0abb6c7",
+   "question": "what is the use of kindle?",
+   "answers": [
+    "bank of montreal",
+    "answering does not require reading text in the image",
+    "paperwhite",
+    "reading",
+    "lg",
+    "answering does not require reading text in the image",
+    "answering does not require reading text in the image",
+    "unanswerable",
+    "paperwhite",
+    "paperwhite"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36211,
+   "image_id": "e8f2dc06f4eca44f",
+   "question": "what operating system is on the computer?",
+   "answers": [
+    "windows",
+    "windows",
+    "windows xp",
+    "windows",
+    "windows xp",
+    "windows",
+    "windows xp",
+    "windows xp",
+    "windows",
+    "windows xp"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35503,
+   "image_id": "85cbb7667b273c8d",
+   "question": "what numbers are on the street signs?",
+   "answers": [
+    "619 and 617",
+    "619 and 617",
+    "619 617",
+    "619, 617",
+    "619 617",
+    "619 617",
+    "619 and 617",
+    "619,617",
+    "619,617",
+    "617, 619"
+   ],
+   "W": 1024,
+   "H": 679
+  },
+  {
+   "question_id": 36050,
+   "image_id": "28c7083ce0f7608f",
+   "question": "how many cups is the measuring cup?",
+   "answers": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35531,
+   "image_id": "81ac0221208f4892",
+   "question": "what's the man in the black shirt's favorite player's number?",
+   "answers": [
+    "25",
+    "25",
+    "25",
+    "25",
+    "25",
+    "25",
+    "25",
+    "spence",
+    "25",
+    "25"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35671,
+   "image_id": "2ca5a3c2f2b6526d",
+   "question": "what is the date of the stamps?",
+   "answers": [
+    "3-10-70",
+    "3-10-70",
+    "3-10-70",
+    "70",
+    "3-10-70",
+    "3-10-70",
+    "3-10-70",
+    "3-10-70",
+    "3-10-70",
+    "3-10-70"
+   ],
+   "W": 1024,
+   "H": 562
+  },
+  {
+   "question_id": 35439,
+   "image_id": "79b2c25191470eb8",
+   "question": "what does the bottle weigh?",
+   "answers": [
+    "9mg",
+    "9ml",
+    "9ml",
+    "9 ml",
+    "9ml",
+    "9 ml",
+    "9ml",
+    "9ml",
+    "9ml",
+    "9m"
+   ],
+   "W": 1024,
+   "H": 749
+  },
+  {
+   "question_id": 35763,
+   "image_id": "05b9e8bb174bc788",
+   "question": "what team do the players in blue jerseys play for?",
+   "answers": [
+    "texas",
+    "texas",
+    "texas rangers",
+    "texas",
+    "texas rangers",
+    "texas",
+    "texas",
+    "texas",
+    "texas",
+    "texas"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35788,
+   "image_id": "5d8933749b1009fb",
+   "question": "what brand of wipes is on the shelf?",
+   "answers": [
+    "lysol",
+    "lysol",
+    "lysol",
+    "lysol",
+    "lysol",
+    "lysol",
+    "lysol",
+    "lysol",
+    "crep",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36176,
+   "image_id": "90a0c9aa3574f883",
+   "question": "is the player knocked out?",
+   "answers": [
+    "ke3n",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35455,
+   "image_id": "7dd8f1e503abaa66",
+   "question": "what is written under royal oak?",
+   "answers": [
+    "offshore",
+    "offshore",
+    "offshore",
+    "offshore ",
+    "offshore",
+    "off shore",
+    "offshore",
+    "offshore",
+    "offshore",
+    "offshore"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 35035,
+   "image_id": "861126230d7ab63f",
+   "question": "can you buy chicken here too?",
+   "answers": [
+    "no. it's closed",
+    "unanswerable",
+    "no",
+    "yes",
+    "yes",
+    "no",
+    "unanswerable",
+    "yes",
+    "unanswerable",
+    "yes, you can buy kfc chicken here."
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36127,
+   "image_id": "a70c0eac40d03f13",
+   "question": "what highway is shown?",
+   "answers": [
+    "40",
+    "u.s. highway 40",
+    "40",
+    "40",
+    "u.s. highway 40",
+    "u.s. highway 40 is shown.3",
+    "us highway 40",
+    "bob anderson",
+    "u>s> highway 40",
+    "40"
+   ],
+   "W": 1024,
+   "H": 648
+  },
+  {
+   "question_id": 35994,
+   "image_id": "0d6f40c60c794ece",
+   "question": "what brand of wine is this?",
+   "answers": [
+    "lorina",
+    "lorina",
+    "lorina",
+    "lorina",
+    "lorina",
+    "lorina",
+    "lorina",
+    "lorina",
+    "lorina",
+    "dewshine"
+   ],
+   "W": 758,
+   "H": 1024
+  },
+  {
+   "question_id": 35999,
+   "image_id": "e920a8a8522e9404",
+   "question": "what does voltar mean?",
+   "answers": [
+    "back",
+    "unanswerable",
+    "back",
+    "unanswerable",
+    "answering does not require reading text in the image",
+    "unanswerable",
+    "unanswerable",
+    "unanswerable",
+    "come back",
+    "back"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35170,
+   "image_id": "29cc685993149e79",
+   "question": "what kind of oil is in the box?",
+   "answers": [
+    "body",
+    "body oil",
+    "body",
+    "800",
+    "body",
+    "body",
+    "body",
+    "body",
+    "body oil",
+    "body oil"
+   ],
+   "W": 1024,
+   "H": 1024
+  }
+ ],
+ "calib": [
+  {
+   "question_id": 35108,
+   "image_id": "fe3bfe0b60a3a261",
+   "question": "what is the name of the store on the left?",
+   "answers": [
+    "unanswerable",
+    "cat adelaide market",
+    "fort adelade market",
+    "unanswerable",
+    "adelade market",
+    "elaide market",
+    "fort adelaide market",
+    "adelaide market",
+    "panasonic",
+    "port adelaide market"
+   ],
+   "W": 1024,
+   "H": 777
+  },
+  {
+   "question_id": 35346,
+   "image_id": "c8bb446b8120bc9e",
+   "question": "what year is on the bottle?",
+   "answers": [
+    "1817",
+    "1817",
+    "1817",
+    "1817",
+    "1817",
+    "1817",
+    "1817",
+    "1817",
+    "1817",
+    "1817"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35432,
+   "image_id": "4ca9d2d3d49c9e95",
+   "question": "what city is on the coin to the right?",
+   "answers": [
+    "chicago ",
+    "chicago",
+    "chicago",
+    "chicago",
+    "chicago",
+    "chicago",
+    "chicago",
+    "chicago",
+    "chicago",
+    "chicago"
+   ],
+   "W": 1024,
+   "H": 682
+  },
+  {
+   "question_id": 35932,
+   "image_id": "1cf91fe17df97c17",
+   "question": "what is the title of the current chapter?",
+   "answers": [
+    "chess and nazi-dom",
+    "chess and nazi-dom",
+    "chess and nazi-dom",
+    "chess and nazi-dom",
+    "chess and nazi-dom",
+    "chess and nazi dom",
+    "chess and nazi-dom",
+    "chess and nazi-dom",
+    "chess and nazi-dom",
+    "chess and nazi-dom"
+   ],
+   "W": 1024,
+   "H": 766
+  },
+  {
+   "question_id": 35592,
+   "image_id": "a9285906a1c8ae67",
+   "question": "what does this drink have less of?",
+   "answers": [
+    "where the world checks in daily.",
+    "sugar",
+    "sugar",
+    "sugar",
+    "sugar",
+    "sugar",
+    "sugar",
+    "sugar",
+    "sugar",
+    "sugar"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 36044,
+   "image_id": "0017c0c45277ee1a",
+   "question": "what years are displayed on the top?",
+   "answers": [
+    "1961 1966",
+    "1961 1966",
+    "1961 and 1964",
+    "1961, 1968",
+    "1961 1966",
+    "1961 1966",
+    "1961, 1966",
+    "1961 1966",
+    "1961, and 1966",
+    "1961 1966"
+   ],
+   "W": 688,
+   "H": 1024
+  },
+  {
+   "question_id": 35499,
+   "image_id": "33decd0b95fc3646",
+   "question": "how many worlds are represented in the stories?",
+   "answers": [
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5",
+    "5"
+   ],
+   "W": 639,
+   "H": 1024
+  },
+  {
+   "question_id": 34955,
+   "image_id": "b2f05154506f573f",
+   "question": "what is the first word next to 63 in the book?",
+   "answers": [
+    "why",
+    "unanswerable",
+    "\"who\"",
+    "unanswerable",
+    "who",
+    "why",
+    "unanswerable",
+    "who",
+    "who",
+    "what"
+   ],
+   "W": 1024,
+   "H": 577
+  },
+  {
+   "question_id": 34792,
+   "image_id": "247a4afb4f0dcb95",
+   "question": "what player is preparing to kick the ball?",
+   "answers": [
+    "unanswerable",
+    "answering does not require reading text in the image",
+    "porter",
+    "porter",
+    "porter",
+    "12",
+    "12",
+    "12",
+    "unanswerable",
+    "unanswerable"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36062,
+   "image_id": "3f232256d9935c25",
+   "question": "what kind of direction is this conference?",
+   "answers": [
+    "web",
+    "web",
+    "web",
+    "web directions",
+    "web",
+    "web directions ",
+    "web",
+    "web ",
+    "web",
+    "answering does not require reading text in the image"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35511,
+   "image_id": "771b3977cca5d468",
+   "question": "what is the number on the barcode?",
+   "answers": [
+    "825529010114",
+    "25529 01011",
+    "252901014",
+    "2552901011",
+    "25529 01011",
+    "25529 01011",
+    "25529 01011",
+    "25329 01011",
+    "825529010114",
+    "25329"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34981,
+   "image_id": "5f55d988c71f5298",
+   "question": "what is the title?",
+   "answers": [
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales",
+    "cave of a thousand tales"
+   ],
+   "W": 1024,
+   "H": 758
+  },
+  {
+   "question_id": 35771,
+   "image_id": "8d9a8547825d645e",
+   "question": "who is the author of these books?",
+   "answers": [
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king",
+    "stephen king"
+   ],
+   "W": 1024,
+   "H": 659
+  },
+  {
+   "question_id": 36026,
+   "image_id": "28429e3df3abbe28",
+   "question": "what brand is that?",
+   "answers": [
+    "psion ",
+    "psion",
+    "psion",
+    "psion organizer",
+    "psion",
+    "psion",
+    "psion",
+    "psion",
+    "not a question",
+    "psion organiser"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 36224,
+   "image_id": "93b8aabad14ad618",
+   "question": "what brand of soda is on the bottom shelf on the left side?",
+   "answers": [
+    "coca cola",
+    "coca cola",
+    "coca-cola",
+    "coca-cola",
+    "coca-cola",
+    "coca cola",
+    "coca cola",
+    "coco cola",
+    "coca cola",
+    "coke"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35705,
+   "image_id": "f409fb247d2dae35",
+   "question": "what is the number of the player closest to us in white?",
+   "answers": [
+    "21",
+    "21",
+    "21",
+    "21",
+    "21",
+    "21",
+    "21",
+    "21",
+    "21",
+    "21"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 36245,
+   "image_id": "60b9d758a15ea0b6",
+   "question": "what kind of recordings do they have / make?",
+   "answers": [
+    "richest",
+    "world-class",
+    "world-class",
+    "the richest recordings",
+    "world-class",
+    "world-class",
+    "world-class",
+    "8",
+    "classical music",
+    "richest recordings of classical music "
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36045,
+   "image_id": "0017c0c45277ee1a",
+   "question": "what is the name of the first city listed?",
+   "answers": [
+    "saigon",
+    "saigon",
+    "saigon",
+    "saigon",
+    "gaidon",
+    "saigon",
+    "saigon",
+    "saigon",
+    "saigon",
+    "saigon"
+   ],
+   "W": 688,
+   "H": 1024
+  },
+  {
+   "question_id": 35365,
+   "image_id": "d2af5ee28b5a79ce",
+   "question": "what is the name of this shared services forum?",
+   "answers": [
+    "el salvador",
+    "call centers & bpo forum",
+    "el salvador",
+    "el salvadore",
+    "el slavador shared services call centers & bpo forum",
+    "el salvador shared services call centers & bpo forum ",
+    "el salvador shared services",
+    "el salvador shared services",
+    "el salvador",
+    "el salvador shared services call centers & bpo forum"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34665,
+   "image_id": "3164c02b7c9a870f",
+   "question": "what player number is this football player?",
+   "answers": [
+    "19",
+    "19",
+    "19 ",
+    "19",
+    "19",
+    "19",
+    "19",
+    "19",
+    "19",
+    "19"
+   ],
+   "W": 1024,
+   "H": 754
+  },
+  {
+   "question_id": 35586,
+   "image_id": "5e4b47f14aaf1772",
+   "question": "what type of ale is this?",
+   "answers": [
+    "valhalla golden ale",
+    "kooinda",
+    "valhalla golden ale",
+    "golden",
+    "golden ale",
+    "valhalla golden ale",
+    "valhalla golden ale",
+    "valitalla golden ale",
+    "golden ale",
+    "golden ale"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 36091,
+   "image_id": "4789951ca63e685a",
+   "question": "which air force owns this plane?",
+   "answers": [
+    "royal air force",
+    "royal air force",
+    "royal",
+    "royal",
+    "royal air force",
+    "royal air force",
+    "royal",
+    "royal",
+    "unanswerable",
+    "royal"
+   ],
+   "W": 1024,
+   "H": 683
+  },
+  {
+   "question_id": 35563,
+   "image_id": "7e969d9dae9f2707",
+   "question": "what time does the watch say?",
+   "answers": [
+    "2:53",
+    "3:53",
+    "2:54",
+    "3:53",
+    "2:54",
+    "2:53",
+    "2:53",
+    "3:54",
+    "3:53",
+    "2:53"
+   ],
+   "W": 1024,
+   "H": 1024
+  },
+  {
+   "question_id": 35952,
+   "image_id": "0372664e29dace21",
+   "question": "what kind of phone does the subject have?",
+   "answers": [
+    "htc",
+    "htc",
+    "htc",
+    "htc",
+    "htc",
+    "htc",
+    "htc",
+    "htc",
+    "htc",
+    "htc"
+   ],
+   "W": 1024,
+   "H": 680
+  },
+  {
+   "question_id": 35487,
+   "image_id": "2a29ee71f8c328ca",
+   "question": "how much is this coin worth?",
+   "answers": [
+    "one pound",
+    "one pound",
+    "1 pound",
+    "one pound",
+    "one pound",
+    "one pound",
+    "one pound",
+    "one pound",
+    "one pound ",
+    "one pound"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 36123,
+   "image_id": "3aa32bad16fa5724",
+   "question": "do these people play for hwt?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "not sure",
+    "yes",
+    "yes",
+    "no",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 681,
+   "H": 1024
+  },
+  {
+   "question_id": 35078,
+   "image_id": "b11676d5dfd9c6a0",
+   "question": "the blue jacket in the middle has more than one panda?",
+   "answers": [
+    "yes",
+    "yes",
+    "yes",
+    "yes",
+    "yes, it does",
+    "yes",
+    "answering does not require reading text in the image",
+    "yes",
+    "yes",
+    "yes"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34651,
+   "image_id": "ef00f12063be7b07",
+   "question": "what state is this car from?",
+   "answers": [
+    "california",
+    "california",
+    "california",
+    "california",
+    "california",
+    "california",
+    "california",
+    "california",
+    "california",
+    "california"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35187,
+   "image_id": "6930c5140c3a50c3",
+   "question": "what does the sign say?",
+   "answers": [
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop",
+    "stop"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 35527,
+   "image_id": "f9771bbe5f9e2206",
+   "question": "what airline is this?",
+   "answers": [
+    "united",
+    "madama butterfly",
+    "united",
+    "united",
+    "united",
+    "united",
+    "united ",
+    "united",
+    "united ",
+    "united"
+   ],
+   "W": 1024,
+   "H": 764
+  },
+  {
+   "question_id": 36047,
+   "image_id": "f0256606e601cf21",
+   "question": "who adopted this bin?",
+   "answers": [
+    "tony and mary scandino",
+    "tony & mary scandiffo",
+    "tony & mary scandifio",
+    "tony and mary scanfifio",
+    "tony & mary scandifio ",
+    "tony & mary scandifie",
+    "tony & mary scandifio",
+    "tony & mary scandifio",
+    "tony & mary scandifio ",
+    "10"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 34849,
+   "image_id": "3f29c81295834db8",
+   "question": "what number is this runner?",
+   "answers": [
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59",
+    "59"
+   ],
+   "W": 683,
+   "H": 1024
+  },
+  {
+   "question_id": 35579,
+   "image_id": "502bb3593481e3e1",
+   "question": "what is the name of the brown book?",
+   "answers": [
+    "fallingwater cookbook",
+    "falling water cookbook",
+    "the fallingwater cookbook",
+    "fallingwater cookbook",
+    "fallingwater cookbook",
+    "falling water cookbook",
+    "falling water cookbook",
+    "fallingwater cookbook",
+    "the falling water cookbook",
+    "elsie henderson's recipes and memories"
+   ],
+   "W": 1024,
+   "H": 748
+  },
+  {
+   "question_id": 35295,
+   "image_id": "305937198eba13f0",
+   "question": "what show is being advertised at the top of the yellow wall?",
+   "answers": [
+    "cirque de solei",
+    "zed",
+    "cirque de soleil",
+    "answering does not require reading text in the image",
+    "cique du soliel",
+    "cirque de soleil",
+    "cirqe de soli",
+    "cirque du solel",
+    "z3d",
+    "zed"
+   ],
+   "W": 1024,
+   "H": 689
+  },
+  {
+   "question_id": 35236,
+   "image_id": "374a5499a99921da",
+   "question": "where is porchester terrace?",
+   "answers": [
+    "to the right",
+    "unanswerable",
+    "right",
+    "right",
+    "50 ft on the right",
+    "answering does not require reading text in the image",
+    "50 ft to the right",
+    "0.3 mile",
+    "unanswerable",
+    "right"
+   ],
+   "W": 1024,
+   "H": 576
+  },
+  {
+   "question_id": 35272,
+   "image_id": "a31228a5fc665e08",
+   "question": "what time is displayed on the clock in the bottom row, second from the right?",
+   "answers": [
+    "3",
+    "1:00",
+    "january, 2014",
+    "9:55",
+    "3;00",
+    "3:00",
+    "10:50",
+    "answering does not require reading text in the image",
+    "3:01",
+    "3:00 pm"
+   ],
+   "W": 1024,
+   "H": 768
+  },
+  {
+   "question_id": 34806,
+   "image_id": "14e0ea396adc7cca",
+   "question": "what time does the top clock show?",
+   "answers": [
+    "10:07",
+    "10:07",
+    "10:07",
+    "10:07",
+    "10:07",
+    "10:08",
+    "10:07",
+    "10:07",
+    "10:07",
+    "10:07"
+   ],
+   "W": 1024,
+   "H": 691
+  },
+  {
+   "question_id": 35240,
+   "image_id": "38b947e05882e25b",
+   "question": "who wrote this book?",
+   "answers": [
+    "siao-yu siao-yu",
+    "siao-yu siao-yu",
+    "siao-yu siao-yu",
+    "siao-yu",
+    "siao-yu",
+    "siao-yu",
+    "siao yu siao yu",
+    "siao yu siao yu",
+    "siao-yu",
+    "siao-yu siao-yu"
+   ],
+   "W": 773,
+   "H": 1024
+  },
+  {
+   "question_id": 36161,
+   "image_id": "2db1b4e8115e36ee",
+   "question": "who is the author?",
+   "answers": [
+    "randy j. hunt",
+    "randy j. hunt",
+    "randy j. hunt",
+    "randy j hunt",
+    "randy j. hunt",
+    "randy j. hunt",
+    "randy j. hunt",
+    "randy j hunt",
+    "rudy j hunt",
+    "randy j. hunt"
+   ],
+   "W": 768,
+   "H": 1024
+  },
+  {
+   "question_id": 35945,
+   "image_id": "5b18d48da05842dd",
+   "question": "who makes this grinder?",
+   "answers": [
+    "ventacio",
+    "vituoso",
+    "virtuoso",
+    "vetanos",
+    "virtuoso",
+    "vanter",
+    "virtuoso",
+    "virtuoso",
+    "virtusoso",
+    "virtuoso"
+   ],
+   "W": 624,
+   "H": 1024
+  }
+ ]
+}

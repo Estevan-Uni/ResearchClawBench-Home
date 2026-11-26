@@ -1,0 +1,718 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_audit.py",
+    "path": "code/01_audit.py",
+    "type": "file",
+    "size": 3898,
+    "mtime": 1795603610.9922552,
+    "exported": true
+  },
+  {
+    "name": "02_features.py",
+    "path": "code/02_features.py",
+    "type": "file",
+    "size": 2048,
+    "mtime": 1795600488.917749,
+    "exported": true
+  },
+  {
+    "name": "03_classifiers.py",
+    "path": "code/03_classifiers.py",
+    "type": "file",
+    "size": 7880,
+    "mtime": 1795600636.615144,
+    "exported": true
+  },
+  {
+    "name": "04_importance.py",
+    "path": "code/04_importance.py",
+    "type": "file",
+    "size": 5373,
+    "mtime": 1795602637.6125228,
+    "exported": true
+  },
+  {
+    "name": "05_shap.py",
+    "path": "code/05_shap.py",
+    "type": "file",
+    "size": 9781,
+    "mtime": 1795601735.739828,
+    "exported": true
+  },
+  {
+    "name": "06_validity.py",
+    "path": "code/06_validity.py",
+    "type": "file",
+    "size": 4393,
+    "mtime": 1795600734.5836794,
+    "exported": true
+  },
+  {
+    "name": "07_figures_performance.py",
+    "path": "code/07_figures_performance.py",
+    "type": "file",
+    "size": 6035,
+    "mtime": 1795601433.3290668,
+    "exported": true
+  },
+  {
+    "name": "08_figures_shap.py",
+    "path": "code/08_figures_shap.py",
+    "type": "file",
+    "size": 6381,
+    "mtime": 1795601940.701763,
+    "exported": true
+  },
+  {
+    "name": "09_figures_validity.py",
+    "path": "code/09_figures_validity.py",
+    "type": "file",
+    "size": 3341,
+    "mtime": 1795601968.806031,
+    "exported": true
+  },
+  {
+    "name": "10_figures_importance.py",
+    "path": "code/10_figures_importance.py",
+    "type": "file",
+    "size": 3417,
+    "mtime": 1795603584.3282006,
+    "exported": true
+  },
+  {
+    "name": "11_report_tables.py",
+    "path": "code/11_report_tables.py",
+    "type": "file",
+    "size": 2007,
+    "mtime": 1795603634.428307,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 1460,
+    "mtime": 1795600420.0010145,
+    "exported": true
+  },
+  {
+    "name": "features.py",
+    "path": "code/features.py",
+    "type": "file",
+    "size": 12092,
+    "mtime": 1795600542.0063143,
+    "exported": true
+  },
+  {
+    "name": "style.py",
+    "path": "code/style.py",
+    "type": "file",
+    "size": 1119,
+    "mtime": 1795601433.3250666,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "audit.json",
+    "path": "outputs/audit.json",
+    "type": "file",
+    "size": 1969,
+    "mtime": 1795603612.2522578,
+    "exported": true
+  },
+  {
+    "name": "blocked_cv_metrics.csv",
+    "path": "outputs/blocked_cv_metrics.csv",
+    "type": "file",
+    "size": 3438,
+    "mtime": 1795601547.3580914,
+    "exported": true
+  },
+  {
+    "name": "circular_shift_null.csv",
+    "path": "outputs/circular_shift_null.csv",
+    "type": "file",
+    "size": 2485,
+    "mtime": 1795601886.9772522,
+    "exported": true
+  },
+  {
+    "name": "circular_shift_null_summary.json",
+    "path": "outputs/circular_shift_null_summary.json",
+    "type": "file",
+    "size": 604,
+    "mtime": 1795601972.4460657,
+    "exported": true
+  },
+  {
+    "name": "classification_reports.json",
+    "path": "outputs/classification_reports.json",
+    "type": "file",
+    "size": 13474,
+    "mtime": 1795600993.3574247,
+    "exported": true
+  },
+  {
+    "name": "confusion_matrices.json",
+    "path": "outputs/confusion_matrices.json",
+    "type": "file",
+    "size": 1495,
+    "mtime": 1795600993.3574247,
+    "exported": true
+  },
+  {
+    "name": "cross_recording_transfer.csv",
+    "path": "outputs/cross_recording_transfer.csv",
+    "type": "file",
+    "size": 593,
+    "mtime": 1795601153.5186772,
+    "exported": true
+  },
+  {
+    "name": "determinism.json",
+    "path": "outputs/determinism.json",
+    "type": "file",
+    "size": 276,
+    "mtime": 1795601897.0573478,
+    "exported": true
+  },
+  {
+    "name": "feature_categories.csv",
+    "path": "outputs/feature_categories.csv",
+    "type": "file",
+    "size": 33387,
+    "mtime": 1795600549.6423955,
+    "exported": true
+  },
+  {
+    "name": "feature_medians_by_state.csv",
+    "path": "outputs/feature_medians_by_state.csv",
+    "type": "file",
+    "size": 823,
+    "mtime": 1795602681.5282514,
+    "exported": true
+  },
+  {
+    "name": "feature_validation_vs_reference.csv",
+    "path": "outputs/feature_validation_vs_reference.csv",
+    "type": "file",
+    "size": 49034,
+    "mtime": 1795600549.606395,
+    "exported": true
+  },
+  {
+    "name": "grouped_permutation_importance.csv",
+    "path": "outputs/grouped_permutation_importance.csv",
+    "type": "file",
+    "size": 15189,
+    "mtime": 1795603532.408109,
+    "exported": true
+  },
+  {
+    "name": "leakage_curve.csv",
+    "path": "outputs/leakage_curve.csv",
+    "type": "file",
+    "size": 2157,
+    "mtime": 1795601595.1185272,
+    "exported": true
+  },
+  {
+    "name": "log_03.txt",
+    "path": "outputs/log_03.txt",
+    "type": "file",
+    "size": 8532,
+    "mtime": 1795601153.5226774,
+    "exported": true
+  },
+  {
+    "name": "log_04.txt",
+    "path": "outputs/log_04.txt",
+    "type": "file",
+    "size": 10127,
+    "mtime": 1795603532.5481093,
+    "exported": true
+  },
+  {
+    "name": "log_05.txt",
+    "path": "outputs/log_05.txt",
+    "type": "file",
+    "size": 7851,
+    "mtime": 1795601860.3049996,
+    "exported": true
+  },
+  {
+    "name": "log_06.txt",
+    "path": "outputs/log_06.txt",
+    "type": "file",
+    "size": 280,
+    "mtime": 1795601897.0573478,
+    "exported": true
+  },
+  {
+    "name": "mdi_importance_all.csv",
+    "path": "outputs/mdi_importance_all.csv",
+    "type": "file",
+    "size": 231005,
+    "mtime": 1795603532.440109,
+    "exported": true
+  },
+  {
+    "name": "mdi_top15_engineered_Attack.csv",
+    "path": "outputs/mdi_top15_engineered_Attack.csv",
+    "type": "file",
+    "size": 1515,
+    "mtime": 1795603532.456109,
+    "exported": true
+  },
+  {
+    "name": "mdi_top15_engineered_Sniffing.csv",
+    "path": "outputs/mdi_top15_engineered_Sniffing.csv",
+    "type": "file",
+    "size": 1578,
+    "mtime": 1795603532.4761093,
+    "exported": true
+  },
+  {
+    "name": "mdi_top15_provided50_Attack.csv",
+    "path": "outputs/mdi_top15_provided50_Attack.csv",
+    "type": "file",
+    "size": 1348,
+    "mtime": 1795603532.4921093,
+    "exported": true
+  },
+  {
+    "name": "mdi_top15_provided50_Sniffing.csv",
+    "path": "outputs/mdi_top15_provided50_Sniffing.csv",
+    "type": "file",
+    "size": 1366,
+    "mtime": 1795603532.5041091,
+    "exported": true
+  },
+  {
+    "name": "mdi_top15_reference_simba517_Attack.csv",
+    "path": "outputs/mdi_top15_reference_simba517_Attack.csv",
+    "type": "file",
+    "size": 1676,
+    "mtime": 1795603532.5201092,
+    "exported": true
+  },
+  {
+    "name": "mdi_top15_reference_simba517_Sniffing.csv",
+    "path": "outputs/mdi_top15_reference_simba517_Sniffing.csv",
+    "type": "file",
+    "size": 1839,
+    "mtime": 1795603532.5361092,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_AP_engineered_Attack.csv",
+    "path": "outputs/perm_top15_AP_engineered_Attack.csv",
+    "type": "file",
+    "size": 2174,
+    "mtime": 1795603532.452109,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_AP_engineered_Sniffing.csv",
+    "path": "outputs/perm_top15_AP_engineered_Sniffing.csv",
+    "type": "file",
+    "size": 1790,
+    "mtime": 1795603532.472109,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_AP_provided50_Attack.csv",
+    "path": "outputs/perm_top15_AP_provided50_Attack.csv",
+    "type": "file",
+    "size": 1766,
+    "mtime": 1795603532.488109,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_AP_provided50_Sniffing.csv",
+    "path": "outputs/perm_top15_AP_provided50_Sniffing.csv",
+    "type": "file",
+    "size": 1848,
+    "mtime": 1795603532.5001092,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_AP_reference_simba517_Attack.csv",
+    "path": "outputs/perm_top15_AP_reference_simba517_Attack.csv",
+    "type": "file",
+    "size": 1810,
+    "mtime": 1795603532.5161092,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_AP_reference_simba517_Sniffing.csv",
+    "path": "outputs/perm_top15_AP_reference_simba517_Sniffing.csv",
+    "type": "file",
+    "size": 1235,
+    "mtime": 1795603532.5321093,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_F1_engineered_Attack.csv",
+    "path": "outputs/perm_top15_F1_engineered_Attack.csv",
+    "type": "file",
+    "size": 2217,
+    "mtime": 1795603532.4481091,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_F1_engineered_Sniffing.csv",
+    "path": "outputs/perm_top15_F1_engineered_Sniffing.csv",
+    "type": "file",
+    "size": 2211,
+    "mtime": 1795603532.4681091,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_F1_provided50_Attack.csv",
+    "path": "outputs/perm_top15_F1_provided50_Attack.csv",
+    "type": "file",
+    "size": 1987,
+    "mtime": 1795603532.4841092,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_F1_provided50_Sniffing.csv",
+    "path": "outputs/perm_top15_F1_provided50_Sniffing.csv",
+    "type": "file",
+    "size": 1989,
+    "mtime": 1795603532.5001092,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_F1_reference_simba517_Attack.csv",
+    "path": "outputs/perm_top15_F1_reference_simba517_Attack.csv",
+    "type": "file",
+    "size": 1547,
+    "mtime": 1795603532.5161092,
+    "exported": true
+  },
+  {
+    "name": "perm_top15_F1_reference_simba517_Sniffing.csv",
+    "path": "outputs/perm_top15_F1_reference_simba517_Sniffing.csv",
+    "type": "file",
+    "size": 1668,
+    "mtime": 1795603532.5321093,
+    "exported": true
+  },
+  {
+    "name": "permutation_importance_all.csv",
+    "path": "outputs/permutation_importance_all.csv",
+    "type": "file",
+    "size": 242531,
+    "mtime": 1795603532.404109,
+    "exported": true
+  },
+  {
+    "name": "pip.log",
+    "path": "outputs/pip.log",
+    "type": "file",
+    "size": 3222,
+    "mtime": 1795600388.5806794,
+    "exported": true
+  },
+  {
+    "name": "reference_cv_metrics.csv",
+    "path": "outputs/reference_cv_metrics.csv",
+    "type": "file",
+    "size": 2790,
+    "mtime": 1795601130.1704884,
+    "exported": true
+  },
+  {
+    "name": "reference_cv_predictions.csv",
+    "path": "outputs/reference_cv_predictions.csv",
+    "type": "file",
+    "size": 324355,
+    "mtime": 1795601130.2024887,
+    "exported": true
+  },
+  {
+    "name": "report_tables.md",
+    "path": "outputs/report_tables.md",
+    "type": "file",
+    "size": 6823,
+    "mtime": 1795603635.256309,
+    "exported": true
+  },
+  {
+    "name": "shap_category_role_shares.csv",
+    "path": "outputs/shap_category_role_shares.csv",
+    "type": "file",
+    "size": 13942,
+    "mtime": 1795601832.6647382,
+    "exported": true
+  },
+  {
+    "name": "shap_episode_profiles.csv",
+    "path": "outputs/shap_episode_profiles.csv",
+    "type": "file",
+    "size": 1521,
+    "mtime": 1795601860.3009994,
+    "exported": true
+  },
+  {
+    "name": "shap_mean_abs_all.csv",
+    "path": "outputs/shap_mean_abs_all.csv",
+    "type": "file",
+    "size": 194467,
+    "mtime": 1795601815.340575,
+    "exported": true
+  },
+  {
+    "name": "shap_role_balance_twin_features.csv",
+    "path": "outputs/shap_role_balance_twin_features.csv",
+    "type": "file",
+    "size": 372,
+    "mtime": 1795601860.2329988,
+    "exported": true
+  },
+  {
+    "name": "shap_share_differences.csv",
+    "path": "outputs/shap_share_differences.csv",
+    "type": "file",
+    "size": 7132,
+    "mtime": 1795601853.9409392,
+    "exported": true
+  },
+  {
+    "name": "shap_top15.csv",
+    "path": "outputs/shap_top15.csv",
+    "type": "file",
+    "size": 5947,
+    "mtime": 1795601815.348575,
+    "exported": true
+  },
+  {
+    "name": "together1_random_split_metrics.csv",
+    "path": "outputs/together1_random_split_metrics.csv",
+    "type": "file",
+    "size": 18198,
+    "mtime": 1795600993.3334246,
+    "exported": true
+  },
+  {
+    "name": "together1_random_split_summary.csv",
+    "path": "outputs/together1_random_split_summary.csv",
+    "type": "file",
+    "size": 9942,
+    "mtime": 1795600993.3694248,
+    "exported": true
+  },
+  {
+    "name": "together1_test_predictions_engineered.csv",
+    "path": "outputs/together1_test_predictions_engineered.csv",
+    "type": "file",
+    "size": 153555,
+    "mtime": 1795600993.3574247,
+    "exported": true
+  },
+  {
+    "name": "twin_feature_pairs.csv",
+    "path": "outputs/twin_feature_pairs.csv",
+    "type": "file",
+    "size": 9138,
+    "mtime": 1795601860.240999,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig01_ethogram.png",
+    "path": "report/images/fig01_ethogram.png",
+    "type": "file",
+    "size": 106718,
+    "mtime": 1795603612.6802588,
+    "exported": true
+  },
+  {
+    "name": "fig02_pr_curves_together1.png",
+    "path": "report/images/fig02_pr_curves_together1.png",
+    "type": "file",
+    "size": 115875,
+    "mtime": 1795601438.6331139,
+    "exported": true
+  },
+  {
+    "name": "fig03_confusion_matrices.png",
+    "path": "report/images/fig03_confusion_matrices.png",
+    "type": "file",
+    "size": 130243,
+    "mtime": 1795601439.7291236,
+    "exported": true
+  },
+  {
+    "name": "fig04_metrics_by_featureset.png",
+    "path": "report/images/fig04_metrics_by_featureset.png",
+    "type": "file",
+    "size": 78905,
+    "mtime": 1795601440.7331326,
+    "exported": true
+  },
+  {
+    "name": "fig05_pr_curves_reference.png",
+    "path": "report/images/fig05_pr_curves_reference.png",
+    "type": "file",
+    "size": 103936,
+    "mtime": 1795601441.6211405,
+    "exported": true
+  },
+  {
+    "name": "fig06_feature_validation.png",
+    "path": "report/images/fig06_feature_validation.png",
+    "type": "file",
+    "size": 98449,
+    "mtime": 1795601442.8491514,
+    "exported": true
+  },
+  {
+    "name": "fig07_permutation_top15_engineered.png",
+    "path": "report/images/fig07_permutation_top15_engineered.png",
+    "type": "file",
+    "size": 277347,
+    "mtime": 1795603588.0842078,
+    "exported": true
+  },
+  {
+    "name": "fig08a_permutation_top15_provided50.png",
+    "path": "report/images/fig08a_permutation_top15_provided50.png",
+    "type": "file",
+    "size": 205939,
+    "mtime": 1795603591.2842143,
+    "exported": true
+  },
+  {
+    "name": "fig08b_permutation_top15_reference_simba517.png",
+    "path": "report/images/fig08b_permutation_top15_reference_simba517.png",
+    "type": "file",
+    "size": 283597,
+    "mtime": 1795603593.8882196,
+    "exported": true
+  },
+  {
+    "name": "fig09_grouped_permutation.png",
+    "path": "report/images/fig09_grouped_permutation.png",
+    "type": "file",
+    "size": 116501,
+    "mtime": 1795603595.6842232,
+    "exported": true
+  },
+  {
+    "name": "fig10_shap_category_role_shares.png",
+    "path": "report/images/fig10_shap_category_role_shares.png",
+    "type": "file",
+    "size": 100298,
+    "mtime": 1795601943.3537881,
+    "exported": true
+  },
+  {
+    "name": "fig11_shap_condition_differences.png",
+    "path": "report/images/fig11_shap_condition_differences.png",
+    "type": "file",
+    "size": 112931,
+    "mtime": 1795601944.6058002,
+    "exported": true
+  },
+  {
+    "name": "fig12_shap_top_feature_diffs.png",
+    "path": "report/images/fig12_shap_top_feature_diffs.png",
+    "type": "file",
+    "size": 162917,
+    "mtime": 1795601946.0018134,
+    "exported": true
+  },
+  {
+    "name": "fig13_shap_episode_profiles.png",
+    "path": "report/images/fig13_shap_episode_profiles.png",
+    "type": "file",
+    "size": 53456,
+    "mtime": 1795601946.7018201,
+    "exported": true
+  },
+  {
+    "name": "fig14_validity_leakage.png",
+    "path": "report/images/fig14_validity_leakage.png",
+    "type": "file",
+    "size": 153124,
+    "mtime": 1795601972.0260615,
+    "exported": true
+  },
+  {
+    "name": "fig15_mdi_top15.png",
+    "path": "report/images/fig15_mdi_top15.png",
+    "type": "file",
+    "size": 229192,
+    "mtime": 1795603597.7602274,
+    "exported": true
+  },
+  {
+    "name": "fig_shap_bar_Attack.png",
+    "path": "report/images/fig_shap_bar_Attack.png",
+    "type": "file",
+    "size": 98177,
+    "mtime": 1795601817.2885933,
+    "exported": true
+  },
+  {
+    "name": "fig_shap_bar_Sniffing.png",
+    "path": "report/images/fig_shap_bar_Sniffing.png",
+    "type": "file",
+    "size": 101649,
+    "mtime": 1795601819.8886178,
+    "exported": true
+  },
+  {
+    "name": "fig_shap_beeswarm_Attack.png",
+    "path": "report/images/fig_shap_beeswarm_Attack.png",
+    "type": "file",
+    "size": 238738,
+    "mtime": 1795601816.3645847,
+    "exported": true
+  },
+  {
+    "name": "fig_shap_beeswarm_Sniffing.png",
+    "path": "report/images/fig_shap_beeswarm_Sniffing.png",
+    "type": "file",
+    "size": 212780,
+    "mtime": 1795601818.8806083,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 46978,
+    "mtime": 1795603833.2088783,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5335,
+    "mtime": 1795600279.6955159,
+    "exported": true
+  }
+]

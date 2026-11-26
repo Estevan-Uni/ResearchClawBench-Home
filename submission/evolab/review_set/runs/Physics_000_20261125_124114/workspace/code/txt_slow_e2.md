@@ -1,0 +1,1 @@
+The slow-deposition run (τ_dep = 160 τ, four times slower; 1 run) also grows (2, 2) (annealed F1 0.91, recall 0.95), 17.2 ε above the ideal seed+(1,3) cluster. A four-fold slower flux therefore does not restore the conservative step on this seed.

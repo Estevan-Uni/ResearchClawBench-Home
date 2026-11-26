@@ -1,0 +1,10 @@
+72 jobs
+0 eu Germany (north) const Commercial Flat 0.49% 3.6105844681051025 10.8
+10 eu Germany (north) const Commercial ir 3% 4.1696738976123395 15.4
+20 eu Spain (+2,000 km pipe) const Commercial Moderate 2.15% 2.8552588476312772 13.0
+30 eu Spain (+2,000 km pipe) const Offtake ir 5% 3.1335345623439634 10.5
+40 eu Germany (north) flex Offtake Extreme 4.29% 4.089596526321409 2.7
+50 eu Germany (north) flex Commercial ir 6% 4.6309684257586845 2.5
+60 eu Spain (+2,000 km pipe) flex Commercial ir 0% 2.444485468350425 2.9
+70 eu Spain (+2,000 km pipe) flex Zero Zero 1.7792764292495002 2.7
+done

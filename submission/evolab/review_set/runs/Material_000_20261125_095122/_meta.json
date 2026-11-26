@@ -1,0 +1,18 @@
+{
+  "run_id": "Material_000_20261125_095122",
+  "task_id": "Material_000",
+  "timestamp": "20261125_095122",
+  "status": "completed",
+  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Material_000/g2/solve/attempt-00001/Material_000/workspace",
+  "agent_name": "EvoLab",
+  "model": "claude-opus-5-5",
+  "duration_seconds": 7523.674,
+  "cost_usd": 9.189339,
+  "known_cost_usd": 9.189339,
+  "unknown_cost_attempts": 0,
+  "cost_scope": "G1 + E1 + G2, solver and judge, including retries",
+  "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
+  "elapsed_including_queue_seconds": 10562.148,
+  "selected_generation": 2,
+  "selection": "higher of G1 and G2 judge scores"
+}

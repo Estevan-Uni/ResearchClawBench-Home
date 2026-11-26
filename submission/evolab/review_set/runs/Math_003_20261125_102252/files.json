@@ -1,0 +1,1801 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "build_aux_examples.py",
+    "path": "code/build_aux_examples.py",
+    "type": "file",
+    "size": 2636,
+    "mtime": 1795604026.081603,
+    "exported": true
+  },
+  {
+    "name": "checker.py",
+    "path": "code/checker.py",
+    "type": "file",
+    "size": 20499,
+    "mtime": 1795603486.1320457,
+    "exported": true
+  },
+  {
+    "name": "depth2.py",
+    "path": "code/depth2.py",
+    "type": "file",
+    "size": 3032,
+    "mtime": 1795606248.5093505,
+    "exported": true
+  },
+  {
+    "name": "eval_search.py",
+    "path": "code/eval_search.py",
+    "type": "file",
+    "size": 2764,
+    "mtime": 1795605377.895313,
+    "exported": true
+  },
+  {
+    "name": "fig_2004.py",
+    "path": "code/fig_2004.py",
+    "type": "file",
+    "size": 3546,
+    "mtime": 1795604268.330671,
+    "exported": true
+  },
+  {
+    "name": "fig_data.py",
+    "path": "code/fig_data.py",
+    "type": "file",
+    "size": 1672,
+    "mtime": 1795604215.2504256,
+    "exported": true
+  },
+  {
+    "name": "figstyle.py",
+    "path": "code/figstyle.py",
+    "type": "file",
+    "size": 873,
+    "mtime": 1795604199.0263517,
+    "exported": true
+  },
+  {
+    "name": "gen2004.py",
+    "path": "code/gen2004.py",
+    "type": "file",
+    "size": 6206,
+    "mtime": 1795603567.152168,
+    "exported": true
+  },
+  {
+    "name": "geo",
+    "path": "code/geo",
+    "type": "directory"
+  },
+  {
+    "name": "__init__.py",
+    "path": "code/geo/__init__.py",
+    "type": "file",
+    "size": 0,
+    "mtime": 1795602658.7926247,
+    "exported": true
+  },
+  {
+    "name": "aux.py",
+    "path": "code/geo/aux.py",
+    "type": "file",
+    "size": 10865,
+    "mtime": 1795603309.4799924,
+    "exported": true
+  },
+  {
+    "name": "dd.py",
+    "path": "code/geo/dd.py",
+    "type": "file",
+    "size": 32838,
+    "mtime": 1795604163.0381896,
+    "exported": true
+  },
+  {
+    "name": "numeric.py",
+    "path": "code/geo/numeric.py",
+    "type": "file",
+    "size": 15447,
+    "mtime": 1795602658.780625,
+    "exported": true
+  },
+  {
+    "name": "problem.py",
+    "path": "code/geo/problem.py",
+    "type": "file",
+    "size": 7626,
+    "mtime": 1795602679.3122869,
+    "exported": true
+  },
+  {
+    "name": "trace.py",
+    "path": "code/geo/trace.py",
+    "type": "file",
+    "size": 8970,
+    "mtime": 1795603486.1320457,
+    "exported": true
+  },
+  {
+    "name": "killpat.sh",
+    "path": "code/killpat.sh",
+    "type": "file",
+    "size": 311,
+    "mtime": 1795603524.7200973,
+    "exported": true
+  },
+  {
+    "name": "label_aux.py",
+    "path": "code/label_aux.py",
+    "type": "file",
+    "size": 3221,
+    "mtime": 1795604951.1155283,
+    "exported": true
+  },
+  {
+    "name": "make_figures.py",
+    "path": "code/make_figures.py",
+    "type": "file",
+    "size": 8204,
+    "mtime": 1795606309.1059332,
+    "exported": true
+  },
+  {
+    "name": "mutation_test.py",
+    "path": "code/mutation_test.py",
+    "type": "file",
+    "size": 4224,
+    "mtime": 1795603886.5890648,
+    "exported": true
+  },
+  {
+    "name": "pdf_text.py",
+    "path": "code/pdf_text.py",
+    "type": "file",
+    "size": 935,
+    "mtime": 1795602532.22749,
+    "exported": true
+  },
+  {
+    "name": "prior.py",
+    "path": "code/prior.py",
+    "type": "file",
+    "size": 3879,
+    "mtime": 1795605848.8212485,
+    "exported": true
+  },
+  {
+    "name": "results_table.py",
+    "path": "code/results_table.py",
+    "type": "file",
+    "size": 2385,
+    "mtime": 1795606357.6023943,
+    "exported": true
+  },
+  {
+    "name": "run_ablation.py",
+    "path": "code/run_ablation.py",
+    "type": "file",
+    "size": 1205,
+    "mtime": 1795604163.0541897,
+    "exported": true
+  },
+  {
+    "name": "run_ddar.py",
+    "path": "code/run_ddar.py",
+    "type": "file",
+    "size": 746,
+    "mtime": 1795602945.273293,
+    "exported": true
+  },
+  {
+    "name": "run_synthA.sh",
+    "path": "code/run_synthA.sh",
+    "type": "file",
+    "size": 289,
+    "mtime": 1795604050.3257031,
+    "exported": true
+  },
+  {
+    "name": "solve.py",
+    "path": "code/solve.py",
+    "type": "file",
+    "size": 964,
+    "mtime": 1795603083.616512,
+    "exported": true
+  },
+  {
+    "name": "synth.py",
+    "path": "code/synth.py",
+    "type": "file",
+    "size": 13946,
+    "mtime": 1795605260.1654851,
+    "exported": true
+  },
+  {
+    "name": "synth_stats.py",
+    "path": "code/synth_stats.py",
+    "type": "file",
+    "size": 2753,
+    "mtime": 1795606447.0192337,
+    "exported": true
+  },
+  {
+    "name": "test_pool.py",
+    "path": "code/test_pool.py",
+    "type": "file",
+    "size": 812,
+    "mtime": 1795603220.3081048,
+    "exported": true
+  },
+  {
+    "name": "test_pool2.py",
+    "path": "code/test_pool2.py",
+    "type": "file",
+    "size": 607,
+    "mtime": 1795603309.4919925,
+    "exported": true
+  },
+  {
+    "name": "trace_back.py",
+    "path": "code/trace_back.py",
+    "type": "file",
+    "size": 11145,
+    "mtime": 1795605391.3715107,
+    "exported": true
+  },
+  {
+    "name": "train_prior.py",
+    "path": "code/train_prior.py",
+    "type": "file",
+    "size": 4494,
+    "mtime": 1795605848.8372486,
+    "exported": true
+  },
+  {
+    "name": "transfer.py",
+    "path": "code/transfer.py",
+    "type": "file",
+    "size": 2078,
+    "mtime": 1795605377.899313,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "ablation.log",
+    "path": "outputs/ablation.log",
+    "type": "file",
+    "size": 655,
+    "mtime": 1795605707.67564,
+    "exported": true
+  },
+  {
+    "name": "aux_labels",
+    "path": "outputs/aux_labels",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2000_p6.json",
+    "path": "outputs/aux_labels/imo_2000_p6.json",
+    "type": "file",
+    "size": 560924,
+    "mtime": 1795603781.56071,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p1.json",
+    "path": "outputs/aux_labels/imo_2004_p1.json",
+    "type": "file",
+    "size": 331590,
+    "mtime": 1795603822.7808435,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a.json",
+    "path": "outputs/aux_labels/imo_2008_p1a.json",
+    "type": "file",
+    "size": 441918,
+    "mtime": 1795603891.8330839,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1b.json",
+    "path": "outputs/aux_labels/imo_2008_p1b.json",
+    "type": "file",
+    "size": 442156,
+    "mtime": 1795603995.6174798,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p6.json",
+    "path": "outputs/aux_labels/imo_2008_p6.json",
+    "type": "file",
+    "size": 517376,
+    "mtime": 1795604323.8149335,
+    "exported": true
+  },
+  {
+    "name": "imo_2009_p2.json",
+    "path": "outputs/aux_labels/imo_2009_p2.json",
+    "type": "file",
+    "size": 392030,
+    "mtime": 1795604370.0551565,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p2.json",
+    "path": "outputs/aux_labels/imo_2010_p2.json",
+    "type": "file",
+    "size": 336185,
+    "mtime": 1795604410.4433537,
+    "exported": true
+  },
+  {
+    "name": "imo_2011_p6.json",
+    "path": "outputs/aux_labels/imo_2011_p6.json",
+    "type": "file",
+    "size": 521711,
+    "mtime": 1795604681.1367285,
+    "exported": true
+  },
+  {
+    "name": "imo_2012_p5.json",
+    "path": "outputs/aux_labels/imo_2012_p5.json",
+    "type": "file",
+    "size": 193944,
+    "mtime": 1795604688.100765,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p3.json",
+    "path": "outputs/aux_labels/imo_2015_p3.json",
+    "type": "file",
+    "size": 434461,
+    "mtime": 1795604727.8896208,
+    "exported": true
+  },
+  {
+    "name": "imo_2018_p1.json",
+    "path": "outputs/aux_labels/imo_2018_p1.json",
+    "type": "file",
+    "size": 197843,
+    "mtime": 1795604738.3579392,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p2.json",
+    "path": "outputs/aux_labels/imo_2019_p2.json",
+    "type": "file",
+    "size": 294053,
+    "mtime": 1795604754.0344079,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p6.json",
+    "path": "outputs/aux_labels/imo_2019_p6.json",
+    "type": "file",
+    "size": 500834,
+    "mtime": 1795604854.2131755,
+    "exported": true
+  },
+  {
+    "name": "imo_2020_p1.json",
+    "path": "outputs/aux_labels/imo_2020_p1.json",
+    "type": "file",
+    "size": 329126,
+    "mtime": 1795604892.3661366,
+    "exported": true
+  },
+  {
+    "name": "imo_2021_p3.json",
+    "path": "outputs/aux_labels/imo_2021_p3.json",
+    "type": "file",
+    "size": 337880,
+    "mtime": 1795604917.2307382,
+    "exported": true
+  },
+  {
+    "name": "aux_labels_ext",
+    "path": "outputs/aux_labels_ext",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2004_p1.json",
+    "path": "outputs/aux_labels_ext/imo_2004_p1.json",
+    "type": "file",
+    "size": 61685,
+    "mtime": 1795605191.0043156,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a.json",
+    "path": "outputs/aux_labels_ext/imo_2008_p1a.json",
+    "type": "file",
+    "size": 252135,
+    "mtime": 1795605001.3326414,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1b.json",
+    "path": "outputs/aux_labels_ext/imo_2008_p1b.json",
+    "type": "file",
+    "size": 252332,
+    "mtime": 1795605052.0457003,
+    "exported": true
+  },
+  {
+    "name": "imo_2009_p2.json",
+    "path": "outputs/aux_labels_ext/imo_2009_p2.json",
+    "type": "file",
+    "size": 65623,
+    "mtime": 1795605198.2764423,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p2.json",
+    "path": "outputs/aux_labels_ext/imo_2010_p2.json",
+    "type": "file",
+    "size": 76347,
+    "mtime": 1795605206.2125797,
+    "exported": true
+  },
+  {
+    "name": "imo_2012_p5.json",
+    "path": "outputs/aux_labels_ext/imo_2012_p5.json",
+    "type": "file",
+    "size": 475,
+    "mtime": 1795605052.1697028,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p3.json",
+    "path": "outputs/aux_labels_ext/imo_2015_p3.json",
+    "type": "file",
+    "size": 161895,
+    "mtime": 1795605223.4648743,
+    "exported": true
+  },
+  {
+    "name": "imo_2018_p1.json",
+    "path": "outputs/aux_labels_ext/imo_2018_p1.json",
+    "type": "file",
+    "size": 474,
+    "mtime": 1795605223.5288754,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p2.json",
+    "path": "outputs/aux_labels_ext/imo_2019_p2.json",
+    "type": "file",
+    "size": 27438,
+    "mtime": 1795605053.7737353,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p6.json",
+    "path": "outputs/aux_labels_ext/imo_2019_p6.json",
+    "type": "file",
+    "size": 518659,
+    "mtime": 1795605149.2275693,
+    "exported": true
+  },
+  {
+    "name": "imo_2020_p1.json",
+    "path": "outputs/aux_labels_ext/imo_2020_p1.json",
+    "type": "file",
+    "size": 263367,
+    "mtime": 1795605179.140107,
+    "exported": true
+  },
+  {
+    "name": "imo_2021_p3.json",
+    "path": "outputs/aux_labels_ext/imo_2021_p3.json",
+    "type": "file",
+    "size": 64263,
+    "mtime": 1795605185.048211,
+    "exported": true
+  },
+  {
+    "name": "build_aux.log",
+    "path": "outputs/build_aux.log",
+    "type": "file",
+    "size": 798,
+    "mtime": 1795605539.8095582,
+    "exported": true
+  },
+  {
+    "name": "ddar_ablation.json",
+    "path": "outputs/ddar_ablation.json",
+    "type": "file",
+    "size": 13599,
+    "mtime": 1795605707.67564,
+    "exported": true
+  },
+  {
+    "name": "depth2.log",
+    "path": "outputs/depth2.log",
+    "type": "file",
+    "size": 2544,
+    "mtime": 1795607001.552234,
+    "exported": true
+  },
+  {
+    "name": "depth2_learned.json",
+    "path": "outputs/depth2_learned.json",
+    "type": "file",
+    "size": 984,
+    "mtime": 1795607001.556234,
+    "exported": true
+  },
+  {
+    "name": "final_proofs",
+    "path": "outputs/final_proofs",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2000_p1.json",
+    "path": "outputs/final_proofs/imo_2000_p1.json",
+    "type": "file",
+    "size": 11876,
+    "mtime": 1795607025.432444,
+    "exported": true
+  },
+  {
+    "name": "imo_2000_p1.txt",
+    "path": "outputs/final_proofs/imo_2000_p1.txt",
+    "type": "file",
+    "size": 5491,
+    "mtime": 1795607025.436444,
+    "exported": true
+  },
+  {
+    "name": "imo_2000_p6.json",
+    "path": "outputs/final_proofs/imo_2000_p6.json",
+    "type": "file",
+    "size": 21861,
+    "mtime": 1795607025.5564451,
+    "exported": true
+  },
+  {
+    "name": "imo_2000_p6.txt",
+    "path": "outputs/final_proofs/imo_2000_p6.txt",
+    "type": "file",
+    "size": 10376,
+    "mtime": 1795607025.560445,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2a.json",
+    "path": "outputs/final_proofs/imo_2002_p2a.json",
+    "type": "file",
+    "size": 6833,
+    "mtime": 1795607025.5724452,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2a.txt",
+    "path": "outputs/final_proofs/imo_2002_p2a.txt",
+    "type": "file",
+    "size": 2571,
+    "mtime": 1795607025.5724452,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2b.json",
+    "path": "outputs/final_proofs/imo_2002_p2b.json",
+    "type": "file",
+    "size": 3479,
+    "mtime": 1795607025.5764453,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2b.txt",
+    "path": "outputs/final_proofs/imo_2002_p2b.txt",
+    "type": "file",
+    "size": 1156,
+    "mtime": 1795607025.5764453,
+    "exported": true
+  },
+  {
+    "name": "imo_2003_p4.json",
+    "path": "outputs/final_proofs/imo_2003_p4.json",
+    "type": "file",
+    "size": 10084,
+    "mtime": 1795607025.6044455,
+    "exported": true
+  },
+  {
+    "name": "imo_2003_p4.txt",
+    "path": "outputs/final_proofs/imo_2003_p4.txt",
+    "type": "file",
+    "size": 4485,
+    "mtime": 1795607025.6044455,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p1.json",
+    "path": "outputs/final_proofs/imo_2004_p1.json",
+    "type": "file",
+    "size": 7433,
+    "mtime": 1795607025.6284459,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p1.txt",
+    "path": "outputs/final_proofs/imo_2004_p1.txt",
+    "type": "file",
+    "size": 2911,
+    "mtime": 1795607025.6324458,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p5.json",
+    "path": "outputs/final_proofs/imo_2004_p5.json",
+    "type": "file",
+    "size": 3240,
+    "mtime": 1795607025.6364458,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p5.txt",
+    "path": "outputs/final_proofs/imo_2004_p5.txt",
+    "type": "file",
+    "size": 1196,
+    "mtime": 1795607025.6364458,
+    "exported": true
+  },
+  {
+    "name": "imo_2005_p5.json",
+    "path": "outputs/final_proofs/imo_2005_p5.json",
+    "type": "file",
+    "size": 10272,
+    "mtime": 1795607025.6724463,
+    "exported": true
+  },
+  {
+    "name": "imo_2005_p5.txt",
+    "path": "outputs/final_proofs/imo_2005_p5.txt",
+    "type": "file",
+    "size": 4578,
+    "mtime": 1795607025.6724463,
+    "exported": true
+  },
+  {
+    "name": "imo_2007_p4.json",
+    "path": "outputs/final_proofs/imo_2007_p4.json",
+    "type": "file",
+    "size": 8361,
+    "mtime": 1795607025.6964464,
+    "exported": true
+  },
+  {
+    "name": "imo_2007_p4.txt",
+    "path": "outputs/final_proofs/imo_2007_p4.txt",
+    "type": "file",
+    "size": 3463,
+    "mtime": 1795607025.6964464,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a.json",
+    "path": "outputs/final_proofs/imo_2008_p1a.json",
+    "type": "file",
+    "size": 8861,
+    "mtime": 1795607025.7204466,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a.txt",
+    "path": "outputs/final_proofs/imo_2008_p1a.txt",
+    "type": "file",
+    "size": 3719,
+    "mtime": 1795607025.7204466,
+    "exported": true
+  },
+  {
+    "name": "imo_2009_p2.json",
+    "path": "outputs/final_proofs/imo_2009_p2.json",
+    "type": "file",
+    "size": 8916,
+    "mtime": 1795607025.7364466,
+    "exported": true
+  },
+  {
+    "name": "imo_2009_p2.txt",
+    "path": "outputs/final_proofs/imo_2009_p2.txt",
+    "type": "file",
+    "size": 3728,
+    "mtime": 1795607025.7364466,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p2.json",
+    "path": "outputs/final_proofs/imo_2010_p2.json",
+    "type": "file",
+    "size": 8953,
+    "mtime": 1795607025.752447,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p2.txt",
+    "path": "outputs/final_proofs/imo_2010_p2.txt",
+    "type": "file",
+    "size": 3737,
+    "mtime": 1795607025.752447,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p4.json",
+    "path": "outputs/final_proofs/imo_2010_p4.json",
+    "type": "file",
+    "size": 5882,
+    "mtime": 1795607025.760447,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p4.txt",
+    "path": "outputs/final_proofs/imo_2010_p4.txt",
+    "type": "file",
+    "size": 2340,
+    "mtime": 1795607025.760447,
+    "exported": true
+  },
+  {
+    "name": "imo_2012_p1.json",
+    "path": "outputs/final_proofs/imo_2012_p1.json",
+    "type": "file",
+    "size": 13122,
+    "mtime": 1795607025.8044474,
+    "exported": true
+  },
+  {
+    "name": "imo_2012_p1.txt",
+    "path": "outputs/final_proofs/imo_2012_p1.txt",
+    "type": "file",
+    "size": 6323,
+    "mtime": 1795607025.8084474,
+    "exported": true
+  },
+  {
+    "name": "imo_2013_p4.json",
+    "path": "outputs/final_proofs/imo_2013_p4.json",
+    "type": "file",
+    "size": 8432,
+    "mtime": 1795607025.8164475,
+    "exported": true
+  },
+  {
+    "name": "imo_2013_p4.txt",
+    "path": "outputs/final_proofs/imo_2013_p4.txt",
+    "type": "file",
+    "size": 3503,
+    "mtime": 1795607025.8204474,
+    "exported": true
+  },
+  {
+    "name": "imo_2014_p4.json",
+    "path": "outputs/final_proofs/imo_2014_p4.json",
+    "type": "file",
+    "size": 5191,
+    "mtime": 1795607025.8244474,
+    "exported": true
+  },
+  {
+    "name": "imo_2014_p4.txt",
+    "path": "outputs/final_proofs/imo_2014_p4.txt",
+    "type": "file",
+    "size": 1954,
+    "mtime": 1795607025.8244474,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p3.json",
+    "path": "outputs/final_proofs/imo_2015_p3.json",
+    "type": "file",
+    "size": 21790,
+    "mtime": 1795607025.8924482,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p3.txt",
+    "path": "outputs/final_proofs/imo_2015_p3.txt",
+    "type": "file",
+    "size": 11110,
+    "mtime": 1795607025.8964481,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p4.json",
+    "path": "outputs/final_proofs/imo_2015_p4.json",
+    "type": "file",
+    "size": 10053,
+    "mtime": 1795607025.9324484,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p4.txt",
+    "path": "outputs/final_proofs/imo_2015_p4.txt",
+    "type": "file",
+    "size": 4217,
+    "mtime": 1795607025.9364486,
+    "exported": true
+  },
+  {
+    "name": "imo_2016_p1.json",
+    "path": "outputs/final_proofs/imo_2016_p1.json",
+    "type": "file",
+    "size": 8334,
+    "mtime": 1795607025.9604487,
+    "exported": true
+  },
+  {
+    "name": "imo_2016_p1.txt",
+    "path": "outputs/final_proofs/imo_2016_p1.txt",
+    "type": "file",
+    "size": 3461,
+    "mtime": 1795607025.9604487,
+    "exported": true
+  },
+  {
+    "name": "imo_2017_p4.json",
+    "path": "outputs/final_proofs/imo_2017_p4.json",
+    "type": "file",
+    "size": 7516,
+    "mtime": 1795607025.9724488,
+    "exported": true
+  },
+  {
+    "name": "imo_2017_p4.txt",
+    "path": "outputs/final_proofs/imo_2017_p4.txt",
+    "type": "file",
+    "size": 3102,
+    "mtime": 1795607025.9724488,
+    "exported": true
+  },
+  {
+    "name": "imo_2018_p1.json",
+    "path": "outputs/final_proofs/imo_2018_p1.json",
+    "type": "file",
+    "size": 5539,
+    "mtime": 1795607025.980449,
+    "exported": true
+  },
+  {
+    "name": "imo_2018_p1.txt",
+    "path": "outputs/final_proofs/imo_2018_p1.txt",
+    "type": "file",
+    "size": 2032,
+    "mtime": 1795607025.980449,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p6.json",
+    "path": "outputs/final_proofs/imo_2019_p6.json",
+    "type": "file",
+    "size": 19952,
+    "mtime": 1795607026.0444493,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p6.txt",
+    "path": "outputs/final_proofs/imo_2019_p6.txt",
+    "type": "file",
+    "size": 9548,
+    "mtime": 1795607026.0444493,
+    "exported": true
+  },
+  {
+    "name": "imo_2020_p1.json",
+    "path": "outputs/final_proofs/imo_2020_p1.json",
+    "type": "file",
+    "size": 8169,
+    "mtime": 1795607026.0844498,
+    "exported": true
+  },
+  {
+    "name": "imo_2020_p1.txt",
+    "path": "outputs/final_proofs/imo_2020_p1.txt",
+    "type": "file",
+    "size": 3328,
+    "mtime": 1795607026.0844498,
+    "exported": true
+  },
+  {
+    "name": "imo_2022_p4.json",
+    "path": "outputs/final_proofs/imo_2022_p4.json",
+    "type": "file",
+    "size": 5041,
+    "mtime": 1795607026.09245,
+    "exported": true
+  },
+  {
+    "name": "imo_2022_p4.txt",
+    "path": "outputs/final_proofs/imo_2022_p4.txt",
+    "type": "file",
+    "size": 1863,
+    "mtime": 1795607026.0964499,
+    "exported": true
+  },
+  {
+    "name": "gen2004",
+    "path": "outputs/gen2004",
+    "type": "directory"
+  },
+  {
+    "name": "V0_original_numeric.json",
+    "path": "outputs/gen2004/V0_original_numeric.json",
+    "type": "file",
+    "size": 13600,
+    "mtime": 1795603575.3801832,
+    "exported": true
+  },
+  {
+    "name": "V0_original_proof.json",
+    "path": "outputs/gen2004/V0_original_proof.json",
+    "type": "file",
+    "size": 11259,
+    "mtime": 1795603573.9121804,
+    "exported": true
+  },
+  {
+    "name": "V0_original_proof.txt",
+    "path": "outputs/gen2004/V0_original_proof.txt",
+    "type": "file",
+    "size": 2911,
+    "mtime": 1795603573.9121804,
+    "exported": true
+  },
+  {
+    "name": "V1_bline_numeric.json",
+    "path": "outputs/gen2004/V1_bline_numeric.json",
+    "type": "file",
+    "size": 17993,
+    "mtime": 1795603608.4642496,
+    "exported": true
+  },
+  {
+    "name": "V1_bline_proof.json",
+    "path": "outputs/gen2004/V1_bline_proof.json",
+    "type": "file",
+    "size": 12120,
+    "mtime": 1795603607.3442473,
+    "exported": true
+  },
+  {
+    "name": "V1_bline_proof.txt",
+    "path": "outputs/gen2004/V1_bline_proof.txt",
+    "type": "file",
+    "size": 3248,
+    "mtime": 1795603607.3442473,
+    "exported": true
+  },
+  {
+    "name": "V2_free_centre_numeric.json",
+    "path": "outputs/gen2004/V2_free_centre_numeric.json",
+    "type": "file",
+    "size": 19720,
+    "mtime": 1795603638.1643157,
+    "exported": true
+  },
+  {
+    "name": "V2_free_centre_proof.json",
+    "path": "outputs/gen2004/V2_free_centre_proof.json",
+    "type": "file",
+    "size": 10792,
+    "mtime": 1795603637.1603134,
+    "exported": true
+  },
+  {
+    "name": "V2_free_centre_proof.txt",
+    "path": "outputs/gen2004/V2_free_centre_proof.txt",
+    "type": "file",
+    "size": 2772,
+    "mtime": 1795603637.1603134,
+    "exported": true
+  },
+  {
+    "name": "V3_only_OM_eq_ON_numeric.json",
+    "path": "outputs/gen2004/V3_only_OM_eq_ON_numeric.json",
+    "type": "file",
+    "size": 19700,
+    "mtime": 1795603666.848385,
+    "exported": true
+  },
+  {
+    "name": "V3_only_OM_eq_ON_proof.json",
+    "path": "outputs/gen2004/V3_only_OM_eq_ON_proof.json",
+    "type": "file",
+    "size": 11603,
+    "mtime": 1795603665.976383,
+    "exported": true
+  },
+  {
+    "name": "V3_only_OM_eq_ON_proof.txt",
+    "path": "outputs/gen2004/V3_only_OM_eq_ON_proof.txt",
+    "type": "file",
+    "size": 3132,
+    "mtime": 1795603665.980383,
+    "exported": true
+  },
+  {
+    "name": "negative_controls.json",
+    "path": "outputs/gen2004/negative_controls.json",
+    "type": "file",
+    "size": 1178,
+    "mtime": 1795607141.8014646,
+    "exported": true
+  },
+  {
+    "name": "summary.json",
+    "path": "outputs/gen2004/summary.json",
+    "type": "file",
+    "size": 4728,
+    "mtime": 1795603666.848385,
+    "exported": true
+  },
+  {
+    "name": "generalisations",
+    "path": "outputs/generalisations",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2002_p2b_relax1.json",
+    "path": "outputs/generalisations/imo_2002_p2b_relax1.json",
+    "type": "file",
+    "size": 3485,
+    "mtime": 1795607120.121275,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2b_relax2.json",
+    "path": "outputs/generalisations/imo_2002_p2b_relax2.json",
+    "type": "file",
+    "size": 3465,
+    "mtime": 1795607120.357277,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2b_relax3.json",
+    "path": "outputs/generalisations/imo_2002_p2b_relax3.json",
+    "type": "file",
+    "size": 3462,
+    "mtime": 1795607120.573279,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2b_relax4.json",
+    "path": "outputs/generalisations/imo_2002_p2b_relax4.json",
+    "type": "file",
+    "size": 3469,
+    "mtime": 1795607120.8092809,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p1_relax1.json",
+    "path": "outputs/generalisations/imo_2004_p1_relax1.json",
+    "type": "file",
+    "size": 6472,
+    "mtime": 1795607121.5492873,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a_relax1.json",
+    "path": "outputs/generalisations/imo_2008_p1a_relax1.json",
+    "type": "file",
+    "size": 8860,
+    "mtime": 1795607122.5732963,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a_relax2.json",
+    "path": "outputs/generalisations/imo_2008_p1a_relax2.json",
+    "type": "file",
+    "size": 8849,
+    "mtime": 1795607123.5333047,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a_relax3.json",
+    "path": "outputs/generalisations/imo_2008_p1a_relax3.json",
+    "type": "file",
+    "size": 8853,
+    "mtime": 1795607124.5213134,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a_relax4.json",
+    "path": "outputs/generalisations/imo_2008_p1a_relax4.json",
+    "type": "file",
+    "size": 8851,
+    "mtime": 1795607125.4853218,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a_relax5.json",
+    "path": "outputs/generalisations/imo_2008_p1a_relax5.json",
+    "type": "file",
+    "size": 8852,
+    "mtime": 1795607126.533331,
+    "exported": true
+  },
+  {
+    "name": "label_aux.log",
+    "path": "outputs/label_aux.log",
+    "type": "file",
+    "size": 633,
+    "mtime": 1795604917.2307382,
+    "exported": true
+  },
+  {
+    "name": "label_aux_ext.log",
+    "path": "outputs/label_aux_ext.log",
+    "type": "file",
+    "size": 487,
+    "mtime": 1795605223.5288754,
+    "exported": true
+  },
+  {
+    "name": "main_results.json",
+    "path": "outputs/main_results.json",
+    "type": "file",
+    "size": 6826,
+    "mtime": 1795607026.0964499,
+    "exported": true
+  },
+  {
+    "name": "mutation_all.json",
+    "path": "outputs/mutation_all.json",
+    "type": "file",
+    "size": 715,
+    "mtime": 1795607091.7810266,
+    "exported": true
+  },
+  {
+    "name": "papers",
+    "path": "outputs/papers",
+    "type": "directory"
+  },
+  {
+    "name": "p0.txt",
+    "path": "outputs/papers/p0.txt",
+    "type": "file",
+    "size": 4219,
+    "mtime": 1795602534.7235146,
+    "exported": true
+  },
+  {
+    "name": "p1.txt",
+    "path": "outputs/papers/p1.txt",
+    "type": "file",
+    "size": 1,
+    "mtime": 1795602535.907526,
+    "exported": true
+  },
+  {
+    "name": "p2.txt",
+    "path": "outputs/papers/p2.txt",
+    "type": "file",
+    "size": 1372,
+    "mtime": 1795602535.9595265,
+    "exported": true
+  },
+  {
+    "name": "p3.txt",
+    "path": "outputs/papers/p3.txt",
+    "type": "file",
+    "size": 72693,
+    "mtime": 1795602536.2715297,
+    "exported": true
+  },
+  {
+    "name": "premise_usage.json",
+    "path": "outputs/premise_usage.json",
+    "type": "file",
+    "size": 18549,
+    "mtime": 1795607127.4053388,
+    "exported": true
+  },
+  {
+    "name": "prior_results.json",
+    "path": "outputs/prior_results.json",
+    "type": "file",
+    "size": 8474,
+    "mtime": 1795606221.4970882,
+    "exported": true
+  },
+  {
+    "name": "proofs_aux",
+    "path": "outputs/proofs_aux",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2000_p6",
+    "path": "outputs/proofs_aux/imo_2000_p6",
+    "type": "directory"
+  },
+  {
+    "name": "cand00074.json",
+    "path": "outputs/proofs_aux/imo_2000_p6/cand00074.json",
+    "type": "file",
+    "size": 27015,
+    "mtime": 1795603781.4567096,
+    "exported": true
+  },
+  {
+    "name": "cand00390.json",
+    "path": "outputs/proofs_aux/imo_2000_p6/cand00390.json",
+    "type": "file",
+    "size": 21411,
+    "mtime": 1795603781.4647098,
+    "exported": true
+  },
+  {
+    "name": "cand00518.json",
+    "path": "outputs/proofs_aux/imo_2000_p6/cand00518.json",
+    "type": "file",
+    "size": 21861,
+    "mtime": 1795603781.4687097,
+    "exported": true
+  },
+  {
+    "name": "cand01115.json",
+    "path": "outputs/proofs_aux/imo_2000_p6/cand01115.json",
+    "type": "file",
+    "size": 16623,
+    "mtime": 1795603781.4767098,
+    "exported": true
+  },
+  {
+    "name": "cand01602.json",
+    "path": "outputs/proofs_aux/imo_2000_p6/cand01602.json",
+    "type": "file",
+    "size": 18632,
+    "mtime": 1795603781.4807098,
+    "exported": true
+  },
+  {
+    "name": "cand01611.json",
+    "path": "outputs/proofs_aux/imo_2000_p6/cand01611.json",
+    "type": "file",
+    "size": 18417,
+    "mtime": 1795603781.4847097,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p1",
+    "path": "outputs/proofs_aux/imo_2004_p1",
+    "type": "directory"
+  },
+  {
+    "name": "cand00029.json",
+    "path": "outputs/proofs_aux/imo_2004_p1/cand00029.json",
+    "type": "file",
+    "size": 9351,
+    "mtime": 1795603822.7088432,
+    "exported": true
+  },
+  {
+    "name": "cand00154.json",
+    "path": "outputs/proofs_aux/imo_2004_p1/cand00154.json",
+    "type": "file",
+    "size": 7433,
+    "mtime": 1795603822.7128432,
+    "exported": true
+  },
+  {
+    "name": "cand00431.json",
+    "path": "outputs/proofs_aux/imo_2004_p1/cand00431.json",
+    "type": "file",
+    "size": 9702,
+    "mtime": 1795603822.7168431,
+    "exported": true
+  },
+  {
+    "name": "cand00490.json",
+    "path": "outputs/proofs_aux/imo_2004_p1/cand00490.json",
+    "type": "file",
+    "size": 6503,
+    "mtime": 1795603822.7208433,
+    "exported": true
+  },
+  {
+    "name": "cand00498.json",
+    "path": "outputs/proofs_aux/imo_2004_p1/cand00498.json",
+    "type": "file",
+    "size": 6503,
+    "mtime": 1795603822.7208433,
+    "exported": true
+  },
+  {
+    "name": "cand00549.json",
+    "path": "outputs/proofs_aux/imo_2004_p1/cand00549.json",
+    "type": "file",
+    "size": 7323,
+    "mtime": 1795603822.7208433,
+    "exported": true
+  },
+  {
+    "name": "imo_2009_p2",
+    "path": "outputs/proofs_aux/imo_2009_p2",
+    "type": "directory"
+  },
+  {
+    "name": "cand00397.json",
+    "path": "outputs/proofs_aux/imo_2009_p2/cand00397.json",
+    "type": "file",
+    "size": 8916,
+    "mtime": 1795604369.999156,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p2",
+    "path": "outputs/proofs_aux/imo_2010_p2",
+    "type": "directory"
+  },
+  {
+    "name": "cand00084.json",
+    "path": "outputs/proofs_aux/imo_2010_p2/cand00084.json",
+    "type": "file",
+    "size": 8953,
+    "mtime": 1795604410.3633533,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p3",
+    "path": "outputs/proofs_aux/imo_2015_p3",
+    "type": "directory"
+  },
+  {
+    "name": "cand00057.json",
+    "path": "outputs/proofs_aux/imo_2015_p3/cand00057.json",
+    "type": "file",
+    "size": 14580,
+    "mtime": 1795604727.805618,
+    "exported": true
+  },
+  {
+    "name": "cand00195.json",
+    "path": "outputs/proofs_aux/imo_2015_p3/cand00195.json",
+    "type": "file",
+    "size": 21790,
+    "mtime": 1795604727.8096182,
+    "exported": true
+  },
+  {
+    "name": "cand00304.json",
+    "path": "outputs/proofs_aux/imo_2015_p3/cand00304.json",
+    "type": "file",
+    "size": 20442,
+    "mtime": 1795604727.8136184,
+    "exported": true
+  },
+  {
+    "name": "imo_2018_p1",
+    "path": "outputs/proofs_aux/imo_2018_p1",
+    "type": "directory"
+  },
+  {
+    "name": "cand00412.json",
+    "path": "outputs/proofs_aux/imo_2018_p1/cand00412.json",
+    "type": "file",
+    "size": 5539,
+    "mtime": 1795604738.3259385,
+    "exported": true
+  },
+  {
+    "name": "proofs_aux_ext",
+    "path": "outputs/proofs_aux_ext",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2004_p1",
+    "path": "outputs/proofs_aux_ext/imo_2004_p1",
+    "type": "directory"
+  },
+  {
+    "name": "cand00003.json",
+    "path": "outputs/proofs_aux_ext/imo_2004_p1/cand00003.json",
+    "type": "file",
+    "size": 7552,
+    "mtime": 1795605190.9923155,
+    "exported": true
+  },
+  {
+    "name": "imo_2008_p1a",
+    "path": "outputs/proofs_aux_ext/imo_2008_p1a",
+    "type": "directory"
+  },
+  {
+    "name": "cand00410.json",
+    "path": "outputs/proofs_aux_ext/imo_2008_p1a/cand00410.json",
+    "type": "file",
+    "size": 8861,
+    "mtime": 1795605001.2806401,
+    "exported": true
+  },
+  {
+    "name": "imo_2019_p6",
+    "path": "outputs/proofs_aux_ext/imo_2019_p6",
+    "type": "directory"
+  },
+  {
+    "name": "cand00001.json",
+    "path": "outputs/proofs_aux_ext/imo_2019_p6/cand00001.json",
+    "type": "file",
+    "size": 19952,
+    "mtime": 1795605149.099567,
+    "exported": true
+  },
+  {
+    "name": "cand00008.json",
+    "path": "outputs/proofs_aux_ext/imo_2019_p6/cand00008.json",
+    "type": "file",
+    "size": 19938,
+    "mtime": 1795605149.1035671,
+    "exported": true
+  },
+  {
+    "name": "cand00218.json",
+    "path": "outputs/proofs_aux_ext/imo_2019_p6/cand00218.json",
+    "type": "file",
+    "size": 16528,
+    "mtime": 1795605149.107567,
+    "exported": true
+  },
+  {
+    "name": "cand01999.json",
+    "path": "outputs/proofs_aux_ext/imo_2019_p6/cand01999.json",
+    "type": "file",
+    "size": 16872,
+    "mtime": 1795605149.1635683,
+    "exported": true
+  },
+  {
+    "name": "proofs_ddar",
+    "path": "outputs/proofs_ddar",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2000_p1.json",
+    "path": "outputs/proofs_ddar/imo_2000_p1.json",
+    "type": "file",
+    "size": 18054,
+    "mtime": 1795603525.112098,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2a.json",
+    "path": "outputs/proofs_ddar/imo_2002_p2a.json",
+    "type": "file",
+    "size": 10415,
+    "mtime": 1795603525.3600984,
+    "exported": true
+  },
+  {
+    "name": "imo_2002_p2b.json",
+    "path": "outputs/proofs_ddar/imo_2002_p2b.json",
+    "type": "file",
+    "size": 5151,
+    "mtime": 1795603525.3960984,
+    "exported": true
+  },
+  {
+    "name": "imo_2003_p4.json",
+    "path": "outputs/proofs_ddar/imo_2003_p4.json",
+    "type": "file",
+    "size": 15393,
+    "mtime": 1795603525.5520985,
+    "exported": true
+  },
+  {
+    "name": "imo_2004_p5.json",
+    "path": "outputs/proofs_ddar/imo_2004_p5.json",
+    "type": "file",
+    "size": 4861,
+    "mtime": 1795603525.6120987,
+    "exported": true
+  },
+  {
+    "name": "imo_2005_p5.json",
+    "path": "outputs/proofs_ddar/imo_2005_p5.json",
+    "type": "file",
+    "size": 15585,
+    "mtime": 1795603525.792099,
+    "exported": true
+  },
+  {
+    "name": "imo_2007_p4.json",
+    "path": "outputs/proofs_ddar/imo_2007_p4.json",
+    "type": "file",
+    "size": 12737,
+    "mtime": 1795603525.904099,
+    "exported": true
+  },
+  {
+    "name": "imo_2010_p4.json",
+    "path": "outputs/proofs_ddar/imo_2010_p4.json",
+    "type": "file",
+    "size": 8844,
+    "mtime": 1795603526.3920999,
+    "exported": true
+  },
+  {
+    "name": "imo_2012_p1.json",
+    "path": "outputs/proofs_ddar/imo_2012_p1.json",
+    "type": "file",
+    "size": 20253,
+    "mtime": 1795603526.9041007,
+    "exported": true
+  },
+  {
+    "name": "imo_2013_p4.json",
+    "path": "outputs/proofs_ddar/imo_2013_p4.json",
+    "type": "file",
+    "size": 12778,
+    "mtime": 1795603527.0321007,
+    "exported": true
+  },
+  {
+    "name": "imo_2014_p4.json",
+    "path": "outputs/proofs_ddar/imo_2014_p4.json",
+    "type": "file",
+    "size": 7848,
+    "mtime": 1795603527.0761008,
+    "exported": true
+  },
+  {
+    "name": "imo_2015_p4.json",
+    "path": "outputs/proofs_ddar/imo_2015_p4.json",
+    "type": "file",
+    "size": 15294,
+    "mtime": 1795603527.4241014,
+    "exported": true
+  },
+  {
+    "name": "imo_2016_p1.json",
+    "path": "outputs/proofs_ddar/imo_2016_p1.json",
+    "type": "file",
+    "size": 12779,
+    "mtime": 1795603527.6361017,
+    "exported": true
+  },
+  {
+    "name": "imo_2017_p4.json",
+    "path": "outputs/proofs_ddar/imo_2017_p4.json",
+    "type": "file",
+    "size": 11439,
+    "mtime": 1795603527.7281017,
+    "exported": true
+  },
+  {
+    "name": "imo_2022_p4.json",
+    "path": "outputs/proofs_ddar/imo_2022_p4.json",
+    "type": "file",
+    "size": 7543,
+    "mtime": 1795603528.0001023,
+    "exported": true
+  },
+  {
+    "name": "proofs_depth2",
+    "path": "outputs/proofs_depth2",
+    "type": "directory"
+  },
+  {
+    "name": "imo_2020_p1_learned.json",
+    "path": "outputs/proofs_depth2/imo_2020_p1_learned.json",
+    "type": "file",
+    "size": 8169,
+    "mtime": 1795606403.0428224,
+    "exported": true
+  },
+  {
+    "name": "search_results.json",
+    "path": "outputs/search_results.json",
+    "type": "file",
+    "size": 3168,
+    "mtime": 1795606258.893451,
+    "exported": true
+  },
+  {
+    "name": "synthA_1.log",
+    "path": "outputs/synthA_1.log",
+    "type": "file",
+    "size": 11,
+    "mtime": 1795605446.5522985,
+    "exported": true
+  },
+  {
+    "name": "synthB_100000.log",
+    "path": "outputs/synthB_100000.log",
+    "type": "file",
+    "size": 0,
+    "mtime": 1795605260.1694853,
+    "exported": true
+  },
+  {
+    "name": "synthB_104000.log",
+    "path": "outputs/synthB_104000.log",
+    "type": "file",
+    "size": 0,
+    "mtime": 1795605260.1694853,
+    "exported": true
+  },
+  {
+    "name": "synth_A",
+    "path": "outputs/synth_A",
+    "type": "directory"
+  },
+  {
+    "name": "A_16000_18000.jsonl",
+    "path": "outputs/synth_A/A_16000_18000.jsonl",
+    "type": "file",
+    "size": 272450,
+    "mtime": 1795605453.172391,
+    "exported": true
+  },
+  {
+    "name": "synth_A_aux",
+    "path": "outputs/synth_A_aux",
+    "type": "directory"
+  },
+  {
+    "name": "A_aux_meta.json",
+    "path": "outputs/synth_A_aux/A_aux_meta.json",
+    "type": "file",
+    "size": 7805,
+    "mtime": 1795605539.8055582,
+    "exported": true
+  },
+  {
+    "name": "synth_A_stats.json",
+    "path": "outputs/synth_A_stats.json",
+    "type": "file",
+    "size": 723,
+    "mtime": 1795606449.4912567,
+    "exported": true
+  },
+  {
+    "name": "synth_B",
+    "path": "outputs/synth_B",
+    "type": "directory"
+  },
+  {
+    "name": "B_100000_104000_meta.json",
+    "path": "outputs/synth_B/B_100000_104000_meta.json",
+    "type": "file",
+    "size": 48148,
+    "mtime": 1795605799.1406949,
+    "exported": true
+  },
+  {
+    "name": "B_104000_108000_meta.json",
+    "path": "outputs/synth_B/B_104000_108000_meta.json",
+    "type": "file",
+    "size": 56217,
+    "mtime": 1795605791.2166054,
+    "exported": true
+  },
+  {
+    "name": "trace_back.log",
+    "path": "outputs/trace_back.log",
+    "type": "file",
+    "size": 3581,
+    "mtime": 1795607127.2053368,
+    "exported": true
+  },
+  {
+    "name": "transfer.json",
+    "path": "outputs/transfer.json",
+    "type": "file",
+    "size": 3577,
+    "mtime": 1795607071.072845,
+    "exported": true
+  },
+  {
+    "name": "unsolved_ddar.txt",
+    "path": "outputs/unsolved_ddar.txt",
+    "type": "file",
+    "size": 181,
+    "mtime": 1795603536.0401149,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 147502,
+    "mtime": 1795604217.6904366,
+    "exported": true
+  },
+  {
+    "name": "fig2_ddar_ablation.png",
+    "path": "report/images/fig2_ddar_ablation.png",
+    "type": "file",
+    "size": 72057,
+    "mtime": 1795606394.578743,
+    "exported": true
+  },
+  {
+    "name": "fig3_search_budget.png",
+    "path": "report/images/fig3_search_budget.png",
+    "type": "file",
+    "size": 144382,
+    "mtime": 1795606292.9817789,
+    "exported": true
+  },
+  {
+    "name": "fig5_prior.png",
+    "path": "report/images/fig5_prior.png",
+    "type": "file",
+    "size": 157288,
+    "mtime": 1795606281.2416663,
+    "exported": true
+  },
+  {
+    "name": "fig6_synthetic_data.png",
+    "path": "report/images/fig6_synthetic_data.png",
+    "type": "file",
+    "size": 96949,
+    "mtime": 1795606450.4672656,
+    "exported": true
+  },
+  {
+    "name": "fig7_imo2004p1_generalisation.png",
+    "path": "report/images/fig7_imo2004p1_generalisation.png",
+    "type": "file",
+    "size": 198948,
+    "mtime": 1795604270.426681,
+    "exported": true
+  },
+  {
+    "name": "fig8_validation.png",
+    "path": "report/images/fig8_validation.png",
+    "type": "file",
+    "size": 108957,
+    "mtime": 1795607092.8410358,
+    "exported": true
+  },
+  {
+    "name": "fig9_premise_audit.png",
+    "path": "report/images/fig9_premise_audit.png",
+    "type": "file",
+    "size": 91458,
+    "mtime": 1795607128.4093475,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 35953,
+    "mtime": 1795607194.169922,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4607,
+    "mtime": 1795602172.0759842,
+    "exported": true
+  }
+]

@@ -1,0 +1,661 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analysis.py",
+    "path": "code/analysis.py",
+    "type": "file",
+    "size": 10023,
+    "mtime": 1795652599.9077578,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 4298,
+    "mtime": 1795637126.0989227,
+    "exported": true
+  },
+  {
+    "name": "damping.py",
+    "path": "code/damping.py",
+    "type": "file",
+    "size": 2802,
+    "mtime": 1795652599.915758,
+    "exported": true
+  },
+  {
+    "name": "data_overview.py",
+    "path": "code/data_overview.py",
+    "type": "file",
+    "size": 2127,
+    "mtime": 1795638215.5757334,
+    "exported": true
+  },
+  {
+    "name": "diagnose_data.py",
+    "path": "code/diagnose_data.py",
+    "type": "file",
+    "size": 4253,
+    "mtime": 1795636737.199289,
+    "exported": true
+  },
+  {
+    "name": "download_all.sh",
+    "path": "code/download_all.sh",
+    "type": "file",
+    "size": 803,
+    "mtime": 1795639136.7235847,
+    "exported": true
+  },
+  {
+    "name": "download_benchmarks.py",
+    "path": "code/download_benchmarks.py",
+    "type": "file",
+    "size": 3773,
+    "mtime": 1795639136.7115846,
+    "exported": true
+  },
+  {
+    "name": "download_clim.py",
+    "path": "code/download_clim.py",
+    "type": "file",
+    "size": 1475,
+    "mtime": 1795637569.48452,
+    "exported": true
+  },
+  {
+    "name": "download_era5.py",
+    "path": "code/download_era5.py",
+    "type": "file",
+    "size": 2532,
+    "mtime": 1795637472.102612,
+    "exported": true
+  },
+  {
+    "name": "evaluate.py",
+    "path": "code/evaluate.py",
+    "type": "file",
+    "size": 3151,
+    "mtime": 1795640754.296599,
+    "exported": true
+  },
+  {
+    "name": "forecast.py",
+    "path": "code/forecast.py",
+    "type": "file",
+    "size": 2804,
+    "mtime": 1795640754.296599,
+    "exported": true
+  },
+  {
+    "name": "gen.py",
+    "path": "code/gen.py",
+    "type": "file",
+    "size": 2491,
+    "mtime": 1795637425.7616723,
+    "exported": true
+  },
+  {
+    "name": "io_demo.py",
+    "path": "code/io_demo.py",
+    "type": "file",
+    "size": 4139,
+    "mtime": 1795638151.062686,
+    "exported": true
+  },
+  {
+    "name": "model.py",
+    "path": "code/model.py",
+    "type": "file",
+    "size": 6383,
+    "mtime": 1795637411.829385,
+    "exported": true
+  },
+  {
+    "name": "pipeline.sh",
+    "path": "code/pipeline.sh",
+    "type": "file",
+    "size": 1332,
+    "mtime": 1795638370.4182107,
+    "exported": true
+  },
+  {
+    "name": "pipeline2.sh",
+    "path": "code/pipeline2.sh",
+    "type": "file",
+    "size": 817,
+    "mtime": 1795646139.9611144,
+    "exported": true
+  },
+  {
+    "name": "plots.py",
+    "path": "code/plots.py",
+    "type": "file",
+    "size": 9217,
+    "mtime": 1795652599.9077578,
+    "exported": true
+  },
+  {
+    "name": "quick_check.py",
+    "path": "code/quick_check.py",
+    "type": "file",
+    "size": 844,
+    "mtime": 1795643950.7853868,
+    "exported": true
+  },
+  {
+    "name": "train.py",
+    "path": "code/train.py",
+    "type": "file",
+    "size": 8256,
+    "mtime": 1795646138.7570996,
+    "exported": true
+  },
+  {
+    "name": "train_curves.py",
+    "path": "code/train_curves.py",
+    "type": "file",
+    "size": 1291,
+    "mtime": 1795650559.787275,
+    "exported": true
+  },
+  {
+    "name": "wb2io.py",
+    "path": "code/wb2io.py",
+    "type": "file",
+    "size": 2775,
+    "mtime": 1795637472.102612,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "analysis_results.json",
+    "path": "outputs/analysis_results.json",
+    "type": "file",
+    "size": 7210,
+    "mtime": 1795652643.0481238,
+    "exported": true
+  },
+  {
+    "name": "ckpt",
+    "path": "outputs/ckpt",
+    "type": "directory"
+  },
+  {
+    "name": "long_log.json",
+    "path": "outputs/ckpt/long_log.json",
+    "type": "file",
+    "size": 838,
+    "mtime": 1795651852.649473,
+    "exported": true
+  },
+  {
+    "name": "medium_log.json",
+    "path": "outputs/ckpt/medium_log.json",
+    "type": "file",
+    "size": 838,
+    "mtime": 1795649602.3109248,
+    "exported": true
+  },
+  {
+    "name": "pre_log.json",
+    "path": "outputs/ckpt/pre_log.json",
+    "type": "file",
+    "size": 6294,
+    "mtime": 1795641497.6160543,
+    "exported": true
+  },
+  {
+    "name": "short_log.json",
+    "path": "outputs/ckpt/short_log.json",
+    "type": "file",
+    "size": 1418,
+    "mtime": 1795643931.9250917,
+    "exported": true
+  },
+  {
+    "name": "shortplus_log.json",
+    "path": "outputs/ckpt/shortplus_log.json",
+    "type": "file",
+    "size": 1749,
+    "mtime": 1795647760.6924222,
+    "exported": true
+  },
+  {
+    "name": "damping_results.json",
+    "path": "outputs/damping_results.json",
+    "type": "file",
+    "size": 4719,
+    "mtime": 1795652602.0077755,
+    "exported": true
+  },
+  {
+    "name": "data_diagnosis.json",
+    "path": "outputs/data_diagnosis.json",
+    "type": "file",
+    "size": 1439,
+    "mtime": 1795636739.183361,
+    "exported": true
+  },
+  {
+    "name": "logs",
+    "path": "outputs/logs",
+    "type": "directory"
+  },
+  {
+    "name": "analysis.log",
+    "path": "outputs/logs/analysis.log",
+    "type": "file",
+    "size": 3154,
+    "mtime": 1795652643.7441297,
+    "exported": true
+  },
+  {
+    "name": "dl_bench.log",
+    "path": "outputs/logs/dl_bench.log",
+    "type": "file",
+    "size": 2513,
+    "mtime": 1795641668.3925881,
+    "exported": true
+  },
+  {
+    "name": "dl_clim.log",
+    "path": "outputs/logs/dl_clim.log",
+    "type": "file",
+    "size": 319,
+    "mtime": 1795640291.6652293,
+    "exported": true
+  },
+  {
+    "name": "dl_era5.log",
+    "path": "outputs/logs/dl_era5.log",
+    "type": "file",
+    "size": 6604,
+    "mtime": 1795643250.1083014,
+    "exported": true
+  },
+  {
+    "name": "forecast.log",
+    "path": "outputs/logs/forecast.log",
+    "type": "file",
+    "size": 1123,
+    "mtime": 1795648243.611653,
+    "exported": true
+  },
+  {
+    "name": "forecast2.log",
+    "path": "outputs/logs/forecast2.log",
+    "type": "file",
+    "size": 34,
+    "mtime": 1795652326.9174476,
+    "exported": true
+  },
+  {
+    "name": "forecast_short.log",
+    "path": "outputs/logs/forecast_short.log",
+    "type": "file",
+    "size": 37,
+    "mtime": 1795649183.707334,
+    "exported": true
+  },
+  {
+    "name": "gen_medium.log",
+    "path": "outputs/logs/gen_medium.log",
+    "type": "file",
+    "size": 182,
+    "mtime": 1795650538.4910884,
+    "exported": true
+  },
+  {
+    "name": "gen_short.log",
+    "path": "outputs/logs/gen_short.log",
+    "type": "file",
+    "size": 181,
+    "mtime": 1795644899.386109,
+    "exported": true
+  },
+  {
+    "name": "io_demo.log",
+    "path": "outputs/logs/io_demo.log",
+    "type": "file",
+    "size": 89,
+    "mtime": 1795652396.1780326,
+    "exported": true
+  },
+  {
+    "name": "pip_numcodecs.log",
+    "path": "outputs/logs/pip_numcodecs.log",
+    "type": "file",
+    "size": 1212,
+    "mtime": 1795636847.1070447,
+    "exported": true
+  },
+  {
+    "name": "pip_pypdf.log",
+    "path": "outputs/logs/pip_pypdf.log",
+    "type": "file",
+    "size": 675,
+    "mtime": 1795636713.238407,
+    "exported": true
+  },
+  {
+    "name": "pip_torch.log",
+    "path": "outputs/logs/pip_torch.log",
+    "type": "file",
+    "size": 3563,
+    "mtime": 1795637214.909066,
+    "exported": true
+  },
+  {
+    "name": "pipeline.log",
+    "path": "outputs/logs/pipeline.log",
+    "type": "file",
+    "size": 10757,
+    "mtime": 1795648244.391659,
+    "exported": true
+  },
+  {
+    "name": "pipeline2.log",
+    "path": "outputs/logs/pipeline2.log",
+    "type": "file",
+    "size": 7388,
+    "mtime": 1795652327.6814542,
+    "exported": true
+  },
+  {
+    "name": "plots.log",
+    "path": "outputs/logs/plots.log",
+    "type": "file",
+    "size": 4326,
+    "mtime": 1795652619.8119266,
+    "exported": true
+  },
+  {
+    "name": "train_long.log",
+    "path": "outputs/logs/train_long.log",
+    "type": "file",
+    "size": 1000,
+    "mtime": 1795651852.649473,
+    "exported": true
+  },
+  {
+    "name": "train_medium.log",
+    "path": "outputs/logs/train_medium.log",
+    "type": "file",
+    "size": 1001,
+    "mtime": 1795649602.3109248,
+    "exported": true
+  },
+  {
+    "name": "train_pre.log",
+    "path": "outputs/logs/train_pre.log",
+    "type": "file",
+    "size": 6408,
+    "mtime": 1795641497.6160543,
+    "exported": true
+  },
+  {
+    "name": "train_short.log",
+    "path": "outputs/logs/train_short.log",
+    "type": "file",
+    "size": 1574,
+    "mtime": 1795643931.9250917,
+    "exported": true
+  },
+  {
+    "name": "train_shortplus.log",
+    "path": "outputs/logs/train_shortplus.log",
+    "type": "file",
+    "size": 1854,
+    "mtime": 1795647760.6924222,
+    "exported": true
+  },
+  {
+    "name": "meta",
+    "path": "outputs/meta",
+    "type": "directory"
+  },
+  {
+    "name": "clim.json",
+    "path": "outputs/meta/clim.json",
+    "type": "file",
+    "size": 54679,
+    "mtime": 1795636790.8131776,
+    "exported": true
+  },
+  {
+    "name": "fuxi.json",
+    "path": "outputs/meta/fuxi.json",
+    "type": "file",
+    "size": 13849,
+    "mtime": 1795636790.2771595,
+    "exported": true
+  },
+  {
+    "name": "hres.json",
+    "path": "outputs/meta/hres.json",
+    "type": "file",
+    "size": 19471,
+    "mtime": 1795636789.745141,
+    "exported": true
+  },
+  {
+    "name": "paper_000.txt",
+    "path": "outputs/paper_000.txt",
+    "type": "file",
+    "size": 89721,
+    "mtime": 1795636714.286446,
+    "exported": true
+  },
+  {
+    "name": "paper_001.txt",
+    "path": "outputs/paper_001.txt",
+    "type": "file",
+    "size": 55531,
+    "mtime": 1795636714.9624712,
+    "exported": true
+  },
+  {
+    "name": "paper_002.txt",
+    "path": "outputs/paper_002.txt",
+    "type": "file",
+    "size": 98736,
+    "mtime": 1795636715.870505,
+    "exported": true
+  },
+  {
+    "name": "paper_003.txt",
+    "path": "outputs/paper_003.txt",
+    "type": "file",
+    "size": 38988,
+    "mtime": 1795636716.5265296,
+    "exported": true
+  },
+  {
+    "name": "sanity_baselines.json",
+    "path": "outputs/sanity_baselines.json",
+    "type": "file",
+    "size": 1333,
+    "mtime": 1795652651.6201963,
+    "exported": true
+  },
+  {
+    "name": "summary_tables.json",
+    "path": "outputs/summary_tables.json",
+    "type": "file",
+    "size": 11469,
+    "mtime": 1795652619.8119266,
+    "exported": true
+  },
+  {
+    "name": "wb2_zmetadata.json",
+    "path": "outputs/wb2_zmetadata.json",
+    "type": "file",
+    "size": 57929,
+    "mtime": 1795636751.779814,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig01_data_diagnosis.png",
+    "path": "report/images/fig01_data_diagnosis.png",
+    "type": "file",
+    "size": 557763,
+    "mtime": 1795636740.1353955,
+    "exported": true
+  },
+  {
+    "name": "fig02_data_overview.png",
+    "path": "report/images/fig02_data_overview.png",
+    "type": "file",
+    "size": 193508,
+    "mtime": 1795638338.9857116,
+    "exported": true
+  },
+  {
+    "name": "fig03_dataset.png",
+    "path": "report/images/fig03_dataset.png",
+    "type": "file",
+    "size": 30511,
+    "mtime": 1795638339.6057215,
+    "exported": true
+  },
+  {
+    "name": "fig04_training.png",
+    "path": "report/images/fig04_training.png",
+    "type": "file",
+    "size": 77271,
+    "mtime": 1795650560.9912856,
+    "exported": true
+  },
+  {
+    "name": "fig05_acc_8var.png",
+    "path": "report/images/fig05_acc_8var.png",
+    "type": "file",
+    "size": 412825,
+    "mtime": 1795652612.6598659,
+    "exported": true
+  },
+  {
+    "name": "fig06_rmse_8var.png",
+    "path": "report/images/fig06_rmse_8var.png",
+    "type": "file",
+    "size": 399511,
+    "mtime": 1795652614.32388,
+    "exported": true
+  },
+  {
+    "name": "fig07_normdiff_vs_ensmean.png",
+    "path": "report/images/fig07_normdiff_vs_ensmean.png",
+    "type": "file",
+    "size": 331335,
+    "mtime": 1795652616.2958968,
+    "exported": true
+  },
+  {
+    "name": "fig08_scorecard_cascade_vs_em.png",
+    "path": "report/images/fig08_scorecard_cascade_vs_em.png",
+    "type": "file",
+    "size": 114868,
+    "mtime": 1795652619.3959231,
+    "exported": true
+  },
+  {
+    "name": "fig08b_scorecard_fuxi_published_vs_em.png",
+    "path": "report/images/fig08b_scorecard_fuxi_published_vs_em.png",
+    "type": "file",
+    "size": 106943,
+    "mtime": 1795652670.784359,
+    "exported": true
+  },
+  {
+    "name": "fig09_z500_maps.png",
+    "path": "report/images/fig09_z500_maps.png",
+    "type": "file",
+    "size": 1053782,
+    "mtime": 1795652624.8559694,
+    "exported": true
+  },
+  {
+    "name": "fig10_rmse_maps.png",
+    "path": "report/images/fig10_rmse_maps.png",
+    "type": "file",
+    "size": 161821,
+    "mtime": 1795652626.327982,
+    "exported": true
+  },
+  {
+    "name": "fig11_activity.png",
+    "path": "report/images/fig11_activity.png",
+    "type": "file",
+    "size": 169670,
+    "mtime": 1795652627.28399,
+    "exported": true
+  },
+  {
+    "name": "fig12_spectra.png",
+    "path": "report/images/fig12_spectra.png",
+    "type": "file",
+    "size": 157375,
+    "mtime": 1795652629.2040062,
+    "exported": true
+  },
+  {
+    "name": "fig13_precip_ets.png",
+    "path": "report/images/fig13_precip_ets.png",
+    "type": "file",
+    "size": 102782,
+    "mtime": 1795652632.5240345,
+    "exported": true
+  },
+  {
+    "name": "fig14_cascade_gain.png",
+    "path": "report/images/fig14_cascade_gain.png",
+    "type": "file",
+    "size": 307434,
+    "mtime": 1795652642.124116,
+    "exported": true
+  },
+  {
+    "name": "fig15_damping_control.png",
+    "path": "report/images/fig15_damping_control.png",
+    "type": "file",
+    "size": 241776,
+    "mtime": 1795652601.6357725,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 35130,
+    "mtime": 1795652856.6504016,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5093,
+    "mtime": 1795636673.8129003,
+    "exported": true
+  }
+]

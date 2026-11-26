@@ -1,0 +1,21 @@
+{
+ "step8_sum_b_h_bdag_vs_original": 0.0,
+ "step9_gold_Trh_minus_bdag_hT_b": 4.440892098500626e-16,
+ "step9_gold_yaml_form_h_conj": 4.440892098500626e-16,
+ "step9_WRONG_drop_trace": 1.8974213192541964,
+ "step9_WRONG_no_transpose": 3.218676830634225,
+ "step9_WRONG_plus_sign": 5.683555410324852,
+ "steps11-13": {
+  "E_exact_minus_E_wick": 3.1086704806496636e-15,
+  "Ewick6_minus_exact": 4.884982540398457e-15,
+  "WRONG_wick_no_cnumbers": 2.416483182140796,
+  "grad_check_hf2": 6.403927794326978e-10,
+  "quad4_vs_hf2_operator": 3.3306690738754696e-16,
+  "WRONG_hf2_halfA_grad": 0.45400599756879345,
+  "WRONG_hartree_only": 0.4666320828809236
+ },
+ "step14_hartree_reduced_vs_unreduced": 0.0,
+ "step15_fock_reduced_vs_unreduced": 0.0,
+ "step15_WRONG_fock_with_V(q1-q4)": 1.3913306254130289,
+ "scale_of_coefficients": 4.335090585802423
+}

@@ -1,0 +1,251 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "README.md",
+    "path": "code/README.md",
+    "type": "file",
+    "size": 610,
+    "mtime": 1795585265.3322294,
+    "exported": true
+  },
+  {
+    "name": "h0dn_core.py",
+    "path": "code/h0dn_core.py",
+    "type": "file",
+    "size": 12467,
+    "mtime": 1795585081.9145799,
+    "exported": true
+  },
+  {
+    "name": "run_all.py",
+    "path": "code/run_all.py",
+    "type": "file",
+    "size": 32474,
+    "mtime": 1795585081.9185798,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "baseline_design.txt",
+    "path": "outputs/baseline_design.txt",
+    "type": "file",
+    "size": 2585,
+    "mtime": 1795585101.7627833,
+    "exported": true
+  },
+  {
+    "name": "cep_trgb_crosscheck.json",
+    "path": "outputs/cep_trgb_crosscheck.json",
+    "type": "file",
+    "size": 414,
+    "mtime": 1795585101.7707832,
+    "exported": true
+  },
+  {
+    "name": "error_budget.json",
+    "path": "outputs/error_budget.json",
+    "type": "file",
+    "size": 1381,
+    "mtime": 1795585110.626874,
+    "exported": true
+  },
+  {
+    "name": "headline.json",
+    "path": "outputs/headline.json",
+    "type": "file",
+    "size": 3232,
+    "mtime": 1795585101.7707832,
+    "exported": true
+  },
+  {
+    "name": "host_residuals.json",
+    "path": "outputs/host_residuals.json",
+    "type": "file",
+    "size": 3260,
+    "mtime": 1795585101.7707832,
+    "exported": true
+  },
+  {
+    "name": "loo_hybrid.json",
+    "path": "outputs/loo_hybrid.json",
+    "type": "file",
+    "size": 2278,
+    "mtime": 1795585102.7867937,
+    "exported": true
+  },
+  {
+    "name": "papers",
+    "path": "outputs/papers",
+    "type": "directory"
+  },
+  {
+    "name": "p0.txt",
+    "path": "outputs/papers/p0.txt",
+    "type": "file",
+    "size": 234121,
+    "mtime": 1795584558.4331973,
+    "exported": true
+  },
+  {
+    "name": "p1.txt",
+    "path": "outputs/papers/p1.txt",
+    "type": "file",
+    "size": 65877,
+    "mtime": 1795584560.237216,
+    "exported": true
+  },
+  {
+    "name": "p2.txt",
+    "path": "outputs/papers/p2.txt",
+    "type": "file",
+    "size": 84741,
+    "mtime": 1795584561.6132302,
+    "exported": true
+  },
+  {
+    "name": "p3.txt",
+    "path": "outputs/papers/p3.txt",
+    "type": "file",
+    "size": 63020,
+    "mtime": 1795584562.5412397,
+    "exported": true
+  },
+  {
+    "name": "planck_comparison.json",
+    "path": "outputs/planck_comparison.json",
+    "type": "file",
+    "size": 753,
+    "mtime": 1795585112.4388926,
+    "exported": true
+  },
+  {
+    "name": "run_log.txt",
+    "path": "outputs/run_log.txt",
+    "type": "file",
+    "size": 7540,
+    "mtime": 1795585099.9707649,
+    "exported": true
+  },
+  {
+    "name": "sanity.json",
+    "path": "outputs/sanity.json",
+    "type": "file",
+    "size": 2858,
+    "mtime": 1795585101.7547832,
+    "exported": true
+  },
+  {
+    "name": "system_accounting.json",
+    "path": "outputs/system_accounting.json",
+    "type": "file",
+    "size": 1074,
+    "mtime": 1795585101.7627833,
+    "exported": true
+  },
+  {
+    "name": "validation.json",
+    "path": "outputs/validation.json",
+    "type": "file",
+    "size": 1930,
+    "mtime": 1795585110.626874,
+    "exported": true
+  },
+  {
+    "name": "variants.json",
+    "path": "outputs/variants.json",
+    "type": "file",
+    "size": 13145,
+    "mtime": 1795585102.7787936,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 224483,
+    "mtime": 1795585102.7627935,
+    "exported": true
+  },
+  {
+    "name": "fig3_host_residuals.png",
+    "path": "report/images/fig3_host_residuals.png",
+    "type": "file",
+    "size": 119222,
+    "mtime": 1795585102.3107889,
+    "exported": true
+  },
+  {
+    "name": "fig4_hubble_diagrams.png",
+    "path": "report/images/fig4_hubble_diagrams.png",
+    "type": "file",
+    "size": 140898,
+    "mtime": 1795585103.7508035,
+    "exported": true
+  },
+  {
+    "name": "fig5_variants_forest.png",
+    "path": "report/images/fig5_variants_forest.png",
+    "type": "file",
+    "size": 207073,
+    "mtime": 1795585103.2947989,
+    "exported": true
+  },
+  {
+    "name": "fig6_validation.png",
+    "path": "report/images/fig6_validation.png",
+    "type": "file",
+    "size": 150548,
+    "mtime": 1795585111.9148872,
+    "exported": true
+  },
+  {
+    "name": "fig7_error_budget.png",
+    "path": "report/images/fig7_error_budget.png",
+    "type": "file",
+    "size": 80259,
+    "mtime": 1795585112.4388926,
+    "exported": true
+  },
+  {
+    "name": "fig8_planck.png",
+    "path": "report/images/fig8_planck.png",
+    "type": "file",
+    "size": 78228,
+    "mtime": 1795585112.8028963,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 26730,
+    "mtime": 1795585265.3242292,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5222,
+    "mtime": 1795584515.1927502,
+    "exported": true
+  }
+]

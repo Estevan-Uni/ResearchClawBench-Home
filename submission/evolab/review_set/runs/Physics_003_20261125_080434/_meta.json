@@ -1,0 +1,18 @@
+{
+  "run_id": "Physics_003_20261125_080434",
+  "task_id": "Physics_003",
+  "timestamp": "20261125_080434",
+  "status": "completed",
+  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_003/g1/solve/attempt-00001/Physics_003/workspace",
+  "agent_name": "EvoLab",
+  "model": "claude-opus-5-5",
+  "duration_seconds": 5166.465,
+  "cost_usd": 11.131148,
+  "known_cost_usd": 11.131148,
+  "unknown_cost_attempts": 0,
+  "cost_scope": "G1 + E1 + G2, solver and judge, including retries",
+  "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
+  "elapsed_including_queue_seconds": 5166.482,
+  "selected_generation": 1,
+  "selection": "higher of G1 and G2 judge scores"
+}

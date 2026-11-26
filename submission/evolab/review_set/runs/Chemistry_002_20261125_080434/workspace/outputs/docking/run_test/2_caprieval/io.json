@@ -1,0 +1,840 @@
+{
+    "input": [
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_1.pdb",
+            "file_type": {
+                "py/reduce": [
+                    {
+                        "py/type": "haddock.libs.libontology.Format"
+                    },
+                    {
+                        "py/tuple": [
+                            "pdb"
+                        ]
+                    }
+                ]
+            },
+            "full_name": "rigidbody_1.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_1.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -41.508693,
+            "seed": 918,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "created": "2026-11-25 13:13:20",
+                    "file_name": "barnase_haddock.psf",
+                    "file_type": {
+                        "py/reduce": [
+                            {
+                                "py/type": "haddock.libs.libontology.Format"
+                            },
+                            {
+                                "py/tuple": [
+                                    "psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "full_name": "barnase_haddock.psf",
+                    "md5": null,
+                    "path": "/workspace/outputs/docking/run_test/0_topoaa",
+                    "py/object": "haddock.libs.libontology.TopologyFile",
+                    "rel_path": {
+                        "py/reduce": [
+                            {
+                                "py/type": "pathlib.PosixPath"
+                            },
+                            {
+                                "py/tuple": [
+                                    "..",
+                                    "0_topoaa",
+                                    "barnase_haddock.psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "restr_fname": null
+                },
+                {
+                    "created": "2026-11-25 13:13:20",
+                    "file_name": "barstar_haddock.psf",
+                    "file_type": {
+                        "py/id": 10
+                    },
+                    "full_name": "barstar_haddock.psf",
+                    "md5": null,
+                    "path": "/workspace/outputs/docking/run_test/0_topoaa",
+                    "py/object": "haddock.libs.libontology.TopologyFile",
+                    "rel_path": {
+                        "py/reduce": [
+                            {
+                                "py/type": "pathlib.PosixPath"
+                            },
+                            {
+                                "py/tuple": [
+                                    "..",
+                                    "0_topoaa",
+                                    "barstar_haddock.psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "restr_fname": null
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 3824.65,
+                "bonds": 442.09,
+                "bsa": 1539.32,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -7.60974,
+                "dihe": 1044.27,
+                "elec": -17.7324,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -95.0678,
+                "vdw": -77.3353,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_2.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_2.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_2.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -41.860177,
+            "seed": 919,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 3824.64,
+                "bonds": 442.103,
+                "bsa": 1532.65,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -8.03109,
+                "dihe": 1044.27,
+                "elec": -17.7292,
+                "improper": 2033.36,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -95.068,
+                "vdw": -77.3387,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_3.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_3.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_3.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -11.5135811,
+            "seed": 920,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 2.74429,
+                "angles": 3824.64,
+                "bonds": 442.102,
+                "bsa": 857.172,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 2.13602,
+                "dihe": 1044.27,
+                "elec": -4.85718,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -26.9273,
+                "vdw": -24.8144,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_4.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_4.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_4.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -18.1135826,
+            "seed": 921,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 3.51714,
+                "angles": 3824.64,
+                "bonds": 442.104,
+                "bsa": 1027.15,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -0.927218,
+                "dihe": 1044.27,
+                "elec": -6.67269,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -30.8902,
+                "vdw": -27.7346,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_5.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_5.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_5.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -5.036881,
+            "seed": 922,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 15.8319,
+                "angles": 3824.65,
+                "bonds": 442.101,
+                "bsa": 583.565,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 7.00287,
+                "dihe": 1044.27,
+                "elec": -6.24614,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -2.04226,
+                "vdw": -11.628,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_6.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_6.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_6.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -18.414963999999998,
+            "seed": 923,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 12.3441,
+                "angles": 3824.65,
+                "bonds": 442.103,
+                "bsa": 1001.88,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -1.43187,
+                "dihe": 1044.27,
+                "elec": -6.82034,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -21.2158,
+                "vdw": -26.7395,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_7.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_7.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_7.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -41.378289,
+            "seed": 924,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 0.0,
+                "angles": 3824.65,
+                "bonds": 442.094,
+                "bsa": 1554.67,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -7.32039,
+                "dihe": 1044.27,
+                "elec": -17.7379,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -95.0678,
+                "vdw": -77.3299,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_8.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_8.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_8.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -17.37646077,
+            "seed": 925,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 0.238823,
+                "angles": 3824.65,
+                "bonds": 442.099,
+                "bsa": 1139.52,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 0.267141,
+                "dihe": 1044.27,
+                "elec": -5.86998,
+                "improper": 2033.36,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -43.7121,
+                "vdw": -38.081,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_9.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_9.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_9.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -16.0475338236,
+            "seed": 926,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 0.04651764,
+                "angles": 3824.64,
+                "bonds": 442.094,
+                "bsa": 642.734,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -4.9009,
+                "dihe": 1044.27,
+                "elec": -4.51353,
+                "improper": 2033.36,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -25.0899,
+                "vdw": -20.6229,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 13:13:21",
+            "file_name": "rigidbody_10.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "rigidbody_10.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": null,
+            "path": "/workspace/outputs/docking/run_test/1_rigidbody",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "1_rigidbody",
+                            "rigidbody_10.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": "../data/1_rigidbody/hotspot.tbl",
+            "score": -25.874533,
+            "seed": 927,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 9
+                },
+                {
+                    "py/id": 12
+                }
+            ],
+            "unw_energies": {
+                "air": 41.8969,
+                "angles": 3824.64,
+                "bonds": 442.101,
+                "bsa": 1230.8,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -10.3566,
+                "dihe": 1044.27,
+                "elec": -3.29578,
+                "improper": 2033.37,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 5.28889,
+                "vdw": -33.3122,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        }
+    ],
+    "output": [
+        {
+            "py/id": 2
+        },
+        {
+            "py/id": 15
+        },
+        {
+            "py/id": 22
+        },
+        {
+            "py/id": 29
+        },
+        {
+            "py/id": 36
+        },
+        {
+            "py/id": 43
+        },
+        {
+            "py/id": 50
+        },
+        {
+            "py/id": 57
+        },
+        {
+            "py/id": 64
+        },
+        {
+            "py/id": 71
+        }
+    ]
+}

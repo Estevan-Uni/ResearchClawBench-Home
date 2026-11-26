@@ -1,0 +1,414 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "audit.py",
+    "path": "code/audit.py",
+    "type": "file",
+    "size": 2983,
+    "mtime": 1795595503.9511714,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 2089,
+    "mtime": 1795595493.487247,
+    "exported": true
+  },
+  {
+    "name": "m6a_eval.py",
+    "path": "code/m6a_eval.py",
+    "type": "file",
+    "size": 15051,
+    "mtime": 1795595870.0651772,
+    "exported": true
+  },
+  {
+    "name": "mod_sim.py",
+    "path": "code/mod_sim.py",
+    "type": "file",
+    "size": 5958,
+    "mtime": 1795596010.3486557,
+    "exported": true
+  },
+  {
+    "name": "performance.py",
+    "path": "code/performance.py",
+    "type": "file",
+    "size": 4520,
+    "mtime": 1795595674.7981007,
+    "exported": true
+  },
+  {
+    "name": "pore_models.py",
+    "path": "code/pore_models.py",
+    "type": "file",
+    "size": 15788,
+    "mtime": 1795595651.6422293,
+    "exported": true
+  },
+  {
+    "name": "run_all.sh",
+    "path": "code/run_all.sh",
+    "type": "file",
+    "size": 510,
+    "mtime": 1795596770.3318093,
+    "exported": true
+  },
+  {
+    "name": "signal_sim.py",
+    "path": "code/signal_sim.py",
+    "type": "file",
+    "size": 5093,
+    "mtime": 1795595911.1770139,
+    "exported": true
+  },
+  {
+    "name": "simlib.py",
+    "path": "code/simlib.py",
+    "type": "file",
+    "size": 5591,
+    "mtime": 1795595889.5370986,
+    "exported": true
+  },
+  {
+    "name": "train_sim.py",
+    "path": "code/train_sim.py",
+    "type": "file",
+    "size": 3435,
+    "mtime": 1795596072.092455,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "audit.json",
+    "path": "outputs/audit.json",
+    "type": "file",
+    "size": 4521,
+    "mtime": 1795596780.7924542,
+    "exported": true
+  },
+  {
+    "name": "audit.log",
+    "path": "outputs/audit.log",
+    "type": "file",
+    "size": 4522,
+    "mtime": 1795596780.7924542,
+    "exported": true
+  },
+  {
+    "name": "m6a_eval.log",
+    "path": "outputs/m6a_eval.log",
+    "type": "file",
+    "size": 5685,
+    "mtime": 1795596878.221962,
+    "exported": true
+  },
+  {
+    "name": "m6a_fixed_threshold.csv",
+    "path": "outputs/m6a_fixed_threshold.csv",
+    "type": "file",
+    "size": 485,
+    "mtime": 1795596870.077534,
+    "exported": true
+  },
+  {
+    "name": "m6a_matched_precision.csv",
+    "path": "outputs/m6a_matched_precision.csv",
+    "type": "file",
+    "size": 1302,
+    "mtime": 1795596870.0735338,
+    "exported": true
+  },
+  {
+    "name": "m6a_results.json",
+    "path": "outputs/m6a_results.json",
+    "type": "file",
+    "size": 7922,
+    "mtime": 1795596873.6017199,
+    "exported": true
+  },
+  {
+    "name": "m6a_siteid_deciles.csv",
+    "path": "outputs/m6a_siteid_deciles.csv",
+    "type": "file",
+    "size": 899,
+    "mtime": 1795596870.3655493,
+    "exported": true
+  },
+  {
+    "name": "mod_sim.log",
+    "path": "outputs/mod_sim.log",
+    "type": "file",
+    "size": 1527,
+    "mtime": 1795597110.1001418,
+    "exported": true
+  },
+  {
+    "name": "mod_sim_results.json",
+    "path": "outputs/mod_sim_results.json",
+    "type": "file",
+    "size": 3366,
+    "mtime": 1795597108.5360842,
+    "exported": true
+  },
+  {
+    "name": "mod_sim_site_by_coverage.csv",
+    "path": "outputs/mod_sim_site_by_coverage.csv",
+    "type": "file",
+    "size": 1100,
+    "mtime": 1795597108.3720782,
+    "exported": true
+  },
+  {
+    "name": "performance.log",
+    "path": "outputs/performance.log",
+    "type": "file",
+    "size": 3523,
+    "mtime": 1795596823.4909751,
+    "exported": true
+  },
+  {
+    "name": "performance_summary.json",
+    "path": "outputs/performance_summary.json",
+    "type": "file",
+    "size": 1652,
+    "mtime": 1795596821.12684,
+    "exported": true
+  },
+  {
+    "name": "performance_table.csv",
+    "path": "outputs/performance_table.csv",
+    "type": "file",
+    "size": 1295,
+    "mtime": 1795596821.1148396,
+    "exported": true
+  },
+  {
+    "name": "pip.log",
+    "path": "outputs/pip.log",
+    "type": "file",
+    "size": 2301,
+    "mtime": 1795595614.6664448,
+    "exported": true
+  },
+  {
+    "name": "pore_model_results.json",
+    "path": "outputs/pore_model_results.json",
+    "type": "file",
+    "size": 34530,
+    "mtime": 1795596806.9620202,
+    "exported": true
+  },
+  {
+    "name": "pore_models.log",
+    "path": "outputs/pore_models.log",
+    "type": "file",
+    "size": 720,
+    "mtime": 1795596818.6867003,
+    "exported": true
+  },
+  {
+    "name": "run_all.log",
+    "path": "outputs/run_all.log",
+    "type": "file",
+    "size": 0,
+    "mtime": 1795596771.079856,
+    "exported": true
+  },
+  {
+    "name": "signal_sim.log",
+    "path": "outputs/signal_sim.log",
+    "type": "file",
+    "size": 4803,
+    "mtime": 1795596950.5255306,
+    "exported": true
+  },
+  {
+    "name": "signal_sim_reads.csv",
+    "path": "outputs/signal_sim_reads.csv",
+    "type": "file",
+    "size": 61101,
+    "mtime": 1795596947.7213995,
+    "exported": true
+  },
+  {
+    "name": "signal_sim_summary.csv",
+    "path": "outputs/signal_sim_summary.csv",
+    "type": "file",
+    "size": 4636,
+    "mtime": 1795596947.7574012,
+    "exported": true
+  },
+  {
+    "name": "train_sim.log",
+    "path": "outputs/train_sim.log",
+    "type": "file",
+    "size": 886,
+    "mtime": 1795597219.007852,
+    "exported": true
+  },
+  {
+    "name": "train_sim_history.csv",
+    "path": "outputs/train_sim_history.csv",
+    "type": "file",
+    "size": 533,
+    "mtime": 1795597219.0118523,
+    "exported": true
+  },
+  {
+    "name": "train_sim_trained_model_r941.csv",
+    "path": "outputs/train_sim_trained_model_r941.csv",
+    "type": "file",
+    "size": 260398,
+    "mtime": 1795597219.0638537,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig10_sim_alignment_quality.png",
+    "path": "report/images/fig10_sim_alignment_quality.png",
+    "type": "file",
+    "size": 218064,
+    "mtime": 1795596949.909502,
+    "exported": true
+  },
+  {
+    "name": "fig11_sim_mod_coverage.png",
+    "path": "report/images/fig11_sim_mod_coverage.png",
+    "type": "file",
+    "size": 190433,
+    "mtime": 1795597109.7081273,
+    "exported": true
+  },
+  {
+    "name": "fig12_sim_training.png",
+    "path": "report/images/fig12_sim_training.png",
+    "type": "file",
+    "size": 182775,
+    "mtime": 1795597219.89188,
+    "exported": true
+  },
+  {
+    "name": "fig1_base_position_effects.png",
+    "path": "report/images/fig1_base_position_effects.png",
+    "type": "file",
+    "size": 238594,
+    "mtime": 1795596808.6101165,
+    "exported": true
+  },
+  {
+    "name": "fig2_ranked_current_composition.png",
+    "path": "report/images/fig2_ranked_current_composition.png",
+    "type": "file",
+    "size": 113976,
+    "mtime": 1795596810.5622303,
+    "exported": true
+  },
+  {
+    "name": "fig3_substitution_profiles.png",
+    "path": "report/images/fig3_substitution_profiles.png",
+    "type": "file",
+    "size": 417998,
+    "mtime": 1795596814.9424844,
+    "exported": true
+  },
+  {
+    "name": "fig4_pairwise_interactions.png",
+    "path": "report/images/fig4_pairwise_interactions.png",
+    "type": "file",
+    "size": 133408,
+    "mtime": 1795596817.1226103,
+    "exported": true
+  },
+  {
+    "name": "fig5_context_std_dwell.png",
+    "path": "report/images/fig5_context_std_dwell.png",
+    "type": "file",
+    "size": 142823,
+    "mtime": 1795596818.3946836,
+    "exported": true
+  },
+  {
+    "name": "fig6_benchmark.png",
+    "path": "report/images/fig6_benchmark.png",
+    "type": "file",
+    "size": 177003,
+    "mtime": 1795596822.9869466,
+    "exported": true
+  },
+  {
+    "name": "fig7_m6a_pr_roc.png",
+    "path": "report/images/fig7_m6a_pr_roc.png",
+    "type": "file",
+    "size": 132693,
+    "mtime": 1795596874.8177838,
+    "exported": true
+  },
+  {
+    "name": "fig8_m6a_tp_gain.png",
+    "path": "report/images/fig8_m6a_tp_gain.png",
+    "type": "file",
+    "size": 133944,
+    "mtime": 1795596875.8218365,
+    "exported": true
+  },
+  {
+    "name": "fig9_m6a_distributions_robustness.png",
+    "path": "report/images/fig9_m6a_distributions_robustness.png",
+    "type": "file",
+    "size": 181429,
+    "mtime": 1795596877.1059039,
+    "exported": true
+  },
+  {
+    "name": "figS1_composition_lines.png",
+    "path": "report/images/figS1_composition_lines.png",
+    "type": "file",
+    "size": 661135,
+    "mtime": 1795596812.810361,
+    "exported": true
+  },
+  {
+    "name": "figS2_m6a_scatter.png",
+    "path": "report/images/figS2_m6a_scatter.png",
+    "type": "file",
+    "size": 205239,
+    "mtime": 1795596878.0179515,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 36430,
+    "mtime": 1795597372.0602317,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6741,
+    "mtime": 1795595466.1114514,
+    "exported": true
+  }
+]

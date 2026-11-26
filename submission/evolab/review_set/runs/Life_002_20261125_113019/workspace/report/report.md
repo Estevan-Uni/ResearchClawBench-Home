@@ -1,0 +1,389 @@
+# Ultra-fast protein-complex structural alignment: a reproduction and audit of Foldseek-Multimer on a type IV-A CRISPR–Cas effector (PDB 7XG4) and the designated target 6N40
+
+## Abstract
+I reproduce and audit complex-level structural alignment in the style of Foldseek-Multimer, using the Foldseek binary (commit 4f5c00c, `easy-multimersearch`). The reference is the dynamic-programming complex aligner US-align (`-mm 1 -ter 0`, v20240730). The query is the nine-protein-chain *Pseudomonas aeruginosa* type IV-A CRISPR–Cas effector bound to CasDinG (PDB 7XG4).
+
+The designated target, 6N40, is a **single-chain** MmpL3 transporter. A multi-chain correspondence with 7XG4 therefore does not exist. Both tools agree the pair is unrelated:
+- Foldseek-Multimer: best complex qTM = 0.018, tTM = 0.073, one chain pair.
+- US-align: qTM = 0.063, tTM = 0.194, CasDinG (chain L) → 6N40 A.
+
+To test the method on legitimate complex hits, I built a tiered database of 24 PDB complexes plus the query. It spans the same system in other states, a 55–73 %-identity IV-A1 ortholog, remote 11–18 %-identity IV-A3 and IV-C effectors, type I/III effectors and unrelated controls. For every hit I report the explicit chain correspondence, per-chain-pair superposition (U, t), complex superposition and complex TM-scores.
+
+Main results:
+1. **Agreement with US-align.** Foldseek-Multimer's complex qTM correlates with US-align's (Pearson r = 0.980, Spearman ρ = 0.960, n = 24). It is systematically conservative (mean bias -0.082).
+2. **Same chain assignment, same superposition.** On every IV-A hit the chain assignment is identical to US-align's (100 % of shared chains). The complex rotations differ by ≤ 2.1°.
+3. **Homomers.** Per-chain TM-scores cannot tell the five Csf2 (Cas7) copies apart. The per-pair superposition vectors can: correct pairs lie within 0–14° and ≤ 7 Å of the complex transform, and each one-subunit register shift costs about 43° and 32 Å.
+4. **Below 25 % identity.** The remote IV-A3 complexes are detected at 11.4–17.7 % paired-chain identity (qTM 0.45–0.46, ranks 9–12 of 24). This is above every type I/III effector (≤ 0.27) and every unrelated control (≤ 0.018).
+5. **Speed.** On the same pair, single-threaded on a shared machine, Foldseek-Multimer is about 150–380× faster than US-align for a 9-vs-9-chain comparison (0.13–0.37 s vs 48–57 s).
+
+## 1. Introduction
+Database-scale structural search for single chains became practical with Foldseek [paper_000]. Foldseek encodes each residue's tertiary interactions with a 20-letter structural alphabet (3Di), so that structure comparison becomes fast sequence-style prefiltering and alignment. TM-align [paper_003] and its complex generalisation US-align/MM-align [paper_001] give accurate, length-normalised TM-scores. They do this by iterative dynamic programming and superposition, and for complexes they also have to search chain-to-chain mappings, which costs tens of seconds per large complex pair.
+
+QSalign [paper_002] showed why quaternary-structure comparison matters: assemblies that are conserved across homologues tend to be biologically real.
+
+Foldseek-Multimer extends Foldseek to complexes in four steps:
+1. Align all query chains against all target chains with 3Di+AA.
+2. Represent each chain-pair alignment by its superposition (rotation U, translation t).
+3. Cluster superpositions that agree, which yields consistent chain assignments.
+4. Score each assignment with a complex TM-score after one global superposition.
+
+The task asks for three outputs per complex pair: (i) the chain correspondence, (ii) the superposition vectors and (iii) the TM-score, all at speeds compatible with millions of structures. I evaluate exactly these outputs, and I audit them against US-align and against synthetic ground truth.
+
+## 2. Data and environment
+| item | value |
+|---|---|
+| query | `data/7xg4.pdb`: 9 protein chains (A Csf1, B Csf3, C–G 5×Csf2, H Csf5, L Csf4/CasDinG), 2,876 Cα. The 3 nucleic-acid chains (I crRNA, J/K DNA) were removed. |
+| designated target | `data/6n40.pdb`: 1 protein chain (A, MmpL3, *M. smegmatis*), 726 Cα, X-ray |
+| benchmark DB | 24 PDB entries + query, downloaded as mmCIF. Protein-only, model 1, chains ≥ 20 residues (`code/fetch_db.py`, `outputs/db_meta.json`) |
+| tools | Foldseek 4f5c00c (avx2 static binary); US-align 20240730 (bioconda) |
+| hardware | 2 CPU cores available to the process, on a heavily shared host (host load average ≈ 100–140 throughout). All timings are single-threaded. |
+
+![Data overview](images/fig1_data_overview.png)
+
+*Figure 1. Left: protein chains of the 7XG4 query. Middle: the designated target 6N40 is a single chain. Right: the benchmark database, coloured by tier, with the chain count of each entry.*
+
+Database tiers:
+- **T1**: same *P. aeruginosa* IV-A1 system in other functional states (7XFZ, 7XG0–7XG3, 9N3Y, 9N3Z).
+- **T2**: *Ectopseudomonas oleovorans* IV-A1 ortholog (8RC3, 8RFJ).
+- **T3**: *Klebsiella pneumoniae* IV-A3 (8RC2, 8S35–8S37).
+- **T3b**: *Pyrococcus abyssi* type IV-C (11HC).
+- **T4**: type I-E (4TVX, 5H9F), I-F (6B44), I-G (8ANE) and III-A (6IG0, 7UZW) effectors. These share the Cas7-backbone architecture and are distant homologues, not negatives.
+- **N**: unrelated controls (4HHB haemoglobin, 1A0R transducin, 1FIN CDK2–cyclin A, 6N40).
+
+## 3. Methods
+**Inputs.** `code/pdbutil.py` is a minimal PDB/mmCIF parser. It writes protein-only, model-1, altloc-A PDB files, so that both tools see byte-identical inputs (`outputs/structs/`).
+
+**Foldseek-Multimer.** I ran:
+
+`foldseek easy-multimersearch Q T out tmp --exhaustive-search 1 -e inf --min-aligned-chains 1`
+
+The output columns were `query, target, fident, alnlen, …, alntmscore, qtmscore, ttmscore, u, t, complexqtmscore, complexttmscore, complexu, complext, interfacelddt, complexassignid`. The options were chosen for these reasons:
+- `-e inf` disables the E-value filter, which otherwise silently drops weak chain pairs under exhaustive search.
+- `--min-aligned-chains 1` is required for a monomeric target such as 6N40 to be reported at all; the default is 2.
+- A default-mode prefiltered search was run as well (`outputs/search/def.m8`).
+
+For each target, the assignment (`complexassignid`) with the highest complex qTM is taken as the hit.
+
+**Superposition convention.** The convention was verified empirically rather than assumed. Foldseek's `u, t` (and `complexu, complext`) map **target → query**: x_q = U·x_t + t. Applying the inverse transform to 7XG4 chain A puts it on 9N3Y chain A with a median nearest-Cα distance of 0.57 Å; the naive direction gives 17.9 Å (`outputs/chain_tables.json`). All matrices in this report are converted to the **query → target** direction, U' = Uᵀ and t' = −Uᵀt, to match US-align's `-m` output.
+
+**Superposition consistency.** For each chain pair i, I compare its own transform (Uᵢ, tᵢ) with the complex transform (U, t) in two ways:
+- the rotation angle arccos((tr(UᵢᵀU) − 1)/2);
+- the RMS displacement of the query chain's Cα atoms under the two transforms.
+
+Wrong pairings are obtained from an all-vs-all monomer Foldseek search (`easy-search --exhaustive-search 1`) between 7XG4 chains and target chains (`outputs/chainpairs/`).
+
+**Reference.** I ran `USalign Q T -mm 1 -ter 0 -m mat` on all 24 targets plus the self pair. Chain mapping, qTM (normalised by the 7XG4 length, 2,876), tTM, U and t are parsed in `code/run_usalign.py`.
+
+**Ground truth.** `code/groundtruth_test.py` builds six synthetic targets. Each is 7XG4 under a random rigid transform; in four of them the five Csf2 chain labels are randomly permuted, and one is the Csf2-only 5-chain sub-complex. Foldseek-Multimer must recover both the known (R, t) and the true correspondence.
+
+**Timing.** `code/timing.py` times the same pair with each tool on a single thread:
+- `easy-multimersearch` from PDB files (end-to-end, 5 repeats);
+- `multimersearch` on pre-built DBs (5 repeats);
+- US-align (3 repeats).
+
+Separately, it measures the amortised cost of a 7XG4 search against a 192-entry redundant DB (the 24 entries replicated 8×), with `createdb` excluded.
+
+## 4. Results
+
+### 4.1 The requested pair: 7XG4 vs 6N40
+6N40 has one chain. The only admissible correspondences therefore map a single 7XG4 chain to 6N40 A. Foldseek-Multimer returns nine one-chain assignments, one per 7XG4 chain (table T1). The best is Csf5 (H) → 6N40 A:
+- chain TM 0.166, fident 0.087, E = 0.44;
+- complex qTM 0.0185, complex tTM 0.0731.
+
+US-align instead pairs CasDinG (L) → 6N40 A, with 225 aligned residues, RMSD 8.28 Å, qTM 0.063 and tTM 0.194. The two tools disagree on which chain to pair, and the angle between their superpositions is 164°. Both are noise-level matches, so the disagreement is expected. Every per-chain TM-score is below 0.17, and every complex score is far below any similarity threshold (Fig. 2).
+
+**What is and is not reproducible.** 7XG4 and 6N40 are not structurally similar complexes. 6N40 is not the multi-chain *Sulfitobacter* sp. JL08 complex for which 7XG4 is a reported hit (as the task description itself notes). A 9:9 chain correspondence cannot be produced for this pair, and none is reported. What *is* reproducible is the full alignment record (correspondence, U, t, TM) for this pair, given below, and the same record for legitimate multi-chain homologues of 7XG4 (§4.2).
+
+#### Table 1. Requested pair 7XG4 (query, 9 chains) vs 6N40 (target, 1 chain): Foldseek-Multimer records
+
+| assignment | query chain | target chain | aln len | fident | chain TM (q) | chain TM (t) | E-value | complex qTM | complex tTM | complex U (query→target, rows) | complex t (Å) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 0 | H | A | 114 | 0.087 | 0.166 | 0.073 | 0.44 | 0.0185 | 0.0731 | [-0.829, -0.440, 0.347; 0.283, 0.205, 0.937; -0.483, 0.874, -0.046] | 168.473, -314.109, 2.560 |
+| 1 | G | A | 243 | 0.115 | 0.126 | 0.062 | 2.5 | 0.0156 | 0.0617 | [-0.089, 0.993, 0.071; -0.250, 0.046, -0.967; -0.964, -0.104, 0.244] | -179.933, 328.220, 158.307 |
+| 2 | D | A | 83 | 0.120 | 0.099 | 0.052 | 7 | 0.0132 | 0.0521 | [0.971, -0.239, 0.015; -0.112, -0.508, -0.854; 0.211, 0.828, -0.520] | -161.192, 318.486, -91.156 |
+| 3 | E | A | 88 | 0.102 | 0.096 | 0.049 | 2.7 | 0.0123 | 0.0488 | [0.868, 0.398, -0.298; -0.284, -0.095, -0.954; -0.408, 0.913, 0.031] | -189.379, 315.949, -99.441 |
+| 4 | B | A | 61 | 0.163 | 0.097 | 0.041 | 1.8 | 0.0104 | 0.0410 | [-0.443, -0.856, -0.266; 0.579, -0.047, -0.814; 0.685, -0.514, 0.517] | 280.030, 33.917, -121.910 |
+| 5 | L | A | 84 | 0.154 | 0.037 | 0.032 | 7.9 | 0.0081 | 0.0320 | [-0.598, -0.629, -0.497; 0.085, -0.666, 0.741; -0.797, 0.401, 0.451] | 403.263, -78.523, 44.400 |
+| 6 | A | A | 55 | 0.090 | 0.070 | 0.029 | 8.2 | 0.0073 | 0.0288 | [0.369, 0.176, 0.913; 0.143, 0.959, -0.243; -0.919, 0.220, 0.329] | -218.194, -145.102, 96.633 |
+| 7 | C | A | 103 | 0.126 | 0.055 | 0.026 | 5.9 | 0.0064 | 0.0255 | [-0.907, -0.394, 0.150; -0.046, 0.446, 0.894; -0.419, 0.803, -0.423] | 271.471, -239.995, 80.385 |
+| 8 | F | A | 102 | 0.137 | 0.048 | 0.024 | 4.3 | 0.0059 | 0.0236 | [-0.055, -0.982, -0.182; 0.998, -0.048, -0.047; 0.037, -0.184, 0.982] | 246.021, -130.962, -200.145 |
+
+US-align -mm 1 -ter 0 on the same pair: chain map L→A; aligned length 225, RMSD 8.28 Å, seq. id. 0.071; qTM = 0.0631, tTM = 0.1941; U = [-0.166, 0.842, -0.512; -0.194, -0.537, -0.821; -0.967, -0.037, 0.253], t = (26.233, 302.571, 235.629) Å; wall time 2.5 s.
+
+
+
+![Requested pair](images/fig2_requested_pair.png)
+
+*Figure 2. 7XG4 vs 6N40. Left: Foldseek-Multimer per-chain TM (normalised by the query chain) and complex qTM for each one-chain assignment. Right: best complex scores from both tools, compared with a true homologue (9N3Y).*
+
+### 4.2 Chain correspondence and superposition on genuine multi-chain hits
+In the three tables below, "per-pair U, t" is each chain-pair alignment's own superposition, expressed query → target. "Δangle" and "RMS disp." measure how far that superposition is from the single complex superposition.
+
+#### Chain-correspondence table: 7XG4 → 9N3Y (T1_same_system)
+
+Foldseek-Multimer complex qTM = 0.9843, tTM = 0.9802; complex U (query→target) = [-0.699, -0.714, 0.034; 0.708, -0.685, 0.169; -0.098, 0.142, 0.985], t = (478.886, 159.778, -6.654) Å. US-align: qTM = 0.9834, tTM = 0.9794, U = [-0.699, -0.715, 0.033; 0.709, -0.685, 0.170; -0.098, 0.142, 0.985], t = (478.926, 159.644, -6.570) Å.
+
+| q chain | t chain (FS-M) | t chain (US-align) | q len | aln len | fident | chain TM (q) | chain TM (t) | per-pair U (query→target, rows) | per-pair t (Å) | Δangle to complex U (°) | RMS disp. vs complex (Å) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A | A | A | 241 | 241 | 1.000 | 0.989 | 0.989 | [-0.680, -0.733, 0.010; 0.722, -0.668, 0.183; -0.127, 0.132, 0.983] | 482.900, 151.500, 0.220 | 1.92 | 0.96 |
+| B | B | B | 219 | 219 | 1.000 | 0.992 | 0.992 | [-0.695, -0.719, 0.015; 0.711, -0.684, 0.165; -0.108, 0.126, 0.986] | 482.410, 159.710, -2.640 | 0.60 | 1.00 |
+| C | C | C | 329 | 329 | 1.000 | 0.993 | 0.993 | [-0.688, -0.726, 0.021; 0.718, -0.675, 0.168; -0.108, 0.131, 0.985] | 481.340, 155.930, -3.060 | 1.59 | 0.82 |
+| D | D | D | 331 | 331 | 1.000 | 0.993 | 0.993 | [-0.688, -0.725, 0.030; 0.718, -0.675, 0.172; -0.104, 0.140, 0.985] | 479.450, 155.230, -5.130 | 0.00 | 0.36 |
+| E | E | E | 324 | 327 | 0.990 | 0.992 | 0.983 | [-0.690, -0.724, 0.032; 0.717, -0.676, 0.172; -0.102, 0.141, 0.985] | 479.390, 155.540, -4.960 | 0.00 | 0.78 |
+| F | F | F | 324 | 326 | 0.993 | 0.988 | 0.982 | [-0.687, -0.726, 0.035; 0.719, -0.672, 0.176; -0.104, 0.146, 0.984] | 478.530, 153.450, -4.910 | 0.89 | 1.17 |
+| G | G | G | 280 | 280 | 0.985 | 0.970 | 0.984 | [-0.693, -0.719, 0.044; 0.713, -0.676, 0.185; -0.104, 0.159, 0.982] | 476.210, 153.230, -5.930 | 1.67 | 1.79 |
+| H | H | H | 234 | 226 | 1.000 | 0.955 | 0.988 | [-0.658, -0.750, 0.064; 0.744, -0.636, 0.203; -0.111, 0.182, 0.977] | 468.500, 136.660, -7.170 | 4.39 | 2.15 |
+| L | L | L | 594 | 612 | 0.965 | 0.953 | 0.924 | [-0.732, -0.681, 0.018; 0.676, -0.723, 0.142; -0.083, 0.116, 0.990] | 483.060, 180.410, -7.420 | 3.24 | 1.91 |
+
+Paired-chain sequence identity: mean 0.993, min 0.965, max 1.000 over 9 chain pairs.
+
+#### Chain-correspondence table: 7XG4 → 8RFJ (T2_IVA1_ortholog)
+
+Foldseek-Multimer complex qTM = 0.7757, tTM = 0.7754; complex U (query→target) = [-0.851, -0.515, -0.103; -0.524, 0.822, 0.223; -0.030, 0.243, -0.969], t = (484.808, 100.494, 350.943) Å. US-align: qTM = 0.8139, tTM = 0.8136, U = [-0.845, -0.524, -0.106; -0.534, 0.817, 0.219; -0.028, 0.242, -0.970], t = (486.095, 104.046, 351.154) Å.
+
+| q chain | t chain (FS-M) | t chain (US-align) | q len | aln len | fident | chain TM (q) | chain TM (t) | per-pair U (query→target, rows) | per-pair t (Å) | Δangle to complex U (°) | RMS disp. vs complex (Å) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A | G | G | 241 | 238 | 0.726 | 0.968 | 0.972 | [-0.819, -0.557, -0.139; -0.574, 0.790, 0.216; -0.011, 0.257, -0.966] | 492.370, 117.420, 345.810 | 3.68 | 1.90 |
+| B | F | F | 219 | 217 | 0.631 | 0.969 | 0.956 | [-0.842, -0.524, -0.129; -0.540, 0.813, 0.219; -0.010, 0.253, -0.967] | 489.990, 105.350, 345.900 | 1.69 | 1.79 |
+| C | A | A | 329 | 331 | 0.703 | 0.967 | 0.970 | [-0.830, -0.545, -0.122; -0.558, 0.804, 0.204; -0.013, 0.238, -0.971] | 490.040, 113.970, 349.690 | 2.54 | 1.35 |
+| D | B | B | 331 | 331 | 0.703 | 0.974 | 0.974 | [-0.842, -0.527, -0.118; -0.540, 0.813, 0.217; -0.019, 0.246, -0.969] | 488.300, 106.510, 348.460 | 1.15 | 0.59 |
+| E | C | C | 324 | 330 | 0.703 | 0.982 | 0.962 | [-0.859, -0.505, -0.090; -0.511, 0.829, 0.228; -0.040, 0.242, -0.969] | 480.880, 95.630, 352.450 | 0.61 | 0.92 |
+| F | D | D | 324 | 326 | 0.705 | 0.967 | 0.967 | [-0.867, -0.495, -0.063; -0.496, 0.839, 0.226; -0.059, 0.227, -0.972] | 474.000, 91.480, 359.240 | 2.22 | 1.39 |
+| G | E | E | 280 | 283 | 0.717 | 0.975 | 0.965 | [-0.878, -0.478, -0.041; -0.474, 0.851, 0.224; -0.072, 0.217, -0.974] | 467.640, 85.130, 363.540 | 4.21 | 2.38 |
+| H | M | M | 234 | 232 | 0.547 | 0.914 | 0.907 | [-0.866, -0.498, -0.038; -0.494, 0.842, 0.216; -0.076, 0.205, -0.976] | 467.510, 92.360, 367.970 | 4.12 | 1.44 |
+| L | – (not aligned) | K | | | | | | | | | |
+
+Paired-chain sequence identity: mean 0.679, min 0.547, max 0.726 over 8 chain pairs.
+
+#### Chain-correspondence table: 7XG4 → 8S35 (T3_IVA3_remote)
+
+Foldseek-Multimer complex qTM = 0.4600, tTM = 0.4506; complex U (query→target) = [0.886, 0.444, 0.133; -0.461, 0.873, 0.158; -0.046, -0.201, 0.978], t = (-89.192, 86.833, 43.376) Å. US-align: qTM = 0.5858, tTM = 0.5748, U = [0.872, 0.463, 0.155; -0.484, 0.862, 0.149; -0.065, -0.205, 0.977], t = (-95.545, 95.371, 47.697) Å.
+
+| q chain | t chain (FS-M) | t chain (US-align) | q len | aln len | fident | chain TM (q) | chain TM (t) | per-pair U (query→target, rows) | per-pair t (Å) | Δangle to complex U (°) | RMS disp. vs complex (Å) |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| A | G | G | 241 | 300 | 0.116 | 0.408 | 0.382 | [0.900, 0.434, 0.039; -0.428, 0.865, 0.260; 0.079, -0.251, 0.965] | -74.400, 65.600, 30.860 | 8.08 | 2.48 |
+| B | F | F | 219 | 230 | 0.165 | 0.676 | 0.639 | [0.892, 0.452, -0.007; -0.363, 0.725, 0.585; 0.270, -0.519, 0.811] | -68.210, 22.780, 71.710 | 27.84 | 11.09 |
+| C | A | A | 329 | 383 | 0.140 | 0.548 | 0.529 | [0.872, 0.476, 0.110; -0.488, 0.839, 0.241; 0.023, -0.264, 0.964] | -88.580, 84.350, 44.930 | 5.83 | 2.51 |
+| D | B | B | 331 | 396 | 0.148 | 0.531 | 0.515 | [0.842, 0.529, 0.101; -0.538, 0.834, 0.121; -0.020, -0.156, 0.988] | -92.020, 119.880, 26.870 | 6.04 | 2.94 |
+| E | C | C | 324 | 387 | 0.131 | 0.578 | 0.551 | [0.812, 0.552, 0.191; -0.568, 0.822, 0.042; -0.134, -0.142, 0.981] | -111.480, 146.220, 47.320 | 9.77 | 3.51 |
+| F | D | D | 324 | 389 | 0.128 | 0.535 | 0.520 | [0.798, 0.507, 0.326; -0.553, 0.831, 0.062; -0.240, -0.230, 0.943] | -133.670, 135.890, 93.570 | 13.34 | 4.24 |
+| G | E | E | 280 | 303 | 0.161 | 0.565 | 0.625 | [0.835, 0.404, 0.373; -0.486, 0.859, 0.158; -0.256, -0.314, 0.914] | -136.000, 91.620, 118.220 | 14.38 | 6.96 |
+| H | – (not aligned) | L | | | | | | | | | |
+| L | – (not aligned) | M | | | | | | | | | |
+
+Paired-chain sequence identity: mean 0.141, min 0.116, max 0.165 over 7 chain pairs.
+
+
+The tables show four things:
+1. **9N3Y (same system, other state).** All nine chains are paired one-to-one and identically by both tools (qTM 0.984 vs 0.983). The two complex rotations differ by only 0.04°, and the translations by about 0.15 Å.
+2. **8RFJ (ortholog).** Chain labels differ completely between the two entries (e.g. 7XG4 A→G, C→A, H→M). Foldseek-Multimer recovers the same mapping as US-align for all eight chains it aligns. It leaves the CasDinG helicase (L ↔ K) unaligned, which explains its slightly lower qTM (0.776 vs 0.814).
+3. **8S35 (remote, mean paired identity 14 %).** Seven chains are paired, all identically to US-align. Csf5 (H) and CasDinG (L) are not aligned, which explains the lower qTM (0.460 vs 0.586).
+4. **Per-pair superpositions agree with the complex superposition.** They lie within 0.0–4.4° (9N3Y), 0.6–4.2° (8RFJ) and 5.8–14° of it. The one exception is Csf3 in 8S35, at 28° / 11 Å, consistent with a rigid-body shift of that subunit in the remote homologue.
+
+**Homomer disambiguation (Figs. 3–4).** The five Csf2 (Cas7) copies form a helical filament. In 9N3Y, a 7XG4 Csf2 chain aligns to *any* target Csf2 copy with chain TM 0.95–0.99 (Fig. 3, left), so a chain-level score cannot identify the correct partner. Matching on chain-TM alone (Hungarian assignment maximising the summed chain TM over the 5×5 Csf2 block; `outputs/csf2_hungarian_chainTM.json`) gives:
+- 5/5 correct for 9N3Y, where chain TM ties are broken in the right direction by chance;
+- **3/5 for 8RFJ**;
+- **1/5 for 8S35**.
+
+In 8S35, off-diagonal pairs actually score higher, e.g. 7XG4_D → 8S35_C/D, TM 0.58, against 0.53 for the true partner.
+
+The per-pair superposition separates the copies cleanly. The correct partner lies 0–14° and 0.4–7 Å from the complex transform. Every one-subunit shift along the filament adds about 42–44° and 31–33 Å, which is the filament's helical step (Fig. 3, middle and right).
+
+Across all 81 chain pairs per target (Fig. 4), the pairs Foldseek-Multimer selected form a tight cluster:
+- median Δangle 1.6° / RMS displacement 1.0 Å (9N3Y);
+- 2.4° / 1.4 Å (8RFJ);
+- 9.8° / 3.5 Å (8S35).
+
+The non-assigned pairs have median 128° / 72 Å. This is the mechanism Foldseek-Multimer relies on: clustering superposition vectors, rather than maximising chain scores.
+
+![Csf2 swap](images/fig3_csf2_homomer_swap.png)
+
+*Figure 3. 5×5 Csf2 (Cas7) block. Rows are 7XG4 Csf2 chains; columns are target Csf2 chains in Foldseek-Multimer assignment order, so the diagonal is the chosen assignment. Left: chain TM. Middle: rotation of each pair's superposition relative to the complex U. Right: RMS displacement of the query Cα relative to the complex transform.*
+
+![Superposition consistency](images/fig4_superposition_consistency.png)
+
+*Figure 4. All 81 query × target chain pairs: rotation angle and RMS displacement relative to the complex superposition. Orange: pairs in the Foldseek-Multimer assignment. Grey: all other pairs, shaded by chain TM. The bands at about 43° / 32 Å, 86° / 62 Å, … are one-, two-, … subunit register shifts along the Cas7 filament.*
+
+**Ground truth (Table 2).** On all six synthetic targets, Foldseek-Multimer recovers the true correspondence for every chain, including the shuffled Csf2 labels and the Csf2-only sub-complex. The recovered complex rotation is within 0.05° of the true one, and the translation within 0.02 Å.
+
+| case | chains | Csf2 labels permuted | complex qTM | correct chain pairs | rotation error (°) | translation error (Å) |
+|---|---|---|---|---|---|---|
+| case0 | 9 | no | 1.0000 | 9/9 | 0.028 | 0.014 |
+| case1 | 9 | no | 1.0000 | 9/9 | 0.041 | 0.004 |
+| case2 | 9 | yes | 1.0000 | 9/9 | 0.009 | 0.010 |
+| case3 | 9 | yes | 1.0000 | 9/9 | 0.038 | 0.004 |
+| case4 | 9 | yes | 1.0000 | 9/9 | 0.000 | 0.006 |
+| case5 | 5 | yes | 1.0000 | 5/5 | 0.000 | 0.005 |
+
+### 4.3 Complex TM-scores versus US-align, and similarity thresholds
+Over the 24 non-self targets, Foldseek-Multimer and US-align agree closely (Fig. 5):
+
+| score | Pearson r | Spearman ρ | MAE | mean bias (FS-M − US) |
+|---|---|---|---|---|
+| complex qTM (normalised by 7XG4) | 0.980 | 0.960 | 0.082 | -0.082 |
+| complex tTM (normalised by target) | 0.993 | 0.978 | 0.102 | – |
+
+On close homologues the scores match to within 0.04 (T1/T2, Δ ≤ 0.04). Below that, Foldseek-Multimer scores lower than US-align:
+- T3/T3b: by 0.09–0.15;
+- T4: by 0.09–0.20.
+
+The reason is that Foldseek-Multimer scores only the chains whose 3Di+AA alignments joined the assignment. In 8S35 it leaves out Csf5 and CasDinG, whereas US-align force-maps every chain and re-optimises the alignment by TM-score dynamic programming.
+
+Chain-assignment consistency with US-align:
+- **IV-A and IV-C hits:** 100 % of shared query chains map to the same target chain, and the complex rotations differ by ≤ 2.1°. Foldseek-Multimer covers 78–100 % of US-align's chain pairs on IV-A hits, and 67 % on IV-C (6 of 9 chains).
+- **Two type I effectors (4TVX, 8ANE):** the tools disagree (0 % agreement). Here the complex rotations differ by 42–44°, exactly one Cas7 step: the two tools choose filament registers offset by one subunit. At about 10 % identity, neither register is privileged by the data, so US-align is not ground truth at this level of similarity.
+
+![FS-M vs US-align](images/fig5_fsm_vs_usalign.png)
+
+*Figure 5. Complex TM-scores from Foldseek-Multimer vs US-align (left: normalised by the query; right: normalised by the target). Grey lines mark the 0.3 / 0.5 / 0.65 cut-offs.*
+
+**Thresholds (Table 3).** TM-scores are length-normalised, and for complexes the query length (2,876 residues) makes d0 large. The unrelated controls give the empirical noise level: qTM ≤ 0.018 for Foldseek-Multimer and ≤ 0.124 for US-align. I report three cut-offs:
+- **0.3**: a detection floor.
+- **0.5**: the conventional "same fold / same topology" TM-score cut-off from TM-align statistics [paper_003], here applied to the whole assembly. This is the cut-off I use for **"structurally similar complexes"**.
+- **0.65**: a stricter "same assembly architecture" cut-off.
+
+| complex qTM ≥ | method | hits (of 24) | type IV-A hits (of 13) | other hits |
+|---|---|---|---|---|
+| 0.3 | Foldseek-Multimer exhaustive | 14 | 13 | 1 |
+| 0.3 | Foldseek-Multimer default | 14 | 13 | 1 |
+| 0.3 | US-align | 19 | 13 | 6 |
+| 0.5 | Foldseek-Multimer exhaustive | 8 | 8 | 0 |
+| 0.5 | Foldseek-Multimer default | 8 | 8 | 0 |
+| 0.5 | US-align | 13 | 12 | 1 |
+| 0.65 | Foldseek-Multimer exhaustive | 8 | 8 | 0 |
+| 0.65 | Foldseek-Multimer default | 8 | 8 | 0 |
+| 0.65 | US-align | 8 | 8 | 0 |
+| 0.8 | Foldseek-Multimer exhaustive | 1 | 1 | 0 |
+| 0.8 | Foldseek-Multimer default | 1 | 1 | 0 |
+| 0.8 | US-align | 4 | 4 | 0 |
+
+Interpretation by cut-off:
+- **0.3:** Foldseek-Multimer reports 13/13 IV-A complexes plus IV-C. US-align also passes all six type I/III effectors and IV-C, which are genuine but remote Cas7-backbone homologues. Neither method passes any unrelated control at 0.3.
+- **0.5:** Foldseek-Multimer keeps only same-subtype (IV-A1) complexes, 8/8 (7XFZ, a 5-chain partial complex, falls to 0.36). US-align at 0.5 additionally keeps the IV-A3 and IV-C complexes, because its qTM is about 0.1 higher for them.
+
+The practical consequence: with Foldseek-Multimer, a cut-off around 0.4 separates the type IV complexes (≥ 0.44) from type I/III (≤ 0.27) and noise (≤ 0.02). Foldseek's 0.5 behaves like US-align's 0.65.
+
+Full per-target summary (FS-M = Foldseek-Multimer exhaustive; US = US-align; fident = sequence identity over the chain pairs actually used in the FS-M complex alignment):
+
+| target | tier | fs_qtm | fs_ttm | us_qtm | us_ttm | fs_rank | us_rank | fs_npairs | us_npairs | assign_agree | dAngle_complex_vs_us | fident_mean | fident_min | fident_max |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9N3Y | T1 | 0.984 | 0.98 | 0.983 | 0.979 | 1 | 1 | 9 | 9 | 1.0 | 0.037 | 0.993 | 0.965 | 1.0 |
+| 7XG2 | T1 | 0.792 | 0.999 | 0.793 | 0.999 | 2 | 5 | 8 | 8 | 1.0 | 0.0 | 1.0 | 1.0 | 1.0 |
+| 7XG0 | T1 | 0.792 | 0.998 | 0.792 | 0.998 | 3 | 6 | 8 | 8 | 1.0 | 0.041 | 0.999 | 0.996 | 1.0 |
+| 9N3Z | T1 | 0.786 | 0.779 | 0.821 | 0.814 | 4 | 2 | 8 | 9 | 1.0 | 0.644 | 0.993 | 0.981 | 1.0 |
+| 7XG3 | T1 | 0.777 | 0.788 | 0.817 | 0.827 | 5 | 3 | 8 | 9 | 1.0 | 0.594 | 0.982 | 0.875 | 1.0 |
+| 8RFJ | T2 | 0.776 | 0.775 | 0.814 | 0.814 | 6 | 4 | 8 | 9 | 1.0 | 0.642 | 0.679 | 0.547 | 0.726 |
+| 8RC3 | T2 | 0.775 | 0.97 | 0.779 | 0.973 | 7 | 7 | 8 | 8 | 1.0 | 0.019 | 0.68 | 0.547 | 0.726 |
+| 7XG1 | T1 | 0.67 | 0.964 | 0.674 | 0.96 | 8 | 8 | 7 | 7 | 1.0 | 0.024 | 0.98 | 0.888 | 1.0 |
+| 8S37 | T3 | 0.462 | 0.451 | 0.6 | 0.587 | 9 | 10 | 7 | 9 | 1.0 | 2.115 | 0.147 | 0.12 | 0.173 |
+| 8S35 | T3 | 0.46 | 0.451 | 0.586 | 0.575 | 10 | 11 | 7 | 9 | 1.0 | 1.876 | 0.141 | 0.116 | 0.165 |
+| 8RC2 | T3 | 0.449 | 0.56 | 0.55 | 0.676 | 11 | 12 | 7 | 8 | 1.0 | 1.041 | 0.139 | 0.114 | 0.16 |
+| 8S36 | T3 | 0.447 | 0.453 | 0.601 | 0.608 | 12 | 9 | 7 | 9 | 1.0 | 0.931 | 0.145 | 0.125 | 0.177 |
+| 11HC | T3b | 0.44 | 0.358 | 0.526 | 0.438 | 13 | 13 | 6 | 9 | 1.0 | 1.401 | 0.169 | 0.153 | 0.182 |
+| 7XFZ | T1 | 0.364 | 0.804 | 0.379 | 0.824 | 14 | 17 | 4 | 5 | 1.0 | 0.421 | 0.96 | 0.841 | 1.0 |
+| 7UZW | T4 | 0.27 | 0.441 | 0.358 | 0.557 | 15 | 18 | 6 | 7 | 1.0 | 1.341 | 0.115 | 0.08 | 0.129 |
+| 8ANE | T4 | 0.251 | 0.326 | 0.408 | 0.513 | 16 | 16 | 5 | 7 | 0.0 | 43.668 | 0.099 | 0.088 | 0.106 |
+| 5H9F | T4 | 0.249 | 0.22 | 0.446 | 0.4 | 17 | 14 | 6 | 9 | 1.0 | 7.918 | 0.1 | 0.089 | 0.121 |
+| 4TVX | T4 | 0.247 | 0.106 | 0.444 | 0.209 | 18 | 15 | 7 | 9 | 0.0 | 41.889 | 0.091 | 0.053 | 0.115 |
+| 6IG0 | T4 | 0.239 | 0.304 | 0.342 | 0.426 | 19 | 19 | 5 | 8 | 1.0 | 2.347 | 0.116 | 0.084 | 0.136 |
+| 6B44 | T4 | 0.041 | 0.041 | 0.241 | 0.241 | 20 | 20 | 2 | 8 | 0.5 | 162.04 | 0.11 | 0.081 | 0.139 |
+| 6N40 | N | 0.018 | 0.073 | 0.063 | 0.194 | 21 | 24 | 1 | 1 | 0.0 | 163.867 | 0.087 | 0.087 | 0.087 |
+| 4HHB | N | 0.016 | 0.08 | 0.079 | 0.307 | 22 | 22 | 2 | 3 | 0.0 | 94.929 | 0.146 | 0.139 | 0.153 |
+| 1FIN | N | 0.012 | 0.031 | 0.124 | 0.263 | 23 | 21 | 3 | 4 | 0.5 | 137.581 | 0.143 | 0.107 | 0.212 |
+| 1A0R | N | 0.008 | 0.038 | 0.07 | 0.256 | 24 | 23 | 2 | 3 | 0.0 | 76.412 | 0.176 | 0.115 | 0.238 |
+
+
+### 4.4 Twilight-zone sensitivity
+For the remote hits, the sequence identity of the chain pairs **used in the complex alignment** (not a best-chain tier label) is:
+
+| target | FS-M qTM | rank | mean / min / max paired fident |
+|---|---|---|---|
+| 8S37 | 0.462 | 9 | 0.147 / 0.120 / 0.173 |
+| 8S35 | 0.460 | 10 | 0.141 / 0.116 / 0.165 |
+| 8RC2 | 0.449 | 11 | 0.139 / 0.114 / 0.160 |
+| 8S36 | 0.447 | 12 | 0.145 / 0.125 / 0.177 |
+| 11HC (IV-C) | 0.440 | 13 | 0.169 / 0.153 / 0.182 |
+| type I/III (6 entries) | 0.04–0.27 | 15–20 | 0.091–0.116 mean; min 0.053 |
+
+Every IV-A3 and IV-C chain pair lies below 25 % identity, and detection held: the complexes rank directly after all same-subtype entries and above everything else (Fig. 6). The single exception to the ranking is 7XFZ, a sub-complex containing only four query-matching chains, whose qTM is capped by query-length normalisation (tTM 0.80).
+
+All type I/III hits are below 12 % mean identity. Foldseek-Multimer still assembles 5–7 consistent Cas7-backbone chain pairs for five of the six (qTM 0.24–0.27). For 6B44 (type I-F Csy) it assembles only two pairs (qTM 0.04), whereas US-align gives 0.24.
+
+![Twilight](images/fig6_twilight.png)
+
+*Figure 6. Complex qTM against the mean (min–max) sequence identity of the aligned chain pairs. Dashed line: 25 % identity.*
+
+### 4.5 Speed
+**Isolated pairwise comparison** (same pair for both tools, 1 thread; median and range):
+
+| pair | FS-M end-to-end from PDB (s) | FS-M pre-built DBs (s) | US-align -mm 1 -ter 0 (s) | speed-up (end-to-end) | speed-up (pre-built) |
+|---|---|---|---|---|---|
+| 7XG4-9N3Y | 0.213 (0.208–0.225) | 0.126 (0.120–0.127) | 47.7 (43.3–74.9) | 224× | 380× |
+| 7XG4-8S35 | 0.373 (0.335–0.387) | 0.221 (0.192–0.237) | 56.7 (52.0–72.1) | 152× | 257× |
+| 7XG4-6N40 | 0.100 (0.092–0.131) | 0.046 (0.041–0.054) | 1.5 (1.5–2.2) | 15× | 32× |
+
+**Database-amortised cost** (7XG4 vs 192 entries; `createdb` excluded; 3 repeats):
+
+| mode | median per entry | entries reported |
+|---|---|---|
+| exhaustive | 70 ms | 192/192 |
+| default prefilter | 125 ms | 160/192 |
+| prefilter, `--max-seqs 3000` | 154 ms | 176/192 |
+
+In this redundant toy database the default prefilter is *slower* than exhaustive search, because of the k-mer index construction overhead. It also truncates hits (the default `--max-seqs 300` caps candidates per query chain), which is a caveat for redundant databases.
+
+![Timing](images/fig7_timing.png)
+
+*Figure 7. Left: per-pair wall time (log scale). Right: amortised cost per database entry.*
+
+Where the speed comes from:
+- **US-align** must (i) enumerate or heuristically search chain-to-chain mappings, (ii) run TM-align-style iterative superposition plus dynamic programming for every candidate chain pair, and (iii) re-optimise the global alignment. Its cost grows steeply with chain count and homomer multiplicity: about 50 s for 9 vs 9 chains, and 1.5 s for 9 vs 1 chain.
+- **Foldseek-Multimer** replaces (ii) with a 3Di+AA local alignment that costs milliseconds per chain pair. It replaces (i) with clustering of the resulting superposition vectors, which is linear in the number of chain pairs. The full TM-score is computed only once, for each assembled assignment.
+
+Within one pairwise comparison this gives 2.2–2.6 orders of magnitude here (150–380×). With prefiltering, the prefilter additionally removes most target chains from consideration, so gains grow with database size. This is how searches across millions of complexes become tractable.
+
+## 5. Discussion
+**What the method gets right.** The three requested outputs are reliable whenever the complexes are related at the level of the same CRISPR subtype or closer, even at 11–18 % sequence identity:
+- *Chain correspondence:* identical to US-align, and correct in all ground-truth tests, including permuted homomer labels and a sub-complex.
+- *Superposition:* within 0.05° of ground truth, and within 0.04–2.1° of US-align on real homologues.
+- *Complex TM-score:* r = 0.98 with US-align.
+
+The key design element is the superposition vector. In a homo-oligomeric filament, chain-level similarity is uninformative: matching on chain-TM alone mis-assigns 2/5 (ortholog) to 4/5 (remote) Csf2 copies. Requiring every chain pair to share one rigid transform resolves this unambiguously, because each register shift moves the transform by about 43° / 32 Å.
+
+**Limitations.**
+1. **Conservative scores and coverage.** Chains whose 3Di alignment does not join the dominant superposition cluster are dropped from the assignment, for example CasDinG in the ortholog, or Csf5/CasDinG in IV-A3. This lowers the complex qTM by about 0.1 relative to US-align for remote hits, so thresholds tuned for US-align should not be transferred unchanged.
+2. **Register ambiguity in very remote, repetitive assemblies.** For type I Cascade (4TVX, 8ANE), Foldseek-Multimer and US-align choose Cas7 registers offset by one subunit. Neither choice can be called wrong without an external reference.
+3. **Monomeric targets** are invisible under the default `--min-aligned-chains 2`. They were reported here only with `--min-aligned-chains 1`. The resulting nine one-chain "assignments" for 7XG4–6N40 are expected noise.
+4. **Timing environment.** Timings were measured on a heavily shared host (load average ≈ 100). US-align repeats varied by up to 1.7× (43–75 s), so speed-ups are order-of-magnitude estimates, not precise ratios. Database-scale (millions) timing was not measured.
+5. **Benchmark size.** The benchmark is small (24 targets, 1 query). Accuracy statistics therefore have wide uncertainty, and the type I/III tier is a set of real homologues rather than true negatives.
+
+**On the designated input pair.** The study goal points to the paper's case study, in which a *Sulfitobacter* sp. JL08 complex retrieves 7XG4 as a type IV-A hit. That query complex is not provided; 6N40 is a monomeric membrane transporter. The honest result for the requested pair is "no similarity", and both independent tools agree on it. The positive case is reproduced as closely as the available data allow, using real type IV-A orthologs at decreasing identity. The most informative analogue of a distant-species IV-A hit is the *K. pneumoniae* IV-A3 complex, at about 14 % paired identity.
+
+## 6. Reproducibility
+All numbers trace to files in `outputs/`. To reproduce, run the scripts in this order:
+1. `code/get_tools.py`
+2. `code/fetch_db.py`
+3. Foldseek commands (§3; outputs in `outputs/pair/`, `outputs/search/`)
+4. `code/run_usalign.py`
+5. `code/analyze_chains.py`
+6. `code/csf2_swap.py`
+7. `code/groundtruth_test.py`
+8. `code/summarize.py`
+9. `code/make_tables.py`
+10. `code/timing.py`
+11. `code/fig_timing.py`
+
+| content | file |
+|---|---|
+| per-target summary | `outputs/summary_targets.csv`, `outputs/summary_ranked.csv` |
+| chain tables with U/t | `outputs/chain_tables.json`, `outputs/tables.md` |
+| accuracy and thresholds | `outputs/accuracy_thresholds.json` |
+| timing | `outputs/timing/timing.json` |
+| ground truth | `outputs/groundtruth/groundtruth.json` |
+
+## References
+- [paper_000] van Kempen M. et al. Fast and accurate protein structure search with Foldseek. *Nat Biotechnol* 42, 243–246 (2024).
+- [paper_001] Zhang C. et al. US-align: universal structure alignments of proteins, nucleic acids, and macromolecular complexes. *Nat Methods* 19, 1109–1115 (2022).
+- [paper_002] Dey S. et al. PDB-wide identification of biological assemblies from conserved quaternary structure geometry (QSalign). *Nat Methods* 15, 67–72 (2018).
+- [paper_003] Zhang Y., Skolnick J. TM-align: a protein structure alignment algorithm based on the TM-score. *Nucleic Acids Res* 33, 2302–2309 (2005).
+- Foldseek-Multimer: Kim W. et al., Rapid and sensitive protein complex alignment with Foldseek-Multimer. *Nat Methods* (2025). This paper is not in `related_work`; the method was reproduced from the released binary.

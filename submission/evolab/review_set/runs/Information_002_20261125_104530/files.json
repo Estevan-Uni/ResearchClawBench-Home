@@ -1,0 +1,390 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "extraction_stats.py",
+    "path": "code/extraction_stats.py",
+    "type": "file",
+    "size": 15078,
+    "mtime": 1795604184.1782844,
+    "exported": true
+  },
+  {
+    "name": "hf_long.py",
+    "path": "code/hf_long.py",
+    "type": "file",
+    "size": 984,
+    "mtime": 1795604011.4775436,
+    "exported": true
+  },
+  {
+    "name": "hf_production.py",
+    "path": "code/hf_production.py",
+    "type": "file",
+    "size": 5390,
+    "mtime": 1795604445.3915262,
+    "exported": true
+  },
+  {
+    "name": "hf_quicktest.py",
+    "path": "code/hf_quicktest.py",
+    "type": "file",
+    "size": 651,
+    "mtime": 1795603802.1007755,
+    "exported": true
+  },
+  {
+    "name": "make_figures.py",
+    "path": "code/make_figures.py",
+    "type": "file",
+    "size": 9526,
+    "mtime": 1795604644.7725394,
+    "exported": true
+  },
+  {
+    "name": "moire.py",
+    "path": "code/moire.py",
+    "type": "file",
+    "size": 17461,
+    "mtime": 1795604011.4655435,
+    "exported": true
+  },
+  {
+    "name": "single_particle.py",
+    "path": "code/single_particle.py",
+    "type": "file",
+    "size": 6695,
+    "mtime": 1795604477.5876868,
+    "exported": true
+  },
+  {
+    "name": "test_T.py",
+    "path": "code/test_T.py",
+    "type": "file",
+    "size": 365,
+    "mtime": 1795603966.0493631,
+    "exported": true
+  },
+  {
+    "name": "test_hf_bruteforce.py",
+    "path": "code/test_hf_bruteforce.py",
+    "type": "file",
+    "size": 2355,
+    "mtime": 1795603851.9089422,
+    "exported": true
+  },
+  {
+    "name": "verify_algebra.py",
+    "path": "code/verify_algebra.py",
+    "type": "file",
+    "size": 8542,
+    "mtime": 1795603925.8892095,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "agent_execution.md",
+    "path": "outputs/agent_execution.md",
+    "type": "file",
+    "size": 11705,
+    "mtime": 1795604299.4548178,
+    "exported": true
+  },
+  {
+    "name": "algebra_checks.json",
+    "path": "outputs/algebra_checks.json",
+    "type": "file",
+    "size": 832,
+    "mtime": 1795603934.6932425,
+    "exported": true
+  },
+  {
+    "name": "bruteforce_hf.txt",
+    "path": "outputs/bruteforce_hf.txt",
+    "type": "file",
+    "size": 129,
+    "mtime": 1795604380.1752055,
+    "exported": true
+  },
+  {
+    "name": "extraction_stats.json",
+    "path": "outputs/extraction_stats.json",
+    "type": "file",
+    "size": 3457,
+    "mtime": 1795604187.9983017,
+    "exported": true
+  },
+  {
+    "name": "figure_summary.json",
+    "path": "outputs/figure_summary.json",
+    "type": "file",
+    "size": 6219,
+    "mtime": 1795604650.9565716,
+    "exported": true
+  },
+  {
+    "name": "hf_nu1_mesh.json",
+    "path": "outputs/hf_nu1_mesh.json",
+    "type": "file",
+    "size": 78858,
+    "mtime": 1795604235.9905207,
+    "exported": true
+  },
+  {
+    "name": "hf_nu1_scan.json",
+    "path": "outputs/hf_nu1_scan.json",
+    "type": "file",
+    "size": 41375,
+    "mtime": 1795604427.2874367,
+    "exported": true
+  },
+  {
+    "name": "hf_nu2_fine.json",
+    "path": "outputs/hf_nu2_fine.json",
+    "type": "file",
+    "size": 54950,
+    "mtime": 1795604630.016463,
+    "exported": true
+  },
+  {
+    "name": "hf_nu2_mesh.json",
+    "path": "outputs/hf_nu2_mesh.json",
+    "type": "file",
+    "size": 68258,
+    "mtime": 1795604171.8942292,
+    "exported": true
+  },
+  {
+    "name": "hf_nu2_scan.json",
+    "path": "outputs/hf_nu2_scan.json",
+    "type": "file",
+    "size": 55108,
+    "mtime": 1795604367.6231446,
+    "exported": true
+  },
+  {
+    "name": "hf_shell.json",
+    "path": "outputs/hf_shell.json",
+    "type": "file",
+    "size": 15615,
+    "mtime": 1795604598.3482997,
+    "exported": true
+  },
+  {
+    "name": "log_make_figures.txt",
+    "path": "outputs/log_make_figures.txt",
+    "type": "file",
+    "size": 6220,
+    "mtime": 1795604650.9565716,
+    "exported": true
+  },
+  {
+    "name": "log_nu1_mesh.txt",
+    "path": "outputs/log_nu1_mesh.txt",
+    "type": "file",
+    "size": 2209,
+    "mtime": 1795604235.9905207,
+    "exported": true
+  },
+  {
+    "name": "log_nu1_scan.txt",
+    "path": "outputs/log_nu1_scan.txt",
+    "type": "file",
+    "size": 3928,
+    "mtime": 1795604427.2874367,
+    "exported": true
+  },
+  {
+    "name": "log_nu2_fine.txt",
+    "path": "outputs/log_nu2_fine.txt",
+    "type": "file",
+    "size": 4008,
+    "mtime": 1795604630.016463,
+    "exported": true
+  },
+  {
+    "name": "log_nu2_mesh.txt",
+    "path": "outputs/log_nu2_mesh.txt",
+    "type": "file",
+    "size": 1683,
+    "mtime": 1795604171.8942292,
+    "exported": true
+  },
+  {
+    "name": "log_nu2_scan.txt",
+    "path": "outputs/log_nu2_scan.txt",
+    "type": "file",
+    "size": 6859,
+    "mtime": 1795604367.6311445,
+    "exported": true
+  },
+  {
+    "name": "log_shell.txt",
+    "path": "outputs/log_shell.txt",
+    "type": "file",
+    "size": 1949,
+    "mtime": 1795604598.3482997,
+    "exported": true
+  },
+  {
+    "name": "log_single_particle.txt",
+    "path": "outputs/log_single_particle.txt",
+    "type": "file",
+    "size": 2320,
+    "mtime": 1795604493.9037685,
+    "exported": true
+  },
+  {
+    "name": "log_trs_test.txt",
+    "path": "outputs/log_trs_test.txt",
+    "type": "file",
+    "size": 1165,
+    "mtime": 1795603910.221151,
+    "exported": true
+  },
+  {
+    "name": "log_trs_test2.txt",
+    "path": "outputs/log_trs_test2.txt",
+    "type": "file",
+    "size": 496,
+    "mtime": 1795604021.2335832,
+    "exported": true
+  },
+  {
+    "name": "log_trs_test3.txt",
+    "path": "outputs/log_trs_test3.txt",
+    "type": "file",
+    "size": 493,
+    "mtime": 1795604022.0095866,
+    "exported": true
+  },
+  {
+    "name": "placeholder_table.csv",
+    "path": "outputs/placeholder_table.csv",
+    "type": "file",
+    "size": 4272,
+    "mtime": 1795604187.9943016,
+    "exported": true
+  },
+  {
+    "name": "rubric_grades.csv",
+    "path": "outputs/rubric_grades.csv",
+    "type": "file",
+    "size": 9166,
+    "mtime": 1795604187.9943016,
+    "exported": true
+  },
+  {
+    "name": "single_particle_checks.json",
+    "path": "outputs/single_particle_checks.json",
+    "type": "file",
+    "size": 2565,
+    "mtime": 1795604493.9037685,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "algebra_checks.png",
+    "path": "report/images/algebra_checks.png",
+    "type": "file",
+    "size": 93022,
+    "mtime": 1795604649.4205637,
+    "exported": true
+  },
+  {
+    "name": "auto_scorer.png",
+    "path": "report/images/auto_scorer.png",
+    "type": "file",
+    "size": 37734,
+    "mtime": 1795604191.0823157,
+    "exported": true
+  },
+  {
+    "name": "data_overview.png",
+    "path": "report/images/data_overview.png",
+    "type": "file",
+    "size": 126113,
+    "mtime": 1795604650.6165698,
+    "exported": true
+  },
+  {
+    "name": "extraction_accuracy.png",
+    "path": "report/images/extraction_accuracy.png",
+    "type": "file",
+    "size": 85867,
+    "mtime": 1795604188.8983057,
+    "exported": true
+  },
+  {
+    "name": "hf_bands.png",
+    "path": "report/images/hf_bands.png",
+    "type": "file",
+    "size": 349406,
+    "mtime": 1795604646.7565498,
+    "exported": true
+  },
+  {
+    "name": "hf_convergence.png",
+    "path": "report/images/hf_convergence.png",
+    "type": "file",
+    "size": 116455,
+    "mtime": 1795604647.9125557,
+    "exported": true
+  },
+  {
+    "name": "hf_scans.png",
+    "path": "report/images/hf_scans.png",
+    "type": "file",
+    "size": 92520,
+    "mtime": 1795604648.8365605,
+    "exported": true
+  },
+  {
+    "name": "rubric_heatmap.png",
+    "path": "report/images/rubric_heatmap.png",
+    "type": "file",
+    "size": 134605,
+    "mtime": 1795604190.526313,
+    "exported": true
+  },
+  {
+    "name": "single_particle_bands.png",
+    "path": "report/images/single_particle_bands.png",
+    "type": "file",
+    "size": 295706,
+    "mtime": 1795604493.6157672,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 40261,
+    "mtime": 1795604827.36847,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4722,
+    "mtime": 1795603530.384106,
+    "exported": true
+  }
+]

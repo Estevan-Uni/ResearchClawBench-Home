@@ -1,0 +1,101 @@
+[
+ {
+  "id": "rob_scale_0.25",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "scale",
+   "v": 0.25
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_scale_0.12",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "scale",
+   "v": 0.12
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_blur_3",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "blur",
+   "v": 3
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_blur_5",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "blur",
+   "v": 5
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_noise_50",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "noise",
+   "v": 50
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_noise_80",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "noise",
+   "v": 80
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_rotate_15",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "rotate",
+   "v": 15
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_rotate_30",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "rotate",
+   "v": 30
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ },
+ {
+  "id": "rob_jpeg_10",
+  "image": "/workspace/data/equation.png",
+  "transform": {
+   "kind": "jpeg",
+   "v": 10
+  },
+  "turns": [
+   "Convert the formula into latex code."
+  ]
+ }
+]

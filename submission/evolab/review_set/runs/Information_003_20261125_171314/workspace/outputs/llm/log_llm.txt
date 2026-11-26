@@ -1,0 +1,107 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<08:21,  1.49s/it]Loading weights:  26%|██▌       | 87/338 [00:01<00:03, 68.22it/s]Loading weights:  33%|███▎      | 110/338 [00:01<00:03, 72.87it/s]Loading weights:  38%|███▊      | 127/338 [00:02<00:03, 68.39it/s]Loading weights:  41%|████      | 139/338 [00:02<00:03, 65.86it/s]Loading weights:  44%|████▍     | 149/338 [00:02<00:02, 64.04it/s]Loading weights:  47%|████▋     | 159/338 [00:02<00:02, 64.69it/s]Loading weights:  51%|█████     | 171/338 [00:02<00:02, 72.64it/s]Loading weights:  54%|█████▍    | 183/338 [00:03<00:02, 68.37it/s]Loading weights:  58%|█████▊    | 195/338 [00:03<00:02, 64.55it/s]Loading weights:  61%|██████    | 207/338 [00:03<00:01, 68.38it/s]Loading weights:  64%|██████▎   | 215/338 [00:03<00:01, 70.35it/s]Loading weights:  66%|██████▌   | 223/338 [00:03<00:01, 68.51it/s]Loading weights:  68%|██████▊   | 231/338 [00:03<00:01, 65.18it/s]Loading weights:  72%|███████▏  | 243/338 [00:04<00:01, 65.95it/s]Loading weights:  75%|███████▌  | 255/338 [00:04<00:01, 57.28it/s]Loading weights:  79%|███████▉  | 268/338 [00:04<00:01, 62.05it/s]Loading weights:  83%|████████▎ | 279/338 [00:04<00:00, 70.71it/s]Loading weights:  85%|████████▍ | 287/338 [00:04<00:00, 64.25it/s]Loading weights:  87%|████████▋ | 294/338 [00:04<00:00, 59.47it/s]Loading weights:  90%|████████▉ | 303/338 [00:05<00:00, 59.31it/s]Loading weights:  93%|█████████▎| 315/338 [00:05<00:00, 70.26it/s]Loading weights:  97%|█████████▋| 327/338 [00:05<00:00, 73.52it/s]Loading weights: 100%|██████████| 338/338 [00:05<00:00, 63.50it/s]
+[transformers] `past_key_values`/`cache_params` are deprecated. Use `cache` instead.
+prefix tokens 1372 prefix s 38.76507210731506
+/usr/local/lib/python3.12/site-packages/torch/nn/modules/module.py:1798: FutureWarning: `past_key_values` is deprecated and will be removed in version 5.40.0 for `Qwen2ForCausalLM.forward`. Use `cache` instead.
+  return forward_call(*args, **kwargs)
+1 A A 5.04
+2 A A 3.38
+3 A A 4.01
+4 A A 5.33
+5 A A 5.02
+6 A A 3.86
+7 A A 3.67
+8 A A 3.67
+9 A A 3.22
+10 J A 2.69
+11 C B 3.51
+12 C B 2.68
+13 C B 2.55
+14 C B 2.68
+15 C B 2.99
+16 J B 3.87
+17 J B 5.39
+18 A B 3.0
+19 A B 4.51
+20 A B 2.85
+21 C C 3.74
+22 J C 4.26
+23 C C 3.88
+24 C C 3.02
+25 A C 2.61
+26 C C 3.69
+27 J C 2.39
+28 J C 2.82
+29 C C 2.92
+30 A C 2.64
+31 C D 2.97
+32 J D 2.94
+33 C D 2.69
+34 F D 3.56
+35 A D 3.16
+36 A D 2.94
+37 A D 3.96
+38 F D 5.37
+39 A D 3.68
+40 J D 3.16
+41 J E 3.58
+42 J E 3.87
+43 J E 2.83
+44 J E 3.05
+45 J E 3.21
+46 A E 2.89
+47 C E 2.59
+48 J E 3.51
+49 A E 2.92
+50 J E 3.71
+51 C F 3.07
+52 C F 2.67
+53 C F 2.84
+54 J F 3.0
+55 J F 3.3
+56 J F 3.04
+57 C F 3.08
+58 C F 2.61
+59 C F 3.24
+60 J F 2.71
+61 G G 2.62
+62 G G 2.2
+63 G G 2.2
+64 G G 2.45
+65 G G 2.23
+66 J G 3.96
+67 J G 2.6
+68 C G 2.51
+69 G G 2.95
+70 G G 2.8
+71 F H 2.88
+72 A H 2.53
+73 F H 3.32
+74 A H 2.66
+75 F H 3.44
+76 C H 3.23
+77 F H 3.31
+78 C H 2.77
+79 C H 3.42
+80 C H 3.49
+81 A I 2.61
+82 J I 2.63
+83 F I 3.4
+84 C I 3.51
+85 C I 3.56
+86 F I 3.07
+87 F I 3.29
+88 C I 4.53
+89 A I 2.71
+90 C I 2.82
+91 J J 3.11
+92 J J 3.24
+93 J J 2.89
+94 J J 2.81
+95 J J 3.0
+96 A J 2.85
+97 J J 5.11
+98 J J 2.88
+99 J J 4.37
+100 C J 2.52
+{'model': 'Qwen2.5-1.5B-Instruct (local CPU, fp32, 8 threads)', 'n_flows': 100, 'n_shots': 20, 'prefix_tokens': 1372, 'prefix_s': 38.76507210731506, 'per_flow_s_mean': 3.245833637714386, 'total_s': 363.34843587875366, 'macro_f1': 0.19942253824606765, 'bin_f1': 0.8198757763975155, 'acc': 0.29, 'pred_counts': [25, 0, 29, 0, 0, 9, 7, 0, 0, 30], 'dids_mfl_same_flows': {'macro_f1': 0.6789294056180466, 'bin_f1': 1.0, 'acc': 0.68}, 'rf_same_flows': {'macro_f1': 0.85347785491008, 'bin_f1': 0.994413407821229, 'acc': 0.86, 'total_s': 0.10545182228088379}, 'rf_on_prompt_shots': {'macro_f1': 0.4261588993085157, 'bin_f1': 0.9836065573770492, 'acc': 0.45}, 'features_used': [17, 2, 14, 16, 13, 23, 12, 4, 18, 11, 24, 15, 5, 25, 19, 31, 30, 8, 3, 6]}

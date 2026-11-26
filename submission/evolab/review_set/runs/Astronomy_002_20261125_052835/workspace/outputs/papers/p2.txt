@@ -1,0 +1,1641 @@
+Draft version July 11, 2024
+Typeset using LATEX twocolumn style in AASTeX631
+Coordinated JWST Imaging of Three Distance Indicators in a SN Host Galaxy and an Estimate of
+the TRGB Color Dependence
+Taylor J. Hoyt
+ ,1 In Sung Jang,2 Wendy L. Freedman,3 Barry F. Madore,4, 2 Abigail J. Lee,2 and
+Kayla A. Owens2
+1Physics Division, Lawrence Berkeley National Lab, 1 Cyclotron Road, Berkeley, CA 94720, USA
+2Department of Astronomy & Astrophysics, University of Chicago, 5640 South Ellis Avenue, Chicago, IL 60637
+3Department of Astronomy & Astrophysics and Kavli Institute for Cosmological Physics, University of Chicago, 5640 South Ellis Avenue,
+Chicago, IL 60637
+4The Observatories of the Carnegie Institute of Washington, 813 Santa Barbara St, Pasadena, CA 91101
+(Revised July 11, 2024)
+ABSTRACT
+Boasting a 6.5m mirror in space, JWST can increase by several times the number of supernovae (SNe) to
+which a redshift-independent distance has been measured with a precision distance indicator (e.g., TRGB or
+Cepheids); the limited number of such SN calibrators currently dominates the uncertainty budget in distance
+ladder Hubble constant (H0) experiments. JWST/NIRCAM imaging of the Virgo Cluster galaxy NGC 4536 is
+used here to preview JWST program GO-1995, which aims to measure H0 using three stellar distance indicators
+(Cepheids, TRGB, JAGB/carbon stars). Each population of distance indicator was here successfully detected–
+with sufficiently large number statistics, well-measured fluxes, and characteristic distributions consistent with
+ingoing expectations–so as to confirm that we can acquire distances from each method precise to about 0.05 mag
+(statistical uncertainty only). We leverage overlapping HST imaging to identify TRGB stars, cross-match them
+with the JWST photometry, and present a preliminary constraint on the slope of the TRGB’s F115W-(F115W−
+F444W) relation equal to −0.99 ± 0.16 mag/mag. This slope is consistent with prior slope measurements in
+the similar 2MASS J band, as well as with predictions from the BASTI isochrone suite. We use the new
+TRGB slope estimate to flatten the two-dimensional TRGB feature and measure a (blinded) TRGB distance
+relative to a set of fiducial TRGB colors, intended to represent the absolute fiducial calibrations expected from
+geometric anchors such as NGC 4258 and the Magellanic Clouds. In doing so, we empirically demonstrate
+that the TRGB can be used as a standardizable candle at the IR wavelengths accessible with JWST.
+Keywords: cosmology: distance scale — galaxies: individual (NGC 4536) – galaxies: stellar content
+— stars: Population II
+1. INTRODUCTION
+The trajectory of paradigm-shifting improvements in
+the realm of extragalactic distance measurement is
+closely tied to similar breakthroughs in observational
+capabilities. From the initial discovery of the expand-
+ing universe made possible by the 100” telescope at
+Mt. Wilson (Hubble 1929), to the adoption of red-
+sensitive plates (e.g., Baade 1944), the development of
+CCD cameras (e.g., Mould & Kristian 1986; Freedman
+Corresponding author: Taylor J. Hoyt
+taylorjhoyt@gmail.com
+1988; Freedman & Madore 1988), and the launch of
+space telescopes (e.g., Freedman et al. 2001, 2012; Riess
+et al. 2009, 2016, 2022). Now, JWST has been success-
+fully launched, commissioned, and is in full science op-
+eration (Rigby et al. 2023; Gardner et al. 2023). With a
+6.5m mirror diameter and newer IR detector technology
+than its predecessors, JWST has already begun rapidly
+improving the precision and accuracy of extragalactic
+distance measurements (Lee et al. 2024a; Riess et al.
+2024; Anand et al. 2024).
+1.1. The Hubble Constant
+The universe’s present-day expansion rate, or the
+Hubble constant, H0, continues to prove challenging to
+arXiv:2407.07309v1  [astro-ph.GA]  10 Jul 2024
+2
+accurately measure via direct, astrophysical means such
+as the classical distance ladder. After the Key Project
+resolved the factor of two debate using the Hubble Space
+Telescope (HST) and introduced comprehensive error
+budgeting into the distance scale (Freedman et al. 2001),
+interest in measurement of H0 was reignited because of
+the leverage it provides in constraining the dark energy
+equation of state when combined with cosmic microwave
+background (CMB) measurements (Hu 2005).
+A departure from this initial goal of measuring w
+began with claims of a “Hubble Tension,” which is
+a disagreement between local or direct measurements
+of H0 (e.g., Cepheids and SNe) and those estimates
+that are tied to high-redshift observables (e.g., CMB
+or BBN+BAO) then extrapolated to the present day.
+The latest evidence from Cepheids-SNe suggests that
+the Hubble Tension has reached 5σ significance (Riess
+et al. 2022) and that new physics beyond the standard
+model must be the reason for it. However, the Cepheid-
+SN local measurement dominating the claim (Riess et al.
+2022) may not fully account for some uncertainties that
+were demonstrated to have been previously underesti-
+mated (Freedman & Madore 2023).
+1.2. JWST-GO-1995: Is the Tension in the Hubble
+Constant Real?
+To address the nature of the Hubble Tension, a
+JWST program (PI: Freedman, co-PI; Madore, GO-
+1995) aims to assess how well the facility can measure
+extragalactic distances by comparing relative distances
+estimated to the same host galaxies using three differ-
+ent distance indicators. The program is designed to ac-
+quire JWST/NIRCAM imaging of ten galaxies that have
+hosted Type Ia supernovae (SNe Ia) as well as of three
+fields in the megamaser host galaxy NGC 4258, to which
+a 1.5% trigonometric distance has been estimated (Her-
+rnstein et al. 1999; Humphreys et al. 2008, 2013; Reid
+et al. 2019). These calibrator galaxies play the key role
+as the absolute anchors of the SN Ia distance scale, and
+any subsequent SN-based derivation of H0.
+In each pointing, imaging was acquired so as to cap-
+ture at the same time three distance indicators: the clas-
+sical Cepheid variables, the Tip of the Red Giant Branch
+(TRGB), and the predominantly carbon-enhanced pop-
+ulation of red Asymptotic Giant Branch (AGB) stars
+that are found to populate a horizontal plume in the J-
+band color-magnitude diagram (referred to as JAGB).
+Each of the three methods can be naturally catego-
+rized by the galactic structures in which their respec-
+tive stellar populations are optimally measured: the
+young, massive Cepheids in spiral arms and/or thin
+disks, intermediate-age JAGB stars in the thick, ex-
+tended disk, and the old TRGB in the stellar halo (see
+Figure 1).
+The program was blinded in terms of both the intra-
+sample relative distances as well as the sample-wide ab-
+solute zero point. This is done by injecting a random
+offset, different for each of the thirteen target fields, be-
+tween −0.2 and +0.2 mag into each field’s photometric
+catalog, then deleting all traces of the original magni-
+tudes. After unblinding, each method’s calibrated dis-
+tance scale will provide a new measure of the Hubble
+constant and, should the cross-comparison reveal mini-
+mal systematic differences, the joint distance constraints
+can be leveraged for a combined determination of the
+Hubble constant with improved uncertainties over any
+one method’s constraint.
+In this paper, each of the three methods will be show-
+cased using JWST/NIRCAM observations acquired of
+the Virgo Cluster galaxy NGC 4536–with an outsize fo-
+cus placed on the TRGB and its color dependence. We
+briefly introduce each method here and emphasize recent
+developments relevant to the infrared imaging consid-
+ered here. For a comprehensive review of each method
+and of the motivation for program JWST-GO-1995, see
+Freedman & Madore (2023).
+1.3. Cepheid Variable Stars
+Cepheid variables have long been the backbone of
+modern observational cosmology via application of the
+“Leavitt Law,” or the universal power-law relationship
+between a Cepheid’s pulsation period and its phase-
+averaged luminosity (Leavitt 1908; Leavitt & Pickering
+1912). The Cepheid Leavitt Law was used to discover
+the expanding universe (Hubble 1929), and then re-
+vised via disambiguation between the classical and Pop
+II Cepheids, which populate separate period-luminosity
+relations (Baade & Swope 1963). It underpinned the
+factor of two debate over the age of the universe (see,
+e.g., Sandage 1970; de Vaucouleurs 1978), as well as its
+resolution, which began with some of the earliest obser-
+vations of Cepheids with CCDs (e.g., Freedman 1988;
+Freedman & Madore 1990) and finished with the HST
+Key Project (HST-KP, Freedman et al. 2001).
+The HST-KP techniques were further developed and
+broadened in scope for use with near-infrared (NIR) de-
+tectors on board HST such as NICMOS (Macri et al.
+2001; Riess et al. 2009) and WFC3/IR (Riess et al. 2016,
+2022). With Spitzer, extinction uncertainties could be
+reduced to negligible levels (Freedman et al. 2012). This
+led to the discovery of a bandpass (λef f = 4.5 µm) in
+which a CO band-head could be observed and provide
+a means of acquiring direct abundance measurements of
+Cepheids from photometry alone (Scowcroft et al. 2011;
+3
+Monson et al. 2012; Scowcroft et al. 2016), at nearly
+the same precision as spectroscopy (σ ≃ 0.2 dex). The
+CO-band head has recently been directly confirmed with
+spectroscopic measurements of Cepheids (Hamer et al.
+2023).
+JWST can directly build on the pioneering findings
+provided by Spitzer, which was limited to the nearby
+∼ 100 kpc universe. JWST increases the reach of 4.5
+micron Cepheid measurements to the 10 Mpc universe
+and potentially beyond, thanks to its considerably bet-
+ter image quality–predominantly a function of the eight
+times increase in mirror size, though newer generation
+IR imaging technology also plays a major role. The
+measurement of Cepheid fluxes at 4.5 microns and the
+potential to directly measure Cepheid metallicities was
+considered in planning the JWST-GO-1995 observations
+of the most nearby targets (e.g., M101 and NGC 4258).
+For the remainder of the targets we chose to pair F115W
+with the F356W 3.6 micron band as it is the most sen-
+sitive of the NIRCAM/LW standard wide bandpasses.
+This excludes NGC 4536 and NGC 7250, which were
+imaged in F444W before we made the decision to switch
+to F356W for distant targets.
+1.4. Horizontal “J” Branch of Carbon-enhanced
+Asymptotic Giant Branch Stars (JAGB)
+2MASS observations of the LMC revealed a dis-
+tinct branch of stars pulling off the narrow oxygen-rich
+asymptotic giant branch (AGB Nikolaev & Weinberg
+2000). Weinberg & Nikolaev (2001) used that branch of
+stars to present a constraint on the geometry of the LMC
+that was consistent with prior determinations derived
+from established distance indicators (e.g., Cepheids),
+demonstrating that this branch of AGB stars was ca-
+pable of providing precise distances when observed in
+the IR.
+Madore & Freedman (2020a) updated the Weinberg &
+Nikolaev (2001) findings by identifying from an expan-
+sive compilation of IR CMDs of the LMC (Macri et al.
+2015; Hoyt et al. 2018) that this branch of AGB stars
+became almost completely horizontal when observed in
+the J-band CMD. Ripoche et al. (2020) found the same
+in 2MASS observations of the LMC and IR observations
+plus Gaia DR2 parallaxes of Milky Way stars. Freedman
+& Madore (2020) used this “JAGB” method to deter-
+mine distances to 13 Local Group galaxies, comparing
+against the I-band TRGB and finding a total dispersion
+of 0.07 mag, thereby establishing the JAGB as a preci-
+sion extragalactic distance indicator. The method has
+been vetted and refined upon by several independent
+groups, across different host galaxies, and tested with
+various approaches to the actual distance measurement
+methodology (Lee et al. 2021, 2024b; Parada et al. 2021,
+2023; Zgirski et al. 2021).
+1.5. The Tip of the Red Giant Branch
+When observed at the near-infrared (NIR) wave-
+lengths at which a TRGB star’s SED peaks, the TRGB
+brightness is strongly (and linearly) correlated with the
+metallicities/colors of coeval TRGB stars (Salaris &
+Cassisi 1998, 2005; Bellazzini et al. 2004; Bellazzini 2008;
+Madore et al. 2018; Madore & Freedman 2020b; Durbin
+et al. 2020), contrary to its metallicity/color-insensitive
+(with a small, near-zero residual variance observed for
+metal-poor TRGB stars) manifestation when observed
+with bands that have effective wavelengths between 800
+and 900 nm (Lee et al. 1993; Bellazzini et al. 2001; Jang
+& Lee 2017; McQuinn et al. 2019; Freedman 2021; Hoyt
+2023; Anand et al. 2024). As a result, calibration of the
+TRGB’s color dependence becomes the most important
+step to measuring precise and accurate TRGB distances
+in the NIR.
+There is general consensus in the literature that the
+shape of the NIR TRGB’s color dependence is linear
+(Valenti et al. 2004; Bellazzini 2008; Serenelli et al. 2017;
+Madore et al. 2018; Durbin et al. 2020).1 However, at
+times, significant discrepancies in empirical zero points
+larger than 0.2 mag have been reported (Valenti et al.
+2004; G´orski et al. 2016).2
+In a joint study of IC 1613 and the LMC, Madore et al.
+(2018) and Hoyt et al. (2018) painted an optimistic pic-
+ture for use of the TRGB in the NIR. They determined a
+TRGB color slope in IC 1613 and subsequently used it to
+construct a high-precision map of the apparent line-of-
+sight depth of the LMC. In doing so, they confirmed the
+LMC’s known NE-SW tilt with a field-to-field residual
+distance dispersion of ∼0.05 mag. A similarly positive
+outlook was presented in McQuinn et al. (2019) who
+presented TRGB magnitudes that were synthesized by
+passing PARSEC isochrone predictions through antici-
+pated JWST filter curves.
+Both of these prior studies emphasized that the NIR
+TRGB can be a precision distance indicator as long as
+a robust fiducial calibration of its variation with color
+is determined; the variation with color is primarily a
+metallicity and secondarily an age effect. In this study,
+we will report the successful detection of the NIR TRGB
+feature with JWST and demonstrate that we can mea-
+1 Though see Wu et al. (2014) which presented evidence of two
+distinct slopes in blue and red color regimes, i.e., two slopes with
+a break, for the HST F110W and F160W bands, which may be a
+genuinely anomalous effect for those bands (Serenelli et al. 2017).
+2 See Hoyt et al. (2018) and Hoyt (2023) for resolutions to some of
+these discrepancies.
+4
+sure its color dependence. We then demonstrate how the
+use of such a color correction can significantly improve
+both the accuracy and precision of a TRGB distance.
+In Section 2, we describe the observation planning of
+the JWST program, the reduction of the NGC 4536 im-
+ages, and the sample selection procedure. In Section 3,
+we present the successful detection of all three distance
+indicators. In Section 4, we estimate the TRGB’s color
+dependence in the F115W band, use it to estimate the
+TRGB’s color-corrected magnitude, then test an ex-
+panded range of slope values on the data. We discuss
+the results in Section 5 and conclude in Section 6.
+2. OBSERVATIONS AND DATA
+2.1. Configuring the Program Observations
+As mentioned, JWST program GO-1995 aims to
+measure three different stellar distance indicators—
+Cepheids, TRGB, and JAGB—simultaneously from one
+set of imaging per target. Accomplishing this imposed
+constraints on the placement of the scientific apertures,
+as well as on the allowed rotation angles of the telescope.
+For each target, the offset values of the NIRCam aper-
+ture were set so as to minimize loss of Cepheid coverage
+over large ranges of allowed telescope rotation angles,
+thereby maximizing schedulability at a minimal science
+loss. For observing the JAGB stars, additional con-
+straints on the telescope’s commanded position angles
+were determined using deep ground-based imaging from
+the DECALS legacy imaging survey (Dey et al. 2019),
+as well as HI maps of the target galaxies when avail-
+able. The goal was to sample each galaxy’s thick disk
+component while minimizing the likelihood of dust ex-
+tinction systematically biasing a JAGB measurement.
+Finally, (T)RGB stars were either targeted with (some
+portion of) the module of NIRCam that was not aimed
+at the Cepheids or with parallel NIRISS observations,
+depending on the angular extent of the target galaxy.
+In some cases, there existed ACS/WFC observations of
+the TRGB from the Carnegie Chicago Hubble Program
+(Freedman et al. 2019). Sampling some portion of those
+imagesets was taken into consideration in order to lever-
+age both optical and NIR photometry and better un-
+derstand the TRGB magnitude-color relation (as in the
+present study).
+JWST has complex, observatory-wide constraints that
+limit certain configuration parameters (e.g., absolute
+limits on the roll angle of the telescope given a tar-
+get’s position on the sky). In a small number of the
+program observations, this forced non-optimal config-
+urations that, fortunately, did not significantly impact
+the science. Typical examples include the drop out of
+one or a few Cepheid variables, or a reduced overlap
+with archival HST imaging. It is our recommendation
+that future investigators anticipate their exact roll angle
+requirements as accurately and early as possible when
+planning a program so as to avoid having to make unan-
+ticipated trade-offs in the Phase 2 implementation.
+2.2. Image Processing and Photometry
+We downloaded from MAST the 90 NIRCam integra-
+tions of our field in NGC 4536 (Figure 1). The JWST
+imageset is composed of nine dithers mapped to each
+of the ten NIRCam detectors: eight in the short wave-
+length (SW) and two in the long wavelength (LW) chan-
+nels. Each integration was comprised of six groups, re-
+sulting in an effective exposure time of 2802.297 sec in
+the F115W (SW) and F444W (LW) bands acquired at
+one epoch of the imaged Cepheids’ light curves.
+We processed the image data from raw to calibrated
+cal and undistorted i2d images using the jwst module
+version v1.8.2. The JWST calibration pipeline version
+number is implicitly associated with a set of calibration
+reference files such as the reference dark and flat im-
+ages, amongst other image processing and calibration
+information. Two independent processing scripts, one
+from the command line and one in Jupyter Notebook,
+were implemented with default settings and confirmed
+to match exactly the MAST data products from the au-
+tomated STScI processing pipeline.
+The aligned F115W and F444W cal images were then
+photometered with the DOLPHOT NIRCAM module
+(Weisz et al. 2023, 2024) that was developed as part
+of the JWST Early Release Science program on Stel-
+lar Populations (PI: Weisz). At the time of the present
+analysis, the JWST DOLPHOT module was not fully re-
+leased, and we used a beta early-release version that was
+graciously provided by the JWST-GO-1334 ERS team
+(PI: Weisz). The version used implicitly incorporated
+the critical updates to the NIRCam detector zero-points
+that were implemented in pmap0989 (Boyer et al. 2022).
+Aperture corrections were made using the DOLPHOT
+routine corresponding to ApCor=1.
+The archival CCHP HST/WFC data (GO-13691, PI:
+Freedman) acquired in the F606W and F814W bands
+were also reduced using DOLPHOT with a custom aper-
+ture correction routine applied that is expected to be
+more accurate than the automated DOLPHOT routines
+in the case of deep HST photometry (Jang 2023).
+Note that the JWST/NIRCAM photometry used in
+the analysis presented here was “blinded” by injecting
+into the photometry catalog a random, uniformly dis-
+tributed offset between -0.2 and +0.2 mag, so the abso-
+lute flux zero points of NIRCAM do not play a role.
+Only the relative intra-module, detector-to-detector,
+5
+Figure 1. The successful imaging and detection of three stellar distance indicators in NGC 4536. left: DECaLS gri image.
+Footprints of the JWST/NIRCam (pair of white squares), NIRISS (singular white square), and archival HST/ACS (red square)
+imaging are plotted, with the overlap of the JWST and HST imaging marked (white hatched). North is up, East is left.
+The outer region of the galaxy adopted for TRGB analysis lies outside the indicated elliptical radius (white ellipse) of the
+galaxy’s disk (b/a = 0.36, θ = 120.7 deg), which is adopted from HyperLEDA (Makarov et al. 2014, http://leda.univ-lyon1.fr/)
+and corresponds to a distance along its semi-major axis (SMA) equal to 7.5′. middle column: JWST/NIRCAM color image
+(R:F444W, G:(F115W+F444W)/2, B:F115W). NIRCam module A is aimed at the spiral arm where HII regions are apparent
+and the locations of Cepheid variables from Riess et al. (2016, 2022) are overplotted (white dots with black outline). In the
+other NIRCam module, plentiful, highly-reddened galaxies are seen in the background. Two regions are highlighted (white
+rectangles) to emphasize where each of the JAGB and TRGB stars are well-measured, respectively. Right: Zoomed views of the
+two rectangular regions. The carbon-enhanced JAGB stars (top rectangle) appear red and are clearly distinguished from the
+RGB stars which appear blue (relative to 4.4 µm). The JAGB stellar density also falls off more quickly in radial distance than
+that of the RGB’s due to the galaxy’s outer disk profile being steeper than that of its stellar halo.
+calibration would impact our analysis, and the post-
+pmap0989 detector-to-detector zero point uncertainties
+are at or below the measurement uncertainties discussed
+here. This is because any shifts to the absolute photo-
+metric zeropoints, the dominant uncertainty in the on-
+going JWST flux calibration, amount to translations on
+the color-magnitude diagram, thereby not distorting the
+TRGB morphology, i.e., its slope with color.
+Both HST and JWST catalogs were trimmed for well-
+measured point sources as described in Jang (2023).
+The two catalogs were then cross-matched in WCS with
+a 0.12′′ radius threshold using methods from the as-
+tropy.coordinates module. There was an approximate
+0.05′′ offset in both RA and Dec between the default
+ACS and NIRCam WCS solutions, with no evidence
+of higher order functionality in the aligned coordinate
+residuals. The offset corrections were applied and the
+matching radius reduced to 0.08′′. The final dispersion
+about each matched set of coordinates was 0.01′′, or
+< 0.2 pixels for each instrument.
+The photometry was extinction corrected using a fore-
+ground reddening of E(V − I) = 0.023 ± 0.012 mag
+adopted from the Schlafly & Finkbeiner (2011) recali-
+bration of the Schlegel et al. (1998) maps, as compiled in
+the NED extragalactic database (ned.ipac.caltech.edu).
+This corresponds to AF 606W = 0.045 mag, AF 814W =
+0.028 mag, AF 115W = 0.014 mag, and AF 444W =
+0.001 mag. An uncertainty equal to half of the redden-
+ing value is adopted due to the increased uncertainty
+associated with measuring MW dust in regions of low
+column density (i.e., at high galactic latitude).
+2.3. Sample Definitions and Spatial Selections
+Due to the different underlying physics, each distance
+indicator’s population can be found in distinct regions
+on both the H-R diagram and in the spatial distribution
+of a galaxy’s stellar mass. The Cepheids are found in
+the star-forming spiral arms and thin disk, the JAGB in
+the thermally-dispersed thick disk, and TRGB the dif-
+fuse stellar halo. Therefore, we can iteratively converge
+on an optimal spatial selection by examining the resul-
+tant CMD until each distance indicator appears most
+accurately measured.
+6
+188.56188.58188.60
+R.A. (deg)
+2.14
+2.16
+2.18
+2.20
+2.22Dec (deg)
+Inner Disk
+Outer Disk
+Halo
+Cepheid
+Figure 2. Sources brighter than the approximately identi-
+fied TRGB magnitude (see Figure 3) are plotted as dots. The
+spiral arm is clearly revealed in the upper module and con-
+tained in the inner disk selection (black dots). The dearth of
+sources in the outermost region of the imaging (green dots) is
+the hallmark of an old stellar population, i.e., a spatial mani-
+festation of the TRGB. The intermediate region is identified
+as the “outer disk” (orange dots). The interplay between
+this diagnostic and Figure 3 was used to converge on spatial
+selections for the JAGB and TRGB measurements.
+This process is illustrated in Figure 2, which plots the
+locations of all sources in the JWST catalog that are
+brighter than what is estimated to be the magnitude
+of the TRGB (green lines in Figure 3.) The spiral arm
+stands out as a clear overdensity amidst the black points,
+consistent with it containing the youngest and brightest
+stars. Outside of the spiral arm is a component that
+is slightly more diffuse and smooth in its structure, but
+still has a measurable number of bright stars embedded
+in it, i.e., an intermediate-age population. Finally, at the
+largest separation from the disk components we start to
+see a constant and negligible density of stars brighter
+than the TRGB, which is indicative of an old stellar
+population.
+These three regions delineate where each of the three
+standard candles is best measured. Though in the case
+of the young, massive Cepheids, the star-forming disk
+and spiral arm structures of galaxies are simply the only
+regions in which they can be found.
+The starting sample of Cepheids is the set union of
+those discovered and reported by two iterations of the
+SH0ES project (Hoffmann et al. 2016; Riess et al. 2022,
+hereafter H16 and R22). The periods were derived using
+WFPC2 observations acquired as part of the Sandage
+H0 project that was conducted at the same time as the
+HST-KP (Sandage 1994; Saha et al. 1996). These were
+then followed up by the SH0ES program to place the
+Cepheid magnitudes onto the WFC3 system and update
+periods as needed (Riess et al. 2009).
+We found significant shifts of δRA = −0.′59 and
+δDec. = 1.′24 had to be added to the H16 coordinates
+to align them with the R22 ones. The R22 coordinates
+were then shifted by δRA = −0.′′092 and δDec. = 0.′′510
+to align them with our JWST WCS solution at a critical
+matching radius of 0.′′08. Doing so resulted in a sample
+of 35 Cepheids with periods ranging from 10d to 100d.
+All 35 cross-matched Cepheids were included in H16 and
+28 in R22. This particular sample of Cepheids is very
+well measured relative to other more crowded datasets,
+so the possibility for false negatives or false positives in
+the cross-identification is very low. This can be veri-
+fied via inspection of the Cepheid PLR (Figure 4). The
+Cepheid sample is already limited in numbers, and the
+number of Cepheids with well-measured F444W magni-
+tudes was smaller yet (about 3-5), so we do not consider
+that band for the Cepheids here.
+The other two indicators are best measured outside
+of the blue, star-forming regions of galaxies. See, e.g.,
+Beaton et al. (2019); Jang et al. (2021); Hoyt et al.
+(2021b); Wu et al. (2023) for TRGB and Lee et al.
+(2024a) for JAGB. Therefore, we elect to use the B-
+band surface brightness contours to parametrize our
+spatial selection, with the intent to mask the bluest
+star-forming regions. The adopted ellipse profile is the
+D25 B-band isophote presented in HyperLEDA, with a
+b/a = 0.36 and θ = 120.7 deg (Makarov et al. 2014,
+http://leda.univ-lyon1.fr/).
+With this parametrization, we select for the JAGB
+an “outer disk” component at SM A > 3.′2 and for the
+TRGB an old/halo component at SM A > 7.′5. For
+the JAGB the SMA was varied until the population
+was clearly visible and distinct by-eye on the CMD (see
+orange dots in Figure 3). JAGB stars were then fur-
+ther isolated on the CMD for colors 2.2 < (F 115W −
+F 444W ) < 3.0 mag and magnitudes 24.0 < F 115W <
+26.0 mag. The spatial selection is plotted as orange dots
+in Figure 2 and the color-selected JAGB stars as orange
+circles in Figure 3.
+For the TRGB, the same was done but for the con-
+trast of the TRGB as observed in the overlapping HST
+F814W-band imaging from which the TRGB has pre-
+7
+0.5 1.0 1.5 2.0 2.5 3.0
+F115W F444W
+23.0
+23.5
+24.0
+24.5
+25.0
+25.5
+26.0
+26.5
+27.0 F115W mag (arbitrary offset)
+Figure 3. Simultaneous identification of three stellar dis-
+tance indicators in NGC 4536. An overlay of three distinct
+stellar populations on the CMD. Black points are all stars
+contained in the halo selection (see Figure 2), with the green
+lines outlining the TRGB feature (explored in detail later).
+Orange points are the JAGB stars selected in the outer disk
+region (F 115W − F 444W > 2.2 mag). Blue points are
+Cepheids, which predominantly occupy the inner disk region.
+viously been identified (Freedman et al. 2019). As can
+be seen from the overlay with ground-based imaging in
+Figure 1, the adopted halo-TRGB selection is consistent
+with a steep decline in diffuse light seen in the outer re-
+gions of NGC 4536, providing an unresolved consistency
+check on the resolved-star halo selection. The adopted
+halo region is marked by green dots in Figure 2 and the
+approximately-identified TRGB bracketed by two green
+lines in Figure 3.
+3. IDENTIFICATION AND DETECTION OF THE
+THREE STANDARD CANDLES
+3.1. Cepheids
+The Cepheid periods are zeroed to a fiducial log P =
+1.50 because the mean (log) period of the H16 sam-
+ple is 1.48 and the mean of the R22 sample is 1.51.
+The slopes inferred from the H16 (N = 35) and R22
+(N = 28) Cepheid samples are, respectively, −3.01 ±
+0.19 mag/mag and −3.15 ± 0.21 mag/mag. The inter-
+cepts are 24.239 ± 0.043 mag and 24.266 ± 0.047 mag.
+The dispersions about the best-fit lines are 0.246 ±
+0.020 mag and 0.240 ± 0.024 mag. The 28 Cepheids
+1.2 1.4 1.6 1.8 2.0
+LogP (days)
+22.5
+23.0
+23.5
+24.0
+24.5
+25.0
+25.5 F115W mag (arbitrary offset)
+Figure 4. Cepheid PL relation constructed directly from
+the measured F115W magnitudes and periods from the lat-
+est SH0ES sample of 28 Cepheids (Riess et al. 2022). No
+correction has been applied for local scene crowding (see,
+e.g., Riess et al. 2016, for a description) nor for extinction.
+The value of the best-fit slope is −3.15 ± 0.21 mag/mag, and
+the dispersion about that slope is 0.240 ± 0.024 mag. The
+typical F115W photometric uncertainties are 0.015 mag and
+smaller than the plotted markers.
+in R22 are a perfect subset of the 35 in the H16 sample,
+so the results are highly covariant.
+Note our analysis here does not include vital correc-
+tions for crowding and internal extinction (only fore-
+ground) because the evidence for both effects is near
+zero for this galaxy’s Cepheids (one of the most nearby
+and least crowded in the sample). A more complete
+treatment of the Cepheid PLR in these bands for the
+more distant Cepheids, and which supersedes this pre-
+liminary analysis, can be found in Owens et al. (2024,
+in review).
+The Leavitt slopes derived from either sample of
+Cepheids in NGC 4536 (SH0ES 2016 or 2022) are con-
+sistent with the value of 3.15 ± 0.07 mag/mag observed
+in the UKIRT/2MASS J-band (separated in effective
+wavelength from F115W by only 90 nm). Furthermore,
+the measured dispersion is consistent with previous find-
+ings for random-phase sampling of Cepheids in the sim-
+ilar J-band (Persson et al. 2004; Monson et al. 2012).
+3.2. JAGB/Carbon stars
+In Figure 5, the JAGB luminosity function (LF) that
+was selected for via color and magnitude (orange disks in
+Figure 3) is shown. The standard deviation of the distri-
+bution is 0.381 ± 0.014 mag and the normalized median
+absolute deviation (NMAD) is 0.340 ± 0.025 mag. Being
+based on median statistics, the NMAD is more resilient
+to outliers and asymmetric or non-Gaussian structure
+in the tails of a distribution. Typical JAGB LF widths
+8
+24.0 24.5 25.0 25.5 26.0
+F115W mag (arbitrary offset)
+0
+10
+20
+30
+40
+50
+60NJAGB
+Figure 5. JAGB Carbon Star F115W luminosity function,
+i.e., marginalizing over color for the orange points in Fig-
+ure 3. The black curve is a KDE estimate of the distribution
+with modal value equal to 25.036 ± 0.056 mag.
+are between 0.30 mag and 0.36 mag (see, e.g., Lee et al.
+2024b), confirming that we have identified the JAGB
+LF.
+To determine the JAGB magnitude, we first compute
+a kernel density estimate (KDE) of the JAGB LF. We
+then resample the JAGB LF and a new modal mag-
+nitude is computed until convergence is reached in the
+median of resampled modal values (found to occur at
+Nresamp ≥ 300). The median and standard deviation
+of resampled modes are taken as the central value and
+uncertainty, respectively, resulting in an F115WJAGB =
+25.036 ± 0.056 mag.
+Our treatment of the JAGB here is superseded by the
+dedicated analysis from Lee et al. (2024a), which in-
+cludes tests of the spatial and color selection. We do not
+undertake those here, and instead have simply adopted
+values that produce an expected JAGB population on
+the CMD. The aim here is not to explore the method’s
+uncertainties at the percent level, but to demonstrate
+its simplicity, that the population of stars in question
+have been detected in the JWST imaging, and that a
+precision distance can be determined.
+3.3. Identifying TRGB Stars
+To identify TRGB stars in the IR CMD we look to
+the F814W-band (λef f ≃ 800 nm) where the TRGB
+magnitude’s dependence on photometric color is sig-
+nificantly reduced relative to other wavelengths. The
+F814W magnitudes are rotated to a coordinate grid on
+which the TRGB’s (small) color dependence is ostensi-
+bly flattened (or “rectification,” as introduced in Madore
+et al. 2009). The specific transformation adopted here
+is the QT (quadratic TRGB) equation of Jang & Lee
+(2017), which has been shown to be most consistent with
+model predictions (e.g., Serenelli et al. 2017) and with
+high-precision measurements of the TRGB made in the
+Magellanic Clouds (Hoyt 2023). A TRGB magnitude
+is then measured from the QT magnitude luminosity
+function (LF) according to the methodology described
+in Hoyt (2023) and also used by the Carnegie Chicago
+Hubble Program (Freedman et al. 2019).
+In Figure 6, the identification of TRGB stars is illus-
+trated. First, as shown in the left-panel of Figure 6,
+RGB stars are selected from the F814W, F606W CMD
+via a blue and red color cut plotted as blue lines. The
+magnitudes of these stars are then rotated to flattened
+QT (814) magnitudes and used to construct a new RGB
+LF from which the TRGB discontinuity is to be detected
+via computation of the Poisson-weighted first derivative,
+or EDR. The width of the TRGB peak computed from
+the rectified RGB LF was 15% narrower than that mea-
+sured from in the unrectified RGB LF, thereby justify-
+ing the use of a color correction. For reference, BaSTI
+isochrones with age 10 Gyr are shown and color-coded
+for Z = 0.002, 0.004, 0.008, and Solar metallicity (Hi-
+dalgo et al. 2018; Pietrinferni et al. 2021). The cur-
+vature of the isochrone-predicted F814W TRGB agrees
+well with the empirical JL17 QT calibration. This un-
+derscores that a second-order color correction is likely
+the best to use when making precision, color-corrected
+TRGB distances in the F814W band.
+In the middle panel of Figure 6, the QT -mag EDR is
+plotted as a red curve along with the F814W smoothed
+and unsmoothed RGB LFs as black and gray curves,
+respectively. A transparent, gray, horizontal band rep-
+resents the window that was used to select TRGB stars
+within ±0.08 mag of the peak’s location, set by the typ-
+ical F814W magnitude uncertainty at the magnitude of
+the TRGB. Smaller and larger windows than this were
+tested and it was found that windows smaller than about
+0.04 mag suffered from too small number statistics, and
+windows larger than 0.08 mag caused the TRGB slope fit
+to become increasingly skewed from the 2-dimensional
+edge feature towards tracing the steep slope of the RGB
+itself, i.e., contamination from non-tip stars became too
+severe. So the 0.08 mag window was the right balance
+of number statistics and sample purity and also moti-
+vated by the actual measurement uncertainties. Note
+that all of the below analysis was also performed using
+a 0.05 mag window, which is the width of the F814W
+TRGB peak. The findings were consistent with the pre-
+sented ones for a 0.08 mag window but based on exactly
+half the numbers of tip stars.
+In the right panel of Figure 6, the NIRCAM JWST
+CMD is shown, with the tip stars marked as orange.
+9
+0 1 2 3
+(F606W F814W)0
+26.0
+26.5
+27.0
+27.5
+28.0 F814W0
+20 40
+26.0
+26.5
+27.0
+27.5
+28.0 F814W0
+0.0 0.5 1.0 1.5 2.0 2.5 3.0
+(F115W F444W)0
+25.0
+25.5
+26.0
+26.5
+27.0 F115W0
+Figure 6. Identification of TRGB stars in NGC 4536 from the overlap of the optical ACS/WFC and infrared NIRCam fields
+of view. left: Optical CMD. The quadratic F814W-band color dependence from Jang & Lee (2017) was adopted (red dashed
+curve) to rectify, or flatten, against color the TRGB feature contained within the selection of RGB stars (blue slanting lines).
+Overplotted are 10 Gyr BASTI isochrones arbitrarily scaled along the vertical axis and colored (light yellow to dark purple)
+according to their metallicities Z = {0.002, 0.004, 0.008, Z⊙}. Middle: The edge detector response (EDR, red curve) function is
+is computed as the Poisson-weighted first derivative of the rectified luminosity function (LF, gray and black curve). Tip stars
+are identified within the ±0.08 mag window centered on the location of the TRGB peak in the EDR. Right: The F814W-
+identified TRGB stars are highlighted in the JWST/NIRCAM CMD. Overplotted are again 10 Gyr BaSTI isochrones, this time
+as predicted for the JWST NIR filters in this study. A set of representative error bars for the TRGB stars is plotted (orange cross
+with caps). A single random offset between −0.2 and 0.2 mag has been applied to both of the F115W and F444W magnitudes.
+Figure 7. Fits to the TRGB’s magnitude-color relation in the F115W and F444W bandpasses. left: F115W magnitudes
+versus (F115W − F444W) colors for tip stars (blue circles) previously shown as orange circles in Figure 6, now plotted with
+their photometric errors (blue lines). Note that most of the scatter about the trendlines is due to color uncertainties from
+the F444W magnitudes. Right: Same as left panel, with four equal-numbers bins (sorted by color) representing the TRGB
+magnitudes and colors (black dots). The errorbars represent the standard deviation of each quantity’s distribution within
+each bin. Two of the fitted lines are plotted along with their 90% CI bands determined via bootstrapping: the result from
+ordinary least squares (blue dot-dot-dashed line amd band) and orthogonal distance regression (red solid line and band). The
+fits were performed on the unbinned datapoints (left), not the binned points (right). In both panels, BaSTI 10 Gyr isochrones
+are again plotted on a Viridis color map, this time over a metallicity range expanded to include more metal-poor isochrones,
+Z = {0.0002, 0.0004, 0.0008, 0.0014, 0.0039, 0.008, 0.017} or [Fe/H] = {−1.90, −1.55, −1.30, −1.05, −0.60, −0.30, +0.06}
+10
+Also plotted are the same 10 Gyr BaSTI isochrones but
+for the JWST/NIRCAM filters. These stars appear to
+form a sloped sequence along the upper edge of the RGB,
+which we conclude to be the TRGB. In the following
+section, will use these traced stars to derive a value for
+the color dependence of the JWST TRGB.
+Note the MCR-TRGB methodology introduced in
+Durbin et al. (2020) provides a more rigorous approach
+to simultaneous determination of the multi-band TRGB
+relation than is done here. However, its advantages can
+only be realized when applied to datasets with much
+higher photometric signal-to-noise at the TRGB than is
+viable for HST to reach at the distances of the SN Host
+galaxies like that presented in this study. It will be
+prudent to deploy the MCR-TRGB methodology once
+a sufficiently large sample of TRGB stars observed with
+both HST and JWST at high SNR is attained (e.g., Hoyt
+et al. 2021a; McQuinn et al. 2021).
+4. TRGB MEASUREMENT
+In this section, we use the TRGB stars that were se-
+lected in the HST/ACS/F814W band (see previous sec-
+tion) to estimate the slope of the IR TRGB’s magnitude-
+color relation as observed in the NIRCAM bands. We
+then expand the sample to the full JWST footprint
+of NGC 4536 and estimate the TRGB via rectifica-
+tion (rotation) of the NIRCAM CMD using the newly-
+determined slope. Finally, we demonstrate the impact
+that different adopted slope values have on TRGB mea-
+surement in terms of the morphology of the EDR, the
+width of the dominant discontinuity feature, and the es-
+timated distance modulus.
+4.1. Determining the TRGB Magnitude-color Relation
+With TRGB stars identified from the F814W0 vs.
+(F606W−F814W)0 CMD, they can be immediately
+traced to those stars for which counterparts were found
+in the JWST F115W and F444W photometry. We can
+then infer the parameters of a linear relationship be-
+tween the F115W magnitudes and (F115W−F444W)
+colors of the TRGB stars. We present multiple ap-
+proaches to fitting a line to data (from ordinary least
+squares to orthogonal distance regression), which dif-
+fer in their treatment of uncertainties. In all cases,
+the colors of the tip stars are zeroed to their mean
+(F115W−F444W) color (1.31 mag).
+4.1.1. Least Squares
+Three forms of least squares fits are performed: ordi-
+nary, weighted, and inverse-weighted, resulting in slopes
+−0.50 ± 0.12 mag/mag, −0.56 ± 0.11 mag/mag, and
+−1.06 ± 0.18 mag/mag. The inverted least squares was
+a common approach in Astronomy that was meant to
+estimate the bias that large uncertainties on the inde-
+pendent variable axis can introduce into weighted fits,
+done so by simply flipping the dependent and indepen-
+dent axes in a weighted least squares fit. The fit results
+from each are printed as the first three rows of Table 1
+and plotted in the left panel of Figure 7 as the dash-
+dot-dot, dotted, and dash-dot-dash lines for ordinary,
+weighted, and inverse-weighted.
+4.1.2. Deming Regression
+In the 2-D case, when measurement uncertain-
+ties along both axes of variation are nonzero and
+disproportionately-sized, any perceived correlation will
+become elongated along the axis with larger measure-
+ment uncertainties.3 An attempt to correct for this “Dif-
+fusion Bias” is the Deming regression (Deming 1964),
+which uses prior information on the ratio of expected
+variances due to measurement errors σx/σy to miti-
+gate biases introduced when regressing against data with
+non-zero measurement errors along both axes of varia-
+tion.
+From the Deming regression, and an assumed variance
+ratio of 9 we find a slope equal to −1.12±0.25 mag/mag.
+The uncertainty intervals are estimated via bootstrap-
+ping for 10000 iterations. This inference should provide
+a better comparison with theory, or with measurements
+of the TRGB slope made in the same bands but at higher
+photometric signal-to-noise, and which will more closely
+approach the “true” slope as the Deming regression aims
+to infer. The result is plotted as the dashed line in Fig-
+ure 7 and is the fourth entry in Table 1.
+4.1.3. Orthogonal Distance Regression
+Finally, we undertake a more appropriate treatment
+of two-dimensional uncertainties via orthogonal distance
+regression (ODR). ODR minimizes the orthogonal dis-
+tance of each point from the best-fit line, as opposed to
+just the vertical distance as in ordinary regression (see,
+e.g., Boggs & Rogers 1990, regarding its implementa-
+tion in the Fortran package ODRPACK). The resulting
+best-fit slope is −0.99 ± 0.16 mag/mag. This result is
+plotted as a solid line in Figure 7 and is the fifth entry
+in Table 1.
+4.1.4. BaSTI Isochrones
+3 Spearman (1904) referred to this as “constriction” and/or “re-
+gression dilution.” The effect was independently re-discovered
+by Brodie & Madore (1980) in regards to the Cepheid period-
+luminosity relation.
+11
+Table 1. TRGB Slope Determinations
+Fits to JWST TRGB Data Slope σslope ∆y0a σy0 x0
+Ordinary Least Squares −0.50 0.12 0.01 0.03 1.29
+Weighted Least Squares −0.56 0.11 -0.03 0.03 1.29
+Inverted Least Squaresb −1.06 0.18 -0.01 0.04 1.36
+Deming Regressiona −1.12 0.25 -0.01 0.04 1.32
+Orthogonal Distance Regression −0.99 0.16 0.03 0.05 1.29
+BaSTI-predicted Metallicity Slopes [Fe/H] = [−1.90, +0.06] dex
+Age = 10 Gyr −0.74 0.03 · · · · · · · · ·
+Age = 4 Gyr −0.92 0.07 · · · · · · · · ·
+Note—The preferred estimate from Orthogonal Distance Regression
+(ODR) is bolded.
+aIntercepts zeroed to the mean across all fits and reported as shifts from that mean
+value.
+b The slope reported here was computed as the inverse of the best-fit value inferred
+via regression.
+c 68% confidence interval determined via bootstrapping. CI was symmetric so
+quoted here as scalar-valued.
+0.5 1.0 1.5 2.0 2.5
+(F115W F444W)0
+25.0
+25.5
+26.0
+26.5
+27.0 Magnitude
+F115W0
+0.5 1.0 1.5 2.0 2.5
+(F115W F444W)0
+TF115W
+5 10 15
+Figure 8. Demonstration of TRGB rectification in the full JWST halo dataset and subsequent sharpened measurement of the
+IR TRGB in JWST filters. Left: F115W vs. F444W CMD. The color-magnitude selection used to select along the RGB is shown
+(blue lines) with RGB sources (solid black points) plotted along with non-RGB sources (transparent black points). The locations
+of two equally likely peaks in the resulting EDR (red dashed curves in right-most panel) are marked (transparent, horizontal
+dashed lines). Middle: T115 vs. F444W CMD, wherein the stars that fall inside the unrectified RGB selection (solid black if
+RGB, transparent gray if not) are rotated via separate derivation of the TRGB’s color slope (adopted here as -0.99 mag/mag),
+such as that determined in the previous section. The resulting EDR is singly-peaked, demonstrating the success of the TRGB
+slope in improving the clarity of the TRGB. The location of the peak magnitude is marked on the rectified CMD (horizontal
+black line). Right: Unrectified RGB LF are computed for bins of size 0.01 mag (gray curve) and smoothed with Gaussian kernel
+of width 0.08 mag (black curve). Plotted also are the EDRs derived from both the unrectified (red, transparent, dashed curve)
+and the rectified (solid red curve) RGB magnitudes. Both EDRs have been normalized to the same peak value and scaled to
+the maximum value of the RGB LF. The locations of the two strong peaks in the unrectified EDR are marked (red, horizontal,
+dashed lines) along with the single dominant peak in the rectified EDR (red, horizontal, solid line).
+12
+The BASTI isochrone suite was queried and used to
+estimate predicted slopes in the JWST bands consid-
+ered here. The isochrone metallicities are: [Fe/H] =
+{−1.90, −1.55, −1.30, −1.05, −0.60, −0.30, +0.06}. For
+two set ages, 4 Gyr and 10 Gyr, the metallicity slope is
+then computed by fitting a line to the single brightest
+step at the Tip of each RGB isochrone. The 10 Gyr
+slope is estimated to be −0.74 ± 0.03 mag/mag and the
+4 Gyr slope −0.92 ± 0.07 mag/mag. The uncertain-
+ties are the formal standard errors returned from the
+fit. Their being non-zero (despite being derived from
+an “error-less” prediction) is a function of the discrete
+sampling in metallicity space, and any deviations along
+that discrete sampling from a scatter-less line. In Fig-
+ure 7, the 10 Gyr isochrones are plotted on a viridis
+color-mapping. In Table 1, both slopes are presented in
+the last two rows. In Appendix A, the BaSTI-predicted
+TRGB metallicity slope is plotted from 2 Gyr to 13 Gyr
+in 1 Gyr steps, computed in the same way as just de-
+scribed.
+4.2. Measuring the TRGB in NGC 4536
+In the previous sections, the region of overlap be-
+tween the archival ACS/WFC and new NIRCam imag-
+ing (hatched region outside the ellipse in Figure 1) was
+used to estimate the TRGB’s color dependence. In this
+section, we can now incorporate the remainder of the
+NIRCam imaging and use the newly determined TRGB
+slope to “rectify” (or rotate such that the TRGB is flat
+in color) the CMD and measure the TRGB along the
+one-dimensional magnitude axis. Simply, the F115W
+magnitudes are transformed as,
+T115 = m115 − β(c − c0) (1)
+where β is the adopted TRGB slope, c is a star’s color
+index, and c0 is the pivot color about which the RGB is
+being rotated.
+The area of the remaining NIRCAM data is about
+1.5× larger than the subset which overlaps with HST,
+providing a good dataset to “test” the TRGB slope that
+was inferred from the HST+JWST “training” data. In
+other words, this section demonstrates how one could
+use an externally-calibrated TRGB slope to derive a
+TRGB distance in these JWST bands.
+In Figure 8, a TRGB measurement is demonstrated
+for a rectification plus 1D edge detection approach.
+In the left panel, the F115W vs. (F115W−F444W)
+CMD is shown, along with the RGB color-magnitude
+selection, and two horizontal lines depicting the two
+equally likely peaks seen in the unrectified EDR (right
+panel dashed transparent red lines). The F115W mag-
+nitudes are then rectified to T115 magnitudes with slope
+β = −0.99 mag/mag and a new RGB LF is constructed
+by marginalizing over color. The width of the TRGB
+peak in the EDR derived from the rectified LF is smaller
+than the separation of the two equal-strength peaks in
+the unrectified EDR, demonstrating the significant im-
+provement in precision and accuracy when applying the
+newly-determined TRGB slope to the remainder of the
+JWST imaging of the NGC 4536 halo.
+4.3. Slope Variation Experiments
+We further explore the TRGB slope with a more brute
+force approach to minimization. Over a grid of possible
+TRGB rectification slopes (from 0 to −2.20 mag/mag),
+we recompute the EDR and document the width of the
+dominant edge feature (sometimes observed as a cluster
+of multiple, equal-power peaks). The results of this ex-
+periment are illustrated in Figure 9 and summarized in
+Figures 10 and 11.
+In Figure 9, the EDRs as derived from seven
+representative sets of rectified F115W magni-
+tudes are plotted and mapped to their unique
+slope values. The EDRs shown correspond to
+β = {−0.00, −0.37, −0.73, −1.10, −1.47, −1.83, −2.20}
+mag/mag. The exact color mapping is shown in the
+right-hand color bar. The significant sub-structure in
+the EDR for very shallow and large values of the TRGB
+slope, are a result of under- or over- rotation of the
+CMD, signaling a slope incompatible with the data. For
+values of the TRGB slope between about -0.7 and -1.5,
+that substructure can be seen to merge into one sharp
+peak that approaches the minimum scale length of any
+feature in the EDR that can be considered real and not
+a noise fluctuation. This floor in the feature scale length
+is set by the size of the smoothing kernel which is plot-
+ted for reference as a thick black curve in the top-left
+of Figure 9. The bounds within which the peak widths
+were computed are also shown for two representative
+EDRs, one unrectified and one rectified by the best-fit
+value –0.99 mag/mag estimated in the previous section.
+The significantly reduced width of the EDR feature is
+a result of the merger of multiple peaks observed in the
+unrectified EDR into a single dominant peak.
+In Figure 10, this sharpening of the tip feature via
+rectification is shown by plotting the 68% confidence
+interval widths of the TRGB peak feature as a function
+of adopted slope for rectification. The results show that
+for slope values from about −0.7 to −1.5 mag/mag, the
+observed dispersion in the TRGB peak approaches the
+minimum feature size set by the size of the smoothing
+kernel. The results agree well with the range of slopes
+presented in Table 1, both the empirical estimates and
+BaSTI isochrone predictions.
+13
+Figure 9. Edge Detector Response curves (EDRs) computed from RGB luminosity functions (RGB LFs) that were derived
+from rectified T magnitudes over a range of TRGB slopes used for the rectification. Seven representative EDRs are shown to
+demonstrate the behavior of vertical edge features in the rotated and color-marginalized CMD as a function of the slope used
+to perform said rotation. Plotted are the left and right edges of the uncorrected (slope equals zero) TRGB peak as well as
+those belonging to the peak resulting from the ODR slope determined in the previous section (vertical dashed lines, colored to
+match the associated EDR curve and slope value). The threshold adopted for defining the edges of peak features is also plotted
+(horizontal black dashed line). For reference, the kernel used to smooth the RGB LF is shown with arbitrary height (black
+curve, top right).
+Figure 10. 68% width of the TRGB peak feature as a
+function of the slope that was used to flatten the TRGB
+feature on the CMD (rectification). One hundred linearly
+spaced steps in TRGB slope values ranging from −2.2 to
+0.0 were considered. The width of the smoothing kernel is
+plotted for reference (horizontal black dashed line). Note
+both the x-axis and the color map are aligned to the TRGB
+slope axis. The redundancy is meant to aid in comparison
+with the representative EDRs plotted in Figure 9.
+In Figure 11, the shift in estimated TRGB distance is
+plotted as a function of adopted TRGB slope for four
+hypothetical fiducial calibrations of the TRGB. That is,
+β is varied continously and c0 is set to four fiducial val-
+Figure 11. Delta in TRGB distance as a function of adopted
+TRGB slope for four fiducial calibrations. The thick, black
+curve represents rotation of the CMD about the mean color
+of the observed TRGB. The thinner, colored curves represent
+different pivot colors. The distance shifts ∆µ are computed
+relative to the median of the black curve within the “good
+slope range” (vertical lines), determined from the top panel.
+The red, boxed region encloses the suite of curves contained
+by the standard error interval of the ODR results from the
+optical-IR trace method.
+ues. This is meant to approximate how the TRGB dis-
+14
+tance estimated to this galaxy might change depend-
+ing on both the TRGB slope and the mean color of
+one’s TRGB calibration dataset, e.g., the color of the
+TRGB in geometric anchors like NGC 4258 or the LMC.
+The shifts in distance ∆µ are computed relative to the
+median of the TRGB magnitudes within the −0.7 to
+−1.5 mag/mag range of “good” slope values (see top
+panel and previous paragraph). The red boxed region
+encloses the suite of curves that lie within the standard
+error of the nominal ODR results for the TRGB slope in
+the previous section (β = 0.99 ± 0.16 mag/mag). This
+provides an estimate of the additional contribution to
+the TRGB distance error incurred by extrapolating a
+TRGB slope calibration from different fiducial colors.
+5. DISCUSSION
+In the above sections, the Cepheids, JAGB, and
+TRGB were each identified from JWST imaging of
+NGC 4536. The TRGB’s color dependence was then
+examined in closer detail through various analyses. In
+this section we place the TRGB slope findings in context
+with the literature and discuss the prospects for future
+TRGB measurements with JWST.
+5.1. TRGB Results from This Study
+The color slope of the IR TRGB in the consid-
+ered JWST bands was estimated by tracing tip stars
+identified in overlapping HST imaging to their cross-
+matched NIRCAM magnitudes, then performing vari-
+ous minimizations–the intent being broad coverage of
+different approaches to treatment of measurement un-
+certainties. The estimated slopes ranged from −0.50 to
+−1.12 mag/mag. Shallower values came from conven-
+tional least squares approaches and steeper ones from
+accounting for the larger uncertainties on the color axis.
+The ODR slope of −0.99 ± 0.16 mag/mag should os-
+tensibly be the most accurate inference for uncertainties
+along both axes, given accurate measurement uncertain-
+ties and identification of TRGB stars.
+Shown in Figure 8, this slope value was then used
+to rotate the halo-selected CMD and flatten the TRGB
+feature (or “rectification”). A one-dimensional edge de-
+tection was computed from the RGB LFs constructed
+from each of the unrectified and rectified CMDs. The
+EDR computed from the unrectified RGB LF showed
+a clear bimodality, with each peak falling at the blue
+and red ends of the sloped TRGB feature. The EDR of
+the rectified RGB LF becomes singularly-peaked, indi-
+cating most of the slant of the TRGB in the CMD was
+successfully removed.
+The separation of the two peaks in the unrectified
+bimodal EDR was 0.28 mag, while the width of the
+rectified single-peaked EDR was 0.09 mag. McQuinn
+et al. (2019) briefly mention the F115W band in their
+isochrone overview paper and point out that the varia-
+tion in TRGB luminosity due to metallicity and age is
+0.3 and 0.09 mag, respectively. This is consistent with
+the hypothesis that our slope has corrected for metallic-
+ity effects in the observed TRGB, and that a sizable por-
+tion of the remaining dispersion in the slope-corrected
+measurement is possibly sourced by uncorrected age ef-
+fects. Though the current number statistics preclude
+any further or more rigorous interpretation.
+The impact of the color slope correction on TRGB
+measurement was then explored over a finer grid of recti-
+fication slope values. The results were illustrated in Fig-
+ure 9 and the information condensed into the 68% width
+of the TRGB feature in Figure 10. The results revealed
+that β values in the range −0.7 to −1.5 mag/mag min-
+imized the width of the TRGB feature, which is consis-
+tent with the slope values inferred earlier via the optical-
+IR trace method. It is important to note that the major-
+ity of the imaging used in these tests was not contained
+in the HST+JWST overlap region that was used to do
+the optical-IR tracing. See the hatched (HST+JWST)
+vs. unhatched (JWST only) regions in Figure 1.
+The width of the TRGB feature discussed in the pre-
+vious paragraph can be viewed as a proxy for the statis-
+tical uncertainty, or the precision of a relative distance.
+The results demonstrated the improvement in this pre-
+cision that is attained when applying a correction for
+the TRGB color slope, and that there exist a range of
+slope values that best maximize the statistical precision.
+Now we discuss the effect that the TRGB slope (and its
+uncertainty) would have on an absolute TRGB distance
+measured relative to a fiducial zeropoint calibration.
+In Figure 11, the running slope experiment was re-
+formulated to explore the measurement of an absolute
+distance to this (or any) target galaxy. The shift in es-
+timated distance was plotted as a function of β and at
+four values of c0. Of course, the curve was flat when the
+target CMD was rotated about the mean color of the
+target TRGB, i.e., the fiducial was set to itself. Then,
+three hypothetical color fiducials were also plotted, to
+demonstrate two parts of the distance uncertainty re-
+lated to TRGB color slope correction: 1) the propaga-
+tion of slope uncertainties into distance uncertainty, and
+2) the amplification of that uncertainty as the difference
+between the color of the fiducial calibration relative to
+the target galaxy increases. As expected, and shown in
+Figure 11, the deviations in estimated distance are larger
+for fiducial calibrations that are further offset from the
+color of the TRGB in the target galaxy. That is, for
+the same TRGB slope values, ∆µ is larger for the curve
+15
+based on a c0 = 1.51 mag fiducial than it is for the one
+based on a c0 = 1.41 mag fiducial.
+We can also view this effect from a more practical per-
+spective with some approximate calculations. The slope
+inferred from the ODR fit to the optical-identified tip
+stars was −0.99±0.16 mag/mag. If one’s fiducial TRGB
+calibration has the same c0 as the target galaxy, then
+the additional uncertainty from the slope extrapolation
+would be zero. However, if the fiducial color is 0.2 mag
+offset in c0, then the TRGB slope uncertainty propa-
+gated into the distance uncertainty would be equal to
+0.2mag × 0.16mag/mag = 0.032 mag. This uncertainty
+can also be visualized in Figure 11 as the vertical dis-
+tance between the two points where the c0 = 1.51 mag
+fiducial (green curve) intersects the projection of the
+ODR slope and error (red box).
+This demonstrates that the color of one’s fiducial
+TRGB calibration should be as close as possible to the
+color of the target galaxy’s TRGB in order to minimize
+slope extrapolation uncertainties. This effect is identical
+to the systematic error observed in applications of the
+Cepheid Leavitt Law when there is an offset between the
+mean period of one’s calibrator Cepheids and the mean
+period of a target galaxy’s Cepheids.
+In all cases of our analysis, the slope intervals that
+best-represented the empirical data contained the val-
+ues of the TRGB’s metallicity slope predicted by the
+BaSTI isochrone suite for ages 4 and 10 Gyr of a TRGB
+population, equal to −0.74 and −0.92 mag/mag, respec-
+tively.
+5.2. Literature TRGB Slope Estimates
+At the time of writing, there does not exist a de-
+tailed study of the TRGB slope in the specific JWST
+bands discussed here. So we discuss our results in the
+context of the similar ground-based J and K bands.
+The effective wavelengths of F115W and J are 1.15 µm
+and 1.24 µm, respectively. For F444W and K they are
+4.4 µm and 2.2 µm, respectively. The bandpasses in
+the blue pair are separated by only 90 nm in effective
+wavelength, while the wavelength coverage of both the
+redder bandpasses is well into the Rayleigh-Jeans tail
+of an RGB star. This can be verified in Fig. 5 of Mc-
+Quinn et al. (2019) wherein the K, F277W, [3.6], and
+[4.5] bands all have the same TRGB magnitude on the
+Vega system. As a result, the J K bands should pro-
+vide a reasonable approximation of the F115W, F444W
+bands.
+The slopes we have derived here, from either the
+optical-identification approach (i.e., Table 1) or the
+running-slope experiment (Figure 10), are consistent
+with literature determinations in these similar ground-
+based bandpasses. Valenti et al. (2004) reported for J
+vs. (J − K) a slope of −1.15 mag/mag from a sam-
+ple of globular clusters.4 Madore et al. (2018) found
+−0.85 ± 0.12 mag/mag from a study based in the Local
+Group galaxy IC 1613. And Serenelli et al. (2017) found
+−0.81 mag/mag from a comprehensive study of stellar
+model predictions, testing variations in input physics as
+well as bolometric corrections, ranging from empirical
+measurements to theoretical atmosphere models.5
+5.3. Broader Discussion on Viability of IR TRGB
+The viability of the IR TRGB as a precision dis-
+tance indicator has been questioned at times over
+the last two decades, largely because of its signifi-
+cant color/metallicity dependence. In particular, G´orski
+et al. (2016) used a TRGB calibration based on Galac-
+tic globular clusters (Bellazzini et al. 2001; Valenti
+et al. 2004) to estimate the distances to the Magellanic
+Clouds, and concluded that the TRGB was inconsistent
+at the 0.4 mag level, based on the discrepancy between
+their I and J HK estimations of the distance to each
+Cloud. However, the authors chose to adopt spectro-
+scopic metallicities that were derived from each cloud’s
+inner-most stars (not necessarily old RGB stars) as rep-
+resentative of the metallicities of their TRGB stars. This
+may have led to an overestimate of the metallicity of
+the LMC TRGB stars of order 0.2 dex. For instance,
+APOGEE mapped abundances to CMD-selected RGB
+stars across the face of the LMC. The typical values of
+[Fe/H] ranged from -1.0 to -0.5 dex, with a long tail to-
+wards Fe-depleted and a sharp truncation at the metal-
+rich end (Nidever et al. 2020). The metallicity of [Fe/H]
+= -0.6 dex adopted by G´orski et al. lies near the upper-
+most end of the APOGEE distribution.
+If we instead assume a value of -0.75 dex for the
+LMC TRGB stars, which is closer to the median of
+the APOGEE distribution, the G´orski et al. I, J, and
+K distance moduli would shift from 18.29, 18.63, and
+18.70 mag to 18.37, 18.59, and 18.63 mag, respectively.
+All the adjusted moduli are much closer to the detached
+eclipsing binary distance of 18.48 mag (Pietrzy´nski et al.
+2019) than the original values. The fact that a sim-
+ple shift to the mean metallicity would improve the dis-
+tances they derived from both the I and the J K TRGB,
+4 The Valenti et al. calibration is presented in terms of [F e/H].
+For a transformation of their [F e/H] equations to the J, JK ones
+considered here, see Hoyt et al. (2018).
+5 The Serenelli et al. MJ vs. (J − K) calibration is presented
+as a second order equation, but the linear term is an order of
+magnitude more dominant for (J − K) > 0.90 mag, which is
+about the color of SMC TRGB stars, so we propagate only the
+linear term here.
+16
+which have oppositely signed metallicity slopes, provides
+additional confidence to this hypothesis of overestimated
+metallicities to TRGB stars. This view is also consis-
+tent with the discussion already covered by G´orski et al.
+on their adopted spectroscopic vs. RGB-color-inferred
+metallicities. Most of the remaining disagreement is
+likely due to discrepancies in photometric zero points
+between the Valenti et al. (2004) globular cluster cat-
+alogs and IR catalog of the LMC adopted by G´orski
+et al..
+5.4. A Unique Advantage of the IR TRGB with JWST
+The JWST/NIRCAM F090W filter is the bluest viable
+bandpass for making precision TRGB measurements at
+large distance.6 As a result, any “secondary” band that
+is chosen to construct a CMD will always be redder than
+the “primary” one that was used to derive the TRGB
+distance. The secondary band being redder than the
+primary one carries with it some simple, yet immensely
+beneficial consequences. Contamination from AGB stars
+is reduced, particularly when using the F115W band as
+the primary band. And one is able to fully populate
+the RGB, unlike the red-truncated RGBs seen in optical
+CMDs such as in I vs. (V − I).
+C-rich AGB stars and Ext-AGB stars, which can con-
+taminate the TRGB, are pulled away from the TRGB
+in the NIR. That is, the fact that the earlier-discussed
+JAGB population is identifiable on the CMD immedi-
+ately reduces the odds that a TRGB measurement can
+be biased by the presence of an AGB population. Such
+misidentifications have led to significant (> 0.4 mag) bi-
+ases in TRGB measurements such as some of the ones
+presented in Scolnic et al. (2023).
+In a similar vein, because of the TRGB’s negative
+slope in the IR, the detection of metal-poor TRGB stars
+immediately guarantees that one has a complete sample
+of TRGB stars. The loss of metal-rich stars is an ob-
+servational selection effect imposed when the secondary
+color is bluer than the primary one. This was high-
+lighted in Figure 6 in which the most metal-rich (solar
+metallicity) isochrone fell far off the HST optical CMD,
+but was fully contained in the JWST IR CMD.
+In light of these points, the most ideal combinations
+for doing TRGB with JWST are going to be F090W
+paired with F150W through F356W, or F115W paired
+with F200W through F356W. Note the use of F444W
+6 There are no advantages to using the F070W band for TRGB.
+From an instrument perspective, it is a less sensitive band than
+F090W and has an extremely under-sampled PSF. And from the
+astrophysics perspective, TRGB stars are much fainter in F070W
+than in any other band installed on JWST.
+as done in this study is certainly possible, but just not
+ideal since it is the least sensitive NIRCAM bandpass.
+And the pairing of F115W with F150W provides too
+small a wavelength baseline, leading to an excessively
+steep TRGB slope.
+5.5. Future Improvements
+We anticipate a significantly better understanding of
+the IR TRGB slope will come with an enlarged sam-
+ple of targets observed with JWST. This will lead to
+decreased statistical and systematic uncertainties in the
+measurement of TRGB distances with JWST.
+The formal uncertainty on our slope determination
+from the optical-IR trace method is 0.16 mag/mag, or
+16%. And from the running slope experiment, the range
+of slopes that appeared to flatten what is ostensibly
+the TRGB feature in the CMD ranged from −0.7 to
+−1.5 mag/mag. Improving these constraints will come
+as JWST continues to observe RGB populations both in
+our program and in others (e.g., McQuinn et al. 2021).
+As emphasized in McQuinn et al. (2019), the varia-
+tion in the IR colors and magnitudes of TRGB stars not
+captured by metallicity is caused by age. It will be im-
+portant in future work to calibrate the TRGB slope over
+a range of RGB populations with various star-formation
+histories, to essentially average over these second-order
+age variations, and to accurately place one’s IR TRGB
+distance scale onto a universal system that is anchored
+to a fiducial zero-point (e.g., NGC 4258).
+Though it should be noted that environmental varia-
+tions in both the TRGB’s slope and zero-point will likely
+be minimized when the TRGB is measured in the outer
+regions of galaxies. This is highlighted in the Appendix,
+where the TRGB’s metallicity-dependent color slope is
+predicted by the BaSTI suite of stellar evolution mod-
+els to be only weakly dependent on age in populations
+above a minimum age threshold (∼ 6 Gyr according to
+those models).
+6. CONCLUSIONS
+In this study, we identified and isolated the TRGB,
+Cepheids, and JAGB from one set of JWST imaging.
+The characteristics of all three distance indicators in the
+observed JWST bandpasses were found to be in excel-
+lent agreement with ingoing expectations, including the
+slope and dispersion of the Cepheid Leavitt Law, the
+dispersion of the JAGB LF, and the slope of the IR
+TRGB.
+The TRGB was then explored in greater detail, in
+particular its color dependence. First, TRGB stars were
+identified in overlapping HST imaging and their cross-
+matched JWST magnitudes used to estimate the TRGB
+17
+slope. The TRGB slope parameter was then inferred
+using several different statistical techniques to account
+for the lower signal-to-noise of the secondary F444W
+photometry.
+Several experiments were used to estimate the impact
+of the TRGB slope on uncertainties in distance mea-
+surement. Notably, a bimodal pair of edge features in
+the uncorrected CMD was merged into a single discon-
+tinuity in the rectified CMD. This translated to an ap-
+proximate reduction in TRGB magnitude measurement
+uncertainty from about 0.3 mag to a value less than
+0.09 mag, demonstrating that the IR TRGB as observed
+in JWST bandpasses can be used as a precision distance
+indicator.
+The IR TRGB slope estimates were consistent with
+predictions from the BaSTI suite of isochrones for old
+RGB populations, demonstrating that our understand-
+ing of the TRGB’s color variation is already off to a
+promising start. Future observations from this and other
+JWST programs will bolster the sample of TRGB stars
+we can use to converge on a more robust estimate of the
+TRGB’s color dependence and subsequently establish a
+precise and accurate JWST TRGB distance scale in the
+infrared.
+We have demonstrated here that three entirely in-
+dependent distance indicators—Cepheid variables, the
+TRGB, and the Carbon star luminosity function (or
+JAGB)—can all be simultaneously detected and iden-
+tified from imaging in just one JWST pointing. The
+next NASA flagship looks more than capable of provid-
+ing us with a better understanding of potentially un-
+known systematic uncertainties that may still underlie
+the measurement of extragalactic distances and, subse-
+quently, distance ladder determinations of the Hubble
+constant.
+ACKNOWLEDGEMENTS
+TJH acknowledges Saul Perlmutter and Greg Aldering
+for their support of his research, as well as for feed-
+back on this manuscript and its contents. TJH’s con-
+tributions to this work were supported in part by the
+U.S. Department of Energy, Office of Science, Office of
+High Energy Physics under Contract No. DE-AC02-
+05CH11231. We thank the Stellar Populations Early
+Release Science (ERS) team (PI: Weisz) and A. Dol-
+phin for their provision of an early release version of
+their DOLPHOT software to do JWST/NIRCam pho-
+tometry. We acknowledge the usage of the HyperLeda
+database (http://leda.univ-lyon1.fr). This research is
+based on observations made with the NASA/ESA Hub-
+ble and the NASA/ESA/CSA James Webb Space Tele-
+scopes obtained from the Space Telescope Science In-
+stitute, which is operated by the Association of Uni-
+versities for Research in Astronomy, Inc., under NASA
+contract NAS 5–26555 for HST, and under NASA con-
+tract NAS 5-03127 for JWST. These observations are
+associated with programs HST-GO-13691 and JWST-
+GO-1995. Data were downloaded from the Mikulski
+Archive for Space Telescopes (MAST) hosted by the
+Space Telescope Science Institute and can be accessed
+via 10.17909/rvxy-pt92. We thank the University of
+Chicago and the Observatories of the Carnegie Institu-
+tion for Science for their past and ongoing support of our
+long-term research into the calibration and determina-
+tion of the expansion rate of the Universe. We thank the
+anonymous referee for their feedback and suggestions.
+Facilities: JWST(NIRCam) HST(ACS/WFC)
+Software: DOLPHOT (Dolphin 2000; Weisz et al.
+2024), astropy (Astropy Collaboration et al. 2013, 2018,
+2022), jwst (Bushouse et al. 2023), Jupyter Notebook
+(Kluyver et al. 2016), scipy (Virtanen et al. 2020)
+APPENDIX
+A. BASTI ISOCHRONES AND PREDICTED TRGB SLOPES
+The BASTI database (Hidalgo et al. 2018; Pietrinferni et al. 2021) was queried over a grid of ages from 2000 −
+13000 Myr in 1000 Myr intervals and for metallicities [Fe/H] = {−1.90, −1.55, −1.30, −1.05, −0.60, −0.30, +0.06}.
+The brightest magnitude for each isochrone in the F115W band is then selected and used along with its corresponding
+(F115W − F444W) color to predict the TRGB color slope as a function of metallicity within each age bin. The result
+is shown in Figure 12 which demonstrates that the metallicity-dependent slope of the TRGB is predicted to vary less
+with age for RGB stars beyond a certain minimum age threshold (in this case ∼ 6 Gyr).
+This is promising in that we have reason to believe that by ensuring that we measure the IR TRGB in old-age
+populations, we can minimize the concomitant increase in dispersion necessarily incurred when transitioning TRGB
+measurements from the color-insensitive 800 nm to the color-dependent IR. This is imperative to emphasize in light
+of many recent studies that have attempted to measure the TRGB from regions of galaxies that are contaminated by
+18
+2 4 6 8 10 12
+Age (Gyr)
+1.2
+1.1
+1.0
+0.9
+0.8
+0.7
+TRGB Slope
+Figure 12. The TRGB’s metallicity-dependent slope determined from [Fe/H] = −1.90 to +0.06 in the F115W vs. (F115W −
+F444W) CMD as predicted by the BASTI stellar evolution models for a range of ages that can be expected in galaxy stellar halos.
+The predicted metallicity-dependent slope decreases and the trend flattens for older populations tage ≳ 6 Gyr, suggesting that
+targeting pristine stellar halo populations will be key to reducing population-dependent systematic errors in the measurement
+of TRGB distances in the IR with JWST.
+young and/or intermediate-age populations (e.g., Reid et al. 2019; Yuan et al. 2019; Anand et al. 2022; Wu et al. 2023;
+Scolnic et al. 2023).
+REFERENCES
+Anand, G. S., Tully, R. B., Rizzi, L., Riess, A. G., & Yuan,
+W. 2022, ApJ, 932, 15, doi: 10.3847/1538-4357/ac68df
+Anand, G. S., Riess, A. G., Yuan, W., et al. 2024, ApJ,
+966, 89, doi: 10.3847/1538-4357/ad2e0a
+Astropy Collaboration, Robitaille, T. P., Tollerud, E. J.,
+et al. 2013, A&A, 558, A33,
+doi: 10.1051/0004-6361/201322068
+Astropy Collaboration, Price-Whelan, A. M., Sip˝ocz, B. M.,
+et al. 2018, AJ, 156, 123, doi: 10.3847/1538-3881/aabc4f
+Astropy Collaboration, Price-Whelan, A. M., Lim, P. L.,
+et al. 2022, apj, 935, 167, doi: 10.3847/1538-4357/ac7c74
+Baade, W. 1944, ApJ, 100, 137, doi: 10.1086/144650
+Baade, W., & Swope, H. H. 1963, AJ, 68, 435,
+doi: 10.1086/108996
+Beaton, R. L., Seibert, M., Hatt, D., et al. 2019, ApJ, 885,
+141, doi: 10.3847/1538-4357/ab4263
+Bellazzini, M. 2008, Mem. Soc. Astron. Italiana, 79, 440,
+doi: 10.48550/arXiv.0711.2016
+Bellazzini, M., Ferraro, F. R., & Pancino, E. 2001, ApJ,
+556, 635, doi: 10.1086/321613
+Bellazzini, M., Ferraro, F. R., Sollima, A., Pancino, E., &
+Origlia, L. 2004, A&A, 424, 199,
+doi: 10.1051/0004-6361:20035910
+Boggs, P. T., & Rogers, J. E. 1990, Contemporary
+Mathematics, 112, 183
+Boyer, M. L., Anderson, J., Gennaro, M., et al. 2022,
+Research Notes of the American Astronomical Society, 6,
+191, doi: 10.3847/2515-5172/ac923a
+Brodie, J. P., & Madore, B. F. 1980, MNRAS, 191, 841,
+doi: 10.1093/mnras/191.4.841
+Bushouse, H., Eisenhamer, J., Dencheva, N., et al. 2023,
+JWST Calibration Pipeline, 1.9.6,
+doi: 10.5281/zenodo.7038885
+de Vaucouleurs, G. 1978, ApJ, 223, 351,
+doi: 10.1086/156269
+Deming, W. E. 1964, Statistical Adjustment of Data (Dover
+Publications)
+Dey, A., Schlegel, D. J., Lang, D., et al. 2019, AJ, 157, 168,
+doi: 10.3847/1538-3881/ab089d
+Dolphin, A. E. 2000, PASP, 112, 1383, doi: 10.1086/316630
+19
+Durbin, M. J., Beaton, R. L., Dalcanton, J. J., Williams,
+B. F., & Boyer, M. L. 2020, ApJ, 898, 57,
+doi: 10.3847/1538-4357/ab9cbb
+Freedman, W. L. 1988, ApJ, 326, 691, doi: 10.1086/166128
+—. 2021, ApJ, 919, 16, doi: 10.3847/1538-4357/ac0e95
+Freedman, W. L., & Madore, B. F. 1988, ApJL, 332, L63,
+doi: 10.1086/185267
+—. 1990, ApJ, 365, 186, doi: 10.1086/169469
+—. 2020, ApJ, 899, 67, doi: 10.3847/1538-4357/aba9d8
+—. 2023, JCAP, 2023, 050,
+doi: 10.1088/1475-7516/2023/11/050
+Freedman, W. L., Madore, B. F., Scowcroft, V., et al. 2012,
+ApJ, 758, 24, doi: 10.1088/0004-637X/758/1/24
+Freedman, W. L., Madore, B. F., Gibson, B. K., et al. 2001,
+ApJ, 553, 47, doi: 10.1086/320638
+Freedman, W. L., Madore, B. F., Hatt, D., et al. 2019, ApJ,
+882, 34, doi: 10.3847/1538-4357/ab2f73
+Gardner, J. P., Mather, J. C., Abbott, R., et al. 2023,
+PASP, 135, 068001, doi: 10.1088/1538-3873/acd1b5
+G´orski, M., Pietrzy´nski, G., Gieren, W., et al. 2016, AJ,
+151, 167, doi: 10.3847/0004-6256/151/6/167
+Hamer, S. L., Ardern, S., & Scowcroft, V. 2023, arXiv
+e-prints, arXiv:2302.14075,
+doi: 10.48550/arXiv.2302.14075
+Herrnstein, J. R., Moran, J. M., Greenhill, L. J., et al.
+1999, Nature, 400, 539, doi: 10.1038/22972
+Hidalgo, S. L., Pietrinferni, A., Cassisi, S., et al. 2018, ApJ,
+856, 125, doi: 10.3847/1538-4357/aab158
+Hoffmann, S. L., Macri, L. M., Riess, A. G., et al. 2016,
+ApJ, 830, 10, doi: 10.3847/0004-637X/830/1/10
+Hoyt, T., Freedman, W. L., Beaton, R. L., et al. 2021a, A
+High-accuracy, Geometric Calibration of the Tip of the
+Red Giant Branch in the Halo of NGC 4258, HST
+Proposal. Cycle 29, ID. #16743
+Hoyt, T. J. 2023, Nature Astronomy,
+doi: 10.1038/s41550-023-01913-1
+Hoyt, T. J., Freedman, W. L., Madore, B. F., et al. 2018,
+ApJ, 858, 12, doi: 10.3847/1538-4357/aab7ed
+Hoyt, T. J., Beaton, R. L., Freedman, W. L., et al. 2021b,
+ApJ, 915, 34, doi: 10.3847/1538-4357/abfe5a
+Hu, W. 2005, in Astronomical Society of the Pacific
+Conference Series, Vol. 339, Observing Dark Energy, ed.
+S. C. Wolff & T. R. Lauer, 215,
+doi: 10.48550/arXiv.astro-ph/0407158
+Hubble, E. 1929, Proceedings of the National Academy of
+Science, 15, 168, doi: 10.1073/pnas.15.3.168
+Humphreys, E. M. L., Reid, M. J., Greenhill, L. J., Moran,
+J. M., & Argon, A. L. 2008, ApJ, 672, 800,
+doi: 10.1086/523637
+Humphreys, E. M. L., Reid, M. J., Moran, J. M., Greenhill,
+L. J., & Argon, A. L. 2013, ApJ, 775, 13,
+doi: 10.1088/0004-637X/775/1/13
+Jang, I. S. 2023, MNRAS, doi: 10.1093/mnras/stad619
+Jang, I. S., & Lee, M. G. 2017, Astrophysical Journal, 835,
+28, doi: 10.3847/1538-4357/835/1/28
+Jang, I. S., Hoyt, T. J., Beaton, R. L., et al. 2021, ApJ,
+906, 125, doi: 10.3847/1538-4357/abc8e9
+Kluyver, T., Ragan-Kelley, B., P´erez, F., et al. 2016, in
+Positioning and Power in Academic Publishing: Players,
+Agents and Agendas, ed. F. Loizides & B. Schmidt, IOS
+Press, 87 – 90
+Leavitt, H. S. 1908, Annals of Harvard College Observatory,
+60, 87
+Leavitt, H. S., & Pickering, E. C. 1912, Harvard College
+Observatory Circular, 173, 1
+Lee, A. J., Freedman, W. L., Jang, I. S., Madore, B. F., &
+Owens, K. A. 2024a, ApJ, 961, 132,
+doi: 10.3847/1538-4357/ad12c7
+Lee, A. J., Freedman, W. L., Madore, B. F., et al. 2021,
+ApJ, 907, 112, doi: 10.3847/1538-4357/abd253
+Lee, A. J., Monson, A. J., Freedman, W. L., et al. 2024b,
+arXiv e-prints, arXiv:2402.18794,
+doi: 10.48550/arXiv.2402.18794
+Lee, M. G., Freedman, W. L., & Madore, B. F. 1993, ApJ,
+417, 553, doi: 10.1086/173334
+Macri, L. M., Ngeow, C.-C., Kanbur, S. M., Mahzooni, S.,
+& Smitka, M. T. 2015, AJ, 149, 117,
+doi: 10.1088/0004-6256/149/4/117
+Macri, L. M., Calzetti, D., Freedman, W. L., et al. 2001,
+ApJ, 549, 721, doi: 10.1086/319465
+Madore, B. F., & Freedman, W. L. 2020a, ApJ, 899, 66,
+doi: 10.3847/1538-4357/aba045
+—. 2020b, AJ, 160, 170, doi: 10.3847/1538-3881/abab9a
+Madore, B. F., Mager, V., & Freedman, W. L. 2009, ApJ,
+690, 389, doi: 10.1088/0004-637X/690/1/389
+Madore, B. F., Freedman, W. L., Hatt, D., et al. 2018, ApJ,
+858, 11, doi: 10.3847/1538-4357/aab7f4
+Makarov, D., Prugniel, P., Terekhova, N., Courtois, H., &
+Vauglin, I. 2014, A&A, 570, A13,
+doi: 10.1051/0004-6361/201423496
+McQuinn, K. B. W., Boyer, M., Skillman, E. D., & Dolphin,
+A. E. 2019, ApJ, 880, 63, doi: 10.3847/1538-4357/ab2627
+McQuinn, K. B. W., Boyer, M. L., Dolphin, A. E.,
+Newman, M. J. B., & Skillman, E. D. 2021, Securing the
+TRGB Distance Indicator: A Pre-Requisite for a JWST
+Measurement of H 0, JWST Proposal. Cycle 1, ID.
+#1638
+Monson, A. J., Freedman, W. L., Madore, B. F., et al.
+2012, ApJ, 759, 146, doi: 10.1088/0004-637X/759/2/146
+20
+Mould, J., & Kristian, J. 1986, ApJ, 305, 591,
+doi: 10.1086/164273
+Nidever, D. L., Hasselquist, S., Hayes, C. R., et al. 2020,
+ApJ, 895, 88, doi: 10.3847/1538-4357/ab7305
+Nikolaev, S., & Weinberg, M. D. 2000, ApJ, 542, 804,
+doi: 10.1086/317048
+Parada, J., Heyl, J., Richer, H., Ripoche, P., &
+Rousseau-Nepton, L. 2021, MNRAS, 501, 933,
+doi: 10.1093/mnras/staa3750
+—. 2023, MNRAS, 522, 195, doi: 10.1093/mnras/stad965
+Persson, S. E., Madore, B. F., Krzemi´nski, W., et al. 2004,
+AJ, 128, 2239, doi: 10.1086/424934
+Pietrinferni, A., Hidalgo, S., Cassisi, S., et al. 2021, ApJ,
+908, 102, doi: 10.3847/1538-4357/abd4d5
+Pietrzy´nski, G., Graczyk, D., Gallenne, A., et al. 2019,
+Nature, 567, 200, doi: 10.1038/s41586-019-0999-4
+Reid, M. J., Pesce, D. W., & Riess, A. G. 2019, ApJL, 886,
+L27, doi: 10.3847/2041-8213/ab552d
+Riess, A. G., Macri, L., Casertano, S., et al. 2009, ApJ, 699,
+539, doi: 10.1088/0004-637X/699/1/539
+Riess, A. G., Macri, L. M., Hoffmann, S. L., et al. 2016,
+ApJ, 826, 56, doi: 10.3847/0004-637X/826/1/56
+Riess, A. G., Breuval, L., Yuan, W., et al. 2022, ApJ, 938,
+36, doi: 10.3847/1538-4357/ac8f24
+Riess, A. G., Anand, G. S., Yuan, W., et al. 2024, ApJL,
+962, L17, doi: 10.3847/2041-8213/ad1ddd
+Rigby, J., Perrin, M., McElwain, M., et al. 2023, PASP,
+135, 048001, doi: 10.1088/1538-3873/acb293
+Ripoche, P., Heyl, J., Parada, J., & Richer, H. 2020,
+MNRAS, 495, 2858, doi: 10.1093/mnras/staa1346
+Saha, A., Sandage, A., Labhardt, L., et al. 1996, ApJ, 466,
+55, doi: 10.1086/177493
+Salaris, M., & Cassisi, S. 1998, MNRAS, 298, 166,
+doi: 10.1046/j.1365-8711.1998.01598.x
+—. 2005, Evolution of Stars and Stellar Populations
+Sandage, A. 1994, Calibration of Nearby Galaxy Type IA
+Supernovae as Standard Candles: NGC4496 and
+NGC4356 - CYCLE4MEDIUM, HST Proposal ID 5427.
+Cycle 4
+Sandage, A. R. 1970, Physics Today, 23, 34,
+doi: 10.1063/1.3021960
+Schlafly, E. F., & Finkbeiner, D. P. 2011, ApJ, 737, 103,
+doi: 10.1088/0004-637X/737/2/103
+Schlegel, D. J., Finkbeiner, D. P., & Davis, M. 1998, ApJ,
+500, 525, doi: 10.1086/305772
+Scolnic, D., Riess, A. G., Wu, J., et al. 2023, ApJL, 954,
+L31, doi: 10.3847/2041-8213/ace978
+Scowcroft, V., Freedman, W. L., Madore, B. F., et al. 2011,
+ApJ, 743, 76, doi: 10.1088/0004-637X/743/1/76
+Scowcroft, V., Seibert, M., Freedman, W. L., et al. 2016,
+MNRAS, 459, 1170, doi: 10.1093/mnras/stw628
+Serenelli, A., Weiss, A., Cassisi, S., Salaris, M., &
+Pietrinferni, A. 2017, A&A, 606, A33,
+doi: 10.1051/0004-6361/201731004
+Spearman, C. 1904, American Journal of Psychology, 15,
+201, doi: 10.2307/1412107
+Valenti, E., Ferraro, F. R., & Origlia, L. 2004, MNRAS,
+354, 815, doi: 10.1111/j.1365-2966.2004.08249.x
+Virtanen, P., Gommers, R., Oliphant, T. E., et al. 2020,
+Nature Methods, 17, 261, doi: 10.1038/s41592-019-0686-2
+Weinberg, M. D., & Nikolaev, S. 2001, ApJ, 548, 712,
+doi: 10.1086/319001
+Weisz, D. R., McQuinn, K. B. W., Savino, A., et al. 2023,
+ApJS, 268, 15, doi: 10.3847/1538-4365/acdcfd
+Weisz, D. R., Dolphin, A. E., Savino, A., et al. 2024, ApJS,
+271, 47, doi: 10.3847/1538-4365/ad2600
+Wu, J., Scolnic, D., Riess, A. G., et al. 2023, ApJ, 954, 87,
+doi: 10.3847/1538-4357/acdd7b
+Wu, P.-F., Tully, R. B., Rizzi, L., et al. 2014, AJ, 148, 7,
+doi: 10.1088/0004-6256/148/1/7
+Yuan, W., Riess, A. G., Macri, L. M., Casertano, S., &
+Scolnic, D. M. 2019, ApJ, 886, 61,
+doi: 10.3847/1538-4357/ab4bc9
+Zgirski, B., Pietrzy´nski, G., Gieren, W., et al. 2021, ApJ,
+916, 19, doi: 10.3847/1538-4357/ac04b2

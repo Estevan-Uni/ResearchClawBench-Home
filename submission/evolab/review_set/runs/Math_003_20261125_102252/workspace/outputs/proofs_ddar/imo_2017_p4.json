@@ -1,0 +1,1063 @@
+{
+ "problem": "imo_2017_p4",
+ "statement": "r s = segment r s; t = mirror t r s; o = on_bline o r s; j = on_circle j o s; o1 = circle o1 j s t; a = on_tline a r o r, on_circle a o1 s; b = on_tline b r o r, on_circle b o1 s; k = on_line k j a, on_circle k o s ? perp k t o1 t",
+ "coords": {
+  "r": [
+   -0.37970486136133474,
+   0.4596634965202573
+  ],
+  "s": [
+   0.6664117531259213,
+   -0.3121136921123957
+  ],
+  "t": [
+   1.7125283676131773,
+   -1.0838908807450487
+  ],
+  "o": [
+   0.4054973259941961,
+   0.42910163692781117
+  ],
+  "j": [
+   -0.368293124859432,
+   0.565940375804627
+  ],
+  "o1": [
+   12.772937670703383,
+   15.002977347361577
+  ],
+  "a": [
+   -0.3753192732488828,
+   0.5723390151130071
+  ],
+  "b": [
+   0.7861056752494202,
+   30.411930655523427
+  ],
+  "k": [
+   0.6139196240277262,
+   -0.32855042567881887
+  ]
+ },
+ "goal": [
+  "perp",
+  "k",
+  "t",
+  "o1",
+  "t"
+ ],
+ "steps": [
+  {
+   "id": 8,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "a",
+    "o1",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    5,
+    "on_circle",
+    "cong",
+    [
+     "o1",
+     "a",
+     "o1",
+     "s"
+    ],
+    8
+   ]
+  },
+  {
+   "id": 5,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "j",
+    "o1",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    4,
+    "circle",
+    "cong",
+    [
+     "o1",
+     "j",
+     "o1",
+     "s"
+    ],
+    5
+   ]
+  },
+  {
+   "id": 34,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "a",
+    "o1",
+    "j"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    5,
+    8
+   ],
+   "src": null
+  },
+  {
+   "id": 35,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o1",
+    "a",
+    "j",
+    "j",
+    "a",
+    "j",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    34
+   ],
+   "src": null
+  },
+  {
+   "id": 32,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "o1",
+    "s",
+    "j",
+    "j",
+    "s",
+    "j",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    5
+   ],
+   "src": null
+  },
+  {
+   "id": 6,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "s",
+    "o1",
+    "t"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    4,
+    "circle",
+    "cong",
+    [
+     "o1",
+     "s",
+     "o1",
+     "t"
+    ],
+    6
+   ]
+  },
+  {
+   "id": 25,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "t",
+    "o1",
+    "a"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    6,
+    8
+   ],
+   "src": null
+  },
+  {
+   "id": 26,
+   "kind": "eqangle",
+   "args": [
+    "t",
+    "o1",
+    "t",
+    "a",
+    "a",
+    "t",
+    "a",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    25
+   ],
+   "src": null
+  },
+  {
+   "id": 24,
+   "kind": "eqangle",
+   "args": [
+    "t",
+    "o1",
+    "t",
+    "s",
+    "s",
+    "t",
+    "s",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    6
+   ],
+   "src": null
+  },
+  {
+   "id": 12,
+   "kind": "cong",
+   "args": [
+    "o",
+    "k",
+    "o",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    7,
+    "on_circle",
+    "cong",
+    [
+     "o",
+     "k",
+     "o",
+     "s"
+    ],
+    12
+   ]
+  },
+  {
+   "id": 21,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "o",
+    "s",
+    "k",
+    "k",
+    "s",
+    "k",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    12
+   ],
+   "src": null
+  },
+  {
+   "id": 4,
+   "kind": "cong",
+   "args": [
+    "o",
+    "j",
+    "o",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    3,
+    "on_circle",
+    "cong",
+    [
+     "o",
+     "j",
+     "o",
+     "s"
+    ],
+    4
+   ]
+  },
+  {
+   "id": 19,
+   "kind": "cong",
+   "args": [
+    "o",
+    "j",
+    "o",
+    "k"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    4,
+    12
+   ],
+   "src": null
+  },
+  {
+   "id": 20,
+   "kind": "eqangle",
+   "args": [
+    "j",
+    "o",
+    "j",
+    "k",
+    "k",
+    "j",
+    "k",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    19
+   ],
+   "src": null
+  },
+  {
+   "id": 16,
+   "kind": "eqangle",
+   "args": [
+    "j",
+    "o",
+    "j",
+    "s",
+    "s",
+    "j",
+    "s",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    4
+   ],
+   "src": null
+  },
+  {
+   "id": 11,
+   "kind": "coll",
+   "args": [
+    "k",
+    "j",
+    "a"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    7,
+    "on_line",
+    "coll",
+    [
+     "k",
+     "j",
+     "a"
+    ],
+    11
+   ]
+  },
+  {
+   "id": 7,
+   "kind": "perp",
+   "args": [
+    "a",
+    "r",
+    "o",
+    "r"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    5,
+    "on_tline",
+    "perp",
+    [
+     "a",
+     "r",
+     "o",
+     "r"
+    ],
+    7
+   ]
+  },
+  {
+   "id": 3,
+   "kind": "eqangle",
+   "args": [
+    "r",
+    "o",
+    "r",
+    "s",
+    "s",
+    "r",
+    "s",
+    "o"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    2,
+    "on_bline",
+    "eqangle",
+    [
+     "r",
+     "o",
+     "r",
+     "s",
+     "s",
+     "r",
+     "s",
+     "o"
+    ],
+    3
+   ]
+  },
+  {
+   "id": 0,
+   "kind": "coll",
+   "args": [
+    "t",
+    "r",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    1,
+    "mirror",
+    "coll",
+    [
+     "t",
+     "r",
+     "s"
+    ],
+    0
+   ]
+  },
+  {
+   "id": 109,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "r",
+    "s",
+    "k",
+    "a",
+    "r",
+    "a",
+    "t"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    0,
+    3,
+    7,
+    11,
+    16,
+    20,
+    21,
+    24,
+    26,
+    32,
+    35
+   ],
+   "src": null
+  },
+  {
+   "id": 2,
+   "kind": "cong",
+   "args": [
+    "o",
+    "r",
+    "o",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    2,
+    "on_bline",
+    "cong",
+    [
+     "o",
+     "r",
+     "o",
+     "s"
+    ],
+    2
+   ]
+  },
+  {
+   "id": 22,
+   "kind": "cong",
+   "args": [
+    "o",
+    "r",
+    "o",
+    "k"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    12
+   ],
+   "src": null
+  },
+  {
+   "id": 23,
+   "kind": "eqangle",
+   "args": [
+    "r",
+    "o",
+    "r",
+    "k",
+    "k",
+    "r",
+    "k",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    22
+   ],
+   "src": null
+  },
+  {
+   "id": 108,
+   "kind": "eqangle",
+   "args": [
+    "r",
+    "s",
+    "r",
+    "k",
+    "t",
+    "r",
+    "t",
+    "a"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    0,
+    3,
+    11,
+    16,
+    20,
+    23,
+    24,
+    26,
+    32,
+    35
+   ],
+   "src": null
+  },
+  {
+   "id": 110,
+   "kind": "simtri2",
+   "args": [
+    "r",
+    "s",
+    "k",
+    "t",
+    "a",
+    "r"
+   ],
+   "const": "0",
+   "rule": "sim_aa",
+   "prem": [
+    108,
+    109
+   ],
+   "src": null
+  },
+  {
+   "id": 10,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "b",
+    "o1",
+    "s"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    6,
+    "on_circle",
+    "cong",
+    [
+     "o1",
+     "b",
+     "o1",
+     "s"
+    ],
+    10
+   ]
+  },
+  {
+   "id": 36,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "a",
+    "o1",
+    "b"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    8,
+    10
+   ],
+   "src": null
+  },
+  {
+   "id": 37,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o1",
+    "a",
+    "b",
+    "b",
+    "a",
+    "b",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    36
+   ],
+   "src": null
+  },
+  {
+   "id": 33,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "o1",
+    "s",
+    "b",
+    "b",
+    "s",
+    "b",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    10
+   ],
+   "src": null
+  },
+  {
+   "id": 9,
+   "kind": "perp",
+   "args": [
+    "b",
+    "r",
+    "o",
+    "r"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    6,
+    "on_tline",
+    "perp",
+    [
+     "b",
+     "r",
+     "o",
+     "r"
+    ],
+    9
+   ]
+  },
+  {
+   "id": 13,
+   "kind": "para",
+   "args": [
+    "r",
+    "a",
+    "r",
+    "b"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    7,
+    9
+   ],
+   "src": null
+  },
+  {
+   "id": 14,
+   "kind": "coll",
+   "args": [
+    "r",
+    "a",
+    "b"
+   ],
+   "const": "0",
+   "rule": "para_coll",
+   "prem": [
+    13
+   ],
+   "src": null
+  },
+  {
+   "id": 103,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "r",
+    "s",
+    "b",
+    "s",
+    "k",
+    "s",
+    "r"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    3,
+    7,
+    11,
+    14,
+    16,
+    20,
+    21,
+    32,
+    33,
+    35,
+    37
+   ],
+   "src": null
+  },
+  {
+   "id": 102,
+   "kind": "eqangle",
+   "args": [
+    "r",
+    "s",
+    "r",
+    "b",
+    "k",
+    "s",
+    "k",
+    "r"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    3,
+    9,
+    21,
+    23
+   ],
+   "src": null
+  },
+  {
+   "id": 104,
+   "kind": "simtri",
+   "args": [
+    "r",
+    "s",
+    "b",
+    "k",
+    "s",
+    "r"
+   ],
+   "const": "0",
+   "rule": "sim_aa",
+   "prem": [
+    102,
+    103
+   ],
+   "src": null
+  },
+  {
+   "id": 31,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "o1",
+    "s",
+    "a",
+    "a",
+    "s",
+    "a",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    8
+   ],
+   "src": null
+  },
+  {
+   "id": 29,
+   "kind": "cong",
+   "args": [
+    "o1",
+    "t",
+    "o1",
+    "b"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    6,
+    10
+   ],
+   "src": null
+  },
+  {
+   "id": 30,
+   "kind": "eqangle",
+   "args": [
+    "t",
+    "o1",
+    "t",
+    "b",
+    "b",
+    "t",
+    "b",
+    "o1"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    29
+   ],
+   "src": null
+  },
+  {
+   "id": 100,
+   "kind": "eqangle",
+   "args": [
+    "s",
+    "r",
+    "s",
+    "a",
+    "b",
+    "t",
+    "b",
+    "r"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    0,
+    7,
+    9,
+    14,
+    24,
+    30,
+    31,
+    37
+   ],
+   "src": null
+  },
+  {
+   "id": 99,
+   "kind": "eqangle",
+   "args": [
+    "r",
+    "s",
+    "r",
+    "a",
+    "r",
+    "t",
+    "r",
+    "b"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    0,
+    7,
+    9
+   ],
+   "src": null
+  },
+  {
+   "id": 101,
+   "kind": "simtri2",
+   "args": [
+    "r",
+    "s",
+    "a",
+    "r",
+    "b",
+    "t"
+   ],
+   "const": "0",
+   "rule": "sim_aa",
+   "prem": [
+    99,
+    100
+   ],
+   "src": null
+  },
+  {
+   "id": 1,
+   "kind": "cong",
+   "args": [
+    "s",
+    "r",
+    "s",
+    "t"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    1,
+    "mirror",
+    "cong",
+    [
+     "s",
+     "r",
+     "s",
+     "t"
+    ],
+    1
+   ]
+  },
+  {
+   "id": 154,
+   "kind": "eqratio",
+   "args": [
+    "r",
+    "t",
+    "r",
+    "k",
+    "t",
+    "a",
+    "t",
+    "s"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    1,
+    101,
+    104,
+    110
+   ],
+   "src": null
+  },
+  {
+   "id": 153,
+   "kind": "eqangle",
+   "args": [
+    "r",
+    "t",
+    "r",
+    "k",
+    "t",
+    "s",
+    "t",
+    "a"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    0,
+    110
+   ],
+   "src": null
+  },
+  {
+   "id": 155,
+   "kind": "simtri2",
+   "args": [
+    "r",
+    "t",
+    "k",
+    "t",
+    "a",
+    "s"
+   ],
+   "const": "0",
+   "rule": "sim_sas",
+   "prem": [
+    153,
+    154
+   ],
+   "src": null
+  },
+  {
+   "id": 165,
+   "kind": "perp",
+   "args": [
+    "k",
+    "t",
+    "o1",
+    "t"
+   ],
+   "const": "1/2",
+   "rule": "ar",
+   "prem": [
+    0,
+    24,
+    26,
+    31,
+    155
+   ],
+   "src": null
+  }
+ ],
+ "goal_step": 165,
+ "stats": {
+  "n_steps": 46,
+  "n_premise": 13,
+  "n_ar": 16,
+  "ar_resolved": 16,
+  "nonintegral": 6
+ }
+}

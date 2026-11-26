@@ -1,0 +1,49 @@
+{
+  "run_id": "Neuroscience_003_20261125_162953",
+  "task_id": "Neuroscience_003",
+  "agent_name": "EvoLab",
+  "items": [
+    {
+      "index": 0,
+      "type": "text",
+      "content": "DELVE introduces a bottom‑up unsupervised feature selection framework that first identifies dynamic co‑varying feature modules via local neighborhood analysis, then ranks all features by their associa",
+      "weight": 0.15,
+      "score": 39,
+      "reasoning": "Evaluated under Mode B (methodological and mechanistic analysis), the report captures the two-step DELVE architecture—combining kernel-herding neighborhood sketching, dynamic module selection, and seed-graph Laplacian ranking—and shows via pre-registered label-free +dedup and +whiten variants on RPE 4i data (DPT rho = 0.852, phase accuracy = 0.882) how local dynamic modules overcome global intensity variance and outperform traditional single-step baselines. However, its primary DELVE-faithful Step 1 implementation builds neighborhoods on a global PCA graph and tests modules against random subsets of dataset features rather than a cell-permutation noise null, causing the unmodified method to fail on raw RPE (rho = -0.061) and degrade faster than Laplacian score, MCFS, and Moran's I in low-SNR simulations. Although the diagnosis of compartment redundancy and coherent confounders is rigorous, failing to reproduce the original paper's out-of-the-box filtering and simulated noise-robustness advantage places it just below paper-comparable parity."
+    },
+    {
+      "index": 1,
+      "type": "text",
+      "content": "In systematic benchmarks on simulated and real single‑cell datasets, DELVE consistently outperforms 11 existing feature selection methods across multiple metrics: it achieves higher precision@k for di",
+      "weight": 0.25,
+      "score": 32,
+      "reasoning": "Evaluated under Mode A (Objective Evaluation), the report constructs a structured benchmark covering ~11 baseline methods (variance-, similarity-, cluster-based, and an oracle), all three target metrics (precision@k, k-NN classification accuracy, and DPT pseudotime correlation), real RPE data, and simulated linear, bifurcating, and tree trajectories. However, due to flaws in reconstructing DELVE's seed-module selection, the primary DELVE-faithful implementation fails on the real RPE dataset (accuracy = 0.366, DPT rho = -0.061), and while a deduplicated variant (+dedup) recovers strong RPE metrics (accuracy = 0.882, DPT rho = 0.852), it collapses under mild Gaussian noise and is omitted from the simulated benchmarks. Crucially, across linear, bifurcating, and tree simulations, the method fails to achieve the paper's consistent superiority over existing selectors—merely tying simpler graph methods on clean data (precision@100 = 0.58-0.61 vs. 0.60-0.63 for Laplacian score) and degrading much faster under low SNR (precision@100 = 0.12 vs. 0.45 for Laplacian)—while evaluating only one real dataset with simplified custom baselines."
+    },
+    {
+      "index": 2,
+      "type": "text",
+      "content": "DELVE exhibits strong robustness to common single‑cell noise sources, including low signal‑to‑noise ratio, reduced library size, and increased dropout. In simulated experiments, DELVE shows the smalle",
+      "weight": 0.25,
+      "score": 28,
+      "reasoning": "Using Objective Evaluation (Mode A), the report tests all three relevant single-cell noise sources (low SNR, reduced library size, and high dropout) alongside Laplacian Score and MCFS baselines, but its metrics deviate severely from and invert the original paper's findings: the reconstructed DELVE method degrades faster than Laplacian Score and MCFS under low SNR (collapsing to 0.12 precision and -0.02 DPT rho at effect scale 0.4 versus 0.45 and 0.44 precision for Laplacian and MCFS) and shows no overall robustness advantage across library-size or dropout sweeps, while both DELVE-faithful and +dedup also collapse under mild Gaussian noise on RPE data (rho = 0.03). These failures stem from significant methodological flaws in both the unverified DELVE reconstruction (testing module coherence against random feature subsets rather than cell-permutation nulls and using PCA-denoised graphs for similarity baselines) and the custom simulator (only 2 replicates of 500 genes with an unscaled 40-gene confounder dominating the SNR sweep). Credit within the 21-30 band is warranted for comprehensive benchmark design and transparent diagnostic reporting of negative results, including partial noise resilience observed only in the modified +whiten variant on RPE."
+    },
+    {
+      "index": 3,
+      "type": "image",
+      "content": "PHATE visualization using all features from the RPE cell‑cycle dataset shows a diffuse embedding with poor separation of cell cycle phases (G0/G1, S, G2, M). This baseline highlights the need for feat",
+      "weight": 0.15,
+      "score": 60,
+      "reasoning": "Evaluated under Mode B (qualitative visual and mechanistic baseline analysis), the AI agent accurately reproduces the diffuse geometry and poor phase separation (G0, G1, S, G2) of the ground-truth 'All features' PHATE embedding on the RPE dataset (Image 8, top-left). Beyond the original paper's single phase-colored plot, the report provides stronger supporting evidence for why the full 241-feature baseline fails by overlaying annotated age and batch on the same PHATE coordinates, diagnosing global-intensity confounding in PC1 (24.8% variance, r = 0.985 with mean intensity, rho = 0.001 with age) alongside compartment redundancy, and benchmarking full-feature NMI and pseudotime metrics. Although the agent's literal reconstructed 'DELVE-faithful' model also produced a diffuse embedding without deduplication, comparing the all-features baseline against its label-free 'DELVE +dedup' panel effectively demonstrates the need for feature selection to resolve the continuous G1-S-G2 and G0 trajectory."
+    },
+    {
+      "index": 4,
+      "type": "image",
+      "content": "PHATE visualization using DELVE‑selected features (top 30) on the RPE dataset reveals a smooth, continuous trajectory that tightly clusters cells by cell cycle phase. DELVE achieves high classificatio",
+      "weight": 0.2,
+      "score": 46,
+      "reasoning": "Evaluated under Mode A (Objective), the agent's primary DELVE re-implementation failed on RPE (accuracy 0.37, DPT ρ -0.06, unstructured PHATE), requiring a deduplicated variant (+dedup) to recover a smooth G1-S-G2 PHATE trajectory that outperforms the all-feature baseline. At k=30, +dedup achieved mixed but broadly comparable metrics relative to the paper, with lower classification accuracy (0.88 vs. 0.96) and NMI (0.51 vs. 0.60) alongside higher pseudotime correlation (0.85 vs. 0.66)."
+    }
+  ],
+  "total_score": 39.05,
+  "total_weight": 1.0
+}

@@ -1,0 +1,1235 @@
+Link Prediction on Heterophilic Graphs via Disentangled
+Representation Learning
+Shijie Zhou†, Zhimeng Guo†, Charu Aggarwal‡, Xiang Zhang†, Suhang Wang†
+†College of Information Sciences and Technology, The Pennsylvania State University, USA
+‡IBM T. J. Watson Research Center, USA
+{smz5479,zzg5107,xzz89,szw494}@psu.edu,charu@us.ibm.com
+ABSTRACT
+Link prediction is an important task that has wide applications in
+various domains. However, the majority of existing link prediction
+approaches assume the given graph follows homophily assumption,
+and designs similarity-based heuristics or representation learning
+approaches to predict links. However, many real-world graphs are
+heterophilic graphs, where the homophily assumption does not
+hold, which challenges existing link prediction methods. Generally,
+in heterophilic graphs, there are many latent factors causing the
+link formation, and two linked nodes tend to be similar in one
+or two factors but might be dissimilar in other factors, leading
+to low overall similarity. Thus, one way is to learn disentangled
+representation for each node with each vector capturing the latent
+representation of a node on one factor, which paves a way to model
+the link formation in heterophilic graphs, resulting in better node
+representation learning and link prediction performance. However,
+the work on this is rather limited. Therefore, in this paper, we study
+a novel problem of exploring disentangled representation learning
+for link prediction on heterophilic graphs. We propose a novel
+framework DisenLink which can learn disentangled representations
+by modeling the link formation and perform factor-aware message-
+passing to facilitate link prediction. Extensive experiments on 13
+real-world datasets demonstrate the effectiveness of DisenLink for
+link prediction on both heterophilic and hemophiliac graphs. Our
+codes are available at https://github.com/sjz5202/DisenLink.
+KEYWORDS
+Link prediction, Heterophilic graphs, Graph neural networks
+1 INTRODUCTION
+Graph structured data are pervasive in real-world, such as social
+networks [39], knowledge graphs [31] and transaction networks [6].
+For many domains, the collected graph usually contains many un-
+known or missing links due to various reasons such as limitation
+of observation capacity and artificial masking. For example, the
+constructed knowledge graph has many missing relationships due
+to the incompleteness of knowledge. Thus, link prediction, which
+aims to predict missing links in a graph, is an active research area.
+Various link prediction algorithms have been proposed [4, 19, 42],
+which have facilitate various applications such as friend sugges-
+tion in social networks [39], knowledge graph completion [31] and
+protein-protein interaction reconstruction [21]. Existing link pre-
+diction based approaches can be generally categorized into two
+categories, i.e., heuristic-based approaches [2, 14, 30] and repre-
+sentation learning based approaches [1, 18]. Heuristic-based ap-
+proaches measure local or global similarity within a specific graph
+topology or node features based on the corresponding assumption
+to give the probability of the edge existence. For example, Sim-
+Rank [14] gives the score based on the similarity between 1-hop
+neighbors of two nodes. Representation learning methods learn
+node representations that can well reconstruct the links. For ex-
+ample, matrix factorization-based link prediction [1] optimize the
+coefficient matrix as final representations. Recently, graph neural
+network (GNN) based representation learning approaches [43] for
+link prediction have achieved state-of-the-art performance. Gener-
+ally, GNNs adopt the message-passing mechanism, which iterative
+aggregates neighbor nodes’ representations to update the center
+node’s representation. Thus, the learned representation captures
+both node attributes and local graph information, which facilitates
+link prediction.
+However, the aforementioned approaches generally assume that
+the given graph follows homophily assumption, i.e., two nodes with
+similar features are more likely to be connected; while many real-
+world graphs are heterophilic, where a node tends to connect to
+nodes of dissimilar features or class labels due to various complex
+latent factors rather than the simple homophily assumption. For
+example, as shown in Figure 1, in social networks, two users 𝑣𝑖 and
+𝑣𝑗 might be connected as they have common interests in music but
+have no similarity in other factors; 𝑣𝑖 and 𝑣𝑘 might be connected
+simply because they are colleagues but have totally different inter-
+ests and cultural background. Similarly, in molecular graphs, many
+latent factors influence the bonds between atoms. Often the case,
+the reason why two nodes are connected is unknown. Hence, in het-
+erophilic graphs, two connected nodes might be similar in one or two
+latent factors but have low overall feature similarity, which breaks
+the homophily assumption and challenges many existing link pre-
+diction approaches, especially GNN based approaches [18, 43] as
+(1) Generally, GNN adopts message-passing to learn node repre-
+sentation, which aggregates neighborhood features to update a
+node’s representation. Directly performing message-passing on
+heterophilic graphs could aggregate neighbors of dissimilar fea-
+tures of the center nodes, causing noisy representations, which
+degrades the performance of downstream tasks [35, 44]; (2) Repre-
+sentation learning based approach simply learn node representation
+and adopt homophily assumption to make predictions, i.e., a pair
+of nodes with similar representations are more likely to be linked,
+which might not be true in heterophilic graphs. Thus, link predic-
+tion on heterophilic graphs is a challenging problem. However, the
+work in this direction is rather limited.
+As there are many latent factors that affecting the formation of
+links in heterophilic graphs and two nodes are connected due to one
+or two latent factors, one natural way to perform link prediction
+is to learn 𝐾 disentangled representations
+
+h𝑖,𝑘
+	𝐾
+𝑘=1 with h𝑖,𝑘 for
+arXiv:2208.01820v1  [cs.LG]  3 Aug 2022
+Shijie Zhou†, Zhimeng Guo†, Charu Aggarwal‡, Xiang Zhang†, Suhang Wang†
+Music 
+Preference
+High-School 
+Classmate
+Colleague
+vi
+vj
+vk
+Figure 1: Social network with different relationships.
+each node 𝑖 with h𝑖,𝑘 capturing the characteristics of 𝑣𝑖 on factor 𝐾.
+With the disentangled representation, we can model the formation
+of links between each pair of nodes, i.e., which factor is the one
+that most likely causes the formation of the link. It has several ad-
+vantages: (i) we can perform message-passing on important factors
+while ignoring unimportant factors to avoid aggregating noisy in-
+formation. Hence, we can learn better disentangled representations
+for link prediction; (ii) we do not rely on homophily assumption as
+we can perform link prediction with disentangled representations.
+Even though the overall representation of two nodes is small, if
+they share a common interest in some factors, we would still be
+able to give the right prediction. There are several existing disen-
+tangled learning methods on graphs. However, they are not directly
+applicable for link prediction on heterophilic graphs as (i) they aim
+to learn disentangled representation for node [28] or graph [40]
+classification; and (ii) they do not model the link formation and are
+not dedicated to heterophilic graphs. Thus, though it is a promising
+direction, there are no existing works on exploring disentangled
+representation for link prediction on heterophilic graphs.
+Therefore, in this paper, we study a novel problem of explor-
+ing disentangled representation for link prediction on heterophilic
+graphs. i.e. learning disentangled node representations from GNNs
+for link prediction in heterophilic graphs. There are several chal-
+lenges for link prediction on heterophilic graphs: (i) How to learn
+high-quality disentangled representations that capture the most
+informative and pertinent latent factor without the supervision of
+latent factor selection? (ii) How to model link formation of rep-
+resentations from multiple factors? (iii) How can we learn the
+disentangled representations that capture the neighborhood in-
+formation beyond the noisy aggregation in real-world heterophilic
+graphs for better link predictions? To address these challenges, in
+this work, we propose a link prediction model named DisenLink.
+DisenLink focuses on edge factor discovery at the beginning to
+select the most important edge factor for each potential connec-
+tivity based on the similarity between local representations for
+informative factors. DisenLink then takes the relational similarity
+information and graph locality into consideration and performs
+factor-wise message passing within the neighbor of the selected
+factor to produce better disentangled representations. DisenLink
+does not naively reconstruct links following VGAE [18] but consid-
+ers different contributions of each factor for better link prediction.
+The main contributions of the paper are:
+• We study a novel problem of disentangled representation learning
+for link prediction on heterophilic graphs;
+• We propose a novel framework that designs factor-wise mes-
+sage passing with factor-aware neighbor selection to learn high-
+quality disentangled representation for link prediction;
+• We conduct experiments on both heterophilic and homophilic
+graphs to demonstrate the effectiveness of DisenLink.
+2 RELATED WORKS
+2.1 Link Prediction
+Link prediction, which aims to predict if two nodes in a network
+are likely to have a link, is an important task. It has wide applica-
+tions in various domains such as social networks and knowledge
+graphs. Thus, various approaches have been proposed, which can
+be generally categorized into two categories [20, 27], i.e., heuristics-
+based approaches [2, 15] and representation learning based ap-
+proaches [18, 43]. Heuristics-based approach computes the pair-
+wise similarity score based on a particular structure or node’s prop-
+erties. For example, common neighbors (CN) [30] is scored by the
+number of the neighborhood intersection between a pair of nodes.
+Adamic Adar (AA) [2] is measured based on the assumption that
+the unpopular common neighbor is more likely to formulate the
+connection between two nodes. These heuristics-based approach
+tends to make strong assumptions and fails to generalize to differ-
+ent graph structures. More seriously, they cannot effectively utilize
+the attribute information, which severely limits the performance of
+the model. Representation learning based approaches aim to learn
+good node representations that can well reconstruct the adjacency
+matrix. They usually apply dot product between two node represen-
+tations to predict the likelihood of the link between two nodes. For
+example, matrix factorization-based link prediction [1, 29] adopts
+matrix factorization to learn node representations for adjacency
+matrix reconstruction. Due to the great ability in learning node
+representations that can capture both node and graph structure
+information, GNNs have become state-of-the-art representation
+learning based approaches for link prediction [18, 43]. For example,
+VGAE [18] adopts the GNN as the encoder to learn node represen-
+tations followed by a simple inner product decoder to get the link
+prediction result. SEAL extracts an enclosing subgraph centered at
+two nodes followed by a GNN on the graph to predict if there is a
+link between the two nodes [43].
+Despite their great success, most of them assume homophily
+assumption, i.e., two nodes with similar neighbors, features, or
+representations are more likely to form a link. Their capacity on
+heterophilic graphs is doubtful as the homophily assumption on het-
+erophilic graphs does not hold. In heterophilic graphs, linked nodes
+tend to have dissimilar features and different labels. For example, in
+dating networks, most people tend to build a connection with peo-
+ple of the opposite gender [47]; in transaction networks, fraudsters
+prefer to connect with customers instead of other fraudsters [33].
+Thus, link prediction for heterophilic graphs needs further investi-
+gation. However, the work in this direction is rather limited.
+Therefore, in this work, we study a novel problem of link predic-
+tion on heterophilic graphs. We propose a novel framework to learn
+disentangled representation by modeling the underlying diverse
+and complex connectivity relation in heterophilic graphs and to use
+the disentangled representation to predict missing links beyond the
+homophily assumption.
+Link Prediction on Heterophilic Graphs via Disentangled Representation Learning
+2.2 Graph Neural Networks
+Graph Neural Networks (GNNs) have shown great power in repre-
+sentations on graph-structured data. GNNs can be generally cate-
+gorized into two categories, spectral-based and spatial-based [12].
+Spectral-based GNNs such as GCN [17] and ChebNet [8] utilize
+the convolutional operator in the spectral domain of the Laplacian
+matrix. Spatial-based GNNs such as GraphSAGE [11], LGCN [9]
+and GAT [38] perform message passing directly on the graph topol-
+ogy. The success of GNNs relies on the message-passing mecha-
+nism, i.e., a node will iteratively aggregate the information from
+its neighbors. Thus, the learned representation captures both node
+attributes and local graph structure information, which facilitate
+various downstream tasks such as node classification [35], graph
+classification [44], and link prediction [43].
+Though GNNs have achieved great success in various domains,
+the message-passing mechanism of GNNs implicitly assumes the
+homophily assumption of the graph [48], i.e., nodes with similar
+features or same class labels are linked together; however, not
+all real-world graphs obey the homophily assumption [46]. Sim-
+ply applying message passing on heterophilic graphs would learn
+noisy node representation as a node’s neighbors can have very
+dissimilar features with the node. Thus, how to extend GNNs for
+heterophilic graphs has attracted increasing attention and many
+efforts have been take [7, 24, 34, 48]. For example, Geom-GCN [34]
+adds structural neighbors in continuous space to capture long-range
+dependencies for heterophilic graphs.
+To model the intrinsic factors in graph-structure data, there
+are some works [26, 28, 40] that concentrate on GNNs with a dis-
+entangled model. DisenGCN [28] is an early-stage work and its
+motivation is to utilize a neighborhood routing mechanism to find
+latent factors that shape the relationship between the nodes. For
+each factor, the nodes aggregate the information and get different
+representations. FactorGNN employs different MLP to get edge
+scores and several factor graphs. They also consider an adversar-
+ial training scheme to discriminate different factors. Besides these
+works, [45] comes up with a new approach that effectively utilizes
+self-supervision to constrain the disentangled representations to
+capture distinguishable relations and neighborhood interactions.
+Our work is inherently different from the aforementioned GNNs
+for heterophilic graphs or disentanglement based GNNs: (i) They
+focus on node or graph classification task, which has labels to guide
+the learning; while we study a novel problem of link prediction in
+heterophilic graphs; (ii) Though they also try to learn disentangled
+representation, we develop novel factor-aware neighbor selection
+and factor-wise message passing to model the link formation and
+learn disentangled node representation, and propose the novel
+disentangled link reconstruction for the final link formation.
+3 PROBLEM DEFINITION
+We use G = (V,E, X) to denote an attributed graph, where V =
+{𝑣1,...,𝑣𝑁} is the set of 𝑁 nodes, E is the set of observed edges, and
+X = {x1,..., x𝑁} node feature matrix with x𝑖 being the attributes of
+node 𝑣𝑖. A ∈ R𝑁×𝑁 is the adjacency matrix of G, where A𝑠𝑡 = 1 if
+nodes 𝑣𝑠 and 𝑣𝑡 are connected; otherwise A𝑠𝑡 = 0. Many real-world
+graphs such as social networks and knowledge graphs usually have
+many missing/unseen links. The task of link prediction is to infer the
+missing links. Most existing link prediction algorithms [18, 42, 43]
+assume that the given graph follows homophily assumption, i.e.,
+two nodes of the same class or similar node features are more
+likely to be connected. However, many real-world graphs are het-
+erophilic graphs, where the homophily assumption does not hold.
+In a heterophilic graph, a node tends to connect to nodes of dissim-
+ilar features or class labels due to various complex latent factors
+rather than the simple homophily assumption. For example, in so-
+cial networks, two users 𝑣𝑖 and 𝑣𝑗 might be connected as they have
+common interests in music but have no similarity in other factors;
+𝑣𝑖 and 𝑣𝑘 might be connected simply because they are colleagues
+but have totally different interests and cultural background.
+Hence, connected nodes in heterophilic graphs might be similar
+in one or two factors but have low overall feature similarity, which
+challenges existing link prediction approaches with homophily as-
+sumption, especially state-of-the-art GNN based approaches [18, 43]
+as (1) For heterophilic graphs, the direct performing of message-
+passing in the general GNN scheme will aggregate neighbors of
+dissimilar features of the center nodes leading noisy representations,
+which degrades the performance of downstream tasks [35, 44]; (2)
+Representation learning based approach simply learn node repre-
+sentation and adopt homophily assumption to make predictions,
+i.e., two nodes with similar representation are more likely to be
+connected.
+As there are many latent factors that affecting the formation of
+links and two nodes are connected due to one or two latent factors,
+for each node 𝑣𝑖, we propose to learn 𝐾 disentangled representation
+h𝑖,𝑘
+	𝐾
+𝑘=1 with h𝑖,𝑘 capturing the characteristics of 𝑣𝑖 on factor
+𝑘. Then for a pair of nodes (𝑣𝑖,𝑣𝑗), we can utilize disentangled
+representation to model which factor is most likely for 𝑣𝑖 and 𝑣𝑗 to
+be connected, which can simultaneously facilitate message-passing
+under the most important factor to avoid aggregating noise and
+help factor-wise link prediction to avoid simple similarity based link
+prediction. The problem of disentangled representation learning
+on heterophilic graphs for link prediction is formally defined as
+Problem 1. Given a heterophilic graph G = (V,E, X) whose
+links are formed due to various latent factors. Note that the ground
+truth of the factor that causes the formation of each link is unknown.
+Learn disentangled representation of each node for link prediction on
+G.
+4 METHODOLOGY
+In this section, we will give the details of DisenLink to learn dis-
+entangled node representations for link prediction on heterophilic
+graphs. As there are various factors underlying the graph formation
+and a node is connected to another node due to one or two factors,
+the basic idea is to learn 𝐾 disentangled representation vectors
+{z𝑠,𝑘}𝐾 𝑘=1 for each node 𝑣𝑠 with the 𝑖-th vector z𝑠,𝑖 capturing 𝑣𝑠’s
+representation on the 𝑖-th factor, and utilize the disentangled repre-
+sentations to model the link formation. However, there are several
+challenges: (i) How to model link formation and learn high-quality
+disentangled representations that capture latent factor informa-
+tion of each node given that we do not have the supervision of
+which latent factor contributes most to the formation of a link? (ii)
+Since directly applying message-passing mechanism can aggregate
+noisy information from neighbors, how can we learn disentangled
+Shijie Zhou†, Zhimeng Guo†, Charu Aggarwal‡, Xiang Zhang†, Suhang Wang†
+MLP
+-
+?
+??
+ weighted
+σfactor-aware neighbor selection
+Figure 2: An illustration of the proposed framework DisenLink
+representations that capture the neighborhood information for bet-
+ter link prediction? To solve these challenges, we propose a novel
+framework DisenLink as shown in Fig. 2, which is composed of
+Factor-Aware Neighbor Selection, Factor-Wise Message-Passing,
+and Link Prediction with Disentangled Representation. For each
+edge (𝑣𝑖,𝑣𝑗), factor-aware neighbor selection considers all factors
+and designs a mechanism to find which factor is the most likely fac-
+tor that forms the edge (𝑣𝑖,𝑣𝑗). Factor-wise message-passing only
+performs message-passing on the most likely factor to avoid aggre-
+gating noisy information from neighbors. Hence, DisenLink can
+learn better disentangled representation that captures heterophilic
+neighborhood information. With disentangled representations, Dis-
+enLink finally adopts factor-wise link prediction to predict the
+missing link. Next, we introduce details of each component.
+4.1 Factor-Aware Neighbor Selection
+Generally, a node’s raw feature x contains all the information on
+various factors, but is entangled. To help learn 𝐾 disentangled
+representation, for each node 𝑣𝑠, we first project the raw feature x𝑠
+to 𝐾 feature spaces to get the initial disentangled representations.
+Specifically, the representation of 𝑣𝑠 on the 𝑘-th factor is given as
+z𝑠,𝑘 = 𝑓𝑘(x𝑠), 𝑘 = 1,...,𝐾 (1)
+where 𝑓𝑘 is the 𝑘-th project function. Various projection functions
+can be used for 𝑓𝑘. In this paper, we choose a two-layer MLP, i.e.,
+z𝑠,𝑘 = W(2) 𝑘 ·𝑅𝑒𝐿𝑈(W(1) 𝑘 x𝑠) (2)
+where W(1) 𝑘 and W(2) 𝑘 are the parameters of the first layer and
+second layer MLP for factor 𝑘, respectively.
+The initial disentangled representation [z𝑠,1,..., z𝑠,𝐾] only dis-
+entangled the node feature information. It does not take the local
+graph structure and neighbor features into consideration; while
+various studies [25] have demonstrated the importance of local
+graph information for link prediction. Message-passing mechanism
+of GNNs has shown great ability in learning representations that
+capture both node features and local graph information. The basic
+idea of message-passing is to iteratively aggregate the neighbor’s
+representations to update a node’s representation. However, in het-
+erophilic graphs, node 𝑣𝑠 and node 𝑣𝑡 ∈N(𝑣𝑠) are linked due to
+one or two factors and could have totally dissimilar features in
+other factors, where N(𝑣𝑠) is set of neighbors of node 𝑣𝑠. Directly
+applying message passing on all the 𝐾 disentangled representations
+would aggregate noisy information for most of the factors, result-
+ing in noisy node representations. To avoid aggregating the noisy
+information from neighbors, for each neighbor node 𝑣𝑡 ∈N(𝑣𝑠),
+we should perform message passing on one or two factors that
+cause the connection of 𝑣𝑠 and 𝑣𝑡 . However, we lack the ground
+truth of these connections. Essentially, two nodes are connected
+because they share similarities in one or two factors. Thus, instead
+of relying on the ground truth, we can measure the similarity of
+z𝑠,𝑘 and z𝑡,𝑘, 𝑘 = 1,...,𝐾, select the most similar factor, say 𝑖-th
+factor, and perform message-passing on 𝑖-th factor. The advantages
+are: (i) the most similar factor is likely to be the factor that causes
+𝑣𝑠 and 𝑣𝑡 to be connected; and (ii) we avoid aggregating neighbor
+representations on dissimilar factors. Specifically, for 𝑣𝑡 ∈N(𝑣𝑠),
+we calculate the factor-wise importance/similarity between 𝑣𝑠 and
+𝑣𝑡 on the 𝑘-th factor as:
+𝛼𝑘 𝑠,𝑡 = exp
+
+z𝑇 𝑠,𝑘 · z𝑡,𝑘/𝜏 
+˝𝐾
+𝑖=1 exp
+
+z𝑇 𝑠,𝑖 · z𝑡,𝑖/𝜏 , 𝑘 = 1,...,𝐾 (3)
+where 𝜏 denotes the temperature parameter. 𝛼𝑘 𝑠,𝑡 is the the factor-
+wise importance score between 𝑣𝑠 and 𝑣𝑡 on factor 𝑘, which is
+basically the normalized similarity between z𝑠,𝑘 and z𝑡,𝑘 in the
+𝑘-th factor. It can be treated as how well the factor 𝑘 can be the
+explanation of the mutual relation between 𝑣𝑠 and 𝑣𝑡 . A larger 𝛼𝑘 𝑠,𝑡
+means that 𝑣𝑠 and 𝑣𝑡 are more similar in terms of factor 𝑘 and it is
+more likely that factor 𝑘 is the desired factor. Since we are interested
+in having one element among {𝛼𝑘 𝑠,𝑡}𝐾 𝑘=1 to be large while the others
+to be small, i.e., modeling that two nodes are connected due to only
+one factor, a smaller 𝜏 can be set to intensify the uneven degree of
+each factor-wise importance distribution.
+With 𝛼𝑘 𝑠,𝑡 denoting the importance of the factor 𝑘 for the link be-
+tween 𝑣𝑠 and 𝑣𝑡 , we can find the most important factor 𝑝𝑠,𝑡 between
+Link Prediction on Heterophilic Graphs via Disentangled Representation Learning
+𝑣𝑠 and 𝑣𝑡 as follows
+𝑝𝑠,𝑡 = arg max 𝑘 𝛼𝑘 𝑠,𝑡 (4)
+Let N𝑘(𝑣𝑠), 𝑘 = 1,...,𝐾, denote the set of 𝑣𝑠’s neighbors connected
+to 𝑣𝑠 due to factor 𝑘. Since 𝑝𝑠,𝑡 gives the most important factor
+between 𝑣𝑠 and 𝑣𝑡 , we can obtain N𝑘(𝑣𝑠) as
+N𝑘(𝑣𝑠) =
+
+𝑣𝑡 : 𝑣𝑡 ∈N(𝑣𝑠)∧𝑝𝑠,𝑡 = 𝑘
+	
+, 𝑘 = 1,...,𝐾 (5)
+With the above equations, we can model the latent factors that
+forms the links and disentangle each node 𝑣𝑠’s neighbor set N(𝑣𝑠)
+into 𝐾 disjoint sets, i.e., N𝑠 = ∪𝐾 𝑘=1N𝑘(𝑣𝑠) and N𝑘(𝑣𝑠)∩N𝑗(𝑣𝑠) = ∅,
+which would facilitate the factor-wise message passing to learn
+better disentangled representations to be introduced next.
+4.2 Factor-Aware Message Passing
+As mentioned previously, we want to perform message passing to
+learn disentangled representations that capture the neighborhood
+information for better link prediction. Instead of simply aggregating
+all the neighbors’ information for each factor as other GNNs do,
+we adopt factor-aware message passing because a node 𝑣𝑠 might
+be only similar with the central node in one or two factors in
+heterophilic graphs. Specifically, as N𝑘(𝑣𝑠) contains neighbors of
+𝑣𝑠 who share similarity with 𝑣𝑠 in 𝑘-th factor, 𝑣𝑠 will only aggregate
+the 𝑘-th representation from nodes in N𝑘(𝑣𝑠). Since the importance
+or similarity of nodes in N𝑘(𝑣𝑠) with 𝑣𝑠 in terms of factor 𝑘 could
+be different, to take this into consideration, we adopt the attention
+mechanism, i.e., assign different attention weight to different nodes
+in N𝑘(𝑣𝑠). ,The attention score of 𝑣𝑡 ∈N𝑘(𝑣𝑠) on 𝑣𝑠 is given as
+¯𝛼𝑘 𝑠,𝑡 = 𝛼𝑘 𝑠,𝑡 ˝
+𝑣𝑖 ∈N𝑘 (𝑣𝑠 )𝛼𝑘 𝑠,𝑖 (6)
+where ¯𝛼𝑘 𝑠,𝑡 denotes attention score of 𝑣𝑡 ∈N𝑘(𝑣𝑠) on 𝑣𝑠. And 𝛼𝑘 𝑠,𝑡
+is from Eq.(3), which denotes the importance score or similarity
+between node 𝑣𝑠 and 𝑣𝑡 . Eq.(6) normalizes the importance score
+by the summation of the scores from nodes in N𝑠,𝑘. Thus, if 𝛼𝑘 𝑠,𝑡 is
+larger, node 𝑣𝑡 will play a more important role in message-passing
+to 𝑣𝑠 for factor 𝑘. With the attention score, the message-passing on
+factor 𝑘 for node 𝑣𝑠 can be written as
+h𝑠,𝑘 = 𝛽· z𝑠,𝑘 +(1 −𝛽)
+∑︁
+𝑣𝑡 ∈N𝑘 (𝑣𝑠 )
+¯𝛼𝑘 𝑠,𝑡 · z𝑡,𝑘, ,𝑘 = 1,...,𝐾 (7)
+where 𝛽 ∈(0, 1] is to control the reservation of the information
+from central nodes. With the factor-aware message passing, for
+each node 𝑣𝑠, we obtained the new disentangled representation
+set {h𝑠,1,..., h𝑠,𝐾}. Compared with the raw disentangled repre-
+sentation {z𝑠,1,..., z𝑠,𝐾}, the new disentangled representation also
+captures the neighborhood information, which would better facili-
+tate link prediction. In practice, we can stack multiple such factor-
+aware neighbor selection and factor-wise message passing to have
+deep disentangled representations. We leave the deep disentangled
+representation as future work.
+4.3 Link Prediction with Disentangled
+Representation
+Given the node representation, a popular way to predict the link
+between two nodes 𝑣𝑠 and 𝑣𝑡 is using the dot product between their
+node representations h𝑠 and h𝑡 , i.e., ˆA𝑠𝑡 = 𝜎(h𝑇𝑠 h𝑡), where 𝜎 is an
+activation function such as ReLU. In our case, h𝑠 = [h𝑠,1,..., h𝑠,𝐾]
+and h𝑡 = [h𝑡,1,..., h𝑡,𝐾]. Thus, the link can be predicted as
+ˆA𝑠𝑡 = 𝜎(h𝑇 𝑠 h𝑡) = 𝜎  𝐾∑︁
+𝑘=1
+h𝑇 𝑠,𝑘 h𝑡,𝑘
+
+(8)
+However, the above equation treats each factor equally; while in
+heterophilic graph, two connected nodes could be similar in few
+factors and be dissimilar in most factors. Those dissimilar factors
+might each have negative similarity in terms of h𝑇 𝑠,𝑘 h𝑡,𝑘. Simply
+adding those non-important factors would result in poor link pre-
+diction performance. Thus, to model how links are formed, instead
+of using Eq.(8), we propose the disentangled link prediction. The
+basic idea is to assign different weights to different factors during
+link prediction. However, we do not have ground truth of which
+factors are more important. Fortunately, we have calculated the
+importance score of factor 𝑘 between 𝑣𝑠 and 𝑣𝑡 using the similarity
+between z𝑠,𝑘 and z𝑡,𝑘 in Eq.( 3). In other words, the model is trained
+to have z𝑠,𝑘 and z𝑡,𝑘 to give good importance similarity on factor
+𝑘. Thus, we adopt a similar way to calculate the weight for link
+prediction on factor 𝑘 as
+𝛾𝑘 𝑠,𝑡 = exp  z𝑇 𝑠,𝑘 z𝑡,𝑘/𝜏  (9)
+Note that we used the unnormalized version compared with Eq. ( 3)
+because the scale of each element in 𝛾 is useful information for link
+reconstruction as it preserve the contrast between the similarities of
+different pairs of nodes with different scales. Then the link between
+𝑣𝑠 and 𝑣𝑡 is predicted as
+ˆA𝑠𝑡 = 𝜎
+ 𝐾∑︁
+𝑘=1
+
+𝛾𝑘 𝑠,𝑡 h𝑇 𝑠,𝑘 h𝑡,𝑘
+!
+(10)
+where the contribution of each factor for link prediction is weighted
+by 𝛾𝑘 𝑠,𝑡 . Those non-important factors are down-weighted to have
+neglectful effect on the link prediction, which can handle the non-
+homophily assumption in heterophilic graphs.
+4.4 Final Objective Function
+Following existing work [18], we adopt adjacency matrix recon-
+struction as the loss to train the model. Since the majority of node
+pairs are unconnected, most of the elements in A are 0. To avoid the
+imbalanced elements dominating the loss function, following [43],
+we adopt negative sampling to solve this issue. Specifically, we
+treat each linked pair as a positive sample. For each positive sample,
+i.e., A𝑠𝑡 = 1, we randomly sample 𝑀 unlinked pairs as negative
+samples, i.e., A𝑠𝑚 = 0. 𝑀 is usually set as 5 or 10. With positive and
+negative samples, the overall loss function for the disentangled link
+reconstruction in our model can be written as
+min
+𝜃
+LA =
+∑︁
+A𝑠𝑡 >0
+h
+( ˆA𝑠𝑡− A𝑠𝑡)2 + 1 𝑀 ∑︁ A𝑠𝑚 ∈M− 𝑠𝑡 ( ˆA𝑠𝑚− A𝑠𝑚)2 i (11)
+where 𝜃 is the set of parameters. M− 𝑠𝑡 is the set of negative samples
+for A𝑠𝑡 > 0.
+The training algorithm of DisenLink is shown in Algorithm 1.
+The parameter of the DisenLink is randomly initialized follow-
+ing [10] in line 1. Then we perform each component of DisenLink
+from line 3 to line 7 for the final link reconstruction loss LA in line
+Shijie Zhou†, Zhimeng Guo†, Charu Aggarwal‡, Xiang Zhang†, Suhang Wang†
+Algorithm 1: Training Algorithm of DisenLink
+Input: G = (V, A,𝑋), 𝛽, 𝜏 and M−
+Output: 𝜃 of function {f𝑘}𝐾 𝑘=1
+1: Randomly initialize the parameters of {𝑓𝑘}𝐾 𝑘=1.
+2: while Not Converged do
+3: Get the initial node representations Z according to Eq. (2);
+4: Calculating the factor-wise importance score with Eq. (3);
+5: Implement the neighbor selection for each factor;
+6: Propagate Z via the relational neighbor aggregation Layer
+for embedding H according to Eq. [7];
+7: Perform the disentangled link reconstruction for
+reconstructed ˆA following Eq. [10];
+8: Calculate the link reconstruction loss LA with Eq. [11];
+9: Update 𝜃 to minimize LA
+10: end while
+11: return 𝜃
+8. The size of negative edges for LA is 5 times the positive edges to
+leverage the imbalanced number of linked and unconnected edges.
+Adam [16] is used to update 𝜃 until reaching convergence.
+5 EXPERIMENTS
+In this section, we evaluate the effectiveness of the proposed Disen-
+Link for link prediction on both homophilic and heterophilic graphs.
+Further analysis is provided to evaluate the influence of compo-
+nents in the proposed module. Specifically, we want to answer the
+following questions:
+• RQ1 Can the proposed DisenLink with disentangled link recon-
+struction achieve outperformed accuracy for link prediction?
+• RQ2 How does each component in DisenLink influence the ef-
+fectiveness of link prediction?
+• RQ3 Does the DisenLink with factor-wise neighborhood selec-
+tion produce independent and distinguishable factors?
+5.1 Experiment Settings
+5.1.1 Datasets. We conduct experiments on 13 publicly available
+benchmark datasets to evaluate the effectiveness of DisenLink for
+link prediction. Among the datasets, 3 of them are homophily
+graphs, i.e., Cora, CiteSeer and Photo, and the remaining 10 are het-
+erophilic graphs. These graphs are from various domains such as ci-
+tation, Wikipedia and Amazon goods. We include both heterophilic
+and homophilic graphs of various domains to fully understand the
+effectiveness of DisenLink for link prediction. The key statistics of
+the datasets are shown in Table 1. The details of the datasets are:
+• Cora and CiteSeer [41]: Both Cora and CiteSeer are homophilic
+citation networks, where nodes represent documents and edges
+denote the citation relationships. The attributes of nodes are the
+bag-of-words representations of the papers.
+• Photo[36]: The Amazon Photo network is a homophilic goods
+network. Nodes denote goods and two connected nodes mean
+that they are frequently bought together. Node features are bag-
+of-words representations of goods’ reviews.
+• Wisconsin and Texas [34]: Wisconsin and Texas are heterophilic
+webpage networks collected from CMU, where nodes denote
+Table 1: The statistics of datasets
+Dataset Nodes Edges Features Classes Edge hom.
+Cora 2,708 5,278 1,433 7 0.81
+CiteSeer 3,327 4,552 3,703 6 0.74
+Photo 7,650 238,162 745 8 0.82
+Chameleon 2,277 36,101 2,325 5 0.23
+Squirrel 5,201 216,933 2,089 5 0.22
+Crocodile 11,631 180,020 500 6 0.25
+Texas 183 309 1,703 5 0.11
+Wisconsin 251 499 1,703 5 0.20
+Twitch-ENGB 7,126 36,324 2,545 2 0.55
+Twitch-DE 9,498 153,138 2,514 2 0.63
+Johns Hopkins55 5,180 373,172 2406 2 0.50
+Amherst41 2,235 181,908 1,193 2 0.46
+Arxiv-Year* 55,104 153,565 128 5 0.22
+webpages and edges are the hyperlinks connecting them. Node
+features are the bag-of-words representation of web pages.
+• Chameleon, Squirrel and Crocodile [34]: Chameleon, Squir-
+rel and Crocodile are heterophily Wikipedia webpage networks
+with each network on the topic denoted by its dataset name.
+Nodes are web pages and edges are hyperlinks between them.
+Each node’s features denote several informative nouns on Wikipedia
+pages.
+• Facebook100 [24, 37]: Facebook100 is composed of 100 Face-
+book friendship networks of American universities from 2005,
+where nodes represent students and edges denote friendship be-
+tween students. Each node is labeled with gender. The node fea-
+tures are educational information of students. We include two of
+them: Johns Hopkins55 and Amherst41 for our experiments.
+• Twitch-explicit [24]: Twitch-explicit contains 7 networks where
+Twitch users are nodes and friendships between them are edges.
+Node features are games liked, location and streaming habits. We
+use the two largest networks: DE and ENGB for our experiments.
+• arXiv-Year [13]: arXiv-year is the ogbn-arXiv citation network
+with labels denoted by publication year. The nodes are arXiv
+papers and directed edges connect a paper to other papers that it
+cites. It contains a single graph with 169343 nodes and 1166243
+links. The feature dimension is 128. We sample a subgraph with
+around 55K nodes and 153K edges utilizing the Random Walk
+sampler.
+5.1.2 Baselines. We include classical heuristics, GNN-based link
+prediction method, GNN-based representation learning methods
+for link prediction, disentangled GNNs and GNNs for heterophilic
+graphs as our baselines. For baselines without the link prediction
+module, they are performed as encoders in the VGAE manner. Here
+is a brief introduction of each baseline:
+• CN [30]: Common-neighbor index is a classical link prediction
+method based on connectivity, which assumes that two nodes
+are more likely to connect if they have many common neighbors.
+• AA [2]: Adamic–Adar index is a second-order heuristic based on
+the assumption that a shared neighbor with large degree is less
+significant to the measure of a link.
+• VGAE [3]: Variational Graph Autoencoder is a generative model
+for graph representation. We use a GCN as the encoder where
+the second layer has two channels for mean and deviations to
+Link Prediction on Heterophilic Graphs via Disentangled Representation Learning
+Table 2: Link Prediction performance (AUC(%) ± Std.) on heterophilic graphs (“-” denotes out of memory.)
+Method Chameleon Squirrel Crocodile Texas Wisconsin Twitch-DE Twitch-ENGB Amherst41 Johns Hopkins55 Arxiv-Year
+AA 95.8 ±0.6 97.1 ±0.4 90.6 ±1.1 53.1 ±6.2 61.5 ±0.8 87.3 ±0.2 74.5 ±0.4 94.5 ±0.7 96.1 ±0.5 72.0 ±0.9
+CN 95.3 ±0.6 96.8 ±0.4 89.8 ±1.2 53.0 ±6.2 61.3 ±0.9 86.3 ±0.1 74.3 ±0.2 94.2 ±0.6 95.8 ±0.6 72.0 ±0.9
+SEAL 99.5±0.1 - - 73.9 ±1.6 72.3 ±2.7 - 91.5 ±0.3 - - 93.2±0.8
+VGAE 98.5 ±0.1 98.2 ±0.1 98.8 ±0.1 68.6 ±4.2 71.3 ±4.6 84.3 ±0.9 90.3 ±0.2 97.2 ±0.0 92.8 ±0.2 92.5 ±0.5
+ARGVA 96.5 ±0.2 93.6 ±0.3 94.1 ±0.5 67.4 ±6.1 67.6 ±3.0 80.9 ±1.1 82.2 ±0.8 81.2 ±0.3 81.0 ±0.7 86.8 ±1.1
+GPR-GNN 98.7 ±0.1 96.0 ±0.3 96.7 ±0.1 76.3 ±2.5 80.1 ±4.5 88.7 ±0.1 87.3 ±0.1 93.7 ±0.0 94.7 ±0.1 93.0 ±0.4
+FAGCN 93.8 ±2.6 94.8 ±0.3 95.3 ±0.2 68.7 ±7.3 73.7 ±4.9 85.4 ±0.4 89.6 ±0.4 91.4 ±0.3 92.2 ±0.3 84.8 ±2.3
+LINKX 98.8 ±0.1 98.1 ±0.3 99.0 ±0.1 75.8 ±4.7 80.1 ±3.8 88.3 ±1.9 89.3 ±1.6 93.5 ±0.2 93.4 ±0.3 88.4 ±1.9
+GAT 98.9 ±0.1 98.0 ±0.0 98.5 ±0.1 68.5 ±5.4 68.1 ±4.4 87.4 ±0.4 86.1 ±1.9 93.9 ±0.1 94.3 ±0.5 92.5 ±0.5
+DisenGCN 97.7 ±0.1 94.5 ±0.2 96.4 ±0.4 72.1 ±4.8 75.1 ±3.4 80.6 ±0.2 88.7 ±0.3 87.9 ±1.2 90.7 ±0.6 92.3 ±0.5
+FactorGNN 98.3 ±0.3 96.9 ±0.4 97.6 ±0.4 58.7 ±4.1 68.8 ±9.0 87.2 ±0.7 89.8 ±0.6 91.5 ±0.7 92.3 ±0.4 90.5 ±1.0
+DisenLink 99.4 ±0.0 98.3 ±0.1 99.1 ±0.1 80.7 ±4.0 84.4 ±1.9 93.7 ±0.1 96.2 ±0.1 97.3 ±0.1 97.5 ±0.1 95.0 ±0.3
+sample the latent embeddings and a link reconstruction module
+as the decoder.
+• ARGVA [32]: Adversarially Regularized Variational Graph Au-
+toencoder is inspired by the adversarial learning methods and
+the latent representation is enforced to match a prior distribution
+via an adversarial training scheme.
+• GPR-GNN [7]: Generalized PageRank GNN adaptively learns
+the GPR weights to optimize the node representation, regardless
+of the homophilic graph or heterophilic graph.
+• FAGCN [5]: Frequency Adaptation Graph Convolutional Net-
+works utilize a selfgating mechanism to adaptively integrate
+different signals in the process of message passing.
+• LINKX [23]: Linkx decoupled the feature representation and
+structure representation and use a simple framework to process
+the decoupled information.
+• GAT [38]: GAT is a message-passing graph neural network utiliz-
+ing attention mechanism for better aggregation of neighborhood.
+• DisenGCN [28]: DisenGCN learns disentangled node representa-
+tions and then utilizes a novel neighborhood routing mechanism
+to find latent factors that shape the relationship between the
+nodes. Then for each factor the nodes aggregate the information
+and get different representations.
+• FactorGNN [40]: FactorGNN shares the similar motivation of
+disentangling graphs with respect to latent factors. And these
+models focus more on graph-level tasks.
+• SEAL [43]: SEAL is a link prediction method that uses a GNN to
+learn heuristics from local subgraphs automatically.
+5.1.3 Configurations. We use a 64-bit machine with Nvidia GPU
+(Tesla V100, 1246MHz , 32 GB memory) to conduct our experiments.
+We use ADAM optimization algorithm to train the models. For
+all methods, the learning rate is initialized to 0.001, with weight
+decay being 5e-4. We train all the models until converging with a
+maximum training epoch 2000.
+5.1.4 Evaluation Metrics. Following existing works [43] in eval-
+uating link prediction, area under the curve (AUC) is used as our
+evaluation metric to measure the prediction accuracy.
+5.1.5 Implementation Details. Following a standard way to evalu-
+ate link prediction performance [22], for each dataset, we randomly
+split existing edges for the training set, validation set and testing set
+according to 85%, 5% and 10% as positive samples. Under the same
+Table 3: Link Prediction performance (AUC(%) ± Std.) on ho-
+mophilic graphs (“-” denotes out of memory.)
+Method Cora Citeseer Photo
+AA 75.9 ±1.5 69.8 ±2.2 97.4 ±0.4
+CN 75.7 ±1.3 69.7±2.3 97.1 ±0.4
+SEAL 90.4 ±1.1 97.0 ±0.5 -
+VGAE 96.6 ±0.2 97.3 ±0.2 94.9 ±0.8
+ARGVA 92.7 ±1.3 94.8 ±0.4 89.7 ±2.3
+GPR-GNN 94.8 ±0.3 96.0 ±0.3 97.0 ±0.2
+FAGCN 91.8 ±3.4 89.2 ±5.6 94.0 ±1.9
+LINKX 93.4 ±0.3 93.5 ±0.5 97.0 ±0.2
+GAT 97.0 ±0.2 98.3 ±0.2 97.3 ±0.3
+DisenGCN 96.6 ±0.3 96.8 ±0.2 95.2 ±1.3
+FactorGNN 92.3 ±1.4 87.8 ±3.6 97.2 ±0.1
+DisenLink 97.1 ±0.4 98.3 ±0.3 97.9 ±0.1
+‘
+split proportion, we randomly sample nonexistent edges as nega-
+tive samples with 5 times the number of positive samples. Positive
+and negative samples are then combined as our training, validation
+and testing data. For each dataset, we randomly split it 10 times
+and report the average results. For DisenLink, the temperature pa-
+rameter 𝜏 v is varied among {0.1, 1} and the teleport parameter 𝛽 is
+varied from 0.1 to 0.9. The number of factors is varied from 2 to 10
+and we set the dimension of representations for each factor as 32.
+5.2 Link Prediction Performance
+To answer RQ1, we evaluate the link prediction performance of
+DisenLink with a comparison on 10 heterophilic and 3 homophilic
+graphs. Each experiment is repeated 5 times to alleviate randomness.
+The average link prediction performance measured by AUC with
+standard deviations on heterophilic graphs and homophilic graphs
+are shown in Table 2 and Table 3, respectively. From the tables, we
+have the following observations:
+• Compared with classical heuristics AA and CN, our method out-
+performs them in all datasets. For Wikipedia, FB100 and Photo
+datasets with higher average node degree, the performance gap
+is relatively small. While AA and CN only rely on the graph
+structural feature, for the other datasets with smaller average
+node degrees, DisenLink is much better due to the disentangled
+learning of both node features and the graph structure.
+• DisenLink has comparable performance on the Chameleon and
+outperforms other datasets compared with SEAL. It needs to be
+Shijie Zhou†, Zhimeng Guo†, Charu Aggarwal‡, Xiang Zhang†, Suhang Wang†
+ENGB DE Chameleon Squirrel
+Datasets
+80.0
+82.5
+85.0
+87.5
+90.0
+92.5
+95.0
+97.5
+100.0AUC(%)
+DisenLink
+DisenLink-
+DisenLink-s
+DisenLink-r
+Figure 3: Affect of different components in DisenLink
+noticed that SEAL fails to be implemented on graphs with a large
+number of edges which will lead to the huge memory consump-
+tion of the enclosing subgraph extraction before learning, while
+DisenLink is implemented in an end-to-end fashion.
+• Compared with representation learning methods VGAE and
+ARGVA, DisenLink performs better and is much more robust
+across datasets as there is a larger performance gap between
+similar datasets in VGAE (DE and ENGB, Amberst41 and Johns
+Hopkins55). For ARGVA, the adversarial training does not fit well
+for the link prediction task. Compared with the GCN encoder in
+them, the modeling of edge factors in DisenLink disassembles
+the complex edge relationships in heterophilic graphs for better
+structural information mining.
+• For state-of-the-art GNNs targeted for heterophilic graphs GPR-
+GNN,FAGCN and LINKX, performing as an encoder in VGAE,
+perform worse in heterophilic datasets, e.g. crocodile, ENGB, com-
+pared with vanilla VGAE. Although these methods can success-
+fully improve the node feature learning with respect to the node
+classification task for heterophilic graphs, they fail to capture dif-
+ferent latent relations underlying graph structure using the same
+set of learned representations. DisenLink can better preserve
+different relational information via separated link reconstruction
+for different factors and thus outperform these heterophilic graph
+targeted methods.
+• DisenLink also performs better than other disentangled GNN
+methods and GAT in link prediction. For disentangled GNN
+models DisenGCN and FactorGNN, they perform factor-wise
+message-passing with the same graph structure. Although node
+representations are weighted differently in each factor, the unre-
+lated nodes in each factor will still add unnecessary signals when
+aggregated with the nodes pertinent to that factor. In contrast,
+DisenLink performs individual message-passing with disjoint ad-
+jacency matrices and merges the learned structural information
+by the proposed disentangled link reconstruction at the end. GAT
+has good performance and even performs better on Citeseer than
+DisenLink thanks to its multi-head attention mechanism.
+• In general, DisenLink can be adapted well both on small and
+large graph datasets. For Texas and Wisconsin, DisenLink shows
+an apparent improvement of around 10% compared with base-
+lines. For large graph dataset Arxiv-Year, besides better accuracy,
+DisenLink is more stable with smaller standard deviations.
+5.3 Ablation Study
+In this subsection, to answer RQ2, we conduct experiments to
+evaluate the effect of each component of DisenLink. Each ablation
+experiment is conducted 5 times to alleviate the randomness. In
+particular, we investigate 3 variants of DisenLink: DisenLink-𝛼,
+DisenLink-s and DisenLink-r. DisenLink-𝛼 is formulated by re-
+moving all the importance/similarity 𝛼 involved in DisenLink to
+check the effect of factor-wise importance values. DisenLink-s is
+the variant without the proposed factor-aware neighbor selection,
+i.e. the neighbor of node s N𝑘(𝑣𝑠) for each factor in DisenLink-s
+becomes same as N(𝑣𝑠) to verify the role of factor-aware neighbor
+selection. DisenLink-r is the variant utilizing the vanilla manner
+of link reconstruction following VGAE [18] as Eq. 8 to analyze the
+influence of disentangled link reconstruction.
+Importance of the disentangled manner We first examine
+the advantage of the disentangled learning manner compared with
+the normal model with a single factor. As shown in the Fig. 4,
+DisenLink with multiple factors performs much better than the
+DisenLink with a single factor, especially in the case of heterophilic
+graph ENGB. It proves that the disentangled representation can
+facilitate more effective edge relation discovery compared with
+normal learning.
+Significance of the factor-wise importance value Secondly,
+the importance value 𝛼 computed from Eq. (6) for message passing
+is crucial for link prediction on heterophilic graphs. We can first
+compare the performance of 1-factor DisenLink reflected from the
+first data point (𝐾 = 1) in Fig. 4(a) with VGAE on ENGB dataset.
+In this case, the main difference between these two models is that
+1-factor DisenLink takes into the importance value and 1-factor Dis-
+enLink improves the performance by around 4.1% compared with
+VGAE. This is because the 𝛼 weights node representations in the
+message-passing process to leverage the negative effect from het-
+erophilic connections. And the performance of DisenLink-𝛼 shown
+in Fig. 3 is much lower compared with DisenLink in 4 reported
+datasets. It demonstrates the importance of relational weighting in
+message-passing and link reconstruction for link prediction.
+Influence of the factor-aware neighbor selection We also
+conduct ablation studies to explore the influence of the factor-aware
+neighbor selection on the link prediction on heterophilic graphs. In
+Fig. 3, DisenLink outperforms DisenLink-s which reflects the selec-
+tion of the most important factor between two nodes to formulate
+𝐾 disjoint neighborhoods is very helpful for link prediction.
+Influence from link reconstruction manner of DisenLink
+In DisenLink, the link reconstruction utilizing the learnt disentan-
+gled representation is implemented as Eq. 10. Here, we compare
+it with model variant DisenLink-r. The performance difference be-
+tween them shown in the Fig. 3 verifies the effectiveness of our
+disentangled link reconstruction which assigns different factors
+with different importance during link prediction.
+5.4 Hyperparameter Sensitivity Analysis
+In this section, we investigate the sensitivity of DisenLink on two
+important hyper-parameters, i.e., the number of factors 𝐾 and the 𝛽
+in message passing. To understand the sensitivity on 𝐾, we fix 𝛽 as
+0.5 and vary 𝐾 from 1 to 10. The dimension of latent representation
+is 32 for each factor. We conduct the experiments on one homophilic
+Link Prediction on Heterophilic Graphs via Disentangled Representation Learning
+2 4 6 8 10
+Number of Factors
+94.5
+95.0
+95.5
+96.0AUC(%)
+(a) ENGB
+2 4 6 8 10
+Number of Factors
+96.0
+96.5
+97.0
+97.5AUC(%)
+ (b) Cora
+Figure 4: Sensitivity of DisenLink on 𝐾 for Link Prediction
+0.00 0.25 0.50 0.75 1.00
+91
+92
+93
+94
+95
+96AUC(%)
+(a) ENGB
+0.00 0.25 0.50 0.75 1.00
+88
+90
+92
+94AUC(%)
+ (b) ArXiv-year
+Figure 5: Parameter Sensitivity of 𝛽
+graph Cora and one heterophilic graph ENGB as shown in Fig. 4.
+According to the Fig. 4(b), when the number of factors is equal
+to 8 which is slightly bigger than its actual number of class 7,
+experiments on Cora reach the best performance. For ENGB which
+has nodes with 2 classes, the performance reaches the peak around
+𝑘 = 6 and fluctuates slightly after it is shown in Fig. 4(a). This
+is because the number of ground truth can not reflect the actual
+number of latent factors in heterophilic graphs due to the complex
+intra-class distribution.
+To understand the sensitivity of 𝛽, we fix 𝐾 as 5 and vary 𝑏𝑒𝑡𝑎
+from 0 to 1. We run the experiment 5 times and the link prediction
+performance on Cora, ENGB and ArXiv-year are shown in Fig. 5.
+The sensitivity on 𝛽 shown in Fig. 5 reflects how the proportion
+of the central node content in factor-wise message-passing affects
+the link prediction. The existence of 𝛽 can help the preservation
+of locality and prevent uninformative node representation in each
+factor since the disjoint factor graph includes isolated nodes. As
+a result, when 𝛽 > 0, the performance will be much improved.
+And when 𝛽 is near 1, the performance will drop due to the lack of
+neighbor feature information.
+5.5 Analysis on Disentangled Representation
+To further analyze if 𝐷𝑖𝑠𝑒𝑛𝐿𝑖𝑛𝑘 can learn high-quality disentangled
+representation, in this subsection, we compute the absolute value of
+the correlations between the elements of the disentangled represen-
+tation learned. Specifically, we train DisenLink and get the latent
+representation of the nodes. Let H = [H1,..., H𝐾]∈ R𝑁×𝐾·𝑑 be
+the learned representation of nodes, with the 𝑠-th row of H being
+the disentangled representation of node 𝑣𝑠, i.e., h𝑖 = [h𝑠,1,..., h𝑠,𝐾].
+𝑑 is the dimension of each h𝑠,𝑘. We then calculate the correlation
+between the column of H to get the correlation. We set 𝐾 = 5 and
+𝑑 = 32. We conduct this for both DisenLink and DisenLink-s. The
+absolute value of the correlation on Chameleon is shown in Fig. 6.
+Compared with the mixed correlation in the case of DisenLink-s
+shown in Fig. 6(a), the correlation plot of DisenLink in Fig. 6(b)
+0
+4
+8
+12
+16
+20
+24
+28
+32
+36
+40
+44
+48
+52
+56
+60
+64
+68
+72
+76
+80
+84
+88
+92
+96
+100
+104
+108
+112
+116
+120
+124
+128
+132
+136
+140
+144
+148
+152
+156
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+140
+145
+150
+155
+0.75
+0.50
+0.25
+0.00
+0.25
+0.50
+0.75
+1.00
+(a) The representation correlation of DisenLink-s
+0
+4
+8
+12
+16
+20
+24
+28
+32
+36
+40
+44
+48
+52
+56
+60
+64
+68
+72
+76
+80
+84
+88
+92
+96
+100
+104
+108
+112
+116
+120
+124
+128
+132
+136
+140
+144
+148
+152
+156
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+55
+60
+65
+70
+75
+80
+85
+90
+95
+100
+105
+110
+115
+120
+125
+130
+135
+140
+145
+150
+155
+0.75
+0.50
+0.25
+0.00
+0.25
+0.50
+0.75
+1.00
+(b) The representation correlation of DisenLink
+Figure 6: Disentangled feature correlation coefficient with-
+out/with factor-aware neighbor selection
+shows 5 explicit blocks in the diagonal. The difference between Dis-
+enLink and DisenLink-s implies the factor-aware neighbor selection
+can produce independent factors and promote the disentanglement
+of the output representations, which answers RQ3.
+6 CONCLUSION AND FUTURE WORK
+Due to the entanglement of latent factors in none-homophily graphs,
+we investigate how to perform effective link prediction on het-
+erophilic graphs in this paper and propose a disentangled link
+prediction framework DisenLink, which includes edge factor dis-
+covery with selection and factor-wise message passing for better
+node representations and a disentangled link reconstruction mod-
+ule to benefit the formation of links. Experiments on real-world
+datasets with different levels of disassortativity demonstrate the ef-
+fectiveness of DisenLink for link prediction on heterophilic graphs.
+Further experiments are conducted to understand the influence
+of each component and the sensitivity of hyperparameters in Dis-
+enLink. In the future, several interesting directions are left to be
+explored. For example, while our work focuses on link prediction,
+more tasks, such as node clustering, unsupervised node classifica-
+tion, can be extended for our model. Another potential direction is
+to investigate the learning capacity of DisenLink in heterogeneous
+graphs since heterogeneous graphs naturally have various kinds of
+nodes and links.
+REFERENCES
+[1] Evrim Acar, Daniel M Dunlavy, and Tamara G Kolda. 2009. Link prediction on
+evolving data using matrix and tensor factorizations. In 2009 IEEE International
+conference on data mining workshops. IEEE, 262–269.
+Shijie Zhou†, Zhimeng Guo†, Charu Aggarwal‡, Xiang Zhang†, Suhang Wang†
+[2] Lada A Adamic and Eytan Adar. 2003. Friends and neighbors on the web. Social
+networks 25, 3 (2003), 211–230.
+[3] Alexander A Alemi, Ian Fischer, Joshua V Dillon, and Kevin Murphy. 2016. Deep
+variational information bottleneck. arXiv preprint arXiv:1612.00410 (2016).
+[4] Albert-Laszlo Barabâsi, Hawoong Jeong, Zoltan Néda, Erzsebet Ravasz, Andras
+Schubert, and Tamas Vicsek. 2002. Evolution of the social network of scientific
+collaborations. Physica A: Statistical mechanics and its applications 311, 3-4 (2002),
+590–614.
+[5] Deyu Bo, Xiao Wang, Chuan Shi, and Huawei Shen. 2021. Beyond low-frequency
+information in graph convolutional networks. arXiv preprint arXiv:2101.00797
+(2021).
+[6] Ciwan Ceylan, Salla Franzén, and Florian T Pokorny. 2021. Learning Node
+Representations Using Stationary Flow Prediction on Large Payment and Cash
+Transaction Networks. In International Conference on Machine Learning. PMLR,
+1395–1406.
+[7] Eli Chien, Jianhao Peng, Pan Li, and Olgica Milenkovic. 2020. Adaptive universal
+generalized pagerank graph neural network. arXiv preprint arXiv:2006.07988
+(2020).
+[8] Michaël Defferrard, Xavier Bresson, and Pierre Vandergheynst. 2016. Convolu-
+tional neural networks on graphs with fast localized spectral filtering. Advances
+in neural information processing systems 29 (2016).
+[9] Hongyang Gao, Zhengyang Wang, and Shuiwang Ji. 2018. Large-scale learn-
+able graph convolutional networks. In Proceedings of the 24th ACM SIGKDD
+international conference on knowledge discovery & data mining. 1416–1424.
+[10] Xavier Glorot and Yoshua Bengio. 2010. Understanding the difficulty of training
+deep feedforward neural networks. In Proceedings of the thirteenth international
+conference on artificial intelligence and statistics. JMLR Workshop and Conference
+Proceedings, 249–256.
+[11] Will Hamilton, Zhitao Ying, and Jure Leskovec. 2017. Inductive representation
+learning on large graphs. Advances in neural information processing systems 30
+(2017).
+[12] William L Hamilton. 2020. Graph representation learning. Synthesis Lectures on
+Artifical Intelligence and Machine Learning 14, 3 (2020), 1–159.
+[13] Weihua Hu, Matthias Fey, Marinka Zitnik, Yuxiao Dong, Hongyu Ren, Bowen Liu,
+Michele Catasta, and Jure Leskovec. 2020. Open graph benchmark: Datasets for
+machine learning on graphs. Advances in neural information processing systems
+33 (2020), 22118–22133.
+[14] Glen Jeh and Jennifer Widom. 2002. Simrank: a measure of structural-context
+similarity. In Proceedings of the eighth ACM SIGKDD international conference on
+Knowledge discovery and data mining. 538–543.
+[15] Leo Katz. 1953. A new status index derived from sociometric analysis. Psychome-
+trika 18, 1 (1953), 39–43.
+[16] Diederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic opti-
+mization. arXiv preprint arXiv:1412.6980 (2014).
+[17] Thomas N Kipf and Max Welling. 2016. Semi-supervised classification with graph
+convolutional networks. arXiv preprint arXiv:1609.02907 (2016).
+[18] Thomas N Kipf and Max Welling. 2016. Variational graph auto-encoders. arXiv
+preprint arXiv:1611.07308 (2016).
+[19] Yehuda Koren, Robert Bell, and Chris Volinsky. 2009. Matrix factorization tech-
+niques for recommender systems. Computer 42, 8 (2009), 30–37.
+[20] Ajay Kumar, Shashank Sheshar Singh, Kuldeep Singh, and Bhaskar Biswas. 2020.
+Link prediction techniques, applications, and performance: A survey. Physica A:
+Statistical Mechanics and its Applications 553 (2020), 124289.
+[21] Chengwei Lei and Jianhua Ruan. 2013. A novel link prediction algorithm for
+reconstructing protein–protein interaction networks by topological similarity.
+Bioinformatics 29, 3 (2013), 355–364.
+[22] Ryan N Lichtenwalter, Jake T Lussier, and Nitesh V Chawla. 2010. New perspec-
+tives and methods in link prediction. In Proceedings of the 16th ACM SIGKDD
+international conference on Knowledge discovery and data mining. 243–252.
+[23] Derek Lim, Felix Hohne, Xiuyu Li, Sijia Linda Huang, Vaishnavi Gupta, Omkar
+Bhalerao, and Ser Nam Lim. 2021. Large Scale Learning on Non-Homophilous
+Graphs: New Benchmarks and Strong Simple Methods. Advances in Neural
+Information Processing Systems 34 (2021).
+[24] Derek Lim, Xiuyu Li, Felix Hohne, and Ser-Nam Lim. 2021. New Benchmarks for
+Learning on Non-Homophilous Graphs. arXiv preprint arXiv:2104.01404 (2021).
+[25] Songtao Liu, Hanze Dong, Lanqing Li, Tingyang Xu, Yu Rong, Peilin Zhao,
+Junzhou Huang, and Dinghao Wu. 2021. Local Augmentation for Graph Neural
+Networks. arXiv preprint arXiv:2109.03856 (2021).
+[26] Yanbei Liu, Xiao Wang, Shu Wu, and Zhitao Xiao. 2020. Independence promoted
+graph disentangled networks. In Proceedings of the AAAI Conference on Artificial
+Intelligence, Vol. 34. 4916–4923.
+[27] Linyuan Lü and Tao Zhou. 2011. Link prediction in complex networks: A survey.
+Physica A: statistical mechanics and its applications 390, 6 (2011), 1150–1170.
+[28] Jianxin Ma, Peng Cui, Kun Kuang, Xin Wang, and Wenwu Zhu. 2019. Disentangled
+graph convolutional networks. In International conference on machine learning.
+PMLR, 4212–4221.
+[29] Aditya Krishna Menon and Charles Elkan. 2011. Link prediction via matrix
+factorization. In Joint european conference on machine learning and knowledge
+discovery in databases. Springer, 437–452.
+[30] Mark EJ Newman. 2001. Clustering and preferential attachment in growing
+networks. Physical review E 64, 2 (2001), 025102.
+[31] Maximilian Nickel, Kevin P. Murphy, Volker Tresp, and Evgeniy Gabrilovich.
+2016. A Review of Relational Machine Learning for Knowledge Graphs. Proc.
+IEEE 104 (2016), 11–33.
+[32] Shirui Pan, Ruiqi Hu, Guodong Long, Jing Jiang, Lina Yao, and Chengqi Zhang.
+2018. Adversarially regularized graph autoencoder for graph embedding. arXiv
+preprint arXiv:1802.04407 (2018).
+[33] Shashank Pandit, Duen Horng Chau, Samuel Wang, and Christos Faloutsos.
+2007. Netprobe: a fast and scalable system for fraud detection in online auction
+networks. In Proceedings of the 16th international conference on World Wide Web.
+201–210.
+[34] Hongbin Pei, Bingzhe Wei, Kevin Chen-Chuan Chang, Yu Lei, and Bo Yang. 2020.
+Geom-GCN: Geometric Graph Convolutional Networks. In International Confer-
+ence on Learning Representations. https://openreview.net/forum?id=S1e2agrFvS
+[35] Yu Rong, Wenbing Huang, Tingyang Xu, and Junzhou Huang. 2019. Dropedge:
+Towards deep graph convolutional networks on node classification. arXiv preprint
+arXiv:1907.10903 (2019).
+[36] Oleksandr Shchur, Maximilian Mumme, Aleksandar Bojchevski, and Stephan
+Günnemann. 2018. Pitfalls of graph neural network evaluation. arXiv preprint
+arXiv:1811.05868 (2018).
+[37] Amanda L Traud, Peter J Mucha, and Mason A Porter. 2012. Social structure of
+Facebook networks. Physica A: Statistical Mechanics and its Applications 391, 16
+(2012), 4165–4180.
+[38] Petar Veličković, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro
+Lio, and Yoshua Bengio. 2017. Graph attention networks. arXiv preprint
+arXiv:1710.10903 (2017).
+[39] Kaige Yang and Laura Toni. 2018. Graph-based recommendation system. In 2018
+IEEE Global Conference on Signal and Information Processing (GlobalSIP). IEEE,
+798–802.
+[40] Yiding Yang, Zunlei Feng, Mingli Song, and Xinchao Wang. 2020. Factorizable
+graph convolutional networks. Advances in Neural Information Processing Systems
+33 (2020), 20286–20296.
+[41] Zhilin Yang, William Cohen, and Ruslan Salakhudinov. 2016. Revisiting semi-
+supervised learning with graph embeddings. In International conference on ma-
+chine learning. PMLR, 40–48.
+[42] Muhan Zhang and Yixin Chen. 2017. Weisfeiler-lehman neural machine for link
+prediction. In Proceedings of the 23rd ACM SIGKDD International Conference on
+Knowledge Discovery and Data Mining. 575–583.
+[43] Muhan Zhang and Yixin Chen. 2018. Link prediction based on graph neural
+networks. Advances in neural information processing systems 31 (2018).
+[44] Muhan Zhang, Zhicheng Cui, Marion Neumann, and Yixin Chen. 2018. An end-
+to-end deep learning architecture for graph classification. In Thirty-second AAAI
+conference on artificial intelligence.
+[45] Tianxiang Zhao, Xiang Zhang, and Suhang Wang. 2022. Exploring Edge Disen-
+tanglement for Node Classification. arXiv preprint arXiv:2202.11245 (2022).
+[46] Xin Zheng, Yixin Liu, Shirui Pan, Miao Zhang, Di Jin, and Philip S Yu. 2022.
+Graph Neural Networks for Graphs with Heterophily: A Survey. arXiv preprint
+arXiv:2202.07082 (2022).
+[47] Jiong Zhu, Ryan A Rossi, Anup Rao, Tung Mai, Nedim Lipka, Nesreen K Ahmed,
+and Danai Koutra. 2020. Graph neural networks with heterophily. arXiv preprint
+arXiv:2009.13566 (2020), 11168–11176.
+[48] Jiong Zhu, Yujun Yan, Lingxiao Zhao, Mark Heimann, Leman Akoglu, and Danai
+Koutra. 2020. Beyond homophily in graph neural networks: Current limitations
+and effective designs. Advances in Neural Information Processing Systems 33
+(2020), 7793–7804.

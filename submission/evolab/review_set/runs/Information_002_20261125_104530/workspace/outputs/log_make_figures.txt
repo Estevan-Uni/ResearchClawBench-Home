@@ -1,0 +1,404 @@
+{
+ "bare_nu2_indirect_gap_24mesh_meV": -2.46519466632866,
+ "bare_band1_width_meV": 36.12898067720625,
+ "shell_check": [
+  {
+   "nu": 2.0,
+   "nshell": 1,
+   "gap_meV": 6.994497590785001,
+   "chern_hole_basis": {
+    "+K": -0.996,
+    "-K": 1.0
+   },
+   "niter": 40
+  },
+  {
+   "nu": 1.0,
+   "nshell": 1,
+   "gap_meV": 9.92291285850499,
+   "chern_hole_basis": {
+    "+K": -0.995,
+    "-K": 0
+   },
+   "niter": 68
+  },
+  {
+   "nu": 2.0,
+   "nshell": 3,
+   "gap_meV": 7.41135547665821,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 39
+  },
+  {
+   "nu": 1.0,
+   "nshell": 3,
+   "gap_meV": 9.457379667587421,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 0
+   },
+   "niter": 71
+  }
+ ],
+ "nu2_scan": [
+  {
+   "eps": 15.0,
+   "Vzt": -50.0,
+   "gap_meV": 9.253615262869717,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 28,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -40.0,
+   "gap_meV": 5.820055097528078,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 173,
+   "flag": "SLOW(>60 it)"
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -30.0,
+   "gap_meV": 6.94660812054733,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 34,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -25.0,
+   "gap_meV": 7.527866039003256,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 37,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -20.0,
+   "gap_meV": 7.411408275660114,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 39,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -10.0,
+   "gap_meV": 6.122605356857876,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 41,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": 0.0,
+   "gap_meV": 5.400314820402911,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 38,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -50.0,
+   "gap_meV": 12.671623196176611,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 35,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -40.0,
+   "gap_meV": 11.567125127027872,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 89,
+   "flag": "SLOW(>60 it)"
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -30.0,
+   "gap_meV": 9.164828707795657,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 43,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -25.0,
+   "gap_meV": 10.621946332281212,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 53,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -20.0,
+   "gap_meV": 11.22248177778533,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 52,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -10.0,
+   "gap_meV": 10.138226199712957,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 57,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": 0.0,
+   "gap_meV": 9.725739503961758,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 56,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -38.0,
+   "gap_meV": 4.508303181634244,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 200,
+   "flag": "SLOW(>60 it) NOT_CONVERGED"
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -36.0,
+   "gap_meV": 5.763209624351813,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 31,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -34.0,
+   "gap_meV": 6.573726992782362,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 32,
+   "flag": ""
+  },
+  {
+   "eps": 15.0,
+   "Vzt": -32.0,
+   "gap_meV": 6.751021132372526,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 33,
+   "flag": ""
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -38.0,
+   "gap_meV": 11.009291214823985,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 112,
+   "flag": "SLOW(>60 it)"
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -36.0,
+   "gap_meV": 10.053493067716076,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 156,
+   "flag": "SLOW(>60 it)"
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -34.0,
+   "gap_meV": 9.022957016597513,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0.0
+   },
+   "niter": 200,
+   "flag": "SLOW(>60 it) NOT_CONVERGED"
+  },
+  {
+   "eps": 10.0,
+   "Vzt": -32.0,
+   "gap_meV": 7.6322401867502165,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 1.0
+   },
+   "niter": 61,
+   "flag": "SLOW(>60 it)"
+  }
+ ],
+ "nu1_scan": [
+  {
+   "Vzt": -40.0,
+   "gap_meV": 19.97332542200676,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0
+   },
+   "niter": 33,
+   "flag": "",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": -30.0,
+   "gap_meV": 17.26475592179884,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0
+   },
+   "niter": 48,
+   "flag": "",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": -25.0,
+   "gap_meV": 13.683283541683883,
+   "chern_hole_basis": {
+    "+K": 0.0,
+    "-K": 0
+   },
+   "niter": 71,
+   "flag": "SLOW(>60 it)",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": -20.0,
+   "gap_meV": 5.887248210127467,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 0
+   },
+   "niter": 200,
+   "flag": "SLOW(>60 it) NOT_CONVERGED",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": -15.0,
+   "gap_meV": 8.159499714412226,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 0
+   },
+   "niter": 73,
+   "flag": "SLOW(>60 it)",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": -10.0,
+   "gap_meV": 9.458522871375362,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 0
+   },
+   "niter": 71,
+   "flag": "SLOW(>60 it)",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": -5.0,
+   "gap_meV": 8.402607267465935,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 0
+   },
+   "niter": 55,
+   "flag": "",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  },
+  {
+   "Vzt": 0.0,
+   "gap_meV": 4.215152831426581,
+   "chern_hole_basis": {
+    "+K": -1.0,
+    "-K": 0
+   },
+   "niter": 49,
+   "flag": "",
+   "valley_filling": {
+    "+K": 1.0,
+    "-K": 0.0
+   }
+  }
+ ]
+}

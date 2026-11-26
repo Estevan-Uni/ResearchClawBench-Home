@@ -1,0 +1,18 @@
+{
+  "run_id": "Math_003_20261125_102252",
+  "task_id": "Math_003",
+  "timestamp": "20261125_102252",
+  "status": "completed",
+  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Math_003/g2/solve/attempt-00001/Math_003/workspace",
+  "agent_name": "EvoLab",
+  "model": "claude-opus-5-5",
+  "duration_seconds": 13663.946,
+  "cost_usd": null,
+  "known_cost_usd": 35.553721,
+  "unknown_cost_attempts": 3,
+  "cost_scope": "G1 + E1 + G2, solver and judge, including retries",
+  "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
+  "elapsed_including_queue_seconds": 13828.478,
+  "selected_generation": 2,
+  "selection": "higher of G1 and G2 judge scores"
+}

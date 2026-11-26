@@ -1,0 +1,26 @@
+{
+ "n_nodes": 45669,
+ "n_edges": 1513231,
+ "n_types": 65,
+ "n_hex_columns": 721,
+ "n_edge_types": 604,
+ "n_filter_offsets": 2355,
+ "n_free_params": 734,
+ "types_without_outputs": [
+  "Mi11",
+  "Tm30"
+ ],
+ "n_excitatory_types": 37,
+ "n_inhibitory_types": 22,
+ "tau_min": 0.018780678510665894,
+ "frac_tau_le_20.5ms": 0.7375384615384616,
+ "note_tau": "no explicit clamp; training dt=0.02 s and effective tau=max(tau,dt) => no gradient below 20 ms",
+ "tau_init": 0.05,
+ "loss_min": 5.136557016107771,
+ "loss_max": 5.677851685219341,
+ "median_pairwise_spearman_log_strength": 0.18483046383030477,
+ "median_pairwise_pearson_bias": 0.7672899462284882,
+ "median_pairwise_spearman_tau": 0.2090909090909091,
+ "median_strength_over_init": 3.5619078957467165,
+ "frac_strength_zero": 0.03066225165562914
+}

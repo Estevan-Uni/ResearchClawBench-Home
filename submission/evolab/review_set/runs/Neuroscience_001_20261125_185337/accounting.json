@@ -1,0 +1,45 @@
+{
+  "known_cost_usd": 68.626323,
+  "cost_complete": false,
+  "unknown_cost_attempts": 1,
+  "active_seconds": 51348.96,
+  "elapsed_including_queue_seconds": 54874.744,
+  "phases": [
+    {
+      "phase": "G1",
+      "seconds": 35290.819,
+      "known_usd": 36.7664866,
+      "unknown_cost_attempts": 1,
+      "solver_seconds": 34801.364,
+      "solver_known_usd": 36.3371746,
+      "judge_seconds": 489.455,
+      "judge_known_usd": 0.429312,
+      "first_start": "2026-11-25T08:04:34.417+00:00",
+      "last_end": "2026-11-25T18:51:28.254+00:00",
+      "ledger_source": "g1-results.csv"
+    },
+    {
+      "phase": "E1",
+      "status": "completed",
+      "seconds": 126.239,
+      "known_usd": 1.856003,
+      "unknown_cost_attempts": 0,
+      "first_start": "2026-11-25T18:51:31.010+00:00",
+      "last_end": "2026-11-25T18:53:37.249+00:00",
+      "ledger_source": "e1-cost-time.csv"
+    },
+    {
+      "phase": "G2",
+      "seconds": 15931.902,
+      "known_usd": 30.0038334,
+      "unknown_cost_attempts": 0,
+      "solver_seconds": 15308.17,
+      "solver_known_usd": 29.4124854,
+      "judge_seconds": 623.732,
+      "judge_known_usd": 0.591348,
+      "first_start": "2026-11-25T18:53:37.251+00:00",
+      "last_end": "2026-11-25T23:19:09.161+00:00",
+      "ledger_source": "g2-results.csv"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+ "n_verified": 184,
+ "n_DM": 180,
+ "nonnull_60s_glass": 0,
+ "nonnull_steel10": 28,
+ "sum_composition_range": [
+  0.9999997550742286,
+  1.0000001720930307
+ ],
+ "P_snapshots_max_abs_diff": 0.0,
+ "labels_EI": [
+  "RFR-RFR",
+  "RFR-GP",
+  "GP-GP",
+  "GP-RFR",
+  "ENU-RFR",
+  "ENU-GP",
+  "CLMax",
+  "CLMin",
+  "LP_df",
+  "old-SM-GP",
+  "RFR-GP-2rd-ei",
+  "GP-GP-2rd-ei",
+  "RFR-GP-3rd-ei",
+  "GP-GP-3rd-ei"
+ ],
+ "labels_PRED": [
+  "RFR-GP",
+  "GP-GP",
+  "old-SM-GP",
+  "SM-ETR",
+  "SM-GBM",
+  "RFR-GP-2rd-pred",
+  "GP-GP-2rd-pred",
+  "RFR-GP-3rd-pred",
+  "GP-GP-3rd-pred"
+ ],
+ "list_entries_per_round": {
+  "1": 130,
+  "2": 40,
+  "3": 40
+ },
+ "subset_file_check": [
+  {
+   "sheet": "EI",
+   "n_0213": 80,
+   "max_abs_diff_vs_0408": 0.0
+  },
+  {
+   "sheet": "PRED",
+   "n_0213": 50,
+   "max_abs_diff_vs_0408": 0.0
+  }
+ ],
+ "unique_value_conflicts": 0,
+ "unique_new_per_round": {
+  "1": 113,
+  "2": 29,
+  "3": 26
+ },
+ "cumulative_unique_dataset_size": [
+  184,
+  297,
+  326,
+  352
+ ],
+ "no_gelation_entries": [
+  {
+   "label": "RFR-GP-3rd-ei",
+   "pos": 7,
+   "note": "NO_GELATION"
+  },
+  {
+   "label": "RFR-GP-2rd-pred",
+   "pos": 2,
+   "note": "NO_GELATION_composition_not_recorded"
+  },
+  {
+   "label": "RFR-GP-3rd-pred",
+   "pos": 3,
+   "note": "NO_GELATION"
+  }
+ ],
+ "n_all_measured": 351,
+ "DM_Fa_range": [
+  1.1889596602972399,
+  146.63835810332625
+ ],
+ "DM_Fa_median": 41.67020523708422,
+ "ML_gelled_entries_median": 157.8485491861288,
+ "ML_unique_median": 138.20240622788393
+}

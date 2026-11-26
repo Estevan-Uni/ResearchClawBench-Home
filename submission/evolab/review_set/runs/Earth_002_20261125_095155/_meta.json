@@ -1,0 +1,18 @@
+{
+  "run_id": "Earth_002_20261125_095155",
+  "task_id": "Earth_002",
+  "timestamp": "20261125_095155",
+  "status": "completed",
+  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_002/g2/solve/attempt-00001/Earth_002/workspace",
+  "agent_name": "EvoLab",
+  "model": "claude-opus-5-5",
+  "duration_seconds": 5923.178,
+  "cost_usd": null,
+  "known_cost_usd": 11.386069,
+  "unknown_cost_attempts": 1,
+  "cost_scope": "G1 + E1 + G2, solver and judge, including retries",
+  "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
+  "elapsed_including_queue_seconds": 8460.189,
+  "selected_generation": 2,
+  "selection": "higher of G1 and G2 judge scores"
+}

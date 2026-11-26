@@ -1,0 +1,18 @@
+nominal (optimum 350 °C/20 min, noise 0.1) GP-EI final median yield 0.985  ≥95%: 0.85  |dT| 3.2  |dt| 0.52
+nominal (optimum 350 °C/20 min, noise 0.1) GP-UCB final median yield 0.990  ≥95%: 0.90  |dT| 4.9  |dt| 0.39
+nominal (optimum 350 °C/20 min, noise 0.1) Random final median yield 0.872  ≥95%: 0.20  |dT| 11.3  |dt| 1.97
+nominal (optimum 350 °C/20 min, noise 0.1) LHS final median yield 0.889  ≥95%: 0.25  |dT| 12.4  |dt| 1.75
+nominal (optimum 350 °C/20 min, noise 0.1) Grid 5x5 final median yield 1.000  ≥95%: 1.00  |dT| 0.0  |dt| 0.00
+{'GP-EI > Random': 6.67572021484375e-05, 'GP-EI > LHS': 9.5367431640625e-06, 'GP-EI > Grid 5x5': 1.0, 'GP-UCB > Random': 1.811981201171875e-05, 'GP-UCB > LHS': 1.811981201171875e-05, 'GP-UCB > Grid 5x5': 1.0}
+randomised optimum, noise 0.1 GP-EI final median yield 0.957  ≥95%: 0.65  |dT| 6.8  |dt| 0.93
+randomised optimum, noise 0.1 GP-UCB final median yield 0.980  ≥95%: 0.70  |dT| 4.5  |dt| 0.71
+randomised optimum, noise 0.1 Random final median yield 0.836  ≥95%: 0.20  |dT| 18.5  |dt| 1.71
+randomised optimum, noise 0.1 LHS final median yield 0.895  ≥95%: 0.35  |dT| 13.0  |dt| 1.20
+randomised optimum, noise 0.1 Grid 5x5 final median yield 0.851  ≥95%: 0.25  |dT| 17.1  |dt| 0.91
+{'GP-EI > Random': 0.048653602600097656, 'GP-EI > LHS': 0.23745250701904297, 'GP-EI > Grid 5x5': 0.022027015686035156, 'GP-UCB > Random': 5.245208740234375e-05, 'GP-UCB > LHS': 0.0036478042602539062, 'GP-UCB > Grid 5x5': 6.67572021484375e-06}
+randomised optimum, noise 0.02 GP-EI final median yield 0.999  ≥95%: 0.95  |dT| 1.6  |dt| 0.12
+randomised optimum, noise 0.02 GP-UCB final median yield 0.998  ≥95%: 0.95  |dT| 2.0  |dt| 0.17
+randomised optimum, noise 0.02 Random final median yield 0.878  ≥95%: 0.30  |dT| 16.6  |dt| 1.23
+randomised optimum, noise 0.02 LHS final median yield 0.919  ≥95%: 0.40  |dT| 11.6  |dt| 1.11
+randomised optimum, noise 0.02 Grid 5x5 final median yield 0.883  ≥95%: 0.25  |dT| 17.1  |dt| 0.89
+{'GP-EI > Random': 4.76837158203125e-06, 'GP-EI > LHS': 9.5367431640625e-06, 'GP-EI > Grid 5x5': 1.33514404296875e-05, 'GP-UCB > Random': 5.245208740234375e-05, 'GP-UCB > LHS': 0.00019741058349609375, 'GP-UCB > Grid 5x5': 6.67572021484375e-06}

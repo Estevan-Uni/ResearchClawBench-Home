@@ -1,0 +1,183 @@
+{
+  "task": "Neuroscience_001",
+  "generation": 2,
+  "model": "google/gemini-4-carbon",
+  "weighted_score": 45.6,
+  "items": [
+    {
+      "score": 47,
+      "reasoning": "Evaluated under Mode A/B, the report accurately captures all architectural specifications—including the FIB-25/FIB-19 connectome, 64 cell types (65 compartments), 721 hexagonal columns, 45,669 non-spiking point neurons, 1,513,231 synapses, 734 shared parameters, and PyTorch BPTT formulation—validated via a custom simulator to 10^-6 precision. The generated figures match the target figure's schematic, signed connectivity matrix, hexagonal receptive-field offsets, voltage maps, and decoded flow, falling slightly below the paper only by using pre-trained weights without retraining and omitting anatomical renderings and full 65-type Sintel grids.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795648129-13k7YLr8T7q3ybghPful",
+      "usage": {
+        "prompt_tokens": 22762,
+        "completion_tokens": 2764,
+        "total_tokens": 25526,
+        "cost": 0.073164,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.073164,
+          "upstream_inference_prompt_cost": 0.045524,
+          "upstream_inference_completions_cost": 0.02764
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2592,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 0,
+      "weight": 0.15,
+      "criterion": "Based on experimental connectome data from 64 cell types in the Drosophila visual lobe motor pathway, a hexagonal convolutional recurrent network (DMN) model was constructed. The model assumes spatial translation invariance and periodically tiles the local connectivity graph across the visual field, containing 45,669 neurons and 1,513,231 synapses. By sharing parameters (time constant, resting potential, and unit synaptic strength) for the same cell type, the number of free parameters was reduced from millions theoretically to 734. The model was implemented in PyTorch and can be trained end-to-end for optical flow estimation.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 48,
+      "reasoning": "Evaluated under Mode A (Objective), the report accurately reproduces the exact DMN specifications (64 cell types across 65 compartments, 45,669 neurons, 1,513,231 synapses, and 734 shared free parameters across 50 models) and matches the paper's quantitative benchmarks point-for-point, achieving 30/32 FRI accuracy for the best task-performing model (with identical errors on C3 and T4d) and 32/32 for the ensemble median across full cell-type coverage. Comparing Image 2 and Image 13 against the target figure confirms exact numerical agreement in FRI and ON/OFF DSI distributions across all 65 compartments, supported by validated sparse PyTorch simulations (<1e-6 error) and additional metric-robustness and circuit-silencing analyses. However, it falls slightly short of the published figure (50) because it omits the Panel d multi-constraint correlation comparison plot and Panel a task-error histogram, lacks per-cell-type median bars and split ON/OFF violin formatting in Image 2, does not cite the 26 benchmark studies, and evaluates pre-trained checkpoints without end-to-end retraining.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795648197-9lU4yoZDZs0myXxoJd9m",
+      "usage": {
+        "prompt_tokens": 22604,
+        "completion_tokens": 6161,
+        "total_tokens": 28765,
+        "cost": 0.106818,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.106818,
+          "upstream_inference_prompt_cost": 0.045208,
+          "upstream_inference_completions_cost": 0.06161
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5886,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 1,
+      "weight": 0.25,
+      "criterion": "Based on the experimental connectome data of 64 cell types in the Drosophila optic lobe motion pathway, a hexagonal convolutional recurrent network model (DMN) is constructed. The model assumes spatial translation invariance, periodically tiles the local connection graph in the visual field, and contains 45,669 neurons and 1,513,231 synapses. By sharing parameters (time constants, resting potentials, unit synaptic strengths) of the same cell type, the number of free parameters is reduced from theoretically millions to 734. The model is implemented in PyTorch and can be trained end-to-end to complete optical flow estimation.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 52,
+      "reasoning": "Evaluated under Mode B with quantitative verification, the agent accurately reproduces the target UMAP clusters, polar tuning curves, spatial input filters, orthogonal T4/T5 tuning in low-loss models, non-DS responses across all nine input types, and ON-motion selectivity in TmY3/4/5a/13/18. Causal T4/T5 silencing strengthens the parallel-pathway test beyond the original paper, though weak ensemble-median T5 selectivity and minor visual omissions relative to the target figure's schematic and per-cluster input violins balance the overall quality near the published benchmark.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795648305-erKyeAWF2Zvgj2Q6e8fE",
+      "usage": {
+        "prompt_tokens": 22836,
+        "completion_tokens": 5870,
+        "total_tokens": 28706,
+        "cost": 0.104372,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.104372,
+          "upstream_inference_prompt_cost": 0.045672,
+          "upstream_inference_completions_cost": 0.0587
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5731,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 2,
+      "weight": 0.25,
+      "criterion": "DMN correctly predicts that T4 (ON) and T5 (OFF) are the first direction-selective neurons in the visual pathway, and the four subtypes (T4a–d, T5a–d) are selectively tuned to four orthogonal motion directions, respectively. The model correctly predicts that the known input neurons of T4/T5 (Mi1, Tm3, Mi4, Mi9, Tm1, Tm2, Tm4, Tm9, CT1) have no direction selectivity. It further predicts that TmY3, TmY4, TmY5a, TmY13, and TmY18 may be ON-motion selective, and their input connections do not include T4/T5, suggesting the existence of an independent motion computation pathway parallel to the classical pathway.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 35,
+      "reasoning": "Evaluated under Mode B, the report shows that untrained connectome-constrained networks predict contrast preference (FRI) whereas direction selectivity (DSI) and preferred direction require spatial connectivity and learned parameters. However, relying solely on inference-time perturbations without retraining prevents testing task optimization alone, and both the 7-variant ablation plots and the 58-class versus E/I/Mix coarse-graining results are absent from the figures and key findings.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795648407-8xnvhWN2ko1sT8A1mAsn",
+      "usage": {
+        "prompt_tokens": 22832,
+        "completion_tokens": 4254,
+        "total_tokens": 27086,
+        "cost": 0.088204,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.088204,
+          "upstream_inference_prompt_cost": 0.045664,
+          "upstream_inference_completions_cost": 0.04254
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4148,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 3,
+      "weight": 0.25,
+      "criterion": "Ablation experiments demonstrated that: ① Connectome constraints alone (random parameters) can predict contrast preference (FRI), but not orientation selectivity (DSI) and preference direction; ② Task optimization alone (without fine connectomes) cannot accurately predict either; ③ Synaptic polarity information is sufficient to predict contrast preference well, but to accurately predict orientation selectivity and preference direction, both single-cell resolution structural connectivity and task optimization are necessary. Coarse-graining experiments showed that merging T4/T5 subtypes (58 classes) did not affect prediction quality, but merging them into E/I/Mix classes resulted in a significant performance drop, demonstrating the necessity of fine cell type classification.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    },
+    {
+      "score": 48,
+      "reasoning": "Evaluated under Mode B (mechanistic and qualitative analysis), the report and Figure 4 accurately capture the core T4c ensemble clustering findings: using UMAP and GMM clustering on natural-movie responses across the 50 DMNs, T4c separates into three discrete clusters—correct upward selectivity (C0, n=31, loss 5.30), inverted downward selectivity (C1, n=7, loss 5.32), and no direction selectivity (C2, n=12, loss 5.36)—with mean task loss increasing sequentially. Furthermore, the agent rigorously links T4c tuning sign to Mi4/Mi9 contrast polarity via flash-response scatter plots, a contingency table (chi-square p=0.0002, Fisher p=3.2e-6), and a causal Mi4/Mi9 silencing double dissociation, even extending the UMAP analysis to T5c. However, it relies on precomputed UMAP/GMM files without showing BIC selection or a broad multi-cell-type clustering overview, lacks per-cluster error distribution plots beyond mean losses, and only briefly alludes to rather than demonstrating the strategy of constraining whole-circuit predictions by measuring a few neurons, placing it just shy of the full scope of the original paper.",
+      "reported_model": "google/gemini-4-carbon",
+      "provider": "Google AI Studio",
+      "response_id": "gen-1795648623-0rnSrP3SmZhWDqQv3LwJ",
+      "usage": {
+        "prompt_tokens": 22689,
+        "completion_tokens": 8533,
+        "total_tokens": 31222,
+        "cost": 0.091492,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 20640,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.091492,
+          "upstream_inference_prompt_cost": 0.006162,
+          "upstream_inference_completions_cost": 0.08533
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 8249,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      },
+      "index": 4,
+      "weight": 0.1,
+      "criterion": "UMAP dimensionality reduction and clustering were performed on the responses of 50 DMNs under natural videos, revealing that the responses of multiple cell types form discrete clusters. Taking T4c as an example, the 50 models were divided into three functional clusters: correct upward selectivity, incorrect downward selectivity, and no directional selectivity. The average task error of the clusters increased in sequence, indicating that models with higher task performance tend to have correct physiological tuning. It was further revealed that the directional preference of T4c is closely coupled with the contrast preference of its input neurons Mi4/Mi9: when Mi4 is of the ON type and Mi9 is of the OFF type, T4c shows upward selectivity; conversely, it shows downward selectivity. This finding provides an effective strategy for constraining whole-brain model parameters by measuring the tuning of a small number of neurons.",
+      "reasoning_effort": "high",
+      "image_count": 16
+    }
+  ]
+}

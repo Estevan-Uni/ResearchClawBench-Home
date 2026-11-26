@@ -1,0 +1,872 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analyze_ag3.py",
+    "path": "code/analyze_ag3.py",
+    "type": "file",
+    "size": 2677,
+    "mtime": 1795617306.9057832,
+    "exported": true
+  },
+  {
+    "name": "analyze_dimer.py",
+    "path": "code/analyze_dimer.py",
+    "type": "file",
+    "size": 7743,
+    "mtime": 1795615298.2550294,
+    "exported": true
+  },
+  {
+    "name": "analyze_dimer_generator.py",
+    "path": "code/analyze_dimer_generator.py",
+    "type": "file",
+    "size": 2067,
+    "mtime": 1795611902.0108504,
+    "exported": true
+  },
+  {
+    "name": "analyze_random_charges.py",
+    "path": "code/analyze_random_charges.py",
+    "type": "file",
+    "size": 7463,
+    "mtime": 1795615256.5462022,
+    "exported": true
+  },
+  {
+    "name": "bench_scaling.py",
+    "path": "code/bench_scaling.py",
+    "type": "file",
+    "size": 1073,
+    "mtime": 1795612080.6519074,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 949,
+    "mtime": 1795611457.2816303,
+    "exported": true
+  },
+  {
+    "name": "fig_data_overview.py",
+    "path": "code/fig_data_overview.py",
+    "type": "file",
+    "size": 2188,
+    "mtime": 1795611744.053969,
+    "exported": true
+  },
+  {
+    "name": "fig_scaling.py",
+    "path": "code/fig_scaling.py",
+    "type": "file",
+    "size": 1044,
+    "mtime": 1795615331.931701,
+    "exported": true
+  },
+  {
+    "name": "gen_random_charges.py",
+    "path": "code/gen_random_charges.py",
+    "type": "file",
+    "size": 1730,
+    "mtime": 1795611433.3418849,
+    "exported": true
+  },
+  {
+    "name": "io_utils.py",
+    "path": "code/io_utils.py",
+    "type": "file",
+    "size": 1073,
+    "mtime": 1795611114.3299096,
+    "exported": true
+  },
+  {
+    "name": "jobs_rc.txt",
+    "path": "code/jobs_rc.txt",
+    "type": "file",
+    "size": 130,
+    "mtime": 1795617370.3501837,
+    "exported": true
+  },
+  {
+    "name": "jobs_scan.txt",
+    "path": "code/jobs_scan.txt",
+    "type": "file",
+    "size": 667,
+    "mtime": 1795612072.5994232,
+    "exported": true
+  },
+  {
+    "name": "jobs_small.txt",
+    "path": "code/jobs_small.txt",
+    "type": "file",
+    "size": 1765,
+    "mtime": 1795611938.0801861,
+    "exported": true
+  },
+  {
+    "name": "les.py",
+    "path": "code/les.py",
+    "type": "file",
+    "size": 14955,
+    "mtime": 1795611672.6801004,
+    "exported": true
+  },
+  {
+    "name": "plotstyle.py",
+    "path": "code/plotstyle.py",
+    "type": "file",
+    "size": 1029,
+    "mtime": 1795616666.6542053,
+    "exported": true
+  },
+  {
+    "name": "run_ag3.py",
+    "path": "code/run_ag3.py",
+    "type": "file",
+    "size": 4143,
+    "mtime": 1795611574.8333263,
+    "exported": true
+  },
+  {
+    "name": "run_dimer.py",
+    "path": "code/run_dimer.py",
+    "type": "file",
+    "size": 4296,
+    "mtime": 1795611905.7504544,
+    "exported": true
+  },
+  {
+    "name": "run_random_charges.py",
+    "path": "code/run_random_charges.py",
+    "type": "file",
+    "size": 2482,
+    "mtime": 1795612066.0193887,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "logs",
+    "path": "outputs/logs",
+    "type": "directory"
+  },
+  {
+    "name": "ag3_mod_les_q_s0.log",
+    "path": "outputs/logs/ag3_mod_les_q_s0.log",
+    "type": "file",
+    "size": 491,
+    "mtime": 1795617124.216946,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_les_s0.log",
+    "path": "outputs/logs/ag3_mod_les_s0.log",
+    "type": "file",
+    "size": 505,
+    "mtime": 1795616814.8770866,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_sep_s0.log",
+    "path": "outputs/logs/ag3_mod_sep_s0.log",
+    "type": "file",
+    "size": 978,
+    "mtime": 1795617285.241658,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_sr_q_s0.log",
+    "path": "outputs/logs/ag3_mod_sr_q_s0.log",
+    "type": "file",
+    "size": 493,
+    "mtime": 1795616490.7248573,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_sr_s0.log",
+    "path": "outputs/logs/ag3_mod_sr_s0.log",
+    "type": "file",
+    "size": 505,
+    "mtime": 1795616319.041362,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_les_q_s0.log",
+    "path": "outputs/logs/ag3_orig_les_q_s0.log",
+    "type": "file",
+    "size": 487,
+    "mtime": 1795615974.5849342,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_les_s0.log",
+    "path": "outputs/logs/ag3_orig_les_s0.log",
+    "type": "file",
+    "size": 488,
+    "mtime": 1795615675.8507068,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_sep_s0.log",
+    "path": "outputs/logs/ag3_orig_sep_s0.log",
+    "type": "file",
+    "size": 976,
+    "mtime": 1795616150.256374,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_sr_q_s0.log",
+    "path": "outputs/logs/ag3_orig_sr_q_s0.log",
+    "type": "file",
+    "size": 487,
+    "mtime": 1795615414.725365,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_sr_s0.log",
+    "path": "outputs/logs/ag3_orig_sr_s0.log",
+    "type": "file",
+    "size": 491,
+    "mtime": 1795615282.19071,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_plain_corrected_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_les_plain_corrected_rc4.0_s0.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795612454.2435253,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_plain_corrected_rc4.0_s1.log",
+    "path": "outputs/logs/dimer_les_plain_corrected_rc4.0_s1.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795613238.8440151,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_plain_corrected_rc4.0_s2.log",
+    "path": "outputs/logs/dimer_les_plain_corrected_rc4.0_s2.log",
+    "type": "file",
+    "size": 908,
+    "mtime": 1795614066.2363925,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_corrected_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_les_tagged_corrected_rc4.0_s0.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795612192.886741,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_corrected_rc4.0_s1.log",
+    "path": "outputs/logs/dimer_les_tagged_corrected_rc4.0_s1.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795612965.3346157,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_corrected_rc4.0_s2.log",
+    "path": "outputs/logs/dimer_les_tagged_corrected_rc4.0_s2.log",
+    "type": "file",
+    "size": 906,
+    "mtime": 1795613819.7434013,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_energy_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_les_tagged_energy_rc4.0_s0.log",
+    "type": "file",
+    "size": 930,
+    "mtime": 1795614720.9642773,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_raw_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_les_tagged_raw_rc4.0_s0.log",
+    "type": "file",
+    "size": 949,
+    "mtime": 1795615169.3244905,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_plain_corrected_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_sr_plain_corrected_rc4.0_s0.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795612742.956283,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_plain_corrected_rc4.0_s1.log",
+    "path": "outputs/logs/dimer_sr_plain_corrected_rc4.0_s1.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795613593.8551095,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_plain_corrected_rc4.0_s2.log",
+    "path": "outputs/logs/dimer_sr_plain_corrected_rc4.0_s2.log",
+    "type": "file",
+    "size": 903,
+    "mtime": 1795614406.211549,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_corrected_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_sr_tagged_corrected_rc4.0_s0.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795612592.7774134,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_corrected_rc4.0_s1.log",
+    "path": "outputs/logs/dimer_sr_tagged_corrected_rc4.0_s1.log",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795613428.2608047,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_corrected_rc4.0_s2.log",
+    "path": "outputs/logs/dimer_sr_tagged_corrected_rc4.0_s2.log",
+    "type": "file",
+    "size": 904,
+    "mtime": 1795614210.5773962,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_energy_rc4.0_s0.log",
+    "path": "outputs/logs/dimer_sr_tagged_energy_rc4.0_s0.log",
+    "type": "file",
+    "size": 924,
+    "mtime": 1795614885.8831549,
+    "exported": true
+  },
+  {
+    "name": "rc_rc3.0_les_n40_s0.log",
+    "path": "outputs/logs/rc_rc3.0_les_n40_s0.log",
+    "type": "file",
+    "size": 1162,
+    "mtime": 1795612773.1770613,
+    "exported": true
+  },
+  {
+    "name": "rc_rc3.0_sr_n40_s0.log",
+    "path": "outputs/logs/rc_rc3.0_sr_n40_s0.log",
+    "type": "file",
+    "size": 1184,
+    "mtime": 1795612842.3149688,
+    "exported": true
+  },
+  {
+    "name": "rc_rc4.0_les_n40_s0.log",
+    "path": "outputs/logs/rc_rc4.0_les_n40_s0.log",
+    "type": "file",
+    "size": 1159,
+    "mtime": 1795613125.0572689,
+    "exported": true
+  },
+  {
+    "name": "rc_rc4.0_sr_n40_s0.log",
+    "path": "outputs/logs/rc_rc4.0_sr_n40_s0.log",
+    "type": "file",
+    "size": 1184,
+    "mtime": 1795613254.8599663,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_les_blind_n40_s0.log",
+    "path": "outputs/logs/rc_rc5.0_les_blind_n40_s0.log",
+    "type": "file",
+    "size": 1184,
+    "mtime": 1795615212.5493355,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_les_n40_s0.log",
+    "path": "outputs/logs/rc_rc5.0_les_n40_s0.log",
+    "type": "file",
+    "size": 1157,
+    "mtime": 1795613599.3952024,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_les_s0.log",
+    "path": "outputs/logs/rc_rc5.0_les_s0.log",
+    "type": "file",
+    "size": 1517,
+    "mtime": 1795613082.4502516,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_sr_n40_s0.log",
+    "path": "outputs/logs/rc_rc5.0_sr_n40_s0.log",
+    "type": "file",
+    "size": 1175,
+    "mtime": 1795613827.0555532,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_sr_s0.log",
+    "path": "outputs/logs/rc_rc5.0_sr_s0.log",
+    "type": "file",
+    "size": 1536,
+    "mtime": 1795612496.320859,
+    "exported": true
+  },
+  {
+    "name": "rc_rc6.0_les_n40_s0.log",
+    "path": "outputs/logs/rc_rc6.0_les_n40_s0.log",
+    "type": "file",
+    "size": 1156,
+    "mtime": 1795614473.0524447,
+    "exported": true
+  },
+  {
+    "name": "rc_rc6.0_sr_n40_s0.log",
+    "path": "outputs/logs/rc_rc6.0_sr_n40_s0.log",
+    "type": "file",
+    "size": 1165,
+    "mtime": 1795614849.118496,
+    "exported": true
+  },
+  {
+    "name": "results",
+    "path": "outputs/results",
+    "type": "directory"
+  },
+  {
+    "name": "ag3_mod_les_q_s0.json",
+    "path": "outputs/results/ag3_mod_les_q_s0.json",
+    "type": "file",
+    "size": 382,
+    "mtime": 1795617124.4929466,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_les_s0.json",
+    "path": "outputs/results/ag3_mod_les_s0.json",
+    "type": "file",
+    "size": 368,
+    "mtime": 1795616815.3090847,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_sep_s0.json",
+    "path": "outputs/results/ag3_mod_sep_s0.json",
+    "type": "file",
+    "size": 381,
+    "mtime": 1795617285.5456598,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_sr_q_s0.json",
+    "path": "outputs/results/ag3_mod_sr_q_s0.json",
+    "type": "file",
+    "size": 384,
+    "mtime": 1795616491.0648506,
+    "exported": true
+  },
+  {
+    "name": "ag3_mod_sr_s0.json",
+    "path": "outputs/results/ag3_mod_sr_s0.json",
+    "type": "file",
+    "size": 367,
+    "mtime": 1795616319.3853507,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_les_q_s0.json",
+    "path": "outputs/results/ag3_orig_les_q_s0.json",
+    "type": "file",
+    "size": 387,
+    "mtime": 1795615975.008943,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_les_s0.json",
+    "path": "outputs/results/ag3_orig_les_s0.json",
+    "type": "file",
+    "size": 387,
+    "mtime": 1795615676.2787156,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_sep_s0.json",
+    "path": "outputs/results/ag3_orig_sep_s0.json",
+    "type": "file",
+    "size": 382,
+    "mtime": 1795616150.6003563,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_sr_q_s0.json",
+    "path": "outputs/results/ag3_orig_sr_q_s0.json",
+    "type": "file",
+    "size": 390,
+    "mtime": 1795615415.0573716,
+    "exported": true
+  },
+  {
+    "name": "ag3_orig_sr_s0.json",
+    "path": "outputs/results/ag3_orig_sr_s0.json",
+    "type": "file",
+    "size": 382,
+    "mtime": 1795615282.5107164,
+    "exported": true
+  },
+  {
+    "name": "bench_scaling.json",
+    "path": "outputs/results/bench_scaling.json",
+    "type": "file",
+    "size": 349,
+    "mtime": 1795615293.7949407,
+    "exported": true
+  },
+  {
+    "name": "dimer_charge_stats.json",
+    "path": "outputs/results/dimer_charge_stats.json",
+    "type": "file",
+    "size": 925,
+    "mtime": 1795617313.217821,
+    "exported": true
+  },
+  {
+    "name": "dimer_generator_analysis.json",
+    "path": "outputs/results/dimer_generator_analysis.json",
+    "type": "file",
+    "size": 339,
+    "mtime": 1795611905.0369418,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_plain_corrected_rc4.0_s0.json",
+    "path": "outputs/results/dimer_les_plain_corrected_rc4.0_s0.json",
+    "type": "file",
+    "size": 1657,
+    "mtime": 1795612454.771541,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_plain_corrected_rc4.0_s1.json",
+    "path": "outputs/results/dimer_les_plain_corrected_rc4.0_s1.json",
+    "type": "file",
+    "size": 1659,
+    "mtime": 1795613239.3520133,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_plain_corrected_rc4.0_s2.json",
+    "path": "outputs/results/dimer_les_plain_corrected_rc4.0_s2.json",
+    "type": "file",
+    "size": 1656,
+    "mtime": 1795614066.780395,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_corrected_rc4.0_s0.json",
+    "path": "outputs/results/dimer_les_tagged_corrected_rc4.0_s0.json",
+    "type": "file",
+    "size": 1669,
+    "mtime": 1795612193.3587675,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_corrected_rc4.0_s1.json",
+    "path": "outputs/results/dimer_les_tagged_corrected_rc4.0_s1.json",
+    "type": "file",
+    "size": 1669,
+    "mtime": 1795612965.6826262,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_corrected_rc4.0_s2.json",
+    "path": "outputs/results/dimer_les_tagged_corrected_rc4.0_s2.json",
+    "type": "file",
+    "size": 1664,
+    "mtime": 1795613820.0794084,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_energy_rc4.0_s0.json",
+    "path": "outputs/results/dimer_les_tagged_energy_rc4.0_s0.json",
+    "type": "file",
+    "size": 1638,
+    "mtime": 1795614721.3362834,
+    "exported": true
+  },
+  {
+    "name": "dimer_les_tagged_raw_rc4.0_s0.json",
+    "path": "outputs/results/dimer_les_tagged_raw_rc4.0_s0.json",
+    "type": "file",
+    "size": 1573,
+    "mtime": 1795615169.8365004,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_plain_corrected_rc4.0_s0.json",
+    "path": "outputs/results/dimer_sr_plain_corrected_rc4.0_s0.json",
+    "type": "file",
+    "size": 1653,
+    "mtime": 1795612743.3002918,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_plain_corrected_rc4.0_s1.json",
+    "path": "outputs/results/dimer_sr_plain_corrected_rc4.0_s1.json",
+    "type": "file",
+    "size": 1670,
+    "mtime": 1795613594.127114,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_plain_corrected_rc4.0_s2.json",
+    "path": "outputs/results/dimer_sr_plain_corrected_rc4.0_s2.json",
+    "type": "file",
+    "size": 1662,
+    "mtime": 1795614406.4115517,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_corrected_rc4.0_s0.json",
+    "path": "outputs/results/dimer_sr_tagged_corrected_rc4.0_s0.json",
+    "type": "file",
+    "size": 1663,
+    "mtime": 1795612593.0174158,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_corrected_rc4.0_s1.json",
+    "path": "outputs/results/dimer_sr_tagged_corrected_rc4.0_s1.json",
+    "type": "file",
+    "size": 1663,
+    "mtime": 1795613428.5488076,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_corrected_rc4.0_s2.json",
+    "path": "outputs/results/dimer_sr_tagged_corrected_rc4.0_s2.json",
+    "type": "file",
+    "size": 1671,
+    "mtime": 1795614210.8613987,
+    "exported": true
+  },
+  {
+    "name": "dimer_sr_tagged_energy_rc4.0_s0.json",
+    "path": "outputs/results/dimer_sr_tagged_energy_rc4.0_s0.json",
+    "type": "file",
+    "size": 1648,
+    "mtime": 1795614886.0711584,
+    "exported": true
+  },
+  {
+    "name": "random_charges_charge_stats.json",
+    "path": "outputs/results/random_charges_charge_stats.json",
+    "type": "file",
+    "size": 515,
+    "mtime": 1795617320.2218633,
+    "exported": true
+  },
+  {
+    "name": "rc_rc3.0_les_n40_s0.json",
+    "path": "outputs/results/rc_rc3.0_les_n40_s0.json",
+    "type": "file",
+    "size": 1846,
+    "mtime": 1795612774.2330892,
+    "exported": true
+  },
+  {
+    "name": "rc_rc3.0_sr_n40_s0.json",
+    "path": "outputs/results/rc_rc3.0_sr_n40_s0.json",
+    "type": "file",
+    "size": 1807,
+    "mtime": 1795612842.6749792,
+    "exported": true
+  },
+  {
+    "name": "rc_rc4.0_les_n40_s0.json",
+    "path": "outputs/results/rc_rc4.0_les_n40_s0.json",
+    "type": "file",
+    "size": 1855,
+    "mtime": 1795613126.0132506,
+    "exported": true
+  },
+  {
+    "name": "rc_rc4.0_sr_n40_s0.json",
+    "path": "outputs/results/rc_rc4.0_sr_n40_s0.json",
+    "type": "file",
+    "size": 1823,
+    "mtime": 1795613255.2519655,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_les_blind_n40_s0.json",
+    "path": "outputs/results/rc_rc5.0_les_blind_n40_s0.json",
+    "type": "file",
+    "size": 1803,
+    "mtime": 1795615213.6333568,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_les_n40_s0.json",
+    "path": "outputs/results/rc_rc5.0_les_n40_s0.json",
+    "type": "file",
+    "size": 1866,
+    "mtime": 1795613600.8272266,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_les_s0.json",
+    "path": "outputs/results/rc_rc5.0_les_s0.json",
+    "type": "file",
+    "size": 2302,
+    "mtime": 1795613088.510091,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_sr_n40_s0.json",
+    "path": "outputs/results/rc_rc5.0_sr_n40_s0.json",
+    "type": "file",
+    "size": 1817,
+    "mtime": 1795613827.6915662,
+    "exported": true
+  },
+  {
+    "name": "rc_rc5.0_sr_s0.json",
+    "path": "outputs/results/rc_rc5.0_sr_s0.json",
+    "type": "file",
+    "size": 2244,
+    "mtime": 1795612497.404895,
+    "exported": true
+  },
+  {
+    "name": "rc_rc6.0_les_n40_s0.json",
+    "path": "outputs/results/rc_rc6.0_les_n40_s0.json",
+    "type": "file",
+    "size": 1857,
+    "mtime": 1795614475.6804812,
+    "exported": true
+  },
+  {
+    "name": "rc_rc6.0_sr_n40_s0.json",
+    "path": "outputs/results/rc_rc6.0_sr_n40_s0.json",
+    "type": "file",
+    "size": 1835,
+    "mtime": 1795614849.9225101,
+    "exported": true
+  },
+  {
+    "name": "summary_ag3.json",
+    "path": "outputs/results/summary_ag3.json",
+    "type": "file",
+    "size": 1737,
+    "mtime": 1795617307.6097875,
+    "exported": true
+  },
+  {
+    "name": "summary_dimer.json",
+    "path": "outputs/results/summary_dimer.json",
+    "type": "file",
+    "size": 2299,
+    "mtime": 1795617311.9378133,
+    "exported": true
+  },
+  {
+    "name": "summary_random_charges.json",
+    "path": "outputs/results/summary_random_charges.json",
+    "type": "file",
+    "size": 3929,
+    "mtime": 1795617320.2218633,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 148427,
+    "mtime": 1795617322.8538792,
+    "exported": true
+  },
+  {
+    "name": "fig2_random_charges.png",
+    "path": "report/images/fig2_random_charges.png",
+    "type": "file",
+    "size": 229699,
+    "mtime": 1795617319.3058577,
+    "exported": true
+  },
+  {
+    "name": "fig2b_random_charges_bec.png",
+    "path": "report/images/fig2b_random_charges_bec.png",
+    "type": "file",
+    "size": 59802,
+    "mtime": 1795617320.1338627,
+    "exported": true
+  },
+  {
+    "name": "fig3_dimer.png",
+    "path": "report/images/fig3_dimer.png",
+    "type": "file",
+    "size": 192508,
+    "mtime": 1795617312.9498193,
+    "exported": true
+  },
+  {
+    "name": "fig4_ag3.png",
+    "path": "report/images/fig4_ag3.png",
+    "type": "file",
+    "size": 185049,
+    "mtime": 1795617308.1497905,
+    "exported": true
+  },
+  {
+    "name": "fig5_scaling.png",
+    "path": "report/images/fig5_scaling.png",
+    "type": "file",
+    "size": 54291,
+    "mtime": 1795617324.6138902,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 28872,
+    "mtime": 1795617362.9221344,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6108,
+    "mtime": 1795610474.531383,
+    "exported": true
+  }
+]

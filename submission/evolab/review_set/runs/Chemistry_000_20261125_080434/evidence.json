@@ -1,0 +1,14 @@
+{
+  "source_workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Chemistry_000/g1/solve/attempt-00002/Chemistry_000/workspace",
+  "source_report_sha256": null,
+  "source_output_sha256": "f0bb3fa11d687f494630a239d525ea7bd8420b9f969705d9d4b8bcbd583b248f",
+  "exported_paths": [
+    "INSTRUCTIONS.md"
+  ],
+  "omitted_outputs": {
+    "large_or_binary_output_files": 0,
+    "large_or_binary_output_bytes": 0
+  },
+  "judge_model": null,
+  "score_status": "assigned_zero_for_agent_safety_refusal"
+}

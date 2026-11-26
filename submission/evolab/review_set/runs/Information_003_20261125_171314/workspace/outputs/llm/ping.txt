@@ -1,0 +1,2 @@
+Model "claude-haiku-5-5" is restricted by your organization's settings. Using anthropic/claude-opus-5.5 instead.
+Not logged in · Please run /login

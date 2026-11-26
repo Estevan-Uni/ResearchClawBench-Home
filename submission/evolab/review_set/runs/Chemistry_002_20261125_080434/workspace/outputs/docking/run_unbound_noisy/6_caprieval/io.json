@@ -1,0 +1,1662 @@
+{
+    "input": [
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_1.pdb",
+            "file_type": {
+                "py/reduce": [
+                    {
+                        "py/type": "haddock.libs.libontology.Format"
+                    },
+                    {
+                        "py/tuple": [
+                            "pdb"
+                        ]
+                    }
+                ]
+            },
+            "full_name": "emref_1.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_1.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_1.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "data",
+                            "5_emref",
+                            "noisy.tbl"
+                        ]
+                    }
+                ]
+            },
+            "score": -50.77147000000001,
+            "seed": 939,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "created": "2026-11-25 14:22:43",
+                    "file_name": "barnase_unbound_haddock.psf",
+                    "file_type": {
+                        "py/reduce": [
+                            {
+                                "py/type": "haddock.libs.libontology.Format"
+                            },
+                            {
+                                "py/tuple": [
+                                    "psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "full_name": "barnase_unbound_haddock.psf",
+                    "md5": null,
+                    "path": "/workspace/outputs/docking/run_unbound_noisy/0_topoaa",
+                    "py/object": "haddock.libs.libontology.TopologyFile",
+                    "rel_path": {
+                        "py/reduce": [
+                            {
+                                "py/type": "pathlib.PosixPath"
+                            },
+                            {
+                                "py/tuple": [
+                                    "..",
+                                    "0_topoaa",
+                                    "barnase_unbound_haddock.psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "restr_fname": null
+                },
+                {
+                    "created": "2026-11-25 14:22:43",
+                    "file_name": "barstar_unbound_haddock.psf",
+                    "file_type": {
+                        "py/id": 11
+                    },
+                    "full_name": "barstar_unbound_haddock.psf",
+                    "md5": null,
+                    "path": "/workspace/outputs/docking/run_unbound_noisy/0_topoaa",
+                    "py/object": "haddock.libs.libontology.TopologyFile",
+                    "rel_path": {
+                        "py/reduce": [
+                            {
+                                "py/type": "pathlib.PosixPath"
+                            },
+                            {
+                                "py/tuple": [
+                                    "..",
+                                    "0_topoaa",
+                                    "barstar_unbound_haddock.psf"
+                                ]
+                            }
+                        ]
+                    },
+                    "restr_fname": null
+                }
+            ],
+            "unw_energies": {
+                "air": 105.526,
+                "angles": 129.473,
+                "bonds": 28.1288,
+                "bsa": 988.403,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -8.74027,
+                "dihe": 1100.6,
+                "elec": -127.556,
+                "improper": 39.817,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -49.1025,
+                "vdw": -27.0726,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_2.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_2.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_2.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_2.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -59.589499999999994,
+            "seed": 1064,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 64.7656,
+                "angles": 133.305,
+                "bonds": 29.14,
+                "bsa": 1072.65,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.39312,
+                "dihe": 1111.34,
+                "elec": -63.8742,
+                "improper": 39.5154,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -46.0066,
+                "vdw": -46.8981,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_3.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_3.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_3.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_3.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -32.879949999999994,
+            "seed": 967,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 213.134,
+                "angles": 125.115,
+                "bonds": 26.3198,
+                "bsa": 952.917,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -9.45155,
+                "dihe": 1097.3,
+                "elec": -109.088,
+                "improper": 37.331,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 81.1216,
+                "vdw": -22.9242,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_4.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_4.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_4.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_4.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -22.19525,
+            "seed": 1108,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 209.015,
+                "angles": 130.309,
+                "bonds": 27.3771,
+                "bsa": 770.395,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -6.14781,
+                "dihe": 1101.19,
+                "elec": -60.9107,
+                "improper": 37.7122,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 123.338,
+                "vdw": -24.7668,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_5.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_5.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_5.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_5.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -38.04544,
+            "seed": 924,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 117.952,
+                "angles": 129.19,
+                "bonds": 27.7582,
+                "bsa": 1149.17,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -3.69764,
+                "dihe": 1093.43,
+                "elec": -87.9885,
+                "improper": 38.6387,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 1.41783,
+                "vdw": -28.5453,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_6.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_6.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_6.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_6.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -78.829,
+            "seed": 980,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 115.791,
+                "angles": 122.916,
+                "bonds": 27.7656,
+                "bsa": 1203.52,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -16.5661,
+                "dihe": 1096.11,
+                "elec": -227.087,
+                "improper": 39.1446,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -139.721,
+                "vdw": -28.4246,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_7.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_7.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_7.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_7.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -44.54481,
+            "seed": 920,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 174.308,
+                "angles": 141.785,
+                "bonds": 31.2953,
+                "bsa": 893.044,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -5.66721,
+                "dihe": 1116.95,
+                "elec": -192.023,
+                "improper": 43.5138,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -35.6195,
+                "vdw": -17.9038,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_8.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_8.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_8.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_8.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -43.31354,
+            "seed": 998,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 59.5202,
+                "angles": 129.174,
+                "bonds": 28.6909,
+                "bsa": 733.196,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 0.33504,
+                "dihe": 1109.39,
+                "elec": -170.157,
+                "improper": 39.3219,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -126.206,
+                "vdw": -15.5692,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_9.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_9.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_9.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_9.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -50.522339,
+            "seed": 1011,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 104.243,
+                "angles": 133.452,
+                "bonds": 28.0852,
+                "bsa": 752.031,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -0.620339,
+                "dihe": 1105.51,
+                "elec": -187.737,
+                "improper": 40.164,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -106.273,
+                "vdw": -22.7789,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_10.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_10.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_10.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_10.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -46.67755,
+            "seed": 1076,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 163.576,
+                "angles": 124.438,
+                "bonds": 26.8785,
+                "bsa": 1007.88,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 1.67725,
+                "dihe": 1083.14,
+                "elec": -198.92,
+                "improper": 38.8969,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -60.2723,
+                "vdw": -24.9284,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_11.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_11.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_11.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_11.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -74.45420000000001,
+            "seed": 952,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 198.428,
+                "angles": 134.258,
+                "bonds": 27.3317,
+                "bsa": 1321.33,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -10.7276,
+                "dihe": 1096.37,
+                "elec": -261.547,
+                "improper": 42.2054,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -94.3789,
+                "vdw": -31.26,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_12.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_12.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_12.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_12.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -62.760639999999995,
+            "seed": 1105,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 57.3384,
+                "angles": 138.306,
+                "bonds": 28.9637,
+                "bsa": 1163.27,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 4.91092,
+                "dihe": 1117.76,
+                "elec": -173.207,
+                "improper": 40.974,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -154.633,
+                "vdw": -38.764,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_13.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_13.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_13.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_13.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -49.766580000000005,
+            "seed": 1092,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 141.155,
+                "angles": 121.374,
+                "bonds": 26.4014,
+                "bsa": 967.934,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 3.28172,
+                "dihe": 1114.57,
+                "elec": -233.458,
+                "improper": 36.6138,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -112.775,
+                "vdw": -20.4722,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_14.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_14.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_14.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_14.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -47.0719,
+            "seed": 1059,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 192.576,
+                "angles": 134.353,
+                "bonds": 28.2974,
+                "bsa": 1157.31,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 10.3366,
+                "dihe": 1085.63,
+                "elec": -288.152,
+                "improper": 40.0561,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -114.611,
+                "vdw": -19.0357,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_15.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_15.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_15.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_15.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -63.86242999999999,
+            "seed": 976,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 121.696,
+                "angles": 131.77,
+                "bonds": 29.4096,
+                "bsa": 1033.56,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 4.99477,
+                "dihe": 1110.6,
+                "elec": -315.52,
+                "improper": 40.9602,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -211.746,
+                "vdw": -17.9228,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_16.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_16.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_16.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_16.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -25.794625000000003,
+            "seed": 1037,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 148.592,
+                "angles": 127.178,
+                "bonds": 28.4385,
+                "bsa": 807.967,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 0.876775,
+                "dihe": 1125.49,
+                "elec": -108.393,
+                "improper": 40.3123,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 20.3471,
+                "vdw": -19.852,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_17.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_17.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_17.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_17.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -59.11109,
+            "seed": 1062,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 103.068,
+                "angles": 124.69,
+                "bonds": 26.3799,
+                "bsa": 861.407,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -5.58639,
+                "dihe": 1102.23,
+                "elec": -189.794,
+                "improper": 36.4193,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": -112.599,
+                "vdw": -25.8727,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_18.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_18.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_18.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_18.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -15.35715,
+            "seed": 1077,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 140.611,
+                "angles": 129.039,
+                "bonds": 27.802,
+                "bsa": 750.818,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": 2.02605,
+                "dihe": 1100.75,
+                "elec": -64.344,
+                "improper": 37.9936,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 57.6911,
+                "vdw": -18.5755,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_19.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_19.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_19.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_19.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -23.957,
+            "seed": 954,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 105.366,
+                "angles": 124.728,
+                "bonds": 27.6752,
+                "bsa": 565.182,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -3.78552,
+                "dihe": 1100.5,
+                "elec": -75.0739,
+                "improper": 37.3924,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 14.5985,
+                "vdw": -15.6933,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        },
+        {
+            "aa_topology": [
+                null,
+                null
+            ],
+            "cgtoaa_tbl": [
+                null,
+                null
+            ],
+            "clt_id": null,
+            "clt_model_rank": null,
+            "clt_rank": null,
+            "created": "2026-11-25 15:11:45",
+            "file_name": "emref_20.pdb",
+            "file_type": {
+                "py/id": 5
+            },
+            "full_name": "emref_20.pdb",
+            "ligand_param_fname": null,
+            "ligand_top_fname": null,
+            "md5": null,
+            "ori_name": "flexref_20.pdb",
+            "path": "/workspace/outputs/docking/run_unbound_noisy/5_emref",
+            "py/object": "haddock.libs.libontology.PDBFile",
+            "rel_path": {
+                "py/reduce": [
+                    {
+                        "py/type": "pathlib.PosixPath"
+                    },
+                    {
+                        "py/tuple": [
+                            "..",
+                            "5_emref",
+                            "emref_20.pdb"
+                        ]
+                    }
+                ]
+            },
+            "restr_fname": {
+                "py/id": 7
+            },
+            "score": -46.30004999999999,
+            "seed": 921,
+            "shape": [
+                null,
+                null
+            ],
+            "topology": [
+                {
+                    "py/id": 10
+                },
+                {
+                    "py/id": 13
+                }
+            ],
+            "unw_energies": {
+                "air": 124.543,
+                "angles": 127.109,
+                "bonds": 27.5641,
+                "bsa": 1033.0,
+                "cdih": 0.0,
+                "coup": 0.0,
+                "dani": 0.0,
+                "desolv": -5.35765,
+                "dihe": 1094.63,
+                "elec": -60.282,
+                "improper": 38.4501,
+                "rdcs": 0.0,
+                "rg": 0.0,
+                "sym": 0.0,
+                "total": 22.9206,
+                "vdw": -41.3403,
+                "vean": 0.0,
+                "xpcs": 0.0
+            }
+        }
+    ],
+    "output": [
+        {
+            "py/id": 2
+        },
+        {
+            "py/id": 16
+        },
+        {
+            "py/id": 23
+        },
+        {
+            "py/id": 30
+        },
+        {
+            "py/id": 37
+        },
+        {
+            "py/id": 44
+        },
+        {
+            "py/id": 51
+        },
+        {
+            "py/id": 58
+        },
+        {
+            "py/id": 65
+        },
+        {
+            "py/id": 72
+        },
+        {
+            "py/id": 79
+        },
+        {
+            "py/id": 86
+        },
+        {
+            "py/id": 93
+        },
+        {
+            "py/id": 100
+        },
+        {
+            "py/id": 107
+        },
+        {
+            "py/id": 114
+        },
+        {
+            "py/id": 121
+        },
+        {
+            "py/id": 128
+        },
+        {
+            "py/id": 135
+        },
+        {
+            "py/id": 142
+        }
+    ]
+}

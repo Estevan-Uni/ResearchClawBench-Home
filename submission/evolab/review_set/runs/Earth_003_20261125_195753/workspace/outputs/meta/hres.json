@@ -1,0 +1,754 @@
+{
+    "metadata": {
+        ".zattrs": {},
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "10m_u_component_of_wind/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "10m_u_component_of_wind/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "10 metre U wind component",
+            "short_name": "u10",
+            "standard_name": "unknown",
+            "units": "m s**-1"
+        },
+        "10m_v_component_of_wind/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "10m_v_component_of_wind/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "10 metre V wind component",
+            "short_name": "v10",
+            "standard_name": "unknown",
+            "units": "m s**-1"
+        },
+        "10m_wind_speed/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "10m_wind_speed/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ]
+        },
+        "2m_temperature/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "2m_temperature/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "2 metre temperature",
+            "short_name": "t2m",
+            "standard_name": "unknown",
+            "units": "K"
+        },
+        "geopotential/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "geopotential/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Geopotential",
+            "short_name": "z",
+            "standard_name": "geopotential",
+            "units": "m**2 s**-2"
+        },
+        "latitude/.zarray": {
+            "chunks": [
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                32
+            ],
+            "zarr_format": 2
+        },
+        "latitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "latitude"
+            ]
+        },
+        "level/.zarray": {
+            "chunks": [
+                13
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                13
+            ],
+            "zarr_format": 2
+        },
+        "level/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "level"
+            ]
+        },
+        "longitude/.zarray": {
+            "chunks": [
+                64
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                64
+            ],
+            "zarr_format": 2
+        },
+        "longitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "longitude"
+            ]
+        },
+        "mean_sea_level_pressure/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "mean_sea_level_pressure/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Mean sea level pressure",
+            "short_name": "msl",
+            "standard_name": "air_pressure_at_mean_sea_level",
+            "units": "Pa"
+        },
+        "prediction_timedelta/.zarray": {
+            "chunks": [
+                41
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                41
+            ],
+            "zarr_format": 2
+        },
+        "prediction_timedelta/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "prediction_timedelta"
+            ],
+            "long_name": "time since forecast_reference_time",
+            "standard_name": "forecast_period",
+            "units": "hours"
+        },
+        "specific_humidity/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "specific_humidity/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Specific humidity",
+            "short_name": "q",
+            "standard_name": "specific_humidity",
+            "units": "kg kg**-1"
+        },
+        "surface_pressure/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "surface_pressure/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Surface pressure",
+            "short_name": "sp",
+            "standard_name": "surface_air_pressure",
+            "units": "Pa"
+        },
+        "temperature/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "temperature/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Temperature",
+            "short_name": "t",
+            "standard_name": "air_temperature",
+            "units": "K"
+        },
+        "time/.zarray": {
+            "chunks": [
+                5114
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i8",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "calendar": "proleptic_gregorian",
+            "long_name": "initial time of forecast",
+            "standard_name": "forecast_reference_time",
+            "units": "hours since 2016-01-01"
+        },
+        "total_precipitation/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "total_precipitation/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Total precipitation",
+            "short_name": "tp",
+            "standard_name": "unknown",
+            "units": "m"
+        },
+        "total_precipitation_24hr/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "total_precipitation_24hr/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ]
+        },
+        "total_precipitation_6hr/.zarray": {
+            "chunks": [
+                4,
+                1,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "total_precipitation_6hr/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "longitude",
+                "latitude"
+            ]
+        },
+        "u_component_of_wind/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "u_component_of_wind/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "U component of wind",
+            "short_name": "u",
+            "standard_name": "eastward_wind",
+            "units": "m s**-1"
+        },
+        "v_component_of_wind/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "v_component_of_wind/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "V component of wind",
+            "short_name": "v",
+            "standard_name": "northward_wind",
+            "units": "m s**-1"
+        },
+        "vertical_velocity/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "vertical_velocity/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ],
+            "long_name": "Vertical velocity",
+            "short_name": "w",
+            "standard_name": "lagrangian_tendency_of_air_pressure",
+            "units": "Pa s**-1"
+        },
+        "wind_speed/.zarray": {
+            "chunks": [
+                4,
+                1,
+                13,
+                64,
+                32
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5114,
+                41,
+                13,
+                64,
+                32
+            ],
+            "zarr_format": 2
+        },
+        "wind_speed/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "prediction_timedelta",
+                "level",
+                "longitude",
+                "latitude"
+            ]
+        }
+    },
+    "zarr_consolidated_format": 1
+}

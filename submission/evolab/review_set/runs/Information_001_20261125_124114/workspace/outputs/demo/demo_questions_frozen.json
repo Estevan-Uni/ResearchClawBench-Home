@@ -1,0 +1,6 @@
+[
+ {"id":"demo1_date","image":"data/demo_imgs/demo1.png","question":"What is the date printed in the bottom-right corner of the photo?","options":["02/26/2012","03/20/2012","02/20/2012","02/20/2013"],"answer":"C","gt_box":[795,643,960,673]},
+ {"id":"demo1_helmet","image":"data/demo_imgs/demo1.png","question":"What is the color of the helmet worn by the traffic officer on the left?","options":["white","red","blue","black"],"answer":"C","gt_box":[283,290,327,335]},
+ {"id":"demo2_pose","image":"data/demo_imgs/demo2.png","question":"What is the person with the yellow backpack doing?","options":["walking","standing","squatting","sitting on a bench"],"answer":"C","gt_box":[1355,305,1450,450]},
+ {"id":"demo2_bag","image":"data/demo_imgs/demo2.png","question":"What is the color of the backpack of the person squatting down near the flowers?","options":["red","black","green","yellow"],"answer":"D","gt_box":[1355,305,1450,450]}
+]

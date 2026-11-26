@@ -1,0 +1,342 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_reference.py",
+    "path": "code/01_reference.py",
+    "type": "file",
+    "size": 4605,
+    "mtime": 1795601194.3390121,
+    "exported": true
+  },
+  {
+    "name": "02_lasso.py",
+    "path": "code/02_lasso.py",
+    "type": "file",
+    "size": 2771,
+    "mtime": 1795600555.69046,
+    "exported": true
+  },
+  {
+    "name": "03_admm_linear.py",
+    "path": "code/03_admm_linear.py",
+    "type": "file",
+    "size": 2734,
+    "mtime": 1795600706.1315155,
+    "exported": true
+  },
+  {
+    "name": "04_theory.py",
+    "path": "code/04_theory.py",
+    "type": "file",
+    "size": 6579,
+    "mtime": 1795600676.319351,
+    "exported": true
+  },
+  {
+    "name": "04b_vos1_tightness.py",
+    "path": "code/04b_vos1_tightness.py",
+    "type": "file",
+    "size": 974,
+    "mtime": 1795601342.8282719,
+    "exported": true
+  },
+  {
+    "name": "05_kappa.py",
+    "path": "code/05_kappa.py",
+    "type": "file",
+    "size": 1738,
+    "mtime": 1795600781.3719628,
+    "exported": true
+  },
+  {
+    "name": "06_lasso_analysis.py",
+    "path": "code/06_lasso_analysis.py",
+    "type": "file",
+    "size": 11710,
+    "mtime": 1795601159.5147262,
+    "exported": true
+  },
+  {
+    "name": "07_theory_figs.py",
+    "path": "code/07_theory_figs.py",
+    "type": "file",
+    "size": 9717,
+    "mtime": 1795601603.8906076,
+    "exported": true
+  },
+  {
+    "name": "08_lasso_robustness.py",
+    "path": "code/08_lasso_robustness.py",
+    "type": "file",
+    "size": 1617,
+    "mtime": 1795601639.614936,
+    "exported": true
+  },
+  {
+    "name": "09_verify_numbers.py",
+    "path": "code/09_verify_numbers.py",
+    "type": "file",
+    "size": 4200,
+    "mtime": 1795602673.852375,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 14474,
+    "mtime": 1795600594.0308676,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "01.log",
+    "path": "outputs/01.log",
+    "type": "file",
+    "size": 2155,
+    "mtime": 1795601304.839944,
+    "exported": true
+  },
+  {
+    "name": "02.log",
+    "path": "outputs/02.log",
+    "type": "file",
+    "size": 1254,
+    "mtime": 1795601029.6976995,
+    "exported": true
+  },
+  {
+    "name": "03.log",
+    "path": "outputs/03.log",
+    "type": "file",
+    "size": 1176,
+    "mtime": 1795601719.743679,
+    "exported": true
+  },
+  {
+    "name": "04.log",
+    "path": "outputs/04.log",
+    "type": "file",
+    "size": 1758,
+    "mtime": 1795601462.8333294,
+    "exported": true
+  },
+  {
+    "name": "05.log",
+    "path": "outputs/05.log",
+    "type": "file",
+    "size": 1387,
+    "mtime": 1795602370.845914,
+    "exported": true
+  },
+  {
+    "name": "08.log",
+    "path": "outputs/08.log",
+    "type": "file",
+    "size": 2211,
+    "mtime": 1795602434.7185369,
+    "exported": true
+  },
+  {
+    "name": "admm_linear.json",
+    "path": "outputs/admm_linear.json",
+    "type": "file",
+    "size": 103280,
+    "mtime": 1795601719.743679,
+    "exported": true
+  },
+  {
+    "name": "kappa.json",
+    "path": "outputs/kappa.json",
+    "type": "file",
+    "size": 1604,
+    "mtime": 1795602370.845914,
+    "exported": true
+  },
+  {
+    "name": "kappa_slopes.json",
+    "path": "outputs/kappa_slopes.json",
+    "type": "file",
+    "size": 300,
+    "mtime": 1795602445.890646,
+    "exported": true
+  },
+  {
+    "name": "lasso_robustness.json",
+    "path": "outputs/lasso_robustness.json",
+    "type": "file",
+    "size": 2724,
+    "mtime": 1795602434.7185369,
+    "exported": true
+  },
+  {
+    "name": "lasso_tables.json",
+    "path": "outputs/lasso_tables.json",
+    "type": "file",
+    "size": 13501,
+    "mtime": 1795601161.090739,
+    "exported": true
+  },
+  {
+    "name": "lasso_tables.md",
+    "path": "outputs/lasso_tables.md",
+    "type": "file",
+    "size": 6744,
+    "mtime": 1795601161.094739,
+    "exported": true
+  },
+  {
+    "name": "reference.json",
+    "path": "outputs/reference.json",
+    "type": "file",
+    "size": 2744,
+    "mtime": 1795601302.4279232,
+    "exported": true
+  },
+  {
+    "name": "restart_counts.json",
+    "path": "outputs/restart_counts.json",
+    "type": "file",
+    "size": 117,
+    "mtime": 1795601780.880251,
+    "exported": true
+  },
+  {
+    "name": "theory.json",
+    "path": "outputs/theory.json",
+    "type": "file",
+    "size": 552678,
+    "mtime": 1795601462.8333294,
+    "exported": true
+  },
+  {
+    "name": "verify_numbers.txt",
+    "path": "outputs/verify_numbers.txt",
+    "type": "file",
+    "size": 12563,
+    "mtime": 1795602700.5439558,
+    "exported": true
+  },
+  {
+    "name": "vos1_tightness.json",
+    "path": "outputs/vos1_tightness.json",
+    "type": "file",
+    "size": 991,
+    "mtime": 1795601550.166117,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig10_kappa_sweep.png",
+    "path": "report/images/fig10_kappa_sweep.png",
+    "type": "file",
+    "size": 126167,
+    "mtime": 1795602447.046657,
+    "exported": true
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 135188,
+    "mtime": 1795601304.3119392,
+    "exported": true
+  },
+  {
+    "name": "fig2_headline_vos_vs_pg.png",
+    "path": "report/images/fig2_headline_vos_vs_pg.png",
+    "type": "file",
+    "size": 224800,
+    "mtime": 1795601163.402758,
+    "exported": true
+  },
+  {
+    "name": "fig3_all_methods.png",
+    "path": "report/images/fig3_all_methods.png",
+    "type": "file",
+    "size": 288969,
+    "mtime": 1795601165.2387729,
+    "exported": true
+  },
+  {
+    "name": "fig4_oscillation.png",
+    "path": "report/images/fig4_oscillation.png",
+    "type": "file",
+    "size": 153566,
+    "mtime": 1795601167.198789,
+    "exported": true
+  },
+  {
+    "name": "fig5_recovery_support.png",
+    "path": "report/images/fig5_recovery_support.png",
+    "type": "file",
+    "size": 191533,
+    "mtime": 1795601169.2108054,
+    "exported": true
+  },
+  {
+    "name": "fig6_continuous_lyapunov.png",
+    "path": "report/images/fig6_continuous_lyapunov.png",
+    "type": "file",
+    "size": 180657,
+    "mtime": 1795602437.810567,
+    "exported": true
+  },
+  {
+    "name": "fig7_discrete_lyapunov.png",
+    "path": "report/images/fig7_discrete_lyapunov.png",
+    "type": "file",
+    "size": 153716,
+    "mtime": 1795602440.062589,
+    "exported": true
+  },
+  {
+    "name": "fig8_equivalence_overshoot.png",
+    "path": "report/images/fig8_equivalence_overshoot.png",
+    "type": "file",
+    "size": 271539,
+    "mtime": 1795602441.918607,
+    "exported": true
+  },
+  {
+    "name": "fig9_admm.png",
+    "path": "report/images/fig9_admm.png",
+    "type": "file",
+    "size": 240360,
+    "mtime": 1795602445.0106373,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 43627,
+    "mtime": 1795602731.4435067,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4909,
+    "mtime": 1795600282.2275429,
+    "exported": true
+  }
+]

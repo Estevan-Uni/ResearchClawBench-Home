@@ -1,0 +1,30 @@
+{
+  "source_workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_003/g2/solve/attempt-00001/Astronomy_003/workspace",
+  "source_score": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_003/g2/carbon/score.json",
+  "source_score_sha256": "6c909819a586b280914621e0c56df9d1ba1c3c9b975b5b8977b26f65a15c926e",
+  "source_report_sha256": "52c74493fa9b9446933f46a020a8cd37830ad70e75b39bd4eac66f54005660b4",
+  "source_output_sha256": "b4813816945006750ef5bacce037c2968e1896956b01436b38890557085abef9",
+  "exported_paths": [
+    "INSTRUCTIONS.md",
+    "code/analysis.py",
+    "code/figures.py",
+    "outputs/family_fits.csv",
+    "outputs/fig7_per_ell_stats.csv",
+    "outputs/summary.json",
+    "report/images/data_overview.png",
+    "report/images/fig6_resolution_cdf.png",
+    "report/images/fig6_resolution_histogram.png",
+    "report/images/fig7_per_ell_errors.png",
+    "report/images/fig7_supplementary.png",
+    "report/images/fig8_extrapolation_histogram.png",
+    "report/images/structure_diagnostics.png",
+    "report/images/validation_aic.png",
+    "report/images/validation_qq.png",
+    "report/report.md"
+  ],
+  "omitted_outputs": {
+    "large_or_binary_output_files": 0,
+    "large_or_binary_output_bytes": 0
+  },
+  "judge_model": "google/gemini-4-carbon"
+}

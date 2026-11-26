@@ -1,0 +1,29 @@
+method,scope,MAE,RMSE,MAPE
+B0 corrupted + linear (no detection),corrupted points,17.809641627373562,26.489661088718623,35.60214264401764
+B0 corrupted + linear (no detection),missing points,7.627447871715345,10.618431347418639,14.884444198987845
+B0 corrupted + linear (no detection),outlier points,43.29421799867812,46.645069543293495,87.4555821807208
+B0 corrupted + linear (no detection),all hours,1.2462683010936066,7.007362522715204,2.4913371507742936
+B1 detect + linear,corrupted points,6.372677114385435,9.231929106979662,12.614895562100658
+B1 detect + linear,missing points,7.627447871715345,10.618431347418639,14.884444198987845
+B1 detect + linear,outlier points,3.232165161754,4.042704047455436,6.934539545205872
+B1 detect + linear,all hours,0.4459419030956931,2.4421404947367797,0.8827546780328429
+"P  detect + seasonal-profile anchored (proposed, univariate)",corrupted points,3.6905039934351334,4.622835096994139,7.425399899281899
+"P  detect + seasonal-profile anchored (proposed, univariate)",missing points,3.835353423405317,4.7959720672103625,7.556194116344804
+"P  detect + seasonal-profile anchored (proposed, univariate)",outlier points,3.3279665629954733,4.1580146377246106,7.098040658861598
+"P  detect + seasonal-profile anchored (proposed, univariate)",all hours,0.25825102145841744,1.2228877258518451,0.5196084632716671
+P' detect + cluster-centroid anchored (univariate),corrupted points,3.3062119772798666,4.120345255853862,6.6396857902979916
+P' detect + cluster-centroid anchored (univariate),missing points,3.4151323408503242,4.232455670970148,6.716990209708608
+P' detect + cluster-centroid anchored (univariate),outlier points,3.033599867314949,3.825373125309893,6.446203872001706
+P' detect + cluster-centroid anchored (univariate),all hours,0.23135935411787192,1.0899630927635395,0.46462641432108087
+X  detect + sibling ridge (cross-sectional),corrupted points,2.5303786562865316,3.174011864371607,5.1170375522604985
+X  detect + sibling ridge (cross-sectional),missing points,2.5326221791165278,3.196317175573123,5.0437887317600145
+X  detect + sibling ridge (cross-sectional),outlier points,2.5247634391463123,3.1174853501353086,5.300368885855996
+X  detect + sibling ridge (cross-sectional),all hours,0.1770687347378589,0.8396276460676638,0.3580758013168591
+H  detect + hierarchy identity (CN01 - sum others),corrupted points,5.2096807926162645e-14,6.736323844748175e-14,1.0288702554102289e-13
+H  detect + hierarchy identity (CN01 - sum others),missing points,5.2390359934640264e-14,6.771999591106733e-14,1.0267244436106778e-13
+H  detect + hierarchy identity (CN01 - sum others),outlier points,5.1362089184944385e-14,6.646193137942912e-14,1.0342409157999628e-13
+H  detect + hierarchy identity (CN01 - sum others),all hours,3.645587129992888e-15,1.7819730910284942e-14,7.199742769023632e-15
+O  oracle mask + seasonal-profile anchored,corrupted points,3.6905039934351334,4.622835096994139,7.425399899281899
+O  oracle mask + seasonal-profile anchored,missing points,3.835353423405317,4.7959720672103625,7.556194116344804
+O  oracle mask + seasonal-profile anchored,outlier points,3.3279665629954733,4.1580146377246106,7.098040658861598
+O  oracle mask + seasonal-profile anchored,all hours,0.25825102145841744,1.2228877258518451,0.5196084632716671

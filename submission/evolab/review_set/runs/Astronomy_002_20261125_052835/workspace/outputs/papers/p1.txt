@@ -1,0 +1,1372 @@
+Draft version September 24, 2024
+Typeset using LATEX twocolumn style in AASTeX631
+Small Magellanic Cloud Cepheids Observed with the Hubble Space Telescope
+Provide a New Anchor for the SH0ES Distance Ladder
+Louise Breuval
+ ,1 Adam G. Riess
+ ,1, 2 Stefano Casertano,2 Wenlong Yuan
+ ,1 Lucas M. Macri
+ ,3
+Martino Romaniello
+ ,4 Yukei S. Murakami
+ ,1 Daniel Scolnic
+ ,5 Gagandeep S. Anand
+ ,2 and
+Igor Soszy´nski
+ 6
+1Department of Physics and Astronomy, Johns Hopkins University, Baltimore, MD 21218, USA
+2Space Telescope Science Institute, 3700 San Martin Drive, Baltimore, MD 21218, USA
+3NSF NOIRLab, 950 N. Cherry Ave, Tucson AZ 85719, USA
+4European Southern Observatory, Karl-Schwarzschild-Strasse 2, 85478 Garching bei M¨unchen, Germany
+5Department of Physics, Duke University, Durham, NC 27708, USA
+6Astronomical Observatory, University of Warsaw, Al. Ujazdowskie 4, 00-478 Warszawa, Poland
+ABSTRACT
+We present phase-corrected photometric measurements of 88 Cepheid variables in the core of
+the Small Magellanic Cloud (SMC), the first sample obtained with the Hubble Space Telescope’s
+(HST ) Wide Field Camera 3, in the same homogeneous photometric system as past measurements
+of all Cepheids on the SH0ES distance ladder. We limit the sample to the inner core and model
+the geometry to reduce errors in prior studies due to the nontrivial depth of this cloud. Without
+crowding present in ground-based studies, we obtain an unprecedentedly low dispersion of 0.102 mag
+for a period-luminosity (P-L) relation in the SMC, approaching the width of the Cepheid instability
+strip. The new geometric distance to 15 late-type detached eclipsing binaries in the SMC offers a rare
+opportunity to improve the foundation of the distance ladder, increasing the number of calibrating
+galaxies from three to four. With the SMC as the only anchor, we find H0 = 74.1 ± 2.1 km s−1 Mpc−1.
+Combining these four geometric distances with our HST photometry of SMC Cepheids, we obtain
+H0 = 73.17 ± 0.86 km s−1 Mpc−1. By including the SMC in the distance ladder, we also double the
+range where the metallicity ([Fe/H]) dependence of the Cepheid P-L relation can be calibrated, and
+we find γ = −0.234 ± 0.052 mag dex−1. Our local measurement of H0 based on Cepheids and Type
+Ia supernovae shows a 5.8σ tension with the value inferred from the cosmic microwave background
+assuming a Lambda cold dark matter (ΛCDM) cosmology, reinforcing the possibility of physics
+beyond ΛCDM.
+1. INTRODUCTION
+The tension between the local measurement of the
+Hubble constant (H0) based on distances and redshifts
+(e.g., H0 = 73.0 ± 1.0 km s−1 Mpc−1 Riess et al. 2022a)
+and its value inferred from the Lambda cold dark matter
+(ΛCDM) model calibrated with cosmic microwave back-
+ground data in the early Universe (e.g., H0 = 67.4 ±
+0.5 km s−1 Mpc−1 Planck Collaboration et al. 2020) has
+reached a 5σ significance. Extensive, recent reviews of
+the measurements are provided by Di Valentino et al.
+(2021) and Verde et al. (2023). This intriguing dis-
+crepancy provides growing hints of new physics beyond
+lbreuva1@jhu.edu
+ΛCDM, which might include exotic dark energy, new
+relativistic particles, neutrino interactions, or a small
+curvature. Continued efforts to test ΛCDM in the late
+and early Universe to identify departures and tensions
+are warranted. While this tension is well documented,
+increasing the number of calibrations or anchors of the
+local distance measurements is of great importance in
+order to better characterize and quantify the size of the
+tension.
+Cepheid variables have been the “gold standard” of
+primary distance indicators for over a century. They
+are well-understood pulsating stars (Eddington 1917;
+Zhevakin 1963) and are easy to identify thanks to their
+large-amplitude light curves at optical wavelengths. The
+Cepheids in the Small Magellanic Cloud (SMC) in par-
+arXiv:2404.08038v2  [astro-ph.CO]  23 Sep 2024
+2 Breuval L., et al.
+Figure 1. (Left): P–L scatter in the NIR WJK Wesenheit index for different Cepheid subsamples located at increasing
+distances from the SMC center. For this test, Cepheid photometry was taken from the VISTA near-infrared YJKs survey of the
+Magellanic Clouds system (VMC; Cioni et al. 2011) and the geometric corrections were derived using the planar geometry by
+Graczyk et al. (2020). The green histogram in the bottom left corner shows the distribution of our Cepheid sample. The small
+inset on the right shows the position of DEBs from Graczyk et al. (2020) on the XZ and YZ planes, with the blue and pink lines
+showing the model fits from DEBs and from our Cepheid sample, respectively. (Right): Map of SMC Cepheids from Ripepi
+et al. (2017) in light blue with the regions corresponding to radii of 2 deg, 1 deg and 0.6 deg. Eclipsing binaries from Graczyk
+et al. (2020) are shown in yellow.
+ticular played a foundational role in the recognition of
+their use as distance indicators and subsequent applica-
+tion to the discoveries of extragalactic nature of galaxies
+and the expansion of the Universe (Hubble 1929). In the
+early 1900s, Henrietta Leavitt (Leavitt 1908) discovered
+a remarkable phenomenon by examining photographic
+plates of the SMC: the brightness of Cepheids follows
+a linear relationship with the logarithm of their period,
+with the brightest Cepheids having the longest periods.
+This law is now called the Leavitt law (Leavitt & Pick-
+ering 1912) or simply the period-luminosity (P–L) rela-
+tion.
+Since this discovery, SMC Cepheids have been used ex-
+tensively to map the structure of this galaxy (Scowcroft
+et al. 2016; Jacyszyn-Dobrzeniecka et al. 2016; Ripepi
+et al. 2017; Deb et al. 2019), to investigate possible non-
+linearities in the P–L relation (Sandage et al. 2009),
+to study the chemical composition of these pulsating
+stars (Lemasle et al. 2017), or to calibrate the Cepheid
+metallicity dependence (Wielg´orski et al. 2017; Gieren
+et al. 2018; Breuval et al. 2021, 2022). SMC Cepheids
+have been observed by large surveys, and complete
+light curves have been obtained at multiple wavelengths
+(Soszy´nski et al. 2015; Scowcroft et al. 2016; Ripepi et al.
+2017, 2023). As a nearby dwarf galaxy and a direct
+neighbor of the Milky Way (MW), the SMC is a great
+laboratory for many astrophysical studies. However,
+the downside of this galaxy, in particular for distance
+measurements, is its elongated shape along the line of
+sight, which produces a detectable range of 5-10% in
+the distances to its stars. The consequence is that SMC
+Cepheids show a higher scatter than their Large Mag-
+ellanic Cloud (LMC) cousins. However, it is possible
+to reduce the variation in depth by limiting studies to
+the SMC core (rather than the far-flung streams and
+condensations that surround it) and by the application
+of a geometric model recently derived from a study of
+the detached eclipising binaries (DEBs) near the core,
+as shown in Fig. 1; the Cepheid dispersion is reduced if
+a geometric model fit to the DEBs is applied (light blue
+vs. dark blue points in Fig. 1). The geometric correc-
+tion assumed here is based on a planar geometry, such
+as the one from Graczyk et al. (2020). In the past,
+these corrections have often been neglected, resulting in
+a large scatter and even a bias in the P–L intercept and
+in the metallicity dependence (Wielg´orski et al. 2017;
+Owens et al. 2022); see also the discussion in Breuval
+et al. (2022). By limiting to the core and accounting
+for the depth, ground-based near-infrared (NIR) sam-
+ples produce a P–L scatter of ∼ 0.13 mag, approaching
+the state of the art.
+The new geometric distance to the SMC by Graczyk
+et al. (2020), based on late-type DEBs, provides a unique
+opportunity to improve the distance ladder by increas-
+A New Anchor for the SH0ES Distance Ladder 3
+20 15 10 5
+-71
+-72
+-73
+-74
+-75
+RA (J2000)
+Dec (J2000)
+14 13 12 11
+-72.6
+-72.8
+-73.0
+-73.2
+-73.4
+-73.6
+RA (J2000)
+Dec (J2000)
+Figure 2. (Left): The dashed circle shows the core region of the SMC (R = 0.6 deg). DEBs from Graczyk et al. (2020) are
+shown in yellow and the colored dots are the Cepheids from the present study. (Right): Zoom in of the SMC core region. The
+15 Cepheid sequences (one per HST orbit) are shown in color.
+ing the number of anchor galaxies from three to four.
+One of the strengths of the SH0ES distance ladder is in
+the consistency of the photometric measurements across
+all of the first and second rungs: all Cepheid photom-
+etry is obtained in a single homogeneous photometric
+system with the Hubble Space Telescope (HST ) Wide
+Field Camera 3 (WFC3), the only instrument capable
+of reaching Cepheids in Type Ia supernovae (SNe Ia)
+hosts as well as observing nearby Cepheids in the Milky
+Way, therefore nulling zero-point errors. Indeed, com-
+bining ground-based and HST photometry would likely
+produce a 1.4 − 1.8% systematic error in the measured
+distances simply due to bandpass differences (Riess et al.
+2019a). Also, due to the density of stars in the SMC
+core, typical ground-based samples with seeing worse
+than an arcsecond suffer crowding. Because of the lack
+of HST photometry in the same system, the SMC could
+not be previously included as an anchor of the SH0ES
+distance ladder for calibrating Cepheids (Riess et al.
+2022a). In order to make full use of the new geometric
+distance to the SMC, we observed a sample of Cepheids
+in the core of the SMC to mitigate the depth effects, us-
+ing HST resolution instead of ground-based photometry
+to avoid crowding, and in the same photometric system
+(HST/WFC3) used for the SH0ES distance ladder to
+ensure consistency and negate photometric zero-points.
+As we show, these further reduce the scatter to a best-
+seen 0.10 mag while putting all Cepheids on the same
+photometric system as the rest of the distance ladder.
+We describe our observations in §2 and the Cepheid
+photometry and phase corrections in §3. The P–L rela-
+tions, as well as a discussion of the effects of metallicity
+and of the SMC geometry, are presented in §4. The
+Hubble constant is derived in §5 from our HST pho-
+tometry and the previous SH0ES data. Finally, we
+discuss the results and prospects for H0 in §6.
+2. OBSERVATIONS
+2.1. Sample selection
+The data used in this paper were obtained as part of
+the HST Cycle 30 program GO-17097 (PI: A. Riess)
+between 2023 June 23 and October 4. We selected our
+sample based on the OGLE-IV catalog of Magellanic
+Cloud Cepheids (Soszy´nski et al. 2015). To decrease
+depth effects and to reduce the P–L scatter (Fig. 1),
+we excluded Cepheids beyond 0.6 deg from the SMC
+center (α = 12.54 deg, δ = −73.11 deg, from Ripepi
+et al. 2017). This region is small enough to mitigate the
+depth effects and contains enough Cepheids to populate
+the P–L relation. We discuss the effects of the SMC
+geometry in §4.2. Finally, we selected Cepheids in the
+range 0.7 < log P < 2.0, with P the pulsation period
+in days, similar to Riess et al. (2019a) in the LMC,
+to avoid contamination from shorter-period overtone
+4 Breuval L., et al.
+0 500 1000 1500 2000 2500
+Time during orbit (seconds)
+0
+10
+20
+30
+40
+50
+60
+70
+80Accumulated gyro drift (arcsec)
+IRSUB256
+C1K1C
+UVIS (full frame)Visit 6 (Aug 14)
+Visit 7 (Aug 16)
+Visit 10 (Aug 15)
+Visit 12 (June 23)
+Visit 1 (Oct 4)
+Visit 4 (Sept 30)
+Visit 5 (Sept 11)
+Visit 8 (Sept 14)
+Visit 9 (Oct 2)
+Visit 11 (Oct 2)
+Visit 13 (Oct 1)
+Visit 14 (Sept 15)
+Figure 3. Accumulated drift of the pointing due to the
+gyroscopic control in the “DASH” mode of HST. The green
+region shows the size of the image (with the subarray names)
+and the dashed grey line is the expected drift of 0.01′′/sec
+(STScI handbook). Visits 2, 3 and 15 were observed under
+FGS control and therefore are not shown in this figure. The
+failed visits observed in the first attempt (with drifts up to
+200′′) are not represented in this figure.
+Cepheids (∼46% of all SMC Cepheids) and possible
+non-linearities in the P–L relation at shorter periods
+(Bhardwaj et al. 2016; Bhardwaj 2020; Soszy´nski 2024).
+2.2. The DASH mode
+Because the SMC is a very nearby galaxy, the mean
+separation between Cepheids is large (∼ 12′) compared
+to the WFC3 field of view (∼ 2.5′). It is therefore inef-
+ficient to observe SMC Cepheids individually with HST
+using normal pointing procedures, which require ∼ 6 − 7
+minutes for a guide-star lock every time a new position is
+acquired. However, the rapid-exposure observing mode
+of HST, called “Drift And SHift” (or “DASH”; Mom-
+cheva et al. 2017), available since Cycle 24, makes the
+observations much more efficient than the classic pro-
+cedure by slewing the telescope a few arcminutes be-
+tween Cepheid pairs under gyroscope control, allowing
+us to observe multiple short-exposure targets in a single
+orbit after a single guide star acquisition. This tech-
+nique was successfully adopted by Riess et al. (2019a),
+hereafter R19, to observe 70 LMC Cepheids (GO-14648,
+GO-15145), which enabled the use of this galaxy as a
+primary anchor of the distance ladder. In the following,
+we adopt the approach from R19 to ensure consistency
+between Cepheid measurements in both galaxies and to
+negate systematic uncertainties in the photometry.
+We selected 15 sequences of 6 or 7 Cepheids such that
+the slewing of the telescope was minimized, as shown in
+the right panel of Fig. 2. The length of each sequence
+was chosen so that each could be observed during one
+HST visibility period, typically ∼ 2.5 ksec. For a given
+sequence, we first observed each Cepheid in the NIR
+F 160W filter, then flipped the WFC3 mirror mechanism
+and reversed the path to observe them in UVIS filters
+F 555W and F 814W . To avoid the loss of efficiency that
+would be caused by a memory dump, we used subarrays
+instead of full frame images. We started with 33′′ subar-
+rays in the NIR (256×256 pixels, IRSUB256), then 40′′
+subarrays in the first optical exposures (1K×1K pix-
+els, C1K1C) and larger 80′′ subarrays (2K×2K pixels,
+2K2C) for the last optical images. This successive ex-
+pansion of the array size was intended to keep the target
+in the field of view even with a gyro drift rate of up to
+twice the expected value.
+The first observation (visit 12) was obtained success-
+fully on 2023 June 23 with an accumulated drift of 15′′
+by the end of the visit, keeping all Cepheids well within
+the subarrays and providing images of seven targets in
+three filters. The following visits, observed between 2023
+August 10-16, were severely affected by a period of er-
+ratic performance of gyro 3, causing large drifts up to
+ten times larger than expected, placing most Cepheids
+outside the frame.
+After a number of missed targets, we adopted a new
+strategy and redesigned subsequent and repeat obser-
+vations to complete the exposures in the missing filters
+and to allow for a greater drift. For the visits that com-
+pletely failed (gyro drift larger than the array size in the
+first two exposures), we repeated the observations with
+full frame images (BIN=2) for the last third of the orbit
+to accommodate larger drifts. These full frame images
+require more memory, thus we were only be able to fit
+five targets per orbit. For the visits that had partial suc-
+cess (some Cepheids were observed but not in all three
+filters), we repeated only the missed filters under Fine
+Guidance Sensor (FGS) control, independent of the gyro
+behavior. In this configuration, we were able to fit four
+targets per orbit. In some cases, the images were large
+enough to observe two very nearby Cepheids in the same
+frame. The 7 rescoped visits were successfully executed
+between 2023 September 11 and October 4. Our final
+sample comprises 88 Cepheids (out of the 104 proposed),
+representing only a net 9% loss in the statistical power
+of the sample.
+The accumulated drift caused by the gyroscope guid-
+ing is plotted as a function of time during each orbit
+A New Anchor for the SH0ES Distance Ladder 5
+Table 1. Observations of SMC Cepheids
+Cepheid Frame Filter MJD Exposure Array XCepheid YCepheid
+(days) time (s) (pixels)
+OGLE-0518 iev9tuh3q F160W 60218.482 2.50 IRSUB256 138.4 129.2
+OGLE-0518 iev9tuhcq F555W 60218.490 2.50 UVIS1 843.2 680.8
+OGLE-0518 iev9tuhdq F814W 60218.492 2.50 UVIS1 817.8 706.1
+OGLE-0524 iev9tuh4q F160W 60218.483 2.50 IRSUB256 126.2 142.0
+OGLE-0524 iev9tuhbq F555W 60218.489 2.50 UVIS2-C1K1C-SUB 195.5 796.1
+OGLE-0524 iev9tuhaq F814W 60218.488 2.50 UVIS2-C1K1C-SUB 231.3 761.5
+OGLE-0524 iev9tuh4q F160W 60218.483 2.50 IRSUB256 126.2 142.0
+OGLE-0524 iev9tuhbq F555W 60218.489 2.50 UVIS2-C1K1C-SUB 195.5 796.1
+OGLE-0524 iev9tuhaq F814W 60218.488 2.50 UVIS2-C1K1C-SUB 231.3 761.5
+OGLE-0541 iev9tuh1q F160W 60218.478 2.50 IRSUB256 130.7 141.8
+OGLE-0541 iev9tuhgq F555W 60218.496 2.50 UVIS1 720.8 808.3
+OGLE-0541 iev9tuhhq F814W 60218.497 2.50 UVIS1 683.9 845.0
+Notes: (∗) Indicates a drift rate larger than 0.08′′during the exposure necessitating a larger photometry aperture.
+(This table is available in its entirety in machine-readable form.)
+in Fig. 3. With a typical accumulated drift of 30′′ at
+the end of a visit (2.5 ksec), we expect the Cepheid
+flux to be smeared by 0.7 pixel (0.03′′) at most during
+a 2.5-second exposure on the UVIS detector, which we
+can accomodate with a large photometric aperture. Due
+to the gyroscope control, Cepheids are often located far
+from the center of the images and their coordinates are
+incorrect (in this mode, HST cannot use the astrometry
+of a guide star to establish the pointing coordinates).
+We therefore used the positions of the brightest stars
+from the Gaia EDR3 catalog (Gaia Collaboration et al.
+2021) that we find in our images to identify the Cepheid
+positions. For some of the observations with the largest
+drifts, direct position matching was not sufficient; in
+such cases, we used a histogram-based algorithm to
+match source positions to the Gaia catalog. This algo-
+rithm is robust to the presence of outliers, e.g., due to
+cosmic rays, and works up to offsets well over 10′. This
+method allowed us to estimate drifts from the intended
+pointing that in some cases exceeded several arcminutes.
+However, none of the successful observations required
+this approach. The observations are described in Ta-
+ble 1.
+3. SMC CEPHEID PHOTOMETRY
+3.1. Aperture photometry
+In this section we describe the procedure to measure
+the flux associated to each Cepheid in the three filters.
+To accommodate for possible variations in the PSF due
+to gyro drifts, we perform aperture photometry follow-
+ing the approach described in R19. We measured the
+photometry in “FLC” files in the optical, which are
+corrected for the charge transfer efficiency (CTE), and
+“FLT” files in the NIR. The images were multiplied by
+pixel area maps to account for the different on-sky pixel
+size across the field of view. In the case of UVIS full
+frame images (2×2 binned), we constructed and applied
+a 2×2 binned pixel area map.
+For most images, we use a photometric aperture with
+radius of 3 pixels, small enough to limit the effect of pos-
+sible contamination from cosmic rays or nearby stars; af-
+ter inspecting the images, we found no evidence of such
+contaminations. We estimate and subtract the back-
+ground using a sky annulus with radius of 30 to 50 pixels
+around the Cepheids (same as in R19). For the UVIS
+full-frame binned images, we adopt the equivalent: an
+aperture radius of 1.5 pixels and a sky annulus of 15 to
+25 pixels for the background. The Cepheid magnitude
+mλ is derived as follows:
+mλ = m0 λ + (zp − 25) − apcorr (1)
+where m0 λ is the measured magnitude, zp is the mag-
+nitude of a star which produces a total count rate of
+1 e−s−1,and apcorr is the aperture correction from a 3
+pixel radius to infinity. We adopted the zero-points
+from R19 and provided by STScI for each UVIS CCD
+and each filter (Vega system): 24.711 mag in F 160W ,
+25.741 mag and 24.603 mag in F 555W and F 814W re-
+spectively in chip 1, and 25.727 mag and 24.581 mag
+6 Breuval L., et al.
+11 12 13 14 15
+F160W (mag)
+0.4
+0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+phase correction corr (mag)
+Mean corr = -0.002 mag
+( corr) = 0.090 mag
+13 14 15 16 17 18
+F555W (mag)
+0.4
+0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+Mean corr = -0.005 mag
+( corr) = 0.255 mag
+12 13 14 15 16
+F814W (mag)
+0.4
+0.2
+0.0
+0.2
+0.4
+0.6
+0.8
+Mean corr = 0.010 mag
+( corr) = 0.154 mag
+0.50
+ 0.25
+ 0.00 0.25 0.50
+corr
+0
+5
+10
+15
+20
+25N
+F160W
+F555W
+F814W
+Figure 4. Phase corrections derived as the difference between the random epoch magnitude and the intensity averaged mean
+magnitude in three filters.
+in F 555W and F 814W respectively in chip 2. We fol-
+lowed R19 and adopted aperture corrections of 0.200,
+0.183 and 0.272 mag in F 160W , F 555W and F 814W .
+To accommodate the potential impact of the gyro drift
+in the photometry, we adopt a larger aperture of 5 pix-
+els (instead of 3 pixels) for the images that are the most
+affected by the drift (indicated by (*) in Table 1). We
+measured the “instant” drift for each image by com-
+paring the changes in position for the Cepheid between
+successive exposures and we found 13 Cepheids with a
+drift larger than 0.10′′ during an exposure in at least
+one filter (this threshold corresponds to a drift of 0.8
+pixels in NIR and 2.5 pixels in UVIS images). For the 5
+pixel aperture, we adopt aperture corrections of 0.154,
+0.074 and 0.078 mag in F 160W , F 555W and F 814W
+respectively (R19).
+In five UVIS images (“iev9a4hpq”, “iev9a4hqq”,
+“iev9c2v3q”, “iev9c2v4q”, “iev9tyd8q”), the Cepheid
+falls close to x=1024, where there is a detector defect.
+Vertical lines at x=1023, x=1024 and x=1025 are re-
+spectively fainter, brighter and brighter than the me-
+dian of the background by a significant amount. For
+these images, we corrected for this effect by subtracting
+the median value of each line (this changes the Cepheid
+magnitude by 0.010 mag at most).
+For UVIS binned images, the HST pipeline does not
+produce CTE-corrected images (“FLC”); only the stan-
+dard calibrated images (“FLT”) are available. For these
+images, we applied a small term of 0.015 mag deter-
+mined from unbinned images to account for the absence
+of CTE correction, however this does not affect the
+main results since it almost always applies to F 555W
+and F 814W simultaneously, and therefore cancels out
+in the mW H Wesenheit index (Eq. 2, see §4). We note
+that this correction might slightly affect the optical We-
+senheit magnitude (see Eq. 3) but the impact in the
+P–L relation is nearly negligible. Finally, following R19,
+we correct for the small difference in the WFC3-UVIS
+photometry between Shutters A and B: we add/subtract
+a small term for Shutter A/B respectively, where this
+term is 0.006 mag in F 555W and 0.0035 in F 814W
+(Sahu et al. 2014).
+3.2. Phase corrections
+Our random-phase single-epoch HST measurements
+were transformed into intensity-averaged magnitudes
+using the well covered V and I light curves from the
+OGLE-IV survey (Soszy´nski et al. 2015), obtained with
+the 1.3-m Warsaw telescope at Las Campanas Obser-
+vatory in Chile. These light curves were supplemented
+by additional data points obtained more recently with
+the same telescope and camera after the release of the
+OGLE-IV catalog and include the most recent photo-
+metric measurements through July 2023 (I. Soszy´nski,
+private communication, 2023). A few outlier points were
+rejected from the V -band light curves for OGLE-1117,
+2437 and 0705, and from the I-band light curves for
+OGLE-1291, 1477 and 1157. These light curves have
+an average of 59 and 1,118 data points per object in V
+and I, respectively. In the case where the V -band light
+curve has less than 10 data points (OGLE-2488, 1025,
+and 1399), we derive it from the I-band light curve as-
+suming the phase-lag ϕI = ϕV + 0.023 and the ampli-
+tude ratio AI = 0.6 AV , both derived from our sample of
+OGLE light curves. Except for these three Cepheids, the
+minimum number of points is 19 in V and 208 in I. We
+fit the OGLE light curves with Fourier series to create a
+model from which to estimate the phase corrections and
+we adapt the number of Fourier modes between 4 and
+8 to minimize the χ2 of the fit. Finally, for the F 160W
+filter, we adopted the H-band templates and phase lag
+from Inno et al. (2015).
+The periods of our Cepheids were taken from OGLE-
+IV and the phases of our HST observations are derived
+from these periods. The phase corrections were derived
+A New Anchor for the SH0ES Distance Ladder 7
+Table 2. Mean magnitudes of our sample of SMC Cepheids.
+Cepheid R.A. Dec. Geo (a) log P F 555W σ F 814W σ F 160W (b) σ mW (c) H σ
+(deg) (mag) (d) (mag) (mag) (mag) (mag)
+OGLE-0518 10.801423 -73.325446 -0.089 1.198 15.385 0.017 14.224 0.008 13.161 0.027 12.653 0.028
+OGLE-0524 10.828177 -73.338793 -0.089 1.022 15.491 0.012 14.520 0.010 13.693 0.028 13.259 0.028
+OGLE-0541 10.873654 -73.002488 -0.052 1.137 15.149 0.018 14.077 0.011 13.088 0.027 12.651 0.028
+OGLE-0570 10.947143 -73.240723 -0.075 1.037 15.425 0.011 14.435 0.008 13.496 0.027 13.068 0.028
+OGLE-0576 10.963393 -73.332920 -0.084 1.159 15.244 0.011 14.132 0.008 13.107 0.027 12.623 0.028
+OGLE-0668 11.157914 -73.136825 -0.056 0.906 15.318 0.017 14.448 0.009 13.669 0.028 13.307 0.029
+OGLE-0672 11.165211 -73.263262 -0.069 0.948 15.627 0.010 14.634 0.009 13.673 0.028 13.250 0.028
+OGLE-0694 11.223210 -73.289953 -0.069 0.961 16.196 0.016 15.021 0.012 13.885 0.028 13.391 0.029
+OGLE-0705 11.264848 -73.307750 -0.070 1.021 15.624 0.017 14.737 0.012 13.699 0.028 13.316 0.029
+Notes:
+(a) The geometric correction is derived using Eqns. 5 and 6.
+(b) Does not include CRNL correction (0.0293 ± 0.0023 mag or 3.8 dex) between SMC and extragalactic Cepheids.
+(c) Includes geometric correction and CRNL correction (0.0293 ± 0.0023 mag or 3.8 dex) between SMC and extragalactic Cepheids.
+(This table is available in its entirety in machine-readable form.)
+using the same approach as described in Riess et al.
+(2018) and are shown in Fig. 4. We find a mean dif-
+ference of -0.002, -0.005 and 0.010 mag and standard
+deviations of 0.09, 0.25 and 0.15 mag in F 160W , F 555W
+and F 814W respectively. For comparison, R19 found
+differences of -0.001, -0.048 and -0.013 mag with stan-
+dard deviations of 0.11, 0.29 and 0.17 mag in F 160W ,
+F 555W and F 814W respectively.
+4. PERIOD-LUMINOSITY RELATIONS
+4.1. SMC P–L relations
+The final intensity averaged magnitudes are listed in
+Table 2. We combine the three filters to construct the
+Wesenheit index mW H defined as:
+mW H = F 160W − 0.386 (F 555W − F 814W ) (2)
+where the color coefficient 0.386 is derived from the Fitz-
+patrick (1999) reddening law assuming RV = 3.3, fol-
+lowing Riess et al. (2022a). Another secondary quantity
+used in this work is the optical Wesenheit index, derived
+under the same assumptions as:
+mW I = F 814W − 1.19 (F 555W − F 814W ) (3)
+We correct for the count rate non-linearity (CRNL)
+of the WFC3/IR detector, seen as a dimming of fainter
+sources, which results from photons at low count rates
+being detected less efficiently than photons at high count
+rate (0.0077 ± 0.0006 mag/dex, Riess et al. 2019b): we
+add 0.0293 ± 0.0023 mag to F 160W measurements,
+corresponding to a 3.8 dex flux ratio1 between SMC
+Cepheids and Cepheids observed in SN Ia host galaxies
+and NGC 4258. By convention, this is applied to anchor
+Cepheids rather than those in SN Ia hosts. We also add
+a small corrective term to account for depth effects in
+the SMC (see 4th column in Table 2). This geometric
+correction is discussed in details in §4.2. Finally, we fol-
+low R19 and account for the width of the instability strip
+by adding the following quantities in quadrature to the
+magnitude uncertainties: 0.07 mag, 0.08 mag, 0.09 mag,
+0.14 mag and 0.22 mag in mW H , mW I , F 160W , F 814W ,
+and F 555W respectively.
+We adopt a P–L slope of −3.26 mag/dex in mW H from
+R19 for consistency, and fit the P–L intercept with a
+Monte Carlo algorithm. Following R19 we perform a
+sigma-clipping with a threshold of 2.75σ from Chau-
+venet’s criterion. After rejecting one outlier (OGLE-
+1455, found at 3.4σ), we obtain a P–L scatter of
+0.1017 mag (after including the geometry correction de-
+scribed in §4.2 and Eq. 6). The dispersion is slightly
+higher than in the LMC which we attribute to an ∼0.05
+mag dispersion along the line of sight, uncorrected by
+our simple geometric model, and we combine that in
+quadrature to the errors for the final errors. The P–L
+relation is shown in Fig. 5, together with postage-stamp
+1 R19 assumed a 4 dex flux ratio between LMC Cepheids (H ∼
+13 mag) and the sky-dominated Cepheids observed in SNe Ia
+hosts and NGC 4258 (H ∼ 23 mag): the flux is defined as F =
+10(25−m)/2.5 so FLM C = 63, 000 and FN 4258 = 6.3. The flux
+ratio is therefore 104, hence 4 dex. For SMC Cepheids (H ∼ 13.5
+mag) we follow the same procedure and obtain FSM C = 39, 810,
+therefore a flux ratio of 103.8, hence 3.8 dex.
+8 Breuval L., et al.
+Figure 5. P–L relation in the mW H Wesenheit index for our sample of SMC Cepheids. Postage stamps in F 160W are displayed
+for a number of Cepheids with increasing periods: the stamps are on the same scale with a size of 1.5′′ , and the red circles are
+the 3 pixel apertures. An example of light curve fit is shown for the longest-period Cepheid (OGLE-1797) in the three filters.
+The outlier (OGLE-1455 at 3.4σ) is shown with a red cross symbol.
+cutout images of Cepheids in F 160W , as well as an ex-
+ample of light curve fit. Thanks to the higher resolu-
+tion of HST and to the use of a Cepheid sample in the
+SMC core, we avoid crowding and depth effects and ob-
+tain a P–L dispersion that is significantly lower than the
+ground-based P–L relation derived by the OGLE collab-
+oration in the WV I index (0.155 mag, Soszy´nski et al.
+2015, thus far the tightest P–L relation in the SMC, ).
+The P–L relations obtained in F 160W , F 555W ,
+F 814W , mW H and mW I are shown in Fig. 6, where the
+slopes are fixed to the R19 values. Table 3 gives the free
+slopes derived from our sample and the P–L intercepts
+obtained with the fixed slopes from R19. The mW H free
+slope is −3.31 ± 0.05 mag/dex, consistent to within 1σ
+with the −3.26 slope from R19. In the other filters, our
+slopes are also in excellent agreement with the slopes
+from R19. Recent studies have suggested a possible
+break in the P–L relation (Bhardwaj et al. 2016; Kodric
+et al. 2018; Bhardwaj 2020): with this low-dispersion
+data we find no evidence for a break in the P–L relation
+in the LMC and SMC as presented in Appendix A.
+The mW H Wesenheit index defined in Eq. 2 is con-
+structed assuming the Fitzpatrick (1999) reddening law
+with RV = 3.3, which gives a coefficient of R = 0.386.
+However Gordon et al. (2003) suggested that the SMC
+dust corresponds better to RV = 2.74, which would
+give R = 0.362. Using this alternate definition of mW H
+yields a slightly larger P–L scatter of 0.1024 mag. Using
+RV = 3.3 ensures consistency with the SH0ES distance
+Table 3. Cepheid P–L relations from HST photometry in
+the SMC: mW H = α log P + β.
+Filter α α β σ
+(this work) (R19)
+F 555W −2.65 ± 0.13 −2.76 ± 0.13 18.263 ± 0.031 0.287
+F 814W −2.98 ± 0.09 −2.96 ± 0.09 17.467 ± 0.021 0.195
+F 160W −3.22 ± 0.06 −3.20 ± 0.04 16.795 ± 0.013 0.122
+mW I −3.37 ± 0.06 −3.31 ± 0.04 16.632 ± 0.013 0.121
+mW H −3.31 ± 0.05 −3.26 ± 0.04 16.467 ± 0.011 0.102
+Notes: Intercepts in column 4 are derived with slopes fixed to
+R19 values obtained in the LMC (column 3). All intercepts
+include geometric corrections and intercepts in F 160W and mW H
+include CRNL.
+ladder based on the same assumption. As explained in
+Appendix D of Riess et al. (2022a), it is not valid to
+use a different reddening law in different hosts by vary-
+ing R: this would require to first derive a period-color
+relation for SMC Cepheids and to remove the intrinsic
+color from the apparent color. While RV = 3.3 corre-
+sponds to a reddening term at 1.6 µm of 0.386 for the
+Fitzpatrick (1999) law, RV = 2.7 corresponds to 0.362,
+a difference of only 0.02. After removing an intrinsic,
+period-color relation, the color excess, E(V − I) for the
+SMC is ∼ 0.1 mag so that a change in the reddening law
+would shift our results by only ∼ 0.002 mag.
+A New Anchor for the SH0ES Distance Ladder 9
+0.8 1.0 1.2 1.4 1.6
+log P (days)
+8
+10
+12
+14
+16 mag
+mW H -4
+mW I -2
+F160W
+F555W
+F814W
+( =  0.075)
+( =  0.085)
+LMC Cepheids from HST
+N=68, Riess+2019
+0.8 1.0 1.2 1.4 1.6
+log P (days)
+8
+10
+12
+14
+16 mag
+mW H -4
+mW I -2
+F160W
+F555W
+F814W
+SMC Core Cepheids from HST
+N=87, R < 0.6 deg
+( =  0.102)
+( =  0.121)
+Figure 6. Period-Luminosity relations in the 3 HST filters and in the mW I and mW H Wesenheit indices. Outliers are shown by
+small “x” symbols and are excluded from the fit. Left and right panels show the Period-Luminosity relations in the LMC (Riess
+et al. 2019a) and SMC respectively.
+4.2. The geometry of the SMC
+The SMC is known to have an elongated structure,
+which can complicate distance measurements based on
+this dwarf galaxy. From a sample of Cepheids, Mathew-
+son et al. (1988) found a significant line-of-sight depth of
+about 20 kpc (compared to its distance of ∼ 62 kpc) and
+that the northeastern section of the bar is 10 − 15 kpc
+closer than the southern section. Nidever et al. (2013)
+also showed that the optical depth in the eastern part
+of the SMC is two times higher than in the western
+part, and that the eastern part comprises of two groups
+of stars with different mean distances. More recently,
+Murray et al. (2024) presented evidence that the SMC
+is actually composed of two substructures with distinct
+chemical compositions separated by ∼ 5 kpc along the
+line of sight. As a result, any study of SMC Cepheids
+must include their non-negligible spread in distance.
+In order to mitigate the impact of its elongated shape,
+a first solution is to limit the sample to a narrow region
+in the SMC core. Breuval et al. (2022) showed that the
+ideal region (based on reducing the P–L scatter) is a ra-
+dius of 0.6 deg around the SMC center, where the num-
+ber of Cepheids is still sufficient to populate the P–L
+relation, while the residual geometry effects are mini-
+mized. For example, adopting a Cepheid sample in a
+region of R = 0.6 deg compared to a larger region of
+R = 2.5 deg reduces the P–L scatter by 0.02 mag (see
+Fig. 1) and changes the P–L intercept by 0.050 mag, so
+that extending to the larger radius results in a significant
+degradation in accuracy with respect to the uncertain-
+ties reported in Table 3.
+Additionally, one can attempt to correct for the dif-
+ferential depths of each Cepheid by adopting a planar
+model for the SMC. For example, Breuval et al. (2021,
+2022) corrected for the SMC depth by adopting the
+planar model described by DEBs from Graczyk et al.
+(2020). The corrected distance to each Cepheid is:
+d(x, y) = +3.086 x − 4.248 y + dSMC (4)
+where (x, y) are the cartesian coordinates of the
+Cepheids obtained from their equatorial coordinates
+(α, δ) (see Breuval et al. 2021, §3.3 for the transforma-
+tions), considering the SMC center at (12◦.54, −73◦.11)
+from Ripepi et al. (2017), and dSMC = 62.44 ± 0.47 ±
+0.81 kpc is the mean SMC distance from Graczyk et al.
+(2020), based on DEBs. The geometric correction we
+apply to each Cepheid, magcorr, is derived with:
+magcorr = 5 log10(dSMC/d(x, y)) (5)
+10 Breuval L., et al.
+This correction is valid as long as Cepheids and DEBs
+share the same center and have a similar spatial dis-
+tribution, which is true near the SMC center but may
+not be the case in the outskirts. Also, the SMC ge-
+ometry is not planar at large scales, but this is a good
+approximation for the core region. Using this correction
+we obtain a P–L scatter of 0.1022 mag. We then re-
+fined this geometry model based on our own sample of
+Cepheids: we varied both coefficients and retained the
+solution that minimizes the χ2 of the P–L relation. We
+find an optimal geometry of:
+d(x, y) = +3.480 x − 2.955 y + dSMC (6)
+which gives a final P–L scatter of 0.1017 mag. We note
+that the uncertainties of the geometric coefficients are
+of the order of ±1. The difference between the coeffi-
+cients in Eq. 4 and 6 can be attributed to the use of
+different tracers (15 DEBs vs 88 Cepheids) and to their
+different distributions (extended SMC vs core region).
+These corrections have a mean value of −0.003 mag and
+a dispersion of 0.047 mag, with a minimum and maxi-
+mum of −0.088 mag and +0.098 mag. We can verify the
+agreement of our geometric model with the literature by
+overplotting it with Fig. 4 from Graczyk et al. (2020),
+based on the distribution of 15 SMC DEBs, with Fig.
+6 from Scowcroft et al. (2016), obtained from Spitzer
+mid-infrared observations of 90 Cepheids, with Fig. 17
+from Ripepi et al. (2017), from the NIR light curves of
+4793 SMC Cepheids observed with the VMC survey, and
+with Fig. 15 from Jacyszyn-Dobrzeniecka et al. (2016)
+derived from optical light curves of 2646 fundamental-
+mode Cepheids from the OGLE survey. These compar-
+isons show a good agreement between Eq. 6 and the
+SMC core-region geometry in these studies.
+In this section, we showed how the considerable line-
+of-sight depth of the SMC might affect the P–L relation
+and how we can greatly mitigate its impact for distance
+measurements. The SMC geometry is still challenging
+and its structure must be better understood (Murray
+et al. 2024), but for our purposes, the present Cepheid-
+based geometric corrections and core-region sample
+best reduce their impact, and any residual effects only
+slightly increase the P–L scatter.
+4.3. Calibration of the metallicity effect in the
+HST/WFC3 photometric system
+The Cepheid metallicity effect has been a source of in-
+tense study for over three decades (Freedman & Madore
+1990; Freedman et al. 2001; Sakai et al. 2004). In
+previous-generation measurements of the Hubble con-
+stant, which relied on comparisons between Cepheids
+0.7
+ 0.6
+ 0.5
+ 0.4
+ 0.3
+ 0.2
+ 0.1
+ 0.0 0.1
+Metallicity effect  (mag/dex)
+Riess+2009
+Riess+2011
+Anderson+2016
+Riess+2016
+Riess+2019
+Riess+2021
+Ripepi+2021
+Breuval+2022
+De Somma+2022
+Riess+2022
+Cruz-Reyes+2023
+Molinaro+2023
+Bhardwaj+2023
+Trentin+2024
+This work
+mW H
+Kennicutt+1998
+Freedman+2001
+Groenewegen+2004
+Sakai+2004
+Storm+2004
+Macri+2006
+Saha+2006
+Scowcroft+2009
+Storm+2011
+Anderson+2016
+Gieren+2018
+Breuval+2021
+Breuval+2022
+De Somma+2022
+Riess+2022
+Cruz-Reyes+2023
+Bhardwaj+2023
+This work
+mW I
+Diff. galaxies
+Gradients
+MW Gaia
+BW distances
+Theory
+Figure 7. Metallicity dependence in mW H and mW I from
+the literature. Some issues were identified in the results by
+Wielg´orski et al. (2017), Freedman & Madore (2011) and
+Madore & Freedman (2024), therefore they are not shown in
+this figure (see discussion in Breuval et al. 2022, section 5.5).
+The blue region covers −0.15 to −0.30 mag/dex, where most
+values are found.
+in the low-metallicity LMC and metal-rich spirals, this
+term played a significant role. More recent determi-
+nations of H0 make use of metal-rich calibrations in
+NGC 4258 and from improved Milky Way parallaxes,
+thus reducing the full impact of this term to < 1
+km/s/Mpc.
+In the regime covered by SNe Ia host galaxies (with
+metallicities between Milky Way and LMC Cepheids),
+there is a consensus for its sign and value (γ ∼
+−0.25 mag/dex) thanks to improved distances and
+metallicities (Breuval et al. 2022; Romaniello et al. 2022;
+Trentin et al. 2024, see Figure 7 for a literature sum-
+mary). However, this term is still relatively weakly con-
+strained in the metal-poor regime ([Fe/H] < −0.5 dex).
+Its calibration over a larger metallicity range requires
+combining precise abundance measurements in multi-
+A New Anchor for the SH0ES Distance Ladder 11
+0.8
+ 0.6
+ 0.4
+ 0.2
+ 0.0 0.2
+[Fe/H] (dex)
+2.8
+2.7
+2.6
+2.5
+2.4
+WH P-L intercept (mag)
+HST:
+MW  (N=67)
+LMC (N=70)
+SMC (N=87)
+Cepheid Intercept Calibrated with Geometric Distances
+= 0.338 ± 0.067 mag/dex (Trentin+2024)
+= 0.234 ± 0.052 mag/dex (This work)
+Figure 8. Wesenheit mW H P–L intercept in absolute mag-
+nitudes (at log P = 0) in the Milky Way, LMC and SMC
+based on HST photometry (red, blue and green circles re-
+spectively). The orange and black lines represent the metal-
+licity effect from Trentin et al. (2024) (their Table 4, line 41)
+and from the present work. The shaded regions show the
+uncertainties in γ [Fe/H].
+ple galaxies with homogeneous Cepheid photometry in
+a consistent system. Our sample of SMC Cepheids with
+HST/WFC3 photometry represents a unique opportu-
+nity to extend the calibration of this effect over a metal-
+licity range twice as large as that currently available.
+We compile three samples all with identical-system
+photometry:
+• 67 Milky Way Cepheids from Riess et al. (2021),
+• 70 LMC Cepheids from R19,
+• 87 SMC Cepheids from the present paper.
+The size of the three samples is defined by the number
+of Cepheids with HST/WFC3 photometry after exclud-
+ing outliers. The Cepheids of the Milky Way in our
+sample are all located in the vicinity of the Sun. Their
+metallicities are taken from Bhardwaj et al. (2023 ) and
+were measured recently using high-resolution spectra ob-
+tained with ESPaDOnS on CFHT. The mean metallicity
+of our Milky Way sample is +0.033 ± 0.013 dex and the
+dispersion is 0.11 dex.
+For LMC Cepheids, we adopt the metallicities from
+Romaniello et al. (2022) obtained with UVES on
+the ESO VLT, with individual measurements for all
+Cepheids and a mean value of [Fe/H] = −0.409 ±
+0.003 dex, and a dispersion of 0.076 dex. Finally,
+we adopt the new metallicity measurements of SMC
+Cepheids from Romaniello et al. (2024, in prep.) which
+include 44 Cepheids of our sample, an average value
+of [Fe/H] = −0.785 ± 0.012 dex, with a dispersion of
+0.082 dex, and we adopt this average value also for the
+other SMC Cepheids not included in Romaniello et al.
+sample.
+To measure the metallicity effect, we first derive the
+absolute magnitude for each Cepheid of the three sam-
+ples assuming their geometric distances (Gaia DR3 par-
+allaxes of Milky Way Cepheids, including the Linde-
+gren et al. (2021) zero-point and the residual 14 µas
+correction determined from Cepheids by Riess et al.
+(2021), and the LMC and SMC distances from eclips-
+ing binaries, respectively 49.59 ± 0.09 ± 0.54 kpc and
+62.44 ± 0.47 ± 0.81 kpc). We fit the absolute P–L rela-
+tion in each galaxy with a fixed slope of −3.26 mag/dex.
+Then, we fit a linear relation between the intercept and
+the mean metallicity (see method in Breuval et al. 2022):
+β = γ [Fe/H] + δ (solid black line in Fig. 8). In the
+three galaxies, we conservatively assume an uncertainty
+of 0.05 dex for the mean metallicity and we add the dis-
+tance uncertainties in quadrature to the intercept errors.
+We obtain γ = −0.234±0.052 mag/dex, where the uncer-
+tainties are estimated via a Monte Carlo algorithm. In
+the optical (mW I ), we find γ = −0.264 ± 0.058 mag/dex.
+These values are consistent with other recent measure-
+ments based on a combination of geometric distances in
+the Milky Way and Magellanic Cloud Cepheids (Breuval
+et al. 2021, 2022; Bhardwaj et al. 2023; Cruz Reyes &
+Anderson 2023). Independent calibrations of the metal-
+licity effect based exclusively on several hundred Milky
+Way Cepheids with Gaia DR3 parallaxes from the C-
+MetaLL project2 including new spectra of very metal
+poor Cepheids have resulted in stronger effects of the
+order of −0.4 mag/dex in the Gaia WG, optical WV I
+and NIR WV K , WJK Wesenheit indices (Ripepi et al.
+2022; Trentin et al. 2024; Bhardwaj et al. 2024). How-
+ever, when applying the parallax zero-point counter-
+correction of 14 µas from Riess et al. (2021), they re-
+cover the canonical result of ∼ −0.25 to −0.35 mag/dex
+in the specific WH Wesenheit index used in the SH0ES
+distance ladder and good agreement with the LMC DEB
+distance (see Trentin et al. 2024, Figure 16).
+An outlier to this consensus comes from one study
+by Madore & Freedman (2024), which selects Cepheid
+calibrations from tip of the red giant branch (TRGB)
+distances rather than the geometric anchors, comparing
+28 hosts and concluding that γ ∼ 0 for mW I . However,
+measuring the Cepheid metallicity effect by compar-
+ing Cepheid and TRGB distances requires that TRGB
+distances be independent of metallicity, which is not
+certain (see for example Wu et al. 2023). More im-
+portantly, the Cepheid data for this study rely heavily
+2 https://sites.google.com/inaf.it/c-metall/home
+12 Breuval L., et al.
+Table 4. Uncertainty in H0 from leading term, geometric calibration of Cepheids (%).
+Term Description Riess et al. (2022a,b) This paper
+LMC MW N4258 LMC MW N4258 SMC
+σµ, anchor Anchor distance 1.2 0.8 (a) 1.5 (b) 1.2 0.8 (a) 1.5 (b) 1.5
+σPL, anchor Mean of P–L in anchor 0.4 ... 1.0 0.4 ... 1.0 0.5
+Rσλ,1,2 Zeropoints, anchor-to-host 0.1 0.1 (a) 0.0 0.1 0.1 (a) 0.0 0.1
+σZ Cepheid metallicity, anchor-hosts 0.4 0.15 0.15 0.4 0.1 0.1 0.5
+Subtotal per anchor 1.4 0.8 1.8 1.4 0.8 1.8 1.7
+| {z } | {z }
+First Rung Total 0.65 0.60
+Note— (a) Includes both field Cepheids and cluster Cepheids; (b) Reid et al. (2019).
+on older and relatively inhomogeneous data sources
+(21 different photometric systems) and smaller samples
+which have been superceded in recent studies. Com-
+pared to the combination of HST measurements of
+Cepheids in the SMC, LMC and Milky Way (which
+produced γ = −0.264 ± 0.058 mag/dex for mW I here),
+Madore & Freedman (2024) exclude all Milky Way
+Cepheids (and Gaia parallaxes) and find at face value
+γ = −0.096 mag/dex between the SMC and LMC, only
+half the size of our result. However, their SMC sample
+is based on only 9 fundamental-mode Cepheids, while
+the OGLE survey provides more than 2,300 Cepheids
+in the SMC (Soszy´nski et al. 2015, or the 88 here iden-
+tically calibrated to those in the LMC and MW). Some
+of the evidence for their low absolute value of γ is based
+on the four hosts with the lowest metallicity, namely
+Sextans A and B, WLM and IC 1613; for these, the
+Cepheid metallicity estimate of ∼ −1.3 dex is based
+on the host metallicity (Sakai et al. 2004). Spectra of
+young massive stars in WLM (-0.5 to -1.0 dex with a
+mean of -0.87 dex, Urbaneja et al. 2008) are more metal
+rich than that value of -1.3 dex used for that host. If the
+metallicities of new massive stars like Cepheids in these
+metal poor hosts are greater than the host mean, this
+would lead to an underestimate of the metallicity term.
+Obtaining spectra of Cepheids in these hosts would be
+warranted to resolve the issue. Our calibration of the
+metallicity effect, based on direct measurements for a
+large number of Cepheids, is in good agreement with
+previous distance-ladder studies by the SH0ES team
+and other independent works (see Fig. 7).
+5. THE HUBBLE CONSTANT
+Since Riess et al. (2022a), there have been several
+updates that could lead to an improved local measure-
+ment of H0. These include the cluster Cepheids from
+Riess et al. (2022b), the pairwise SNe Ia covariance
+analysis based on spectral similarities from Murakami
+et al. (2023), and the revised metallicity measurements
+from Bhardwaj et al. (2023). With the results presented
+here, we are now able to include the SMC as a bona fide
+fourth anchor of the distance ladder, in addition to (1)
+Gaia DR3 parallaxes of Milky Way Cepheids and Clus-
+ter Cepheids (Riess et al. 2021, 2022b), (2) late-type
+DEBs in the LMC (Pietrzy´nski et al. 2019; Riess et al.
+2019a), and (3) the water-maser host galaxy NGC 4258
+(Reid et al. 2019). The SMC satisfies the two criteria
+established in Riess et al. (2022a) for the other 3 an-
+chors: a geometric distance determination and Cepheid
+photometry measured on a homogeneous HST photo-
+metric system. We combine the 88 core SMC Cepheids
+measured here, the DEB distance from Graczyk et al.
+(2020), and SMC Cepheid metallicity measurements
+from Romaniello et al. (2024, in prep.) using the same
+formalism presented in Riess et al. (2022a). We find
+H0 = 73.17 ± 0.86 km s−1 Mpc−1, a 1.2% determi-
+nation of the Hubble constant including systematic
+uncertainties. As shown in Table 4, including the SMC
+reduces the error in the first rung from 0.65% to 0.60%.
+This reduction is slightly less than what would occur
+if all anchors had equal weight; however, the combined
+constraints from Gaia MW field and cluster-hosted
+Cepheids have nearly double the precision of the SMC.
+Somewhat greater leverage comes from the inclusion of
+the SMC in the global determination of the metallicity
+term due to its low metallicity. With the SMC, the
+global fit of the distance ladder yields a metallicity de-
+pendence of γ (mW H ) = −0.190 ± 0.047 mag/dex. This
+represents a 30% improvement over the uncertainty of
+±0.067 mag/dex obtained without the SMC3. Unlike in
+3 We note for completeness that the lower metallicity uncertainty
+was already included in R22 thanks to the combined use of SMC
+and LMC ground-based data on the same photometric system,
+but without the value of the Cepheid geometric calibration.
+A New Anchor for the SH0ES Distance Ladder 13
+Table 5. SMC Period-Luminosity relations from the literature.
+Filter Def. Reference Slope Intercept σ N Rmax Telescope
+(mag/dex) (mag) (mag) (deg)
+V Soszy´nski et al. (2015) −2.898±0.018 17.984±0.008 0.266 4747 3 (98%) Warsaw telescope,
+I Soszy´nski et al. (2015) −3.115±0.015 17.401±0.007 0.215 4940 6 (100%) Las Campanas ground
+mW I, grd (a) Soszy´nski et al. (2015) −3.460±0.011 16.493±0.005 0.155 4743 Observatory
+G Ripepi et al. (2023) −2.830±0.033 17.757±0.026 0.251 843 3 (99%) Gaia space
+mW G (b) Ripepi et al. (2023) −3.382±0.021 16.592±0.017 0.156 839 5 (100%)
+J Ripepi et al. (2017) −3.070±0.026 16.778±0.021 0.196 821
+KS Ripepi et al. (2017) −3.224±0.023 16.530±0.018 0.167 821 3 (98%) ESO/VISTA ground
+mW J K (c) Ripepi et al. (2017) −3.334±0.021 16.363±0.017 0.158 821 6.5 (100%) telescope
+mW V K (d) Ripepi et al. (2017) −3.291±0.021 16.375±0.017 0.155 821
+[3.6 µm] Scowcroft et al. (2016) −3.306±0.050 16.492±0.017 0.161 90 3 (98%) Spitzer space
+[4.5 µm] Scowcroft et al. (2016) −3.207±0.060 16.357±0.018 0.164 90 6.5 (100%)
+mW I (e) This work −3.31±0.04 16.632±0.013 0.121 87 0.6 Hubble space
+mW H (f) This work −3.26±0.04 16.467±0.011 0.102 87 0.6
+(a): mW I, grd = I − 1.55 (V − I), (b): mW G = G − 1.90 (BP − RP ), (c): mW J K = K − 0.69 (J − K), (d): mW V K = K − 0.13 (V − K),
+(e): mW I = F 814W − 1.19 (F 555W − F 814W ), (f ): mW H = F 160W − 0.386 (F 555W − F 814W ).
+§4.3, here we use a covariance matrix to take into ac-
+count that the LMC and SMC geometric distances have
+a common systematic error (their relative distance is
+measured better than their individual distances), which
+helps constrain the difference in Cepheid brightness. We
+note that the global metallicity scale used in the SH0ES
+distance ladder is based on [O/H], rather than [Fe/H] as
+used in the previous section. This is most relevant when
+including low-metallicity hosts like the SMC, with their
+enhanced α/Fe abundances; [O/Fe] is ∼ 0.2 for the SMC
+Cepheids (Romaniello et al. 2024, in prep.), higher than
+the value of ∼ 0.06 seen at higher metallicities such as
+in the MW (e.g. Luck & Lambert 2011). This somewhat
+compresses the [O/H] scale versus [Fe/H], leading to a
+smaller (in absolute value) metallicity term than from
+the earlier sections. With the SMC as the only anchor
+for the distance ladder, we obtain H0 = 74.1 ± 2.1 km
+s−1 Mpc−1, which shows the good consistency of the
+SMC with the other three anchors.
+6. DISCUSSION
+We presented the first photometric measurements of
+SMC Cepheids with the Hubble Space Telescope Wide
+Field Camera 3, using the same photometric system as
+the rest of the SH0ES distance scale. Combining the
+high resolution of HST with a sample of 88 Cepheids in
+the core of the SMC, we mitigate the impact of crowd-
+ing and of the SMC line-of-sight depth, and obtain the
+lowest dispersion for the Cepheid P–L relation in this
+galaxy to date: σ = 0.102 mag. Some recent P–L re-
+lations from the literature obtained in different photo-
+metric systems and filters are listed in Table 5. Thanks
+to the low metallicity of SMC Cepheids, we calibrate
+the metallicity dependence of Cepheids on a range twice
+larger than previous studies and we find good agreement
+with the literature with γ = −0.234 ± 0.052 mag/dex,
+based on direct [Fe/H] measurements of Cepheids in the
+Milky Way, LMC and SMC. The global fit of the SH0ES
+distance ladder based on [O/H] metallicities gives a simi-
+lar value, γ = −0.190±0.047 mag/dex. Since the [Fe/H]
+scale is more relevant to nearby galaxies like the SMC,
+we adopt −0.234±0.052 mag/dex as our final value. Al-
+though it would not directly impact the H0 value, this
+dependence needs to be better calibrated in the most
+metal-poor regime beyond [Fe/H] < −0.7 dex, for ex-
+ample in Local Group galaxies WLM, IC1613, Sextans
+A and B using spectra of Cepheids there, and where
+possible non-linearities could be investigated.
+In this work, we provide a new calibrating galaxy for
+the first rung of the distance scale with the first HST
+photometric measurements of SMC Cepheids, increas-
+ing the number of geometric anchors from three to four,
+which yields a 1.2% measurement of the Hubble con-
+stant, H0 = 73.20 ± 0.86 km s−1 Mpc−1. The small
+number of geometric anchors is primarily due to limita-
+tions in the late-type DEBs method. Eclipsing binaries
+are rare systems in which two stars orbit each other,
+and their orbital plane is aligned in such a way that
+each star regularly passes in front of the other, causing
+an eclipse. They present regular light curves with well-
+defined eclipses. “Detached” systems are well-separated
+and do not transfer mass between the components. The
+distance to these systems can be derived by compar-
+14 Breuval L., et al.
+ing the components’ linear diameter, obtained from the
+analysis of the photometric and radial velocity curves
+(Guinan et al. 1998; Fitzpatrick et al. 2003), and their
+angular diameter, measured using surface brightness-
+color relations. While late-type DEBs provide unprece-
+dented precision for the geometric distances to the LMC
+and SMC, the downside of this method is that these sys-
+tems are faint, typically mV ∼ 18 mag at the distance
+of the SMC, which makes them difficult to observe in
+more distant galaxies. On the other hand, early-type
+DEBs are much brighter and can reach ∼1 Mpc, in-
+cluding nearby galaxies M31 and M33 (Bonanos et al.
+2006). The method to measure early-type DEB dis-
+tances is different from the late-types as it relies on
+model atmosphere theory, instead of the 1% precision
+surface brightness color relation used for late-type DEBs
+in the LMC and calibrated empirically (Pietrzy´nski et al.
+2019). This relation is not yet calibrated on the color
+range applicable to early-type DEBs (−1 < V − K < 0).
+New results are expected from ongoing interferometric
+measurements of angular diameters for these stars in
+the solar neighborhood and in the LMC (Challouf et al.
+2014; Taormina et al. 2020). This work is extremely im-
+portant, as future geometric distances to M31 and M33
+will directly provide two additional anchors for the dis-
+tance scale, where Cepheid photometry is already avail-
+able in the HST/WFC3 photometric system (Li et al.
+2021; Breuval et al. 2023).
+Although the LMC geometric distance from
+Pietrzy´nski et al. (2019) remains the best DEB-based
+calibrator for the first rung of the distance ladder, the
+low metallicity and the large number of Cepheids in its
+core region make the SMC a powerful addition to the
+set. The SMC also has a historical importance as it is
+the galaxy where the P–L relation was first discovered
+and established by Henrietta Leavitt (Leavitt & Pick-
+ering 1912). Our consistent photometric measurements
+of Cepheids in the core of the SMC fall well within the
+distance ladder established from the three other anchor
+galaxies. With the addition of the SMC as a fourth
+anchor, the late universe measurement of the Hubble
+constant from the distance ladder moves closer to the
+goal of 1% accuracy.
+ACKNOWLEDGEMENTS
+We are grateful to the OGLE team for providing us
+with the most recent light curves for our sample of SMC
+Cepheids. We thank Erasmo Trentin and the C-MetaLL
+team for sharing their sample of Milky Way Cepheids.
+L.B. would like to thank Boris Trahin, Laura Herold,
+Siyang Li, Javier H. Minniti, and Richard I. Ander-
+son for helpful discussions. Support for this work was
+provided by the National Aeronautics and Space Ad-
+ministration (NASA) through program No. GO-17097
+from the Space Telescope Science Institute (STScI),
+which is operated by AURA, Inc., under NASA contract
+No. NAS 5-26555. This research is based primarily on
+observations with the NASA/ESA Hubble Space Tele-
+scope, obtained at STScI, which is operated by AURA,
+Inc., under NASA contract No. NAS 5-26555. This
+research was funded in part by the National Science
+Centre, Poland, grant no. 2022/45/B/ST9/00243. This
+research was supported by the Munich Institute for
+Astro-, Particle and BioPhysics (MIAPbP), which is
+funded by the Deutsche Forschungsgemeinschaft (DFG,
+German Research Foundation) under Germany’s Ex-
+cellence Strategy – EXC-2094 – 390783311. The data
+presented in this paper were obtained from the Mikul-
+ski Archive for Space Telescopes (MAST) at the Space
+Telescope Science Institute. The specific observations
+analyzed can be accessed via doi:10.17909/08t1-3x45.
+A New Anchor for the SH0ES Distance Ladder 15
+APPENDIX
+A. A BREAK IN THE CEPHEID P–L RELATION?
+Here we investigate the presence of a possible discontinuity in the P–L slope (see Bhardwaj et al. 2016). In the
+present SMC sample and in the LMC sample from R19, we separate Cepheids into two subsamples, short vs long period
+Cepheids. For different values of the pivot period comprised between log P = 0.85 and log P = 1.5 (which leaves at
+least 10% of the initial sample on each side of the pivot period), we fit the P–L slope with a Monte Carlo algorithm
+taking into account the error bars and we compare the P–L slope in both regimes. Fig. 9 shows the difference between
+the long- and short-period slopes divided by their errors in quadrature at different pivot periods. The LMC and SMC
+samples are represented in blue and green, and show a maximum slope difference of 1.8σ and 2.4σ respectively.
+However, we must account for the random chance of finding a break at any log P . In order to estimate the likelihood
+of a break in the P–L relation , we create 10,000 random fake Cepheid samples (N=88) with the same P–L scatter as
+in the SMC (σ = 0.102 mag). For each fake sample, we fit the P–L slope at short and long periods for a break located
+at different log P values. For these different log P breaks, we record the highest slope difference and we find that 51%
+of the time, the slopes at short vs long periods disagree to higher than 2.4 times the combined error (i.e. higher than
+the value we found in the SMC). Fig. 9 also shows the 99% and 95% confidence limits of this test. We conclude that
+it is not surprising to measure a change in the P–L slope which is 2.4 times the error as we find in the SMC because
+there is so much freedom in the search for a break. Regarding the position of the break, there is no preferred value
+but it occurs slightly more often at short (log P ∼ 0.95) and long (log P ∼ 1.45) periods, also where the samples are
+more limited. In conclusion, we find no evidence of a break in the P–L relation for our sample of LMC or SMC Cepheids.
+0.8 0.9 1.0 1.1 1.2 1.3 1.4 1.5
+log P break (days)
+0
+1
+2
+3
+4 slope / 
+8+60
+20+67
+61+778+9
+35+33
+37+50
+break 99% confidence limit
+break 95% confidence limit
+LMC
+SMC
+Figure 9. Slope difference between the long and short period regime divided by their errors in quadrature, for different values
+of the pivot period. The numbers N + M give the number of Cepheids in the short (N) and long (M) period subsamples.
+16 Breuval L., et al.
+B. THE SMC STRUCTURE ON SMALLER SCALES
+Fig. 10 shows the effect of including progressively smaller regions in the LMC and SMC samples; although there is
+an apparent decrease in the dispersion in the SMC P–L relation for radii smaller than 0.12 deg, the effect is modest
+and of limited statistical significance. We note that if the geometry of the SMC is akin to a bar, depth effects on scales
+comparable to the bar’s minor axis will remain even for very small regions near the center.
+SMCLMC SMC
+Figure 10. Mean P–L scatter for Cepheid subsamples in different region sizes, in the LMC sample from R19 (left) and our
+SMC sample (right). The mean number of Cepheids are shown in black for a few subsamples. The horizontal dashed line shows
+the scatter of the full Cepheid sample (in the LMC: N = 68, σ = 0.075 mag, in the SMC: N = 87, σ = 0.102 mag).
+REFERENCES
+Bhardwaj, A. 2020, Journal of Astrophysics and
+Astronomy, 41, 23
+Bhardwaj, A., Kanbur, S. M., Macri, L. M., et al. 2016,
+MNRAS, 457, 1644
+Bhardwaj, A., Riess, A. G., Catanzaro, G., et al. 2023,
+ApJL, 955, L13
+Bhardwaj, A., Ripepi, V., Testa, V., et al. 2024, A&A, 683,
+A234
+Bonanos, A. Z., Stanek, K. Z., Kudritzki, R. P., et al. 2006,
+ApJ, 652, 313
+Breuval, L., Riess, A. G., Kervella, P., Anderson, R. I., &
+Romaniello, M. 2022, ApJ, 939, 89
+Breuval, L., Kervella, P., Wielg´orski, P., et al. 2021, ApJ,
+913, 38
+Breuval, L., Riess, A. G., Macri, L. M., et al. 2023, ApJ,
+951, 118
+Challouf, M., Nardetto, N., Mourard, D., et al. 2014, A&A,
+570, A104
+Cioni, M. R. L., Clementini, G., Girardi, L., et al. 2011,
+A&A, 527, A116
+Cruz Reyes, M., & Anderson, R. I. 2023, A&A, 672, A85
+Deb, S., Kurbah, K., Singh, H. P., et al. 2019, MNRAS,
+489, 3725
+Di Valentino, E., Mena, O., Pan, S., et al. 2021, Classical
+and Quantum Gravity, 38, 153001
+Eddington, A. S. 1917, The Observatory, 40, 290
+Fitzpatrick, E. L. 1999, PASP, 111, 63
+Fitzpatrick, E. L., Ribas, I., Guinan, E. F., Maloney, F. P.,
+& Claret, A. 2003, ApJ, 587, 685
+Freedman, W. L., & Madore, B. F. 1990, ApJ, 365, 186
+—. 2011, ApJ, 734, 46
+Freedman, W. L., Madore, B. F., Gibson, B. K., et al. 2001,
+ApJ, 553, 47
+Gaia Collaboration, Brown, A. G. A., Vallenari, A., et al.
+2021, A&A, 649, A1
+Gieren, W., Storm, J., Konorski, P., et al. 2018, A&A, 620,
+A99
+Gordon, K. D., Clayton, G. C., Misselt, K. A., Landolt,
+A. U., & Wolff, M. J. 2003, ApJ, 594, 279
+A New Anchor for the SH0ES Distance Ladder 17
+Graczyk, D., Pietrzy´nski, G., Thompson, I. B., et al. 2020,
+ApJ, 904, 13
+Guinan, E. F., Fitzpatrick, E. L., DeWarf, L. E., et al.
+1998, ApJL, 509, L21
+Hubble, E. 1929, Proceedings of the National Academy of
+Science, 15, 168
+Inno, L., Matsunaga, N., Romaniello, M., et al. 2015, A&A,
+576, A30
+Jacyszyn-Dobrzeniecka, A. M., Skowron, D. M., Mr´oz, P.,
+et al. 2016, AcA, 66, 149
+Kodric, M., Riffeser, A., Hopp, U., et al. 2018, AJ, 156, 130
+Leavitt, H. S. 1908, Annals of Harvard College Observatory,
+60, 87
+Leavitt, H. S., & Pickering, E. C. 1912, Harvard College
+Observatory Circular, 173, 1
+Lemasle, B., Groenewegen, M. A. T., Grebel, E. K., et al.
+2017, A&A, 608, A85
+Li, S., Riess, A. G., Busch, M. P., et al. 2021, ApJ, 920, 84
+Lindegren, L., Bastian, U., Biermann, M., et al. 2021,
+A&A, 649, A4
+Luck, R. E., & Lambert, D. L. 2011, AJ, 142, 136
+Madore, B. F., & Freedman, W. L. 2024, ApJ, 961, 166
+Mathewson, D. S., Ford, V. L., & Visvanathan, N. 1988,
+ApJ, 333, 617
+Momcheva, I. G., van Dokkum, P. G., van der Wel, A.,
+et al. 2017, PASP, 129, 015004
+Murakami, Y. S., Riess, A. G., Stahl, B. E., et al. 2023,
+JCAP, 2023, 046
+Murray, C. E., Hasselquist, S., Peek, J. E. G., et al. 2024,
+ApJ, 962, 120
+Nidever, D. L., Monachesi, A., Bell, E. F., et al. 2013, ApJ,
+779, 145
+Owens, K. A., Freedman, W. L., Madore, B. F., & Lee,
+A. J. 2022, ApJ, 927, 8
+Pietrzy´nski, G., Graczyk, D., Gallenne, A., et al. 2019,
+Nature, 567, 200
+Planck Collaboration, Aghanim, N., Akrami, Y., et al.
+2020, A&A, 641, A6
+Reid, M. J., Pesce, D. W., & Riess, A. G. 2019, ApJL, 886,
+L27
+Riess, A. G., Casertano, S., Yuan, W., et al. 2021, ApJL,
+908, L6
+Riess, A. G., Casertano, S., Yuan, W., Macri, L. M., &
+Scolnic, D. 2019a, ApJ, 876, 85
+Riess, A. G., Narayan, G., & Calamida, A. 2019b,
+Calibration of the WFC3-IR Count-rate Nonlinearity,
+Sub-percent Accuracy for a Factor of a Million in Flux,
+Tech. rep., STScI
+Riess, A. G., Casertano, S., Yuan, W., et al. 2018, ApJ,
+855, 136
+Riess, A. G., Yuan, W., Macri, L. M., et al. 2022a, ApJL,
+934, L7
+Riess, A. G., Breuval, L., Yuan, W., et al. 2022b, ApJ, 938,
+36
+Ripepi, V., Cioni, M.-R. L., Moretti, M. I., et al. 2017,
+MNRAS, 472, 808
+Ripepi, V., Catanzaro, G., Clementini, G., et al. 2022,
+A&A, 659, A167
+Ripepi, V., Clementini, G., Molinaro, R., et al. 2023, A&A,
+674, A17
+Romaniello, M., Riess, A., Mancino, S., et al. 2022, A&A,
+658, A29
+Sahu, K., Baggett, S., & MacKenty, J. 2014, Use of the
+Shutter Blade Side for UVIS Short Exposures,
+Instrument Science Report WFC3 2014-009, 16 pages
+Sakai, S., Ferrarese, L., Kennicutt, Robert C., J., & Saha,
+A. 2004, ApJ, 608, 42
+Sandage, A., Tammann, G. A., & Reindl, B. 2009, A&A,
+493, 471
+Scowcroft, V., Freedman, W. L., Madore, B. F., et al. 2016,
+ApJ, 816, 49
+Soszy´nski, I. 2024, IAU Symposium, 376, 48
+Soszy´nski, I., Udalski, A., Szyma´nski, M. K., et al. 2015,
+AcA, 65, 297
+Taormina, M., Kudritzki, R.-P., Puls, J., et al. 2020, ApJ,
+890, 137
+Trentin, E., Ripepi, V., Molinaro, R., et al. 2024, A&A,
+681, A65
+Urbaneja, M. A., Kudritzki, R.-P., Bresolin, F., et al. 2008,
+ApJ, 684, 118
+Verde, L., Sch¨oneberg, N., & Gil-Mar´ın, H. 2023, arXiv
+e-prints, arXiv:2311.13305
+Wielg´orski, P., Pietrzy´nski, G., Gieren, W., et al. 2017,
+ApJ, 842, 116
+Wu, J., Scolnic, D., Riess, A. G., et al. 2023, ApJ, 954, 87
+Zhevakin, S. A. 1963, ARA&A, 1, 367

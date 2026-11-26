@@ -1,0 +1,28 @@
+{
+  "tag": "baseline20",
+  "names": [
+    "R_n",
+    "R_p",
+    "k_n",
+    "h"
+  ],
+  "n_attempted": 20,
+  "n_success": 20,
+  "n_failed": 0,
+  "wall_time_s": 4.8656415939331055,
+  "mean_time_per_sim_s": 0.32131274938583376,
+  "median_time_per_sim_s": 0.319364070892334,
+  "procs": 2,
+  "I_app": null,
+  "T_amb": 298.15,
+  "V_cut": 3.0,
+  "fixed": {},
+  "tend_range_s": [
+    3600.818732620647,
+    3816.642101416206
+  ],
+  "dT_max_range_K": [
+    3.2861866349715,
+    17.924838412743668
+  ]
+}

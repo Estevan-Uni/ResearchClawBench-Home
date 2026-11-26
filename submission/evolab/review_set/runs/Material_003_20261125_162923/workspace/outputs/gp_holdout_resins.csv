@@ -1,0 +1,13 @@
+model,,name,smiles,tg_exp,tg_md,tg_cal,sigma
+GP dTg | Tanimoto + RBF(MD) + RBF(desc),0,Bisphenol-A diglycidyl ether epoxy or phenoxy resin,*CC(O)COc1ccc(C(C)(C)c2ccc(O*)cc2)cc1,372.0,454.1497,402.2788760214901,24.651339786661875
+GP dTg | Tanimoto + RBF(MD) + RBF(desc),1,Bisphenol-F Diglycidyl Ether Epoxy Resin,*CC(O)COc1ccc(Cc2ccc(O*)cc2)cc1,353.0,390.0528,373.8136002043631,26.11718511608595
+GP dTg | Tanimoto + RBF(MD) + RBF(desc),2,Poly(Bisphenol A terephthalate),*Oc1ccc(C(C)(C)c2ccc(OC(=O)c3ccc(C(*)=O)cc3)cc2)cc1,472.0,529.7707,476.34864526895035,16.318959578205956
+GP dTg | Tanimoto + RBF(MD) + RBF(desc),3,Phenoxy resin,*OCC(O)COc1ccc(C(C)(C)c2ccc(*)cc2)cc1,373.0,407.1822,397.2046439461653,25.7490429660165
+GP dTg | Tanimoto + RBF(MD) + RBF(desc),4,Resin F,*OCC(O)COc1cccc(NC(=O)CCCC(=O)Nc2cccc(*)c2)c1,384.0,468.1414,400.4791083236032,31.912980087767785
+GP dTg | Tanimoto + RBF(MD) + RBF(desc),5,Bisphenol-A polycarbonate,*Oc1ccc(C(C)(C)c2ccc(OC(*)=O)cc2)cc1,423.0,467.7694,422.10076424366406,24.897078589011002
+"GP dTg | Tanimoto(norm. FP), hetero",0,Bisphenol-A diglycidyl ether epoxy or phenoxy resin,*CC(O)COc1ccc(C(C)(C)c2ccc(O*)cc2)cc1,372.0,454.1497,415.27603848134385,37.14952087855055
+"GP dTg | Tanimoto(norm. FP), hetero",1,Bisphenol-F Diglycidyl Ether Epoxy Resin,*CC(O)COc1ccc(Cc2ccc(O*)cc2)cc1,353.0,390.0528,369.39614008940197,37.6965508013625
+"GP dTg | Tanimoto(norm. FP), hetero",2,Poly(Bisphenol A terephthalate),*Oc1ccc(C(C)(C)c2ccc(OC(=O)c3ccc(C(*)=O)cc3)cc2)cc1,472.0,529.7707,492.10052852180513,26.23194971317074
+"GP dTg | Tanimoto(norm. FP), hetero",3,Phenoxy resin,*OCC(O)COc1ccc(C(C)(C)c2ccc(*)cc2)cc1,373.0,407.1822,372.6083760644235,36.807549043362144
+"GP dTg | Tanimoto(norm. FP), hetero",4,Resin F,*OCC(O)COc1cccc(NC(=O)CCCC(=O)Nc2cccc(*)c2)c1,384.0,468.1414,408.7054060920085,45.107899609389634
+"GP dTg | Tanimoto(norm. FP), hetero",5,Bisphenol-A polycarbonate,*Oc1ccc(C(C)(C)c2ccc(OC(*)=O)cc2)cc1,423.0,467.7694,408.07815752214793,35.98908795160488

@@ -1,0 +1,93 @@
+{
+ "frozen_at": "2026-11-25T16:32:22.294499",
+ "note": "Frozen before any label-based evaluate() call on RPE or simulation. Labels (age, phase, batch, true DE, true t) are used only in evaluation and DPT root orientation.",
+ "primary": "DELVE-faithful",
+ "variants": {
+  "DELVE-faithful": {
+   "npc": 20,
+   "k": 10,
+   "n_anchors": 500,
+   "n_rff": 1000,
+   "n_perm": 500,
+   "p_thresh": 0.05,
+   "n_seeds": 5,
+   "consistency": 0.6,
+   "seed_graph_k": 10,
+   "noise_filter": false,
+   "dedup": false,
+   "whiten": false,
+   "noise_q": 99,
+   "dedup_r": 0.9
+  },
+  "+noise-filter": {
+   "npc": 20,
+   "k": 10,
+   "n_anchors": 500,
+   "n_rff": 1000,
+   "n_perm": 500,
+   "p_thresh": 0.05,
+   "n_seeds": 5,
+   "consistency": 0.6,
+   "seed_graph_k": 10,
+   "noise_filter": true,
+   "dedup": false,
+   "whiten": false,
+   "noise_q": 99,
+   "dedup_r": 0.9
+  },
+  "+dedup": {
+   "npc": 20,
+   "k": 10,
+   "n_anchors": 500,
+   "n_rff": 1000,
+   "n_perm": 500,
+   "p_thresh": 0.05,
+   "n_seeds": 5,
+   "consistency": 0.6,
+   "seed_graph_k": 10,
+   "noise_filter": false,
+   "dedup": true,
+   "whiten": false,
+   "noise_q": 99,
+   "dedup_r": 0.9
+  },
+  "+whiten": {
+   "npc": 20,
+   "k": 10,
+   "n_anchors": 500,
+   "n_rff": 1000,
+   "n_perm": 500,
+   "p_thresh": 0.05,
+   "n_seeds": 5,
+   "consistency": 0.6,
+   "seed_graph_k": 10,
+   "noise_filter": false,
+   "dedup": false,
+   "whiten": true,
+   "noise_q": 99,
+   "dedup_r": 0.9
+  }
+ },
+ "sim_overrides": {
+  "n_anchors": 300,
+  "n_perm": 300,
+  "n_seeds": 3
+ },
+ "eval": {
+  "headline_k": 30,
+  "k_grid": [
+   5,
+   10,
+   20,
+   30,
+   50
+  ],
+  "knn_acc_k": 5,
+  "folds": 5,
+  "nmi_clusters_rpe": 4,
+  "nmi_seeds": 5,
+  "dpt_knn": 15,
+  "panel_npc": 10,
+  "root": "medoid (in panel PCA space) of the 2% youngest non-G0 cells (sim: 1% smallest true t)"
+ }
+}

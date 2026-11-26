@@ -1,0 +1,431 @@
+{
+ "global": {
+  "total_gt": -6605.3442,
+  "total_err_quad": 387.3743,
+  "total_err_fullcorr": 1883.0564,
+  "rate_gt": -275.2227,
+  "rate_err": 16.1406,
+  "total_slr_mm": 18.2216,
+  "total_slr_err": 1.0686,
+  "rate_slr_mm": 0.7592,
+  "rate_slr_err": 0.0445,
+  "mwe_rate": -0.4085,
+  "mwe_total": -9.8036,
+  "mwe_total_err": 0.5733,
+  "rate_2000_2011": -235.8772,
+  "err_2000_2011": 21.9728,
+  "rate_2012_2023": -314.5682,
+  "err_2012_2023": 23.6489,
+  "increase_pct": 33.361,
+  "increase_pct_err": 15.9641,
+  "rate_2000_2004": -201.2983,
+  "err_2000_2004": 36.4696,
+  "rate_2005_2009": -247.7463,
+  "err_2005_2009": 31.3231,
+  "rate_2010_2014": -244.523,
+  "err_2010_2014": 32.6798,
+  "rate_2015_2019": -302.1257,
+  "err_2015_2019": 34.8653,
+  "rate_2020_2023": -406.7194,
+  "err_2020_2023": 46.8978,
+  "rate_2000_2019": -248.9233,
+  "err_2000_2019": 16.9461,
+  "rate_2000_2018": -237.7659,
+  "err_2000_2018": 17.3436,
+  "rate_2003_2018": -252.2821,
+  "err_2003_2018": 18.5108,
+  "accel_gt_yr2": -9.4585,
+  "accel_se": 2.4046,
+  "accel_wls": -7.8099,
+  "accel_gt_yr_per_decade": -94.5852,
+  "accel_se_decade": 24.0465,
+  "record_years": [
+   {
+    "year": 2023,
+    "gt": -568.5798,
+    "err": 103.3641,
+    "slr_mm": 1.5685
+   },
+   {
+    "year": 2019,
+    "gt": -460.9153,
+    "err": 79.2437,
+    "slr_mm": 1.2715
+   },
+   {
+    "year": 2022,
+    "gt": -437.5498,
+    "err": 104.2297,
+    "slr_mm": 1.207
+   },
+   {
+    "year": 2011,
+    "gt": -371.098,
+    "err": 73.598,
+    "slr_mm": 1.0237
+   },
+   {
+    "year": 2020,
+    "gt": -353.4325,
+    "err": 78.3474,
+    "slr_mm": 0.975
+   }
+  ],
+  "least_negative_years": [
+   {
+    "year": 2012,
+    "gt": -171.4402
+   },
+   {
+    "year": 2002,
+    "gt": -156.6045
+   },
+   {
+    "year": 2000,
+    "gt": -122.7333
+   }
+  ],
+  "official_rank_2023": 1,
+  "gt_2023": -568.5798,
+  "err_2023": 103.3641,
+  "mwe_2023": -0.8724,
+  "n_years_below_minus300": 8,
+  "years_below_minus300_after_2012": 5,
+  "area_2000": 704082.6956,
+  "area_2023": 651707.1669,
+  "hugonnet_2000_2019": -267.0
+ },
+ "official": {
+  "total_gt": -6542.4706,
+  "total_err_quad": 387.0162,
+  "rate_gt": -272.6029,
+  "rate_2000_2011": -230.7247,
+  "rate_2012_2023": -314.4812,
+  "increase_pct": 36.3015,
+  "accel_gt_yr2": -9.9767,
+  "gt_2023": -548.0251,
+  "total_mwe": -9.7428
+ },
+ "canadian_arctic": {
+  "share_pct": 19.3279,
+  "rate_gt": -53.1946,
+  "rate_gt_err": 5.2205
+ },
+ "zscore": {
+  "n": 450,
+  "sd": 1.2429,
+  "mean": -0.164,
+  "frac_abs_gt2": 0.1133,
+  "by_pair": {
+   "A-G": {
+    "count": 97,
+    "mean": 0.064,
+    "std": 1.3294
+   },
+   "D-A": {
+    "count": 213,
+    "mean": -0.2442,
+    "std": 1.1661
+   },
+   "D-G": {
+    "count": 140,
+    "mean": -0.1999,
+    "std": 1.2837
+   }
+  }
+ },
+ "method_bias": {
+  "alt_polar_mean_bias": 0.0869,
+  "alt_nonpolar_mean_bias": 0.0884,
+  "alt_mean_bias": 0.0877,
+  "grav_mean_bias": 0.0665,
+  "alt_median_r": 0.6248,
+  "grav_median_r": 0.7331,
+  "rows": [
+   {
+    "region": "1_alaska",
+    "group": "A",
+    "bias": 0.152,
+    "bias_err": 0.169,
+    "rmsd": 0.318,
+    "r": 0.923,
+    "n": 9
+   },
+   {
+    "region": "1_alaska",
+    "group": "G",
+    "bias": 0.262,
+    "bias_err": 0.085,
+    "rmsd": 0.495,
+    "r": 0.829,
+    "n": 20
+   },
+   {
+    "region": "2_western_canada_us",
+    "group": "A",
+    "bias": 0.218,
+    "bias_err": 0.158,
+    "rmsd": 0.229,
+    "r": 0.991,
+    "n": 10
+   },
+   {
+    "region": "3_arctic_canada_north",
+    "group": "A",
+    "bias": 0.052,
+    "bias_err": 0.041,
+    "rmsd": 0.142,
+    "r": 0.904,
+    "n": 21
+   },
+   {
+    "region": "3_arctic_canada_north",
+    "group": "G",
+    "bias": -0.016,
+    "bias_err": 0.034,
+    "rmsd": 0.158,
+    "r": 0.868,
+    "n": 20
+   },
+   {
+    "region": "4_arctic_canada_south",
+    "group": "A",
+    "bias": 0.165,
+    "bias_err": 0.069,
+    "rmsd": 0.283,
+    "r": 0.827,
+    "n": 21
+   },
+   {
+    "region": "4_arctic_canada_south",
+    "group": "G",
+    "bias": 0.058,
+    "bias_err": 0.075,
+    "rmsd": 0.414,
+    "r": 0.581,
+    "n": 20
+   },
+   {
+    "region": "5_greenland_periphery",
+    "group": "A",
+    "bias": 0.124,
+    "bias_err": 0.094,
+    "rmsd": 0.451,
+    "r": 0.625,
+    "n": 22
+   },
+   {
+    "region": "6_iceland",
+    "group": "A",
+    "bias": 0.109,
+    "bias_err": 0.096,
+    "rmsd": 0.66,
+    "r": 0.612,
+    "n": 9
+   },
+   {
+    "region": "6_iceland",
+    "group": "G",
+    "bias": 0.05,
+    "bias_err": 0.096,
+    "rmsd": 0.712,
+    "r": 0.733,
+    "n": 20
+   },
+   {
+    "region": "7_svalbard",
+    "group": "A",
+    "bias": 0.033,
+    "bias_err": 0.059,
+    "rmsd": 0.305,
+    "r": 0.573,
+    "n": 15
+   },
+   {
+    "region": "7_svalbard",
+    "group": "G",
+    "bias": 0.09,
+    "bias_err": 0.049,
+    "rmsd": 0.252,
+    "r": 0.856,
+    "n": 20
+   },
+   {
+    "region": "9_russian_arctic",
+    "group": "A",
+    "bias": -0.0,
+    "bias_err": 0.044,
+    "rmsd": 0.127,
+    "r": 0.875,
+    "n": 15
+   },
+   {
+    "region": "9_russian_arctic",
+    "group": "G",
+    "bias": 0.054,
+    "bias_err": 0.053,
+    "rmsd": 0.281,
+    "r": 0.696,
+    "n": 20
+   },
+   {
+    "region": "13_central_asia",
+    "group": "A",
+    "bias": 0.054,
+    "bias_err": 0.044,
+    "rmsd": 0.337,
+    "r": 0.473,
+    "n": 21
+   },
+   {
+    "region": "14_south_asia_west",
+    "group": "A",
+    "bias": 0.026,
+    "bias_err": 0.079,
+    "rmsd": 0.2,
+    "r": 0.87,
+    "n": 21
+   },
+   {
+    "region": "15_south_asia_east",
+    "group": "A",
+    "bias": 0.011,
+    "bias_err": 0.073,
+    "rmsd": 0.5,
+    "r": 0.215,
+    "n": 21
+   },
+   {
+    "region": "17_southern_andes",
+    "group": "A",
+    "bias": 0.049,
+    "bias_err": 0.409,
+    "rmsd": 1.069,
+    "r": 0.516,
+    "n": 9
+   },
+   {
+    "region": "17_southern_andes",
+    "group": "G",
+    "bias": -0.033,
+    "bias_err": 0.243,
+    "rmsd": 1.017,
+    "r": 0.604,
+    "n": 20
+   },
+   {
+    "region": "19_antarctic_and_subantarctic",
+    "group": "A",
+    "bias": 0.147,
+    "bias_err": 0.082,
+    "rmsd": 0.409,
+    "r": 0.234,
+    "n": 19
+   }
+  ]
+ },
+ "glac_rep": {
+  "mean_diff": -0.0969,
+  "mean_abs_diff": 0.2075,
+  "wgms_beta_mean_of_means": 0.0483,
+  "wgms_beta_range": [
+   -0.3146,
+   0.3466
+  ],
+  "median_r_wgms_A": 0.6388,
+  "median_r_wgms_G": 0.7505
+ },
+ "hybrid_validation": {
+  "n_series": 45,
+  "mean_diff": -0.0424,
+  "median_r": 0.8739,
+  "by_dataset": {
+   "Box": {
+    "diff": -0.108,
+    "r": 0.897
+   },
+   "Dussaillant": {
+    "diff": -0.033,
+    "r": 0.916
+   },
+   "Huss": {
+    "diff": -0.037,
+    "r": 0.847
+   },
+   "Palsson": {
+    "diff": 0.021,
+    "r": 0.873
+   }
+  }
+ },
+ "validation": {
+  "combined_mean_abs_bias": 0.0155,
+  "combined_median_rmsd": 0.0463,
+  "combined_median_r": 0.9952,
+  "combined_median_err_ratio": 1.4591,
+  "group_err_ratio_median": {
+   "altimetry": 1.4287,
+   "demdiff_and_glaciological": 1.4454,
+   "gravimetry": 1.2861
+  },
+  "D_bias_CEU": 0.0046,
+  "D_bias_NZL": -0.0012,
+  "cal_rmsd": 35.9616,
+  "cal_r": 0.943,
+  "cal_maxabs": 75.2591,
+  "cal_diff_2020": 51.6069,
+  "cal_diff_2023": -20.5547,
+  "err_ratio_global": 1.0256,
+  "multi_year_err_check": {
+   "official_reported_annual_quadrature": 387.0162
+  }
+ },
+ "proj_compare": {
+  "obs_rate_2015_2023_gt": -348.6118,
+  "obs_rate_2015_2023_mm": 0.9617,
+  "obs_cum_2015_2023_mm": 8.6552,
+  "obs_mass_2015_gt": 141920.8622,
+  "obs_pct_lost_2015_2023": 2.2107,
+  "mean_rate_2015_2100_mm": {
+   "rounce2023:+1.5C": 1.0588,
+   "rounce2023:+2C": 1.1647,
+   "rounce2023:+3C": 1.4706,
+   "rounce2023:+4C": 1.8118,
+   "rounce2023:SSP1-2.6": 1.1529,
+   "rounce2023:SSP2-4.5": 1.3647,
+   "rounce2023:SSP5-8.5": 1.9529,
+   "rounce2023:RCP2.6": 1.0588,
+   "rounce2023:RCP4.5": 1.3412,
+   "rounce2023:RCP8.5": 1.9176,
+   "marzeion2020:RCP2.6": 0.9294,
+   "marzeion2020:RCP4.5": 1.4,
+   "marzeion2020:RCP6.0": 1.3059,
+   "marzeion2020:RCP8.5": 1.8706,
+   "hock2019:RCP2.6": 1.0471,
+   "hock2019:RCP4.5": 1.4588,
+   "hock2019:RCP6.0": 1.6471,
+   "hock2019:RCP8.5": 2.1176
+  },
+  "years_to_reach_by_obs_rate": {
+   "rounce2023:+1.5C": 93.5855,
+   "rounce2023:+2C": 102.944,
+   "rounce2023:+3C": 129.9798,
+   "rounce2023:+4C": 160.1351,
+   "rounce2023:SSP1-2.6": 101.9042,
+   "rounce2023:SSP2-4.5": 120.6213,
+   "rounce2023:SSP5-8.5": 172.6132,
+   "rounce2023:RCP2.6": 93.5855,
+   "rounce2023:RCP4.5": 118.5416,
+   "rounce2023:RCP8.5": 169.4937,
+   "marzeion2020:RCP2.6": 82.1472,
+   "marzeion2020:RCP4.5": 123.7408,
+   "marzeion2020:RCP6.0": 115.4221,
+   "marzeion2020:RCP8.5": 165.3343,
+   "hock2019:RCP2.6": 92.5456,
+   "hock2019:RCP4.5": 128.94,
+   "hock2019:RCP6.0": 145.5774,
+   "hock2019:RCP8.5": 187.1709
+  },
+  "obs_specific_2005_2014": -0.3606
+ }
+}

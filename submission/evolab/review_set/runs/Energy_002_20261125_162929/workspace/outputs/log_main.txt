@@ -1,0 +1,76 @@
+742 jobs
+0 af hex_020 flex Commercial Extreme 4.29% 3.378151730839712 2.8
+10 af hex_018 flex Blended Flat 0.49% 2.3452626861122527 2.8
+20 af hex_016 flex Offtake Flat 0.49% 2.908364753775194 2.8
+30 af hex_016 flex Full de-risking Moderate 2.15% 2.193451380154589 2.8
+40 af hex_001 flex Full de-risking Moderate 2.15% 2.0777254140671793 2.4
+50 af hex_014 flex Commercial Moderate 2.15% 3.597441401475973 2.7
+60 af hex_015 flex Blended Flat 0.49% 2.1255382949239316 2.8
+70 af hex_015 flex Full de-risking Extreme 4.29% 2.308758013028548 2.8
+80 af hex_012 flex Offtake Extreme 4.29% 3.8231612607549614 2.3
+90 af hex_011 flex Offtake Moderate 2.15% 3.208150514293675 2.5
+100 af hex_010 flex Blended Flat 0.49% 2.161394631631774 2.2
+110 af hex_010 flex Zero Zero 1.5793177882723137 2.3
+120 af hex_009 flex Blended Extreme 4.29% 2.8745785857798793 2.2
+130 af hex_007 flex Blended Moderate 2.15% 2.3941948656848706 2.9
+140 af hex_005 flex Blended Flat 0.49% 2.2112190080946337 2.7
+150 af hex_004 flex Commercial Flat 0.49% 3.130430324170544 3.3
+160 af hex_004 flex Blended Extreme 4.29% 2.7687730310359067 3.0
+170 af hex_003 flex Blended Moderate 2.15% 2.5498990264945447 3.3
+180 af hex_002 flex Full de-risking Flat 0.49% 2.0515064495698216 3.6
+190 af hex_017 flex Offtake Flat 0.49% 2.8257955844437537 3.5
+200 af hex_017 flex Blended Extreme 4.29% 2.6901094692848244 3.1
+210 af hex_019 flex Commercial Extreme 4.29% 3.725021120337547 2.5
+220 af hex_008 flex Offtake Moderate 2.15% 3.248427546680482 2.8
+230 af hex_021 flex Blended Flat 0.49% 2.3321422496813247 2.5
+240 af hex_021 flex Zero Zero 1.701087364906221 2.4
+250 af hex_006 flex Offtake Extreme 4.29% 3.3678591287869732 2.3
+260 af hex_028 flex Full de-risking Moderate 2.15% 2.2256577119742516 2.3
+270 af hex_029 flex Full de-risking Flat 0.49% 2.0154379458867755 2.6
+290 eu Germany (north) flex Offtake ir 1% 3.005846886534495 2.7
+300 eu Spain (+2,000 km pipe) flex Commercial Moderate 2.15% 2.814496526476515 2.7
+310 eu Spain (+2,000 km pipe) flex Offtake ir 3% 2.7829596031650023 3.1
+320 af hex_000 const Commercial Moderate 2.15% 3.882226795376075 4.5
+330 af hex_013 const Blended Flat 0.49% 2.5963871904983296 2.5
+340 af hex_013 const Full de-risking Extreme 4.29% 2.820478293870111 3.3
+350 af hex_027 const Blended Moderate 2.15% 2.6816080949786536 3.1
+360 af hex_026 const Blended Moderate 2.15% 2.9288307406180145 4.4
+370 af hex_025 const Blended Flat 0.49% 2.6002228485864967 5.6
+380 af hex_024 const Blended Flat 0.49% 2.5699002862863303 2.0
+390 af hex_024 const Offtake Extreme 4.29% 3.9736689364196747 2.1
+400 af hex_023 const Offtake Moderate 2.15% 3.608373102097551 3.9
+410 af hex_022 const Commercial Moderate 2.15% 3.617473649631228 5.1
+420 af hex_020 const Offtake Flat 0.49% 3.0556716432056867 4.3
+430 af hex_020 const Blended Extreme 4.29% 2.910796374104101 4.8
+440 af hex_018 const Offtake Extreme 4.29% 4.022627649769759 3.2
+450 af hex_016 const Commercial Moderate 2.15% 3.7481827410774606 3.5
+460 af hex_001 const Offtake Moderate 2.15% 3.2711887971168156 4.1
+470 af hex_014 const Commercial Flat 0.49% 3.637862939550264 3.9
+480 af hex_014 const Commercial Extreme 4.29% 4.355332506427938 3.7
+490 af hex_015 const Offtake Moderate 2.15% 3.3467560530237144 5.0
+500 af hex_015 const Zero Zero 1.7363059561750378 5.2
+510 af hex_012 const Zero Zero 1.9646444467072988 5.6
+520 af hex_011 const Offtake Extreme 4.29% 3.966287062988052 6.8
+530 af hex_010 const Offtake Moderate 2.15% 3.2948779012546328 4.3
+540 af hex_010 const Zero Zero 1.712006239137178 4.1
+550 af hex_007 const Commercial Flat 0.49% 3.386622342057729 3.6
+560 af hex_007 const Blended Extreme 4.29% 2.9923924980714562 3.9
+570 af hex_005 const Offtake Moderate 2.15% 3.381201634590309 6.5
+580 af hex_004 const Full de-risking Flat 0.49% 2.188498533475733 7.6
+590 af hex_004 const Full de-risking Extreme 4.29% 2.696469203622315 7.4
+600 af hex_003 const Full de-risking Extreme 4.29% 2.757623569687186 4.3
+610 af hex_002 const Commercial Extreme 4.29% 4.525255849577125 7.4
+620 af hex_017 const Full de-risking Moderate 2.15% 2.3321888314460173 6.7
+630 af hex_019 const Blended Flat 0.49% 2.4791753580998055 8.0
+640 af hex_019 const Zero Zero 1.796437913452106 6.8
+650 af hex_008 const Commercial Extreme 4.29% 4.28013660524591 5.3
+660 af hex_021 const Blended Moderate 2.15% 2.8446329090506626 4.5
+670 af hex_006 const Commercial Moderate 2.15% 3.685506115460385 3.5
+680 af hex_028 const Offtake Flat 0.49% 3.2823134483020175 5.5
+690 af hex_028 const Blended Extreme 4.29% 3.1272254267981303 6.1
+700 af hex_029 const Full de-risking Moderate 2.15% 2.4001890093449765 6.3
+710 eu Germany (north) const Offtake Flat 0.49% 3.0866704872625 16.8
+720 eu Germany (north) const Commercial ir 3% 3.721671195747887 16.9
+730 eu Spain (+2,000 km pipe) const Offtake Moderate 2.15% 2.7466103843552463 16.4
+740 eu Spain (+2,000 km pipe) const Offtake ir 6% 3.3691488324487344 15.1
+done

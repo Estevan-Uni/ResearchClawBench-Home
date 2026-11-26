@@ -1,0 +1,78 @@
+code/dyn.py --protocol fewshot --variant dids_mfl --seed 0
+code/dyn.py --protocol fewshot --variant 3dids --seed 0
+code/dyn.py --protocol fewshot --variant tgn --seed 0
+code/dyn.py --protocol known --variant dids_mfl --seed 0
+code/dyn.py --protocol known --variant 3dids --seed 0
+code/dyn.py --protocol known --variant tgn --seed 0
+code/dyn.py --protocol fewshot --variant dids_mfl --seed 1
+code/dyn.py --protocol fewshot --variant 3dids --seed 1
+code/dyn.py --protocol fewshot --variant tgn --seed 1
+code/dyn.py --protocol known --variant dids_mfl --seed 1
+code/dyn.py --protocol known --variant 3dids --seed 1
+code/dyn.py --protocol known --variant tgn --seed 1
+code/dyn.py --protocol fewshot --variant dids_mfl --seed 2
+code/dyn.py --protocol fewshot --variant 3dids --seed 2
+code/dyn.py --protocol fewshot --variant tgn --seed 2
+code/dyn.py --protocol known --variant dids_mfl --seed 2
+code/dyn.py --protocol known --variant 3dids --seed 2
+code/dyn.py --protocol known --variant tgn --seed 2
+code/dyn.py --protocol fewshot --variant mfl_noSD --seed 0
+code/dyn.py --protocol fewshot --variant mfl_hrep --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noRD --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noDiff --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noMST --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noDis --seed 0
+code/dyn.py --protocol fewshot --variant mfl_cos --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noEp --seed 0
+code/dyn.py --protocol fewshot --variant mfl_attn --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noRDDis --seed 0
+code/dyn.py --protocol fewshot --variant mfl_rd1 --seed 0
+code/dyn.py --protocol known --variant mfl_noSD --seed 0
+code/dyn.py --protocol known --variant mfl_hrep --seed 0
+code/dyn.py --protocol known --variant mfl_noRD --seed 0
+code/dyn.py --protocol known --variant mfl_noDiff --seed 0
+code/dyn.py --protocol known --variant mfl_noMST --seed 0
+code/dyn.py --protocol known --variant mfl_noDis --seed 0
+code/dyn.py --protocol known --variant mfl_cos --seed 0
+code/dyn.py --protocol known --variant mfl_noEp --seed 0
+code/dyn.py --protocol known --variant mfl_attn --seed 0
+code/dyn.py --protocol known --variant mfl_noRDDis --seed 0
+code/dyn.py --protocol known --variant mfl_rd1 --seed 0
+code/dyn.py --protocol fewshot --variant mfl_noSD --seed 1
+code/dyn.py --protocol fewshot --variant mfl_hrep --seed 1
+code/dyn.py --protocol fewshot --variant mfl_noRD --seed 1
+code/dyn.py --protocol fewshot --variant mfl_noDiff --seed 1
+code/dyn.py --protocol fewshot --variant mfl_noMST --seed 1
+code/dyn.py --protocol fewshot --variant mfl_noDis --seed 1
+code/dyn.py --protocol fewshot --variant mfl_cos --seed 1
+code/dyn.py --protocol fewshot --variant mfl_noEp --seed 1
+code/dyn.py --protocol fewshot --variant mfl_attn --seed 1
+code/dyn.py --protocol fewshot --variant mfl_noRDDis --seed 1
+code/dyn.py --protocol fewshot --variant mfl_rd1 --seed 1
+code/dyn.py --protocol known --variant mfl_noSD --seed 1
+code/dyn.py --protocol known --variant mfl_hrep --seed 1
+code/dyn.py --protocol known --variant mfl_noRD --seed 1
+code/dyn.py --protocol known --variant mfl_noDiff --seed 1
+code/dyn.py --protocol known --variant mfl_noMST --seed 1
+code/dyn.py --protocol known --variant mfl_noDis --seed 1
+code/dyn.py --protocol known --variant mfl_cos --seed 1
+code/dyn.py --protocol known --variant mfl_noEp --seed 1
+code/dyn.py --protocol known --variant mfl_attn --seed 1
+code/dyn.py --protocol known --variant mfl_noRDDis --seed 1
+code/dyn.py --protocol known --variant mfl_rd1 --seed 1
+code/dyn.py --protocol unknown --holdout 1 --variant dids_mfl --seed 0
+code/dyn.py --protocol unknown --holdout 1 --variant 3dids --seed 0
+code/dyn.py --protocol unknown --holdout 1 --variant tgn --seed 0
+code/dyn.py --protocol unknown --holdout 3 --variant dids_mfl --seed 0
+code/dyn.py --protocol unknown --holdout 3 --variant 3dids --seed 0
+code/dyn.py --protocol unknown --holdout 3 --variant tgn --seed 0
+code/dyn.py --protocol unknown --holdout 5 --variant dids_mfl --seed 0
+code/dyn.py --protocol unknown --holdout 5 --variant 3dids --seed 0
+code/dyn.py --protocol unknown --holdout 5 --variant tgn --seed 0
+code/dyn.py --protocol unknown --holdout 7 --variant dids_mfl --seed 0
+code/dyn.py --protocol unknown --holdout 7 --variant 3dids --seed 0
+code/dyn.py --protocol unknown --holdout 7 --variant tgn --seed 0
+code/dyn.py --protocol fewshot --variant dids_mfl --seed 0 --epochs 20 --patience 6 --tag _long
+code/dyn.py --protocol fewshot --variant mfl_noDiff --seed 0 --epochs 20 --patience 6 --tag _long
+code/dyn.py --protocol known --variant dids_mfl --seed 0 --epochs 20 --patience 6 --tag _long
+code/dyn.py --protocol known --variant mfl_noDiff --seed 0 --epochs 20 --patience 6 --tag _long

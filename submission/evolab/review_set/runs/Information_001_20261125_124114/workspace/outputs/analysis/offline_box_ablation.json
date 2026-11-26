@@ -1,0 +1,48 @@
+{
+ "llava": {
+  "raw": {
+   "hit_rate": 0.8313253012048193,
+   "n": 166,
+   "top_peak_token": 209,
+   "top_peak_share": 0.018072289156626505
+  },
+  "rel": {
+   "hit_rate": 0.8192771084337349,
+   "n": 166,
+   "top_peak_token": 209,
+   "top_peak_share": 0.030120481927710843
+  },
+  "grad": {
+   "hit_rate": 0.8373493975903614,
+   "n": 166,
+   "top_peak_token": 330,
+   "top_peak_share": 0.018072289156626505
+  }
+ },
+ "qwen": {
+  "raw": {
+   "hit_rate": 0.9301075268817204,
+   "n": 186,
+   "top_peak_token": 40,
+   "top_peak_share": 0.026881720430107527
+  },
+  "rel": {
+   "hit_rate": 0.8817204301075269,
+   "n": 186,
+   "top_peak_token": 98,
+   "top_peak_share": 0.021505376344086023
+  },
+  "grad": {
+   "hit_rate": 0.9301075268817204,
+   "n": 186,
+   "top_peak_token": 70,
+   "top_peak_share": 0.021505376344086023
+  },
+  "pure": {
+   "hit_rate": 0.42473118279569894,
+   "n": 186,
+   "top_peak_token": 216,
+   "top_peak_share": 0.021505376344086023
+  }
+ }
+}

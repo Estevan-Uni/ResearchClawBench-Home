@@ -1,0 +1,1 @@
+query,target,fident,alnlen,qstart,qend,qlen,tstart,tend,tlen,evalue,bits,prob,alntmscore,qtmscore,ttmscore,lddt,rmsd,u,t,complexqtmscore,complexttmscore,complexu,complext,qchaintms,tchaintms,interfacelddt,complexassignid

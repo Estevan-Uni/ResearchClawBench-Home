@@ -1,0 +1,1 @@
+**(2, 3)** (F1 0.78, recall 0.82, χ₂₃ +0.50); 57.1 ε above ideal seed+(1,4) at equal N

@@ -1,0 +1,14 @@
+{
+  "source_workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Life_001/g1/solve/attempt-00003/Life_001/workspace",
+  "source_report_sha256": null,
+  "source_output_sha256": "34a54f98ce9ef42016429b827b87266a2e9379d1d5f695b759b398819d142fa6",
+  "exported_paths": [
+    "INSTRUCTIONS.md"
+  ],
+  "omitted_outputs": {
+    "large_or_binary_output_files": 0,
+    "large_or_binary_output_bytes": 0
+  },
+  "judge_model": null,
+  "score_status": "assigned_zero_for_agent_safety_refusal"
+}

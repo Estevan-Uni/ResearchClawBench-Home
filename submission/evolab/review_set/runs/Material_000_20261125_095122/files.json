@@ -1,0 +1,611 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "audit.py",
+    "path": "code/audit.py",
+    "type": "file",
+    "size": 8490,
+    "mtime": 1795600995.2614388,
+    "exported": true
+  },
+  {
+    "name": "audit2.py",
+    "path": "code/audit2.py",
+    "type": "file",
+    "size": 981,
+    "mtime": 1795601026.8416777,
+    "exported": true
+  },
+  {
+    "name": "audit3.py",
+    "path": "code/audit3.py",
+    "type": "file",
+    "size": 879,
+    "mtime": 1795601049.7738538,
+    "exported": true
+  },
+  {
+    "name": "cache.py",
+    "path": "code/cache.py",
+    "type": "file",
+    "size": 538,
+    "mtime": 1795600926.8969386,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 4160,
+    "mtime": 1795600959.9811778,
+    "exported": true
+  },
+  {
+    "name": "control_labels.py",
+    "path": "code/control_labels.py",
+    "type": "file",
+    "size": 1122,
+    "mtime": 1795601214.4871793,
+    "exported": true
+  },
+  {
+    "name": "evaluate_all.py",
+    "path": "code/evaluate_all.py",
+    "type": "file",
+    "size": 392,
+    "mtime": 1795602320.0534194,
+    "exported": true
+  },
+  {
+    "name": "figures.py",
+    "path": "code/figures.py",
+    "type": "file",
+    "size": 13639,
+    "mtime": 1795602460.7187908,
+    "exported": true
+  },
+  {
+    "name": "label_eff.py",
+    "path": "code/label_eff.py",
+    "type": "file",
+    "size": 1785,
+    "mtime": 1795601287.4077945,
+    "exported": true
+  },
+  {
+    "name": "loader.py",
+    "path": "code/loader.py",
+    "type": "file",
+    "size": 2833,
+    "mtime": 1795600912.716838,
+    "exported": true
+  },
+  {
+    "name": "model.py",
+    "path": "code/model.py",
+    "type": "file",
+    "size": 4693,
+    "mtime": 1795601120.250409,
+    "exported": true
+  },
+  {
+    "name": "pretrain.py",
+    "path": "code/pretrain.py",
+    "type": "file",
+    "size": 2482,
+    "mtime": 1795601120.2584088,
+    "exported": true
+  },
+  {
+    "name": "pretrain_label_diag.py",
+    "path": "code/pretrain_label_diag.py",
+    "type": "file",
+    "size": 2473,
+    "mtime": 1795601389.0406754,
+    "exported": true
+  },
+  {
+    "name": "probes.py",
+    "path": "code/probes.py",
+    "type": "file",
+    "size": 2121,
+    "mtime": 1795601300.335905,
+    "exported": true
+  },
+  {
+    "name": "residual_ablation.py",
+    "path": "code/residual_ablation.py",
+    "type": "file",
+    "size": 1140,
+    "mtime": 1795601389.0406754,
+    "exported": true
+  },
+  {
+    "name": "run_screen.py",
+    "path": "code/run_screen.py",
+    "type": "file",
+    "size": 1053,
+    "mtime": 1795601241.7114072,
+    "exported": true
+  },
+  {
+    "name": "screen.py",
+    "path": "code/screen.py",
+    "type": "file",
+    "size": 10265,
+    "mtime": 1795601287.3917944,
+    "exported": true
+  },
+  {
+    "name": "shortlist.py",
+    "path": "code/shortlist.py",
+    "type": "file",
+    "size": 1403,
+    "mtime": 1795602486.8470461,
+    "exported": true
+  },
+  {
+    "name": "topk.py",
+    "path": "code/topk.py",
+    "type": "file",
+    "size": 659,
+    "mtime": 1795603945.273283,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "artefact_checks.csv",
+    "path": "outputs/artefact_checks.csv",
+    "type": "file",
+    "size": 578,
+    "mtime": 1795601012.3095672,
+    "exported": true
+  },
+  {
+    "name": "atomcount_table.json",
+    "path": "outputs/atomcount_table.json",
+    "type": "file",
+    "size": 254,
+    "mtime": 1795601014.6095846,
+    "exported": true
+  },
+  {
+    "name": "audit_counts.csv",
+    "path": "outputs/audit_counts.csv",
+    "type": "file",
+    "size": 382,
+    "mtime": 1795601008.6255393,
+    "exported": true
+  },
+  {
+    "name": "audit_log.txt",
+    "path": "outputs/audit_log.txt",
+    "type": "file",
+    "size": 6136,
+    "mtime": 1795601014.6135848,
+    "exported": true
+  },
+  {
+    "name": "chi2_categories.csv",
+    "path": "outputs/chi2_categories.csv",
+    "type": "file",
+    "size": 716,
+    "mtime": 1795601011.7175627,
+    "exported": true
+  },
+  {
+    "name": "chi2_elements.csv",
+    "path": "outputs/chi2_elements.csv",
+    "type": "file",
+    "size": 5839,
+    "mtime": 1795601011.6015618,
+    "exported": true
+  },
+  {
+    "name": "curves_control.json",
+    "path": "outputs/curves_control.json",
+    "type": "file",
+    "size": 367921,
+    "mtime": 1795602259.2128282,
+    "exported": true
+  },
+  {
+    "name": "curves_real.json",
+    "path": "outputs/curves_real.json",
+    "type": "file",
+    "size": 335324,
+    "mtime": 1795602306.4212868,
+    "exported": true
+  },
+  {
+    "name": "descriptors_candidate.csv",
+    "path": "outputs/descriptors_candidate.csv",
+    "type": "file",
+    "size": 185943,
+    "mtime": 1795601011.4095604,
+    "exported": true
+  },
+  {
+    "name": "descriptors_finetune.csv",
+    "path": "outputs/descriptors_finetune.csv",
+    "type": "file",
+    "size": 372795,
+    "mtime": 1795601011.36956,
+    "exported": true
+  },
+  {
+    "name": "descriptors_pretrain.csv",
+    "path": "outputs/descriptors_pretrain.csv",
+    "type": "file",
+    "size": 929277,
+    "mtime": 1795601011.2935596,
+    "exported": true
+  },
+  {
+    "name": "evaluate_log.txt",
+    "path": "outputs/evaluate_log.txt",
+    "type": "file",
+    "size": 8103,
+    "mtime": 1795602338.4815986,
+    "exported": true
+  },
+  {
+    "name": "highconf_control.csv",
+    "path": "outputs/highconf_control.csv",
+    "type": "file",
+    "size": 2642,
+    "mtime": 1795602338.4655986,
+    "exported": true
+  },
+  {
+    "name": "highconf_real.csv",
+    "path": "outputs/highconf_real.csv",
+    "type": "file",
+    "size": 1884,
+    "mtime": 1795602333.2415476,
+    "exported": true
+  },
+  {
+    "name": "label_eff_a.csv",
+    "path": "outputs/label_eff_a.csv",
+    "type": "file",
+    "size": 1770,
+    "mtime": 1795603500.184063,
+    "exported": true
+  },
+  {
+    "name": "label_eff_a.log",
+    "path": "outputs/label_eff_a.log",
+    "type": "file",
+    "size": 4519,
+    "mtime": 1795603500.184063,
+    "exported": true
+  },
+  {
+    "name": "label_eff_b.csv",
+    "path": "outputs/label_eff_b.csv",
+    "type": "file",
+    "size": 898,
+    "mtime": 1795602992.8249762,
+    "exported": true
+  },
+  {
+    "name": "label_eff_b.log",
+    "path": "outputs/label_eff_b.log",
+    "type": "file",
+    "size": 2259,
+    "mtime": 1795602992.8249762,
+    "exported": true
+  },
+  {
+    "name": "label_efficiency_all.csv",
+    "path": "outputs/label_efficiency_all.csv",
+    "type": "file",
+    "size": 2636,
+    "mtime": 1795603526.8201005,
+    "exported": true
+  },
+  {
+    "name": "label_efficiency_summary.csv",
+    "path": "outputs/label_efficiency_summary.csv",
+    "type": "file",
+    "size": 2360,
+    "mtime": 1795603526.8321004,
+    "exported": true
+  },
+  {
+    "name": "metrics_control.csv",
+    "path": "outputs/metrics_control.csv",
+    "type": "file",
+    "size": 2031,
+    "mtime": 1795602338.4655986,
+    "exported": true
+  },
+  {
+    "name": "metrics_real.csv",
+    "path": "outputs/metrics_real.csv",
+    "type": "file",
+    "size": 1791,
+    "mtime": 1795602333.2415476,
+    "exported": true
+  },
+  {
+    "name": "papers_txt",
+    "path": "outputs/papers_txt",
+    "type": "directory"
+  },
+  {
+    "name": "paper_000.txt",
+    "path": "outputs/papers_txt/paper_000.txt",
+    "type": "file",
+    "size": 17079,
+    "mtime": 1795601712.4956114,
+    "exported": true
+  },
+  {
+    "name": "paper_001.txt",
+    "path": "outputs/papers_txt/paper_001.txt",
+    "type": "file",
+    "size": 14823,
+    "mtime": 1795601714.1476269,
+    "exported": true
+  },
+  {
+    "name": "paper_002.txt",
+    "path": "outputs/papers_txt/paper_002.txt",
+    "type": "file",
+    "size": 17858,
+    "mtime": 1795601714.8516333,
+    "exported": true
+  },
+  {
+    "name": "paper_003.txt",
+    "path": "outputs/papers_txt/paper_003.txt",
+    "type": "file",
+    "size": 17895,
+    "mtime": 1795601715.6396408,
+    "exported": true
+  },
+  {
+    "name": "pip.log",
+    "path": "outputs/pip.log",
+    "type": "file",
+    "size": 1088,
+    "mtime": 1795601129.2264807,
+    "exported": true
+  },
+  {
+    "name": "pretrain_label_diag.log",
+    "path": "outputs/pretrain_label_diag.log",
+    "type": "file",
+    "size": 730,
+    "mtime": 1795603222.4321008,
+    "exported": true
+  },
+  {
+    "name": "pretrain_label_diagnostic.csv",
+    "path": "outputs/pretrain_label_diagnostic.csv",
+    "type": "file",
+    "size": 377,
+    "mtime": 1795603222.4321008,
+    "exported": true
+  },
+  {
+    "name": "pretrain_log_main.json",
+    "path": "outputs/pretrain_log_main.json",
+    "type": "file",
+    "size": 11950,
+    "mtime": 1795601333.6441922,
+    "exported": true
+  },
+  {
+    "name": "pretrain_main.log",
+    "path": "outputs/pretrain_main.log",
+    "type": "file",
+    "size": 13152,
+    "mtime": 1795601333.6441922,
+    "exported": true
+  },
+  {
+    "name": "probes.csv",
+    "path": "outputs/probes.csv",
+    "type": "file",
+    "size": 558,
+    "mtime": 1795603025.4207895,
+    "exported": true
+  },
+  {
+    "name": "probes.log",
+    "path": "outputs/probes.log",
+    "type": "file",
+    "size": 728,
+    "mtime": 1795603025.4327896,
+    "exported": true
+  },
+  {
+    "name": "residual.log",
+    "path": "outputs/residual.log",
+    "type": "file",
+    "size": 402,
+    "mtime": 1795603887.5970685,
+    "exported": true
+  },
+  {
+    "name": "residual_ablation.json",
+    "path": "outputs/residual_ablation.json",
+    "type": "file",
+    "size": 36266,
+    "mtime": 1795603884.117056,
+    "exported": true
+  },
+  {
+    "name": "screen_control.log",
+    "path": "outputs/screen_control.log",
+    "type": "file",
+    "size": 534,
+    "mtime": 1795602259.280829,
+    "exported": true
+  },
+  {
+    "name": "screen_real.log",
+    "path": "outputs/screen_real.log",
+    "type": "file",
+    "size": 508,
+    "mtime": 1795602306.4932876,
+    "exported": true
+  },
+  {
+    "name": "top50_control_pre_ft.csv",
+    "path": "outputs/top50_control_pre_ft.csv",
+    "type": "file",
+    "size": 3370,
+    "mtime": 1795602497.0311456,
+    "exported": true
+  },
+  {
+    "name": "top50_real_pre_ft.csv",
+    "path": "outputs/top50_real_pre_ft.csv",
+    "type": "file",
+    "size": 2823,
+    "mtime": 1795602496.9911454,
+    "exported": true
+  },
+  {
+    "name": "topk_precision.csv",
+    "path": "outputs/topk_precision.csv",
+    "type": "file",
+    "size": 3612,
+    "mtime": 1795603951.0013049,
+    "exported": true
+  },
+  {
+    "name": "univariate_auc.csv",
+    "path": "outputs/univariate_auc.csv",
+    "type": "file",
+    "size": 2035,
+    "mtime": 1795601011.4615607,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig10_probes.png",
+    "path": "report/images/fig10_probes.png",
+    "type": "file",
+    "size": 82413,
+    "mtime": 1795603527.9681022,
+    "exported": true
+  },
+  {
+    "name": "fig11_residual_ablation.png",
+    "path": "report/images/fig11_residual_ablation.png",
+    "type": "file",
+    "size": 250989,
+    "mtime": 1795603913.5051632,
+    "exported": true
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 133922,
+    "mtime": 1795601013.5455766,
+    "exported": true
+  },
+  {
+    "name": "fig2_signal_diagnostics.png",
+    "path": "report/images/fig2_signal_diagnostics.png",
+    "type": "file",
+    "size": 97786,
+    "mtime": 1795601014.4215832,
+    "exported": true
+  },
+  {
+    "name": "fig3_pretraining.png",
+    "path": "report/images/fig3_pretraining.png",
+    "type": "file",
+    "size": 143930,
+    "mtime": 1795602431.2065024,
+    "exported": true
+  },
+  {
+    "name": "fig4_finetune_curves.png",
+    "path": "report/images/fig4_finetune_curves.png",
+    "type": "file",
+    "size": 531325,
+    "mtime": 1795602433.910529,
+    "exported": true
+  },
+  {
+    "name": "fig5_main_results.png",
+    "path": "report/images/fig5_main_results.png",
+    "type": "file",
+    "size": 144636,
+    "mtime": 1795602469.354875,
+    "exported": true
+  },
+  {
+    "name": "fig6_probability_histograms.png",
+    "path": "report/images/fig6_probability_histograms.png",
+    "type": "file",
+    "size": 192328,
+    "mtime": 1795602438.642575,
+    "exported": true
+  },
+  {
+    "name": "fig7_pr_discovery.png",
+    "path": "report/images/fig7_pr_discovery.png",
+    "type": "file",
+    "size": 307599,
+    "mtime": 1795602441.3506014,
+    "exported": true
+  },
+  {
+    "name": "fig8_permutation.png",
+    "path": "report/images/fig8_permutation.png",
+    "type": "file",
+    "size": 76320,
+    "mtime": 1795602442.8546162,
+    "exported": true
+  },
+  {
+    "name": "fig9_label_efficiency.png",
+    "path": "report/images/fig9_label_efficiency.png",
+    "type": "file",
+    "size": 157466,
+    "mtime": 1795603527.5041015,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 36219,
+    "mtime": 1795604097.809904,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5982,
+    "mtime": 1795600282.9155502,
+    "exported": true
+  }
+]

@@ -1,0 +1,63 @@
+initial 180 DM GP (Matérn-ARD) done
+initial 180 DM Random forest done
+initial 180 DM Extra trees done
+initial 180 DM Gradient boosting done
+initial 180 DM kNN (k=5) done
+initial 180 DM Linear mixture (ridge) done
+initial 180 DM Quadratic mixture (ridge) done
+all 351 measured GP (Matérn-ARD) done
+all 351 measured Random forest done
+all 351 measured Extra trees done
+all 351 measured Gradient boosting done
+all 351 measured kNN (k=5) done
+all 351 measured Linear mixture (ridge) done
+all 351 measured Quadratic mixture (ridge) done
+                                           spearman         ... MAE_kPa       
+                                               mean    std  ...    mean    std
+dataset          model                                      ...               
+all 351 measured Extra trees                  0.906  0.020  ...  23.726  2.367
+                 GP (Matérn-ARD)              0.898  0.027  ...  23.582  2.129
+                 Gradient boosting            0.896  0.015  ...  24.530  2.537
+                 Linear mixture (ridge)       0.825  0.038  ...  31.844  3.266
+                 Quadratic mixture (ridge)    0.868  0.026  ...  32.945  4.322
+                 Random forest                0.898  0.026  ...  23.618  2.554
+                 kNN (k=5)                    0.884  0.032  ...  25.213  2.258
+initial 180 DM   Extra trees                  0.829  0.048  ...  14.379  2.211
+                 GP (Matérn-ARD)              0.838  0.054  ...  13.802  2.017
+                 Gradient boosting            0.801  0.057  ...  15.427  2.935
+                 Linear mixture (ridge)       0.485  0.144  ...  25.721  3.255
+                 Quadratic mixture (ridge)    0.750  0.094  ...  20.496  3.022
+                 Random forest                0.826  0.059  ...  14.412  3.062
+                 kNN (k=5)                    0.780  0.062  ...  15.995  2.053
+
+[14 rows x 6 columns]
+    spearman  R2_log  MAE_kPa  round                      model  n_train  n_test  max_train  max_obs  max_pred  frac_obs_above_train_max
+0      0.649   0.136   44.012      1            GP (Matérn-ARD)      184     113    304.600  353.291   343.834                     0.027
+1      0.639  -0.043   43.004      1              Random forest      184     113    304.600  353.291   216.060                     0.027
+2      0.557  -0.145   56.221      1          Gradient boosting      184     113    304.600  353.291   422.523                     0.027
+3      0.526  -1.046   83.276      1  Quadratic mixture (ridge)      184     113    304.600  353.291   772.522                     0.027
+4      0.828  -0.534   44.307      2            GP (Matérn-ARD)      297      29    353.291  281.614   274.349                     0.000
+5      0.822   0.096   38.140      2              Random forest      297      29    353.291  281.614   293.540                     0.000
+6      0.841   0.220   44.271      2          Gradient boosting      297      29    353.291  281.614   338.065                     0.000
+7      0.675   0.165   61.855      2  Quadratic mixture (ridge)      297      29    353.291  281.614   308.339                     0.000
+8      0.837   0.654   24.907      3            GP (Matérn-ARD)      326      25    353.291  250.984   242.002                     0.000
+9      0.863   0.669   29.428      3              Random forest      326      25    353.291  250.984   262.358                     0.000
+10     0.812   0.526   30.214      3          Gradient boosting      326      25    353.291  250.984   237.493                     0.000
+11     0.573  -0.020   47.171      3  Quadratic mixture (ridge)      326      25    353.291  250.984   280.532                     0.000
+saved fig09_prospective_validation
+Shapley efficiency check (should be ~0): 6.661338147750939e-16
+      mean_abs_shapley  perm_importance  spearman_feature_vs_shap
+HEA           0.465042         0.523319                 -0.881473
+ATAC          0.389794         0.628074                 -0.026314
+CBEA          0.135732         0.096225                 -0.882280
+BA            0.110361         0.095527                  0.915070
+PEA           0.073903         0.035165                  0.919394
+AAm           0.063170         0.050338                 -0.589274
+saved fig10_shapley_importance
+saved fig11_embedding
+                               mean_abs  ...  G042_phi
+hydrophilic (HEA+CBEA+AAm)     0.518365  ...  0.325925
+hydrophobic+aromatic (BA+PEA)  0.133818  ...  0.157957
+cationic (ATAC)                0.392430  ...  0.230417
+
+[3 rows x 4 columns]

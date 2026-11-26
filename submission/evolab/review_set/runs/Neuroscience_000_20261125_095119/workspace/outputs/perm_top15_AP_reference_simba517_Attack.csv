@@ -1,0 +1,16 @@
+featureset,behaviour,feature,category,role,F1_drop_mean,F1_drop_sd,AP_drop_mean,AP_drop_sd
+reference_simba517,Attack,Circ_Simon_distance,roi,inter,0.0,0.0,1.1102230246251565e-16,0.0
+reference_simba517,Attack,Poly_1_Simon_distance,roi,inter,0.0,0.0,1.1102230246251565e-16,0.0
+reference_simba517,Attack,Sum_euclid_distances_hull_mean_6_deviation,shape,inter,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17
+reference_simba517,Attack,Distance_median_5,distance,inter,-0.011695906432748537,0.023391812865497075,8.881784197001253e-17,4.440892098500627e-17
+reference_simba517,Attack,Sum_euclid_distances_hull_sum_5,shape,inter,0.0,0.0,8.881784197001253e-17,4.440892098500627e-17
+reference_simba517,Attack,Sum_euclid_distances_hull_median_5,shape,inter,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17
+reference_simba517,Attack,Sum_euclid_distances_hull_mean_15,shape,inter,0.0,0.0,8.881784197001253e-17,4.440892098500627e-17
+reference_simba517,Attack,Mouse2_width_sum_5,shape,M2,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17
+reference_simba517,Attack,Movement_sum_2,movement,inter,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17
+reference_simba517,Attack,Poly_Simon_distance,roi,inter,0.0,0.0,8.881784197001253e-17,4.440892098500627e-17
+reference_simba517,Attack,Mouse2_mean_euclid_distances_sum_5,shape,M2,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17
+reference_simba517,Attack,Distance_sum_6,distance,inter,0.0,0.0,8.881784197001253e-17,4.440892098500627e-17
+reference_simba517,Attack,Distance_mean_15,distance,inter,0.0,0.0,8.881784197001253e-17,4.440892098500627e-17
+reference_simba517,Attack,Distance_sum_15,distance,inter,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17
+reference_simba517,Attack,Mouse1_width_mean_2,shape,M1,0.0,0.0,8.881784197001253e-17,4.4408920985006264e-17

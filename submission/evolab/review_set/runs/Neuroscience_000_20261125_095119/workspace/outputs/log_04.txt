@@ -1,0 +1,149 @@
+engineered Attack 261s
+engineered Sniffing 489s
+provided50 Attack 537s
+provided50 Sniffing 580s
+reference_simba517 Attack 730s
+reference_simba517 Sniffing 877s
+
+== engineered Attack 
+perm F1 top:
+                                                feature  F1_drop_mean  AP_drop_mean
+25                             M2_Nose_to_M1_tail_base        0.0212       -0.0014
+24                             M1_Nose_to_M2_tail_base        0.0212       -0.0029
+90                                      Distance_sum_2        0.0193       -0.0056
+19                               Nose_to_nose_distance        0.0183       -0.0014
+89                                     Distance_mean_2        0.0163       -0.0044
+386                              Total_angle_both_mice        0.0144        0.0014
+374  Tail_end_relative_to_tail_base_centroid_nose_M1_2        0.0144       -0.0015
+433                          Distance_mean_2_deviation        0.0144       -0.0045 
+MDI top:
+                                feature  MDI_mean  MDI_sd
+24             M1_Nose_to_M2_tail_base    0.0112  0.0016
+387            Total_angle_both_mice_2    0.0093  0.0007
+25             M2_Nose_to_M1_tail_base    0.0093  0.0008
+438  Total_angle_both_mice_2_deviation    0.0092  0.0004
+90                      Distance_sum_2    0.0087  0.0010
+
+== engineered Sniffing 
+perm F1 top:
+                              feature  F1_drop_mean  AP_drop_mean
+586                Distance_median_2        0.0587       -0.0010
+931        Distance_mean_2_deviation        0.0504       -0.0108
+587                  Distance_mean_2        0.0504       -0.0153
+588                   Distance_sum_2        0.0504       -0.0058
+593                  Distance_mean_6        0.0405       -0.0015
+932        Distance_mean_5_deviation        0.0405       -0.0004
+979  Distance_mean_2_percentile_rank        0.0405       -0.0014
+591                   Distance_sum_5        0.0375       -0.0028 
+MDI top:
+                                feature  MDI_mean  MDI_sd
+514  Mouse_1_Centroid_to_lateral_right    0.0147  0.0016
+616              Mouse2_width_median_2    0.0116  0.0016
+523            M2_Nose_to_M1_tail_base    0.0106  0.0005
+618                 Mouse2_width_sum_2    0.0084  0.0008
+588                     Distance_sum_2    0.0080  0.0013
+
+== provided50 Attack 
+perm F1 top:
+             feature  F1_drop_mean  AP_drop_mean
+1018   Tail_end_1_y        0.0477       -0.0225
+1045      Feature_2        0.0399       -0.0281
+1044      Feature_1        0.0353       -0.0209
+1041   Tail_end_2_x        0.0121       -0.0036
+1017   Tail_end_1_x        0.0069       -0.0251
+1038  Tail_base_2_x        0.0052       -0.0032
+1026  Ear_right_2_x        0.0043        0.0012
+1015  Tail_base_1_y        0.0043       -0.0063 
+MDI top:
+             feature  MDI_mean  MDI_sd
+1044      Feature_1    0.0960  0.0033
+1045      Feature_2    0.0947  0.0038
+1018   Tail_end_1_y    0.0534  0.0030
+1017   Tail_end_1_x    0.0506  0.0041
+1014  Tail_base_1_x    0.0354  0.0008
+
+== provided50 Sniffing 
+perm F1 top:
+             feature  F1_drop_mean  AP_drop_mean
+1062  Lat_right_1_y        0.0619       -0.0187
+1091   Tail_end_2_x        0.0471       -0.0488
+1080     Center_2_y        0.0470       -0.0150
+1092   Tail_end_2_y        0.0463       -0.0248
+1094      Feature_1        0.0396       -0.0270
+1095      Feature_2        0.0373       -0.0453
+1067   Tail_end_1_x        0.0352       -0.0384
+1058   Lat_left_1_x        0.0255       -0.0201 
+MDI top:
+            feature  MDI_mean  MDI_sd
+1091  Tail_end_2_x    0.0786  0.0040
+1094     Feature_1    0.0613  0.0042
+1095     Feature_2    0.0610  0.0046
+1067  Tail_end_1_x    0.0467  0.0036
+1080    Center_2_y    0.0418  0.0019
+
+== reference_simba517 Attack 
+perm F1 top:
+                                       feature  F1_drop_mean  AP_drop_mean
+1612  Poly_1_Simon_in_zone_cumulative_percent           0.0           0.0
+1096                        Mouse_1_poly_area           0.0           0.0
+1097                        Mouse_2_poly_area           0.0           0.0
+1098                     Mouse_1_nose_to_tail           0.0           0.0
+1099                     Mouse_2_nose_to_tail           0.0           0.0
+1573          Movement_mean_6_percentile_rank           0.0           0.0
+1574        Movement_mean_7.5_percentile_rank           0.0           0.0
+1575         Movement_mean_15_percentile_rank           0.0           0.0 
+MDI top:
+                       feature  MDI_mean  MDI_sd
+1597      Circ_Simon_distance    0.0479  0.0107
+1121  M2_Nose_to_M1_tail_base    0.0283  0.0067
+1115    Nose_to_nose_distance    0.0282  0.0040
+1120  M1_Nose_to_M2_tail_base    0.0279  0.0052
+1609    Poly_1_Simon_distance    0.0251  0.0039
+
+== reference_simba517 Sniffing 
+perm F1 top:
+                                                       feature  F1_drop_mean  AP_drop_mean
+1987   Tail_end_relative_to_tail_base_centroid_nose_M2_mean_2        0.3333           0.0
+1942                              Tail_end_movement_M2_mean_2        0.3333           0.0
+1943                               Tail_end_movement_M2_sum_2        0.3333           0.0
+2015  Total_movement_all_bodyparts_both_mice_mean_2_deviation        0.2667           0.0
+1986        Tail_end_relative_to_tail_base_centroid_nose_M1_2        0.2667           0.0
+1927                              Tail_end_movement_M1_mean_2        0.2667           0.0
+1928                               Tail_end_movement_M1_sum_2        0.2667           0.0
+2032         Mouse1_largest_euclid_distances_mean_6_deviation        0.2667           0.0 
+MDI top:
+                                                      feature  MDI_mean  MDI_sd
+1987  Tail_end_relative_to_tail_base_centroid_nose_M2_mean_2    0.0372  0.0109
+1927                             Tail_end_movement_M1_mean_2    0.0341  0.0036
+1986       Tail_end_relative_to_tail_base_centroid_nose_M1_2    0.0289  0.0060
+1928                              Tail_end_movement_M1_sum_2    0.0266  0.0112
+2030        Mouse1_largest_euclid_distances_mean_2_deviation    0.0167  0.0028
+            featureset behaviour group_type          group  n_features  F1_drop_mean  F1_drop_sd  AP_drop_mean  AP_drop_sd  base_F1  base_AP
+0           engineered    Attack   category          angle          19        0.0983      0.0221       -0.0133      0.0223   0.8408   0.7022
+1           engineered    Attack   category       distance          37        0.3698      0.0332        0.1681      0.0232   0.8408   0.7022
+2           engineered    Attack   category       movement         227        0.1194      0.0154       -0.0468      0.0169   0.8408   0.7022
+3           engineered    Attack   category          shape         208        0.3469      0.0355        0.0714      0.0323   0.8408   0.7022
+4           engineered    Attack   category       tracking           7        0.0086      0.0029       -0.0024      0.0020   0.8408   0.7022
+19          engineered  Sniffing   category          angle          19        0.2189      0.0609       -0.0106      0.0326   0.7727   0.7304
+20          engineered  Sniffing   category       distance          37        0.4381      0.0671        0.2394      0.0403   0.7727   0.7304
+21          engineered  Sniffing   category       movement         227        0.3297      0.0552       -0.0311      0.0395   0.7727   0.7304
+22          engineered  Sniffing   category          shape         208        0.4609      0.0599        0.2155      0.0450   0.7727   0.7304
+23          engineered  Sniffing   category       tracking           7       -0.0062      0.0081       -0.0057      0.0062   0.7727   0.7304
+38          provided50    Attack   category  index_control           2        0.1626      0.0289       -0.0244      0.0249   0.8992   0.7472
+39          provided50    Attack   category       position          32        0.4916      0.0433        0.2599      0.0398   0.8992   0.7472
+40          provided50    Attack   category       tracking          16       -0.0023      0.0025        0.0396      0.0113   0.8992   0.7472
+49          provided50  Sniffing   category  index_control           2        0.1880      0.0340       -0.0598      0.0280   0.8980   0.7771
+50          provided50  Sniffing   category       position          32        0.7385      0.0448        0.5474      0.0418   0.8980   0.7771
+51          provided50  Sniffing   category       tracking          16        0.0039      0.0053       -0.0007      0.0218   0.8980   0.7771
+60  reference_simba517    Attack   category          angle          19       -0.0058      0.0175        0.0000      0.0000   0.8889   1.0000
+61  reference_simba517    Attack   category       distance          37        0.0112      0.0453        0.0086      0.0079   0.8889   1.0000
+62  reference_simba517    Attack   category       movement         226       -0.1032      0.0188        0.0000      0.0000   0.8889   1.0000
+63  reference_simba517    Attack   category            roi          20       -0.0058      0.0175        0.0000      0.0000   0.8889   1.0000
+64  reference_simba517    Attack   category          shape         208        0.5005      0.1727        0.2641      0.1056   0.8889   1.0000
+65  reference_simba517    Attack   category       tracking           7        0.0000      0.0000        0.0000      0.0000   0.8889   1.0000
+81  reference_simba517  Sniffing   category          angle          19        0.0000      0.0000        0.0000      0.0000   1.0000   1.0000
+82  reference_simba517  Sniffing   category       distance          37        0.2667      0.1333        0.0000      0.0000   1.0000   1.0000
+83  reference_simba517  Sniffing   category       movement         226        0.7333      0.3742        0.1442      0.1022   1.0000   1.0000
+84  reference_simba517  Sniffing   category            roi          20        0.0000      0.0000        0.0000      0.0000   1.0000   1.0000
+85  reference_simba517  Sniffing   category          shape         208        0.9333      0.2000        0.6812      0.1558   1.0000   1.0000
+86  reference_simba517  Sniffing   category       tracking           7        0.0000      0.0000        0.0000      0.0000   1.0000   1.0000

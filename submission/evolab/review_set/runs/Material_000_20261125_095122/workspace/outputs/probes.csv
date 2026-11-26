@@ -1,0 +1,13 @@
+encoder,target,metric,value
+main,frac_mag,R2,0.8593647440186178
+main,mean_bond,R2,0.05876831429257234
+main,n_atoms,R2,0.8696825678759087
+main,n_components,R2,0.7442228394985652
+main,motif (M-X-M' bridge),AUC,0.8772983751733421
+main,provided label y,AUC,0.5061633866318981
+random_init,frac_mag,R2,0.736366510535775
+random_init,mean_bond,R2,0.016281891146115668
+random_init,n_atoms,R2,0.8642139404051352
+random_init,n_components,R2,0.6820368102804031
+random_init,motif (M-X-M' bridge),AUC,0.8350768440533486
+random_init,provided label y,AUC,0.5005029343973845

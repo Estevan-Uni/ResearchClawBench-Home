@@ -1,0 +1,16 @@
+featureset,behaviour,feature,category,role,F1_drop_mean,F1_drop_sd,AP_drop_mean,AP_drop_sd
+reference_simba517,Sniffing,Tail_end_relative_to_tail_base_centroid_nose_M2_mean_2,movement,M2,0.33333333333333337,0.0,0.0,0.0
+reference_simba517,Sniffing,Tail_end_movement_M2_mean_2,movement,M2,0.33333333333333337,0.0,0.0,0.0
+reference_simba517,Sniffing,Tail_end_movement_M2_sum_2,movement,M2,0.33333333333333337,0.0,0.0,0.0
+reference_simba517,Sniffing,Total_movement_all_bodyparts_both_mice_mean_2_deviation,movement,inter,0.2666666666666667,0.13333333333333336,0.0,0.0
+reference_simba517,Sniffing,Tail_end_relative_to_tail_base_centroid_nose_M1_2,movement,M1,0.2666666666666667,0.13333333333333336,0.0,0.0
+reference_simba517,Sniffing,Tail_end_movement_M1_mean_2,movement,M1,0.2666666666666667,0.13333333333333336,0.0,0.0
+reference_simba517,Sniffing,Tail_end_movement_M1_sum_2,movement,M1,0.2666666666666667,0.13333333333333336,0.0,0.0
+reference_simba517,Sniffing,Mouse1_largest_euclid_distances_mean_6_deviation,shape,M1,0.2666666666666667,0.13333333333333336,0.0,0.0
+reference_simba517,Sniffing,Distance_mean_2_percentile_rank,distance,inter,0.2666666666666667,0.13333333333333336,0.0,0.0
+reference_simba517,Sniffing,Nose_movement_M1_mean_6,movement,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Nose_movement_M1_sum_6,movement,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Nose_movement_M1_median_6,movement,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Nose_movement_M1_median_7.5,movement,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Nose_movement_M1_sum_5,movement,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Nose_movement_M1_mean_5,movement,M1,0.0,0.0,0.0,0.0

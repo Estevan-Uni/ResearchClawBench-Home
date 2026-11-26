@@ -1,0 +1,31 @@
+{
+  "tag": "nasa4000",
+  "names": [
+    "R_n",
+    "R_p",
+    "k_n",
+    "h",
+    "LAM_p",
+    "R_f"
+  ],
+  "n_attempted": 4000,
+  "n_success": 4000,
+  "n_failed": 0,
+  "wall_time_s": 586.090722322464,
+  "mean_time_per_sim_s": 0.2918210133910179,
+  "median_time_per_sim_s": 0.28743255138397217,
+  "procs": 2,
+  "I_app": 2.0,
+  "T_amb": 297.15,
+  "V_cut": 2.7,
+  "fixed": {},
+  "tend_range_s": [
+    1464.759405579543,
+    4391.764114850472
+  ],
+  "dT_max_range_K": [
+    2.1703220266299468,
+    37.02733973695712
+  ],
+  "postfix": "V(tau=1) set to V_cut (interpolation artefact beyond event time, see report)"
+}

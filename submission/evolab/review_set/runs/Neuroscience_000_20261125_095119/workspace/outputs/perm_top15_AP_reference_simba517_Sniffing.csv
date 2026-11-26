@@ -1,0 +1,16 @@
+featureset,behaviour,feature,category,role,F1_drop_mean,F1_drop_sd,AP_drop_mean,AP_drop_sd
+reference_simba517,Sniffing,Mouse_1_poly_area,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_poly_area,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_nose_to_tail,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_nose_to_tail,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_width,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_width,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_Ear_distance,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_Ear_distance,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_Nose_to_centroid,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_Nose_to_centroid,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_Nose_to_lateral_left,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_Nose_to_lateral_left,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_Nose_to_lateral_right,shape,M1,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_2_Nose_to_lateral_right,shape,M2,0.0,0.0,0.0,0.0
+reference_simba517,Sniffing,Mouse_1_Centroid_to_lateral_left,shape,M1,0.0,0.0,0.0,0.0

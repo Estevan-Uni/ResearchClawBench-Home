@@ -1,0 +1,967 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "analyze_chains.py",
+    "path": "code/analyze_chains.py",
+    "type": "file",
+    "size": 4606,
+    "mtime": 1795604207.026388,
+    "exported": true
+  },
+  {
+    "name": "csf2_swap.py",
+    "path": "code/csf2_swap.py",
+    "type": "file",
+    "size": 1039,
+    "mtime": 1795604234.9745162,
+    "exported": true
+  },
+  {
+    "name": "fetch_db.py",
+    "path": "code/fetch_db.py",
+    "type": "file",
+    "size": 1930,
+    "mtime": 1795603684.8564312,
+    "exported": true
+  },
+  {
+    "name": "fig_timing.py",
+    "path": "code/fig_timing.py",
+    "type": "file",
+    "size": 2407,
+    "mtime": 1795606019.9430707,
+    "exported": true
+  },
+  {
+    "name": "get_tools.py",
+    "path": "code/get_tools.py",
+    "type": "file",
+    "size": 547,
+    "mtime": 1795603354.919974,
+    "exported": true
+  },
+  {
+    "name": "groundtruth_test.py",
+    "path": "code/groundtruth_test.py",
+    "type": "file",
+    "size": 2698,
+    "mtime": 1795604587.1522422,
+    "exported": true
+  },
+  {
+    "name": "make_tables.py",
+    "path": "code/make_tables.py",
+    "type": "file",
+    "size": 3032,
+    "mtime": 1795605463.4045324,
+    "exported": true
+  },
+  {
+    "name": "parse_foldseek.py",
+    "path": "code/parse_foldseek.py",
+    "type": "file",
+    "size": 1733,
+    "mtime": 1795603805.356786,
+    "exported": true
+  },
+  {
+    "name": "pdbutil.py",
+    "path": "code/pdbutil.py",
+    "type": "file",
+    "size": 3701,
+    "mtime": 1795603528.3841028,
+    "exported": true
+  },
+  {
+    "name": "rcsb_search.py",
+    "path": "code/rcsb_search.py",
+    "type": "file",
+    "size": 808,
+    "mtime": 1795603367.7679732,
+    "exported": true
+  },
+  {
+    "name": "run_usalign.py",
+    "path": "code/run_usalign.py",
+    "type": "file",
+    "size": 1476,
+    "mtime": 1795603760.0526438,
+    "exported": true
+  },
+  {
+    "name": "summarize.py",
+    "path": "code/summarize.py",
+    "type": "file",
+    "size": 12613,
+    "mtime": 1795604610.1403604,
+    "exported": true
+  },
+  {
+    "name": "timing.py",
+    "path": "code/timing.py",
+    "type": "file",
+    "size": 3934,
+    "mtime": 1795604446.1835303,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "accuracy_thresholds.json",
+    "path": "outputs/accuracy_thresholds.json",
+    "type": "file",
+    "size": 2750,
+    "mtime": 1795605430.1440678,
+    "exported": true
+  },
+  {
+    "name": "chain_tables.json",
+    "path": "outputs/chain_tables.json",
+    "type": "file",
+    "size": 200996,
+    "mtime": 1795604214.9824243,
+    "exported": true
+  },
+  {
+    "name": "csf2_hungarian_chainTM.json",
+    "path": "outputs/csf2_hungarian_chainTM.json",
+    "type": "file",
+    "size": 467,
+    "mtime": 1795606060.0514817,
+    "exported": true
+  },
+  {
+    "name": "csf2_swap.json",
+    "path": "outputs/csf2_swap.json",
+    "type": "file",
+    "size": 3599,
+    "mtime": 1795604235.2065172,
+    "exported": true
+  },
+  {
+    "name": "db",
+    "path": "outputs/db",
+    "type": "directory"
+  },
+  {
+    "name": "createdb.log",
+    "path": "outputs/db/createdb.log",
+    "type": "file",
+    "size": 926,
+    "mtime": 1795604120.6100028,
+    "exported": true
+  },
+  {
+    "name": "ids.txt",
+    "path": "outputs/db/ids.txt",
+    "type": "file",
+    "size": 120,
+    "mtime": 1795604119.505998,
+    "exported": true
+  },
+  {
+    "name": "db_meta.json",
+    "path": "outputs/db_meta.json",
+    "type": "file",
+    "size": 11249,
+    "mtime": 1795604104.1939316,
+    "exported": true
+  },
+  {
+    "name": "fetch_db.log",
+    "path": "outputs/fetch_db.log",
+    "type": "file",
+    "size": 2989,
+    "mtime": 1795604104.1939316,
+    "exported": true
+  },
+  {
+    "name": "groundtruth",
+    "path": "outputs/groundtruth",
+    "type": "directory"
+  },
+  {
+    "name": "groundtruth.json",
+    "path": "outputs/groundtruth/groundtruth.json",
+    "type": "file",
+    "size": 1496,
+    "mtime": 1795604592.7562711,
+    "exported": true
+  },
+  {
+    "name": "pair",
+    "path": "outputs/pair",
+    "type": "directory"
+  },
+  {
+    "name": "6N40_vs_7XG4.log",
+    "path": "outputs/pair/6N40_vs_7XG4.log",
+    "type": "file",
+    "size": 12267,
+    "mtime": 1795603560.9201567,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6N40.log",
+    "path": "outputs/pair/7XG4_vs_6N40.log",
+    "type": "file",
+    "size": 12290,
+    "mtime": 1795603560.560156,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG4.log",
+    "path": "outputs/pair/7XG4_vs_7XG4.log",
+    "type": "file",
+    "size": 12302,
+    "mtime": 1795603560.7961564,
+    "exported": true
+  },
+  {
+    "name": "fmt.txt",
+    "path": "outputs/pair/fmt.txt",
+    "type": "file",
+    "size": 221,
+    "mtime": 1795603560.4361558,
+    "exported": true
+  },
+  {
+    "name": "us_7XG4_vs_6N40.txt",
+    "path": "outputs/pair/us_7XG4_vs_6N40.txt",
+    "type": "file",
+    "size": 11315,
+    "mtime": 1795603578.6761894,
+    "exported": true
+  },
+  {
+    "name": "us_7XG4_vs_7XG4.txt",
+    "path": "outputs/pair/us_7XG4_vs_7XG4.txt",
+    "type": "file",
+    "size": 9840,
+    "mtime": 1795603663.1283758,
+    "exported": true
+  },
+  {
+    "name": "search",
+    "path": "outputs/search",
+    "type": "directory"
+  },
+  {
+    "name": "def.log",
+    "path": "outputs/search/def.log",
+    "type": "file",
+    "size": 14540,
+    "mtime": 1795604138.006079,
+    "exported": true
+  },
+  {
+    "name": "exh.log",
+    "path": "outputs/search/exh.log",
+    "type": "file",
+    "size": 11051,
+    "mtime": 1795604123.7940166,
+    "exported": true
+  },
+  {
+    "name": "summary_ranked.csv",
+    "path": "outputs/summary_ranked.csv",
+    "type": "file",
+    "size": 4744,
+    "mtime": 1795606049.0153692,
+    "exported": true
+  },
+  {
+    "name": "summary_table.md",
+    "path": "outputs/summary_table.md",
+    "type": "file",
+    "size": 2629,
+    "mtime": 1795606049.0153692,
+    "exported": true
+  },
+  {
+    "name": "summary_targets.csv",
+    "path": "outputs/summary_targets.csv",
+    "type": "file",
+    "size": 4723,
+    "mtime": 1795605430.1000671,
+    "exported": true
+  },
+  {
+    "name": "tables.md",
+    "path": "outputs/tables.md",
+    "type": "file",
+    "size": 8378,
+    "mtime": 1795605463.7645376,
+    "exported": true
+  },
+  {
+    "name": "timing",
+    "path": "outputs/timing",
+    "type": "directory"
+  },
+  {
+    "name": "rep_exhaustive.tsv",
+    "path": "outputs/timing/rep_exhaustive.tsv",
+    "type": "file",
+    "size": 380496,
+    "mtime": 1795605826.7650042,
+    "exported": true
+  },
+  {
+    "name": "rep_prefilter_default.tsv",
+    "path": "outputs/timing/rep_prefilter_default.tsv",
+    "type": "file",
+    "size": 321460,
+    "mtime": 1795605901.385821,
+    "exported": true
+  },
+  {
+    "name": "rep_prefilter_maxseqs3000.tsv",
+    "path": "outputs/timing/rep_prefilter_maxseqs3000.tsv",
+    "type": "file",
+    "size": 333380,
+    "mtime": 1795605988.9987497,
+    "exported": true
+  },
+  {
+    "name": "timing.json",
+    "path": "outputs/timing/timing.json",
+    "type": "file",
+    "size": 3018,
+    "mtime": 1795605989.01875,
+    "exported": true
+  },
+  {
+    "name": "timing.log",
+    "path": "outputs/timing.log",
+    "type": "file",
+    "size": 960,
+    "mtime": 1795605989.01875,
+    "exported": true
+  },
+  {
+    "name": "tools",
+    "path": "outputs/tools",
+    "type": "directory"
+  },
+  {
+    "name": "fs",
+    "path": "outputs/tools/fs",
+    "type": "directory"
+  },
+  {
+    "name": "foldseek",
+    "path": "outputs/tools/fs/foldseek",
+    "type": "directory"
+  },
+  {
+    "name": "README.md",
+    "path": "outputs/tools/fs/foldseek/README.md",
+    "type": "file",
+    "size": 31395,
+    "mtime": 1795603539.5081203,
+    "exported": true
+  },
+  {
+    "name": "get.log",
+    "path": "outputs/tools/get.log",
+    "type": "file",
+    "size": 597,
+    "mtime": 1795603540.664122,
+    "exported": true
+  },
+  {
+    "name": "us",
+    "path": "outputs/tools/us",
+    "type": "directory"
+  },
+  {
+    "name": "info",
+    "path": "outputs/tools/us/info",
+    "type": "directory"
+  },
+  {
+    "name": "about.json",
+    "path": "outputs/tools/us/info/about.json",
+    "type": "file",
+    "size": 10520,
+    "mtime": 1726148570.4933262,
+    "exported": true
+  },
+  {
+    "name": "hash_input.json",
+    "path": "outputs/tools/us/info/hash_input.json",
+    "type": "file",
+    "size": 212,
+    "mtime": 1726148569.96932,
+    "exported": true
+  },
+  {
+    "name": "index.json",
+    "path": "outputs/tools/us/info/index.json",
+    "type": "file",
+    "size": 306,
+    "mtime": 1726148569.97332,
+    "exported": true
+  },
+  {
+    "name": "paths.json",
+    "path": "outputs/tools/us/info/paths.json",
+    "type": "file",
+    "size": 2864,
+    "mtime": 1726148570.9933338,
+    "exported": true
+  },
+  {
+    "name": "recipe",
+    "path": "outputs/tools/us/info/recipe",
+    "type": "directory"
+  },
+  {
+    "name": "build.sh",
+    "path": "outputs/tools/us/info/recipe/build.sh",
+    "type": "file",
+    "size": 364,
+    "mtime": 1726147997.0342245,
+    "exported": true
+  },
+  {
+    "name": "conda_build_config.yaml",
+    "path": "outputs/tools/us/info/recipe/conda_build_config.yaml",
+    "type": "file",
+    "size": 6806,
+    "mtime": 1726148570.9173326,
+    "exported": true
+  },
+  {
+    "name": "meta.yaml",
+    "path": "outputs/tools/us/info/recipe/meta.yaml",
+    "type": "file",
+    "size": 2966,
+    "mtime": 1726148570.8933322,
+    "exported": true
+  },
+  {
+    "name": "run_exports.json",
+    "path": "outputs/tools/us/info/run_exports.json",
+    "type": "file",
+    "size": 33,
+    "mtime": 1726148570.4933262,
+    "exported": true
+  },
+  {
+    "name": "test",
+    "path": "outputs/tools/us/info/test",
+    "type": "directory"
+  },
+  {
+    "name": "run_test.sh",
+    "path": "outputs/tools/us/info/test/run_test.sh",
+    "type": "file",
+    "size": 31,
+    "mtime": 1726148570.9253328,
+    "exported": true
+  },
+  {
+    "name": "usalign",
+    "path": "outputs/usalign",
+    "type": "directory"
+  },
+  {
+    "name": "7XG4_vs_11HC.json",
+    "path": "outputs/usalign/7XG4_vs_11HC.json",
+    "type": "file",
+    "size": 449,
+    "mtime": 1795605083.294323,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_11HC.txt",
+    "path": "outputs/usalign/7XG4_vs_11HC.txt",
+    "type": "file",
+    "size": 15015,
+    "mtime": 1795605083.294323,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_1A0R.json",
+    "path": "outputs/usalign/7XG4_vs_1A0R.json",
+    "type": "file",
+    "size": 382,
+    "mtime": 1795605320.534446,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_1A0R.txt",
+    "path": "outputs/usalign/7XG4_vs_1A0R.txt",
+    "type": "file",
+    "size": 10871,
+    "mtime": 1795605320.534446,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_1FIN.json",
+    "path": "outputs/usalign/7XG4_vs_1FIN.json",
+    "type": "file",
+    "size": 397,
+    "mtime": 1795605327.8425589,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_1FIN.txt",
+    "path": "outputs/usalign/7XG4_vs_1FIN.txt",
+    "type": "file",
+    "size": 11753,
+    "mtime": 1795605327.8425589,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_4HHB.json",
+    "path": "outputs/usalign/7XG4_vs_4HHB.json",
+    "type": "file",
+    "size": 382,
+    "mtime": 1795605317.690402,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_4HHB.txt",
+    "path": "outputs/usalign/7XG4_vs_4HHB.txt",
+    "type": "file",
+    "size": 10750,
+    "mtime": 1795605317.690402,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_4TVX.json",
+    "path": "outputs/usalign/7XG4_vs_4TVX.json",
+    "type": "file",
+    "size": 458,
+    "mtime": 1795605411.7438056,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_4TVX.txt",
+    "path": "outputs/usalign/7XG4_vs_4TVX.txt",
+    "type": "file",
+    "size": 25175,
+    "mtime": 1795605411.7438056,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_5H9F.json",
+    "path": "outputs/usalign/7XG4_vs_5H9F.json",
+    "type": "file",
+    "size": 458,
+    "mtime": 1795605314.5583532,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_5H9F.txt",
+    "path": "outputs/usalign/7XG4_vs_5H9F.txt",
+    "type": "file",
+    "size": 14722,
+    "mtime": 1795605314.5543532,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6B44.json",
+    "path": "outputs/usalign/7XG4_vs_6B44.json",
+    "type": "file",
+    "size": 444,
+    "mtime": 1795605232.7970316,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6B44.txt",
+    "path": "outputs/usalign/7XG4_vs_6B44.txt",
+    "type": "file",
+    "size": 15625,
+    "mtime": 1795605232.7970316,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6IG0.json",
+    "path": "outputs/usalign/7XG4_vs_6IG0.json",
+    "type": "file",
+    "size": 443,
+    "mtime": 1795605150.043584,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6IG0.txt",
+    "path": "outputs/usalign/7XG4_vs_6IG0.txt",
+    "type": "file",
+    "size": 13203,
+    "mtime": 1795605150.0395842,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6N40.json",
+    "path": "outputs/usalign/7XG4_vs_6N40.json",
+    "type": "file",
+    "size": 359,
+    "mtime": 1795605330.390598,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_6N40.txt",
+    "path": "outputs/usalign/7XG4_vs_6N40.txt",
+    "type": "file",
+    "size": 11315,
+    "mtime": 1795605330.390598,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7UZW.json",
+    "path": "outputs/usalign/7XG4_vs_7UZW.json",
+    "type": "file",
+    "size": 431,
+    "mtime": 1795605173.5440075,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7UZW.txt",
+    "path": "outputs/usalign/7XG4_vs_7UZW.txt",
+    "type": "file",
+    "size": 11532,
+    "mtime": 1795605173.5440075,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XFZ.json",
+    "path": "outputs/usalign/7XG4_vs_7XFZ.json",
+    "type": "file",
+    "size": 409,
+    "mtime": 1795604991.880437,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XFZ.txt",
+    "path": "outputs/usalign/7XG4_vs_7XFZ.txt",
+    "type": "file",
+    "size": 10374,
+    "mtime": 1795604991.8764367,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG0.json",
+    "path": "outputs/usalign/7XG4_vs_7XG0.json",
+    "type": "file",
+    "size": 446,
+    "mtime": 1795604867.7015207,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG0.txt",
+    "path": "outputs/usalign/7XG4_vs_7XG0.txt",
+    "type": "file",
+    "size": 9837,
+    "mtime": 1795604867.7015207,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG1.json",
+    "path": "outputs/usalign/7XG4_vs_7XG1.json",
+    "type": "file",
+    "size": 434,
+    "mtime": 1795604893.770171,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG1.txt",
+    "path": "outputs/usalign/7XG4_vs_7XG1.txt",
+    "type": "file",
+    "size": 9834,
+    "mtime": 1795604893.770171,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG2.json",
+    "path": "outputs/usalign/7XG4_vs_7XG2.json",
+    "type": "file",
+    "size": 439,
+    "mtime": 1795604928.7310102,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG2.txt",
+    "path": "outputs/usalign/7XG4_vs_7XG2.txt",
+    "type": "file",
+    "size": 9837,
+    "mtime": 1795604928.7310102,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG3.json",
+    "path": "outputs/usalign/7XG4_vs_7XG3.json",
+    "type": "file",
+    "size": 453,
+    "mtime": 1795604845.8529584,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG3.txt",
+    "path": "outputs/usalign/7XG4_vs_7XG3.txt",
+    "type": "file",
+    "size": 11106,
+    "mtime": 1795604845.8529584,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG4.json",
+    "path": "outputs/usalign/7XG4_vs_7XG4.json",
+    "type": "file",
+    "size": 332,
+    "mtime": 1795604224.5944684,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_7XG4.txt",
+    "path": "outputs/usalign/7XG4_vs_7XG4.txt",
+    "type": "file",
+    "size": 9840,
+    "mtime": 1795604224.5824683,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8ANE.json",
+    "path": "outputs/usalign/7XG4_vs_8ANE.json",
+    "type": "file",
+    "size": 432,
+    "mtime": 1795605116.8469682,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8ANE.txt",
+    "path": "outputs/usalign/7XG4_vs_8ANE.txt",
+    "type": "file",
+    "size": 12117,
+    "mtime": 1795605116.8469682,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8RC2.json",
+    "path": "outputs/usalign/7XG4_vs_8RC2.json",
+    "type": "file",
+    "size": 441,
+    "mtime": 1795604573.4761722,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8RC2.txt",
+    "path": "outputs/usalign/7XG4_vs_8RC2.txt",
+    "type": "file",
+    "size": 11454,
+    "mtime": 1795604573.4761722,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8RC3.json",
+    "path": "outputs/usalign/7XG4_vs_8RC3.json",
+    "type": "file",
+    "size": 445,
+    "mtime": 1795604618.4564033,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8RC3.txt",
+    "path": "outputs/usalign/7XG4_vs_8RC3.txt",
+    "type": "file",
+    "size": 9909,
+    "mtime": 1795604618.4444032,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8RFJ.json",
+    "path": "outputs/usalign/7XG4_vs_8RFJ.json",
+    "type": "file",
+    "size": 456,
+    "mtime": 1795604411.9633613,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8RFJ.txt",
+    "path": "outputs/usalign/7XG4_vs_8RFJ.txt",
+    "type": "file",
+    "size": 11163,
+    "mtime": 1795604411.959361,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8S35.json",
+    "path": "outputs/usalign/7XG4_vs_8S35.json",
+    "type": "file",
+    "size": 453,
+    "mtime": 1795604515.5278776,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8S35.txt",
+    "path": "outputs/usalign/7XG4_vs_8S35.txt",
+    "type": "file",
+    "size": 12757,
+    "mtime": 1795604515.5278776,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8S36.json",
+    "path": "outputs/usalign/7XG4_vs_8S36.json",
+    "type": "file",
+    "size": 451,
+    "mtime": 1795604708.0250032,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8S36.txt",
+    "path": "outputs/usalign/7XG4_vs_8S36.txt",
+    "type": "file",
+    "size": 12399,
+    "mtime": 1795604708.021003,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8S37.json",
+    "path": "outputs/usalign/7XG4_vs_8S37.json",
+    "type": "file",
+    "size": 450,
+    "mtime": 1795604781.2671976,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_8S37.txt",
+    "path": "outputs/usalign/7XG4_vs_8S37.txt",
+    "type": "file",
+    "size": 12603,
+    "mtime": 1795604781.2671976,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_9N3Y.json",
+    "path": "outputs/usalign/7XG4_vs_9N3Y.json",
+    "type": "file",
+    "size": 454,
+    "mtime": 1795604317.8869052,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_9N3Y.txt",
+    "path": "outputs/usalign/7XG4_vs_9N3Y.txt",
+    "type": "file",
+    "size": 9915,
+    "mtime": 1795604317.8829052,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_9N3Z.json",
+    "path": "outputs/usalign/7XG4_vs_9N3Z.json",
+    "type": "file",
+    "size": 457,
+    "mtime": 1795604981.4562087,
+    "exported": true
+  },
+  {
+    "name": "7XG4_vs_9N3Z.txt",
+    "path": "outputs/usalign/7XG4_vs_9N3Z.txt",
+    "type": "file",
+    "size": 11235,
+    "mtime": 1795604981.4562087,
+    "exported": true
+  },
+  {
+    "name": "usalign_run.log",
+    "path": "outputs/usalign_run.log",
+    "type": "file",
+    "size": 685,
+    "mtime": 1795605411.7438056,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 184941,
+    "mtime": 1795605431.6120887,
+    "exported": true
+  },
+  {
+    "name": "fig2_requested_pair.png",
+    "path": "report/images/fig2_requested_pair.png",
+    "type": "file",
+    "size": 93191,
+    "mtime": 1795605432.5201013,
+    "exported": true
+  },
+  {
+    "name": "fig3_csf2_homomer_swap.png",
+    "path": "report/images/fig3_csf2_homomer_swap.png",
+    "type": "file",
+    "size": 520921,
+    "mtime": 1795605435.3481414,
+    "exported": true
+  },
+  {
+    "name": "fig4_superposition_consistency.png",
+    "path": "report/images/fig4_superposition_consistency.png",
+    "type": "file",
+    "size": 153227,
+    "mtime": 1795605437.028165,
+    "exported": true
+  },
+  {
+    "name": "fig5_fsm_vs_usalign.png",
+    "path": "report/images/fig5_fsm_vs_usalign.png",
+    "type": "file",
+    "size": 194571,
+    "mtime": 1795605438.0441792,
+    "exported": true
+  },
+  {
+    "name": "fig6_twilight.png",
+    "path": "report/images/fig6_twilight.png",
+    "type": "file",
+    "size": 82314,
+    "mtime": 1795605438.6441877,
+    "exported": true
+  },
+  {
+    "name": "fig7_timing.png",
+    "path": "report/images/fig7_timing.png",
+    "type": "file",
+    "size": 136272,
+    "mtime": 1795606023.4391067,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 36640,
+    "mtime": 1795606189.3367736,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5035,
+    "mtime": 1795603338.8439777,
+    "exported": true
+  }
+]

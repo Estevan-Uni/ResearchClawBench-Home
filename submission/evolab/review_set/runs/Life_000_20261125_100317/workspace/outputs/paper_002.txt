@@ -1,0 +1,2351 @@
+MR41CH05-Waite ARI 3 June 2011 8:4
+Mussel-Inspired Adhesives
+and Coatings
+Bruce P. Lee,1 P.B. Messersmith,2,3 J.N. Israelachvili,4
+and J.H. Waite5
+1Department of Biomedical Engineering, Michigan Technological University, Houghton,
+Michigan 49931; email: bpl4@yahoo.com
+2Nerites Corporation, Madison, Wisconsin 53719
+3Department of Biomedical Engineering, Northwestern University, Evanston, Illinois 60201;
+email: philm@northwestern.edu
+4Department of Chemical Engineering, University of California, Santa Barbara,
+California 93106; email: jacob@engineering.ucsb.edu
+5Molecular, Cell & Developmental Biology, University of California, Santa Barbara,
+California 93106; email: waite@lifesci.ucsb.edu
+Annu. Rev. Mater. Res. 2011. 41:99–132
+The Annual Review of Materials Research is online at
+matsci.annualreviews.org
+This article’s doi:
+10.1146/annurev-matsci-062910-100429
+Copyright c© 2011 by Annual Reviews.
+All rights reserved
+1531-7331/11/0804-0099$20.00
+Keywords
+adhesion energy, byssus, Dopa, mussel foot proteins, wet adhesion
+Abstract
+Mussels attach to solid surfaces in the sea. Their adhesion must be rapid,
+strong, and tough, or else they will be dislodged and dashed to pieces by the
+next incoming wave. Given the dearth of synthetic adhesives for wet polar
+surfaces, much effort has been directed to characterizing and mimicking es-
+sential features of the adhesive chemistry practiced by mussels. Studies of
+these organisms have uncovered important adaptive strategies that help to
+circumvent the high dielectric and solvation properties of water that typi-
+cally frustrate adhesion. In a chemical vein, the adhesive proteins of mussels
+are heavily decorated with Dopa, a catecholic functionality. Various syn-
+thetic polymers have been functionalized with catechols to provide diverse
+adhesive, sealant, coating, and anchoring properties, particularly for critical
+biomedical applications.
+99
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Work of adhesion:
+WA12 is the work done
+on the system when
+two condensed phases
+1and2(1⁄= 2) that
+form an interface of
+unit area are separated
+reversibly to form unit
+surface areas of each of
+the phases
+1. INTRODUCTION
+The holdfast of marine mussels has recently provided important chemical and physical insights
+into moisture-resistant adhesion. This review develops three interconnected themes: how water
+undermines polymer adhesion, how mussel adhesives and coatings work, and how basic research
+in this area has translated into diverse applications.
+2. WATER AND ADHESION
+In the technology of adhesive bonding, water or moisture has traditionally been treated as a surface
+contaminant or weak boundary layer. With few exceptions, the presence of moisture leads to the
+deterioration of performance in synthetic adhesive polymers. The mechanisms of deterioration are
+many and complex and include moisture-induced plasticization, swelling, erosion, and hydrolysis
+of polymers and interfacial wicking and crazing (1).
+In biology, water is the medium: Cells and most tissues are approximately 70% water by
+weight. Saline ﬂuids such as blood plasma, lymph, and seawater surround and bathe cells, tissues,
+organisms, and implants. The medium has played a crucial role in the evolution of biomolecular
+adhesion. Water, particularly saline water, limits what can bind and where. At a simplistic molecular
+level, Coulomb’s law for electrostatic interactions predicts that the interaction energy for two point
+charges QaQb is −QaQb/4πεr,whereε is the dielectric constant and r is the interionic distance. An
+electrostatic interaction between opposite charges will be only 1/80 as strong in water (ε = 80) as
+it is under vacuum (ε = 1). Actually, the interaction is often further diminished because r will also
+be increased due to strong solvation of ions such as Mg2+ and Li+ by H2O (2).
+The interaction energies of several other noncovalent interactions such as freely rotating
+dipole-dipole interactions and dispersion forces are penalized to an even greater degree by the
+dielectric constant in that E ∝ 1/ε2 (2). In contrast, the effect of ε on hydrogen bonds is essentially
+unpredictable; coordination complexes are largely unaffected as long as the ligands of choice bind
+the metal more strongly than to H2O (3), and hydrophobic interactions are enhanced by H2O
+(2).
+Although a molecular perspective is suggestive about the effect of water on interactions be-
+tween molecules, it must be enlarged where surfaces are concerned. Expanding the concept of
+interactions between two surfaces in water requires the use of adhesion energies (EA =−2γi )
+or works of adhesion (WA = 2γi ,whereγ i is the interfacial energy), which can be measured
+for an interface between any two homogeneous materials (4). Much theoretical and experimental
+effort has been devoted to parsing the contributions of electrostatic, polar, and dispersion forces
+to interfacial energies. An illustrative example of how water affects adhesion in terms of interfacial
+energies is a comparison of epoxy on aluminum under clean-room and fully hydrated conditions
+(Figure 1) (5). The polar and dispersive components of each interfacial energy can be summed
+to estimate a WA. This work is quite strong (positive) in vacuum, whereas in water there is no
+measurable adhesion, e.g., WA =−137 mJ m−2. The most subversive component undermining
+adhesion in the latter case derives from the product of the polar components in the interaction
+between aluminum and water, i.e., γ p 2 γ p w (−164 mJ m−2 in Figure 1), which the polymer interac-
+tions with the metal are unable to overcome. This example shows that successful adhesives for wet
+polar surfaces must be designed so as to result in a more favorable interaction with a target polar
+surface than water is able to offer. Engineering covalent bonds into the interfaces of moisture-
+resistant adhesives is currently quite common but requires elaborate and costly clean-room pro-
+cedures (5). Understanding mussel adhesion offers insights into how this can be done entirely
+underwater.
+100 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Clean room Underwater
+Epoxy
+γd = 41.2
+γp = 5
+γ = 46.2
+γ = 638
+γp = 538
+γd = 100
+Al2O3
+γwp = 72.2
+γwd = 50.2
+γw = 22
+W'A = –137 mJ m–2WA = 232 mJ m–2
+Al2O3
+Epoxy
+Epoxy Epoxy
+Al2O3 Al2O3
+WA = 2 + 2γ1 d γ2 d γ1 p γ2 p
+WA = 2{
+–30 –16 –47 –164 +64 +52
+}γ1 d γw d – γ1 p γw p – γ2 d γw d – γ2 p γw p + γ1 d γ2 d + γ1 p γ2 p
+Figure 1
+The inﬂuence of water on the work of adhesion (WA) between an epoxy adhesive and an aluminum surface.
+WA is derived from the summation of surface energy products due to dispersion interactions (γ d 1 γ d 2 )and
+those due to polar interactions (γ p 1 γ p 2 ) under clean-room (left)andwet(right) conditions. From data in
+Pocius (5).
+Byssus:
+an extraorganismic
+proteinaceous holdfast
+structure produced by
+many bivalve mollusks
+for opportunistic
+adhesion to hard
+surfaces
+3. BYSSUS: THE MUSSEL HOLDFAST
+Rocky wave- and windswept seacoasts are havens for mussels (particularly those in the genus
+Mytilus)—wedge-shaped bivalve mollusks that blanket the rocks of the intertidal zone (6, 7).
+The rocky seaside habitat offers mussels many attractive beneﬁts such as aerated seawater for
+respiratory gas exchange, rapid waste removal, rich nutrient supply, and the security of a highly
+interactive community (8). The habitat also exacts costs, including the holdfast termed the byssus
+(Figure 2a). Making and maintaining a byssus are absolutely necessary adaptations to resist the
+lift and drag of waves in the intertidal zone and cost between 8% and 12% of the total metabolic
+energy of a mussel (9, 10).
+3.1. Organization and Fabrication
+The byssus is essentially a bundle of radially distributed threads and consists of four parts: at-
+tachment plaques, threads (distal and proximal portions), stem, and root. The expanded plaques
+at the distal thread ends are attached to foreign surfaces, whereas the proximal ends radiate from
+the stem, which merges with the living tissues of the mussel by way of the root (Figure 2b). The
+relationship of a mussel to its byssus is a peculiar one akin perhaps to a futuristic bionic device:
+Retractor muscles within the mussel (living) dovetail with ﬁbrous byssal proteins (nonliving) in
+the root, the interface between living and nonliving tissues. Like silkworm silk, byssal threads are
+rapidly made of protein and are void of living cells, but unlike silk, they remain attached to the root
+at the base of the mussel foot, where an assortment of 12 retractor muscles controls thread tension.
+The foot makes byssal threads one at a time in a process that resembles reaction injection
+molding and requires approximately 3–10 min per thread (11). Accordingly, the mussel’s tongue-
+like foot emerges from the ventral shell gap and explores available surfaces within a radius of
+approximately 5–6 cm. Besides the discoveries that the mussel prefers high-energy surfaces to
+low-energy surfaces and rough surfaces to smooth surfaces, investigations of the mussel’s sensory
+www.annualreviews.org • Mussel-Inspired Adhesion 101
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+ab
+Posterior
+adductor
+Stem
+Foot
+Anterior
+adductor
+Byssal
+retactors
+Byssus
+Thread
+Plaque
+Figure 2
+Adhesion in the marine mussel Mytilus californianus.(a) Adult mussel (5 cm length) displaying an extensive
+byssus attached to a mica surface. (b) Schematic mussel on a half-shell. Each byssus is a bundle of threads
+tipped with adhesive plaques. The threads are joined at the stem, which inserts into the base of the foot.
+Byssal tension is controlled by 12 byssal retractor muscles, 6 per valve. The two adductor muscles open and
+close the valves.
+powers of surface discrimination have been limited (12, 13). Upon ﬁnding a suitable spot, the foot
+tip attaches to the surface and becomes quite motionless.
+3.2. Tenacity
+The average mussel has 50 to 100 threads at any given time, and these threads are roughly radially
+arranged over a ﬂat surface. Field tests of mussel tenacity or the resistance to dislodgement have
+been measured with handheld force gauges in normal and parallel displacement modes. Adjusted
+for mass, the tenacity of a solitary (length 10 cm and weight ∼0.150 kg) California mussel (Mytilus
+californianus) attached to a rock is typically approximately 300 N in normal mode (lift) and 180 N
+in parallel displacement mode (drag) (Figure 3) (14, 15). Tenacities in other Mytilus species are
+less than half these ﬁgures. As all threads contribute to load bearing only in normal mode, 300 N
+divided by 50 threads yields 6 N per thread. The geometry of load transfer in byssus during normal
+and parallel extension has been examined in greater detail elsewhere (14, 15). The most common
+point of failure in tenacity tests is the adhesive plaque. If one takes 2 mm as the diameter of each
+plaque, an estimate for average plaque adhesive strength in a solitary ﬁeld mussel is 6 MPa. This
+value is considerably higher than the 0.3 MPa measured directly on individual plaques by Allen
+et al. (16) and Wilker and colleagues (17) in Mytilus edulis. Perhaps the disparity reﬂects a species
+dependency, but a signiﬁcant concern about these measurements is that the angle of contact
+between a thread and a plaque decreases as the distance between the plaque and the thread origin
+increases. More importantly, the point of contact between a distant plaque and its connecting
+thread is shifted to the proximal edge of the plaque (Figure 3). Mature mussels have threads that
+can exceed 5–6 cm, making the angle between the thread, plaque, and substratum very small. As
+Lin et al. (18) point out, applying a normal force to a thread with a 5◦ plaque contact angle is likely
+to fail in peeling at a much lower force than for a thread with a natural 90◦ angle to the plaque.
+Unfortunately, even today researchers determine plaque attachment strengths without taking note
+of the thread-plaque contact angles (17). At any rate, if one sets aside the concern of angles, even
+a 6-MPa attachment strength in plaques is not particularly impressive for a high-performance
+102 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Stationary
+Plaque
+Thread
+Substratum
+θ
+Lift
+Drag
+Figure 3
+Mussels in ﬂow experience a combination of lift and drag. (Left) Shown is a mussel in stationary water with
+an idealized byssus in which radial, equidistant threads of the same length form a small angle θ with the
+surface. (Right) Lift is force applied normal to the surface, whereas drag is force applied parallel to the
+surface. The location of the thread-to-plaque connection is biased toward the plaque’s proximal edge.
+adhesive. Nonetheless, the observed adhesion is a remarkable achievement given the ever-present
+seawater and the fouled surfaces that mussels must contend with.
+3.3. Byssal Plaques
+All portions of the mussel byssus are critical for secure attachment. Byssal plaques, however, are
+specialized for adhesion to solid foreign surfaces.
+3.3.1. Microstructure. Mussel byssal plaques have a surprising degree of ﬁne and hierarchical
+structure (Figure 4a–c). Although there is much old literature on the subject, we conﬁne ourselves
+to transmission electron microscopy (TEM) and freeze-fracture analyses (19). The distal thread
+core consists of bundles of microﬁbers separated by a granular matrix. As each thread approaches
+the plaque, the bundles splay out like tree roots into the porous bulk of the plaque, approaching
+to within 1 μm of the interface (Figure 4c). The plaque exhibits an ∼40% porosity and a marked
+gradient in pore diameter: The diameter is only 200 nm near the substratum but nearly 3 μm
+where the thread meets the plaque. The pores are open, are interconnected by channels with
+smooth walls (Figure 4d), and are ﬁlled with ﬂuid in their native state. The trabeculae also consist
+of an open-pore network in which pores range in diameter from 50 to 500 nm and walls are only
+50 nm thick.
+With respect to the interface, plaques attached to glass prepared for examination by SEM appear
+mostly delaminated, but closer scrutiny of the interfacial region reveals ﬁbrous foci or pillars that
+remain intact (Figure 4e). These pillars suggest that strong adhesive contacts between the plaque
+proteins and marine surfaces are possible in plaques. The limiting factor for mussel adhesion may
+thus be the extent to which surfaces are fouled by other contaminants (e.g., conditioning layers
+and bioﬁlms) (20). As bioﬁlms are rarely, if ever, uniform on marine surfaces, mussel adhesion may
+be determined by whether adhesive proteins in the plaque ﬁnd strong toeholds in the occasional
+bare patches of solid surface.
+www.annualreviews.org • Mussel-Inspired Adhesion 103
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+mfp: mussel foot
+protein
+Dopa:
+3,4-dihydroxyphenyl-
+L-alanine
+0.5 mm0.5 mm0.5 mm
+0.1 mm
+b
+dcca
+ee
+CutCut
+ColCol
+FoFo
+Cut
+Col
+Fo
+Substratum
+d
+5 5 μm5 μm
+Figure 4
+The ultrastructure of a byssal adhesive plaque. (a) A byssated mussel showing the orientation of the sampled
+adhesive plaque (red ). (b) Microscopic, reﬂected light image of a single attached plaque of Mytilus
+californianus. The underlying foam-like structure causes the light-scattering effect (white). The purple dashed
+line indicates the position of the freeze fracture. (c) Scanning electron microscope view of a freeze-fractured
+plaque illustrating the cuticle (Cut), the collagen ﬁbers (Col) from the core, and the foam (Fo). (d )An
+enlargement of the foam-like structure shown in the blue boxed region in panel c.(e) The interfacial region
+between the plaque and the substratum shown in the yellow boxed region in panel c. A number of pillars
+(arrows) remain intact despite partial plaque delamination due to drying.
+3.3.2. Protein biochemistry. Mytilus byssus contains roughly 25–30 different proteins. Perhaps
+7–8 of these are present in the plaque, but only 5 are unique to plaque. Plaque proteins not conﬁned
+to the plaque are mussel foot protein (mfp)-1, prepolymerized collagens (preCOLs) preCOL-D
+and preCOL-NG, and thread matrix proteins (i.e., tmp-1). Mfp-1 is the key protein of the byssal
+cuticle and is discussed in Section 3.4. The other proteins that assemble to make up the thread
+are discussed elsewhere (21). Those proteins conﬁned to plaques are mfp-2, -3, -4, -5, and -6
+(Table 1). All these proteins contain the posttranslationally modiﬁed amino acid 3,4-
+dihydroxyphenyl-L-alanine (Dopa) and have high isoelectric points but otherwise have widely
+different sequences. Most are polymorphic families—there are multiple genes and gene copies—
+or are processed via alternative splicing.
+3.3.2.1. Mfp-2. Mfp-2 is the most abundant plaque protein, representing 25 wt% of the plaque. It
+is 45 kDa long and consists of 11 tandem repeats of an epidermal growth factor (EGF) domain that
+resembles a knot stabilized by three disulﬁde bonds and is a common motif in extracellular matrix
+proteins (22). Dopa (<5 mol%) is clustered at the N and C termini and otherwise appears once
+or twice on each EGF repeat. Rzepecki et al. (23) detected at least eight mfp-2 sequence variants
+in M. edulis plaques. One complete complementary DNA (cDNA)-deduced protein sequence has
+been published, but several others are accessible in the UniProt (ExPASy) database. At least one
+of the EGF repeats has a consensus motif for Ca2+ binding (24).
+104 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Table 1 Proteins of Mytilus byssus in or near the attachment plaque
+Protein Species
+Mass
+(kDa) pI
+Dopa
+(mol%) Sequence (consensus or complete)a
+Repeat
+number PTMb Reference
+Mfp-1 Me 108 10.5 15 [AKPSYO∗OTYK]n 75 O; O∗ 53
+Mc 90 [PKISYO∗OTYK]n 47
+Mfp-2 Mg 45 9.5 5 [TDKAYKPNPCVVSKPCKNR
+GKCIWNGKAYRCKCAYGY
+GGRHC]n
+11 [S-S] 23, 22
+Mfp-3 Me 6 20 ADYYGPNYGPPRRYGGGNY
+NRYNRYGRRYGGYKGWNN
+GWNRGRRGKYW
+1 R 26
+Mfp-4 Mc 93 2 [HVHTHRVLHK]n 36 28
+[DDHVNDIAQTA]n 16
+Mfp-5 Me 9 9 28 SSEEYKGGYYPGNAYHYSGG
+SYHGSGYHGGYKGKYYGK
+AKKYYYKYKNSGKYKYLKK
+ARKYHRKGYKYYGGSS
+1 S 29
+Mfp-6 Mc 11 9.5 3 GGGNYRGYCSNKGCRSGYIF
+YDNRGFCKYGSSSYKYDCG
+NYACLPRNPYGRVKYYCTKK
+YSCPDDFYYYNNKGYYYYND
+KDYGCFNCGSYNGCCLRSGY
+1 S
+[S-S]
+30
+Tmp-1 Mg 57 9.5 3 [YGYGNIYGYNGYGNGKTNIIV
+NKSGYGYGNGYGYGNGYIYYG]n
+5 35
+[YGNGKTTKIVVNKGNGYGYD]n 3
+PreCOL-D Me 240 10.5 <1 [GX1X2]n 173 O 32
+[An], n = 7–9
+PreCOL-NG Me 230 7.5 <1 [GX1X2]n 143 O 33
+aSymbols for standard amino acids follow convention.
+bPosttranslational modiﬁcations (PTM) are trans-4-hydroxyproline (O), trans-2,3-cis-3,4-dihydroxyproline (O), Dopa (Y), 4-hydroxyarginine (R), and
+O-phosphoserine (S). [S-S] denotes cross-linked Cys (C). A nonbolded C denotes any Cys whose oxidation state has yet to be determined. Species are
+Mytilus edulis (Me), Mytilis galloprovincialis (Mg), and Mytilis californianus (Mc). Other abbreviations: Mfp, mussel foot protein; PreCOL, prepolymerized
+collagen; Tmp, thread matrix protein. Dopa and O-phosphoserine also occur in other proteins besides those indicated, but their sequence position has not
+been determined.
+MALDI-TOF:
+matrix-assisted laser
+desorption ionization
+time of ﬂight
+3.3.2.2. Mfp-3. Mfp-3 is the most polymorphic of all plaque proteins. Perhaps as many as 35
+different sequence variants exist, although not all are necessarily expressed in each plaque (25).
+Moreover, there is extensive variation due to posttranslational modiﬁcation of protein tyrosine
+and arginine to Dopa and 4-hydroxyarginine, respectively. Such variation is immediately evident
+in puriﬁed variants by the number of peaks separated by 16 Da, as detected by mass spectrometry
+(26, 27). Protein masses for the entire family range between 5 and 7.5 kDa (27). Electrophoretically,
+the variants cluster into two groups known as slow- and fast-moving isoforms. The latter are Dopa
+rich, with typically 20 mol% or more and with high positive-charge density; the former, in contrast,
+have lower Dopa (5–10 mol%) and lower charge density (27). Only a few other amino acids—
+glycine, asparagine, tryptophan, and lysine—are typically represented at higher than 10 mol% in
+mfp-3 and are immediately evident in the chemical structure of mfp-3 variant f (Figure 5). In
+plaque footprint analyses using in situ MALDI-TOF (matrix-assisted laser desorption ionization
+time of ﬂight) mass spectrometry, mfp-3s are always abundantly evident.
+www.annualreviews.org • Mussel-Inspired Adhesion 105
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+ADYYGPNYGPPRRYGGGNYNRYNRYGRRYGGYKGWNNGWNRGRRGKYWH3N COOH
+CH2
+OH
+OH
+CH
+CH3
+CH
+CH2
+CO–
+CH NHH3NNH C
+O
+CH2
+OH
+OH
+CHNH C
+O
+C
+O
+H
+CH N CHCHNNH CH C
+O
+NH C
+O
+CH2
+OH
+OH
+CH C
+O
+NHC
+O
+O
+CH2
+CNH2
+CH
+O
+C
+O
+CH2
+OH
+OH
+CH C
+O
+NH
+H
+CHNH C
+O
+CHNH C
+O
+H
+CH C
+O
+C
+O
+CHNH NH C
+O
+NHC
+O
+H
+CHC
+O
+N CHCHNCH N CHCHNCH
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CH2
+C NH2
+CHNH
+O O
+CH2
+OH
+OH
+CH C
+O
+NH
+CH2
+OH
+OH
+CH C
+O
+NH
+H
+CHNH
+CH2
+NH2C
+O
+CH2
+NH2C
+CHNH C
+O
+CH C
+O
+C
+O
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CHNH NH C
+O
+NHC
+O
+CHC
+O
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+O
+CH2
+NH2C
+H
+CHNH
+O
+CH2
+NHNHNH
+CH C
+O
+NH
+CH2
+NHNHNH
+CH C
+O
+NH
+CH2
+CH2
+CH2
+CH2
+NH3 +
+CHNH
+CH2
+NH2C
+O
+CH2
+NH2C
+CHNH C
+O
+CH C
+O
+C
+O
+CHNH NHC
+O
+H
+CHNH C
+O
+C
+O
+CH2
+OH
+OH
+CH C
+O
+NH
+CH2
+OH
+OH
+CH C
+O
+NH
+CH2
+OH
+OH
+CH C
+O
+NH
+H
+CHNH C
+O
+H
+CHNH C
+O
+H
+CHNH C
+O
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CHNH C
+O
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CHNH C
+O
+CH2
+HNHNHN
+CH C
+O
+NH OH
+CH2
+CH2
+CH2
+CH2
+NH3 +
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CHNH C
+O
+CH2
+OH
+OH
+CH C
+O
+NH
+H
+CHNH C
+O
+CHNH C
+O
+H
+CHNH C
+O
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CHNH C
+O
+CH2
+CHOH
+CH2
+NH
+NH2
+CNH2 +
+CHNH C
+O
+106 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Redox balance: the
+state of maintaining a
+speciﬁc stoichiometry
+between oxidation and
+reduction reactions
+3.3.2.2. Mfp-4. Mfp-4 is one of the larger plaque proteins at 90 kDa and has been fully sequenced
+only from M. californianus. It contains a peculiar histidine-rich decapeptide repeated 35 times in
+tandem and binds copper with high capacity (28). Dopa levels are low and are conﬁned to the
+protein’s N and C termini. Dopa is the only modiﬁcation identiﬁed to date. Because mfp-4 has
+a distribution biased toward the proximal end of the plaque, it was proposed to interact with the
+histidine-rich ends of preCOLs via copper complexes (28), but this remains to be conﬁrmed in situ.
+3.3.2.4. Mfp-5. Mfp-5 is the least polymorphic of the plaque proteins: A single sequence was
+detected in M. edulis,andM. californianus plaques contain two closely related variants (29, 30).
+The protein has 99 residues, of which 28 are consistently Dopa. Serine is also variably modiﬁed
+to phosphoserine (Table 1). The other abundant residues are glycine and lysine. Mfp-5 has the
+highest charge density, i.e., one per three residues, of all plaque proteins. In plaque footprint
+analyses using in situ MALDI-TOF mass spectrometry, mfp-5 is usually present but in sparing
+amounts and requires very high laser power. Desorption and ionization of a footprint protein
+from a surface during MALDI are good evidence of its presence. Lack of a signal, however, is not
+compelling evidence of its absence. As is the case with mfp-5, strong adsorption to a surface can
+limit desorption during MALDI.
+3.3.2.5. Mfp-6. Like other footprint proteins, e.g., mfp-5, mfp-6 contains high levels of lysine,
+tyrosine, and glycine, but Dopa content is typically less than 2 mol% (30). Moreover, cysteine
+is at 11 mol%, of which only a small proportion occurs as the disulﬁde cysteine. The high thiol
+content at ﬁrst suggested that mfp-6 may use cysteines as nucleophiles of Dopaquinones to form
+cysteinyl-Dopa cross-links—a stable way to couple to other proteins in the plaque (30). Although
+5-S-cysteinyl-Dopa is detectable in the plaque of M. californianus at ∼1 mol%, this is not the only
+role of mfp-6, which is also critical in maintaining the redox balance during footprint formation.
+Mfp-6 effectively reduces Dopaquinones back to Dopa, coupling this half-reaction to the oxidation
+of two thiols to a disulﬁde (31).
+3.3.2.6. PreCOLs. PreCOL represents a family of block copolymer–like natural fusion proteins
+that self-assemble to form the ﬁbrous core of byssal threads. There are three major types of pre-
+COLs: preCOL-D, preCOL-P, and preCOL-NG. The distinguishing letters reﬂect distribution
+trends within the thread, i.e., distal (D), proximal (P), and nongraded (NG) (32–34). The collagen
+block or domain is in the center and is characterized as in other collagens by [glycine-AA2-AA3]n
+repeats (where AA denotes amino acid) representing a little less than half the total mass of each
+chain in the preCOL trimer. Flanking either side of the collagen domain are theme domains that
+help deﬁne the thread’s local stiffness. In preCOL-D, ﬂanking domains are distinctly spidroin like,
+whereas in preCOL-P, the ﬂanking domain sequence resembles the pentapeptide repeats of elastin
+X-Gly-X-Pro-Gly, where Gly denotes glycine, X denotes another glycine or a nonpolar amino
+acid, and Pro denotes proline. N- and C-terminal domains of the preCOLs are histidine rich
+(≥20 mol%). Mussels mold the preCOLs as liquid crystals separated by glycine- and asparagine-
+rich matrix proteins (Table 1) (35) into thread-like shapes in the ventral groove of the foot (11).
+←−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+Figure 5
+Chemical structure of a Dopa-rich mussel foot protein (mfp). Shown is mefp-3 (variant f ) sequence from
+Mytilus edulis. The protein functions at the interface between the plaque and the substratum. Dopa residues
+are highlighted in red; the sequence contains nearly as many guanidinium groups (4-hydroxyarginines;
+purple) as Dopa residues. Results from Papov et al. (26).
+www.annualreviews.org • Mussel-Inspired Adhesion 107
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+mfp-4
+mfp-2
+mfp-2
+mfp-2
+mfp-2
+mfp-3
+mfp-6 mfp-6
+mfp-2
+mfp-2
+mfp-2
+mfp-5
+PreCOL and tmp
+mfp-1
+mfp-2
+??NoneNoneNone
+1.3
+1.3
+1.3
+0.3
+0.3
+0.3
+1.3
+1.3
+1.3
+0.3
+1.3
+1.3
+0.3
+0.3
+1.3 1.3 1.3
+2.40.41.4 2.4 2.4
+1.3
+1.3
+0.3mfp-2 mfp-2 mfp-2
+mfp-2 mfp-2
+mfp-2 mfp-2
+preCOLs mfp-4 tmp1 mfp-1
+mfp-2 mfp-2 mfp-2 mfp-2 mfp-2 mfp-2
+mfp-3 mfp-3 mfp-5
+Mica surfaceSubstratum
+mfp-5 mfp2 mfp-5
+mfp-2 mfp-2 mfp-2
+ab
+mfp-6
+mfp-6
+Ca2+
+Fe3+
+Protein-protein
+Cross-link
+m
+Figure 6
+Schematic view of mussel foot proteins (mfps) in a byssal plaque of Mytilus showing the approximate location of each of the major
+proteins. (a) Mfp-3 variants and mfp-5 are thought to be the adhesives (arrows). Mfp-2 makes up the core of each plaque. The entire
+plaque is coated by a cuticle made of mfp-1 and Fe3+. Mfp-4 may mediate links between the prepolymerized collagen (preCOL) ﬁbers
+descending from the thread core to other proteins in the plaque. The red boxed region is enlarged in panel b.(b) Schematic view of all
+known mfp interactions as determined by the surface forces apparatus (SFA). Mfp-3 and mfp-5 are responsible for the primary adhesive
+interactions with the surface. Only mfp-5 interacts with mfp-3, and only mfp-2 interacts with mpf-5. Interactions between mfp-2s are
+entirely Ca2+ (blue)andFe3+ (red ) mediated. A Ca2+-mediated interaction between mfp-2 and mfp-4 also exists. Work-of-adhesion
+values for mfp-3 correspond to reducing (1.4 mJ m−2) and oxidizing (0.4 mJ m−2) conditions in the SFA. Interactions denoted by a
+question mark remain to be determined. Tmp denotes thread matrix protein. Adapted from research originally published in Reference
+24, copyright c© the American Society for Biochemistry and Molecular Biology.
+Raman microscopy:
+a type of confocal
+microscopy with
+micrometer resolution
+based on Raman
+scattering of
+monochromatic light
+Cooperative metal binding by the terminal histidines is believed to lock the preCOL assembly into
+cohesive ﬁbers (34) and may mediate interactions between preCOLs and mfp-4 (28). PreCOLs
+are crucial for the tenacity of byssal threads but probably do not participate in plaque adhesion to
+surfaces. The splayed-out, root-like ﬁbers embedded in the plaque matrix appear to be preCOL-D
+and preCOL-NG, but plaque-speciﬁc collagens are also possible.
+3.3.3. Localization. Given the extent of epitope concealment induced by metal-mediated and
+covalent protein cross-linking, traditional histochemical and immunohistochemical techniques
+have not been able to deconstruct with any certainty much of the chemistry of byssal plaques
+(36, 37). Innovative alternative approaches, however, are yielding deeper insights. Plaque foot-
+prints, i.e., the lower interfacial 1 μm or so, are conducive to interrogation by MALDI-TOF
+mass spectrometry. With sinapinic or α-cyano 3-hydroxycinnamic acid as the matrix, mfp-3s are
+detectable at most laser energies, whereas mfp-5 and mfp-6 require signiﬁcantly higher energies
+for detection at the same intensity (27, 30). Above the interface and deeper within the plaque
+core, MALDI loses its charm, but useful information can be gleaned using Raman microscopy by
+following the frequencies of functionalities unique to one mfp or another. For example, the strong
+resonance Raman signals associated with the byssal cuticle (38) are identical to those of puriﬁed
+108 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Surface forces
+apparatus (SFA):
+a versatile instrument
+with angstrom and
+nanonewton resolution
+for measuring surface
+forces between the
+surfaces of condensed
+phases
+mfp-1 and Fe3+ (39). Additional but different resonance signals are also apparent in the plaque
+core, where they are colocalized with the phenylalanines of plaque mfp-2 and perhaps mfp-6
+(24). Mfp-4 seems preferentially localized at the nexus between the thread and plaque (28). Elec-
+tron paramagnetic resonance spectroscopy has also been used to detect Fe3+ and semiquinones
+in plaques (40), but its spatial resolution is low. Figure 6a summarizes the current view of mfp
+distribution in the plaque.
+3.3.4. Molecular interactions. The interactions between speciﬁc mfps and between mfps and
+surfaces in aqueous solutions have been investigated using the surface forces apparatus (SFA), an
+instrument with angstrom distance and nanonewton force precision (2, 5). The SFA can measure
+(a) the repulsive or attractive forces during approach; (b) the attractive adhesion forces, if any, upon
+separating two surfaces in air or solution; and/or (c) the attractive forces between a surface and
+a liquid underwater (18, 24). The measured forces reﬂect the nature of interaction between the
+proteins or between the proteins and a mineral surface such as mica. Separation of two surfaces
+against an attractive interaction between them in the SFA typically involves breaking protein-
+protein (cohesive) and protein-surface (adhesive/adsorptive) interactions, which can usually be
+resolved. Lowering the protein concentration, for example, to a point at which the protein forms
+a monomolecular ﬁlm in an asymmetric testing geometry (Table 2, inset) can provide a clearer
+Intrinsic
+Mefp-1 15 <0.1 8 <0.1 8 18
+Mefp-2 5 <0.1 5 <0.1 10 24
+Mcfp-3 (pH 5.5) 20 0.3–0.5 0.3–0.5 10–40 29
+Mcfp-3 (pH 3) 20 1.2–1.4 4 1.2–1.4 5 29 
+Mcfp-4 2 <0.1 13 <0.1 50 b
+Mcfp-5 (pH 5.5) 30 2.3–2.5 3 b
+Mcfp-5 (pH 3) 30 6–7 1–3 b
+Mcfp-6 3 <0.5 8 <0.5 12 31
+Mcfp-3 ↔Mcfp-5 20/30 2.3–2.6 3–8 b
+Mcfp-2 ↔Mcfp-5 5/30 1.2–1.5 12 24
+Metal mediated
+Mefp-1 + Fe3+  c
+aMcfp denotes Mytilus californianus foot protein; Mefp denotes Mytilus edulis foot protein.
+bUnpublished studies by J.H. Waite & J.N. Israelachvili
+cFe3+ and Ca2+ at 10 μM
+15 0 4–5 8 56
+Mcfp-2 + Fe3+  c 5 0 2–3 12 24
+Mcfp-2 + Ca2+  c 5 0 0.2–0.4 15 24 
+Mfp Dopa
+(mol%)
+Adhesion work,
+asymmetric
+(mJ m–2)
+Hard wall
+(nm)
+Adhesion work,
+symmetric
+(mJ m–2)
+Hard wall
+(nm)
+Reference
+Table 2 Mussel foot protein (mfp) interaction strengths determined from thin films deposited on mica and tested in the surface forces
+apparatus. Conditions include a contact time of 60 min and buffer of 0.3-M KNO3, 0.1-M acetate with pH 5.5 at room temperaturea
+Mica
+Mica
+Mfp
+Buffer
+Mica
+Mica
+Mica
+Mica
+Asymmetric (one film)
+Symmetric (two films)
+Asymmetric (two films)
+www.annualreviews.org • Mussel-Inspired Adhesion 109
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+approximation of the adsorptive component of the attractive forces because primarily covalent
+bonds within the same protein chain are cohesively stretched (Table 2).
+Mfp ﬁlms that exhibit attractive forces during separation are said to bridge, whereas those
+that bind one surface but do not cross over to the other are coating-only ﬁlms, e.g., mfp-1 (18).
+Mfp-3 and mfp-5 show bridging in both symmetric and asymmetric conﬁgurations, at all tested
+concentrations, and on all surfaces tested (18, 41; E. Danner, M. Hammer, J. Israelachvili & J.H.
+Waite, unpublished). With the notable exception of mfp-1, the higher the Dopa content, the
+stronger is the observed bridging adhesion on mica surfaces (Table 2) (41). For example, mfp-5
+with 30-mol% Dopa is the best adhesive, with a maximum WA at ∼6mJm−2—nearly three times
+that of mfp-3 with 20-mol% Dopa. Hydrogen bonding by Dopa to the mica surface is thought
+to be bidentate, with both phenolic hydroxyls of Dopa as hydrogen donors to oxygen hydrogen
+acceptors on the polysiloxane surface of freshly cleaved mica. The two mutually well-oriented
+double –OH bonds in the Dopa-mica interaction, for example, may give only twice the energy E
+of a hydrogen bond (∼14kT × 2) but 106 times the lifetime τ because τ is proportional to e−E/kT
+(2). This is essentially the same situation and conﬁguration as in the more familiar association of
+A-T pairs in DNA.
+Typically, due to the low solubility of many mfps at pH ≥ 6, SFA tests are conducted at pH
+5.5. This is not the pH of strongest mfp adhesion to mica; however, at this time 5.5 appears to
+best approximate the pH of protein secretion by mussels (31). Films of mfp-1, -2, -4, and -6 show
+little to no intrinsic interaction in both symmetric (ﬁlm deposited on both mica surfaces) and
+asymmetric (ﬁlm on one mica surface only) tests, but adhesion can be extrinsically improved by
+adding certain metal ions (Table 2).
+In asymmetric tests with the two mica surfaces coated by different protein ﬁlms, the speciﬁcity
+of protein-protein interactions really emerges (Table 2, inset). For example, mfp-2 binds instan-
+taneously to mfp-5 but not to mfp-3 (24). In fact, mfp-3 appears to displace mfp-2 from mica
+so that eventually the bridging adhesion that develops between the mica surfaces is solely from
+mfp-3 bridging (31). Mfp-3 and mfp-5 exhibit a very strong interaction—up to 2.5 mJ m−2—
+signiﬁcantly more than mfp-3 by itself to mica ( J.N. Israelachvili & J.H. Waite, unpublished
+data). Mfp-2 shows no intrinsic interaction with mfp-1, -4, or -6. The role of Dopa, if any, in
+the intrinsic interactions between different mfps is not currently understood. Figure 6b summa-
+rizes known interactions of mfps located near the plaque-substratum interface. Additional factors
+greatly enhance the versatility of these interactions, as discussed below.
+3.3.5. Other interaction factors. Recently, it has been possible to measure the adhesion of mfp-
+3 in symmetric or asymmetric modes at pH 7.5 (31). Adhesion to mica at higher pH is reduced
+by ∼95% relative to pH 3 and by ∼75% relative to pH 5 (Figure 7a). This result was expected
+because Dopa oxidation leads to Dopaquinone formation, which is signiﬁcantly less sticky than
+Dopa on many surfaces, including mica and titania (see Section 4). However, the result begs the
+question as to why a mussel would rely on Dopa proteins for adhesion if they succumbed so easily
+to oxidation; the pH of seawater is even higher at 8.2. Adhesive proteins such as mfp-3 and -5 do
+not succumb to oxidation because they are secreted at low pH (pH 5–6) into a conﬁned space,
+where they are maintained in a reducing environment in the plaque footprint (31). The redox
+balance in the footprint is controlled by mfp-6, a cysteine-rich protein in which only one to three
+of the cysteines are detectable as thiols (30, 31), but these cysteines are distinguished by having
+very low pKasof∼3–5; in contrast, a typical cysteine pKa is 8–9. Diminished adhesion in mfp-3,
+caused by raising the pH from 5.5 to 7.5, can be rescued by the addition of picomoles of mfp-6 to
+the gap at pH 5.5 (Figure 7b). Partial rescue of Dopa is instantaneous, but complete rescue occurs
+in 60 min. That thiols in mfp-6 are responsible for redox was demonstrated by a loss of Dopa
+110 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+0–16
+–12
+–8
+–4
+0
+4
+8
+–2.4
+–18
+–1.2
+–0.6
+0.0
+pH 7.5
+pH 5.5
+pH 3
+WA = 2.08 mJ m–2
+0.6
+1.2
+20 40 60
+Distance, D (nm)
+Force/radius, F/R (mN m–1)
+Energy, F/2πR (mJ)
+80 100 120 140
+WA = 0.42 mJ m–2
+WA = 0.12 mJ m–2
+a  pH effect (mfp-3)
+0–8
+–6
+–4
+–2
+0
+2
+4
+6
+8
+–1.2
+–0.8
+–0.4
+0.0
+0.4
+60 min
+1 min
+0.8
+1.2
+20 40 60 80
+Distance, D (nm)
+Force, F (mN)
+Energy, F/2πR (mJ)
+100 120 140 160
+WA = 0.70 mJ m–2
+Wadad = 1.15 mJ = 1.15 mJWA = 1.15 mJ m–2
+Jump out
+b  +mfp-6, pH 5.5
+Figure 7
+Adhesion loss and recovery in mfp-3 ﬁlms on mica as measured in the surface forces apparatus.
+(a) Symmetric mfp-3 ﬁlms show their greatest interaction at pH 3 and diminish immediately with increasing
+pH. (b) Addition of 100 pmol of mfp-6 to the gap solution recovers nearly 200% adhesion after 1 min and
+300% after a 60-min contact. Data from Yu et al. (31).
+rescue (and adhesion) following S-carboxymethylation of mfp-6 as well as by the replacement of
+mfp-6 with 1,6-hexane dithiol (31, 41).
+3.3.5.1. Metal ions. Metal ions, especially di- and trivalent cations, can enable adhesion of non-
+adhering mfps to a surprising degree. Metal effects are most striking for mfp-2 and mfp-1 (see
+Section 3.4). As the most abundant plaque protein (at more than 25 wt%), one molecule of mfp-
+2 has a one-in-four probability of encountering another mfp-2. The inability to interact with
+this neighbor would undermine cohesion in the plaque. Ca2+ improves the WA between mfp-2s
+from 0 to nearly 0.4 mJ m−2 (24). Fe3+ addition increases the adhesion of mfp-2s to 3 mJ m−2
+(Figure 6b), but the effect takes nearly 60 min in the SFA, perhaps because of the slow rearrange-
+ment of the bulky EGF domains. At pH 7, rearrangement is faster, but the strength of adhesion
+remains unchanged. Fe3+ and Ca2+ also have measurable effects on the adhesive interactions of
+the other mfps (24). For example, the presence of 10-μMFe3+ diminishes interactions between
+two symmetric mfp-5 or mfp-3 ﬁlms (24).
+3.3.5.2. Physical factors. The discovery that basic Dopa-containing proteins are mixed with
+polyanionic proteins (isoelectric point ≈2) in sandcastle worm (Phragmatopoma californica) ce-
+ment with more than 40-mol% phosphoserine has suggested that mussel adhesives may also be
+dispensed as complex coacervates (42–44). Low-isoelectric-point proteins also exist in the byssal
+plaque but are insufﬁciently characterized for description here. Complex coacervation is a pro-
+cess in which aqueous solutions of polyanions and polycations undergo phase separation at a
+pH at which they electrically neutralize each other. The denser, smaller phase is polymer rich,
+with protein concentrations reaching as high as 1–2 g cc−1. Although it is too early to specu-
+late on the details of how marine organisms practice coacervation, coacervation has considerable
+potential for wet adhesion, including phase-separated ﬂuidity, reduced viscosity, low interfacial
+energy, and high internal protein and solvent diffusion coefﬁcients (44). Coacervates made from a
+cationic recombinant mfp fusion protein and hyaluronic acid (HA) possess properties consistent
+with predictions (44, 45). At an optimal 1:3 mixing ratio of HA:recombinant mfp, the bicontin-
+uous ﬂuid exhibited an interfacial energy of <1mJm−2, shear-thinning viscosity ranging from
+www.annualreviews.org • Mussel-Inspired Adhesion 111
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+100 to 10 Pa·s, and a protein concentration of 0.5 g cc−1—all properties well adapted to underwater
+adhesion.
+3.4. Byssal Coating
+The role of coatings in enhancing the performance of underlying materials is increasingly appre-
+ciated in manufacturing. Undoubtedly, natural coatings have equally important roles; however,
+until recently, the coating of mussel byssus was completely overlooked.
+3.4.1. Function and mechanical properties. The byssal coating or cuticle is a 2–5-μm-thick
+layer covering all parts of mussel byssus exposed to seawater (Figure 8a,b). One function attributed
+to the cuticle is insulation of the ﬁbrous collagenous core against microbial attack (46). This
+function is quite plausible but has not been directly demonstrated.
+However, byssal cuticles also have mechanical properties with obvious adaptive value, as re-
+vealed by recent advances in nanoindentation. The nanomechanical properties of byssal cuticle
+were determined from embedded threads microtomed at one end to prepare a smooth surface.
+2,850–3,010 cm–1
+Organic (CH stretching)
+1,150CCD cts0
+7,500CCD cts0
+9,500CCD cts0
+490–696 cm–1
+Catechol-metal interactions
+1,190–1,519 cm–1
+Catechol ring vibrations
+500 nm
+500
+415
+550
+596
+637
+824
+Catechol-metal
+interactions
+1,270
+1,322
+1,476
+1,4231,4231,423
+1,000
+Raman shift (cm–1)
+Relative intensity (a.u.)
+1,500 2,000
+Catechol ring
+vibrations
+M. californianusM. californianus
+M. galloprovincialisM. galloprovincialis
+M. californianus
+M. galloprovincialis
+O
+O
+3–
+O
+O
+O
+OFe3+
+5 μm
+Fibrous core
+Cuticle
+a e
+bc d
+2,800 3,000
+10× relative
+intensity
+CH
+stretch
+Figure 8
+The cuticle of Mytilus byssus. (a) Scanning electron micrograph of a cracked cuticle showing the thickness relative to the underlying
+ﬁbers. This thread was stretched to 120% its initial length. (b) Transmission electron micrograph of a 1-μm-thick section of the cuticle
+in Mytilus galloprovincialis. There is a continuous homogeneous matrix ﬁlled with marbled inclusions. (c) Resonance Raman spectra taken
+of cuticular thin sections of Mytilus californianus (black line)andM. galloprovincialis (red line) using a 785-nm laser. (d ) A tris-Fe(III)-Dopa
+complex. (e) Confocal Raman micrographs of byssal cuticle imaged at the C-H stretching shift (left), at the catechol-O-Fe(III) shift
+(center), and at the Dopa ring vibrations (right). Adapted from research originally published in Reference 38, copyright c© AAAS.
+112 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Chelation:
+multidentate
+coordination of a
+metal ion by a ligand.
+Dopa chelation of iron
+is bidentate; i.e., both
+hydroxyl groups bind
+iron by replacing
+hydroxyl groups in
+iron hydroxide
+Catechol: abenzene
+ring with two
+ortho-placed hydroxyl
+groups. Dopa is a
+catechol
+Hydrated cuticle sections were assessed by manual or programmed indentation for hardness and
+stiffness (47, 48). Thread sections enable hardness and stiffness measurements for the collagen
+core as well as for the cuticle. In M. californianus, core stiffness and cuticle stiffness are 0.5 GPa
+and 2.5 GPa, respectively. Hardness (H), in contrast, is 0.1 versus 0.5 GPa for core and cuticle,
+respectively. These values are worth comparing with those of the hardest known epoxies, for which
+average H is 0.5 GPa. In short, despite a thread extensibility of 70–100%, the cuticle is four to six
+times harder and stiffer than the core—a good albeit peculiar hedge against wear.
+A rubber band coated by a layer of parafﬁn also has a protective sheath approximately ﬁve to
+six times harder than the core, but stretching the rubber band once to double its initial length
+shatters the coating. The cuticle of Mytilus threads does not shatter at high strains (less than 100%
+in M. californianus), and therein rests its real value (Figure 8a): Stiff synthetic coatings with high
+strain capacity have yet to be invented. Even among marine mussels, the talent appears limited
+to Mytilus. A New Zealand mussel, Perna canaliculus, has strong threads and a hard cuticle, but
+extension to only 30% causes catastrophic cracking (48). Perhaps Perna’s cuticle is less adapted
+because high thread extension is rarely encountered in its subtidal habitat.
+3.4.2. Microstructure. Ultrastructural analyses sought a structural explanation for hard cuticles
+with high strain capacity after the application of various strains. The examination of unloaded
+M. galloprovincialis cuticle by TEM revealed a composite structure in which roughly spheri-
+cal inclusions (of diameter 800 nm) are dispersed in a continuous and homogeneous matrix
+(Figure 8b). The volume fraction of each is 0.5 (47). The inclusions known as granules in the liter-
+ature have peculiar marbled microarchitectures. During loading, the granule aspect ratio changes,
+and granules elongate to almost 1.2 at 30% strain, after which there is no further change. Apparent
+in the microstructure of cuticle beyond 30% strain is a subtle network of microcracks usually at the
+interface between matrix and granules. The microcracks resist coalescence into larger cracks until
+strains of 70% and 100% in M. galloprovincialis and M. californianus, respectively, are reached (47).
+Given that stress concentration occurs whenever granules are not uniformly surrounded by
+matrix, cuticle fabrication is a topic of increasing interest. Byssal cuticle formation has been inves-
+tigated in detail only once, by Vitellaro Zuccarello (49) in what she termed the “enzyme gland”
+(also known as the accessory gland) of the foot in M. galloprovincialis. The process begins like any
+secretory pathway, with a condensing vacuole in which protein is accumulated and gradually or-
+ganized. Once granules are complete, they are encircled by a generous halo of matrix and are then
+ready for secretion. After assembly of a new byssal core in the foot groove, the haloed granules
+are released en masse by the enzyme gland and coalesce to engulf the thread.
+3.4.3. Proteins. Only one protein, mfp-1, is associated with certainty with byssal cuticles (50).
+Other ingredients include calcium, iron, and perhaps fatty acids (51). Mfp-1 is a large (∼108 kDa
+in M. edulis) and basic (isoelectric point = 10.5) protein that consists of a tandemly repeated
+decapeptide motif with a mature consensus sequence of A-K-O-S-Y∗-O∗-O-T-Y∗-K (where O is
+trans-4-hydroxyproline, O∗ is trans-2,3-cis-3,4-dihydroxy proline, and Y∗ is Dopa) (Table 1) (52,
+53). Surface behavior and solution properties of this protein have been thoroughly investigated
+and reviewed (46, 54). Brieﬂy, mfp-1 has an open and extended structure in solution with some
+evidence for a left-handed 31 helix. The presence of 15-mol% Dopa makes it prone to oxidation,
+especially at or above neutral pH; however, oxidation has been observed at pH as low as 5.5 (54).
+The most pronounced chemical reactivity of mfp1 is the complexation or chelation of Fe3+.
+At pH of 7.5, iron chelation is evident by a red color (500 nm) associated with tris-catecholato-
+iron(III) formation (39). By control of the Fe3+:Dopa ratio, the color can be shifted from red
+(low) to purple (high). The red color in particular is associated with strong charge transfer from
+www.annualreviews.org • Mussel-Inspired Adhesion 113
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+the nonbonding π orbitals of Dopa oxygen to empty d orbitals of iron (55). The relevance of
+this chemistry in byssus has been conﬁrmed by in situ electron paramagnetic resonance (40) and
+more dramatically by Raman microscopy (Figure 8c,d) (38). The charge transfer associated with
+Dopa-Fe(III) complexes in the cuticle results in strong resonance Raman signals that can be used
+for mapping the distribution of these interactions with micrometer resolution (Figure 8e).
+At higher magniﬁcation, resonance Raman microscopy reveals an intriguing detail about the
+ﬁne structure of byssal cuticle in M. galloprovincialis. The signal intensity at 500 to 650 cm−1,the
+frequency of catechol-O-Fe(III) stretching, is twice as intense in the granules as in the matrix (38).
+Although mfp-1 is distributed throughout the cuticle, it is perhaps more densely bundled in the
+granules than in the matrix. This is possible if mfp-1 exists in two different physically separated
+states: high Dopa (20 mol%) and low Dopa (10 mol%), where the former may be associated with
+the granule and the latter with the haloes. The higher iron content is presumably recruited by
+the compartment, e.g., a mfp-1 variant, with the greater Dopa content. Other explanations are
+possible.
+The ability of mfp-1 to interact with surfaces has been addressed using a number of different
+analytical techniques. These were reviewed recently (46) and need not be revisited here. Lin
+et al. (18) were the ﬁrst to distinguish the behavior of mfp-1 from that of other mfps on mica
+surfaces. Mfp-1 ﬁlms bind tightly to both mica surfaces in the SFA, as exhibited by the reversibly
+compressible hard wall at 5 nm, but by themselves they are not inclined to bridge from one surface
+to another, as does mfp3. The coating but not the bridging mode on surfaces was consistent with
+a protein that provides the cuticle with a natural coating on the byssus. With a thickness of
+approximately 5 μm, however, the cuticle has room for hundreds of mfp1 layers with a thickness
+of 5 nm each. Unless these layers have some way of interacting from molecule to molecule,
+there is little cohesive strength. Fe3+ at 10-μM solutions at pH 5.5 mediates bridging between
+mfp-1 layers, but the effect is concentration dependent, as 100-μMFe3+ abolishes bridging (56)
+(Figure 9). The Fe3+-to-Dopa ratio apparently inﬂuences whether one, two, or three Dopas bind
+to each metal nucleus. Protein cross-links occur only when two or three Dopas come together.
+3.5. Conclusion: Sizing Up the Biology
+The byssal plaques of mussels are exquisitely adapted for attachment to wet surfaces. Architec-
+turally, they are hierarchically organized with a hard but extensible outer coating, gradient porous
+core, and ﬁber reinforcement for intimate union with the byssal thread collagens. The diverse
+plaque architecture is matched by a diverse protein composition, of which ﬁve to six proteins
+are localized exclusively to the plaque. Proteins such as mfp-3 and mfp-5 in the primer or front
+line of adhesion are enriched with up to 30-mol% Dopa; the side chain is exploited for robust
+bidentate interactions with surfaces, and WA is as high as 7 mJ m−2 on mica. Potent antioxidants
+such as mfp-6 are available to keep a certain proportion of the interfacial Dopa reduced for good
+adsorption. Mfp-6, however, is also adapted to function as a cross-linker once its reducing power
+is depleted, forming S-cysteinyl-Dopa adducts. Evidence for covalent cross-linking between mfps
+based on aryl coupling also exists, e.g., that in 5,5′-di-Dopa (57), but the extent to which quinone
+cross-linking contributes to plaque cohesion is still open to question. Three factors that favor
+the formation of cross-links in byssus are the facile auto-oxidation of Dopa to Dopaquinone,
+the redox exchange between Fe3+ and Dopa (40), and the presence of catecholoxidase activity
+(58). Recent SFA analyses suggest that notions about protein cohesion in the plaque must be
+expanded to include Ca2+ and Mg2+ ion bridging (mfp-2 ↔ mfp-2), chelate complexes with Fe3+
+(mfp-1 ↔ mfp-1 and mfp-2 ↔ mfp-2), and strong intrinsic protein-protein binding complexes
+such as those between mfp-2 and mfp-5 and between mfp-3 and mfp-5.
+114 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+0–20
+–10
+0
+10
+20
+a  Short contact (no Fe3+)
+d
+20 40 60
+Distance, D (nm)
+Force/radius, F/R
+(mN m–1)
+80
+Adhesion
+Repulsion
+In
+Out
+100
+Jump outFad /R
+0–20
+–10
+0
+10
+20
+b  Short contact (+10-μM Fe3+)
+20 40 60
+Distance, D (nm)
+80
+Jump outFad /R
+In
+OutOut
+100 0–20
+–10
+0
+10
+20
+c  100-min contact (+10-μM Fe3+)
+20 40 60
+Distance, D (nm)
+80
+In
+OutOut
+100
+Adhesion
+Repulsion
+In
+Out
+Jump out
+F
+a
+F
+F
+ d
+ /
+R
+In
+ut
+Jump out
+F
+a
+F
+F
+ d
+ /
+R
+In
+ut
+Mica
+Mica
+Mica
+Mica
+D
+Fe3+
+Fe3+
+Fe3+ Fe3+
+Fe3+ Fe3+
+Fe3+
+Fe3+
+Fe3+ Fe3+
+O
+O
+Fe3+
+OO
+Fe3+
+O
+O
+Fe3+
+Fe3+
+Fe3+
+Fe3+
+Fe3+ Fe3+
+Fe3+
+Fe3+ Fe3+
+Fe3+
+Fe3+
+Fe3+
+Fe3+
+Fe3+Fe3+
+Mica
+Mica
+OH HO
+OH HO
+OH OH
++6 OH–1
+Fe3+ OO
+OO
+OO
+Fe3+
++6 H2O
+Fe3+
+123
+456
+Figure 9
+Fe3+ bridging of symmetric mfp-1 ﬁlms on mica, as measured by the surface forces apparatus. (a) Without Fe3+ there is no interaction
+after contact. (b) Addition of 10-μMFe3+ results in an immediate interaction evident by the jump-out peaking at 7 mN m−1.
+(c) A 100-min contact increases the interaction to 20 mN m−1.(d ) Schematic showing two opposed symmetric mfp-1 ﬁlms on mica (1)
+without Fe3+,(2) with 10-μMFe3+,and(3) with 100-μMFe3+. Also shown are the suggested chemical interactions between Dopa and
+Fe3+:(4)noFe3+,(5) tris-Dopa-Fe3+ complexes, and (6) mono-Dopa-Fe3+ complexes. This research was originally published in
+Reference 56, copyright c© National Academy of Sciences.
+4. MUSSEL-INSPIRED SYNTHETIC POLYMERS
+4.1. Motivation and General Design Features
+Due to their exceptional adhesive performance in wet and turbulent environments, mussel byssal
+proteins represent attractive targets for biomimetic efforts. Biomimetic constructs offer the obvious
+opportunity to capture the functional properties of native proteins in synthetic systems as well
+as to further elucidate the properties of native proteins. Efforts in this area have thus far been
+www.annualreviews.org • Mussel-Inspired Adhesion 115
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+OH
+OH
+Figure 10
+Schematic illustration of mussel adhesive protein mimetic polymer systems. The red circles represent Dopa
+or a catechol mimic of Dopa covalently coupled to polymer chain ends or as side chains of polymerizable
+catechol monomers. The polymer backbone is linear or branched and is conceivably of any composition but
+most commonly consists of polypeptides, poly(ethylene glycol), poly(acrylate/methacrylate), or
+poly(acrylamide/methacrylamide).
+PEG: poly(ethylene
+glycol)
+DMAm: Dopamine
+methacrylamide
+MEA:
+2-methoxyethyl
+acrylate
+p(DMAm-co-MEA):
+poly(Dopamine-
+methacrylamide-co-2-
+methoxyethyl
+acrylate)
+p(DMAm-co-mPEG-
+MA):
+poly[Dopamine-
+methacrylamide-co-
+poly(ethylene
+glycol)-methylether
+methacrylate]
+dominated by relatively simple peptide and polymer constructs containing Dopa or the catechol
+functional group found in Dopa, as Dopa is now accepted as being an essential component of
+many byssal proteins, with both cohesive and adhesive roles (see Section 3.3.4). With further
+time and research, the compositional space of biomimetic systems will certainly expand to reﬂect
+what is discovered about the role of other byssal protein residues (phosphoserine, lysine, histidine,
+hydroxyarginine, etc.) and the complex interplay between these residues and Dopa.
+Figure 10 schematically shows prototypical conﬁgurations of mussel mimetic synthetic poly-
+mers. The earliest examples of mussel mimetic polymers were Dopa polypeptides chemically syn-
+thesized by solid- or solution-phase peptide chemistry (59–62). Later, Dopa and lysine polypeptide
+copolymers were developed by ring-opening polymerization of N-carboxyanhydride monomers
+(63–65). Recombinant DNA technologies have also been employed to create adhesive proteins
+(66–68). Protein- and polypeptide-based adhesives have been reviewed (69–71). In this review we
+instead focus on synthetic mussel mimetic polymers.
+One frequent synthetic approach is to functionalize linear or branched polymers with Dopa,
+Dopa peptides, or other catechol functional groups by employing standard chemical ligation
+chemistries. This approach is exempliﬁed by a family of poly(ethylene glycol) (PEG)-based
+linear and branched polymers in which Dopa was incorporated as a terminal group on each
+polymer chain (Figure 10) (72, 73). Alternatively, one may directly synthesize polymers through
+polymerization of Dopa or a catechol-based monomer. Although one must be careful to avoid
+partial inhibition of free-radical polymerization by catechols in the presence of atmospheric
+oxygen, several recent reports of free-radically polymerized catechol polymers attest to the
+viability of this approach (74–80). Combinations of monomers give rise to a tremendous
+potential composition and property space and are nicely exempliﬁed by copolymers derived from
+polymerization of Dopamine methacrylamide (DMAm) with 2-methoxyethyl acrylate (MEA) or
+poly(ethylene glycol) methyl ether methacrylate (mPEG-MA) (81). The resulting copolymers
+have highly divergent physical properties and can be used as adhesive, e.g., p(DMAm-co-MEA),
+or nonadhesive, e.g., p(DMAm-co-mPEG-MA), coatings, where p(DMAm-co-MEA) denotes
+poly(Dopamine-methacrylamide-co-2-methoxyethyl acrylate) and p(DMAm-co-mPEG-MA)
+116 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+OH OH
+HNHN O
+O
+HN O
+O
+O
+O
+1 6
+OH OH
+HNHN O
+O
+HN O
+O
+O
+O
+1
+6
+11
+OH OH OH OHOH OH
+OH OH
+O
+MM
+O O
+MM
+O O
+MM
+OO
+MM
+O
+ O
+MM
+O O
+MM
+O O
+MM
+OO
+MM
+O
+Substrate surface Substrate surface
+Catechol side chain for
+adhesion promotion
+Antifouling polymer forAntifouling polymer for
+adhesion preventionadhesion prevention
+Antifouling polymer for
+adhesion prevention
+ab c d
+Figure 11
+Chemical structures of catechol-functionalized polymers. (a) poly(Dopamine-methacrylamide-co-2-methoxyethyl acrylate) [p(DMAm-
+co-MEA)] and (b) poly[Dopamine-methacrylamide-co-poly(ethylene glycol)-methylether methacrylate] [p(DMAm-co-mPEG-MA)].
+Schematic representation of these polymers functioning as (c)adhesiveor(d ) antifouling coatings. Adapted from Reference 81 with
+permission.
+denotes poly[Dopamine-methacrylamide-co-poly(ethylene glycol)-methylether methacrylate],
+respectively (Figure 11). Other examples of free-radically polymerized mussel mimetic polymers
+have been reported. Polymers derived from the catecholic monomer 3,4-dihydroxystyrene
+have been synthesized, as have copolymers of this monomer with styrene or styrene sulfonate
+(78–80, 82, 83). Copolymers provide access to a wide range of physical properties through
+readily accessible starting materials and preparation methods suitable for mass production. The
+catechol content of most synthetic polymers described in the literature ranges from a few mol%
+to 30 mol% or more and therefore lies within the general range of catechol content found in
+native mussel adhesive proteins.
+4.2. Synthetic Polymers and the Role of Dopa in Interfacial Adhesion
+Synthetic polymers used in combination with specialized adhesion methodologies can yield ad-
+ditional insights into certain aspects of mussel adhesion. These studies employ simple polymer
+designs containing short peptides or even single amino acids and as such should be considered
+very simple model systems that lack the full complexities of native proteins. Nevertheless, these
+approaches can isolate and probe the contributions of key protein residues.
+Molecular-level studies of Dopa interfacial behavior were performed by grafting a single Dopa
+residue to an atomic force microscope (AFM) cantilever via a PEG tether and by measuring
+the force required to pull the molecule from contact with a substrate (84). These measurements
+revealed strong and reversible interactions between Dopa and metal oxides, likely due to the
+formation of bidentate metal-oxygen coordination bonds between the Dopa catechol and surface
+metal atoms of the oxide. For titanium oxide, single-molecule pull-off forces of >500 pN have
+been measured in the presence of water, suggesting the ability of Dopa to outcompete water for
+interaction with the oxide surface. The strength of the interaction between Dopa and an oxide
+surface appears to be highly pH dependent, as measurements performed at high pH resulted in
+signiﬁcantly attenuated pull-off forces. Auto-oxidation of Dopa to Dopaquinone at alkaline pH is
+likely responsible for this observation, implying that the interaction with titanium oxide is stronger
+in the catechol form compared with quinone. This is not to say that Dopaquinone is unlikely to
+contribute to interfacial bonding. Speciﬁcally, interactions with organic surfaces may beneﬁt from
+www.annualreviews.org • Mussel-Inspired Adhesion 117
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+covalent reactions between quinones and nucleophiles commonly present on organic surfaces.
+Single-molecule studies performed at high pH resulted in covalent bond formation between Dopa
+and primary amine surfaces. Although the exact reaction mechanism is uncertain, likely candidates
+include Michael addition or Schiff base reactions with primary amines on the surface. Single-
+molecule studies of Dopa interacting with mucin revealed strong noncovalent interactions (85).
+Although the nature of the interactions was not determined, the single-molecule results were in
+qualitative agreement with an observed increase in mucoadhesion upon functionalization of Dopa
+with PEG (85).
+Bridging the length scales between single-molecule and macroscopic experiments are microme-
+chanics measurements, for example, contact mechanics approaches conducted on Dopa-containing
+hydrogels. Shull and colleagues (86–88) and Deruelle et al. (89) have utilized these methods to
+probe the inﬂuence of Dopa and its oxidation state on adhesion to inorganic and organic surfaces.
+In these experiments, typically an elastic gel hemisphere is brought into contact with a solid surface
+and then retracted while the contact area and force are measured (90), allowing the inﬂuence of
+Dopa and its oxidation state on adhesion to inorganic and organic surfaces to be studied. These
+methods offer distinct advantages over the lap shear and tensile adhesion tests that have been far
+more widely employed to determine the adhesive properties of Dopa-containing materials (64,
+91, 92). Macroscopic test methodologies cannot easily differentiate between cohesive and adhesive
+contributions to the measured values, and bulk mechanical properties can signiﬁcantly alter the
+performance of an adhesive in these test methods (93). In recognition that oxidation and interfacial
+binding typically occur simultaneously during byssus formation and that Dopa likely has multiple
+roles in this process, it is important to employ methods that allow for discrimination between
+cohesive and adhesive contributions of Dopa.
+To elucidate Dopa’s interfacial binding role in the absence of oxidation, Lee et al. (94) in-
+corporated Dopa in its reduced form into photocured hydrogels that did not utilize oxidation in
+the curing process. Load-versus-displacement contact curves (Figure 12) of a Dopa-modiﬁed gel
+hemisphere showed signiﬁcant hysteresis on a titania (TiO2) surface underwater compared with
+control (Dopa-free) gels (94). WA or the energy required to separate the gel from TiO2 increased
+5 μm s–1
+Maximum load = 4 mN
+10-mM HEPES
+150-mM NaCl
+pH 7.4
+P, δ
+Ti-coated
+Si wafer
+Indenter
+Hemispherical
+hydrogel
+Indenter
+platform
+ab
+–200
+–5
+–4
+–3
+–2
+–1
+0
+1
+2
+3
+4
+5
+–150 –100 –50 0
+Displacement (μm)
+Load (mN)
+50 10 150
+Control
+Dopa modified
+Figure 12
+(a) Contact mechanics experimental design and (b) load-versus-displacement curves of control (blue)and
+Dopa-modiﬁed (red ) gels contacting a Ti-coated silicon wafer submerged in aqueous buffer. Dashed arrows
+indicate the advancing (indentation) portion of the curve, whereas solid arrows indicate the receding
+(pull-off) portion of the contact curve. Adapted from Reference 94 with permission.
+118 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+with increasing Dopa content, indicating that catechol enhances adhesion with the metal oxide
+surface. To study the effect of Dopa oxidation on adhesion, preformed Dopa-containing gels were
+treated with periodate prior to contact with the substrate. Oxidation signiﬁcantly reduced WA
+between Dopa-modiﬁed gels and the TiO2 substrate. By controlling the oxidation state of Dopa,
+this experimental model demonstrated that the adhesive properties of Dopa toward metal oxides
+decrease with oxidation.
+Guvendiren and coworkers (95) subsequently explored the interfacial binding properties of
+Dopa-modiﬁed block copolymer membranes with tissue surfaces as a function of the oxidation
+state of the catechol. The investigators utilized a new pressure-controlled membrane contact
+conﬁguration. In this conﬁguration, application of a positive pressure forced the membrane into
+contact with the surface of interest, after which a negative pressure was applied to separate the
+membrane from the substrate. The release pressure (PR) was used as a measure of the strength
+of the adhesive interaction. The membrane geometry is well suited for rough or chemically het-
+erogeneous surfaces (i.e., tissue surfaces). Thus, the method was used to characterize the adhesive
+interaction of Dopa with pigskin (Supplemental Figure 1; follow the Supplemental Material
+link from the Annual Reviews home page at http://www.annualreviews.org). Although Dopa-
+modiﬁed membrane was adhesive to submerged tissue, PR increased dramatically when a periodate
+solution was added while the membrane was in contact with the tissue. Presumably, in situ oxida-
+tion of Dopa to highly reactive Dopaquinone resulted in covalent bond formation with functional
+groups (i.e., –NH2 or –SH) present on the tissue surface.
+These experiments as well as the SFA results described in Section 3.3.4 yield a picture of
+remarkable interfacial chemical versatility in which Dopa appears adept at adhesive interactions
+with both inorganic and organic surfaces. These interactions can be either covalent or noncovalent.
+Mechanistic understanding of Dopa in oxidative cross-linking and interfacial binding serves as a
+guide in designing novel biomimetic adhesive materials. In the following section we provide some
+examples of mussel mimetic materials being developed for use in the medical clinic.
+4.3. Synthetic Medical Polymer Adhesives and Sealants
+An obvious application for mussel adhesive protein mimetic polymers is as adhesives that bind
+together surfaces or seal holes in materials. Injectable wet medical adhesives capable of bonding
+or repairing tissues are considered one of the frontier areas in this realm. However, there are
+great challenges associated with adhering in the presence of excess biological ﬂuid, as well as the
+usual concerns related to the biological response to synthetic polymers. For medical applications,
+a rapid sol-gel transition in the presence of tissue is desired so as to minimize surgical delay.
+This would typically be accomplished by administration of a liquid polymer solution, preferably
+aqueous, that solidiﬁes within seconds or tens of seconds in vivo. The real opportunity here lies
+in exploiting the chemical properties of the catechol to generate cohesive and adhesive strength
+in the solidiﬁed adhesive.
+In the Dopa-modiﬁed PEG polymers shown in Supplemental Figure 2, the nonreactive PEG
+polymers serve as inert and biocompatible macromolecular supports to which cohesive and ad-
+hesive characteristics are imparted by introducing Dopa (72). Solutions of branched and linear
+PEGs with Dopa end groups readily formed hydrogels when treated with either chemical (perio-
+date) or enzymatic (horseradish peroxidase and mushroom tyrosinase) oxidants. The rate of curing
+was dependent on the type and concentration of oxidant, with gel formation requiring between
+30 s and several hours. For periodate-cured gels, curing was fastest at approximately equimolar
+periodate and Dopa, whereas the curing rate for enzyme-mediated oxidation decreased exponen-
+tially with increasing enzyme concentration. These observations were attributed to differences in
+www.annualreviews.org • Mussel-Inspired Adhesion 119
+Supplemental Material
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+the cross-linking pathway, as cross-link formation proceeded by either quinone methide tanning
+(periodate) or phenol coupling (enzymatic) pathways. Model studies involving molecular weight
+characterization of oxidized linear monofunctional methoxy-PEG-Dopa revealed the formation
+of oligomers of methoxy-PEG-Dopa resulting from oxidative cross-linking of up to six Dopa
+end groups (72), indicating that Dopa-Dopa cross-linking is responsible for network formation in
+multifunctional linear and branched PEG-Dopa polymers.
+Several PEG-based mussel mimetic polymers have demonstrated strong adhesion to tissue (91,
+96, 97). These adhesives outperform ﬁbrin glue in various macroscopic adhesion tests, including
+lap shear, burst strength, and peel adhesion tests. By control of variables such as PEG architecture,
+molecular weight, number of terminal Dopa residues (up to four), and linking group (e.g., ester,
+urethane, amide), adhesives with a variety of properties (e.g., rate of curing, extent of swelling,
+mechanical properties, and degradation rate) can be obtained. For example, complete hydrogel
+degradation times ranging from 26 h to more than 3 months can be achieved without affecting the
+adhesive performance of these adhesives. Other catechol-containing molecules such as Dopamine
+or 3,4-dihydroxyhydrocinnamic acid impart adhesive and cross-linking ability in a similar fashion
+when used in place of Dopa on the PEG polymer (96, 97). PEG-catechol adhesives are being
+developed to have handling properties similar to those of other PEG-based medical sealants that
+are commercially available [e.g., CoSeal (Baxter International) and DuraSeal (Conﬂuent Surgical)].
+Such adhesives are envisioned to be deployed in a clinical setting as a two-component system
+delivered via a double-barrel syringe or similar device.
+The in vivo performance of PEG-catechol adhesives was recently investigated in mice (73). The
+purpose of this work was to demonstrate mussel-inspired adhesive performance in vivo, with an
+emphasis on tissue biocompatibility and integrity of the adhesive-tissue interface. Rapid gelling
+mixtures of periodate and a nondegradable four-arm PEG-catechol were applied onto adipose
+tissue surfaces, where they formed adherent hydrogel coatings in situ. Histological evaluation at
+time points up to 1 year after implantation showed minimal inﬂammatory cell inﬁltrate and little
+evidence of ﬁbrotic capsule formation (Figure 13a). At all observed time points, the adhesive
+200 μm 100 μm
+ab
+Adhesive
+Fat
+Fat
+Islet Adhesive
+Figure 13
+Histological results from implantation of PEG-catechol hydrogel into mice. (a) Hematoxylin-eosin-stained
+tissue section showing the adhesive in contact with fat tissue after 6 weeks of implantation. Note the close
+apposition of the adhesive to the fat tissue and limited inﬂammatory cell inﬁltration. (b) Hematoxylin-eosin-
+stained tissue section showing a site of mouse islet transplantation using the PEG-catechol gel as a sealant to
+immobilize islets onto the fat tissue surface. The graft was removed on day 100 following transplantation.
+Revascularization of the islet is apparent from the presence of several blood vessels containing erythrocytes
+(red ). Adapted from Reference 73 with permission.
+120 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+hydrogel material was visible and present at the original deposition site, and the material-tissue
+interface was intact. The surrounding adipose tissue was healthy and well vascularized, and there
+was no evidence of nonspeciﬁc postsurgical adhesions. A more stringent test of biocompatibility
+consisted of transplanting mouse islets onto adipose and liver surfaces of diabetic mice using PEG-
+catechol hydrogel; the adhesive was designed to seal the islets directly onto the tissue surface in
+a minimally invasive manner. The adhesive formed a visible, translucent, thin hydrogel layer
+over the afﬁxed islet bolus, resulting in islet entrapment between the adhesive and tissue surface.
+Blood glucose was used as a measure of islet graft performance and adhesive biocompatibility.
+Control mice and those transplanted with PEG-catechol adhesive showed no statistical difference
+in the mean number of days posttransplant after which normoglycemia was achieved. Histological
+analysis of the implant site revealed PEG-catechol-immobilized islets to be well vascularized after
+several months in vivo (Figure 13b) and to actively secrete insulin. This result is promising, given
+the high sensitivity of islets to chemical and physical insults, indicating that the PEG-catechol
+adhesive material does not interfere with islet engraftment to the host tissue.
+Recently, a mussel mimetic polymer adhesive was investigated as a candidate injectible surgical
+sealant for repair of gestational fetal membrane ruptures (98). Invasive diagnostic and therapeutic
+fetal surgical procedures performed endoscopically require access with large-diameter fetoscopes
+and are frequently complicated by amniotic ﬂuid leakage, separation of amnion and chorion,
+or iatrogenic preterm premature rupture of the fetal membranes (iPPROM). The morbidity and
+mortality associated with iPPROM may compromise the expected beneﬁts of the intervention and
+are therefore potentially serious complications for prenatal fetal surgery. A material capable of
+plugging membranes after established rupture or as a prophylactic to prevent leakage at fetoscopic
+access sites is greatly needed. Such a material would ideally present an immediate, nontoxic, and
+durable physical barrier to amniotic ﬂuid and would be capable of application to wet tissue surfaces.
+PEG-catechol and several other sealants (DERMABOND, Histoacryl, Tissucol ﬁbrin glue,
+and two other types of in situ–forming, PEG-based polymer hydrogels) were tested for acute
+toxicity upon direct contact with human fetal membranes for 24 h of organ culture. Bonding and
+toxicity were assessed through tissue histomorphological analysis of 3.5-mm membrane defects
+created with a trocar and were then sealed with PEG-catechol adhesive (Figure 14). The sealed
+defects were further tested for mechanical integrity and were found to provide leak-proof closure
+that withstood membrane stretch in an in vitro model. Acute toxicity was assessed by direct
+application of sealant onto human fetal membranes followed by 24 h of organ culture. Only
+Tissucol and the PEG-catechol adhesive showed efﬁcient, nondisruptive, and nontoxic bonding
+to fetal membranes. Other PEG-based adhesives either were poorly adhesive to the tissue or
+were not detected after 24 h, whereas cyanoacrylate medical adhesives elicited a highly aggressive
+adverse tissue response (Supplemental Figure 3). On the basis of these preliminary studies,
+synthetic PEG-catechol tissue adhesives have emerged as a potential sealing modality for fetal
+membrane defects and merit further evaluation in vivo.
+Stewart and coworkers (77) recently described synthetic mimics of glues secreted by the sand-
+castle worm P. californica. Like mussels, these organisms employ Dopa-containing proteins for
+their glues. In sandcastle worm glue, complex coacervates may be formed from mixtures of weakly
+acidic and weakly basic proteins (42). The authors mimicked this system in the form of a catechol-
+containing synthetic polyanion, which, when combined with a synthetic polycation at speciﬁc
+ionic strength and pH, formed a complex coacervate adhesive (77). The liquid adhesive could be
+cross-linked into a solid through addition of a chemical oxidant, and this strategy was employed
+for in vitro bonding of bone fragments (Figure 15). The authors subsequently reported a related
+environmentally triggered system that exhibited good in vitro bond strength to bone (43) and was
+recently adapted for the adhesive reconstruction of a cranial fracture in a rat model system (99).
+www.annualreviews.org • Mussel-Inspired Adhesion 121
+Supplemental Material
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+LesionLesionLesion
+Fetal
+membranes
+Fetal
+membranes
+Sealant
+Figure 14
+Ex vivo sealing of fetal membrane defects with PEG-catechol adhesive. Through-thickness puncture wounds
+(sealant lines) were created on fresh fetal membranes with an ∼3.5-mm trocar, and approximately 0.5 ml of
+adhesive was applied over the defect. The images represent a collage of a hematoxylin- and eosin-stained
+cross section through the defect and the PEG-catechol adhesive. The hydrogel appears as a ribbon-like
+structure that bridges the puncture edges. The bottom image shows a cross section of the same lesion at a
+narrow location. Adapted from Reference 98 with permission.
+4.4. Synthetic Polymers Used as Coatings
+The strong surface adhesion of Dopa offers many opportunities for the development of novel
+polymer coatings useful in a variety of ways. Depending on architecture and composition, the
+catechol may serve as an anchor in immobilizing a polymer coating onto a surface or may impart
+adhesive value to the applied coating.
+PBS, pH 7.2
+Figure 15
+Photograph of bone slabs glued together with a complex coacervate formulation based on a synthetic
+polymer adhesive modeled after sandcastle worm cement. PBS denotes phosphate-buffered saline. From
+Reference 77 with permission. Copyright c© 2009 Wiley-VCH.
+122 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+0
+PDMS
+Individual pillar force (nN)
+PDMS + p(DMA-co-MEA)
+20
+40
+60
+80
+100
+120
+140
+Air
+H2O
+Air
+H2O
+p(DMA-co-MEA) 
+<10 nm 
+a a c 
+b 
+OH OH OH OH OH OH OH OH OH OHOH OH
+OH
+OH
+OH
+OH
+OH
+OH
+Figure 16
+Gecko- and mussel-inspired wet/dry adhesive. A thin silicone elastomer ﬁlm containing pillar projections
+(a) was fabricated by nanolithography and then coated with a thin ﬁlm of mussel adhesive protein mimetic
+polymer (b). Adhesion force per pillar in untreated and mussel mimetic polymer–coated
+polydimethylsiloxane (PDMS) is compared in panel c. p(DMAm-co-MEA) denotes poly(Dopamine-
+methacrylamide-co-2-methoxyethyl acrylate). Adapted from Reference 76 with permission.
+Grafting to/from:
+refers to the polymer
+modiﬁcation of
+surfaces in which a
+fully formed polymer
+is either adsorbed to a
+surface (“to”) or
+polymerized from
+anchoring points on
+the surface (“from”) by
+surface-initiated
+polymerization
+One interesting use for p(DMAm-co-MEA) is as a coating for enhancing wet adhesion of re-
+versible ﬁbrillar adhesive mimics of gecko foot hairs (75, 76). The ﬁbrillar attachment mechanisms
+of geckos, ﬂies, and other organisms are believed to rely upon weak intermolecular forces and typ-
+ically function poorly in the presence of excess water (see discussion in Section 2). Borrowing
+ideas from the wet adhesive proteins found in mussel holdfasts, Lee and coworkers (76) devised
+a hybrid biologically inspired adhesive consisting of an array of nanofabricated polymer pillars
+coated with a thin layer of p(DMAm-co-MEA) (Figure 16). Wet adhesion of the nanostructured
+polymer pillar arrays increased nearly 15-fold when coated with mussel adhesive protein mimetic
+polymer. The adhesive functioned like a wet/dry sticky note, maintaining its adhesive performance
+for more than 1,000 contact cycles in both dry and wet environments. This hybrid adhesive, which
+uniquely combines the salient design elements of both gecko and mussel adhesives, may prove
+useful for reversible attachment to a variety of surfaces in many environments.
+A signiﬁcant amount of research has been performed on antifouling polymer coatings in which
+PEG and other polymers are grafted onto surfaces via catechol functional groups (84, 100). These
+coatings may be formed by either graft-to or graft-from approaches and range in thickness from a
+few nanometers to >100 nm (Figure 17). At sufﬁciently high antifouling polymer surface density,
+the adhesion of protein, cells, bacteria, and algae is signiﬁcantly reduced compared with unmodiﬁed
+surfaces. The ﬁrst manifestation of this approach consisted of a PEG coupled to a decapeptide
+sequence derived from mfp-1 (Table 1). Researchers later discovered that such sophisticated
+constructs are unnecessary and may be simpliﬁed down to a single catechol or a few catechols
+www.annualreviews.org • Mussel-Inspired Adhesion 123
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+Polymer design Initiator design
+Graft-to Graft-from
+Antifouling polymer 
+Catechol anchor 
+CH2
+OH
+OH
+CH2 C
+O
+NH Polymer
+CH2 CH2
+OH
+OH
+CH2 C
+O
+CHNH Br
+Biological inspiration
+Figure 17
+Schematic illustration of a biologically inspired strategy for grafting antifouling polymers onto surfaces. The
+anchors exploit the adhesive nature of catechols such as Dopa or Dopa peptides inspired by mussel adhesive
+proteins. Catechol anchors may be chemically coupled to an antifouling polymer and adsorbed onto a
+surface (a graft-to approach) or to an initiator that is used for surface-initiated polymerization (a graft-from
+approach).
+interspersed with amine groups (e.g., lysine). A highly reductionist approach involves the use of
+low-molecular-weight catecholamines that polymerize at alkaline pH to produce thin adherent
+coatings onto which antifouling polymers may be grafted (Figure 18) (101).
+PEG with a Dopa tripeptide anchor on one end group (mPEG-Dopa3) was effective at pre-
+venting bacterial attachment and subsequent bioﬁlm formation on a variety of surfaces (102, 103).
+mPEG-DOPA3-coated titanium surfaces demonstrated a greater-than-94% reduction in bacteria
+binding over uncoated surfaces when challenged with 105 colony-forming units (CFU) ml−1 of
+six major uropathogenic bacterial strains for 24 h at 37◦C in human pooled urine. A >231-fold
+reduction in adherence for Escherichia coli GR-12, Enterococcus faecalis 23241, and Proteus mirabilis
+296 compared with uncoated TiO2 disks was observed (Supplemental Figure 4) (102). Scanning
+electron microscopy also reﬂected these results and demonstrated the ability of the coating to re-
+sist urinary constituent adherence. Similar catechol-modiﬁed PEG coatings also demonstrated a
+signiﬁcant reduction in bacteria adhesion when coated onto common catheter and stent materials
+(e.g., polyurethane and silicone rubber) (103).
+A subsequent in vivo study in a rabbit model with uropathogenic E. coli cystitis was performed
+with urinary stent curls coated with p(DMAm-co-mPEG-MA) (104). In this model, uncoated and
+124 Lee et al.
+Supplemental Material
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+0
+Glass
+Ti Au Si3N4 PTFE PU1 PU2 PS
+20
+40
+Normalized cell
+binding
+60
+80
+100
+Fouling-resistant
+polymer–coated object
+Metal-coated object PolyDopamine-
+coated object
+Metal, ceramic, or
+polymer object
+Self-assembled
+monolayer–coated object
+Step 1
+Polymerization of
+dopamine at marine
+pH (8.5)
+Step 2
+Self-assembly
+of alkanethiols
+Step 2
+Metallization
+Step 2
+Polymer grafting
+Before
+Teflon TiO2
+Nitrocellulose Gold
+After Before After
+Before After
+Before After
+0.00.0001 0.001 0.01
+[HA] (mg ml–1)
+Fraction  of
+adherent cells
+0.1 1
+0.2
+0.4
+0.6
+0.8
+10
+Cell-adhesive
+polymer–coated object
+M07e cells
+(CD44+)
+Figure 18
+Mussel adhesive protein–inspired multifunctional coatings are derived from alkaline polymerization of a
+catecholamine such as Dopamine (101). Objects present in the solution become coated with a thin ﬁlm of
+polyDopamine, which can be used as a base or primer for further functionalization of the surface with metal
+ﬁlms, grafted polymers, or pseudo-self-assembled monolayers. Abbreviations: HA, hyaluronic acid; PS,
+polystyrene; PTFE, polytetraﬂuoroethylene; PU, polyurethane. Adapted from research originally published
+in Reference 38. Copyright c© AAAS.
+coated devices were inserted transurethrally into the bladders of male New Zealand white rabbits,
+followed by instillation of uropathogenic E. coli strain GR-12 (107 CFU) and examination of their
+urine for bacteria for up to 7 days. p(DMAm-co-mPEG-MA)-coated devices showed decreased
+urine bacterial counts compared with those in uncoated catheters; eight of ten rabbits demon-
+strated sterile urine by day 3. The p(DMAm-co-mPEG-MA) coating strongly resisted bacterial
+attachment, resulting in improved infection clearance over that of uncoated devices.
+If desired, bioactive functional groups can be presented in such coatings over a background of
+antifouling polymer to resist nonspeciﬁc interactions. For example, DOPA3-PEG-biotin coatings
+facilitate biofunctionalization with peptides and other biomolecules via biotin-avidin interactions.
+This was demonstrated for cell binding peptide ligands for α5β1 [cyclic RGD (cRGD)] and α4β1
+[cyclic LDV (cLDV)] (105). Hematopoietic M07e cells bound speciﬁcally to immobilized cRGD
+and cLDV integrins in a dose-dependent manner, opening the door to incorporating biospeciﬁc
+functional groups into such coatings (Figure 18).
+Researchers in this ﬁeld are also beginning to move beyond PEG and to explore other antifoul-
+ing polymers with catechol anchors. For example, a new family of N-substituted glycine polymers
+www.annualreviews.org • Mussel-Inspired Adhesion 125
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+(peptoids) is being investigated as candidate antifouling polymers (106–108). These polymers have
+a polypeptide backbone, with natural or unnatural side chains substituting from the amide nitrogen
+as opposed to the alpha carbon. Investigators have explored a number of side-chain chemistries,
+including methoxyethyl, methoxypropyl, and hydroxypropyl, that demonstrate good protein, cell,
+and bacterial adhesion resistance. Other examples include zwitterionic polymers (71, 109, 110)
+and biopolymers (111–113) bound to solid surfaces using catechol functional groups.
+4.5. Nanoparticle Stabilization
+Finally, catechol anchors work equally well for attaching polymers onto surfaces of nanoparticles,
+including those envisioned for medical applications (114–118). An interesting recent development
+in this area relates to an investigation of the stability of catechol anchors under physiological
+conditions (120). In this study, PEG was anchored onto iron oxide nanoparticles by a variety of
+substituted catechols, and thermal and salt stability was determined. Nitro-substituted Dopa and
+Dopamine demonstrated enhanced stability of iron oxide nanoparticles. These nanoparticles could
+be repeatedly heated up to 90◦C without noticeable agglomeration, whereas catechols with lower
+afﬁnity resulted in irreversible agglomeration. The enhanced binding of nitrocatechol to iron
+oxide may be attributed to the lower pKa (∼6.5) dissociation constant of the ﬁrst catechol hydroxy
+group compared with unsubstituted catechols like Dopa (pKa > 9). 2-Nitrocatechol forms a more
+stable complex with TiO2 than does catechol (119, 120). The effect of phenol pKa on the binding
+strength of the catechol may represent yet another attribute that is already exploited in nature and
+from which a biomimetic approach can learn. Recently, Sun et al. (121) detected chlorinated Dopa
+(2-chloro-4,5-dihydroxyphenylalanine) in adhesive proteins secreted by sandcastle worm. These
+investigators proposed that halogenated Dopa was utilized as a mechanism to increase oxidation
+potential of the adhesive molecule, thus preserving its reduced and more adhesive form compared
+with the oxidized Dopaquinone. Further studies in this area may lead to enhanced catecholic
+anchors for coatings.
+5. CONCLUSIONS
+Mussel adhesion protein–inspired polymer research is motivated by the idea that the exceptional
+adhesive properties exhibited by the native proteins can be captured in synthetic polymer systems.
+A variety of chemical approaches may be employed, giving rise to linear or branched polymers
+functionalized with Dopa, Dopa peptides, or their catechol mimics. These polymers provide sim-
+ple platforms for studying the role of Dopa in mussel adhesion as well as novel materials for wet
+adhesion. One of the compelling uses for these materials is in medical adhesion and sealing, in
+which catechols enhance adhesion to wet tissue surfaces. Progress is being made toward the devel-
+opment of mussel mimetic polymers capable of repairing both soft and hard tissues. Finally, there
+is rapid adoption of mussel mimetic polymers in the coatings ﬁeld. Here, the adhesive qualities of
+the catechol may be important for anchoring polymers, biomolecules, and other compounds onto
+solid surfaces. With careful design of polymer composition and architecture, these coatings can
+give rise to adhesive or antiadhesive coatings.
+SUMMARY POINTS
+1. Practical underwater adhesives must have the ability to remove weak boundary layers
+and compete with surface hydration; to spread spontaneously on surfaces; to be
+deliverable as dense, phase-separated ﬂuids; to undergo energetic interfacial interactions
+126 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+with the substratum; and to become cross-linked or cured for cohesive strength. Mussel
+adhesives appear to satisfy these requirements.
+2. Despite the presence of moisture and fouling bioﬁlms, mussel adhesive plaques secure
+intimate contact with at least patches of bare surface. Dopa provides bidentate or covalent
+interfacial interactions on most surfaces. Protein coacervation also offers advantages such
+as spontaneous spreading on most surfaces and reduced diffusive loss of adhesive proteins
+by a phase-separation process that concentrates proteins at up to 1 g cc−1.
+3. Mussel foot proteins gain cohesiveness through three known mechanisms: intrinsic
+protein-protein binding, metal chelation, and covalent coupling. Dopa is crucial for
+at least two of these.
+4. At present, Dopa chemistry is the main focus of mussel-inspired engineering of synthetic
+adhesives, sealants, coatings, and polymer anchors. Coacervation of synthetic polyelec-
+trolytes is also beginning to show promise.
+5. The need for investigating the wet adhesion of mussels and other sessile organisms
+hardly ends with the discovery of Dopa. Dopa is a highly reactive functionality posing
+serious drawbacks when control of reactivity is critical to the application. Mussels have
+consummate talents in directing this reactivity in many different directions.
+FUTURE ISSUES
+1. Can the susceptibility of Dopa, or catecholic side chains generally, to oxidation be pre-
+cisely controlled in polymers? Put another way, can researchers engineer side chains that
+possess the facile bidentate surface binding of Dopa without the tendency to oxidize?
+2. Some of the intrinsic protein-protein interactions between different mussel foot proteins
+are very strong. What is the molecular basis for these interactions?
+3. How important is covalent cross-linking for adhesive performance? In mussels, is cross-
+linking adaptive, or is it a collateral damage that accompanies oxidation during aging?
+4. Dopa functionalities of proteins and other polymers mediate adhesion to a variety of
+surface chemistries that have little to nothing in common with one another. Is there a
+single fundamental reason for the stickiness of Dopa and related catechols?
+DISCLOSURE STATEMENT
+J.N. Israelachvili and J.H. Waite are not aware of any afﬁliations, memberships, funding, or
+ﬁnancial holdings that might be perceived as affecting the objectivity of this review. B.P. Lee and
+P.B. Messersmith are afﬁliated with Nerites Corporation, a company that specializes in developing
+medical adhesives that are synthetic adhesives of mussel adhesive proteins. B.P. Lee is an employee
+of Nerites, and P.B. Messersmith is a cofounder, director, and consultant of Nerites. Nerites has
+in the past funded basic research in P.B. Messersmith’s laboratory at Northwestern.
+ACKNOWLEDGMENTS
+We acknowledge the Human Frontiers of Science Program and the National Institutes of Health
+for funding. We thank S. Jewhurst for preparing freeze-fractured plaques and W. Wei, J. Yu,
+www.annualreviews.org • Mussel-Inspired Adhesion 127
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+E. Danner, and M. Hammer for sharing unpublished data. J. N. Israelachvili and J.H. Waite
+are responsible for Sections 1 to 3 of the review, whereas B.P Lee and P.B. Messersmith wrote
+Sections 4 to 5.
+LITERATURE CITED
+1. Comyn J. 1981. The relationship between joint durability and water diffusion. In Developments in Adhe-
+sives, Vol. 2, ed. AJ Kinloch, pp. 279–313. Barking, UK: Appl. Sci. Publ.
+2. Israelachvili JN. 2010. Intermolecular and Surface Forces. London: Elsevier. 3rd ed.
+3. Gutmann V. 1976. Solvent effects on the reactivities of organometallic compounds. Coord. Chem. Rev.
+18:225–55
+4. Clint JH, Wicks AC. 2001. Adhesion under water: surface energy considerations. Int. J. Adhes. Adhes.
+21:267–73
+5. Pocius AV. 1997. Adhesives and Adhesives Technology. Cincinnati: Hanser/Gardner Publ.
+6. Waite JH, Holten-Andersen N, Jewhurst SA, Sun CJ. 2005. Mussel adhesion: ﬁnding the tricks worth
+mimicking. J. Adhes. 81:297–317
+7. Silverman HG, Roberto FE. 2007. Understanding mussel adhesion. Mar. Biotechnol. 9:661–81
+8. Harris VA. 1990. Sessile Animals of the Seashore. London: Chapman & Hall
+9. Hawkins AJS, Bayne BL. 1985. Seasonal variation in the relative utilization of carbon and nitrogen by the
+mussel Mytilus edulis: budgets, conversion efﬁciencies and maintenance requirements. Mar. Ecol. Prog.
+Ser. 25:181–88
+10. Grifﬁths CL, King JA. 1979. Energy expended on growth and gonad output in the ribbed mussel
+Aulacomya ater. Marine Biol. 53:217–22
+11. Waite JH. 1992. The formation of mussel byssus: anatomy of a natural manufacturing process. Results
+Probl. Cell Differ. (Biopolymers) 19:27–54
+12. Aldred N, Ista LK, Callow ME, Callow JA, Lopez GP, et al. 2006. Mussel (Mytilus edulis) byssus deposition
+in response to variations in surface wettability. J. R. Soc. Interface 3:37–43
+13. Crisp DJ, Walker G, Young GA, Yule AB. 1985. Adhesion and substrate choice in mussels and barnacles.
+J. Colloid Interface Sci. 104:40–50
+14. Classic study of the
+organismal design of
+byssus in mussels.
+14. Bell EC, Gosline JM. 1996. Mechanical design of mussel byssus: Material yield enhances attach-
+ment strength. J. Exp. Biol. 199:1005–17
+15. Bell EC, Gosline JM. 1997. Strategies for life in ﬂow: tenacity, morphometry, and probability of dis-
+lodgment of two Mytilus species. Mar. Ecol. Prog. Ser. 159:197–208
+16. Allen JA, Cook M, Jackson DJ, Preston S, Worth, EM. 1976. Observations on the rate of production
+and mechanical properties of the byssus threads of Mytilus edulis L. J. Molluscan Stud. 42:279–89
+17. Burkett JR, Wojtas JL, Cloud JL, Wilker JJ. 2009. A method for measuring the adhesion strength of
+marine mussels. J. Adhes. 85:601–15
+18. Lin Q, Gourdon D, Sun CJ, Holten-Andersen N, Anderson TH, et al. 2007. Adhesion mechanisms of
+the mussel foot proteins mfp-1 and mfp-3. Proc. Natl. Acad. Sci. USA 104:3782–86
+19. Detailed study of
+plaque structure and
+formation in mussel
+byssus.
+19. Tamarin A, Lewis P, Askey J. 1976. Structure and formation of byssus attachment plaque in
+Mytilus. J. Morphol. 149:199–221
+20. Lappin-Scott HM, Costerton JW. 1989. Bacterial bioﬁlms and surface fouling. Biofouling 1:323–42
+21. Waite JH, Lichtenegger HC, Stucky GD, Hansma P. 2004. Exploring the molecular and mechanical
+gradients in structural bioscaffolds. Biochemistry 43:7653–62
+22. Inoue K, Takeuchi Y, Miki D, Odo S. 1995. Mussel adhesive plaque protein is a member of epidermal
+growth factor like gene family. J. Biol. Chem. 270:6698–701
+23. Rzepecki LM, Hansen KM, Waite JH. 1992. Characterization of a cystine-rich polyphenolic protein
+family from the blue mussel Mytilus edulis L. Biol. Bull. 183:123–37
+24. Hwang DS, Zeng H, Harrington MJ, Masic A, Israelachvili JN, et al. 2010. Protein- and metal-dependent
+interactions of mfp-2, the dominant protein of mussel adhesive plaques. J. Biol. Chem. 285:25850–58
+25. Floriolli RY, von Langen J, Waite JH. 2000. Marine surfaces and the expression of speciﬁc byssal adhesive
+protein variants in Mytilus. Mar. Biotechnol. 2:352–63
+128 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+26. Papov VV, Diamond TV, Biemann K, Waite JH. 1995. Hydroxyarginine-containing polyphenolic pro-
+teins in the adhesive plaques of the marine mussel Mytilus edulis. J. Biol. Chem. 270:20183–92
+27. Zhao H, Robertson NB, Jewhurst SA, Waite JH. 2006. Probing the adhesive footprints of Mytilus
+californianus byssus. J. Biol. Chem. 281:11090–96
+28. Zhao H, Waite JH. 2006. Proteins in load bearing junctions: histidine-rich metal binding protein of
+mussel byssus. Biochemistry 45:14223–31
+29. Waite JH, Qin XX. 2001. Polyphenolic phosphoprotein from the adhesive pads of the common mussel.
+Biochemistry 40:2887–93
+30. Zhao H, Waite JH. 2006. Linking adhesive and structural proteins in the attachment plaque of Mytilus
+californianus. J. Biol. Chem. 281:26150–58
+31. Yu J, Wei W, Danner E, Ashley RM, Israelachvili J, Waite JH. 2011. Antioxidant is a key factor in mussel
+protein adhesion. Nat. Chem. Biol. In revision
+32. Qin XX, Coyne KJ, Waite JH. 1997. Tough tendons: Mussel byssus has collagen with silk-like domains.
+J. Biol. Chem. 272:32623–27
+33. Qin XX, Waite JH. 1998. A collagenous precursor that may mediate block copolymer gradients in mussel
+byssal threads. Proc. Natl. Acad. Sci. USA 95:10517–22
+34. Harrington M, Waite JH. 2007. Holdfast heroics: comparing Mytilus californianus. J. Exp. Biol. 210:4307–
+18
+35. Sagert J, Waite JH. 2009. Hyperunstable matrix proteins in the byssus of Mytilus galloprovincialis. J. Exp.
+Biol. 210:2224–36
+36. Benedict CV, Waite JH. 1984. Location and analysis of byssal structural proteins of Mytilus edulis L.
+J. Morphol. 189:171–82
+37. Anderson KE, Waite JH. 2000. Immunolocalization of Dpfp1, a byssal protein of the zebra mussel
+(Dreissena polymorpha). J. Exp. Biol. 203:3065–76
+38. Raman microscopy
+for localizing Fe3+
+coordination by Dopa in
+byssus.
+38. Harrington MJ, Masic A, Holten-Andersen N, Waite JH, Fratzl P. 2010. Iron-clad ﬁbers: a
+metal-based biological strategy for hard ﬂexible coatings. Science 328:216–20
+39. Taylor SW, Chase DB, Emptage MH, Nelson MJ, Waite JH. 1996. Ferric ion complexes of a Dopa-
+containing adhesive protein from Mytilus edulis. Inorg. Chem. 35:7572–77
+40. Sever MJ, Weisser JT, Monahan J, Srinivasan S, Wilker JJ. 2004. Metal-mediated cross-linking in the
+generation of a marine-mussel adhesive. Angew. Chem. 43:448–50
+41. Anderson TH, Yu J, Estrada AY, Hammer MU, Waite JH, Israelachvili JN. 2010. The contribution
+of Dopa to substrate-peptide adhesion and internal cohesion of mussel-inspired synthetic peptide ﬁlms.
+Adv. Funct. Mater. 20:4196–205
+42. Zhao H, Sun CJ, Stewart RJ, Waite JH. 2005. Cement proteins of the tube building polychaete Phrag-
+matopoma californica. J. Biol. Chem. 280:42938–44
+43. Shao H, Stewart RJ. 2010. Biomimetic underwater adhesives with environmentally triggered setting
+mechanisms. Adv. Mater. 22:729–33
+44. Hwang DS, Zeng H, Srivastava A, Krogstad DV, Tirrell M, et al. 2010. Viscosity and interfacial properties
+in a mussel-inspired coacervate. Soft Matter 6:3232–36
+45. Lim S, Choi YS, Kang DG, Song YH, Cha HJ. 2010. The adhesive properties of coacervated recombinant
+hybrid mussel adhesive proteins. Biomaterials 31:3715–22
+46. Holten-Andersen N, Waite JH. 2008. Mussel-designed protective coatings for compliant substrates.
+J. Dent. Res. 87:701–9
+47. Holten-Andersen N, Zhao H, Waite JH. 2009. Stiff coatings on compliant bioﬁbers: the cuticle of Mytilus
+californianus byssal threads. Biochemistry 48:2752–59
+48. The ﬁrst application
+of nanoindentation for
+hardness and stiffness
+measurements in
+hydrated byssal
+coatings.
+48. Holten-Andersen N, Fantner GE, Hohlbauch S, Waite JH, Zok FW. 2007. Protective coatings
+on extensible bioﬁbers. Nat. Mater. 6:669–72
+49. The only known
+ultrastructural study of
+the formation of the
+byssal cuticle.
+49. Vitellaro Zuccarello L. 1981. Ultrastructural and cytochemical study on the enzyme gland of the
+foot of a mollusc. Tissue Cell 13:701–13
+50. Sun CJ, Waite JH. 2005. Mapping chemical gradients within and along a ﬁbrous structural tissue: mussel
+byssal threads. J. Biol. Chem. 280:39332–36
+51. Holten-Andersen N, Toprak M, Stucky GD, Zok FW, Waite JH. 2009. Metals and the integrity of a
+biological coating: the cuticle of mussel byssus. Langmuir 25:3323–26
+www.annualreviews.org • Mussel-Inspired Adhesion 129
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+52. Waite JH. 1983. Evidence for a repeated DOPA- and hydroxyproline containing decapeptide in the
+adhesive protein of the mussel Mytilus edulis. J. Biol. Chem. 258:2911–15
+53. Taylor SW, Waite JH, Ross MM, Shabanowitz J, Hunt DF. 1994. trans-2,3-cis-3,4-Dihydroxyproline in
+the tandemly repeated consensus decapeptides of an adhesive protein from Mytilus edulis. J. Am. Chem.
+Soc. 116:10803–4
+54. Haemers S. 2003. The Adhesive of the Blue Mussel: Controlling Cross-Linking. Delft: DUP Sci.
+55. Classic analysis and
+modeling of charge
+transfer in
+triscatecholate Fe3+
+complexes. 55. Karpishin TB, Gebhard MS, Solomon EI, Raymond KN. 1991. Spectroscopic studies of the
+electronic structure of iron (III) triscatecholates. J. Am. Chem. Soc. 113:2977–84
+56. First
+nanomechanical test of
+cross-links based on
+Fe3+ coordination by a
+Dopa-containing
+protein.
+56. Zeng H, Hwang DS, Israelachvili JN, Waite JH. 2010. Strong reversible Fe3+ mediated bridging
+between Dopa-containing protein ﬁlms in water. Proc. Natl. Acad. Sci. USA 107:12850–53
+57. McDowell LM, Burzio LA, Waite JH, Schaefer J. 1999. REDOR detection of cross-links formed in
+mussel byssus under high ﬂow stress. J. Biol. Chem. 274:20293–95
+58. Sagert J, Sun CJ, Waite JH. 2006. Chemical subtleties of mussel and polychaete holdfasts. In Biological
+Adhesives, ed. AM Smith, JA Callow, pp. 257–78. Berlin: Springer-Verlag
+59. Yamamoto H. 1987. Adhesive studies of synthetic polypeptides: a model for marine adhesive proteins.
+J. Adhes. Sci. Technol. 1:177–83
+60. Yamamoto H, Yamauchi S, Ohara S. 1992. Synthesis and adhesive studies of marine adhesive proteins
+of the Chilean mussel Aulacomya ater. Biomimetics 1:219–38
+61. Yamamoto H, Ohkawa K. 1993. Synthesis of adhesive protein from the vitellaria of the liver ﬂuke Fasciola
+hepatica. Amino Acids 5:71–75
+62. Tatehata H, Mochizuki A, Kawashima T, Yamashita S, Yamamoto H. 2000. Model polypeptide of mussel
+adhesive protein. I. Synthesis and adhesive studies of sequential polypeptides (X-Tyr-Lys)n and (Y-Lys)n.
+J. Appl. Polym. Sci. 76:929–37
+63. Yu M, Deming TJ. 1998. Synthetic polypeptide mimics of marine adhesives. Macromolecules 31:4739–45
+64. Yu M, Hwang J, Deming TJ. 1999. Role of L-3,4-dihydroxyphenylalanine in mussel adhesive proteins.
+J. Am. Chem. Soc. 121:5825–26
+65. Yin M, Yuan Y, Liu C, Wang J. 2009. Development of mussel adhesive polypeptide mimics coating for
+in-situ inducing re-endothelialization of intravascular stent devices. Biomaterials 30:2764–73
+66. Maugh KJ, Anderson DM, Strausberg R, Strausberg SL, McCandliss R, et al. 1988. U.S. Patent No.
+87-US3048
+67. Strausberg RL, Anderson DM, Filpula D, Finkelman M, Link R, et al. 1989. Development of a microbial
+system for production of mussel adhesive protein. ACS Symp. 385:453–64
+68. Filpula DR, Lee SM, Link RP, Strausberg SL, Strausberg RL. 1990. Structural and functional repetition
+in a marine mussel adhesive protein. Biotechnol. Prog. 6:171–77
+69. Strausberg RL, Link RP. 1990. Protein-based medical adhesives. Trends Biotechnol. 8:53–57
+70. Deming TJ. 1999. Mussel byssus and biomolecular materials. Curr. Opin. Chem. Biol. 3:100–5
+71. Cha HJ, Hwang DS, Lim S. 2008. Development of bioadhesives from marine mussels. Biotechnol. J.
+3:631–38
+72. Lee BP, Dalsin JL, Messersmith PB. 2002. Synthesis and gelation of DOPA-modiﬁed poly(ethylene
+glycol) hydrogels. Biomacromolecules 3:1038–47
+73. Brubaker CE, Kissler H, Wang L-J, Kaufman DB, Messersmith PB. 2010. Biological performance of
+mussel-inspired adhesive in extrahepatic islet transplantation. Biomaterials 31:420–27
+74. Lee BP, Huang K, Nunalee FN, Shull KR, Messersmith PB. 2004. Synthesis of 3,4-
+dihydroxyphenylalanine (DOPA) containing monomers and their copolymerization with PEG-diacrylate
+to from hydrogels. J. Biomater. Sci. Polym. Ed. 15:449–64
+75. Glass P, Chung H, Washburn NR, Sitti M. 2009. Enhanced reversible adhesion of dopamine
+methacrylamide-coated elastomer microﬁbrillar structures under wet conditions. Langmuir 25:6607–
+12
+76. Amusing and
+inspiring biomimetic
+fusion of mussel and
+gecko adhesion.
+76. Lee H, Lee BP, Messersmith PB. 2007. A reversible wet/dry adhesive inspired by mussels and
+geckos. Nature 448:338–41
+77. Shao H, Bachus KN, Stewart RJ. 2009. A water-borne adhesive modeled after the sandcastle glue of
+P. californica. Macromol. Biosci. 9:464–71
+130 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+78. Daly WH, Moulay S. 1986. Synthesis of poly(vinylcatechols). J. Polym. Sci. 74:227–42
+79. Yang Z, Pelton R. 1998. The synthesis of poly(3,4-dihydroxystyrene) and poly[(sodium 4-
+styrenesulfonate)-co(3,4-dihydroxystyrene)]. Macromol. Rapid Commun. 19:241–46
+80. Westwood G, Horton TN, Wilker JJ. 2007. Simpliﬁed polymer mimics of cross-linking adhesive pro-
+teins. Macromolecules 40:3960–64
+81. Lee BP. 2009. U.S. Patent No. 7,622,533
+82. Charlot A, Sciannamea V, Lenoir S, Faure E, Jerome R, et al. 2009. All-in-one strategy for the fabrication
+of antimicrobial biomimetic ﬁlms on stainless steel. J. Mater. Chem. 19:4117–25
+83. Pan X-D, Qina Z, Yana Y-Y, Sadhukhana P. 2010. Elastomers with chain-end mussel-mimetic modi-
+ﬁcation for nanocomposites: strong modiﬁcations to reinforcement and viscoelastic properties. Polymer
+51:3453–61
+84. Lee B, Dalsin JL, Messersmith PB. 2006. Biomimetic adhesive polymers based on mussel adhesive
+proteins. In Biological Adhesives, ed. AM Smith, JA Callow, pp. 257–78. Berlin: Springer-Verlag
+85. Catron N, Lee H, Messersmith PB. 2006. Enhancement of poly(ethylene glycol) mucoadsorption by
+biomimetic end group functionalization. Biointerphases 1:134–41
+86. Mowery CL, Crosby AJ, Ahn D, Shull KR. 1997. Adhesion of thermally reversible gels to solid surfaces.
+Langmuir 13:6101–7
+87. Flanigan CM, Crosby AJ, Shull KR. 1999. Structural development and adhesion of acrylic ABA triblock
+copolymer gels. Macromolecules 32:7251–62
+88. Flanigan CM, Shull KR. 1999. Adhesive and elastic properties of thin gel layers. Langmuir 15:4966–74
+89. Deruelle M, Leger L, Tirrell M. 1995. Adhesion at the solid-elastomer interface: inﬂuence of the inter-
+facial chains. Macromolecules 28:7419–28
+90. Johnson KL, Kendall K, Roberts AD. 1971. Surface energy and the contact of elastic solids. Proc. R. Soc.
+Lond. 324:301–13
+91. Burke SA, Ritter-Jones M, Lee BP, Messersmith PB. 2007. Thermal gelation and tissue adhesion of
+biomimetic hydrogels. Biomed. Mater. 2:203–10
+92. Ninan L, Monahan J, Stroshine RL, Wilker JJ, Shi R. 2003. Adhesive strength of marine mussel extracts
+on porcine skin. Biomaterials 24:4091–99
+93. da Silva LFM, Rodrigues TNSS, Figueiredo MAV, de Moura MFSF, Chousal JAG. 2006. Effect of
+adhesive type and thickness on the lap shear strength. J. Adhes. 82:1091–115
+94. Lee BP, Chao C-Y, Nunalee FN, Motan E, Shull KR, Messersmith PB. 2006. Rapid gel formation and
+adhesion in photocurable and biodegradable block copolymers with high DOPA content. Macromolecules
+39:1740–48
+95. Guvendiren M, Brass DA, Messersmith PB, Shull KR. 2009. Adhesion of DOPA-functionalized model
+membranes to hard and soft surfaces. J. Adhes. 86:631–45
+96. Messersmith PB, Lee BP, Dalsin JL, Burke SA. 2008. U.S. Patent No. 20,080,247,984
+97. Dalsin JL, Lee BP, Vollenweider L, Silvary S, Murphy JL, et al. 2010. U.S. Patent No. 20,100,113,828
+98. Bilic G, Brubaker C, Messersmith PB, Mallik AS, Quinn TM, et al. 2010. Injectable candidate sealants
+for fetal membrane repair: bonding and toxicity in vitro. Am. J. Obstet. Gynecol. 202:85.e1–9
+99. Winslow BD, Shao H, Stewart RJ, Tresco PA. 2010. Biocompatibility of adhesive complex coacervates
+modeled after the sandcastle glue of Phragmatopoma californica for craniofacial reconstruction. Biomaterials
+31:9373–81
+100. Dalsin JL, Messersmith P. 2005. Bioinspired antifouling polymers. Mater. Today 8:38–46
+101. Catechol chemistry
+simply reformulated as
+a general platform for
+surface modiﬁcation.
+101. Lee H, Dellatore SM, Miller WM, Messersmith PB. 2007. Mussel-inspired surface chemistry
+for multifunctional coatings. Science 318:426–30
+102. Ko R, Cadieux PA, Dalsin JL, Lee BP, Elwood CN, Razvi H. 2008. Novel uropathogen-resistant coatings
+inspired by marine mussels. J. Endourol. 22:1153–60
+103. Dong B, Xu F, Lyman A, Cadieux P, Vollenweider L, et al. 2009. Inhibition of bacterial attachment
+by mussel-inspired coatings on urinary stents and catheter materials. Proc. Biointerface 2009,SanMateo,
+CA
+104. Pechey A, Elwood CN, Wignall GR, Dalsin JL, Lee BP, et al. 2009. Anti-adhesive coating and clearance
+of device associated uropathogenic Escherichia coli cystitis. J. Urol. 182:1628–36
+www.annualreviews.org • Mussel-Inspired Adhesion 131
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41CH05-Waite ARI 3 June 2011 8:4
+105. Gunawan R, King J, Lee BP, Messersmith PB, Miller W. 2007. Surface presentation of bioactive lig-
+ands in a non-adhesive background using DOPA-tethered biotinylated poly(ethylene glycol). Langmuir
+23:10635–43
+106. Statz AR, Barron AE, Messersmith PB. 2008. Protein, cell and bacterial fouling resistance of polypeptoid-
+modiﬁed surfaces: effect of side-chain chemistry. Soft Matter 4:131–39
+107. Statz AR, Kuang J, Ren C, Barron AE, Szleifer I, Messersmith PB. 2009. Experimental and theoretical in-
+vestigation of chain length and surface coverage on fouling of surface grafted polypeptoids. Biointerphases
+4:FA22–32
+108. Statz AR, Meagher RJ, Barron AE, Messersmith PB. 2005. New peptidomimetic polymers for antifouling
+surfaces. J. Am. Chem. Soc. 127:7972–73
+109. Brault ND, Gao C, Xue H, Piliarik M, Homola J, et al. 2010. Ultra-low fouling and functionalizable
+zwitterionic coatings grafted onto SiO2 via a biomimetic adhesive group for sensing and detection in
+complex media. Biosens. Bioelectron. 25:2276–82
+110. Gao C, Li G, Xue H, Yang W, Zhang F, Jiang S. 2010. Functionalizable and ultra-low fouling zwitterionic
+surfaces via adhesive mussel mimetic linkages. Biomaterials 31:1486–92
+111. Chua P-H, Neoh K-G, Kang E-T, Wang W. 2008. Surface functionalization of titanium with hyaluronic
+acid/chitosan polyelectrolyte multilayers and RGD for promoting osteoblast functions and inhibiting
+bacterial adhesion. Biomaterials 29:1412–21
+112. Shi Z, Neoh KG, Kang E-T, Poh C, Wang W. 2009. Titanium with surface-grafted dextran and immo-
+bilized bone morphogenetic protein-2 for inhibition of bacterial adhesion and enhancement of osteoblast
+functions. Tissue Eng. A 15:417–26
+113. Hu X, Neoh K-G, Shi Z, Kang E-T, Poh C, Wang W. 2010. An in vitro assessment of titanium
+functionalized with polysaccharides conjugated with vascular endothelial growth factor for enhanced
+osseointegration and inhibition of bacterial adhesion. Biomaterials 31:8854–63
+114. Paunesku T, Rajh T, Wiederrecht G, Maser J, Vogt S, et al. 2003. Biology of TiO2-oligonucleotide
+nanocomposites. Nat. Mater. 2:343–46
+115. Xu C, Xu K, Gu H, Zheng R, Liu H, et al. 2004. Dopamine as a robust anchor to immobilize functional
+molecules on the iron oxide shell of magnetic nanoparticles. J. Am. Chem. Soc. 126:9938–39
+116. Lee Y, Lee H, Kim YB, Kim J, Hyeon T, et al. 2008. Bioinspired surface immobilization of hyaluronic
+acid on monodisperse magnetite nanocrystals for targeted cancer imaging. Adv. Mater. 20:4154–57
+117. Sun I-C, Eun D-K, Na JH, Lee S, Kim I-J, et al. 2009. Heparin-coated gold nanoparticles for liver-
+speciﬁc CT imaging. Chem. Eur. J. 15:13341–47
+118. Yang C, Yang Z, Gu H, Chang CK, Gao P, Xu B. 2008. Facet-selective 2D self-assembly of TiO2
+nanoleaves via supramolecular interactions. Chem. Mater. 20:7514–20
+119. Amstad E, Gillich T, Bilecka I, Textor M, Reimhult E. 2009. Ultrastable iron oxide nanoparticle colloidal
+suspensions using dispersants with catechol-derived anchor groups. Nano Lett. 9:4042–48
+120. Araujo PZ, Morando PJ, Blesa MA. 2005. Interaction of catechol and gallic acid with titanium dioxide
+in aqueous suspensions. 1. Equilibrium studies. Langmuir 21:3470–74
+121. Sun CJ, Srivastava A, Reifert JR, Waite JH. 2009. Halogenated DOPA in a marine adhesive protein.
+J. Adhes. 85:126–38
+132 Lee et al.
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41-FrontMatter ARI 4 June 2011 12:1
+Annual Review of
+Materials Research
+Volume 41, 2011Contents
+Materials Science of Biological Systems
+Advances in Drug Delivery
+Brian P. Timko, Kathryn Whitehead, Weiwei Gao, Daniel S. Kohane,
+Omid Farokhzad, Daniel Anderson, and Robert Langer pppppppppppppppppppppppppppppppppp1
+Crystallization Pathways in Biomineralization
+Steve Weiner and Lia Addadi pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp21
+Deformation and Fracture Mechanisms of Bone and Nacre
+Rizhi Wang and Himadri S. Gupta ppppppppppppppppppppppppppppppppppppppppppppppppppppppppp41
+Linear and Nonlinear Rheology of Living Cells
+Philip Kollmannsberger and Ben Fabry ppppppppppppppppppppppppppppppppppppppppppppppppppppp75
+Mussel-Inspired Adhesives and Coatings
+Bruce P. Lee, P.B. Messersmith, J.N. Israelachvili, and J.H. Waite pppppppppppppppppppppp99
+Nanomechanics of the Cartilage Extracellular Matrix
+Lin Han, Alan J. Grodzinsky, and Christine Ortiz pppppppppppppppppppppppppppppppppppppp133
+Plant Stems: Functional Design and Mechanics
+Thomas Speck and Ingo Burgert ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp169
+Current Interest
+Elastic and Mechanical Properties of the MAX Phases
+Michel W. Barsoum and Miladin Radovic pppppppppppppppppppppppppppppppppppppppppppppppp195
+Electrocaloric Materials
+J.F. Scott pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp229
+Electrochromic Materials
+Roger J. Mortimer pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp241
+Nanowire Solar Cells
+Erik C. Garnett, Mark L. Brongersma, Yi Cui, and Michael D. McGehee pppppppppppp269
+Nonconventional (Non-Silicon-Based) Photovoltaic Materials
+T. Unold and H.W. Schock pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp297
+v
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.
+
+MR41-FrontMatter ARI 4 June 2011 12:1
+On the Future Availability of the Energy Metals
+T.E. Graedel pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp323
+Oxide Electronics Utilizing Ultrafast Metal-Insulator Transitions
+Zheng Yang, Changhyun Ko, and Shriram Ramanathan pppppppppppppppppppppppppppppppp337
+Point Defects in Oxides: Tailoring Materials Through
+Defect Engineering
+Harry L. Tuller and Sean R. Bishop pppppppppppppppppppppppppppppppppppppppppppppppppppppp369
+Recent Developments in Semiconductor Thermoelectric Physics
+and Materials
+Ali Shakouri pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp399
+Thermoelectric Phenomena, Materials, and Applications
+Terry M. Tritt pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp433
+Index
+Cumulative Index of Contributing Authors, Volumes 37–41 ppppppppppppppppppppppppppp449
+Errata
+An online log of corrections to Annual Review of Materials Research articles may be
+found at http://matsci.annualreviews.org/errata.shtml
+vi Contents
+Annu. Rev. Mater. Res. 2011.41:99-132. Downloaded from www.annualreviews.org
+by University of California - Santa Barbara on 07/12/11. For personal use only.

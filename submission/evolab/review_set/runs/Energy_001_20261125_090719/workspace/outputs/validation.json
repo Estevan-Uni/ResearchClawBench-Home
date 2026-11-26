@@ -1,0 +1,27 @@
+{
+  "closed_form_curt_TWh": 1.922417101637992,
+  "lp_curt_TWh": 1.922417101637992,
+  "closed_form_max_abs_hourly_diff_MW": 5.4569682106375694e-12,
+  "hours_with_north_surplus": 168,
+  "min_north_surplus_MW": 4749.462243629321,
+  "copper_wind_maxdiff_MW": 0.0,
+  "copper_nuc_maxdiff_MW": 0.0,
+  "copper_gas_maxdiff_MW": 0.0,
+  "copper_shed_maxdiff_MW": 4.3655745685100555e-11,
+  "copper_lmp_maxdiff": 0.0,
+  "copper_min_residual_after_wind_MW": 22703.738841148755,
+  "ntc_lmp_north_unique": [
+    -0.0,
+    0.001,
+    0.002
+  ],
+  "ntc_lmp_south_unique": [
+    5999.999,
+    6000.0
+  ],
+  "simplex_vs_ipm_obj_reldiff": 0.0,
+  "simplex_vs_ipm_curt_diff_MWh": 0.0,
+  "simplex_vs_ipm_lmp_maxdiff": 0.0,
+  "congestion_rent_GBPm": 7559.999866842999,
+  "congestion_rent_boundary_share": 0.999999993208598
+}

@@ -1,0 +1,19 @@
+{
+  "known_cost_usd": 0.121877,
+  "cost_complete": true,
+  "unknown_cost_attempts": 0,
+  "active_seconds": 25.115,
+  "elapsed_including_queue_seconds": 2633.463,
+  "phases": [
+    {
+      "phase": "G1",
+      "status": "failed",
+      "seconds": 25.115,
+      "known_usd": 0.121877,
+      "unknown_cost_attempts": 0,
+      "first_start": "2026-11-25T08:04:34.402+00:00",
+      "last_end": "2026-11-25T08:48:27.865+00:00",
+      "ledger_source": "g1 solve attempt.json files"
+    }
+  ]
+}

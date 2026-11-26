@@ -1,0 +1,398 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "circuits.py",
+    "path": "code/circuits.py",
+    "type": "file",
+    "size": 2592,
+    "mtime": 1795600528.5781713,
+    "exported": true
+  },
+  {
+    "name": "classical_gap_summary.py",
+    "path": "code/classical_gap_summary.py",
+    "type": "file",
+    "size": 2153,
+    "mtime": 1795601373.8605423,
+    "exported": true
+  },
+  {
+    "name": "classical_mps.py",
+    "path": "code/classical_mps.py",
+    "type": "file",
+    "size": 1451,
+    "mtime": 1795600881.5806208,
+    "exported": true
+  },
+  {
+    "name": "classical_scrambling_tw.py",
+    "path": "code/classical_scrambling_tw.py",
+    "type": "file",
+    "size": 3239,
+    "mtime": 1795600904.040777,
+    "exported": true
+  },
+  {
+    "name": "estimators.py",
+    "path": "code/estimators.py",
+    "type": "file",
+    "size": 4576,
+    "mtime": 1795600695.4714558,
+    "exported": true
+  },
+  {
+    "name": "figures.py",
+    "path": "code/figures.py",
+    "type": "file",
+    "size": 14832,
+    "mtime": 1795601515.4778025,
+    "exported": true
+  },
+  {
+    "name": "inspect_mb.py",
+    "path": "code/inspect_mb.py",
+    "type": "file",
+    "size": 2134,
+    "mtime": 1795600472.3255723,
+    "exported": true
+  },
+  {
+    "name": "load_data.py",
+    "path": "code/load_data.py",
+    "type": "file",
+    "size": 3753,
+    "mtime": 1795600451.665352,
+    "exported": true
+  },
+  {
+    "name": "model_analysis.py",
+    "path": "code/model_analysis.py",
+    "type": "file",
+    "size": 13401,
+    "mtime": 1795600695.4754558,
+    "exported": true
+  },
+  {
+    "name": "mps.py",
+    "path": "code/mps.py",
+    "type": "file",
+    "size": 3505,
+    "mtime": 1795600784.2359805,
+    "exported": true
+  },
+  {
+    "name": "run_all.sh",
+    "path": "code/run_all.sh",
+    "type": "file",
+    "size": 838,
+    "mtime": 1795601958.3939316,
+    "exported": true
+  },
+  {
+    "name": "synthetic_validation.py",
+    "path": "code/synthetic_validation.py",
+    "type": "file",
+    "size": 2261,
+    "mtime": 1795600548.086379,
+    "exported": true
+  },
+  {
+    "name": "validate_mps.py",
+    "path": "code/validate_mps.py",
+    "type": "file",
+    "size": 959,
+    "mtime": 1795600784.2399807,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "audit_table.csv",
+    "path": "outputs/audit_table.csv",
+    "type": "file",
+    "size": 4815,
+    "mtime": 1795600453.9253762,
+    "exported": true
+  },
+  {
+    "name": "classical_gap_summary.csv",
+    "path": "outputs/classical_gap_summary.csv",
+    "type": "file",
+    "size": 2832,
+    "mtime": 1795601910.761478,
+    "exported": true
+  },
+  {
+    "name": "contraction_width_N56.csv",
+    "path": "outputs/contraction_width_N56.csv",
+    "type": "file",
+    "size": 1185,
+    "mtime": 1795600989.901399,
+    "exported": true
+  },
+  {
+    "name": "duplicates_removed.csv",
+    "path": "outputs/duplicates_removed.csv",
+    "type": "file",
+    "size": 9194,
+    "mtime": 1795600453.817375,
+    "exported": true
+  },
+  {
+    "name": "fidelity_summary.csv",
+    "path": "outputs/fidelity_summary.csv",
+    "type": "file",
+    "size": 5834,
+    "mtime": 1795600730.8196573,
+    "exported": true
+  },
+  {
+    "name": "model_coverage.csv",
+    "path": "outputs/model_coverage.csv",
+    "type": "file",
+    "size": 4033,
+    "mtime": 1795600730.7076566,
+    "exported": true
+  },
+  {
+    "name": "model_grid.csv",
+    "path": "outputs/model_grid.csv",
+    "type": "file",
+    "size": 37118,
+    "mtime": 1795600730.6796565,
+    "exported": true
+  },
+  {
+    "name": "model_results.json",
+    "path": "outputs/model_results.json",
+    "type": "file",
+    "size": 5176,
+    "mtime": 1795600730.8196573,
+    "exported": true
+  },
+  {
+    "name": "mps_N56_depth.csv",
+    "path": "outputs/mps_N56_depth.csv",
+    "type": "file",
+    "size": 11487,
+    "mtime": 1795601903.5494094,
+    "exported": true
+  },
+  {
+    "name": "mps_chi_required.csv",
+    "path": "outputs/mps_chi_required.csv",
+    "type": "file",
+    "size": 1344,
+    "mtime": 1795601910.765478,
+    "exported": true
+  },
+  {
+    "name": "mps_d12_Nscan.csv",
+    "path": "outputs/mps_d12_Nscan.csv",
+    "type": "file",
+    "size": 2008,
+    "mtime": 1795601230.9833171,
+    "exported": true
+  },
+  {
+    "name": "mps_depth.log",
+    "path": "outputs/mps_depth.log",
+    "type": "file",
+    "size": 1036,
+    "mtime": 1795601903.5494094,
+    "exported": true
+  },
+  {
+    "name": "mps_nscan.log",
+    "path": "outputs/mps_nscan.log",
+    "type": "file",
+    "size": 1318,
+    "mtime": 1795601230.987317,
+    "exported": true
+  },
+  {
+    "name": "mps_validation.csv",
+    "path": "outputs/mps_validation.csv",
+    "type": "file",
+    "size": 7568,
+    "mtime": 1795600810.0721445,
+    "exported": true
+  },
+  {
+    "name": "per_instance_estimates.csv",
+    "path": "outputs/per_instance_estimates.csv",
+    "type": "file",
+    "size": 270414,
+    "mtime": 1795600531.2421997,
+    "exported": true
+  },
+  {
+    "name": "pooled_estimates.csv",
+    "path": "outputs/pooled_estimates.csv",
+    "type": "file",
+    "size": 11320,
+    "mtime": 1795600698.9674752,
+    "exported": true
+  },
+  {
+    "name": "scrambling_N16.csv",
+    "path": "outputs/scrambling_N16.csv",
+    "type": "file",
+    "size": 16586,
+    "mtime": 1795600920.5888937,
+    "exported": true
+  },
+  {
+    "name": "scrambling_tw.log",
+    "path": "outputs/scrambling_tw.log",
+    "type": "file",
+    "size": 2459,
+    "mtime": 1795600989.901399,
+    "exported": true
+  },
+  {
+    "name": "synthetic_validation.csv",
+    "path": "outputs/synthetic_validation.csv",
+    "type": "file",
+    "size": 1873,
+    "mtime": 1795600591.41884,
+    "exported": true
+  },
+  {
+    "name": "synthetic_validation.log",
+    "path": "outputs/synthetic_validation.log",
+    "type": "file",
+    "size": 1334,
+    "mtime": 1795600591.4628403,
+    "exported": true
+  },
+  {
+    "name": "synthetic_validation_trials.csv",
+    "path": "outputs/synthetic_validation_trials.csv",
+    "type": "file",
+    "size": 289408,
+    "mtime": 1795600591.4628403,
+    "exported": true
+  },
+  {
+    "name": "trb_fits.csv",
+    "path": "outputs/trb_fits.csv",
+    "type": "file",
+    "size": 876,
+    "mtime": 1795600730.5436556,
+    "exported": true
+  },
+  {
+    "name": "xeb_vs_mb.csv",
+    "path": "outputs/xeb_vs_mb.csv",
+    "type": "file",
+    "size": 2297,
+    "mtime": 1795600730.763657,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 211601,
+    "mtime": 1795601915.805526,
+    "exported": true
+  },
+  {
+    "name": "fig2_d12_Nscan.png",
+    "path": "report/images/fig2_d12_Nscan.png",
+    "type": "file",
+    "size": 176334,
+    "mtime": 1795601917.625543,
+    "exported": true
+  },
+  {
+    "name": "fig3_N40_depth_scan.png",
+    "path": "report/images/fig3_N40_depth_scan.png",
+    "type": "file",
+    "size": 180729,
+    "mtime": 1795601918.9215555,
+    "exported": true
+  },
+  {
+    "name": "fig4_N56_depth_scan.png",
+    "path": "report/images/fig4_N56_depth_scan.png",
+    "type": "file",
+    "size": 104147,
+    "mtime": 1795601919.7855637,
+    "exported": true
+  },
+  {
+    "name": "fig5_xeb_vs_mb.png",
+    "path": "report/images/fig5_xeb_vs_mb.png",
+    "type": "file",
+    "size": 64802,
+    "mtime": 1795601920.3695693,
+    "exported": true
+  },
+  {
+    "name": "fig6_model_validation.png",
+    "path": "report/images/fig6_model_validation.png",
+    "type": "file",
+    "size": 118601,
+    "mtime": 1795601921.3055782,
+    "exported": true
+  },
+  {
+    "name": "fig7_synthetic_validation.png",
+    "path": "report/images/fig7_synthetic_validation.png",
+    "type": "file",
+    "size": 97883,
+    "mtime": 1795601922.4655893,
+    "exported": true
+  },
+  {
+    "name": "fig8_scrambling_N16.png",
+    "path": "report/images/fig8_scrambling_N16.png",
+    "type": "file",
+    "size": 111574,
+    "mtime": 1795601923.4295983,
+    "exported": true
+  },
+  {
+    "name": "fig9_classical_gap_N56.png",
+    "path": "report/images/fig9_classical_gap_N56.png",
+    "type": "file",
+    "size": 181915,
+    "mtime": 1795601924.4656084,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 28747,
+    "mtime": 1795602098.5832753,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5919,
+    "mtime": 1795600424.069058,
+    "exported": true
+  }
+]

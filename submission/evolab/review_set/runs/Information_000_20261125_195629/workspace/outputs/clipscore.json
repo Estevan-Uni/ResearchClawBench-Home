@@ -1,0 +1,146 @@
+[
+ {
+  "tag": "janus_s0",
+  "file": "janus_s0_0.png",
+  "text": "own",
+  "clipscore": 31.740570068359375
+ },
+ {
+  "tag": "janus_s0",
+  "file": "janus_s0_0.png",
+  "text": "short",
+  "clipscore": 25.467658042907715
+ },
+ {
+  "tag": "janus_s0",
+  "file": "janus_s0_0.png",
+  "text": "neg",
+  "clipscore": 12.220635265111923
+ },
+ {
+  "tag": "janus_s0",
+  "file": "janus_s0_1.png",
+  "text": "own",
+  "clipscore": 30.971714854240417
+ },
+ {
+  "tag": "janus_s0",
+  "file": "janus_s0_1.png",
+  "text": "short",
+  "clipscore": 27.295958995819092
+ },
+ {
+  "tag": "janus_s0",
+  "file": "janus_s0_1.png",
+  "text": "neg",
+  "clipscore": 11.435530334711075
+ },
+ {
+  "tag": "janus_v2_s1",
+  "file": "janus_v2_s1_0.png",
+  "text": "own",
+  "clipscore": 28.869223594665527
+ },
+ {
+  "tag": "janus_v2_s1",
+  "file": "janus_v2_s1_0.png",
+  "text": "short",
+  "clipscore": 26.9081711769104
+ },
+ {
+  "tag": "janus_v2_s1",
+  "file": "janus_v2_s1_0.png",
+  "text": "neg",
+  "clipscore": 10.091506689786911
+ },
+ {
+  "tag": "janus_v2_s1",
+  "file": "janus_v2_s1_1.png",
+  "text": "own",
+  "clipscore": 31.577298045158386
+ },
+ {
+  "tag": "janus_v2_s1",
+  "file": "janus_v2_s1_1.png",
+  "text": "short",
+  "clipscore": 29.370850324630737
+ },
+ {
+  "tag": "janus_v2_s1",
+  "file": "janus_v2_s1_1.png",
+  "text": "neg",
+  "clipscore": 9.373890608549118
+ },
+ {
+  "tag": "readme_opera_s0",
+  "file": "readme_opera_s0_0.png",
+  "text": "own",
+  "clipscore": 33.96193981170654
+ },
+ {
+  "tag": "readme_opera_s0",
+  "file": "readme_opera_s0_0.png",
+  "text": "short",
+  "clipscore": 33.96193981170654
+ },
+ {
+  "tag": "readme_opera_s0",
+  "file": "readme_opera_s0_0.png",
+  "text": "neg",
+  "clipscore": 12.70657628774643
+ },
+ {
+  "tag": "readme_opera_s0",
+  "file": "readme_opera_s0_1.png",
+  "text": "own",
+  "clipscore": 28.940126299858093
+ },
+ {
+  "tag": "readme_opera_s0",
+  "file": "readme_opera_s0_1.png",
+  "text": "short",
+  "clipscore": 28.940126299858093
+ },
+ {
+  "tag": "readme_opera_s0",
+  "file": "readme_opera_s0_1.png",
+  "text": "neg",
+  "clipscore": 12.767356634140015
+ },
+ {
+  "tag": "janus_cfg1_s0",
+  "file": "janus_cfg1_s0_0.png",
+  "text": "own",
+  "clipscore": 27.594107389450073
+ },
+ {
+  "tag": "janus_cfg1_s0",
+  "file": "janus_cfg1_s0_0.png",
+  "text": "short",
+  "clipscore": 23.72826486825943
+ },
+ {
+  "tag": "janus_cfg1_s0",
+  "file": "janus_cfg1_s0_0.png",
+  "text": "neg",
+  "clipscore": 8.603563904762268
+ },
+ {
+  "tag": "janus_cfg10_s0",
+  "file": "janus_cfg10_s0_0.png",
+  "text": "own",
+  "clipscore": 31.147292256355286
+ },
+ {
+  "tag": "janus_cfg10_s0",
+  "file": "janus_cfg10_s0_0.png",
+  "text": "short",
+  "clipscore": 23.97281676530838
+ },
+ {
+  "tag": "janus_cfg10_s0",
+  "file": "janus_cfg10_s0_0.png",
+  "text": "neg",
+  "clipscore": 9.477801620960236
+ }
+]

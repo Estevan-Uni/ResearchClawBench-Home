@@ -1,0 +1,717 @@
+{
+ "7XG0": {
+  "tier": "T1_same_system",
+  "title": "CryoEM structure of type IV-A Csf-crRNA-dsDNA ternary complex",
+  "nchain": 8,
+  "nres": 2280,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H"
+  },
+  "chains": {
+   "A": 241,
+   "B": 219,
+   "C": 329,
+   "D": 331,
+   "E": 323,
+   "F": 323,
+   "G": 280,
+   "H": 234
+  },
+  "organism": [
+   "Pseudomonas aeruginosa"
+  ]
+ },
+ "7XG1": {
+  "tier": "T1_same_system",
+  "title": "CryoEM structure of type IV-A Csf-crRNA binary complex",
+  "nchain": 7,
+  "nres": 2000,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G"
+  },
+  "chains": {
+   "A": 241,
+   "B": 219,
+   "C": 327,
+   "D": 326,
+   "E": 320,
+   "F": 287,
+   "G": 280
+  },
+  "organism": [
+   "Pseudomonas aeruginosa"
+  ]
+ },
+ "7XG2": {
+  "tier": "T1_same_system",
+  "title": "CryoEM structure of type IV-A NTS-nicked dsDNA bound Csf-crRNA ternary complex",
+  "nchain": 8,
+  "nres": 2282,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H"
+  },
+  "chains": {
+   "A": 241,
+   "B": 219,
+   "C": 329,
+   "D": 331,
+   "E": 324,
+   "F": 324,
+   "G": 280,
+   "H": 234
+  },
+  "organism": [
+   "Pseudomonas aeruginosa"
+  ]
+ },
+ "7XG3": {
+  "tier": "T1_same_system",
+  "title": "CryoEM structure of type IV-A CasDinG bound NTS-nicked Csf-crRNA-dsDNA quaternary complex",
+  "nchain": 9,
+  "nres": 2839,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H",
+   "L": "L"
+  },
+  "chains": {
+   "A": 241,
+   "B": 219,
+   "C": 328,
+   "D": 329,
+   "E": 323,
+   "F": 322,
+   "G": 249,
+   "H": 234,
+   "L": 594
+  },
+  "organism": [
+   "Pseudomonas aeruginosa"
+  ]
+ },
+ "7XFZ": {
+  "tier": "T1_same_system",
+  "title": "CryoEM structure of type IV-A Csf-crRNAsp14-dsDNA ternary complex",
+  "nchain": 5,
+  "nres": 1303,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "H": "H"
+  },
+  "chains": {
+   "A": 241,
+   "B": 219,
+   "C": 329,
+   "D": 280,
+   "H": 234
+  },
+  "organism": [
+   "Pseudomonas aeruginosa"
+  ]
+ },
+ "9N3Y": {
+  "tier": "T1_same_system",
+  "title": "Type IV-A1 CRISPR effector complex bound to dsDNA and CasDinG - loaded state",
+  "nchain": 9,
+  "nres": 2888,
+  "chainmap": {
+   "B": "B",
+   "H": "H",
+   "A": "A",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "L": "L"
+  },
+  "chains": {
+   "B": 219,
+   "H": 226,
+   "A": 241,
+   "C": 329,
+   "D": 331,
+   "E": 327,
+   "F": 326,
+   "G": 276,
+   "L": 613
+  },
+  "organism": [
+   "Pseudomonas aeruginosa",
+   "synthetic construct"
+  ]
+ },
+ "9N3Z": {
+  "tier": "T1_same_system",
+  "title": "Type IV-A1 CRISPR effector complex bound to dsDNA and CasDinG - locked state",
+  "nchain": 9,
+  "nres": 2900,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H",
+   "L": "L"
+  },
+  "chains": {
+   "A": 241,
+   "B": 220,
+   "C": 329,
+   "D": 334,
+   "E": 331,
+   "F": 333,
+   "G": 276,
+   "H": 232,
+   "L": 604
+  },
+  "organism": [
+   "Pseudomonas aeruginosa",
+   "synthetic construct"
+  ]
+ },
+ "8RC3": {
+  "tier": "T2_IVA1_ortholog",
+  "title": "DNA bound type IV-A1 CRISPR effector complex from P. oleovorans",
+  "nchain": 8,
+  "nres": 2297,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "M": "M"
+  },
+  "chains": {
+   "A": 329,
+   "B": 332,
+   "C": 331,
+   "D": 331,
+   "E": 283,
+   "F": 222,
+   "G": 240,
+   "M": 229
+  },
+  "organism": [
+   "Ectopseudomonas oleovorans"
+  ]
+ },
+ "8RFJ": {
+  "tier": "T2_IVA1_ortholog",
+  "title": "DNA bound type IV-A1 CRISPR effector complex with the DinG helicase from P. oleovorans",
+  "nchain": 9,
+  "nres": 2877,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "K": "K",
+   "M": "M"
+  },
+  "chains": {
+   "A": 328,
+   "B": 331,
+   "C": 331,
+   "D": 324,
+   "E": 283,
+   "F": 222,
+   "G": 240,
+   "K": 582,
+   "M": 236
+  },
+  "organism": [
+   "Ectopseudomonas oleovorans"
+  ]
+ },
+ "8RC2": {
+  "tier": "T3_IVA3_remote",
+  "title": "DNA bound type IV-A3 CRISPR effector complex from K. pneumoniae",
+  "nchain": 8,
+  "nres": 2304,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "L": "L"
+  },
+  "chains": {
+   "A": 341,
+   "B": 341,
+   "C": 341,
+   "D": 334,
+   "E": 247,
+   "F": 235,
+   "G": 263,
+   "L": 202
+  },
+  "organism": [
+   "Klebsiella pneumoniae"
+  ]
+ },
+ "8S35": {
+  "tier": "T3_IVA3_remote",
+  "title": "DNA-bound Type IV-A3 CRISPR effector in complex with DinG helicase from K. pneumoniae (state I)",
+  "nchain": 9,
+  "nres": 2936,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "L": "L",
+   "M": "M"
+  },
+  "chains": {
+   "A": 342,
+   "B": 342,
+   "C": 342,
+   "D": 335,
+   "E": 250,
+   "F": 235,
+   "G": 263,
+   "L": 203,
+   "M": 624
+  },
+  "organism": [
+   "Klebsiella pneumoniae"
+  ]
+ },
+ "8S36": {
+  "tier": "T3_IVA3_remote",
+  "title": "DNA-bound Type IV-A3 CRISPR effector in complex with DinG helicase from K. pneumoniae (state II)",
+  "nchain": 9,
+  "nres": 2838,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "L": "L",
+   "M": "M"
+  },
+  "chains": {
+   "A": 342,
+   "B": 342,
+   "C": 342,
+   "D": 342,
+   "E": 249,
+   "F": 235,
+   "G": 263,
+   "L": 204,
+   "M": 519
+  },
+  "organism": [
+   "Klebsiella pneumoniae"
+  ]
+ },
+ "8S37": {
+  "tier": "T3_IVA3_remote",
+  "title": "DNA-bound Type IV-A3 CRISPR effector in complex with DinG helicase from K. pneumoniae (state III)",
+  "nchain": 9,
+  "nres": 2947,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "L": "L",
+   "M": "M"
+  },
+  "chains": {
+   "A": 342,
+   "B": 343,
+   "C": 343,
+   "D": 343,
+   "E": 253,
+   "F": 235,
+   "G": 263,
+   "L": 201,
+   "M": 624
+  },
+  "organism": [
+   "Klebsiella pneumoniae"
+  ]
+ },
+ "11HC": {
+  "tier": "T3b_IVC",
+  "title": "Effector complex from type IV-C CRISPR-Cas system",
+  "nchain": 15,
+  "nres": 3525,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H",
+   "I": "I",
+   "K": "K",
+   "L": "L",
+   "M": "M",
+   "N": "N",
+   "O": "O",
+   "P": "P"
+  },
+  "chains": {
+   "A": 504,
+   "B": 285,
+   "C": 294,
+   "D": 296,
+   "E": 303,
+   "F": 303,
+   "G": 303,
+   "H": 303,
+   "I": 293,
+   "K": 109,
+   "L": 109,
+   "M": 109,
+   "N": 110,
+   "O": 105,
+   "P": 99
+  },
+  "organism": [
+   "Pyrococcus abyssi"
+  ]
+ },
+ "4TVX": {
+  "tier": "T4_typeI_III",
+  "title": "Crystal structure of the E. coli CRISPR RNA-guided surveillance complex, Cascade",
+  "nchain": 22,
+  "nres": 6686,
+  "chainmap": {
+   "W": "W",
+   "V": "V",
+   "K": "K",
+   "J": "J",
+   "F": "F",
+   "D": "D",
+   "E": "E",
+   "C": "C",
+   "B": "B",
+   "G": "G",
+   "A": "A",
+   "H": "H",
+   "R": "R",
+   "P": "P",
+   "Q": "Q",
+   "O": "O",
+   "N": "N",
+   "S": "S",
+   "T": "T",
+   "M": "M",
+   "U": "U",
+   "I": "I"
+  },
+  "chains": {
+   "W": 157,
+   "V": 155,
+   "K": 157,
+   "J": 157,
+   "F": 356,
+   "D": 356,
+   "E": 351,
+   "C": 347,
+   "B": 345,
+   "G": 353,
+   "A": 192,
+   "H": 219,
+   "R": 359,
+   "P": 354,
+   "Q": 354,
+   "O": 355,
+   "N": 358,
+   "S": 361,
+   "T": 219,
+   "M": 195,
+   "U": 493,
+   "I": 493
+  },
+  "organism": [
+   "Escherichia coli",
+   "Escherichia coli K-12"
+  ]
+ },
+ "5H9F": {
+  "tier": "T4_typeI_III",
+  "title": "Crystal structure of E. coli Cascade bound to a PAM-containing dsDNA target at 2.45 angstrom resolution.",
+  "nchain": 11,
+  "nres": 3252,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H",
+   "I": "I",
+   "J": "J",
+   "K": "K"
+  },
+  "chains": {
+   "A": 481,
+   "B": 153,
+   "C": 150,
+   "D": 318,
+   "E": 354,
+   "F": 361,
+   "G": 354,
+   "H": 352,
+   "I": 351,
+   "J": 219,
+   "K": 159
+  },
+  "organism": [
+   "Escherichia coli",
+   "Escherichia coli K-12"
+  ]
+ },
+ "6B44": {
+  "tier": "T4_typeI_III",
+  "title": "Cryo-EM structure of Type I-F CRISPR crRNA-guided Csy surveillance complex with bound target dsDNA",
+  "nchain": 9,
+  "nres": 2879,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G",
+   "H": "H",
+   "L": "L"
+  },
+  "chains": {
+   "A": 424,
+   "B": 305,
+   "C": 293,
+   "D": 333,
+   "E": 334,
+   "F": 335,
+   "G": 333,
+   "H": 333,
+   "L": 189
+  },
+  "organism": [
+   "Pseudomonas aeruginosa",
+   "Pseudomonas aeruginosa UCBPP-PA14",
+   "synthetic construct"
+  ]
+ },
+ "7UZW": {
+  "tier": "T4_typeI_III",
+  "title": "Staphylococcus epidermidis RP62a CRISPR effector subcomplex",
+  "nchain": 7,
+  "nres": 1760,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "H": "H",
+   "F": "F"
+  },
+  "chains": {
+   "A": 204,
+   "B": 193,
+   "C": 204,
+   "D": 204,
+   "E": 184,
+   "H": 293,
+   "F": 478
+  },
+  "organism": [
+   "Staphylococcus epidermidis RP62A"
+  ]
+ },
+ "8ANE": {
+  "tier": "T4_typeI_III",
+  "title": "Structure of the type I-G CRISPR effector",
+  "nchain": 7,
+  "nres": 2212,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D",
+   "E": "E",
+   "F": "F",
+   "G": "G"
+  },
+  "chains": {
+   "A": 316,
+   "B": 316,
+   "C": 316,
+   "D": 316,
+   "E": 316,
+   "F": 316,
+   "G": 316
+  },
+  "organism": [
+   "Thioalkalivibrio sulfidiphilus HL-EbGr7",
+   "synthetic construct"
+  ]
+ },
+ "6IG0": {
+  "tier": "T4_typeI_III",
+  "title": "Type III-A Csm complex, Cryo-EM structure of Csm-CTR1, ATP bound",
+  "nchain": 8,
+  "nres": 2258,
+  "chainmap": {
+   "A": "A",
+   "D": "D",
+   "C": "C",
+   "G": "G",
+   "F": "F",
+   "E": "E",
+   "B": "B",
+   "H": "H"
+  },
+  "chains": {
+   "A": 737,
+   "D": 121,
+   "C": 121,
+   "G": 217,
+   "F": 216,
+   "E": 207,
+   "B": 295,
+   "H": 344
+  },
+  "organism": [
+   "Streptococcus thermophilus ND03"
+  ]
+ },
+ "4HHB": {
+  "tier": "N_unrelated",
+  "title": "THE CRYSTAL STRUCTURE OF HUMAN DEOXYHAEMOGLOBIN AT 1.74 ANGSTROMS RESOLUTION",
+  "nchain": 4,
+  "nres": 574,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "chains": {
+   "A": 141,
+   "B": 146,
+   "C": 141,
+   "D": 146
+  },
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "1A0R": {
+  "tier": "N_unrelated",
+  "title": "HETEROTRIMERIC COMPLEX OF PHOSDUCIN/TRANSDUCIN BETA-GAMMA",
+  "nchain": 3,
+  "nres": 592,
+  "chainmap": {
+   "B": "B",
+   "G": "G",
+   "P": "P"
+  },
+  "chains": {
+   "B": 339,
+   "G": 65,
+   "P": 188
+  },
+  "organism": [
+   "Bos taurus"
+  ]
+ },
+ "1FIN": {
+  "tier": "N_unrelated",
+  "title": "CYCLIN A-CYCLIN-DEPENDENT KINASE 2 COMPLEX",
+  "nchain": 4,
+  "nres": 1116,
+  "chainmap": {
+   "A": "A",
+   "B": "B",
+   "C": "C",
+   "D": "D"
+  },
+  "chains": {
+   "A": 298,
+   "B": 260,
+   "C": 298,
+   "D": 260
+  },
+  "organism": [
+   "Homo sapiens"
+  ]
+ },
+ "6N40": {
+  "tier": "N_unrelated",
+  "title": "Crystal structure of MmpL3 from Mycobacterium smegmatis",
+  "nchain": 1,
+  "nres": 726,
+  "chainmap": {
+   "A": "A"
+  },
+  "chains": {
+   "A": 726
+  },
+  "organism": [
+   "Mycolicibacterium smegmatis MC2 155"
+  ]
+ }
+}

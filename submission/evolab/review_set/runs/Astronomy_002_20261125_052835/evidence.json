@@ -1,0 +1,42 @@
+{
+  "source_workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/solve/attempt-00001/Astronomy_002/workspace",
+  "source_score": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/carbon/score.json",
+  "source_score_sha256": "f518ede3d3f59ccf4e64cdb51a5c6593936fb2491a94732e5afe200d5ed6b623",
+  "source_report_sha256": "33e4865bfc60fc046bf66be2a31cafe89477e02337300131cab002f1ff1b5cc9",
+  "source_output_sha256": "2d8b3276edfcb609c6f4d5010e5a88265e339d196d6a2d68f71eeb9a294e2e56",
+  "exported_paths": [
+    "INSTRUCTIONS.md",
+    "code/README.md",
+    "code/h0dn_core.py",
+    "code/run_all.py",
+    "outputs/baseline_design.txt",
+    "outputs/cep_trgb_crosscheck.json",
+    "outputs/error_budget.json",
+    "outputs/headline.json",
+    "outputs/host_residuals.json",
+    "outputs/loo_hybrid.json",
+    "outputs/papers/p0.txt",
+    "outputs/papers/p1.txt",
+    "outputs/papers/p2.txt",
+    "outputs/papers/p3.txt",
+    "outputs/planck_comparison.json",
+    "outputs/run_log.txt",
+    "outputs/sanity.json",
+    "outputs/system_accounting.json",
+    "outputs/validation.json",
+    "outputs/variants.json",
+    "report/images/fig1_data_overview.png",
+    "report/images/fig3_host_residuals.png",
+    "report/images/fig4_hubble_diagrams.png",
+    "report/images/fig5_variants_forest.png",
+    "report/images/fig6_validation.png",
+    "report/images/fig7_error_budget.png",
+    "report/images/fig8_planck.png",
+    "report/report.md"
+  ],
+  "omitted_outputs": {
+    "large_or_binary_output_files": 0,
+    "large_or_binary_output_bytes": 0
+  },
+  "judge_model": "google/gemini-4-carbon"
+}

@@ -1,0 +1,17 @@
+,,precision,precision,recall,recall,F1,F1
+,,mean,std,mean,std,mean,std
+detector,k,,,,,,
+Hampel-daily + rules,3.0,0.972,0.004,0.994,0.007,0.983,0.002
+Hampel-daily + rules,3.5,0.994,0.0,0.99,0.012,0.992,0.006
+Hampel-daily + rules,4.0,1.0,0.0,0.983,0.022,0.991,0.012
+Hampel-daily + rules,5.0,1.0,0.0,0.961,0.025,0.98,0.013
+Hampel-daily + rules,6.0,1.0,0.0,0.927,0.022,0.962,0.012
+"Hampel-daily, no rules",4.0,1.0,0.0,0.886,0.022,0.939,0.012
+Hampel-weekly + rules,3.0,0.903,0.002,0.999,0.003,0.948,0.002
+Hampel-weekly + rules,3.5,0.99,0.003,0.998,0.003,0.994,0.002
+Hampel-weekly + rules,4.0,1.0,0.0,0.997,0.005,0.998,0.003
+Hampel-weekly + rules,5.0,1.0,0.0,0.995,0.007,0.998,0.004
+Hampel-weekly + rules,6.0,1.0,0.0,0.992,0.012,0.996,0.006
+global IQR (1.5),1.5,1.0,0.0,0.657,0.029,0.793,0.021
+global z-score,2.0,0.979,0.003,0.858,0.02,0.915,0.013
+global z-score,3.0,1.0,0.0,0.662,0.021,0.796,0.015

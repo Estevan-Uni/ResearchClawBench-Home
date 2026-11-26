@@ -1,0 +1,417 @@
+# Degradation-Aware Multimodal Fusion for Automated Neuron-Segment Merge Prediction in Over-Segmented Fly-Brain EM
+
+## Abstract
+Proofreading dominates the cost of connectome reconstruction. In an over-segmented EM volume, a human must decide for every truncated segment which adjacent candidate fragment, if any, continues the neuron. We study this merge/split decision on a simulated benchmark of **240,000 candidate pairs** (168k train / 72k test; the task description states about 12k). Each pair is described by 20 features in three modalities: morphology, intensity and a 10-d embedding. Each pair is also tagged with one of four imaging regimes: *Average*, *Misalignment*, *Missing Sections* and *Mixed*. We compare 7 modality subsets × 4 model families plus 6 dedicated fusion schemes. The schemes cover early fusion, late score fusion, a degradation-gated combiner, per-degradation experts, and a squeeze-and-excitation (SE) gated modality-encoder network. Every scheme is evaluated per degradation with precision, recall, F1, PR curves and bootstrap CIs.
+- **Fusion.** All three modalities are needed. The best fused models reach test F1 0.990 (MLP early fusion) and 0.984 (SE-gated network), with AP ≥ 0.998, against at most 0.914 for any modality pair. Linear and tree-based fusion lag substantially (F1 0.85–0.93), especially in the hardest regime, *Average*: F1 0.62–0.83 vs 0.98.
+- **Modality gains.** These depend on the degradation. The embedding block adds +0.20 F1 in *Average* but only +0.03–0.05 under artifacts. Morphology is the strongest single cue under artifacts.
+- **Gating.** Degradation gating improves weak (late, linear) fusers by 1–4 F1 points but is redundant for a flexible network that receives the tag.
+- **Embedding loss.** We trained a 16-d pair embedding with a discriminative pull/push clustering loss plus a contrastive pair loss and ablated the loss-weight schedule. The clustering term is essential: candidate-ranking mean rank among 20 candidates is 1.19 with the pair loss only, against 1.04–1.07 with clustering, where random is 10.5. Ramping the pair weight up over training was best.
+- **Representation.** The learned embedding separates merge and split pairs into compact clusters: silhouette 0.75–0.89 vs 0.02 for the raw embedding block.
+
+We discuss the simulated, pre-featurised nature of the data as the main limitation.
+
+
+## 1. Introduction
+
+Dense reconstruction of neural circuits from volumetric electron microscopy (EM) is a pipeline. First, a convolutional network predicts voxel affinities or boundaries. Next, watershed produces supervoxels, which are agglomerated into segments. Finally, a manual proofreading stage fixes the remaining split and merge errors [Funke et al., 2018]. Funke et al. show that a 3D U-Net trained with a structured MALIS loss, followed by simple percentile agglomeration, greatly improves the variation-of-information (VOI) and CREMI scores on three benchmarks. Imaging artifacts such as section misalignment and missing sections, which are common in serial-section TEM and motivate their use of inter-voxel affinities for anisotropic data, remain a major source of segmentation errors. In whole-brain *Drosophila* datasets, the automatic segmentation is deliberately tuned to be **over-segmented**, because a false merge is much costlier to undo than a false split. Neurons therefore end up as many fragments, and each fragment ends at a *truncation point*. A proofreader must then decide, for each candidate fragment near that truncation point, whether it continues the same neuron. At petascale this amounts to millions of binary decisions. Automating them is the main lever for reducing human proofreading effort.
+
+A merge decision can draw on several **modalities** of evidence about a pair of segments:
+- *morphology*: shape and geometry around the truncation, such as direction continuity, calibre and gap distance;
+- *intensity*: local EM texture and boundary evidence across the gap;
+- *learned embeddings*: instance-discriminative feature vectors.
+
+This last idea comes from metric learning. Hadsell et al. (2006) introduced a contrastive loss that pulls similar pairs together and pushes dissimilar pairs beyond a margin. De Brabandere et al. (2017) proposed a *discriminative* clustering loss for instance segmentation, made of a pull term (variance within an instance, hinged at δ_v), a push term (distance between instance means, hinged at 2δ_d) and a small regulariser. The reliability of each modality plausibly depends on how the image is degraded: misalignment corrupts intensity continuity, and missing sections break shape continuity. A natural design is therefore a fusion model whose reliance on each modality is *conditioned* on the degradation context. Squeeze-and-excitation (SE) blocks [Hu et al., 2018] do exactly this for CNN channels: a "squeeze" descriptor passes through a small bottleneck MLP to give sigmoid gates that re-weight the channels.
+
+This study asks three questions of the provided simulated benchmark:
+1. **Fusion:** how much does each modality contribute to merge prediction, and which fusion scheme works best (early concatenation, late score fusion, degradation-gated fusion, or per-degradation experts), separately for each degradation regime?
+2. **Embedding training:** when an embedding is trained with a mix of a clustering (discriminative) loss and a pairwise (contrastive) loss, how should the weight between them be scheduled? We score this with a candidate-ranking metric.
+3. **Representation:** do the embedding features, raw or learned, visibly and measurably separate merge pairs from split pairs?
+
+## 2. Dataset
+
+### 2.1 Problem setting
+Each sample is one **candidate pair**: a *query* segment that ends at a potential truncation point in an over-segmented fly-brain EM volume, together with an adjacent *candidate* segment. The label is 1 if the two segments belong to the same neuron (merge) and 0 otherwise (keep split). In a real proofreading pipeline, many candidates are generated for each truncation point and most of them are wrong. The roughly 10% positive rate observed here matches that imbalance. The public inputs do not contain voxels, point clouds or segment IDs. Each pair is summarised by 20 pre-computed numeric features and a categorical **degradation** tag describing the local imaging condition:
+- **Average**: no specific artifact;
+- **Misalignment**: section-to-section registration error;
+- **Missing Sections**: one or more absent z-sections;
+- **Mixed**: a combination of artifacts.
+
+### 2.2 Verified statistics
+The task description gives about 8,400 training and 3,600 test samples. The files actually contain **168,000 training and 72,000 test pairs**, 20 times more, but with the same 70/30 split ratio. All experiments use the full files. Neither split has missing values or duplicate rows. Each degradation makes up exactly 25% of each split (42,000 training and 18,000 test pairs per degradation; Fig. 0, `outputs/dataset_summary.csv`).
+
+| Split | Average | Misalignment | Missing Sections | Mixed | All |
+|---|---|---|---|---|---|
+| Train pairs (positives) | 42,000 (4,203) | 42,000 (4,169) | 42,000 (4,169) | 42,000 (4,146) | 168,000 (16,687; 9.93%) |
+| Test pairs (positives) | 18,000 (1,797) | 18,000 (1,831) | 18,000 (1,831) | 18,000 (1,854) | 72,000 (7,313; 10.16%) |
+
+![Dataset counts](images/fig0_dataset_counts.png)
+
+*Figure 0. Candidate pairs per degradation regime in each split. Dark overlay: positive (merge) pairs.*
+
+### 2.3 Modality structure (inferred)
+The column names are only the integers 0–19, so we inferred the modality assignment from the correlation structure (Fig. 1).
+- **Features 0–4** form a block that is mutually correlated among negatives (mean within-block r = 0.11).
+- **Features 5–9** are mutually *anti*-correlated among positives (r = −0.18).
+- **Features 10–19** form a ten-dimensional block that is nearly independent among negatives (r = −0.005) and weakly anti-correlated among positives (r = −0.06).
+- Correlations between blocks are small (|r| ≤ 0.08).
+
+Following the three-modality design of the task, which describes the features as "morphology, intensity, and embedding", we label these blocks **M** (morphology, 0–4), **I** (intensity, 5–9) and **E** (embedding, 10–19). The ten-dimensional block is the natural candidate for an embedding vector. This mapping is an inference and should be read as such.
+
+Effect sizes (Cohen's *d*, positives vs negatives; right panel of Fig. 1, `outputs/cohens_d.csv`) differ strongly across degradations:
+- **Morphology:** d ≈ 0.36–0.41 under *Average* but d ≈ 0.99–1.09 under all three artifact regimes.
+- **Intensity:** d ≈ 0.38 under *Average* and 0.53–0.76 under artifacts.
+- **Embedding:** individually weak everywhere (d ≈ 0.29–0.45).
+
+In this simulation, therefore, the artifact regimes are *easier* per feature than the clean regime. *Average* is the hardest condition, because its positives are least shifted from the negatives. We report the data as they are and do not impose the intuition that artifacts degrade morphology.
+
+![Feature structure](images/fig1_feature_structure.png)
+
+*Figure 1. Left and centre: Pearson correlations between features for negative and positive pairs; black lines mark the inferred modality blocks. Right: Cohen's d for each feature and degradation.*
+
+![Block means](images/fig2_block_means.png)
+
+*Figure 2. Distribution of the per-modality block mean for each degradation (training set). Grey: split pairs; red: merge pairs.*
+
+### 2.4 Comparison with established EM segmentation benchmarks
+Funke et al. (2018, Table 2) benchmark voxel-level segmentation on three datasets:
+
+| Dataset | Imaging | Tissue | Resolution | Training data | Test data |
+|---|---|---|---|---|---|
+| CREMI | ssTEM | *Drosophila* | 4×4×40 nm | 3 volumes of 1250×1250×125 voxels | 3 volumes of 1250×1250×125 voxels |
+| FIB-25 | FIBSEM | *Drosophila* | 8×8×8 nm | 520×520×520 voxels | 13.8 gigavoxels |
+| SEGEM | SBEM | mouse cortex | 11×11×26 nm | 279 volumes of 100×100×100 voxels | 400×400×350 voxels (skeletons) |
+
+Those benchmarks evaluate the *voxel-to-segment* stage with VOI, CREMI score and inter-error distance, and their test data total about 15 gigavoxels. The present benchmark sits one stage later, at *segment-to-neuron* agglomeration and proofreading. Its unit is the candidate pair rather than the voxel: 240,000 labelled pairs, 60,000 per degradation regime. Unlike CREMI, which contains artifacts but does not label them, every pair here carries an explicit artifact tag, so performance can be stratified by degradation. **Not available from the public inputs:** the volume size, voxel resolution, registration pipeline, number of neurons and segments, and the way candidate pairs were sampled. We therefore make no claims about them.
+
+## 3. Methods
+
+### 3.1 Evaluation protocol
+- **Data split.** The training file is split 80/20 into a fit set (134,400 pairs) and a validation set (33,600 pairs). The split is stratified by degradation × label with seed 0. All model selection, early stopping and decision thresholds use the validation set only. The 72,000-pair test file is used solely for the final numbers.
+- **Threshold.** The primary decision rule is **one global threshold** that maximises F1 on validation. This mimics a single operating point for a proofreading queue.
+- **Sensitivity analysis.** We also report F1 with a separate validation-optimal threshold per degradation, which is legitimate because the tag is known at inference (§4.1, `outputs/f1_perdeg_threshold.csv`).
+- **Metrics.** For each degradation and overall we report Precision, Recall and F1 at the threshold, plus the threshold-free average precision (AP) and ROC-AUC (`outputs/metrics_long.csv`).
+- **Confidence intervals.** 95% CIs for all M+I+E models come from 200 bootstrap resamples of the test set, stratified by degradation (`outputs/bootstrap_ci_MIE.csv`).
+
+### 3.2 Experiment A: modality subsets × fusion schemes
+**Modality subsets.** All seven non-empty subsets of {M, I, E} were evaluated.
+
+**Model families evaluated on every subset:**
+1. **QDA on block means** (interpretable baseline). One quadratic discriminant per degradation, fitted on the mean of each selected modality block, i.e. a 1–3-dimensional "fused modality descriptor".
+2. **Per-degradation logistic regression** on the raw features of the selected blocks.
+3. **Early fusion, gradient boosting (HGB-early).** HistGradientBoosting on the concatenated raw features plus the one-hot degradation tag.
+4. **Early fusion, MLP (MLP-early).** A 64-32 ReLU MLP (Adam, early stopping) on the standardised concatenated features plus the tag.
+
+**Additional fusion schemes for the full M+I+E input:**
+5. **Late fusion (Late-LR).** Each modality has its own encoder: HGB on that block plus the tag, producing a merge logit. Logits come from 3-fold out-of-fold prediction on the fit set, to avoid stacking leakage. A *degradation-agnostic* logistic combiner fuses the three logits.
+6. **Degradation-gated late fusion (Gated-LR).** As in (5), but the combiner also receives the logit × degradation interactions. The weight of each modality therefore depends on the degradation, i.e. a linear gate.
+7. **Per-degradation experts (HGB-experts).** One HGB per degradation, with hard routing on the tag.
+8. **SE-gated fusion network (SE-gated-deg).** An end-to-end network in the spirit of Hu et al. (2018):
+   - each modality block passes through its own 2-layer encoder (16 units), giving modality "channels" F_M, F_I, F_E;
+   - a *squeeze* step averages each channel into a scalar descriptor;
+   - an *excitation* MLP (input: the 3 descriptors plus the degradation one-hot → 8 → 3, sigmoid) outputs one gate per modality;
+   - the gated channels and the tag are concatenated and fed to a 32-unit head.
+   
+   Ablations: **SE-gated-nodeg**, where the gate sees only the descriptors so the context must be inferred, and **Ungated-enc**, with all gates fixed to 1. Training uses binary cross-entropy, Adam (lr 2·10⁻³), batch 512 and 10 epochs, keeping the epoch with the best validation loss.
+
+**Implementation.** All networks are written in `autograd`/NumPy (`code/ag_nn.py`), except the sklearn MLP. Torch could not be installed in time.
+
+**Modality gain.** For each family and degradation we compute ΔF1 = F1(M+I+E) − F1(leave-one-out pair), e.g. the gain from adding E to M+I (`outputs/modality_gain.csv`).
+
+### 3.3 Experiment B: per-degradation precision–recall curves
+PR curves and AP are computed on the test pairs of each degradation separately. They cover all ten M+I+E fusion schemes and the six MLP-early modality subsets, all using models fitted on the fit set only.
+
+### 3.4 Experiment C: learned embedding and the loss-weight schedule
+**Network.** An embedding network f: ℝ²⁴ → ℝ¹⁶ (20 standardised features plus the tag; ReLU MLP 64-64-16) is trained with
+
+  L = λ_seg · L_disc + λ_pair(t) · L_pair.
+
+- **L_disc** is the discriminative loss of De Brabandere et al. (2017). Clusters are the (degradation, label) groups in each batch. It has three parts:
+  - a pull term [‖e_i − μ_c‖ − δ_v]₊², with δ_v = 0.5;
+  - a push term [2δ_d − ‖μ_{d,0} − μ_{d,1}‖]₊², applied between the merge and split clusters of the same degradation, with δ_d = 1.5;
+  - a 10⁻³ · ‖μ_c‖ regulariser.
+- **L_pair** is the contrastive loss of Hadsell et al. (2006) on 2,048 random within-batch, same-degradation pairs: ½ D² for pairs with the same label and ½ [m − D]₊² for pairs with different labels, with m = 2.
+
+**Schedules** (t ∈ [0, 1] is training progress):
+
+| Schedule | λ_seg | λ_pair(t) |
+|---|---|---|
+| cluster-only | 1 | 0 |
+| fixed-high | 1 | 1 |
+| fixed-low | 1 | 0.1 |
+| anneal-high-to-low | 1 | 1 → 0.1, linear |
+| anneal-low-to-high | 1 | 0.1 → 1, linear |
+| pair-only | 0 | 1 |
+
+**Training.** 8 epochs, Adam (lr 10⁻³), class-rebalanced batches of 1,024 (25% positives). Each schedule is run with 3 seeds.
+
+**Ranking metric (proxy).** A proofreader effectively ranks candidate segments at a truncation point. We emulate this without voxel data:
+- each query is a positive test pair (the true continuation), placed among K ∈ {9, 19} negative pairs drawn at random from the *same degradation*;
+- all K + 1 candidates are ranked by their embedding distance to the degradation-specific merge prototype (the mean training embedding of positive pairs);
+- we report the **mean rank** of the true candidate (1 = best) and top-1 accuracy over 3,000 queries, plus the mean rank per degradation for K = 19 (1,000 queries each).
+
+**Sanity check.** A random scorer gives a mean rank of 5.51 for K = 9 and 10.57 for K = 19, matching the theoretical (K + 2)/2. We also report the distance-score AP and the downstream merge F1 of a logistic regression trained on the frozen embedding plus the tag.
+
+### 3.5 Experiment D: embedding visualisation
+**Embedding spaces.** We apply PCA to (i) the raw embedding block (features 10–19, PCA fitted on train) and (ii) the learned 16-d embedding from Experiment C (anneal-high-to-low schedule, seed 0).
+
+**Separability measures**, computed per degradation:
+- the 5-fold cross-validated ROC-AUC of a linear probe on the full space;
+- the same probe on PC1–2 only;
+- the silhouette score of the merge/split labels.
+
+We also map PC1–3 to RGB for random example pairs, analogous to the RGB embedding renderings used in instance-embedding papers.
+
+## 4. Results
+
+### 4.1 Experiment A — modality subsets and fusion schemes
+
+Table 1 reports test Precision / Recall / F1 for every scheme × modality subset, both per degradation and pooled ("All"). The full table is in `outputs/fusion_table.csv` and `outputs/fusion_table.md`. Figure 4 summarises the F1 values of the four families that were run on every subset as heat maps.
+
+**Table 1.** Test-set P / R / F1 at the global validation-optimal threshold (72,000 test pairs, 18,000 per degradation). M = morphology (features 0–4), I = intensity (5–9), E = embedding (10–19). Bold = pooled F1.
+
+| Scheme | Modalities | Average P / R / F1 | Misalignment P / R / F1 | Missing Sections P / R / F1 | Mixed P / R / F1 | All P / R / F1 |
+|---|---|---|---|---|---|---|
+| QDA-blockmean | M | 0.000 / 0.000 / 0.000 | 0.914 / 0.884 / 0.899 | 0.907 / 0.926 / 0.917 | 0.911 / 0.785 / 0.843 | 0.911 / 0.652 / **0.760** |
+| QDA-blockmean | I | 0.000 / 0.000 / 0.000 | 0.573 / 0.809 / 0.671 | 0.602 / 0.705 / 0.649 | 0.619 / 0.852 / 0.717 | 0.598 / 0.595 / **0.596** |
+| QDA-blockmean | E | 0.389 / 0.675 / 0.493 | 0.467 / 0.861 / 0.605 | 0.420 / 0.788 / 0.548 | 0.531 / 0.902 / 0.669 | 0.451 / 0.807 / **0.579** |
+| QDA-blockmean | M+I | 0.632 / 0.834 / 0.719 | 0.927 / 0.933 / 0.930 | 0.932 / 0.945 / 0.938 | 0.915 / 0.943 / 0.929 | 0.838 / 0.914 / **0.874** |
+| QDA-blockmean | M+E | 0.603 / 0.843 / 0.703 | 0.918 / 0.937 / 0.927 | 0.938 / 0.950 / 0.944 | 0.899 / 0.921 / 0.910 | 0.821 / 0.913 / **0.864** |
+| QDA-blockmean | I+E | 0.660 / 0.739 / 0.697 | 0.840 / 0.943 / 0.889 | 0.766 / 0.873 / 0.816 | 0.902 / 0.931 / 0.916 | 0.791 / 0.872 / **0.829** |
+| QDA-blockmean | M+I+E | 0.939 / 0.915 / 0.927 | 0.989 / 0.955 / 0.971 | 0.985 / 0.948 / 0.966 | 0.992 / 0.972 / 0.982 | 0.976 / 0.948 / **0.962** |
+| LR-perdeg | M | 0.000 / 0.000 / 0.000 | 0.905 / 0.883 / 0.894 | 0.896 / 0.931 / 0.913 | 0.896 / 0.782 / 0.835 | 0.898 / 0.652 / **0.756** |
+| LR-perdeg | I | 0.294 / 0.834 / 0.434 | 0.390 / 0.962 / 0.555 | 0.351 / 0.912 / 0.507 | 0.466 / 0.964 / 0.628 | 0.369 / 0.919 / **0.526** |
+| LR-perdeg | E | 0.308 / 0.779 / 0.441 | 0.397 / 0.925 / 0.555 | 0.366 / 0.877 / 0.516 | 0.446 / 0.975 / 0.612 | 0.377 / 0.890 / **0.530** |
+| LR-perdeg | M+I | 0.304 / 0.053 / 0.090 | 0.924 / 0.912 / 0.918 | 0.919 / 0.949 / 0.934 | 0.918 / 0.857 / 0.886 | 0.887 / 0.696 / **0.780** |
+| LR-perdeg | M+E | 0.268 / 0.043 / 0.075 | 0.924 / 0.908 / 0.916 | 0.924 / 0.944 / 0.934 | 0.912 / 0.827 / 0.868 | 0.887 / 0.684 / **0.772** |
+| LR-perdeg | I+E | 0.418 / 0.751 / 0.537 | 0.589 / 0.989 / 0.738 | 0.538 / 0.940 / 0.685 | 0.706 / 0.985 / 0.823 | 0.555 / 0.917 / **0.692** |
+| LR-perdeg | M+I+E | 0.511 / 0.771 / 0.615 | 0.905 / 0.992 / 0.946 | 0.901 / 0.994 / 0.945 | 0.900 / 0.991 / 0.943 | 0.781 / 0.938 / **0.852** |
+| HGB-early | M | 0.154 / 0.001 / 0.002 | 0.829 / 0.878 / 0.853 | 0.830 / 0.928 / 0.877 | 0.802 / 0.779 / 0.791 | 0.820 / 0.650 / **0.725** |
+| HGB-early | I | 0.293 / 0.466 / 0.360 | 0.411 / 0.868 / 0.558 | 0.375 / 0.738 / 0.497 | 0.528 / 0.873 / 0.658 | 0.403 / 0.738 / **0.521** |
+| HGB-early | E | 0.258 / 0.703 / 0.377 | 0.347 / 0.902 / 0.502 | 0.326 / 0.825 / 0.467 | 0.388 / 0.947 / 0.550 | 0.328 / 0.845 / **0.473** |
+| HGB-early | M+I | 0.565 / 0.786 / 0.657 | 0.885 / 0.963 / 0.922 | 0.889 / 0.984 / 0.934 | 0.883 / 0.943 / 0.912 | 0.791 / 0.920 / **0.851** |
+| HGB-early | M+E | 0.530 / 0.646 / 0.582 | 0.864 / 0.954 / 0.907 | 0.851 / 0.983 / 0.912 | 0.833 / 0.892 / 0.861 | 0.765 / 0.870 / **0.814** |
+| HGB-early | I+E | 0.538 / 0.695 / 0.606 | 0.710 / 0.944 / 0.811 | 0.672 / 0.855 / 0.752 | 0.751 / 0.957 / 0.842 | 0.669 / 0.864 / **0.754** |
+| HGB-early | M+I+E | 0.795 / 0.828 / 0.811 | 0.945 / 0.981 / 0.962 | 0.942 / 0.989 / 0.965 | 0.946 / 0.971 / 0.959 | 0.908 / 0.943 / **0.925** |
+| MLP-early | M | 0.862 / 0.521 / 0.649 | 0.965 / 0.874 / 0.917 | 0.961 / 0.920 / 0.940 | 0.944 / 0.780 / 0.854 | 0.940 / 0.775 / **0.849** |
+| MLP-early | I | 0.921 / 0.487 / 0.637 | 0.943 / 0.721 / 0.817 | 0.938 / 0.624 / 0.750 | 0.960 / 0.769 / 0.854 | 0.943 / 0.651 / **0.770** |
+| MLP-early | E | 0.872 / 0.501 / 0.637 | 0.915 / 0.711 / 0.800 | 0.883 / 0.620 / 0.729 | 0.923 / 0.784 / 0.848 | 0.901 / 0.655 / **0.759** |
+| MLP-early | M+I | 0.792 / 0.780 / 0.786 | 0.953 / 0.963 / 0.958 | 0.953 / 0.977 / 0.964 | 0.939 / 0.944 / 0.942 | 0.911 / 0.917 / **0.914** |
+| MLP-early | M+E | 0.676 / 0.838 / 0.748 | 0.951 / 0.975 / 0.963 | 0.943 / 0.979 / 0.961 | 0.918 / 0.964 / 0.941 | 0.864 / 0.939 / **0.900** |
+| MLP-early | I+E | 0.721 / 0.840 / 0.776 | 0.875 / 0.947 / 0.910 | 0.799 / 0.920 / 0.855 | 0.909 / 0.964 / 0.936 | 0.824 / 0.918 / **0.869** |
+| MLP-early | M+I+E | 0.985 / 0.979 / 0.982 | 0.991 / 0.996 / 0.993 | 0.994 / 0.993 / 0.993 | 0.990 / 0.991 / 0.991 | 0.990 / 0.990 / **0.990** |
+| Late-LR | M+I+E | 0.866 / 0.720 / 0.786 | 0.946 / 0.984 / 0.964 | 0.946 / 0.985 / 0.965 | 0.940 / 0.976 / 0.958 | 0.928 / 0.917 / **0.923** |
+| Gated-LR | M+I+E | 0.835 / 0.816 / 0.826 | 0.964 / 0.973 / 0.968 | 0.964 / 0.976 / 0.970 | 0.958 / 0.967 / 0.962 | 0.932 / 0.934 / **0.933** |
+| HGB-experts | M+I+E | 0.838 / 0.817 / 0.828 | 0.945 / 0.978 / 0.961 | 0.936 / 0.986 / 0.961 | 0.950 / 0.968 / 0.959 | 0.919 / 0.938 / **0.928** |
+| Ungated-enc | M+I+E | 0.970 / 0.973 / 0.971 | 0.978 / 0.988 / 0.983 | 0.991 / 0.992 / 0.992 | 0.980 / 0.987 / 0.983 | 0.980 / 0.985 / **0.982** |
+| SE-gated-nodeg | M+I+E | 0.976 / 0.971 / 0.973 | 0.982 / 0.991 / 0.987 | 0.993 / 0.991 / 0.992 | 0.983 / 0.986 / 0.985 | 0.984 / 0.985 / **0.984** |
+| SE-gated-deg | M+I+E | 0.971 / 0.982 / 0.976 | 0.984 / 0.991 / 0.988 | 0.989 / 0.997 / 0.993 | 0.971 / 0.988 / 0.979 | 0.979 / 0.989 / **0.984** |
+
+![Subset F1 heat maps](images/fig4_modality_subset_f1.png)
+
+*Figure 4. Test F1 for each modality subset (rows) and degradation (columns), for the four model families run on every subset.*
+
+**Headline comparison (M+I+E).** Pooled F1 with 95% bootstrap CIs, F1 under *Average* (the hardest regime) and pooled AP:
+
+| Fusion scheme (M+I+E) | Type | F1 All [95% CI] | F1 Average [95% CI] | AP All |
+|---|---|---|---|---|
+| MLP-early | early fusion, MLP | **0.990** [0.988, 0.992] | **0.982** [0.978, 0.987] | 0.9996 |
+| SE-gated-nodeg | SE gate, inferred context | 0.984 [0.982, 0.986] | 0.973 [0.967, 0.978] | 0.998 |
+| SE-gated-deg | SE gate, degradation-conditioned | 0.984 [0.982, 0.986] | 0.977 [0.971, 0.982] | 0.999 |
+| Ungated-enc | modality encoders, no gate | 0.982 [0.980, 0.984] | 0.971 [0.966, 0.977] | 0.997 |
+| QDA-blockmean | per-degradation QDA on 3 block means | 0.962 [0.959, 0.965] | 0.927 [0.915, 0.936] | 0.988 |
+| Gated-LR | late fusion, degradation-gated combiner | 0.933 [0.928, 0.937] | 0.826 [0.813, 0.838] | 0.982 |
+| HGB-experts | per-degradation experts | 0.928 [0.924, 0.933] | 0.828 [0.814, 0.840] | 0.979 |
+| HGB-early | early fusion, boosted trees | 0.925 [0.920, 0.929] | 0.811 [0.796, 0.825] | 0.980 |
+| Late-LR | late fusion, global combiner | 0.923 [0.918, 0.927] | 0.786 [0.773, 0.801] | 0.977 |
+| LR-perdeg | per-degradation linear | 0.852 [0.847, 0.859] | 0.615 [0.600, 0.632] | 0.937 |
+
+Main observations:
+
+1. **All three modalities are needed, and the gain is largest under *Average*.** Under the most flexible scheme (MLP-early), pooled F1 rises with each modality added:
+   - single modalities: 0.850 (M), 0.770 (I), 0.759 (E);
+   - pairs: 0.914 (M+I), 0.900 (M+E), 0.869 (I+E);
+   - all three: **0.990**.
+   
+   No single block or pair reaches the M+I+E level in any family.
+2. **Modality gains depend on the degradation** (`outputs/modality_gain.csv`). Adding the embedding block to M+I raises F1 by:
+
+   | Scheme | Average | Misalignment | Missing Sections | Mixed |
+   |---|---|---|---|---|
+   | MLP-early | +0.197 | +0.035 | +0.029 | +0.049 |
+   | QDA | +0.208 | +0.041 | +0.028 | +0.053 |
+   | HGB | +0.154 | +0.040 | +0.031 | +0.047 |
+
+   Adding morphology to I+E is worth +0.206 (Average), +0.084 (Misalignment), **+0.138 (Missing Sections)** and +0.055 (Mixed) for MLP-early. Morphology is most informative in the artifact regimes, consistent with its large effect sizes there (Fig. 1). The embedding block is what rescues the clean *Average* regime: there all modalities are individually weak, and only their combination is discriminative.
+3. **Expressive fusion beats both linear and tree fusion.** The neural fusion models (MLP-early and the three encoder networks) outperform the other schemes by 2–7 F1 points pooled and by 15–37 points under *Average*:
+   - **Per-degradation linear models fail under Average** (F1 0.615, AP 0.542). The merge decision is a non-linear conjunction across modalities: a pair is merged only if *every* modality agrees.
+   - **Gradient-boosted trees are mediocre** (0.925), and on single high-dimensional blocks they are even worse than linear models: E-only F1 is 0.473 for HGB versus 0.530 for LR (Table 1). The evidence in a block is spread additively over many weak features, which axis-aligned splits approximate poorly.
+   - **QDA on just three block means already reaches 0.962.** Within each modality, the block mean is the relevant *fused modality descriptor*.
+4. **Conditioning fusion on degradation helps the weaker fusers but adds little to strong ones.**
+   - Making the late-fusion combiner degradation-aware (Late-LR → Gated-LR) raises pooled F1 from 0.923 to 0.933 and *Average* F1 from 0.786 to 0.826. The bootstrap CIs do not overlap.
+   - Hard per-degradation routing (HGB-experts) gives a similar small gain over HGB-early (0.928 vs 0.925).
+   - For the encoder networks, the SE gate gives only a marginal improvement over no gate (0.984 vs 0.982 pooled, with overlapping CIs). Conditioning the gate on the degradation tag gives no measurable pooled gain over inferring the context from the modality descriptors (0.984 vs 0.984), although it is nominally better under *Average* (0.977 vs 0.973, overlapping CIs).
+   - The plain MLP that receives the tag as an input is best overall. With a flexible joint model, the tag can modulate the decision directly and an explicit gate is unnecessary.
+5. **Gate behaviour (Fig. 8).** When the SE gate sees the degradation tag, it learns clearly degradation-specific modality weights:
+   - under *Missing Sections* it closes the intensity channel (mean gate ≈ 0.18) and opens morphology (≈ 0.92);
+   - under *Mixed* it emphasises the embedding (≈ 0.94);
+   - under *Average* it emphasises intensity.
+   
+   When the gate must infer the context, its values are nearly constant across degradations. The two models perform identically, so the gate values are not uniquely identified: the downstream head can absorb any rescaling. They should be read as one possible solution, not as a measure of modality reliability.
+6. **Threshold sensitivity.** With one global threshold, several models that lack a degradation-aware score scale collapse under *Average*: F1 ≈ 0 for QDA-M, QDA-I, LR-M and HGB-M, and below 0.1 for LR-M+I and LR-M+E. Their scores for *Average* pairs never reach the threshold set by the easier artifact regimes (Table 1). Tuning one threshold per degradation on validation (`outputs/f1_perdeg_threshold.csv`) recovers F1 under *Average* of 0.40–0.53 for these models (e.g. QDA-M 0.000 → 0.463; LR-M+I 0.090 → 0.505). Models that see the tag jointly, such as MLP-early, are unaffected (MLP-early-M 0.649 under both rules). The M+I+E models are essentially unchanged: MLP-early 0.990, SE-gated-deg 0.984, QDA 0.962 → 0.963, Gated-LR 0.933 → 0.931 pooled. The ranking of fusion schemes is identical under both rules.
+
+![SE gates](images/fig8_se_gates.png)
+
+*Figure 8. Prevalence-weighted mean SE gate value per modality and degradation on the test set. Left: gate conditioned on the degradation tag. Right: gate conditioned only on squeezed modality descriptors.*
+
+### 4.2 Experiment B — precision–recall per degradation
+
+![PR curves](images/fig3_pr_curves_per_degradation.png)
+
+*Figure 3a. Test precision–recall curves for each degradation. Solid: the ten fusion schemes on M+I+E. Dotted: MLP early fusion on single and paired modalities. AP in the legend. Dashed grey: prevalence.*
+
+![PR curves zoom](images/fig3b_pr_curves_per_degradation.png)
+
+*Figure 3b. The same curves zoomed to the high-recall / high-precision corner (recall and precision ≥ 0.7).*
+
+Per-degradation AP of the M+I+E models (values also in Fig. 3 legends and `outputs/metrics_long.csv`):
+
+| Model | Average | Misalignment | Missing Sections | Mixed |
+|---|---|---|---|---|
+| MLP-early | 0.999 | 1.000 | 1.000 | 0.999 |
+| SE-gated-deg | 0.998 | 0.999 | 1.000 | 0.998 |
+| QDA-blockmean | 0.967 | 0.998 | 0.997 | 0.997 |
+| Gated-LR | 0.894 | 0.993 | 0.996 | 0.994 |
+| HGB-early | 0.890 | 0.992 | 0.995 | 0.992 |
+| LR-perdeg | 0.542 | 0.978 | 0.976 | 0.984 |
+
+Under the three artifact regimes, every M+I+E fusion scheme stays at precision above 0.95 up to recall ≈ 0.95, and the curves differ mainly in the last few percent of recall. *Average* separates the methods. The neural fusers keep precision ≈ 1 up to recall ≈ 0.97. The tree, late-fusion and gated-LR schemes lose precision steadily beyond recall 0.4. The linear model never exceeds a precision of 0.8.
+
+The single-modality curves (dotted) are informative:
+- **Morphology alone** is nearly sufficient under *Missing Sections* (AP 0.974) and *Misalignment* (0.957), but weak under *Average* (0.646).
+- **Intensity and embedding alone** reach AP 0.75–0.90 in the artifact regimes and about 0.65 in *Average*.
+
+From a proofreading perspective, the operating point matters more than AP. For example, at recall 0.95 on *Average* (1,797 true merges), the precision is:
+- MLP-early: 0.992, about 14 false merges to review;
+- SE-gated-deg: 0.989, about 19;
+- QDA: 0.812, about 396;
+- HGB-early: 0.635, about 981;
+- per-degradation LR: 0.439, about 2,180.
+
+That is a 50–70-fold difference in proofreading load between the best and the tree-based fusers.
+
+### 4.3 Experiment C — embedding loss-weight schedule ablation
+
+**Table 3.** Learned 16-d embedding, test set, mean ± SD over 3 seeds (`outputs/embedding_ablation_raw.csv`, `outputs/embedding_ablation_summary.csv`). Mean rank is the rank of the true merge candidate among K same-degradation negatives (1 = best). A random scorer gives 5.51 (K = 9) and 10.57 (K = 19).
+
+| Schedule (λ_seg, λ_pair(t)) | Mean rank K=9 | Mean rank K=19 | Top-1 K=19 | Mean rank K=19, *Average* | Distance AP | Merge F1 | Merge F1 *Average* |
+|---|---|---|---|---|---|---|---|
+| pair-only (0, 1) | 1.099 ± 0.016 | 1.194 ± 0.060 | 0.905 ± 0.020 | 1.809 ± 0.143 | 0.930 ± 0.016 | 0.924 ± 0.011 | 0.799 ± 0.032 |
+| cluster-only (1, 0) | 1.027 ± 0.008 | 1.055 ± 0.013 | 0.958 ± 0.007 | 1.191 ± 0.068 | 0.978 ± 0.005 | 0.953 ± 0.005 | 0.895 ± 0.020 |
+| fixed-low (1, 0.1) | 1.027 ± 0.008 | 1.053 ± 0.016 | 0.960 ± 0.009 | 1.184 ± 0.075 | 0.979 ± 0.005 | 0.955 ± 0.006 | 0.900 ± 0.026 |
+| fixed-high (1, 1) | 1.023 ± 0.010 | 1.048 ± 0.016 | 0.965 ± 0.011 | 1.187 ± 0.088 | 0.982 ± 0.006 | 0.959 ± 0.007 | 0.911 ± 0.021 |
+| anneal high→low (1, 1→0.1) | 1.033 ± 0.011 | 1.065 ± 0.023 | 0.953 ± 0.014 | 1.234 ± 0.103 | 0.974 ± 0.007 | 0.950 ± 0.008 | 0.882 ± 0.029 |
+| **anneal low→high (1, 0.1→1)** | **1.016 ± 0.006** | **1.038 ± 0.010** | **0.973 ± 0.008** | **1.129 ± 0.060** | **0.987 ± 0.004** | **0.964 ± 0.004** | **0.921 ± 0.013** |
+
+![Ablation](images/fig5_embedding_loss_schedule_ablation.png)
+
+*Figure 5. Loss-schedule ablation. Bars: mean ± SD over 3 seeds; dots: individual seeds. Right panel: mean rank (K = 19) for each degradation. Schedules are sketched in Fig. 5a.*
+
+![Schedules](images/fig5a_schedules.png)
+
+*Figure 5a. Pair-loss weight λ_pair(t) for each schedule.*
+
+Findings:
+- **The clustering term is essential.** The contrastive pair loss alone gives the worst embedding on every metric. Its mean rank at K = 19 is 1.19, against 1.04–1.07 for every schedule that includes the discriminative term. Under *Average* the gap widens to 1.81 vs 1.13–1.23.
+- **Adding a pair loss on top of clustering helps a little, and timing matters.** Ramping the pair weight *up* (low → high) is best on every metric, though within about 1–2 SD of fixed-high. Ramping it *down* (high → low) is nominally the worst of the clustering-based schedules.
+- **A plausible reading.** The discriminative pull/push term first organises the space into well-separated merge and split clusters per degradation. The pairwise term then refines the boundary between individual pairs.
+- **Caveat.** Differences among the five clustering-based schedules are small compared with the seed variance at n = 3. Only the pair-only vs clustering contrast is large and consistent across seeds.
+- **Where the differences live.** In the three artifact regimes every schedule ranks the true candidate first in about 99% of queries (mean rank 1.006–1.027). Differences between schedules appear almost entirely under *Average*.
+- **Downstream.** A logistic classifier on the frozen embedding reaches F1 0.964, close to the supervised fusion networks (0.984–0.990) even though the embedding was trained without a classification objective.
+
+### 4.4 Experiment D — embedding visualisation
+
+![PCA](images/fig6_embedding_pca.png)
+
+*Figure 6. PCA of test pairs per degradation (4,000 random pairs per panel). Top: the raw embedding block (features 10–19). Bottom: the learned 16-d embedding (anneal-high-to-low, seed 0). Grey: split pairs; red: merge pairs. Panel titles: 5-fold linear-probe AUC on the full space and silhouette score of the labels.*
+
+![RGB](images/fig7_embedding_rgb.png)
+
+*Figure 7. PC1–3 of the learned embedding mapped to RGB for 40 random merge and 40 random split pairs per degradation. Merge pairs share one colour, and split pairs share a clearly different one.*
+
+**Table 4.** Separability per degradation (`outputs/embedding_separability.csv`).
+
+| Space | Degradation | Linear probe AUC (full) | Probe AUC (PC1–2) | Silhouette |
+|---|---|---|---|---|
+| raw E block | Average | 0.825 | 0.805 | 0.020 |
+| raw E block | Misalignment | 0.900 | 0.873 | 0.011 |
+| raw E block | Missing Sections | 0.872 | 0.847 | 0.017 |
+| raw E block | Mixed | 0.924 | 0.893 | 0.023 |
+| learned 16-d | Average | 0.996 | 0.996 | 0.754 |
+| learned 16-d | Misalignment | 1.000 | 1.000 | 0.890 |
+| learned 16-d | Missing Sections | 1.000 | 1.000 | 0.882 |
+| learned 16-d | Mixed | 0.999 | 0.999 | 0.875 |
+
+**Raw embedding block.** It separates merge from split pairs along a single direction (PC1, which is essentially the block mean). The two classes overlap heavily: silhouette ≈ 0.02 and probe AUC 0.83–0.92, lowest under *Average*.
+
+**Learned embedding.** It draws on all three modalities and is trained with the discriminative loss. It turns this overlap into two compact, well-separated clusters per degradation (silhouette 0.75–0.89; AUC ≥ 0.996). Two caveats apply:
+- The learned embedding uses all 20 features, so the gain over the raw E block reflects *multimodal fusion plus metric learning*, not a better embedding modality alone.
+- The first two PCs of the learned embedding explain 98.9% of its variance, and the class separation lies almost entirely along PC1. The loss collapses the space onto an essentially one-dimensional merge axis, as expected for a two-cluster objective.
+
+*Average* remains the least separated regime (silhouette 0.754), with a visible bridge of ambiguous pairs between the clusters (Fig. 6, bottom left).
+
+## 5. Discussion
+
+**What the data say about multimodal merge prediction.** In this benchmark, no single modality comes close to the fused model.
+- The value of each modality depends on the regime: morphology is the strongest single cue under artifacts (Misalignment, Missing Sections), while all three are weak and complementary under *Average*.
+- The embedding modality adds the most where the others are weakest: +0.20 F1 under *Average*, against +0.03–0.05 under artifacts.
+- The data do **not** support the common intuition that artifacts degrade morphology. Here morphology is about 2.7× more discriminative (Cohen's d) under artifacts than in the clean regime, and *Average* is the hardest condition for every model. A plausible interpretation is that candidate pairs at artifact sites are geometrically more stereotyped (e.g. a clean cut at a missing section), but the simulation does not let us verify this.
+
+**Fusion design.** The decisive design choice is fusion *capacity*, not the gating mechanism.
+- **Non-linear joint fusion is required.** Merge pairs are characterised by agreement *across* modalities. Additive schemes (per-degradation linear models, logistic late fusion of separately learned scores) and axis-aligned trees cannot represent this cheaply.
+- **Degradation-gated fusion helps when the fuser is weak.** Gated-LR beats Late-LR by 1 point pooled and 4 points under *Average*. It is redundant when a flexible network already receives the degradation tag.
+- **The SE gate learns interpretable, degradation-specific modality weights.** For example, it suppresses intensity under missing sections, which is intuitively appealing. However, an equally accurate gate that ignores degradation shows that these weights are not identifiable from performance alone.
+
+**Embedding training.** The ablation is consistent with the design rationale of De Brabandere et al. A clustering (pull/push) objective produces a better-organised space than a purely pairwise contrastive objective (Hadsell et al.). Combining the two with the pairwise weight *increased* over training was best. This is a curriculum-like ordering: global structure first, pairwise refinement later. The effect size between the combined schedules is small, so this should be treated as a hypothesis for voxel-level embedding networks rather than a conclusion.
+
+**Practical implications for proofreading.**
+- At its validation-chosen operating point, the best model (MLP-early) has precision 0.990 and recall 0.990. Of 7,313 true merges in the test set, about 75 would be missed and about 71 false merges proposed. HGB-early, at its own operating point (P 0.908 / R 0.943), would miss about 420 merges and propose about 700 false merges.
+- Accuracy is lowest in the clean *Average* regime, so a triage system should not route only artifact sites to humans.
+
+### Limitations
+1. **Simulated, pre-featurised data.** The input is not an EM volume. Each pair is a 20-d vector, the modality assignment (M/I/E) is inferred from the correlation structure, and no voxels, meshes or point clouds are available. The "embedding" experiments are therefore *proxies*: the network embeds pair descriptors, not voxels, and the "mean rank" ranks independently drawn negatives rather than real competing candidates at the same truncation point. Absolute numbers should not be compared with voxel-level benchmarks (VOI, CREMI score).
+2. **Generator structure.** The per-block means carry almost all of the signal: QDA on three numbers gives F1 0.962. The labels appear to follow a near-deterministic rule on the block means that depends on the degradation (Fig. 2 shows the sharp class boundaries). This explains why expressive models approach F1 0.99. It also means the ranking of fusion schemes partly reflects how well each model family represents this particular rule, which may differ from real data with label noise and ambiguous cases.
+3. **Size discrepancy.** The data are 20 times larger than stated in the task description (240k vs about 12k pairs). With 18,000 test pairs per degradation, CIs are narrow (±0.002–0.015 F1). Many differences between the top neural fusers nonetheless fall within the CIs.
+4. **Limited seeds and tuning.** The fusion networks were trained with one seed and no hyperparameter search. The embedding ablation used 3 seeds and 8 epochs. Small differences (< 1 F1 point) between the top schemes should not be over-interpreted.
+5. **No information about volume or registration.** The imaging volume, resolution, segment counts and candidate-generation procedure are not provided, so the dataset can only be compared with prior benchmarks at the level of task type and sample count.
+
+## 6. Conclusion
+On 240,000 simulated candidate pairs from an over-segmented fly-brain EM volume, merge prediction benefits strongly from fusing morphology, intensity and embedding evidence. The fused model is better than any single modality or pair under every degradation. The embedding block contributes most in the clean regime, where the other cues are weakest.
+- **Fusion schemes.** Non-linear joint fusion (an MLP on all features plus the degradation tag, or modality encoders with an SE gate) reaches F1 0.984–0.990 and AP ≥ 0.998, against 0.92–0.93 for tree, late and gated-linear fusion. Gating on degradation helps weak fusers but is unnecessary for strong ones.
+- **Embedding training.** A discriminative clustering loss is clearly better than a pure contrastive loss as an embedding objective, and adding the pairwise term with an increasing weight gave the best ranking (mean rank 1.04 among 20 candidates; random = 10.5).
+- **Representation.** Learned embeddings separate merge and split pairs into compact clusters (silhouette 0.75–0.89).
+
+These results support degradation-aware multimodal fusion for automated proofreading. The main caveat is the simulated, pre-featurised nature of the benchmark.
+
+## References
+- Funke, J., Tschopp, F. D., Grisaitis, W., Sheridan, A., Singh, C., Saalfeld, S., Turaga, S. C. *Large Scale Image Segmentation with Structured Loss based Deep Learning for Connectome Reconstruction* / "A Deep Structured Learning Approach Towards Automating Connectome Reconstruction from 3D Electron Micrographs." arXiv:1709.02974 (IEEE TPAMI 2018). (`related_work/paper_000.pdf`)
+- De Brabandere, B., Neven, D., Van Gool, L. "Semantic Instance Segmentation with a Discriminative Loss Function" / "Semantic Instance Segmentation for Autonomous Driving." CVPR Workshops 2017. (`related_work/paper_001.pdf`)
+- Hu, J., Shen, L., Sun, G. "Squeeze-and-Excitation Networks." CVPR 2018. (`related_work/paper_002.pdf`)
+- Hadsell, R., Chopra, S., LeCun, Y. "Dimensionality Reduction by Learning an Invariant Mapping." CVPR 2006. (`related_work/paper_003.pdf`)
+
+## Appendix: reproducibility
+All code is in `code/`. Run in this order:
+
+| Step | Script | Produces |
+|---|---|---|
+| 1 | `eda.py` | dataset summary, Cohen's d, Figs. 0–2 |
+| 2 | `exp_a_fusion.py` | sklearn fusion models and late/gated fusion; writes `outputs/scores_A.npz` |
+| 3 | `exp_gate_ag.py` | SE-gated networks (`outputs/scores_gate.npz`, `se_gate_means.csv`) |
+| 4 | `evaluate.py` | metrics, fusion table, bootstrap CIs, modality gain, Fig. 4 |
+| 5 | `fig_pr.py` | Fig. 3 |
+| 6 | `eval_perdeg_threshold.py` | threshold sensitivity |
+| 7 | `exp_c_embedding_ag.py 8` | embedding ablation |
+| 8 | `fig_ablation_gate.py` | Figs. 5 and 8 |
+| 9 | `exp_d_pca.py` | Figs. 6–7 and separability |
+| 10 | `make_tables.py` | Markdown fusion table |
+
+Seeds are fixed throughout: split seed 0, model seeds 0–2, query seed 123. Total runtime is about 25 minutes on 2 CPU cores.

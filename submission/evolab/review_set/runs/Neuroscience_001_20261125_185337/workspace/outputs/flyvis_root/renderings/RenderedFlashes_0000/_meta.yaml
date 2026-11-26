@@ -1,0 +1,19 @@
+config:
+  type: RenderedFlashes
+  boxfilter:
+    extent: 15
+    kernel_size: 13
+  dynamic_range:
+  - 0
+  - 1
+  t_stim: 1
+  t_pre: 1.0
+  dt: 0.005
+  radius:
+  - -1
+  - 6
+  alternations:
+  - 0
+  - 1
+  - 0
+status: done

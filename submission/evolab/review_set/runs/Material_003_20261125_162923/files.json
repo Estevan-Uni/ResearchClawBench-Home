@@ -1,0 +1,406 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_repeat_units.py",
+    "path": "code/01_repeat_units.py",
+    "type": "file",
+    "size": 4564,
+    "mtime": 1795624368.728842,
+    "exported": true
+  },
+  {
+    "name": "02_gp_calibration.py",
+    "path": "code/02_gp_calibration.py",
+    "type": "file",
+    "size": 8355,
+    "mtime": 1795625343.7782698,
+    "exported": true
+  },
+  {
+    "name": "03_train_vae.py",
+    "path": "code/03_train_vae.py",
+    "type": "file",
+    "size": 6413,
+    "mtime": 1795625332.3209622,
+    "exported": true
+  },
+  {
+    "name": "04_oracle.py",
+    "path": "code/04_oracle.py",
+    "type": "file",
+    "size": 1467,
+    "mtime": 1795624608.7323284,
+    "exported": true
+  },
+  {
+    "name": "05_chemspace.py",
+    "path": "code/05_chemspace.py",
+    "type": "file",
+    "size": 4144,
+    "mtime": 1795627023.296848,
+    "exported": true
+  },
+  {
+    "name": "06_bayesopt.py",
+    "path": "code/06_bayesopt.py",
+    "type": "file",
+    "size": 7444,
+    "mtime": 1795627125.878526,
+    "exported": true
+  },
+  {
+    "name": "07_fig_calibration.py",
+    "path": "code/07_fig_calibration.py",
+    "type": "file",
+    "size": 5986,
+    "mtime": 1795627155.9522297,
+    "exported": true
+  },
+  {
+    "name": "08_traversal.py",
+    "path": "code/08_traversal.py",
+    "type": "file",
+    "size": 2819,
+    "mtime": 1795627192.3063083,
+    "exported": true
+  },
+  {
+    "name": "09_fig_schematic.py",
+    "path": "code/09_fig_schematic.py",
+    "type": "file",
+    "size": 3795,
+    "mtime": 1795627235.7235959,
+    "exported": true
+  },
+  {
+    "name": "10_fig_design.py",
+    "path": "code/10_fig_design.py",
+    "type": "file",
+    "size": 8123,
+    "mtime": 1795631228.2555828,
+    "exported": true
+  },
+  {
+    "name": "11_rt_design.py",
+    "path": "code/11_rt_design.py",
+    "type": "file",
+    "size": 4011,
+    "mtime": 1795630796.423439,
+    "exported": true
+  },
+  {
+    "name": "12_bo_summary.py",
+    "path": "code/12_bo_summary.py",
+    "type": "file",
+    "size": 3639,
+    "mtime": 1795630844.8670614,
+    "exported": true
+  },
+  {
+    "name": "13_beta_tradeoff.py",
+    "path": "code/13_beta_tradeoff.py",
+    "type": "file",
+    "size": 912,
+    "mtime": 1795631258.3278189,
+    "exported": true
+  },
+  {
+    "name": "gp_lib.py",
+    "path": "code/gp_lib.py",
+    "type": "file",
+    "size": 4816,
+    "mtime": 1795624443.7410305,
+    "exported": true
+  },
+  {
+    "name": "latent_lib.py",
+    "path": "code/latent_lib.py",
+    "type": "file",
+    "size": 3860,
+    "mtime": 1795627023.296848,
+    "exported": true
+  },
+  {
+    "name": "oracle_lib.py",
+    "path": "code/oracle_lib.py",
+    "type": "file",
+    "size": 2586,
+    "mtime": 1795625684.4081569,
+    "exported": true
+  },
+  {
+    "name": "vae_lib.py",
+    "path": "code/vae_lib.py",
+    "type": "file",
+    "size": 7243,
+    "mtime": 1795625332.3169634,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "bo_designs.csv",
+    "path": "outputs/bo_designs.csv",
+    "type": "file",
+    "size": 509964,
+    "mtime": 1795630437.6314187,
+    "exported": true
+  },
+  {
+    "name": "bo_rand.csv",
+    "path": "outputs/bo_rand.csv",
+    "type": "file",
+    "size": 614745,
+    "mtime": 1795630712.004425,
+    "exported": true
+  },
+  {
+    "name": "bo_summary.csv",
+    "path": "outputs/bo_summary.csv",
+    "type": "file",
+    "size": 2264,
+    "mtime": 1795630845.9270546,
+    "exported": true
+  },
+  {
+    "name": "candidate_grid.csv",
+    "path": "outputs/candidate_grid.csv",
+    "type": "file",
+    "size": 1161,
+    "mtime": 1795630809.0473282,
+    "exported": true
+  },
+  {
+    "name": "chemspace_oracle_subsample.csv",
+    "path": "outputs/chemspace_oracle_subsample.csv",
+    "type": "file",
+    "size": 494418,
+    "mtime": 1795629709.2386422,
+    "exported": true
+  },
+  {
+    "name": "gp_calibration_loocv.csv",
+    "path": "outputs/gp_calibration_loocv.csv",
+    "type": "file",
+    "size": 1758,
+    "mtime": 1795625402.9733667,
+    "exported": true
+  },
+  {
+    "name": "gp_holdout_resins.csv",
+    "path": "outputs/gp_holdout_resins.csv",
+    "type": "file",
+    "size": 1991,
+    "mtime": 1795625466.2312787,
+    "exported": true
+  },
+  {
+    "name": "latent_traversal.csv",
+    "path": "outputs/latent_traversal.csv",
+    "type": "file",
+    "size": 8462,
+    "mtime": 1795629839.2622132,
+    "exported": true
+  },
+  {
+    "name": "oracle_cv_pred.csv",
+    "path": "outputs/oracle_cv_pred.csv",
+    "type": "file",
+    "size": 229578,
+    "mtime": 1795626225.469874,
+    "exported": true
+  },
+  {
+    "name": "pip1.log",
+    "path": "outputs/pip1.log",
+    "type": "file",
+    "size": 2507,
+    "mtime": 1795625134.817836,
+    "exported": true
+  },
+  {
+    "name": "pip_torch.log",
+    "path": "outputs/pip_torch.log",
+    "type": "file",
+    "size": 5532,
+    "mtime": 1795624470.6182706,
+    "exported": true
+  },
+  {
+    "name": "pip_torch2.log",
+    "path": "outputs/pip_torch2.log",
+    "type": "file",
+    "size": 1643,
+    "mtime": 1795624704.3668427,
+    "exported": true
+  },
+  {
+    "name": "rt_design_edits.csv",
+    "path": "outputs/rt_design_edits.csv",
+    "type": "file",
+    "size": 2532,
+    "mtime": 1795630808.4793332,
+    "exported": true
+  },
+  {
+    "name": "vae_b002_log.csv",
+    "path": "outputs/vae_b002_log.csv",
+    "type": "file",
+    "size": 2337,
+    "mtime": 1795631530.18677,
+    "exported": true
+  },
+  {
+    "name": "vae_b01_log.csv",
+    "path": "outputs/vae_b01_log.csv",
+    "type": "file",
+    "size": 10783,
+    "mtime": 1795628894.6758707,
+    "exported": true
+  },
+  {
+    "name": "vae_b05_log.csv",
+    "path": "outputs/vae_b05_log.csv",
+    "type": "file",
+    "size": 2287,
+    "mtime": 1795632343.9353192,
+    "exported": true
+  },
+  {
+    "name": "vae_beta_tradeoff.csv",
+    "path": "outputs/vae_beta_tradeoff.csv",
+    "type": "file",
+    "size": 822,
+    "mtime": 1795632351.0108728,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig0_workflow.png",
+    "path": "report/images/fig0_workflow.png",
+    "type": "file",
+    "size": 167302,
+    "mtime": 1795627239.4950576,
+    "exported": true
+  },
+  {
+    "name": "fig10_latent_traversal.png",
+    "path": "report/images/fig10_latent_traversal.png",
+    "type": "file",
+    "size": 115675,
+    "mtime": 1795631236.3796444,
+    "exported": true
+  },
+  {
+    "name": "fig11_candidates.png",
+    "path": "report/images/fig11_candidates.png",
+    "type": "file",
+    "size": 185906,
+    "mtime": 1795630809.0473282,
+    "exported": true
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 103898,
+    "mtime": 1795627161.9005685,
+    "exported": true
+  },
+  {
+    "name": "fig2_gp_parity_residuals.png",
+    "path": "report/images/fig2_gp_parity_residuals.png",
+    "type": "file",
+    "size": 210525,
+    "mtime": 1795627163.6766698,
+    "exported": true
+  },
+  {
+    "name": "fig3_gp_reliability_comparison.png",
+    "path": "report/images/fig3_gp_reliability_comparison.png",
+    "type": "file",
+    "size": 106303,
+    "mtime": 1795627164.6207235,
+    "exported": true
+  },
+  {
+    "name": "fig4_vitrimer_calibration.png",
+    "path": "report/images/fig4_vitrimer_calibration.png",
+    "type": "file",
+    "size": 122139,
+    "mtime": 1795627165.7967906,
+    "exported": true
+  },
+  {
+    "name": "fig5_vae_training.png",
+    "path": "report/images/fig5_vae_training.png",
+    "type": "file",
+    "size": 167230,
+    "mtime": 1795631230.4435992,
+    "exported": true
+  },
+  {
+    "name": "fig6_latent_chemspace.png",
+    "path": "report/images/fig6_latent_chemspace.png",
+    "type": "file",
+    "size": 243416,
+    "mtime": 1795631232.5116148,
+    "exported": true
+  },
+  {
+    "name": "fig7_chemspace_oracle.png",
+    "path": "report/images/fig7_chemspace_oracle.png",
+    "type": "file",
+    "size": 70184,
+    "mtime": 1795631233.3196208,
+    "exported": true
+  },
+  {
+    "name": "fig8_bo_convergence.png",
+    "path": "report/images/fig8_bo_convergence.png",
+    "type": "file",
+    "size": 220047,
+    "mtime": 1795631234.6716313,
+    "exported": true
+  },
+  {
+    "name": "fig9_bo_designs.png",
+    "path": "report/images/fig9_bo_designs.png",
+    "type": "file",
+    "size": 111973,
+    "mtime": 1795631235.6676388,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 42781,
+    "mtime": 1795632364.8860176,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 4863,
+    "mtime": 1795624163.463475,
+    "exported": true
+  }
+]

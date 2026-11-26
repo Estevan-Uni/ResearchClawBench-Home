@@ -1,0 +1,1710 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_validate_sim.py",
+    "path": "code/01_validate_sim.py",
+    "type": "file",
+    "size": 3024,
+    "mtime": 1795634063.3760378,
+    "exported": true
+  },
+  {
+    "name": "01b_validate_edges_metrics.py",
+    "path": "code/01b_validate_edges_metrics.py",
+    "type": "file",
+    "size": 2390,
+    "mtime": 1795635448.8016818,
+    "exported": true
+  },
+  {
+    "name": "01c_pd_check.py",
+    "path": "code/01c_pd_check.py",
+    "type": "file",
+    "size": 1117,
+    "mtime": 1795637255.3419974,
+    "exported": true
+  },
+  {
+    "name": "02_connectome_params.py",
+    "path": "code/02_connectome_params.py",
+    "type": "file",
+    "size": 8065,
+    "mtime": 1795634892.828318,
+    "exported": true
+  },
+  {
+    "name": "03_ensemble_responses.py",
+    "path": "code/03_ensemble_responses.py",
+    "type": "file",
+    "size": 1875,
+    "mtime": 1795635467.2258432,
+    "exported": true
+  },
+  {
+    "name": "04_ablations.py",
+    "path": "code/04_ablations.py",
+    "type": "file",
+    "size": 3888,
+    "mtime": 1795635265.2600312,
+    "exported": true
+  },
+  {
+    "name": "04b_mirror_pd_shift.py",
+    "path": "code/04b_mirror_pd_shift.py",
+    "type": "file",
+    "size": 926,
+    "mtime": 1795647914.4173362,
+    "exported": true
+  },
+  {
+    "name": "05_mechanism.py",
+    "path": "code/05_mechanism.py",
+    "type": "file",
+    "size": 5371,
+    "mtime": 1795635415.6253896,
+    "exported": true
+  },
+  {
+    "name": "05c_current_timing.py",
+    "path": "code/05c_current_timing.py",
+    "type": "file",
+    "size": 1802,
+    "mtime": 1795647738.616303,
+    "exported": true
+  },
+  {
+    "name": "06_clusters.py",
+    "path": "code/06_clusters.py",
+    "type": "file",
+    "size": 9523,
+    "mtime": 1795635509.8662138,
+    "exported": true
+  },
+  {
+    "name": "06b_cluster_causal.py",
+    "path": "code/06b_cluster_causal.py",
+    "type": "file",
+    "size": 1643,
+    "mtime": 1795639699.0345004,
+    "exported": true
+  },
+  {
+    "name": "07_flow.py",
+    "path": "code/07_flow.py",
+    "type": "file",
+    "size": 2807,
+    "mtime": 1795635432.901542,
+    "exported": true
+  },
+  {
+    "name": "08a_schematic.py",
+    "path": "code/08a_schematic.py",
+    "type": "file",
+    "size": 3984,
+    "mtime": 1795635594.0189357,
+    "exported": true
+  },
+  {
+    "name": "08b_figures_ensemble.py",
+    "path": "code/08b_figures_ensemble.py",
+    "type": "file",
+    "size": 14053,
+    "mtime": 1795639578.4182882,
+    "exported": true
+  },
+  {
+    "name": "08c_figures_perturb.py",
+    "path": "code/08c_figures_perturb.py",
+    "type": "file",
+    "size": 14338,
+    "mtime": 1795647837.8168635,
+    "exported": true
+  },
+  {
+    "name": "ablations.py",
+    "path": "code/ablations.py",
+    "type": "file",
+    "size": 6852,
+    "mtime": 1795635326.8165946,
+    "exported": true
+  },
+  {
+    "name": "fastsim.py",
+    "path": "code/fastsim.py",
+    "type": "file",
+    "size": 8857,
+    "mtime": 1795635133.3307834,
+    "exported": true
+  },
+  {
+    "name": "metrics.py",
+    "path": "code/metrics.py",
+    "type": "file",
+    "size": 2480,
+    "mtime": 1795635240.771804,
+    "exported": true
+  },
+  {
+    "name": "run_all.sh",
+    "path": "code/run_all.sh",
+    "type": "file",
+    "size": 559,
+    "mtime": 1795635518.4142878,
+    "exported": true
+  },
+  {
+    "name": "stimuli.py",
+    "path": "code/stimuli.py",
+    "type": "file",
+    "size": 5828,
+    "mtime": 1795635240.771804,
+    "exported": true
+  },
+  {
+    "name": "textures.py",
+    "path": "code/textures.py",
+    "type": "file",
+    "size": 5309,
+    "mtime": 1795635215.5155678,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "01_validate.log",
+    "path": "outputs/01_validate.log",
+    "type": "file",
+    "size": 4011,
+    "mtime": 1795636443.0624044,
+    "exported": true
+  },
+  {
+    "name": "01_validation.json",
+    "path": "outputs/01_validation.json",
+    "type": "file",
+    "size": 341,
+    "mtime": 1795636442.3263655,
+    "exported": true
+  },
+  {
+    "name": "01b.log",
+    "path": "outputs/01b.log",
+    "type": "file",
+    "size": 7729,
+    "mtime": 1795637095.9741623,
+    "exported": true
+  },
+  {
+    "name": "01b_validation_edges.json",
+    "path": "outputs/01b_validation_edges.json",
+    "type": "file",
+    "size": 1678,
+    "mtime": 1795637095.9741623,
+    "exported": true
+  },
+  {
+    "name": "01c_pd_check.json",
+    "path": "outputs/01c_pd_check.json",
+    "type": "file",
+    "size": 452,
+    "mtime": 1795637296.8709283,
+    "exported": true
+  },
+  {
+    "name": "02.log",
+    "path": "outputs/02.log",
+    "type": "file",
+    "size": 1213,
+    "mtime": 1795634932.9527504,
+    "exported": true
+  },
+  {
+    "name": "02_connectome_facts.json",
+    "path": "outputs/02_connectome_facts.json",
+    "type": "file",
+    "size": 792,
+    "mtime": 1795634930.276722,
+    "exported": true
+  },
+  {
+    "name": "03.log",
+    "path": "outputs/03.log",
+    "type": "file",
+    "size": 21709,
+    "mtime": 1795639468.886261,
+    "exported": true
+  },
+  {
+    "name": "04.log",
+    "path": "outputs/04.log",
+    "type": "file",
+    "size": 43616,
+    "mtime": 1795642821.2916467,
+    "exported": true
+  },
+  {
+    "name": "05.log",
+    "path": "outputs/05.log",
+    "type": "file",
+    "size": 8560,
+    "mtime": 1795646611.2789881,
+    "exported": true
+  },
+  {
+    "name": "05b_currents.log",
+    "path": "outputs/05b_currents.log",
+    "type": "file",
+    "size": 2206,
+    "mtime": 1795646820.7893384,
+    "exported": true
+  },
+  {
+    "name": "06b.log",
+    "path": "outputs/06b.log",
+    "type": "file",
+    "size": 13041,
+    "mtime": 1795640674.5651772,
+    "exported": true
+  },
+  {
+    "name": "07.log",
+    "path": "outputs/07.log",
+    "type": "file",
+    "size": 59612,
+    "mtime": 1795647649.0998564,
+    "exported": true
+  },
+  {
+    "name": "08b.log",
+    "path": "outputs/08b.log",
+    "type": "file",
+    "size": 4011,
+    "mtime": 1795639623.2183468,
+    "exported": true
+  },
+  {
+    "name": "08b_asymmetry_vs_dsi.json",
+    "path": "outputs/08b_asymmetry_vs_dsi.json",
+    "type": "file",
+    "size": 667,
+    "mtime": 1795639622.674346,
+    "exported": true
+  },
+  {
+    "name": "08b_ensemble_results.json",
+    "path": "outputs/08b_ensemble_results.json",
+    "type": "file",
+    "size": 2225,
+    "mtime": 1795639606.478322,
+    "exported": true
+  },
+  {
+    "name": "08c.log",
+    "path": "outputs/08c.log",
+    "type": "file",
+    "size": 6436,
+    "mtime": 1795647878.8011124,
+    "exported": true
+  },
+  {
+    "name": "08c_results.json",
+    "path": "outputs/08c_results.json",
+    "type": "file",
+    "size": 7370,
+    "mtime": 1795647878.8011124,
+    "exported": true
+  },
+  {
+    "name": "ablation_summary_table.csv",
+    "path": "outputs/ablation_summary_table.csv",
+    "type": "file",
+    "size": 3014,
+    "mtime": 1795647864.9930277,
+    "exported": true
+  },
+  {
+    "name": "ablation_wilcoxon_vs_intact.csv",
+    "path": "outputs/ablation_wilcoxon_vs_intact.csv",
+    "type": "file",
+    "size": 2189,
+    "mtime": 1795647865.3170295,
+    "exported": true
+  },
+  {
+    "name": "ablations",
+    "path": "outputs/ablations",
+    "type": "directory"
+  },
+  {
+    "name": "ablation_results.csv",
+    "path": "outputs/ablations/ablation_results.csv",
+    "type": "file",
+    "size": 25839,
+    "mtime": 1795642821.2916467,
+    "exported": true
+  },
+  {
+    "name": "mirror_pd_rotation.json",
+    "path": "outputs/ablations/mirror_pd_rotation.json",
+    "type": "file",
+    "size": 99,
+    "mtime": 1795647941.273509,
+    "exported": true
+  },
+  {
+    "name": "clusters",
+    "path": "outputs/clusters",
+    "type": "directory"
+  },
+  {
+    "name": "causal_Mi4Mi9_T4c.csv",
+    "path": "outputs/clusters/causal_Mi4Mi9_T4c.csv",
+    "type": "file",
+    "size": 4644,
+    "mtime": 1795640674.5691772,
+    "exported": true
+  },
+  {
+    "name": "cluster_stats.json",
+    "path": "outputs/clusters/cluster_stats.json",
+    "type": "file",
+    "size": 889,
+    "mtime": 1795639660.306414,
+    "exported": true
+  },
+  {
+    "name": "cluster_summary.csv",
+    "path": "outputs/clusters/cluster_summary.csv",
+    "type": "file",
+    "size": 3199,
+    "mtime": 1795639660.2704139,
+    "exported": true
+  },
+  {
+    "name": "contingency_T4c_Mi4Mi9.csv",
+    "path": "outputs/clusters/contingency_T4c_Mi4Mi9.csv",
+    "type": "file",
+    "size": 150,
+    "mtime": 1795639660.286414,
+    "exported": true
+  },
+  {
+    "name": "contingency_T5c_Tm9CT1.csv",
+    "path": "outputs/clusters/contingency_T5c_Tm9CT1.csv",
+    "type": "file",
+    "size": 147,
+    "mtime": 1795639660.302414,
+    "exported": true
+  },
+  {
+    "name": "per_model_T4c.csv",
+    "path": "outputs/clusters/per_model_T4c.csv",
+    "type": "file",
+    "size": 6720,
+    "mtime": 1795639660.306414,
+    "exported": true
+  },
+  {
+    "name": "connectome_output_sign_class.csv",
+    "path": "outputs/connectome_output_sign_class.csv",
+    "type": "file",
+    "size": 425,
+    "mtime": 1795634919.7366092,
+    "exported": true
+  },
+  {
+    "name": "connectome_type_matrix_pre_rows.csv",
+    "path": "outputs/connectome_type_matrix_pre_rows.csv",
+    "type": "file",
+    "size": 24085,
+    "mtime": 1795634919.724609,
+    "exported": true
+  },
+  {
+    "name": "connectome_type_pairs.csv",
+    "path": "outputs/connectome_type_pairs.csv",
+    "type": "file",
+    "size": 16640,
+    "mtime": 1795634919.6646082,
+    "exported": true
+  },
+  {
+    "name": "dsi_per_type.csv",
+    "path": "outputs/dsi_per_type.csv",
+    "type": "file",
+    "size": 5543,
+    "mtime": 1795639606.478322,
+    "exported": true
+  },
+  {
+    "name": "ensemble",
+    "path": "outputs/ensemble",
+    "type": "directory"
+  },
+  {
+    "name": "edge_arg_df.csv",
+    "path": "outputs/ensemble/edge_arg_df.csv",
+    "type": "file",
+    "size": 4607,
+    "mtime": 1795639468.822261,
+    "exported": true
+  },
+  {
+    "name": "flash_arg_df.csv",
+    "path": "outputs/ensemble/flash_arg_df.csv",
+    "type": "file",
+    "size": 60,
+    "mtime": 1795639468.822261,
+    "exported": true
+  },
+  {
+    "name": "ensemble_per_model_summary.csv",
+    "path": "outputs/ensemble_per_model_summary.csv",
+    "type": "file",
+    "size": 13294,
+    "mtime": 1795639606.4503222,
+    "exported": true
+  },
+  {
+    "name": "flow",
+    "path": "outputs/flow",
+    "type": "directory"
+  },
+  {
+    "name": "flow_results.csv",
+    "path": "outputs/flow/flow_results.csv",
+    "type": "file",
+    "size": 38435,
+    "mtime": 1795647647.9038508,
+    "exported": true
+  },
+  {
+    "name": "flow_summary.csv",
+    "path": "outputs/flow_summary.csv",
+    "type": "file",
+    "size": 807,
+    "mtime": 1795647873.0930772,
+    "exported": true
+  },
+  {
+    "name": "flyvis_root",
+    "path": "outputs/flyvis_root",
+    "type": "directory"
+  },
+  {
+    "name": "connectome",
+    "path": "outputs/flyvis_root/connectome",
+    "type": "directory"
+  },
+  {
+    "name": "ConnectomeFromAvgFilters_0000",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/_meta.yaml",
+    "type": "file",
+    "size": 113,
+    "mtime": 1795633921.547499,
+    "exported": true
+  },
+  {
+    "name": "edges",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/edges",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/edges/_meta.yaml",
+    "type": "file",
+    "size": 54,
+    "mtime": 1795633920.439495,
+    "exported": true
+  },
+  {
+    "name": "nodes",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/nodes",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/nodes/_meta.yaml",
+    "type": "file",
+    "size": 54,
+    "mtime": 1795633921.1034975,
+    "exported": true
+  },
+  {
+    "name": "layer_index",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/nodes/layer_index",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/connectome/ConnectomeFromAvgFilters_0000/nodes/layer_index/_meta.yaml",
+    "type": "file",
+    "size": 54,
+    "mtime": 1795633921.0994973,
+    "exported": true
+  },
+  {
+    "name": "renderings",
+    "path": "outputs/flyvis_root/renderings",
+    "type": "directory"
+  },
+  {
+    "name": "RenderedFlashes_0000",
+    "path": "outputs/flyvis_root/renderings/RenderedFlashes_0000",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/renderings/RenderedFlashes_0000/_meta.yaml",
+    "type": "file",
+    "size": 216,
+    "mtime": 1795634091.2001557,
+    "exported": true
+  },
+  {
+    "name": "RenderedOffsets_0000",
+    "path": "outputs/flyvis_root/renderings/RenderedOffsets_0000",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/renderings/RenderedOffsets_0000/_meta.yaml",
+    "type": "file",
+    "size": 459,
+    "mtime": 1795636184.0997598,
+    "exported": true
+  },
+  {
+    "name": "results",
+    "path": "outputs/flyvis_root/results",
+    "type": "directory"
+  },
+  {
+    "name": "flow",
+    "path": "outputs/flyvis_root/results/flow",
+    "type": "directory"
+  },
+  {
+    "name": "0000",
+    "path": "outputs/flyvis_root/results/flow/0000",
+    "type": "directory"
+  },
+  {
+    "name": "000",
+    "path": "outputs/flyvis_root/results/flow/0000/000",
+    "type": "directory"
+  },
+  {
+    "name": "__cache__",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__",
+    "type": "directory"
+  },
+  {
+    "name": "flyvis",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis",
+    "type": "directory"
+  },
+  {
+    "name": "analysis",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis",
+    "type": "directory"
+  },
+  {
+    "name": "stimulus_responses",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses",
+    "type": "directory"
+  },
+  {
+    "name": "compute_responses",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses/compute_responses",
+    "type": "directory"
+  },
+  {
+    "name": "d7fc9ebf66b3a10ce570bc2ef2af5092",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses/compute_responses/d7fc9ebf66b3a10ce570bc2ef2af5092",
+    "type": "directory"
+  },
+  {
+    "name": "metadata.json",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses/compute_responses/d7fc9ebf66b3a10ce570bc2ef2af5092/metadata.json",
+    "type": "file",
+    "size": 3006,
+    "mtime": 1795636419.7296207,
+    "exported": true
+  },
+  {
+    "name": "da5dcab5dd36029b9be50896ff9fa445",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses/compute_responses/da5dcab5dd36029b9be50896ff9fa445",
+    "type": "directory"
+  },
+  {
+    "name": "metadata.json",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses/compute_responses/da5dcab5dd36029b9be50896ff9fa445/metadata.json",
+    "type": "file",
+    "size": 2933,
+    "mtime": 1795634164.836484,
+    "exported": true
+  },
+  {
+    "name": "func_code.py",
+    "path": "outputs/flyvis_root/results/flow/0000/000/__cache__/flyvis/analysis/stimulus_responses/compute_responses/func_code.py",
+    "type": "file",
+    "size": 2040,
+    "mtime": 1795634078.1040998,
+    "exported": true
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/000/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6029286,
+    "exported": true
+  },
+  {
+    "name": "001",
+    "path": "outputs/flyvis_root/results/flow/0000/001",
+    "type": "directory"
+  },
+  {
+    "name": "__cache__",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__",
+    "type": "directory"
+  },
+  {
+    "name": "flyvis",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis",
+    "type": "directory"
+  },
+  {
+    "name": "analysis",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis",
+    "type": "directory"
+  },
+  {
+    "name": "stimulus_responses",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses",
+    "type": "directory"
+  },
+  {
+    "name": "compute_responses",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses/compute_responses",
+    "type": "directory"
+  },
+  {
+    "name": "bf3cf68d3dfddbd266f4e2a28e0a096b",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses/compute_responses/bf3cf68d3dfddbd266f4e2a28e0a096b",
+    "type": "directory"
+  },
+  {
+    "name": "metadata.json",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses/compute_responses/bf3cf68d3dfddbd266f4e2a28e0a096b/metadata.json",
+    "type": "file",
+    "size": 3006,
+    "mtime": 1795636735.795238,
+    "exported": true
+  },
+  {
+    "name": "cb3ef9b6d5d4174da62d2cf7974c30b2",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses/compute_responses/cb3ef9b6d5d4174da62d2cf7974c30b2",
+    "type": "directory"
+  },
+  {
+    "name": "metadata.json",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses/compute_responses/cb3ef9b6d5d4174da62d2cf7974c30b2/metadata.json",
+    "type": "file",
+    "size": 2933,
+    "mtime": 1795636793.2932622,
+    "exported": true
+  },
+  {
+    "name": "func_code.py",
+    "path": "outputs/flyvis_root/results/flow/0000/001/__cache__/flyvis/analysis/stimulus_responses/compute_responses/func_code.py",
+    "type": "file",
+    "size": 2040,
+    "mtime": 1795636496.5491304,
+    "exported": true
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/001/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "002",
+    "path": "outputs/flyvis_root/results/flow/0000/002",
+    "type": "directory"
+  },
+  {
+    "name": "__cache__",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__",
+    "type": "directory"
+  },
+  {
+    "name": "flyvis",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis",
+    "type": "directory"
+  },
+  {
+    "name": "analysis",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis",
+    "type": "directory"
+  },
+  {
+    "name": "stimulus_responses",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses",
+    "type": "directory"
+  },
+  {
+    "name": "compute_responses",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses/compute_responses",
+    "type": "directory"
+  },
+  {
+    "name": "5c3926f1a95b5f6a99716f060702002f",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses/compute_responses/5c3926f1a95b5f6a99716f060702002f",
+    "type": "directory"
+  },
+  {
+    "name": "metadata.json",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses/compute_responses/5c3926f1a95b5f6a99716f060702002f/metadata.json",
+    "type": "file",
+    "size": 3006,
+    "mtime": 1795637035.440576,
+    "exported": true
+  },
+  {
+    "name": "854dd8a7a8d7f3f8b02cae041b49d958",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses/compute_responses/854dd8a7a8d7f3f8b02cae041b49d958",
+    "type": "directory"
+  },
+  {
+    "name": "metadata.json",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses/compute_responses/854dd8a7a8d7f3f8b02cae041b49d958/metadata.json",
+    "type": "file",
+    "size": 2933,
+    "mtime": 1795637091.4580467,
+    "exported": true
+  },
+  {
+    "name": "func_code.py",
+    "path": "outputs/flyvis_root/results/flow/0000/002/__cache__/flyvis/analysis/stimulus_responses/compute_responses/func_code.py",
+    "type": "file",
+    "size": 2040,
+    "mtime": 1795637281.4665859,
+    "exported": true
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/002/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6229289,
+    "exported": true
+  },
+  {
+    "name": "003",
+    "path": "outputs/flyvis_root/results/flow/0000/003",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/003/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6029286,
+    "exported": true
+  },
+  {
+    "name": "004",
+    "path": "outputs/flyvis_root/results/flow/0000/004",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/004/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.638929,
+    "exported": true
+  },
+  {
+    "name": "005",
+    "path": "outputs/flyvis_root/results/flow/0000/005",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/005/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6029286,
+    "exported": true
+  },
+  {
+    "name": "006",
+    "path": "outputs/flyvis_root/results/flow/0000/006",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/006/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6069288,
+    "exported": true
+  },
+  {
+    "name": "007",
+    "path": "outputs/flyvis_root/results/flow/0000/007",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/007/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6349287,
+    "exported": true
+  },
+  {
+    "name": "008",
+    "path": "outputs/flyvis_root/results/flow/0000/008",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/008/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "009",
+    "path": "outputs/flyvis_root/results/flow/0000/009",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/009/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6349287,
+    "exported": true
+  },
+  {
+    "name": "010",
+    "path": "outputs/flyvis_root/results/flow/0000/010",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/010/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6149287,
+    "exported": true
+  },
+  {
+    "name": "011",
+    "path": "outputs/flyvis_root/results/flow/0000/011",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/011/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "012",
+    "path": "outputs/flyvis_root/results/flow/0000/012",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/012/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6309288,
+    "exported": true
+  },
+  {
+    "name": "013",
+    "path": "outputs/flyvis_root/results/flow/0000/013",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/013/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "014",
+    "path": "outputs/flyvis_root/results/flow/0000/014",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/014/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "015",
+    "path": "outputs/flyvis_root/results/flow/0000/015",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/015/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "016",
+    "path": "outputs/flyvis_root/results/flow/0000/016",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/016/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6109288,
+    "exported": true
+  },
+  {
+    "name": "017",
+    "path": "outputs/flyvis_root/results/flow/0000/017",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/017/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6149287,
+    "exported": true
+  },
+  {
+    "name": "018",
+    "path": "outputs/flyvis_root/results/flow/0000/018",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/018/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "019",
+    "path": "outputs/flyvis_root/results/flow/0000/019",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/019/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6309288,
+    "exported": true
+  },
+  {
+    "name": "020",
+    "path": "outputs/flyvis_root/results/flow/0000/020",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/020/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6109288,
+    "exported": true
+  },
+  {
+    "name": "021",
+    "path": "outputs/flyvis_root/results/flow/0000/021",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/021/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6229289,
+    "exported": true
+  },
+  {
+    "name": "022",
+    "path": "outputs/flyvis_root/results/flow/0000/022",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/022/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "023",
+    "path": "outputs/flyvis_root/results/flow/0000/023",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/023/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "024",
+    "path": "outputs/flyvis_root/results/flow/0000/024",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/024/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6109288,
+    "exported": true
+  },
+  {
+    "name": "025",
+    "path": "outputs/flyvis_root/results/flow/0000/025",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/025/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6229289,
+    "exported": true
+  },
+  {
+    "name": "026",
+    "path": "outputs/flyvis_root/results/flow/0000/026",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/026/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6069288,
+    "exported": true
+  },
+  {
+    "name": "027",
+    "path": "outputs/flyvis_root/results/flow/0000/027",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/027/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6149287,
+    "exported": true
+  },
+  {
+    "name": "028",
+    "path": "outputs/flyvis_root/results/flow/0000/028",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/028/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6029286,
+    "exported": true
+  },
+  {
+    "name": "029",
+    "path": "outputs/flyvis_root/results/flow/0000/029",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/029/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6069288,
+    "exported": true
+  },
+  {
+    "name": "030",
+    "path": "outputs/flyvis_root/results/flow/0000/030",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/030/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.638929,
+    "exported": true
+  },
+  {
+    "name": "031",
+    "path": "outputs/flyvis_root/results/flow/0000/031",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/031/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6229289,
+    "exported": true
+  },
+  {
+    "name": "032",
+    "path": "outputs/flyvis_root/results/flow/0000/032",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/032/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6109288,
+    "exported": true
+  },
+  {
+    "name": "033",
+    "path": "outputs/flyvis_root/results/flow/0000/033",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/033/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6069288,
+    "exported": true
+  },
+  {
+    "name": "034",
+    "path": "outputs/flyvis_root/results/flow/0000/034",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/034/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6229289,
+    "exported": true
+  },
+  {
+    "name": "035",
+    "path": "outputs/flyvis_root/results/flow/0000/035",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/035/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "036",
+    "path": "outputs/flyvis_root/results/flow/0000/036",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/036/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "037",
+    "path": "outputs/flyvis_root/results/flow/0000/037",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/037/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6109288,
+    "exported": true
+  },
+  {
+    "name": "038",
+    "path": "outputs/flyvis_root/results/flow/0000/038",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/038/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6149287,
+    "exported": true
+  },
+  {
+    "name": "039",
+    "path": "outputs/flyvis_root/results/flow/0000/039",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/039/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "040",
+    "path": "outputs/flyvis_root/results/flow/0000/040",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/040/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6029286,
+    "exported": true
+  },
+  {
+    "name": "041",
+    "path": "outputs/flyvis_root/results/flow/0000/041",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/041/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6309288,
+    "exported": true
+  },
+  {
+    "name": "042",
+    "path": "outputs/flyvis_root/results/flow/0000/042",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/042/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6309288,
+    "exported": true
+  },
+  {
+    "name": "043",
+    "path": "outputs/flyvis_root/results/flow/0000/043",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/043/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6349287,
+    "exported": true
+  },
+  {
+    "name": "044",
+    "path": "outputs/flyvis_root/results/flow/0000/044",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/044/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6189287,
+    "exported": true
+  },
+  {
+    "name": "045",
+    "path": "outputs/flyvis_root/results/flow/0000/045",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/045/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6029286,
+    "exported": true
+  },
+  {
+    "name": "046",
+    "path": "outputs/flyvis_root/results/flow/0000/046",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/046/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6109288,
+    "exported": true
+  },
+  {
+    "name": "047",
+    "path": "outputs/flyvis_root/results/flow/0000/047",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/047/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6269288,
+    "exported": true
+  },
+  {
+    "name": "048",
+    "path": "outputs/flyvis_root/results/flow/0000/048",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/048/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6069288,
+    "exported": true
+  },
+  {
+    "name": "049",
+    "path": "outputs/flyvis_root/results/flow/0000/049",
+    "type": "directory"
+  },
+  {
+    "name": "_meta.yaml",
+    "path": "outputs/flyvis_root/results/flow/0000/049/_meta.yaml",
+    "type": "file",
+    "size": 2222,
+    "mtime": 1795633701.6309288,
+    "exported": true
+  },
+  {
+    "name": "fri_per_type.csv",
+    "path": "outputs/fri_per_type.csv",
+    "type": "file",
+    "size": 1695,
+    "mtime": 1795639606.458322,
+    "exported": true
+  },
+  {
+    "name": "install.log",
+    "path": "outputs/install.log",
+    "type": "file",
+    "size": 6161,
+    "mtime": 1795633686.818905,
+    "exported": true
+  },
+  {
+    "name": "install2.log",
+    "path": "outputs/install2.log",
+    "type": "file",
+    "size": 10960,
+    "mtime": 1795633867.7593257,
+    "exported": true
+  },
+  {
+    "name": "mechanism",
+    "path": "outputs/mechanism",
+    "type": "directory"
+  },
+  {
+    "name": "current_latencies.csv",
+    "path": "outputs/mechanism/current_latencies.csv",
+    "type": "file",
+    "size": 1467,
+    "mtime": 1795647740.3683124,
+    "exported": true
+  },
+  {
+    "name": "silenced_inputs.json",
+    "path": "outputs/mechanism/silenced_inputs.json",
+    "type": "file",
+    "size": 156,
+    "mtime": 1795646678.4236176,
+    "exported": true
+  },
+  {
+    "name": "tmy_input_summary.csv",
+    "path": "outputs/mechanism/tmy_input_summary.csv",
+    "type": "file",
+    "size": 668,
+    "mtime": 1795646678.4156177,
+    "exported": true
+  },
+  {
+    "name": "tmy_t4t5_inputs.csv",
+    "path": "outputs/mechanism/tmy_t4t5_inputs.csv",
+    "type": "file",
+    "size": 4436,
+    "mtime": 1795646678.3996181,
+    "exported": true
+  },
+  {
+    "name": "pipeline.log",
+    "path": "outputs/pipeline.log",
+    "type": "file",
+    "size": 25,
+    "mtime": 1795647650.9118648,
+    "exported": true
+  },
+  {
+    "name": "silencing_effects_long.csv",
+    "path": "outputs/silencing_effects_long.csv",
+    "type": "file",
+    "size": 40111,
+    "mtime": 1795647868.0330462,
+    "exported": true
+  },
+  {
+    "name": "silencing_summary.csv",
+    "path": "outputs/silencing_summary.csv",
+    "type": "file",
+    "size": 1446,
+    "mtime": 1795647868.0490463,
+    "exported": true
+  },
+  {
+    "name": "stop05.log",
+    "path": "outputs/stop05.log",
+    "type": "file",
+    "size": 12,
+    "mtime": 1795646612.8310075,
+    "exported": true
+  },
+  {
+    "name": "t4t5_dsi_definition_diagnostic.csv",
+    "path": "outputs/t4t5_dsi_definition_diagnostic.csv",
+    "type": "file",
+    "size": 47359,
+    "mtime": 1795639621.7543447,
+    "exported": true
+  },
+  {
+    "name": "t4t5_dsi_definition_summary.csv",
+    "path": "outputs/t4t5_dsi_definition_summary.csv",
+    "type": "file",
+    "size": 334,
+    "mtime": 1795639621.7583447,
+    "exported": true
+  },
+  {
+    "name": "tmy_dsi_noT4T5.csv",
+    "path": "outputs/tmy_dsi_noT4T5.csv",
+    "type": "file",
+    "size": 658,
+    "mtime": 1795647870.601062,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig_T4T5_filters.png",
+    "path": "report/images/fig_T4T5_filters.png",
+    "type": "file",
+    "size": 167036,
+    "mtime": 1795634927.1166883,
+    "exported": true
+  },
+  {
+    "name": "fig_T4T5_tuning.png",
+    "path": "report/images/fig_T4T5_tuning.png",
+    "type": "file",
+    "size": 871852,
+    "mtime": 1795639612.5863307,
+    "exported": true
+  },
+  {
+    "name": "fig_T5_dsi_diagnostic.png",
+    "path": "report/images/fig_T5_dsi_diagnostic.png",
+    "type": "file",
+    "size": 86974,
+    "mtime": 1795639622.4543457,
+    "exported": true
+  },
+  {
+    "name": "fig_ablation_summary.png",
+    "path": "report/images/fig_ablation_summary.png",
+    "type": "file",
+    "size": 160136,
+    "mtime": 1795647867.0450401,
+    "exported": true
+  },
+  {
+    "name": "fig_asymmetry_dsi.png",
+    "path": "report/images/fig_asymmetry_dsi.png",
+    "type": "file",
+    "size": 40895,
+    "mtime": 1795639623.0583467,
+    "exported": true
+  },
+  {
+    "name": "fig_clusters_signed.png",
+    "path": "report/images/fig_clusters_signed.png",
+    "type": "file",
+    "size": 634534,
+    "mtime": 1795639662.4984183,
+    "exported": true
+  },
+  {
+    "name": "fig_connectome_matrix.png",
+    "path": "report/images/fig_connectome_matrix.png",
+    "type": "file",
+    "size": 119615,
+    "mtime": 1795634922.812642,
+    "exported": true
+  },
+  {
+    "name": "fig_currents.png",
+    "path": "report/images/fig_currents.png",
+    "type": "file",
+    "size": 245965,
+    "mtime": 1795647872.3770728,
+    "exported": true
+  },
+  {
+    "name": "fig_flow_decoding.png",
+    "path": "report/images/fig_flow_decoding.png",
+    "type": "file",
+    "size": 621157,
+    "mtime": 1795647874.2450843,
+    "exported": true
+  },
+  {
+    "name": "fig_fri_dsi_swarm.png",
+    "path": "report/images/fig_fri_dsi_swarm.png",
+    "type": "file",
+    "size": 473708,
+    "mtime": 1795639609.4423263,
+    "exported": true
+  },
+  {
+    "name": "fig_hex_voltage_maps.png",
+    "path": "report/images/fig_hex_voltage_maps.png",
+    "type": "file",
+    "size": 1517828,
+    "mtime": 1795647877.6371052,
+    "exported": true
+  },
+  {
+    "name": "fig_learned_params.png",
+    "path": "report/images/fig_learned_params.png",
+    "type": "file",
+    "size": 155845,
+    "mtime": 1795634932.440745,
+    "exported": true
+  },
+  {
+    "name": "fig_metrics_vs_loss.png",
+    "path": "report/images/fig_metrics_vs_loss.png",
+    "type": "file",
+    "size": 92171,
+    "mtime": 1795639617.8463385,
+    "exported": true
+  },
+  {
+    "name": "fig_schematic.png",
+    "path": "report/images/fig_schematic.png",
+    "type": "file",
+    "size": 390047,
+    "mtime": 1795635612.3630915,
+    "exported": true
+  },
+  {
+    "name": "fig_silencing_tmy.png",
+    "path": "report/images/fig_silencing_tmy.png",
+    "type": "file",
+    "size": 160203,
+    "mtime": 1795647870.0850587,
+    "exported": true
+  },
+  {
+    "name": "fig_sim_validation.png",
+    "path": "report/images/fig_sim_validation.png",
+    "type": "file",
+    "size": 114318,
+    "mtime": 1795636442.8823948,
+    "exported": true
+  },
+  {
+    "name": "fig_traces_best.png",
+    "path": "report/images/fig_traces_best.png",
+    "type": "file",
+    "size": 287385,
+    "mtime": 1795639616.066336,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 49715,
+    "mtime": 1795648105.1506312,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5753,
+    "mtime": 1795632817.4287834,
+    "exported": true
+  }
+]

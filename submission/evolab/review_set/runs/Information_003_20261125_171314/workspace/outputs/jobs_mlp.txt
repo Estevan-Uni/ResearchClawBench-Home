@@ -1,0 +1,5 @@
+code/static.py --method mlp --protocol fewshot --seed 0
+code/static.py --method mlp --protocol fewshot --seed 1
+code/static.py --method mlp --protocol fewshot --seed 2
+code/static.py --method mlp --protocol fewshot --seed 3
+code/static.py --method mlp --protocol fewshot --seed 4

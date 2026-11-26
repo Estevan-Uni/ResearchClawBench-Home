@@ -1,0 +1,18 @@
+{
+  "run_id": "Chemistry_001_20261125_124114",
+  "task_id": "Chemistry_001",
+  "timestamp": "20261125_124114",
+  "status": "completed",
+  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Chemistry_001/g1/solve/attempt-00003/Chemistry_001/workspace",
+  "agent_name": "EvoLab",
+  "model": "claude-opus-5-5",
+  "duration_seconds": 38868.482,
+  "cost_usd": null,
+  "known_cost_usd": 49.592839,
+  "unknown_cost_attempts": 1,
+  "cost_scope": "G1 + E1 + G2, solver and judge, including retries",
+  "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
+  "elapsed_including_queue_seconds": 40585.031,
+  "selected_generation": 1,
+  "selection": "higher of G1 and G2 judge scores"
+}

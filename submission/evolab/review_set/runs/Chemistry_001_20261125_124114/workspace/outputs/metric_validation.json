@@ -1,0 +1,51 @@
+{
+ "0.0": {
+  "prot_ca_rmsd": 0.0,
+  "lddt_all": 1.0,
+  "lddt_interface": 1.0,
+  "fnat": 1.0,
+  "n_clashes": 0,
+  "lig_bond_mae": 0.0,
+  "ca_chirality_ok": 1.0
+ },
+ "0.1": {
+  "prot_ca_rmsd": 0.172,
+  "lddt_all": 1.0,
+  "lddt_interface": 1.0,
+  "fnat": 0.942,
+  "n_clashes": 0,
+  "lig_bond_mae": 0.111,
+  "ca_chirality_ok": 1.0
+ },
+ "0.25": {
+  "prot_ca_rmsd": 0.459,
+  "lddt_all": 0.96,
+  "lddt_interface": 0.964,
+  "fnat": 0.898,
+  "n_clashes": 2,
+  "lig_bond_mae": 0.275,
+  "ca_chirality_ok": 0.922
+ },
+ "0.5": {
+  "prot_ca_rmsd": 0.864,
+  "lddt_all": 0.841,
+  "lddt_interface": 0.849,
+  "fnat": 0.818,
+  "n_clashes": 36,
+  "lig_bond_mae": 0.647,
+  "ca_chirality_ok": 0.804
+ },
+ "1.0": {
+  "prot_ca_rmsd": 1.731,
+  "lddt_all": 0.662,
+  "lddt_interface": 0.666,
+  "fnat": 0.73,
+  "n_clashes": 148,
+  "lig_bond_mae": 1.422,
+  "ca_chirality_ok": 0.621
+ },
+ "mirror": {
+  "ca_chirality_ok": 0.0,
+  "lddt_all": 1.0
+ }
+}

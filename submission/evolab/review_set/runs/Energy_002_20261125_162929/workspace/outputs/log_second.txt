@@ -1,0 +1,24 @@
+216 jobs
+0 geoh2 hex_003 flex flat6 flat 6% 6.111268226947348 2.6
+10 geoh2 hex_009 flex flat6 flat 6% 7.010164617387866 2.6
+20 geoh2 hex_016 flex flat6 flat 6% 6.73967256595365 2.7
+30 geoh2 hex_023 flex flat6 flat 6% 5.818022403820771 3.8
+40 sens hex_005 flex Commercial Moderate 2.15% 3.2995339581701866 2.4
+50 crp hex_005 flex Commercial Moderate 2.15% 2.8077170692462006 2.4
+60 crp hex_010 flex Commercial Moderate 2.15% 3.6612496707891995 2.3
+70 ratesweep hex_005 flex Commercial ir 5% 3.7430536235552294 2.4
+80 country hex_001 const Commercial Moderate 2.15% 2.94271420505992 4.8
+90 grid hex_003 const Commercial Moderate 2.15% 3.603535755650248 13.1
+100 geoh2 hex_007 const flat6 flat 6% 7.5035030809284535 6.1
+110 grid hex_010 const Full de-risking Moderate 2.15% 2.1429485556594576 7.7
+120 geoh2 hex_014 const flat6 flat 6% 8.15373798253007 3.9
+130 grid hex_016 const Commercial Moderate 2.15% 3.549481589256168 9.2
+140 grid hex_019 const Commercial Moderate 2.15% 3.4994884920290557 8.6
+150 grid hex_022 const Commercial Moderate 2.15% 3.446540997550789 12.1
+160 grid hex_025 const Commercial Moderate 2.15% 3.633012559445517 12.4
+170 sens hex_005 const Commercial Moderate 2.15% 3.3394880721083307 3.9
+180 sens hex_005 const Commercial Moderate 2.15% 3.378502277687269 4.2
+190 crp hex_005 const Commercial Moderate 2.15% 3.814653841012052 4.7
+200 ratesweep hex_005 const Commercial ir 0% 3.2658350536091754 4.3
+210 ratesweep hex_005 const Commercial ir 5% 4.122969107656265 5.1
+done

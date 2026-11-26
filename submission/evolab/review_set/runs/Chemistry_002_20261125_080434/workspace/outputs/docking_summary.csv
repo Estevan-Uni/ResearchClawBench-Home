@@ -1,0 +1,13 @@
+run,stage,n_models,top1_dockq,top1_irmsd,top1_lrmsd,top1_fnat,top1_class,best_dockq,best_irmsd,frac_acceptable,frac_medium,frac_high,T1,T5,T10,T1_med,T5_med,T10_med
+unbound_ideal,rigid,200,0.189,6.184,11.197,0.145,incorrect,0.634,1.359,0.285,0.125,0.0,False,True,True,False,False,True
+unbound_ideal,refined,20,0.215,5.883,11.168,0.218,incorrect,0.732,1.207,0.2,0.1,0.0,False,True,True,False,True,True
+unbound_hotspot,rigid,200,0.068,13.068,23.121,0.073,incorrect,0.57,1.807,0.19,0.015,0.0,False,True,True,False,False,False
+unbound_hotspot,refined,20,0.315,2.902,9.184,0.273,acceptable,0.315,2.809,0.55,0.0,0.0,True,True,True,False,False,False
+unbound_noisy,rigid,200,0.071,13.326,24.353,0.091,incorrect,0.14,7.021,0.0,0.0,0.0,False,False,False,False,False,False
+unbound_noisy,refined,20,0.085,11.544,17.975,0.055,incorrect,0.13,8.506,0.0,0.0,0.0,False,False,False,False,False,False
+unbound_onesided,rigid,200,0.142,6.857,13.282,0.091,incorrect,0.615,1.457,0.035,0.005,0.0,False,False,False,False,False,False
+unbound_onesided,refined,20,0.075,12.736,19.776,0.055,incorrect,0.258,3.286,0.05,0.0,0.0,False,True,True,False,False,False
+unbound_abinitio,rigid,400,0.074,13.123,23.318,0.091,incorrect,0.259,3.135,0.005,0.0,0.0,False,True,True,False,False,False
+unbound_abinitio,refined,20,0.053,12.472,26.993,0.055,incorrect,0.212,3.992,0.0,0.0,0.0,False,False,False,False,False,False
+bound_hotspot,rigid,100,0.975,0.081,0.215,0.927,high,0.975,0.081,0.32,0.18,0.18,True,True,True,True,True,True
+bound_hotspot,refined,10,0.821,1.229,1.815,0.909,high,0.896,0.619,1.0,1.0,0.3,True,True,True,True,True,True

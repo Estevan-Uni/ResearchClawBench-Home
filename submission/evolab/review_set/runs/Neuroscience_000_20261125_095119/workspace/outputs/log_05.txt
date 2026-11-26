@@ -1,0 +1,80 @@
+T1 Attack 36s
+Ref Attack 37s
+T1 Sniffing 55s
+Ref Sniffing 56s
+/usr/local/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/usr/local/lib/python3.12/site-packages/numpy/lib/_function_base_impl.py:3038: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+     recording behaviour  grouping     group  share     lo     hi  n_features  feature_share  enrichment
+0   Together_1    Attack  category     angle  0.126  0.110  0.146        19.0          0.038       3.299
+1   Together_1    Attack  category  distance  0.287  0.264  0.304        37.0          0.074       3.858
+2   Together_1    Attack  category  movement  0.211  0.198  0.222       227.0          0.456       0.463
+3   Together_1    Attack  category     shape  0.372  0.356  0.387       208.0          0.418       0.890
+4   Together_1    Attack  category  tracking  0.005  0.005  0.006         7.0          0.014       0.360
+5   Together_1    Attack      role        M1  0.242  0.230  0.256       192.0          0.386       0.626
+6   Together_1    Attack      role        M2  0.257  0.246  0.267       153.0          0.307       0.837
+7   Together_1    Attack      role     inter  0.501  0.483  0.519       153.0          0.307       1.631
+24   Reference    Attack  category     angle  0.003  0.002  0.003        19.0          0.038       0.071
+25   Reference    Attack  category  distance  0.380  0.347  0.421        37.0          0.074       5.119
+26   Reference    Attack  category  movement  0.171  0.133  0.197       227.0          0.456       0.376
+27   Reference    Attack  category     shape  0.444  0.421  0.476       208.0          0.418       1.064
+28   Reference    Attack  category  tracking  0.001  0.001  0.002         7.0          0.014       0.093
+29   Reference    Attack      role        M1  0.338  0.306  0.387       192.0          0.386       0.878
+30   Reference    Attack      role        M2  0.098  0.083  0.115       153.0          0.307       0.318
+31   Reference    Attack      role     inter  0.564  0.522  0.600       153.0          0.307       1.835
+48  Together_1  Sniffing  category     angle  0.095  0.085  0.107        19.0          0.038       2.480
+49  Together_1  Sniffing  category  distance  0.260  0.241  0.282        37.0          0.074       3.495
+50  Together_1  Sniffing  category  movement  0.220  0.208  0.233       227.0          0.456       0.483
+51  Together_1  Sniffing  category     shape  0.422  0.396  0.445       208.0          0.418       1.011
+52  Together_1  Sniffing  category  tracking  0.003  0.003  0.004         7.0          0.014       0.223
+53  Together_1  Sniffing      role        M1  0.285  0.264  0.303       192.0          0.386       0.739
+54  Together_1  Sniffing      role        M2  0.257  0.245  0.270       153.0          0.307       0.838
+55  Together_1  Sniffing      role     inter  0.458  0.438  0.478       153.0          0.307       1.490
+72   Reference  Sniffing  category     angle  0.031  0.029  0.035        19.0          0.038       0.824
+73   Reference  Sniffing  category  distance  0.180  0.167  0.198        37.0          0.074       2.417
+74   Reference  Sniffing  category  movement  0.376  0.347  0.394       227.0          0.456       0.825
+75   Reference  Sniffing  category     shape  0.413  0.403  0.428       208.0          0.418       0.989
+76   Reference  Sniffing  category  tracking  0.000  0.000  0.000         7.0          0.014       0.000
+77   Reference  Sniffing      role        M1  0.512  0.489  0.526       192.0          0.386       1.327
+78   Reference  Sniffing      role        M2  0.197  0.188  0.207       153.0          0.307       0.640
+79   Reference  Sniffing      role     inter  0.292  0.276  0.319       153.0          0.307       0.950
+                             comparison  grouping     group   diff     lo     hi  ci_excludes_zero
+0      Attack_minus_Sniffing@Together_1  category     angle  0.031  0.010  0.053              True
+1      Attack_minus_Sniffing@Together_1  category  distance  0.027 -0.004  0.054             False
+2      Attack_minus_Sniffing@Together_1  category  movement -0.009 -0.027  0.008             False
+3      Attack_minus_Sniffing@Together_1  category     shape -0.051 -0.074 -0.025              True
+4      Attack_minus_Sniffing@Together_1  category  tracking  0.002  0.001  0.003              True
+5      Attack_minus_Sniffing@Together_1      role        M1 -0.043 -0.067 -0.023              True
+6      Attack_minus_Sniffing@Together_1      role        M2 -0.000 -0.021  0.016             False
+7      Attack_minus_Sniffing@Together_1      role     inter  0.044  0.016  0.074              True
+19    Together_1_minus_Reference@Attack  category     angle  0.123  0.106  0.143              True
+20    Together_1_minus_Reference@Attack  category  distance -0.094 -0.148 -0.056              True
+21    Together_1_minus_Reference@Attack  category  movement  0.040  0.015  0.073              True
+22    Together_1_minus_Reference@Attack  category     shape -0.073 -0.109 -0.046              True
+23    Together_1_minus_Reference@Attack  category  tracking  0.004  0.003  0.004              True
+24    Together_1_minus_Reference@Attack      role        M1 -0.097 -0.149 -0.058              True
+25    Together_1_minus_Reference@Attack      role        M2  0.160  0.137  0.180              True
+26    Together_1_minus_Reference@Attack      role     inter -0.063 -0.108 -0.009              True
+38  Together_1_minus_Reference@Sniffing  category     angle  0.063  0.053  0.076              True
+39  Together_1_minus_Reference@Sniffing  category  distance  0.080  0.047  0.105              True
+40  Together_1_minus_Reference@Sniffing  category  movement -0.156 -0.178 -0.127              True
+41  Together_1_minus_Reference@Sniffing  category     shape  0.009 -0.018  0.036             False
+42  Together_1_minus_Reference@Sniffing  category  tracking  0.003  0.003  0.004              True
+43  Together_1_minus_Reference@Sniffing      role        M1 -0.227 -0.249 -0.201              True
+44  Together_1_minus_Reference@Sniffing      role        M2  0.061  0.044  0.078              True
+45  Together_1_minus_Reference@Sniffing      role     inter  0.166  0.137  0.187              True
+    recording behaviour  n_twin_pairs  M1_fraction     lo     hi
+0  Together_1    Attack           148        0.425  0.409  0.442
+1   Reference    Attack           148        0.705  0.659  0.749
+2  Together_1  Sniffing           148        0.470  0.448  0.488
+3   Reference  Sniffing           148        0.704  0.679  0.720
+  behaviour  episode  start   end  n_frames  frac_test  cat_angle  cat_distance  cat_movement  cat_shape  cat_tracking  role_M1  role_M2  role_inter
+0    Attack        1    412   694       283      0.198      0.141         0.276         0.220      0.359         0.005    0.235    0.260       0.505
+1    Attack        2    810  1022       213      0.197      0.128         0.306         0.224      0.337         0.005    0.237    0.242       0.521
+2    Attack        3   1118  1137        20      0.250      0.048         0.178         0.302      0.467         0.005    0.289    0.400       0.311
+3    Attack        4   1256  1442       187      0.209      0.090         0.276         0.195      0.434         0.006    0.241    0.270       0.489
+4  Sniffing        1    326   411        86      0.174      0.090         0.326         0.232      0.348         0.004    0.250    0.255       0.495
+5  Sniffing        2    696   808       113      0.221      0.082         0.271         0.255      0.388         0.004    0.252    0.278       0.469
+6  Sniffing        3   1443  1520        78      0.167      0.061         0.169         0.225      0.542         0.003    0.372    0.256       0.372
+total 112.6542866230011

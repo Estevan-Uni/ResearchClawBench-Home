@@ -1,0 +1,101 @@
+[
+ {
+  "mu": 1e-20,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.0,
+  "fe_box": 0.0,
+  "mean_invB": 1.00003367003367,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 2.0535250264571462e-20,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.0,
+  "fe_box": 0.0,
+  "mean_invB": 0.9999371059406079,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 4.2169650342858224e-20,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.0,
+  "fe_box": 0.0,
+  "mean_invB": 1.0067845428784559,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 8.659643233600654e-20,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.043333333333333335,
+  "fe_box": 0.0,
+  "mean_invB": 1.0362020878689406,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 1.7782794100389227e-19,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.07,
+  "fe_box": 0.0,
+  "mean_invB": 0.9698032954078055,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 3.651741272548377e-19,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.1,
+  "fe_box": 0.0033333333333333335,
+  "mean_invB": 0.9837554678904414,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 7.498942093324559e-19,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.08666666666666667,
+  "fe_box": 0.0033333333333333335,
+  "mean_invB": 1.0078300611232793,
+  "power_psurv": 0.0033333333333333335,
+  "power_B": 0.0033333333333333335,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 1.539926526059492e-18,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.02,
+  "fe_box": 0.0,
+  "mean_invB": 0.9840402097680134,
+  "power_psurv": 0.0,
+  "power_B": 0.0,
+  "median_ps_true": 1.0
+ },
+ {
+  "mu": 3.1622776601683795e-18,
+  "fe_psurv": 0.0,
+  "fe_B": 0.0,
+  "fe_point": 0.023333333333333334,
+  "fe_box": 0.0,
+  "mean_invB": 1.015847911927422,
+  "power_psurv": 0.0033333333333333335,
+  "power_B": 0.0033333333333333335,
+  "median_ps_true": 1.0
+ }
+]

@@ -1,0 +1,18 @@
+{
+  "run_id": "Astronomy_002_20261125_052835",
+  "task_id": "Astronomy_002",
+  "timestamp": "20261125_052835",
+  "status": "completed",
+  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/solve/attempt-00001/Astronomy_002/workspace",
+  "agent_name": "EvoLab",
+  "model": "claude-opus-5-5",
+  "duration_seconds": 2515.375,
+  "cost_usd": 7.36665,
+  "known_cost_usd": 7.36665,
+  "unknown_cost_attempts": 0,
+  "cost_scope": "G1 + E1 + G2, solver and judge, including retries",
+  "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
+  "elapsed_including_queue_seconds": 2515.384,
+  "selected_generation": 2,
+  "selection": "higher of G1 and G2 judge scores"
+}

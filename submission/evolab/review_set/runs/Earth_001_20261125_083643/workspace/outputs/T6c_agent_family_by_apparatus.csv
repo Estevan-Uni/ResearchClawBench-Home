@@ -1,0 +1,9 @@
+agent_family,Ground,Airborne,Ground + airborne,Not reported
+"AgI + glaciogenic/other (dry ice, propane, acetone)",7,5,11,0
+AgI + hygroscopic salts,0,54,8,0
+AgI + iodide/halide complexing salts,187,0,2,0
+AgI only,252,159,110,0
+CO2 / dry ice only,1,5,0,0
+Hygroscopic only,0,5,0,0
+Ionized air,12,5,0,4
+"Other non-conventional (water, SO2/CaCO3, NH4I)",2,3,0,0

@@ -1,0 +1,38 @@
+{
+ "9N3Y": {
+  "hungarian_on_chainTM": [
+   "C",
+   "D",
+   "E",
+   "F",
+   "G"
+  ],
+  "correct": 5,
+  "sum_TM_hungarian": 4.936,
+  "sum_TM_true": 4.936
+ },
+ "8RFJ": {
+  "hungarian_on_chainTM": [
+   "A",
+   "B",
+   "D",
+   "C",
+   "E"
+  ],
+  "correct": 3,
+  "sum_TM_hungarian": 4.867,
+  "sum_TM_true": 4.865
+ },
+ "8S35": {
+  "hungarian_on_chainTM": [
+   "B",
+   "C",
+   "D",
+   "A",
+   "E"
+  ],
+  "correct": 1,
+  "sum_TM_hungarian": 2.852,
+  "sum_TM_true": 2.757
+ }
+}

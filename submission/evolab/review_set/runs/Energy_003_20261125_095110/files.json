@@ -1,0 +1,414 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "01_overview_hierarchy.py",
+    "path": "code/01_overview_hierarchy.py",
+    "type": "file",
+    "size": 8589,
+    "mtime": 1795600450.425339,
+    "exported": true
+  },
+  {
+    "name": "02_correlation.py",
+    "path": "code/02_correlation.py",
+    "type": "file",
+    "size": 6373,
+    "mtime": 1795600496.8618336,
+    "exported": true
+  },
+  {
+    "name": "03_cleaning_experiment.py",
+    "path": "code/03_cleaning_experiment.py",
+    "type": "file",
+    "size": 10576,
+    "mtime": 1795600685.183399,
+    "exported": true
+  },
+  {
+    "name": "04_sensitivity.py",
+    "path": "code/04_sensitivity.py",
+    "type": "file",
+    "size": 4365,
+    "mtime": 1795600693.9554472,
+    "exported": true
+  },
+  {
+    "name": "05_detector_ablation.py",
+    "path": "code/05_detector_ablation.py",
+    "type": "file",
+    "size": 1261,
+    "mtime": 1795600870.532545,
+    "exported": true
+  },
+  {
+    "name": "cleaning.py",
+    "path": "code/cleaning.py",
+    "type": "file",
+    "size": 11735,
+    "mtime": 1795600642.951176,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 1659,
+    "mtime": 1795600414.2129529,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "bn001_corruption_seed0.csv",
+    "path": "outputs/bn001_corruption_seed0.csv",
+    "type": "file",
+    "size": 599011,
+    "mtime": 1795600687.1434097,
+    "exported": true
+  },
+  {
+    "name": "building_shares.csv",
+    "path": "outputs/building_shares.csv",
+    "type": "file",
+    "size": 1071,
+    "mtime": 1795600452.2293582,
+    "exported": true
+  },
+  {
+    "name": "calendar_variance_share.csv",
+    "path": "outputs/calendar_variance_share.csv",
+    "type": "file",
+    "size": 560,
+    "mtime": 1795600499.0098565,
+    "exported": true
+  },
+  {
+    "name": "cleaning_by_gaplen_seed0.csv",
+    "path": "outputs/cleaning_by_gaplen_seed0.csv",
+    "type": "file",
+    "size": 1776,
+    "mtime": 1795600687.7874134,
+    "exported": true
+  },
+  {
+    "name": "cleaning_metrics_seed0.csv",
+    "path": "outputs/cleaning_metrics_seed0.csv",
+    "type": "file",
+    "size": 3267,
+    "mtime": 1795600687.6994128,
+    "exported": true
+  },
+  {
+    "name": "cleaning_summary_seed0.json",
+    "path": "outputs/cleaning_summary_seed0.json",
+    "type": "file",
+    "size": 585,
+    "mtime": 1795600689.4714224,
+    "exported": true
+  },
+  {
+    "name": "cluster_recovery_seed0.csv",
+    "path": "outputs/cluster_recovery_seed0.csv",
+    "type": "file",
+    "size": 454,
+    "mtime": 1795600688.3394163,
+    "exported": true
+  },
+  {
+    "name": "cluster_vs_month.csv",
+    "path": "outputs/cluster_vs_month.csv",
+    "type": "file",
+    "size": 136,
+    "mtime": 1795600688.3714166,
+    "exported": true
+  },
+  {
+    "name": "cluster_vs_weekday.csv",
+    "path": "outputs/cluster_vs_weekday.csv",
+    "type": "file",
+    "size": 97,
+    "mtime": 1795600688.3594165,
+    "exported": true
+  },
+  {
+    "name": "corr_key_values.json",
+    "path": "outputs/corr_key_values.json",
+    "type": "file",
+    "size": 674,
+    "mtime": 1795600499.0218565,
+    "exported": true
+  },
+  {
+    "name": "corr_raw_hourly.csv",
+    "path": "outputs/corr_raw_hourly.csv",
+    "type": "file",
+    "size": 2899,
+    "mtime": 1795600498.9138556,
+    "exported": true
+  },
+  {
+    "name": "corr_robustness.csv",
+    "path": "outputs/corr_robustness.csv",
+    "type": "file",
+    "size": 7797,
+    "mtime": 1795600498.9898562,
+    "exported": true
+  },
+  {
+    "name": "corr_spearman_hourly.csv",
+    "path": "outputs/corr_spearman_hourly.csv",
+    "type": "file",
+    "size": 2895,
+    "mtime": 1795600498.9298556,
+    "exported": true
+  },
+  {
+    "name": "detector_ablation_raw.csv",
+    "path": "outputs/detector_ablation_raw.csv",
+    "type": "file",
+    "size": 5274,
+    "mtime": 1795600882.2886257,
+    "exported": true
+  },
+  {
+    "name": "detector_ablation_summary.csv",
+    "path": "outputs/detector_ablation_summary.csv",
+    "type": "file",
+    "size": 893,
+    "mtime": 1795600882.3006258,
+    "exported": true
+  },
+  {
+    "name": "generalisation_buildings.csv",
+    "path": "outputs/generalisation_buildings.csv",
+    "type": "file",
+    "size": 6937,
+    "mtime": 1795600725.0476236,
+    "exported": true
+  },
+  {
+    "name": "ghg_identity.csv",
+    "path": "outputs/ghg_identity.csv",
+    "type": "file",
+    "size": 1482,
+    "mtime": 1795600452.2053578,
+    "exported": true
+  },
+  {
+    "name": "hierarchy_consistency.csv",
+    "path": "outputs/hierarchy_consistency.csv",
+    "type": "file",
+    "size": 618,
+    "mtime": 1795600452.1413572,
+    "exported": true
+  },
+  {
+    "name": "hierarchy_summary.json",
+    "path": "outputs/hierarchy_summary.json",
+    "type": "file",
+    "size": 566,
+    "mtime": 1795600452.2333581,
+    "exported": true
+  },
+  {
+    "name": "kmeans_k_selection.csv",
+    "path": "outputs/kmeans_k_selection.csv",
+    "type": "file",
+    "size": 220,
+    "mtime": 1795600689.4674225,
+    "exported": true
+  },
+  {
+    "name": "kmeans_true_centroids.csv",
+    "path": "outputs/kmeans_true_centroids.csv",
+    "type": "file",
+    "size": 576,
+    "mtime": 1795600688.3434162,
+    "exported": true
+  },
+  {
+    "name": "log_03.txt",
+    "path": "outputs/log_03.txt",
+    "type": "file",
+    "size": 3136,
+    "mtime": 1795600693.155443,
+    "exported": true
+  },
+  {
+    "name": "overview_stats.csv",
+    "path": "outputs/overview_stats.csv",
+    "type": "file",
+    "size": 5197,
+    "mtime": 1795600452.0853565,
+    "exported": true
+  },
+  {
+    "name": "sensitivity_raw.csv",
+    "path": "outputs/sensitivity_raw.csv",
+    "type": "file",
+    "size": 11719,
+    "mtime": 1795600712.7915533,
+    "exported": true
+  },
+  {
+    "name": "sensitivity_summary.csv",
+    "path": "outputs/sensitivity_summary.csv",
+    "type": "file",
+    "size": 4497,
+    "mtime": 1795600712.8075533,
+    "exported": true
+  },
+  {
+    "name": "weather_plausibility.json",
+    "path": "outputs/weather_plausibility.json",
+    "type": "file",
+    "size": 1121,
+    "mtime": 1795600499.0218565,
+    "exported": true
+  },
+  {
+    "name": "weather_stats.csv",
+    "path": "outputs/weather_stats.csv",
+    "type": "file",
+    "size": 972,
+    "mtime": 1795600452.1093569,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig01_overview_total.png",
+    "path": "report/images/fig01_overview_total.png",
+    "type": "file",
+    "size": 716747,
+    "mtime": 1795600453.8733757,
+    "exported": true
+  },
+  {
+    "name": "fig02_building_levels_shares.png",
+    "path": "report/images/fig02_building_levels_shares.png",
+    "type": "file",
+    "size": 102455,
+    "mtime": 1795600455.053388,
+    "exported": true
+  },
+  {
+    "name": "fig03_hierarchy_single_day.png",
+    "path": "report/images/fig03_hierarchy_single_day.png",
+    "type": "file",
+    "size": 96726,
+    "mtime": 1795600456.061399,
+    "exported": true
+  },
+  {
+    "name": "fig04_hierarchy_residual_year.png",
+    "path": "report/images/fig04_hierarchy_residual_year.png",
+    "type": "file",
+    "size": 87601,
+    "mtime": 1795600457.465414,
+    "exported": true
+  },
+  {
+    "name": "fig05_profiles.png",
+    "path": "report/images/fig05_profiles.png",
+    "type": "file",
+    "size": 145944,
+    "mtime": 1795600458.1654215,
+    "exported": true
+  },
+  {
+    "name": "fig06_corr_raw_heatmap.png",
+    "path": "report/images/fig06_corr_raw_heatmap.png",
+    "type": "file",
+    "size": 186613,
+    "mtime": 1795600500.077868,
+    "exported": true
+  },
+  {
+    "name": "fig07_corr_robustness.png",
+    "path": "report/images/fig07_corr_robustness.png",
+    "type": "file",
+    "size": 67737,
+    "mtime": 1795600500.8018756,
+    "exported": true
+  },
+  {
+    "name": "fig08_weather_plausibility.png",
+    "path": "report/images/fig08_weather_plausibility.png",
+    "type": "file",
+    "size": 125417,
+    "mtime": 1795600501.7138853,
+    "exported": true
+  },
+  {
+    "name": "fig09_cleaning_window.png",
+    "path": "report/images/fig09_cleaning_window.png",
+    "type": "file",
+    "size": 218426,
+    "mtime": 1795600690.103426,
+    "exported": true
+  },
+  {
+    "name": "fig10_kmeans_centroids.png",
+    "path": "report/images/fig10_kmeans_centroids.png",
+    "type": "file",
+    "size": 133274,
+    "mtime": 1795600690.6034288,
+    "exported": true
+  },
+  {
+    "name": "fig11_cleaning_metrics.png",
+    "path": "report/images/fig11_cleaning_metrics.png",
+    "type": "file",
+    "size": 98392,
+    "mtime": 1795600691.4794335,
+    "exported": true
+  },
+  {
+    "name": "fig12_daily_matrix.png",
+    "path": "report/images/fig12_daily_matrix.png",
+    "type": "file",
+    "size": 716387,
+    "mtime": 1795600693.155443,
+    "exported": true
+  },
+  {
+    "name": "fig13_sensitivity.png",
+    "path": "report/images/fig13_sensitivity.png",
+    "type": "file",
+    "size": 208465,
+    "mtime": 1795600726.5116322,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 31462,
+    "mtime": 1795600895.5447176,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5781,
+    "mtime": 1795600270.6874194,
+    "exported": true
+  }
+]

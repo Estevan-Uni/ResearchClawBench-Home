@@ -1,0 +1,16 @@
+[
+ {
+  "id": "selfcheck_janus_v2_s1_1",
+  "image": "/workspace/outputs/t2i/janus_v2_s1_1.png",
+  "turns": [
+   "How many faces does this sculpture have? Describe each face (age, beard, colour of lighting) and the direction it is looking."
+  ]
+ },
+ {
+  "id": "selfcheck_janus_s0_1",
+  "image": "/workspace/outputs/t2i/janus_s0_1.png",
+  "turns": [
+   "How many faces does this sculpture have? Describe each face (age, beard, colour of lighting) and the direction it is looking."
+  ]
+ }
+]

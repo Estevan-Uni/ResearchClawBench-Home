@@ -1,0 +1,2 @@
+model	md5	caprieval_rank	score	irmsd	fnat	lrmsd	ilrmsd	dockq	rmsd	cluster_id	cluster_ranking	model-cluster_ranking	air	angles	bonds	bsa	cdih	coup	dani	desolv	dihe	elec	improper	rdcs	rg	sym	total	vdw	vean	xpcs
+../../2_alascan/emscoring_1_alascan.pdb	-	1	-139.880	0.000	1.000	0.000	0.000	1.000	0.000	-	-	-	0.000	638.970	236.276	1579.280	0.000	0.000	0.000	-7.408	1030.750	-394.680	201.759	0.000	0.000	0.000	-448.215	-53.536	0.000	0.000

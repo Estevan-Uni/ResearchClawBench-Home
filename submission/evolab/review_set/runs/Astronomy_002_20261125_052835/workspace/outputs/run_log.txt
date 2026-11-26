@@ -1,0 +1,100 @@
+== 1. sanity arithmetic
+  SN cal NGC1309  M_B=-20.405 +- 0.089
+  SN cal NGC1365  M_B=-19.402 +- 0.080
+  SN cal NGC1448  M_B=-19.410 +- 0.103
+  SN cal NGC1559  M_B=-19.200 +- 0.086
+  SN cal M101     M_B=-19.274 +- 0.062
+  SN cal NGC1316  M_B=-19.510 +- 0.122
+  SN cal NGC5643  M_B=-18.970 +- 0.108
+  HF SN  z=0.034 M=-19.25 -> H0=139.8  (needs +1.41 mag)
+  HF SN  z=0.042 M=-19.25 -> H0=134.2  (needs +1.32 mag)
+  HF SN  z=0.055 M=-19.25 -> H0=130.3  (needs +1.26 mag)
+  HF SN  z=0.068 M=-19.25 -> H0=119.4  (needs +1.07 mag)
+  HF SN  z=0.082 M=-19.25 -> H0=113.9  (needs +0.97 mag)
+  HF SBF z=0.023 M=-3.05 -> H0=140.0  (needs +1.41 mag)
+  HF SBF z=0.031 M=-3.05 -> H0=146.0  (needs +1.51 mag)
+  HF SBF z=0.045 M=-3.05 -> H0=143.4  (needs +1.47 mag)
+== 2. system
+  clipped (baseline): [('sn_cal', 'NGC1309', None, None, -11.274844617241683)]
+  file-internal baseline: N=28 P=11 dof=17 rank=11 | explicit N=33 P=16 dof=17 | dH0=-1.0e-12 dchi2=2.1e-14 max|dq|=2.1e-14
+  hybrid (file ladder + R22 a_B): N=21 P=11 dof=10 rank=11 | explicit N=26 P=16 dof=10 | dH0=-3.1e-12 dchi2=3.6e-15 max|dq|=2.5e-13
+  file-internal, no clipping                       H0=113.33±2.94 (2.60%) M_SN=-19.490 M_SBF=-3.423 chi2=179.6/18
+  file-internal baseline (3.3σ clip)               H0=124.02±3.37 (2.72%) M_SN=-19.293 M_SBF=-3.237 chi2=52.4/17
+  hybrid: file ladder + R22 a_B, no clipping       H0=65.34±1.50 (2.30%) M_SN=-19.495 M_SBF=-3.077 chi2=142.4/11
+  hybrid: file ladder + R22 a_B (3.3σ clip)        H0=71.52±1.74 (2.43%) M_SN=-19.299 M_SBF=-2.915 chi2=16.2/10
+  hybrid + SN σ_int=0.083 (χ²/ν=1)                 H0=71.59±2.11 (2.95%) M_SN=-19.296 M_SBF=-2.959 chi2=10.0/10
+  file-internal baseline + SN σ_int=0.083          H0=126.12±4.47 (3.54%) M_SN=-19.282 M_SBF=-3.229 chi2=26.1/17
+== 3. host residuals
+  forward chi2=0.03/4, frac |res|<=0.1 = 1.00
+  NGC1365 Cep-TRGB = +0.010 +- 0.164, residuals {'Cepheid/N4258': np.float64(-0.0024209783880877467), 'TRGB/N4258': np.float64(-0.012420978388085757), 'Cepheid/LMC': np.float64(0.0075790216119138165)}
+  M101 Cep-TRGB = -0.010 +- 0.127, residuals {'Cepheid/N4258': np.float64(-0.005679054024284369), 'TRGB/N4258': np.float64(0.0043209459757136415)}
+== 4. overview figure
+== 5. HF audit
+  Baseline (rows, f(z) q0=−0.55, σv=250, NGC1309 SN clipped)     H0= 124.02± 3.37 M_SN=-19.293 chi2=  52.4/17
+  f(z) off (pure Hubble law)                                     H0= 118.83± 3.23 M_SN=-19.293 chi2=  63.8/17
+  q0 = −0.51                                                     H0= 123.88± 3.37 M_SN=-19.293 chi2=  52.7/17
+  Aggregated a_B intercept per sample (R22 Eq. 4–5)              H0= 124.02± 3.37 M_SN=-19.293 chi2=  22.7/11
+  HF SN only                                                     H0= 123.07± 3.37 M_SN=-19.299 chi2=  45.8/14
+  HF SBF only                                                    H0= 152.43±13.04 M_SN=-19.299 chi2=  16.4/12
+  HF z < 0.05                                                    H0= 134.92± 4.42 M_SN=-19.296 chi2=  19.5/14
+  HF z ≥ 0.05 (SN only)                                          H0= 118.58± 3.41 M_SN=-19.299 chi2=  27.9/12
+  Free HF slope (β fitted)                                       H0= 130.65± 3.76 M_SN=-19.297 chi2=  21.5/16
+  σv = 150 km/s                                                  H0= 124.68± 3.32 M_SN=-19.293 chi2=  58.8/17
+  σv = 350 km/s                                                  H0= 123.42± 3.45 M_SN=-19.293 chi2=  46.5/17
+  No outlier rejection (NGC1309 kept)                            H0= 113.33± 2.94 M_SN=-19.490 chi2= 179.6/18
+  NGC1365 also linked to Fornax                                  H0= 124.45± 3.36 M_SN=-19.288 chi2=  53.6/18
+  NGC4472 kept with free μ_Virgo                                 H0= 124.02± 3.37 M_SN=-19.293 chi2=  52.4/17
+  No SBF at all (Cepheid/TRGB→SN only)                           H0= 123.07± 3.37 M_SN=-19.299 chi2=  45.8/13
+  Cepheids only (TRGB rows dropped)                              H0= 121.88± 3.68 M_SN=-19.320 chi2=  33.6/9
+  N4258 anchor only                                              H0= 124.90± 3.68 M_SN=-19.278 chi2=  52.0/15
+  SN σ_int = 0.083                                               H0= 126.12± 4.47 M_SN=-19.282 chi2=  26.1/17
+  Birge rescaling (σ×1.76)                                       H0= 124.02± 5.92 M_SN=-19.293 chi2=  52.4/17
+  Hypothetical: all HF mags +1.151 mag (NOT adopted)             H0=  73.00± 1.98 M_SN=-19.293 chi2=  52.4/17
+  Hybrid: file ladder + R22 a_B                                  H0=  71.52± 1.74 M_SN=-19.299 chi2=  16.2/10
+  Hybrid + SN σ_int                                              H0=  71.59± 2.11 M_SN=-19.296 chi2=  10.0/10
+  Hybrid, no clipping                                            H0=  65.34± 1.50 M_SN=-19.495 chi2= 142.4/11
+  offsets for H0=73: all 1.151  SN 1.134  SBF 1.599 ; beta=0.231±0.042
+== 6. Hubble diagrams
+== 7. validation
+  MCMC baseline H0 123.94±3.31 (analytic 124.02±3.37); hybrid 71.49±1.74 (analytic 71.52±1.74)
+  mocks baseline: {'mean_H0': 73.51454127292861, 'median_H0': 73.47440181024942, 'bias_pct': -0.03482746904841516, 'pull_mean': -0.00604472922958798, 'pull_sd': 0.9897921710437115, 'cover68': 0.6854, 'chi2_mean': 16.988659476628328, 'dof': 17, 'sH0_rel_pred': 2.7187814266705503}
+  mocks hybrid: {'mean_H0': 73.54191005156208, 'median_H0': 73.54090900865864, 'bias_pct': 0.0556585151818334, 'pull_mean': 0.01137651569330302, 'pull_sd': 0.9957667353890788, 'cover68': 0.6786, 'chi2_mean': 9.977574925506302, 'dof': 10, 'sH0_rel_pred': 2.432526734973896}
+  inject none                                          H0=73.50 chi2=0.00
+  inject HF offset −0.30 mag (all HF)                  H0=84.39 chi2=0.00
+  inject HF offset −0.30 mag (SN HF only)              H0=83.97 chi2=2.69
+  inject One SN calibrator −1.0 mag (NGC1309-like)     H0=65.65 chi2=119.96
+  inject HF slope tilt 1.25 (SN HF)                    H0=72.62 chi2=30.99
+  inject Anchor N4258 shifted +0.10                    H0=70.95 chi2=0.94
+  budget baseline: total 0.0590 mag (2.72%), check sum -4.34e-19
+     stat_primary       0.00093  (26.7%)
+     stat_hf_sn         0.00076  (21.9%)
+     anchor             0.00063  (18.1%)
+     method_anchor      0.00062  (17.8%)
+     stat_sn_cal        0.00050  (14.4%)
+     stat_link          0.00001  (0.4%)
+     stat_sbf_cal       0.00001  (0.4%)
+     stat_hf_sbf        0.00001  (0.3%)
+  budget hybrid: total 0.0528 mag (2.43%), check sum 0.00e+00
+     stat_primary       0.00093  (33.3%)
+     anchor             0.00063  (22.6%)
+     method_anchor      0.00062  (22.3%)
+     stat_sn_cal        0.00053  (18.9%)
+     stat_ext           0.00008  (2.9%)
+     stat_sbf_cal       0.00000  (0.0%)
+     stat_link          0.00000  (0.0%)
+  budget hybrid_sigint: total 0.0640 mag (2.95%), check sum 8.67e-19
+     stat_sn_cal        0.00173  (42.4%)
+     stat_primary       0.00100  (24.5%)
+     anchor             0.00064  (15.7%)
+     method_anchor      0.00063  (15.4%)
+     stat_ext           0.00008  (2.0%)
+     stat_link          0.00000  (0.0%)
+     stat_sbf_cal       0.00000  (0.0%)
+== 8. Planck
+  This work: file-internal baseline             124.02±3.37  16.6σ
+  This work: hybrid (file ladder + R22 a_B)     71.52±1.74  2.3σ
+  This work: hybrid + SN σ_int                  71.59±2.11  1.9σ
+  H0DN baseline (quoted)                        73.50±0.81  6.4σ
+  R22 SH0ES (quoted)                            73.04±1.04  4.9σ
+  Breuval+24 w/ SMC (quoted)                    73.17±0.86  5.8σ
+done.

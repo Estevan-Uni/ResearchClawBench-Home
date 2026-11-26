@@ -1,0 +1,30 @@
+params: mu_NGC1309, mu_NGC1365, mu_NGC1448, mu_NGC1559, mu_M101, mu_NGC1316, mu_NGC5643, mu_Fornax, M_SN, M_SBF, 5logH0
+ 0 primary  NGC1309  Cepheid  N4258  y=  32.5000 sig=0.1000  model= +1*mu_NGC1309
+ 1 primary  NGC1365  Cepheid  N4258  y=  31.3300 sig=0.0800  model= +1*mu_NGC1365
+ 2 primary  NGC1448  Cepheid  N4258  y=  31.3100 sig=0.0900  model= +1*mu_NGC1448
+ 3 primary  NGC1559  Cepheid  N4258  y=  31.4200 sig=0.0700  model= +1*mu_NGC1559
+ 4 primary  M101     Cepheid  N4258  y=  29.1200 sig=0.0600  model= +1*mu_M101
+ 5 primary  NGC1316  TRGB     N4258  y=  31.3900 sig=0.1000  model= +1*mu_NGC1316
+ 6 primary  NGC1365  TRGB     N4258  y=  31.3200 sig=0.1200  model= +1*mu_NGC1365
+ 7 primary  NGC5643  TRGB     N4258  y=  30.5300 sig=0.0900  model= +1*mu_NGC5643
+ 8 primary  M101     TRGB     N4258  y=  29.1300 sig=0.0800  model= +1*mu_M101
+ 9 primary  NGC1309  Cepheid  LMC    y=  32.5100 sig=0.1100  model= +1*mu_NGC1309
+10 primary  NGC1365  Cepheid  LMC    y=  31.3400 sig=0.0900  model= +1*mu_NGC1365
+11 sn_cal   NGC1365                  y=  11.9300 sig=0.0600  model= +1*mu_NGC1365 +1*M_SN
+12 sn_cal   NGC1448                  y=  11.9000 sig=0.0500  model= +1*mu_NGC1448 +1*M_SN
+13 sn_cal   NGC1559                  y=  12.2200 sig=0.0500  model= +1*mu_NGC1559 +1*M_SN
+14 sn_cal   M101                     y=   9.8500 sig=0.0400  model= +1*mu_M101 +1*M_SN
+15 sn_cal   NGC1316                  y=  11.8800 sig=0.0700  model= +1*mu_NGC1316 +1*M_SN
+16 sn_cal   NGC5643                  y=  11.5600 sig=0.0600  model= +1*mu_NGC5643 +1*M_SN
+17 sbf_cal  NGC1399                  y=  28.3500 sig=0.1414  model= +1*mu_Fornax +1*M_SBF
+18 sbf_cal  NGC1404                  y=  28.3300 sig=0.1414  model= +1*mu_Fornax +1*M_SBF
+19 link     NGC1316                  y=   0.0000 sig=0.1000  model= +1*mu_NGC1316 -1*mu_Fornax
+20 hf_sn                             y= -29.9773 sig=0.0802  model= +1*M_SN -1*5logH0
+21 hf_sn                             y= -29.8889 sig=0.0660  model= +1*M_SN -1*5logH0
+22 hf_sn                             y= -29.8248 sig=0.0599  model= +1*M_SN -1*5logH0
+23 hf_sn                             y= -29.6356 sig=0.0566  model= +1*M_SN -1*5logH0
+24 hf_sn                             y= -29.5332 sig=0.0639  model= +1*M_SN -1*5logH0
+25 hf_sbf                            y= -13.7808 sig=0.1694  model= +1*M_SBF -1*5logH0
+26 hf_sbf                            y= -13.8719 sig=0.1610  model= +1*M_SBF -1*5logH0
+27 hf_sbf                            y= -13.8334 sig=0.1650  model= +1*M_SBF -1*5logH0
+clipped: [('sn_cal', 'NGC1309', None, None, -11.274844617241683)]

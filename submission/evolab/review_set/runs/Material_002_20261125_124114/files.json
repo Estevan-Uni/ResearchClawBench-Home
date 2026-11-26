@@ -1,0 +1,659 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "adsorption.py",
+    "path": "code/adsorption.py",
+    "type": "file",
+    "size": 3740,
+    "mtime": 1795611844.6512096,
+    "exported": true
+  },
+  {
+    "name": "adsorption_perturb.py",
+    "path": "code/adsorption_perturb.py",
+    "type": "file",
+    "size": 1450,
+    "mtime": 1795616202.0738947,
+    "exported": true
+  },
+  {
+    "name": "analyze_adsorption.py",
+    "path": "code/analyze_adsorption.py",
+    "type": "file",
+    "size": 6718,
+    "mtime": 1795616723.9576697,
+    "exported": true
+  },
+  {
+    "name": "analyze_barriers.py",
+    "path": "code/analyze_barriers.py",
+    "type": "file",
+    "size": 6537,
+    "mtime": 1795616784.0612504,
+    "exported": true
+  },
+  {
+    "name": "analyze_ft.py",
+    "path": "code/analyze_ft.py",
+    "type": "file",
+    "size": 3955,
+    "mtime": 1795616773.053317,
+    "exported": true
+  },
+  {
+    "name": "analyze_water.py",
+    "path": "code/analyze_water.py",
+    "type": "file",
+    "size": 7296,
+    "mtime": 1795622387.0779986,
+    "exported": true
+  },
+  {
+    "name": "bs_uks_check.py",
+    "path": "code/bs_uks_check.py",
+    "type": "file",
+    "size": 1828,
+    "mtime": 1795617667.3005898,
+    "exported": true
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 511,
+    "mtime": 1795610911.5294077,
+    "exported": true
+  },
+  {
+    "name": "fig_overview.py",
+    "path": "code/fig_overview.py",
+    "type": "file",
+    "size": 1549,
+    "mtime": 1795616898.9127984,
+    "exported": true
+  },
+  {
+    "name": "fig_water_compare.py",
+    "path": "code/fig_water_compare.py",
+    "type": "file",
+    "size": 784,
+    "mtime": 1795623382.9722652,
+    "exported": true
+  },
+  {
+    "name": "ft_data.py",
+    "path": "code/ft_data.py",
+    "type": "file",
+    "size": 1343,
+    "mtime": 1795612991.315409,
+    "exported": true
+  },
+  {
+    "name": "ft_train.py",
+    "path": "code/ft_train.py",
+    "type": "file",
+    "size": 4359,
+    "mtime": 1795613068.6906428,
+    "exported": true
+  },
+  {
+    "name": "neb_retry.py",
+    "path": "code/neb_retry.py",
+    "type": "file",
+    "size": 2071,
+    "mtime": 1795615464.2543683,
+    "exported": true
+  },
+  {
+    "name": "pyscf_calc.py",
+    "path": "code/pyscf_calc.py",
+    "type": "file",
+    "size": 1270,
+    "mtime": 1795612079.109978,
+    "exported": true
+  },
+  {
+    "name": "range_dl.py",
+    "path": "code/range_dl.py",
+    "type": "file",
+    "size": 970,
+    "mtime": 1795610488.9475408,
+    "exported": true
+  },
+  {
+    "name": "reactions_mace.py",
+    "path": "code/reactions_mace.py",
+    "type": "file",
+    "size": 9444,
+    "mtime": 1795611936.8560567,
+    "exported": true
+  },
+  {
+    "name": "reactions_pbe.py",
+    "path": "code/reactions_pbe.py",
+    "type": "file",
+    "size": 1276,
+    "mtime": 1795615532.9317677,
+    "exported": true
+  },
+  {
+    "name": "water_md.py",
+    "path": "code/water_md.py",
+    "type": "file",
+    "size": 2111,
+    "mtime": 1795610911.5294077,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "adsorption.json",
+    "path": "outputs/adsorption.json",
+    "type": "file",
+    "size": 9199,
+    "mtime": 1795612035.2020845,
+    "exported": true
+  },
+  {
+    "name": "adsorption_analysis.json",
+    "path": "outputs/adsorption_analysis.json",
+    "type": "file",
+    "size": 10922,
+    "mtime": 1795616731.0096133,
+    "exported": true
+  },
+  {
+    "name": "adsorption_perturb.json",
+    "path": "outputs/adsorption_perturb.json",
+    "type": "file",
+    "size": 2181,
+    "mtime": 1795616694.2579298,
+    "exported": true
+  },
+  {
+    "name": "barriers_as_specified.json",
+    "path": "outputs/barriers_as_specified.json",
+    "type": "file",
+    "size": 1132,
+    "mtime": 1795611945.8565612,
+    "exported": true
+  },
+  {
+    "name": "barriers_neb.json",
+    "path": "outputs/barriers_neb.json",
+    "type": "file",
+    "size": 4671,
+    "mtime": 1795615428.1456363,
+    "exported": true
+  },
+  {
+    "name": "barriers_pbe_ft.json",
+    "path": "outputs/barriers_pbe_ft.json",
+    "type": "file",
+    "size": 565,
+    "mtime": 1795617427.2385824,
+    "exported": true
+  },
+  {
+    "name": "barriers_pbe_rxn1_11.json",
+    "path": "outputs/barriers_pbe_rxn1_11.json",
+    "type": "file",
+    "size": 1114,
+    "mtime": 1795616348.6204212,
+    "exported": true
+  },
+  {
+    "name": "barriers_pbe_rxn20.json",
+    "path": "outputs/barriers_pbe_rxn20.json",
+    "type": "file",
+    "size": 612,
+    "mtime": 1795616924.1087532,
+    "exported": true
+  },
+  {
+    "name": "barriers_summary.json",
+    "path": "outputs/barriers_summary.json",
+    "type": "file",
+    "size": 3042,
+    "mtime": 1795618259.1748626,
+    "exported": true
+  },
+  {
+    "name": "bs_uks_check.json",
+    "path": "outputs/bs_uks_check.json",
+    "type": "file",
+    "size": 2128,
+    "mtime": 1795618225.2544734,
+    "exported": true
+  },
+  {
+    "name": "ft_ft_N20.json",
+    "path": "outputs/ft_ft_N20.json",
+    "type": "file",
+    "size": 8172,
+    "mtime": 1795615345.5079727,
+    "exported": true
+  },
+  {
+    "name": "ft_ft_N5.json",
+    "path": "outputs/ft_ft_N5.json",
+    "type": "file",
+    "size": 8195,
+    "mtime": 1795614790.5894663,
+    "exported": true
+  },
+  {
+    "name": "ft_ft_N54.json",
+    "path": "outputs/ft_ft_N54.json",
+    "type": "file",
+    "size": 8122,
+    "mtime": 1795615913.759659,
+    "exported": true
+  },
+  {
+    "name": "ft_scratch_N54.json",
+    "path": "outputs/ft_scratch_N54.json",
+    "type": "file",
+    "size": 7606,
+    "mtime": 1795616650.4143836,
+    "exported": true
+  },
+  {
+    "name": "ft_summary.json",
+    "path": "outputs/ft_summary.json",
+    "type": "file",
+    "size": 3671,
+    "mtime": 1795618271.9550097,
+    "exported": true
+  },
+  {
+    "name": "logs",
+    "path": "outputs/logs",
+    "type": "directory"
+  },
+  {
+    "name": "ads_perturb.log",
+    "path": "outputs/logs/ads_perturb.log",
+    "type": "file",
+    "size": 3587,
+    "mtime": 1795616694.2579298,
+    "exported": true
+  },
+  {
+    "name": "adsorption.log",
+    "path": "outputs/logs/adsorption.log",
+    "type": "file",
+    "size": 3709,
+    "mtime": 1795612035.2020845,
+    "exported": true
+  },
+  {
+    "name": "bs_uks.log",
+    "path": "outputs/logs/bs_uks.log",
+    "type": "file",
+    "size": 219,
+    "mtime": 1795618225.2624736,
+    "exported": true
+  },
+  {
+    "name": "dl_model.log",
+    "path": "outputs/logs/dl_model.log",
+    "type": "file",
+    "size": 98,
+    "mtime": 1795610629.4690766,
+    "exported": true
+  },
+  {
+    "name": "dl_pyscf.log",
+    "path": "outputs/logs/dl_pyscf.log",
+    "type": "file",
+    "size": 252,
+    "mtime": 1795611734.7733057,
+    "exported": true
+  },
+  {
+    "name": "ft_data.log",
+    "path": "outputs/logs/ft_data.log",
+    "type": "file",
+    "size": 4602,
+    "mtime": 1795613760.2821908,
+    "exported": true
+  },
+  {
+    "name": "ft_train.log",
+    "path": "outputs/logs/ft_train.log",
+    "type": "file",
+    "size": 11408,
+    "mtime": 1795616654.0263429,
+    "exported": true
+  },
+  {
+    "name": "install2.log",
+    "path": "outputs/logs/install2.log",
+    "type": "file",
+    "size": 12214,
+    "mtime": 1795611746.5152018,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn1.log",
+    "path": "outputs/logs/neb_rxn1.log",
+    "type": "file",
+    "size": 3480,
+    "mtime": 1795612092.2258625,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn11.log",
+    "path": "outputs/logs/neb_rxn11.log",
+    "type": "file",
+    "size": 3428,
+    "mtime": 1795612179.4259856,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn1_ft.log",
+    "path": "outputs/logs/neb_rxn1_ft.log",
+    "type": "file",
+    "size": 3792,
+    "mtime": 1795616438.0540073,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn20.log",
+    "path": "outputs/logs/neb_rxn20.log",
+    "type": "file",
+    "size": 82033,
+    "mtime": 1795615428.1256359,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn20_v2.log",
+    "path": "outputs/logs/neb_rxn20_v2.log",
+    "type": "file",
+    "size": 8576,
+    "mtime": 1795616088.1513226,
+    "exported": true
+  },
+  {
+    "name": "pbe_ft.log",
+    "path": "outputs/logs/pbe_ft.log",
+    "type": "file",
+    "size": 517,
+    "mtime": 1795617427.2425823,
+    "exported": true
+  },
+  {
+    "name": "pbe_rxn1_11.log",
+    "path": "outputs/logs/pbe_rxn1_11.log",
+    "type": "file",
+    "size": 1011,
+    "mtime": 1795616348.6204212,
+    "exported": true
+  },
+  {
+    "name": "pbe_rxn20.log",
+    "path": "outputs/logs/pbe_rxn20.log",
+    "type": "file",
+    "size": 558,
+    "mtime": 1795616924.1087532,
+    "exported": true
+  },
+  {
+    "name": "pip_pyscf.log",
+    "path": "outputs/logs/pip_pyscf.log",
+    "type": "file",
+    "size": 1126,
+    "mtime": 1795611768.9686203,
+    "exported": true
+  },
+  {
+    "name": "pip_torch.log",
+    "path": "outputs/logs/pip_torch.log",
+    "type": "file",
+    "size": 6215,
+    "mtime": 1795611089.3505805,
+    "exported": true
+  },
+  {
+    "name": "reactions.log",
+    "path": "outputs/logs/reactions.log",
+    "type": "file",
+    "size": 19913,
+    "mtime": 1795615428.1496363,
+    "exported": true
+  },
+  {
+    "name": "water_L12.log",
+    "path": "outputs/logs/water_L12.log",
+    "type": "file",
+    "size": 2393,
+    "mtime": 1795621732.639683,
+    "exported": true
+  },
+  {
+    "name": "water_L9865.log",
+    "path": "outputs/logs/water_L9865.log",
+    "type": "file",
+    "size": 2263,
+    "mtime": 1795616840.9329736,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn1_ft.json",
+    "path": "outputs/neb_rxn1_ft.json",
+    "type": "file",
+    "size": 780,
+    "mtime": 1795616438.070007,
+    "exported": true
+  },
+  {
+    "name": "neb_rxn20_v2.json",
+    "path": "outputs/neb_rxn20_v2.json",
+    "type": "file",
+    "size": 1634,
+    "mtime": 1795616088.171323,
+    "exported": true
+  },
+  {
+    "name": "water_L12_analysis.json",
+    "path": "outputs/water_L12_analysis.json",
+    "type": "file",
+    "size": 1530,
+    "mtime": 1795623042.3461685,
+    "exported": true
+  },
+  {
+    "name": "water_L12_log.csv",
+    "path": "outputs/water_L12_log.csv",
+    "type": "file",
+    "size": 86393,
+    "mtime": 1795621732.6356828,
+    "exported": true
+  },
+  {
+    "name": "water_L12_meta.json",
+    "path": "outputs/water_L12_meta.json",
+    "type": "file",
+    "size": 64,
+    "mtime": 1795611778.5010464,
+    "exported": true
+  },
+  {
+    "name": "water_L9865_analysis.json",
+    "path": "outputs/water_L9865_analysis.json",
+    "type": "file",
+    "size": 1029,
+    "mtime": 1795623025.1459649,
+    "exported": true
+  },
+  {
+    "name": "water_L9865_log.csv",
+    "path": "outputs/water_L9865_log.csv",
+    "type": "file",
+    "size": 26231,
+    "mtime": 1795623006.669746,
+    "exported": true
+  },
+  {
+    "name": "water_L9865_meta.json",
+    "path": "outputs/water_L9865_meta.json",
+    "type": "file",
+    "size": 65,
+    "mtime": 1795616840.9329736,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "adsorption_scaling.png",
+    "path": "report/images/adsorption_scaling.png",
+    "type": "file",
+    "size": 162855,
+    "mtime": 1795616732.0216053,
+    "exported": true
+  },
+  {
+    "name": "barriers_as_specified.png",
+    "path": "report/images/barriers_as_specified.png",
+    "type": "file",
+    "size": 97438,
+    "mtime": 1795618260.2468748,
+    "exported": true
+  },
+  {
+    "name": "barriers_neb_profiles.png",
+    "path": "report/images/barriers_neb_profiles.png",
+    "type": "file",
+    "size": 170422,
+    "mtime": 1795618262.0588958,
+    "exported": true
+  },
+  {
+    "name": "barriers_summary.png",
+    "path": "report/images/barriers_summary.png",
+    "type": "file",
+    "size": 44651,
+    "mtime": 1795618262.8229046,
+    "exported": true
+  },
+  {
+    "name": "finetune_learning.png",
+    "path": "report/images/finetune_learning.png",
+    "type": "file",
+    "size": 161174,
+    "mtime": 1795618273.5110278,
+    "exported": true
+  },
+  {
+    "name": "finetune_loss.png",
+    "path": "report/images/finetune_loss.png",
+    "type": "file",
+    "size": 86084,
+    "mtime": 1795618274.3830378,
+    "exported": true
+  },
+  {
+    "name": "lattice_constants.png",
+    "path": "report/images/lattice_constants.png",
+    "type": "file",
+    "size": 35294,
+    "mtime": 1795616732.7136,
+    "exported": true
+  },
+  {
+    "name": "overview_structures.png",
+    "path": "report/images/overview_structures.png",
+    "type": "file",
+    "size": 228522,
+    "mtime": 1795616906.480783,
+    "exported": true
+  },
+  {
+    "name": "water_blocks_L12.png",
+    "path": "report/images/water_blocks_L12.png",
+    "type": "file",
+    "size": 96623,
+    "mtime": 1795623045.7942092,
+    "exported": true
+  },
+  {
+    "name": "water_blocks_L9865.png",
+    "path": "report/images/water_blocks_L9865.png",
+    "type": "file",
+    "size": 48207,
+    "mtime": 1795623028.0059988,
+    "exported": true
+  },
+  {
+    "name": "water_density_compare.png",
+    "path": "report/images/water_density_compare.png",
+    "type": "file",
+    "size": 75731,
+    "mtime": 1795623390.304421,
+    "exported": true
+  },
+  {
+    "name": "water_rdf_L12.png",
+    "path": "report/images/water_rdf_L12.png",
+    "type": "file",
+    "size": 92979,
+    "mtime": 1795623043.6701841,
+    "exported": true
+  },
+  {
+    "name": "water_rdf_L9865.png",
+    "path": "report/images/water_rdf_L9865.png",
+    "type": "file",
+    "size": 91750,
+    "mtime": 1795623026.4859807,
+    "exported": true
+  },
+  {
+    "name": "water_thermo_L12.png",
+    "path": "report/images/water_thermo_L12.png",
+    "type": "file",
+    "size": 148271,
+    "mtime": 1795623044.9141989,
+    "exported": true
+  },
+  {
+    "name": "water_thermo_L9865.png",
+    "path": "report/images/water_thermo_L9865.png",
+    "type": "file",
+    "size": 140020,
+    "mtime": 1795623027.4139917,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 36726,
+    "mtime": 1795623428.6976848,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5113,
+    "mtime": 1795610474.523383,
+    "exported": true
+  }
+]

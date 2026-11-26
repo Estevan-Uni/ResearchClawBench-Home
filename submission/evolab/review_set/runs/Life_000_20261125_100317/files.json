@@ -1,0 +1,622 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "00_extract_pdfs.py",
+    "path": "code/00_extract_pdfs.py",
+    "type": "file",
+    "size": 297,
+    "mtime": 1795601168.806802,
+    "exported": true
+  },
+  {
+    "name": "01_inspect_data.py",
+    "path": "code/01_inspect_data.py",
+    "type": "file",
+    "size": 253,
+    "mtime": 1795601211.3631532,
+    "exported": true
+  },
+  {
+    "name": "02_load_clean.py",
+    "path": "code/02_load_clean.py",
+    "type": "file",
+    "size": 8757,
+    "mtime": 1795601304.4799407,
+    "exported": true
+  },
+  {
+    "name": "03_workflow_schematic.py",
+    "path": "code/03_workflow_schematic.py",
+    "type": "file",
+    "size": 2227,
+    "mtime": 1795601368.0444915,
+    "exported": true
+  },
+  {
+    "name": "04_initial_screen.py",
+    "path": "code/04_initial_screen.py",
+    "type": "file",
+    "size": 10150,
+    "mtime": 1795601467.9493754,
+    "exported": true
+  },
+  {
+    "name": "05_mfp_mapping.py",
+    "path": "code/05_mfp_mapping.py",
+    "type": "file",
+    "size": 4914,
+    "mtime": 1795601556.8181775,
+    "exported": true
+  },
+  {
+    "name": "06_copolymer_mc.py",
+    "path": "code/06_copolymer_mc.py",
+    "type": "file",
+    "size": 10752,
+    "mtime": 1795602002.7663555,
+    "exported": true
+  },
+  {
+    "name": "07_ml_models.py",
+    "path": "code/07_ml_models.py",
+    "type": "file",
+    "size": 10589,
+    "mtime": 1795603348.0839753,
+    "exported": true
+  },
+  {
+    "name": "08_campaign.py",
+    "path": "code/08_campaign.py",
+    "type": "file",
+    "size": 11304,
+    "mtime": 1795603321.495985,
+    "exported": true
+  },
+  {
+    "name": "09_steel_substrate.py",
+    "path": "code/09_steel_substrate.py",
+    "type": "file",
+    "size": 1336,
+    "mtime": 1795603700.6804733,
+    "exported": true
+  },
+  {
+    "name": "style.py",
+    "path": "code/style.py",
+    "type": "file",
+    "size": 824,
+    "mtime": 1795601339.9002464,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "all_measured_formulations.csv",
+    "path": "outputs/all_measured_formulations.csv",
+    "type": "file",
+    "size": 44627,
+    "mtime": 1795603932.4852343,
+    "exported": true
+  },
+  {
+    "name": "atac_bins.csv",
+    "path": "outputs/atac_bins.csv",
+    "type": "file",
+    "size": 267,
+    "mtime": 1795603940.817266,
+    "exported": true
+  },
+  {
+    "name": "campaign_tests.csv",
+    "path": "outputs/campaign_tests.csv",
+    "type": "file",
+    "size": 746,
+    "mtime": 1795604511.9718597,
+    "exported": true
+  },
+  {
+    "name": "convergence_top10.csv",
+    "path": "outputs/convergence_top10.csv",
+    "type": "file",
+    "size": 625,
+    "mtime": 1795604514.03587,
+    "exported": true
+  },
+  {
+    "name": "copolymer_mc_log.txt",
+    "path": "outputs/copolymer_mc_log.txt",
+    "type": "file",
+    "size": 10914,
+    "mtime": 1795602110.4633899,
+    "exported": true
+  },
+  {
+    "name": "copolymer_mc_reactivity_ratios_used.csv",
+    "path": "outputs/copolymer_mc_reactivity_ratios_used.csv",
+    "type": "file",
+    "size": 1627,
+    "mtime": 1795604046.4576871,
+    "exported": true
+  },
+  {
+    "name": "copolymer_mc_summary.csv",
+    "path": "outputs/copolymer_mc_summary.csv",
+    "type": "file",
+    "size": 9483,
+    "mtime": 1795604046.421687,
+    "exported": true
+  },
+  {
+    "name": "data_log.json",
+    "path": "outputs/data_log.json",
+    "type": "file",
+    "size": 1480,
+    "mtime": 1795603932.5092344,
+    "exported": true
+  },
+  {
+    "name": "feature_importance.csv",
+    "path": "outputs/feature_importance.csv",
+    "type": "file",
+    "size": 434,
+    "mtime": 1795604499.559797,
+    "exported": true
+  },
+  {
+    "name": "grouped_shapley.csv",
+    "path": "outputs/grouped_shapley.csv",
+    "type": "file",
+    "size": 368,
+    "mtime": 1795604507.0238347,
+    "exported": true
+  },
+  {
+    "name": "initial_180.csv",
+    "path": "outputs/initial_180.csv",
+    "type": "file",
+    "size": 42662,
+    "mtime": 1795603932.149233,
+    "exported": true
+  },
+  {
+    "name": "initial_184.csv",
+    "path": "outputs/initial_184.csv",
+    "type": "file",
+    "size": 43253,
+    "mtime": 1795603932.141233,
+    "exported": true
+  },
+  {
+    "name": "key_formulations.csv",
+    "path": "outputs/key_formulations.csv",
+    "type": "file",
+    "size": 685,
+    "mtime": 1795603932.5012343,
+    "exported": true
+  },
+  {
+    "name": "mechanics_steel_stats.csv",
+    "path": "outputs/mechanics_steel_stats.csv",
+    "type": "file",
+    "size": 723,
+    "mtime": 1795603942.7172732,
+    "exported": true
+  },
+  {
+    "name": "mfp_class_composition.csv",
+    "path": "outputs/mfp_class_composition.csv",
+    "type": "file",
+    "size": 1000,
+    "mtime": 1795603947.2412906,
+    "exported": true
+  },
+  {
+    "name": "mfp_class_runs.csv",
+    "path": "outputs/mfp_class_runs.csv",
+    "type": "file",
+    "size": 18520,
+    "mtime": 1795603947.2492905,
+    "exported": true
+  },
+  {
+    "name": "mfp_vs_hydrogel_composition_table.csv",
+    "path": "outputs/mfp_vs_hydrogel_composition_table.csv",
+    "type": "file",
+    "size": 1117,
+    "mtime": 1795603948.2572944,
+    "exported": true
+  },
+  {
+    "name": "ml_cv_benchmark.csv",
+    "path": "outputs/ml_cv_benchmark.csv",
+    "type": "file",
+    "size": 1075,
+    "mtime": 1795604393.4112701,
+    "exported": true
+  },
+  {
+    "name": "ml_designs_all_lists.csv",
+    "path": "outputs/ml_designs_all_lists.csv",
+    "type": "file",
+    "size": 41861,
+    "mtime": 1795603932.2892337,
+    "exported": true
+  },
+  {
+    "name": "ml_models_log.txt",
+    "path": "outputs/ml_models_log.txt",
+    "type": "file",
+    "size": 4541,
+    "mtime": 1795603676.5364096,
+    "exported": true
+  },
+  {
+    "name": "ml_prospective_validation.csv",
+    "path": "outputs/ml_prospective_validation.csv",
+    "type": "file",
+    "size": 1894,
+    "mtime": 1795604429.3074467,
+    "exported": true
+  },
+  {
+    "name": "ml_unique_formulations.csv",
+    "path": "outputs/ml_unique_formulations.csv",
+    "type": "file",
+    "size": 33165,
+    "mtime": 1795603932.4652343,
+    "exported": true
+  },
+  {
+    "name": "paper_000.txt",
+    "path": "outputs/paper_000.txt",
+    "type": "file",
+    "size": 75881,
+    "mtime": 1795603926.6092122,
+    "exported": true
+  },
+  {
+    "name": "paper_001.txt",
+    "path": "outputs/paper_001.txt",
+    "type": "file",
+    "size": 24426,
+    "mtime": 1795603927.1412141,
+    "exported": true
+  },
+  {
+    "name": "paper_002.txt",
+    "path": "outputs/paper_002.txt",
+    "type": "file",
+    "size": 120953,
+    "mtime": 1795603930.7772279,
+    "exported": true
+  },
+  {
+    "name": "pca_loadings_DM.csv",
+    "path": "outputs/pca_loadings_DM.csv",
+    "type": "file",
+    "size": 323,
+    "mtime": 1795603948.2572944,
+    "exported": true
+  },
+  {
+    "name": "phase_separation_stats.csv",
+    "path": "outputs/phase_separation_stats.csv",
+    "type": "file",
+    "size": 471,
+    "mtime": 1795603940.821266,
+    "exported": true
+  },
+  {
+    "name": "pilot_P_series.csv",
+    "path": "outputs/pilot_P_series.csv",
+    "type": "file",
+    "size": 1754,
+    "mtime": 1795603932.129233,
+    "exported": true
+  },
+  {
+    "name": "pip_umap_shap.log",
+    "path": "outputs/pip_umap_shap.log",
+    "type": "file",
+    "size": 5,
+    "mtime": 1795601468.8253832,
+    "exported": true
+  },
+  {
+    "name": "replicate_matches.csv",
+    "path": "outputs/replicate_matches.csv",
+    "type": "file",
+    "size": 1077,
+    "mtime": 1795604514.0638702,
+    "exported": true
+  },
+  {
+    "name": "rerun_status.txt",
+    "path": "outputs/rerun_status.txt",
+    "type": "file",
+    "size": 180,
+    "mtime": 1795604519.5038977,
+    "exported": true
+  },
+  {
+    "name": "run_00_extract_pdfs.log",
+    "path": "outputs/run_00_extract_pdfs.log",
+    "type": "file",
+    "size": 108,
+    "mtime": 1795603930.7772279,
+    "exported": true
+  },
+  {
+    "name": "run_02_load_clean.log",
+    "path": "outputs/run_02_load_clean.log",
+    "type": "file",
+    "size": 4677,
+    "mtime": 1795603932.5132344,
+    "exported": true
+  },
+  {
+    "name": "run_03_workflow_schematic.log",
+    "path": "outputs/run_03_workflow_schematic.log",
+    "type": "file",
+    "size": 21,
+    "mtime": 1795603934.7012427,
+    "exported": true
+  },
+  {
+    "name": "run_04_initial_screen.log",
+    "path": "outputs/run_04_initial_screen.log",
+    "type": "file",
+    "size": 2374,
+    "mtime": 1795603942.7212732,
+    "exported": true
+  },
+  {
+    "name": "run_05_mfp_mapping.log",
+    "path": "outputs/run_05_mfp_mapping.log",
+    "type": "file",
+    "size": 644,
+    "mtime": 1795603948.2572944,
+    "exported": true
+  },
+  {
+    "name": "run_06_copolymer_mc.log",
+    "path": "outputs/run_06_copolymer_mc.log",
+    "type": "file",
+    "size": 10914,
+    "mtime": 1795604052.4577122,
+    "exported": true
+  },
+  {
+    "name": "run_07_ml_models.log",
+    "path": "outputs/run_07_ml_models.log",
+    "type": "file",
+    "size": 4541,
+    "mtime": 1795604507.0278347,
+    "exported": true
+  },
+  {
+    "name": "run_08_campaign.log",
+    "path": "outputs/run_08_campaign.log",
+    "type": "file",
+    "size": 5346,
+    "mtime": 1795604515.2958765,
+    "exported": true
+  },
+  {
+    "name": "run_09_steel_substrate.log",
+    "path": "outputs/run_09_steel_substrate.log",
+    "type": "file",
+    "size": 971,
+    "mtime": 1795604518.783894,
+    "exported": true
+  },
+  {
+    "name": "shapley_values_rf_logFa.csv",
+    "path": "outputs/shapley_values_rf_logFa.csv",
+    "type": "file",
+    "size": 42662,
+    "mtime": 1795604471.4036558,
+    "exported": true
+  },
+  {
+    "name": "spearman_initial180.csv",
+    "path": "outputs/spearman_initial180.csv",
+    "type": "file",
+    "size": 681,
+    "mtime": 1795603939.3612604,
+    "exported": true
+  },
+  {
+    "name": "steel_by_ATAC.csv",
+    "path": "outputs/steel_by_ATAC.csv",
+    "type": "file",
+    "size": 167,
+    "mtime": 1795604518.771894,
+    "exported": true
+  },
+  {
+    "name": "steel_substrate_specificity.csv",
+    "path": "outputs/steel_substrate_specificity.csv",
+    "type": "file",
+    "size": 737,
+    "mtime": 1795604518.7478938,
+    "exported": true
+  },
+  {
+    "name": "steel_vs_glass.csv",
+    "path": "outputs/steel_vs_glass.csv",
+    "type": "file",
+    "size": 1728,
+    "mtime": 1795603942.7172732,
+    "exported": true
+  },
+  {
+    "name": "strategy_stats.csv",
+    "path": "outputs/strategy_stats.csv",
+    "type": "file",
+    "size": 2205,
+    "mtime": 1795604511.8998592,
+    "exported": true
+  },
+  {
+    "name": "tsne_embedding.csv",
+    "path": "outputs/tsne_embedding.csv",
+    "type": "file",
+    "size": 15635,
+    "mtime": 1795604505.879829,
+    "exported": true
+  },
+  {
+    "name": "verification_snapshots.csv",
+    "path": "outputs/verification_snapshots.csv",
+    "type": "file",
+    "size": 281,
+    "mtime": 1795603932.117233,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig01_workflow.png",
+    "path": "report/images/fig01_workflow.png",
+    "type": "file",
+    "size": 189821,
+    "mtime": 1795603934.6972427,
+    "exported": true
+  },
+  {
+    "name": "fig02_initial_screen_bar.png",
+    "path": "report/images/fig02_initial_screen_bar.png",
+    "type": "file",
+    "size": 114457,
+    "mtime": 1795603939.3172603,
+    "exported": true
+  },
+  {
+    "name": "fig03_composition_effects.png",
+    "path": "report/images/fig03_composition_effects.png",
+    "type": "file",
+    "size": 208835,
+    "mtime": 1795603940.7812657,
+    "exported": true
+  },
+  {
+    "name": "fig04_phase_separation_swelling.png",
+    "path": "report/images/fig04_phase_separation_swelling.png",
+    "type": "file",
+    "size": 235716,
+    "mtime": 1795603941.8412697,
+    "exported": true
+  },
+  {
+    "name": "fig05_mechanics_steel.png",
+    "path": "report/images/fig05_mechanics_steel.png",
+    "type": "file",
+    "size": 198763,
+    "mtime": 1795603942.709273,
+    "exported": true
+  },
+  {
+    "name": "fig06_mfp_mapping_pca.png",
+    "path": "report/images/fig06_mfp_mapping_pca.png",
+    "type": "file",
+    "size": 233026,
+    "mtime": 1795603948.2532945,
+    "exported": true
+  },
+  {
+    "name": "fig07_copolymer_drift.png",
+    "path": "report/images/fig07_copolymer_drift.png",
+    "type": "file",
+    "size": 428946,
+    "mtime": 1795604048.9896977,
+    "exported": true
+  },
+  {
+    "name": "fig08_copolymer_sequence_stats.png",
+    "path": "report/images/fig08_copolymer_sequence_stats.png",
+    "type": "file",
+    "size": 274782,
+    "mtime": 1795604052.441712,
+    "exported": true
+  },
+  {
+    "name": "fig09_prospective_validation.png",
+    "path": "report/images/fig09_prospective_validation.png",
+    "type": "file",
+    "size": 247313,
+    "mtime": 1795604430.9154546,
+    "exported": true
+  },
+  {
+    "name": "fig10_shapley_importance.png",
+    "path": "report/images/fig10_shapley_importance.png",
+    "type": "file",
+    "size": 214512,
+    "mtime": 1795604500.755803,
+    "exported": true
+  },
+  {
+    "name": "fig11_embedding.png",
+    "path": "report/images/fig11_embedding.png",
+    "type": "file",
+    "size": 335569,
+    "mtime": 1795604507.0038345,
+    "exported": true
+  },
+  {
+    "name": "fig12_strategy_comparison.png",
+    "path": "report/images/fig12_strategy_comparison.png",
+    "type": "file",
+    "size": 213729,
+    "mtime": 1795604513.0478652,
+    "exported": true
+  },
+  {
+    "name": "fig13_convergence_ternary.png",
+    "path": "report/images/fig13_convergence_ternary.png",
+    "type": "file",
+    "size": 248157,
+    "mtime": 1795604513.9718697,
+    "exported": true
+  },
+  {
+    "name": "fig14_literature_replicates.png",
+    "path": "report/images/fig14_literature_replicates.png",
+    "type": "file",
+    "size": 207983,
+    "mtime": 1795604515.2958765,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 42099,
+    "mtime": 1795603916.2971737,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 6009,
+    "mtime": 1795600997.7014573,
+    "exported": true
+  }
+]

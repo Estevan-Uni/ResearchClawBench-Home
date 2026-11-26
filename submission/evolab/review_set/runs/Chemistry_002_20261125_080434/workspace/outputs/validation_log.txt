@@ -1,0 +1,116 @@
+                   template      subset             predictor   n  pearson  pearson_p  pearson_lo  pearson_hi  spearman  spearman_p  spearman_lo  spearman_hi
+0                      xtal         all         HADDOCK score  75    0.645      0.000       0.502       0.759     0.586       0.000        0.388        0.725
+1                      xtal         all                   vdW  75    0.101      0.391      -0.102       0.285     0.099       0.396       -0.149        0.331
+2                      xtal         all                  elec  75    0.692      0.000       0.560       0.794     0.638       0.000        0.465        0.768
+3                      xtal         all                desolv  75   -0.075      0.522      -0.260       0.110    -0.046       0.696       -0.292        0.191
+4                      xtal         all                 -dBSA  75    0.446      0.000       0.292       0.586     0.391       0.001        0.175        0.565
+5                      xtal         all           residue BSA  75    0.654      0.000       0.524       0.767     0.618       0.000        0.447        0.742
+6                      xtal         all      residue contacts  75    0.713      0.000       0.597       0.814     0.743       0.000        0.606        0.832
+7                      xtal      single         HADDOCK score  30    0.337      0.069       0.061       0.583     0.260       0.165       -0.119        0.561
+8                      xtal      single                   vdW  30   -0.393      0.032      -0.649      -0.049    -0.275       0.142       -0.599        0.128
+9                      xtal      single                  elec  30    0.507      0.004       0.263       0.712     0.470       0.009        0.125        0.698
+10                     xtal      single                desolv  30    0.243      0.195      -0.113       0.537     0.167       0.378       -0.232        0.515
+11                     xtal      single                 -dBSA  30    0.436      0.016       0.184       0.681     0.396       0.030        0.065        0.658
+12                     xtal      single           residue BSA  30    0.486      0.006       0.195       0.733     0.477       0.008        0.120        0.721
+13                     xtal      single      residue contacts  30    0.603      0.000       0.288       0.820     0.569       0.001        0.240        0.808
+14                     xtal      double         HADDOCK score  45    0.539      0.000       0.205       0.752     0.397       0.007        0.074        0.672
+15                     xtal      double                   vdW  45    0.197      0.193      -0.087       0.468     0.111       0.466       -0.225        0.414
+16                     xtal      double                  elec  45    0.454      0.002       0.081       0.699     0.335       0.024        0.034        0.586
+17                     xtal      double                desolv  45    0.132      0.387      -0.157       0.434     0.152       0.317       -0.158        0.447
+18                     xtal      double                 -dBSA  45    0.247      0.103      -0.041       0.485     0.123       0.422       -0.171        0.409
+19                     xtal      double           residue BSA  45    0.462      0.001       0.214       0.651     0.332       0.026        0.034        0.582
+20                     xtal      double      residue contacts  45    0.529      0.000       0.297       0.738     0.532       0.000        0.242        0.751
+21                     xtal  single_ala         HADDOCK score  14    0.457      0.100      -0.005       0.785     0.385       0.175       -0.246        0.817
+22                     xtal  single_ala                   vdW  14   -0.058      0.845      -0.498       0.651    -0.015       0.958       -0.572        0.582
+23                     xtal  single_ala                  elec  14    0.464      0.095      -0.040       0.776     0.446       0.110       -0.097        0.775
+24                     xtal  single_ala                desolv  14    0.002      0.995      -0.586       0.556    -0.059       0.840       -0.639        0.600
+25                     xtal  single_ala                 -dBSA  14    0.435      0.120       0.045       0.814     0.402       0.154       -0.160        0.835
+26                     xtal  single_ala           residue BSA  14    0.530      0.052       0.096       0.834     0.521       0.056       -0.032        0.833
+27                     xtal  single_ala      residue contacts  14    0.687      0.007       0.357       0.887     0.683       0.007        0.250        0.921
+28                     xtal         all  re-weighted (LOO-CV)  75    0.702      0.000       0.579       0.795     0.659       0.000        0.490        0.775
+0   hotspot_top1_acceptable         all         HADDOCK score  75    0.570      0.000       0.451       0.672     0.597       0.000        0.417        0.727
+1   hotspot_top1_acceptable         all                   vdW  75   -0.243      0.036      -0.467      -0.016    -0.303       0.008       -0.528       -0.066
+2   hotspot_top1_acceptable         all                  elec  75    0.654      0.000       0.527       0.753     0.618       0.000        0.441        0.747
+3   hotspot_top1_acceptable         all                desolv  75   -0.041      0.728      -0.242       0.169    -0.079       0.498       -0.325        0.164
+4   hotspot_top1_acceptable         all                 -dBSA  75    0.513      0.000       0.353       0.642     0.458       0.000        0.262        0.622
+5   hotspot_top1_acceptable         all           residue BSA  75    0.654      0.000       0.522       0.762     0.618       0.000        0.446        0.746
+6   hotspot_top1_acceptable         all      residue contacts  75    0.713      0.000       0.602       0.815     0.743       0.000        0.616        0.834
+7   hotspot_top1_acceptable      single         HADDOCK score  30    0.539      0.002       0.383       0.690     0.551       0.002        0.268        0.707
+8   hotspot_top1_acceptable      single                   vdW  30   -0.443      0.014      -0.723      -0.082    -0.536       0.002       -0.759       -0.192
+9   hotspot_top1_acceptable      single                  elec  30    0.607      0.000       0.443       0.755     0.569       0.001        0.264        0.758
+10  hotspot_top1_acceptable      single                desolv  30    0.250      0.183      -0.149       0.575     0.024       0.900       -0.404        0.411
+11  hotspot_top1_acceptable      single                 -dBSA  30    0.417      0.022       0.102       0.706     0.350       0.058       -0.031        0.659
+12  hotspot_top1_acceptable      single           residue BSA  30    0.486      0.006       0.204       0.741     0.477       0.008        0.128        0.711
+13  hotspot_top1_acceptable      single      residue contacts  30    0.603      0.000       0.283       0.821     0.569       0.001        0.216        0.815
+14  hotspot_top1_acceptable      double         HADDOCK score  45    0.479      0.001       0.188       0.705     0.446       0.002        0.146        0.700
+15  hotspot_top1_acceptable      double                   vdW  45   -0.146      0.340      -0.447       0.164    -0.179       0.239       -0.494        0.157
+16  hotspot_top1_acceptable      double                  elec  45    0.501      0.000       0.141       0.729     0.332       0.026       -0.007        0.608
+17  hotspot_top1_acceptable      double                desolv  45    0.107      0.486      -0.165       0.417     0.160       0.294       -0.157        0.438
+18  hotspot_top1_acceptable      double                 -dBSA  45    0.424      0.004       0.158       0.628     0.348       0.019        0.047        0.603
+19  hotspot_top1_acceptable      double           residue BSA  45    0.462      0.001       0.191       0.661     0.332       0.026        0.029        0.581
+20  hotspot_top1_acceptable      double      residue contacts  45    0.529      0.000       0.300       0.735     0.532       0.000        0.246        0.740
+21  hotspot_top1_acceptable  single_ala         HADDOCK score  14    0.473      0.088       0.196       0.746     0.534       0.049        0.045        0.821
+22  hotspot_top1_acceptable  single_ala                   vdW  14   -0.546      0.044      -0.865      -0.152    -0.596       0.025       -0.888       -0.093
+23  hotspot_top1_acceptable  single_ala                  elec  14    0.633      0.015       0.377       0.860     0.644       0.013        0.147        0.952
+24  hotspot_top1_acceptable  single_ala                desolv  14   -0.183      0.530      -0.828       0.390    -0.415       0.140       -0.854        0.239
+25  hotspot_top1_acceptable  single_ala                 -dBSA  14    0.554      0.040       0.215       0.848     0.574       0.032        0.106        0.847
+26  hotspot_top1_acceptable  single_ala           residue BSA  14    0.530      0.052       0.104       0.829     0.521       0.056       -0.031        0.836
+27  hotspot_top1_acceptable  single_ala      residue contacts  14    0.687      0.007       0.347       0.889     0.683       0.007        0.216        0.919
+28  hotspot_top1_acceptable         all  re-weighted (LOO-CV)  75    0.616      0.000       0.493       0.720     0.596       0.000        0.414        0.726
+0   hotspot_decoy_incorrect         all         HADDOCK score  75    0.395      0.000       0.202       0.567     0.336       0.003        0.113        0.536
+1   hotspot_decoy_incorrect         all                   vdW  75   -0.168      0.149      -0.348       0.007     0.023       0.843       -0.215        0.256
+2   hotspot_decoy_incorrect         all                  elec  75    0.496      0.000       0.336       0.639     0.476       0.000        0.275        0.644
+3   hotspot_decoy_incorrect         all                desolv  75    0.138      0.237      -0.082       0.341     0.109       0.353       -0.153        0.347
+4   hotspot_decoy_incorrect         all                 -dBSA  75    0.466      0.000       0.295       0.607     0.502       0.000        0.306        0.651
+5   hotspot_decoy_incorrect         all           residue BSA  75    0.654      0.000       0.531       0.765     0.618       0.000        0.439        0.741
+6   hotspot_decoy_incorrect         all      residue contacts  75    0.713      0.000       0.594       0.818     0.743       0.000        0.607        0.832
+7   hotspot_decoy_incorrect      single         HADDOCK score  30    0.240      0.202      -0.183       0.600     0.225       0.232       -0.148        0.570
+8   hotspot_decoy_incorrect      single                   vdW  30   -0.504      0.005      -0.747      -0.153    -0.252       0.179       -0.578        0.171
+9   hotspot_decoy_incorrect      single                  elec  30    0.639      0.000       0.435       0.790     0.559       0.001        0.248        0.738
+10  hotspot_decoy_incorrect      single                desolv  30    0.369      0.045       0.055       0.637     0.249       0.185       -0.167        0.588
+11  hotspot_decoy_incorrect      single                 -dBSA  30    0.389      0.034       0.125       0.655     0.388       0.034        0.020        0.673
+12  hotspot_decoy_incorrect      single           residue BSA  30    0.486      0.006       0.211       0.741     0.477       0.008        0.101        0.717
+13  hotspot_decoy_incorrect      single      residue contacts  30    0.603      0.000       0.284       0.822     0.569       0.001        0.232        0.804
+14  hotspot_decoy_incorrect      double         HADDOCK score  45    0.333      0.026       0.055       0.573     0.293       0.051        0.002        0.549
+15  hotspot_decoy_incorrect      double                   vdW  45   -0.073      0.636      -0.347       0.196     0.113       0.460       -0.199        0.416
+16  hotspot_decoy_incorrect      double                  elec  45    0.322      0.031      -0.013       0.592     0.273       0.070       -0.059        0.541
+17  hotspot_decoy_incorrect      double                desolv  45    0.159      0.296      -0.110       0.483     0.197       0.195       -0.114        0.491
+18  hotspot_decoy_incorrect      double                 -dBSA  45    0.415      0.005       0.128       0.640     0.471       0.001        0.183        0.709
+19  hotspot_decoy_incorrect      double           residue BSA  45    0.462      0.001       0.198       0.668     0.332       0.026        0.041        0.593
+20  hotspot_decoy_incorrect      double      residue contacts  45    0.529      0.000       0.291       0.735     0.532       0.000        0.237        0.741
+21  hotspot_decoy_incorrect  single_ala         HADDOCK score  14    0.427      0.128      -0.084       0.790     0.349       0.221       -0.281        0.847
+22  hotspot_decoy_incorrect  single_ala                   vdW  14   -0.246      0.396      -0.646       0.536    -0.086       0.771       -0.656        0.558
+23  hotspot_decoy_incorrect  single_ala                  elec  14    0.644      0.013       0.174       0.882     0.547       0.043       -0.020        0.878
+24  hotspot_decoy_incorrect  single_ala                desolv  14   -0.009      0.977      -0.746       0.484    -0.174       0.553       -0.771        0.467
+25  hotspot_decoy_incorrect  single_ala                 -dBSA  14    0.362      0.203       0.081       0.726     0.292       0.311       -0.306        0.669
+26  hotspot_decoy_incorrect  single_ala           residue BSA  14    0.530      0.052       0.087       0.827     0.521       0.056       -0.063        0.855
+27  hotspot_decoy_incorrect  single_ala      residue contacts  14    0.687      0.007       0.333       0.897     0.683       0.007        0.245        0.904
+28  hotspot_decoy_incorrect         all  re-weighted (LOO-CV)  75    0.485      0.000       0.324       0.626     0.472       0.000        0.291        0.626
+                   xtal  hotspot_top1_acceptable  hotspot_decoy_incorrect
+HADDOCK score     0.574                    0.708                    0.612
+vdW               0.373                    0.254                    0.464
+elec              0.636                    0.708                    0.699
+desolv            0.603                    0.455                    0.545
+-dBSA             0.708                    0.732                    0.713
+residue BSA       0.720                    0.720                    0.720
+residue contacts  0.742                    0.742                    0.742
+{'xtal': {'intercept': np.float64(3.3815744490815387), 'w_vdw': np.float64(-0.00391266917710157), 'w_elec': np.float64(0.035885795407480076), 'w_desolv': np.float64(0.160378451607957)}, 'hotspot_top1_acceptable': {'intercept': np.float64(4.182214228194408), 'w_vdw': np.float64(0.04546772371878559), 'w_elec': np.float64(0.04105223000068768), 'w_desolv': np.float64(0.05214231752145433)}, 'hotspot_decoy_incorrect': {'intercept': np.float64(3.731485566599893), 'w_vdw': np.float64(0.09480334080406934), 'w_elec': np.float64(0.05027905775424267), 'w_desolv': np.float64(0.19849704745096622)}} replicate r=0.97 (n=13)
+alascan module vs SKEMPI Ala singles: {'n': 12, 'pearson': np.float64(0.418), 'pearson_p': np.float64(0.176), 'pearson_lo': np.float64(0.024), 'pearson_hi': np.float64(0.772), 'spearman': np.float64(0.399), 'spearman_p': np.float64(0.199), 'spearman_lo': np.float64(-0.231), 'spearman_hi': np.float64(0.729)}
+   mutations  delta_score  z_score       ddG
+3      EA60A       -11.67    -0.87  0.094451
+11     ED76A        -7.43    -0.17  1.093372
+10     TD42A        -3.15     0.54  1.856799
+4      EA73A         1.64     1.34  2.351842
+1      NA58A         1.06     1.24  3.089679
+7      YD29A       -13.04    -1.10  3.468991
+8      DD35A       -23.23    -2.79  4.284485
+2      RA59A       -21.39    -2.49  4.986519
+0      KA27A        -8.04    -0.27  5.123760
+5      RA87A       -11.69    -0.88  5.755834
+6     HA102A        -6.23     0.03  6.344437
+9      DD39A       -21.12    -2.44  6.790017
+double-mutant cycles: 45
+coupling exp vs pred: {'n': 45, 'pearson': np.float64(0.31602971660049645), 'pearson_p': np.float64(0.03444093601804751), 'pearson_lo': np.float64(-0.07306741715366824), 'pearson_hi': np.float64(0.5835908461820635), 'spearman': np.float64(0.14255599472990774), 'spearman_p': np.float64(0.35021754386611265), 'spearman_lo': np.float64(-0.16368742020500823), 'spearman_hi': np.float64(0.42185937724626377)}
+coupling exp vs distance (spearman): SignificanceResult(statistic=np.float64(0.8221337348047622), pvalue=np.float64(4.39248357562867e-12))
+coupling pred vs distance (spearman): SignificanceResult(statistic=np.float64(0.13255118581675432), pvalue=np.float64(0.3853955528972894))
+exp: double vs additive r=0.75

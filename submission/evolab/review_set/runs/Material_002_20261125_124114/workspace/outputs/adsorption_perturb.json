@@ -1,0 +1,80 @@
+{
+ "Ni_O": {
+  "E_relaxed_minus_E_fcc": 0.0016338955722687842,
+  "lateral_return_dist": 0.03439426405957721
+ },
+ "Ni_OH": {
+  "E_relaxed_minus_E_fcc": 6.998099544830438e-05,
+  "lateral_return_dist": 0.012739275941111343,
+  "tilt_deg": 1.391635073616687
+ },
+ "Ni_C": {
+  "E_relaxed_minus_E_fcc": 0.0013355920168152124,
+  "lateral_return_dist": 0.026709467936392933
+ },
+ "Cu_O": {
+  "E_relaxed_minus_E_fcc": 0.001169776671027023,
+  "lateral_return_dist": 0.03386286832169176
+ },
+ "Cu_OH": {
+  "E_relaxed_minus_E_fcc": 0.0005602199740977198,
+  "lateral_return_dist": 0.013766552157025356,
+  "tilt_deg": 0.6769841856693117
+ },
+ "Cu_C": {
+  "E_relaxed_minus_E_fcc": 0.0011641964865418686,
+  "lateral_return_dist": 0.034701277688655476
+ },
+ "Rh_O": {
+  "E_relaxed_minus_E_fcc": 0.0014517616831710711,
+  "lateral_return_dist": 0.040209346627354946
+ },
+ "Rh_OH": {
+  "E_relaxed_minus_E_fcc": -0.2592826669134638,
+  "lateral_return_dist": 0.7428042831171642,
+  "tilt_deg": 62.43088820579984
+ },
+ "Rh_C": {
+  "E_relaxed_minus_E_fcc": 0.0009011633087538939,
+  "lateral_return_dist": 0.028528493452318626
+ },
+ "Pd_O": {
+  "E_relaxed_minus_E_fcc": 0.0010897246084482504,
+  "lateral_return_dist": 0.03746623476603072
+ },
+ "Pd_OH": {
+  "E_relaxed_minus_E_fcc": -0.2848968244119163,
+  "lateral_return_dist": 1.1471103533584353,
+  "tilt_deg": 86.52673380373542
+ },
+ "Pd_C": {
+  "E_relaxed_minus_E_fcc": 0.0011144385357226838,
+  "lateral_return_dist": 0.03263484726709248
+ },
+ "Ir_O": {
+  "E_relaxed_minus_E_fcc": 0.001279830855793307,
+  "lateral_return_dist": 0.04182401621822384
+ },
+ "Ir_OH": {
+  "E_relaxed_minus_E_fcc": -0.8732409905171608,
+  "lateral_return_dist": 1.567454778980322,
+  "tilt_deg": 61.429020846706834
+ },
+ "Ir_C": {
+  "E_relaxed_minus_E_fcc": 0.0005080530835357422,
+  "lateral_return_dist": 0.017026161862097426
+ },
+ "Pt_O": {
+  "E_relaxed_minus_E_fcc": 0.0009071373231392954,
+  "lateral_return_dist": 0.03253131573245295
+ },
+ "Pt_OH": {
+  "E_relaxed_minus_E_fcc": -0.5774096449240176,
+  "lateral_return_dist": 0.8400721902412952,
+  "tilt_deg": 70.87785703612087
+ },
+ "Pt_C": {
+  "E_relaxed_minus_E_fcc": 0.0009299388299268685,
+  "lateral_return_dist": 0.031863353881431786
+ }
+}

@@ -1,0 +1,26 @@
+A_MIT|ssp245 score shares [0.    0.375 0.096 0.1   0.31  0.119] ge3 0.529 TC [0.382 0.094 0.091 0.433]
+A_MIT|ssp370 score shares [0.    0.034 0.355 0.043 0.213 0.355] ge3 0.611 TC [0.385 0.042 0.115 0.459]
+A_MIT|ssp585 score shares [0.    0.001 0.382 0.03  0.116 0.471] ge3 0.618 TC [0.382 0.028 0.113 0.477]
+B_Knutson|ssp245 score shares [0.002 0.62  0.089 0.102 0.138 0.049] ge3 0.289 TC [0.673 0.046 0.116 0.165]
+B_Knutson|ssp370 score shares [0.    0.093 0.55  0.042 0.163 0.153] ge3 0.358 TC [0.638 0.042 0.121 0.199]
+B_Knutson|ssp585 score shares [0.    0.004 0.613 0.062 0.102 0.218] ge3 0.382 TC [0.618 0.06  0.102 0.22 ]
+central (5deg unit, R100, q50, ref_cls=1) {'A_MIT|ssp245': np.float64(0.529), 'A_MIT|ssp370': np.float64(0.611), 'A_MIT|ssp585': np.float64(0.618), 'B_Knutson|ssp245': np.float64(0.289), 'B_Knutson|ssp370': np.float64(0.358), 'B_Knutson|ssp585': np.float64(0.382)} 7
+unit 2deg {'A_MIT|ssp245': np.float64(0.503), 'A_MIT|ssp370': np.float64(0.619), 'A_MIT|ssp585': np.float64(0.636), 'B_Knutson|ssp245': np.float64(0.288), 'B_Knutson|ssp370': np.float64(0.38), 'B_Knutson|ssp585': np.float64(0.395)} 11
+unit 10deg {'A_MIT|ssp245': np.float64(0.622), 'A_MIT|ssp370': np.float64(0.718), 'A_MIT|ssp585': np.float64(0.723), 'B_Knutson|ssp245': np.float64(0.344), 'B_Knutson|ssp370': np.float64(0.395), 'B_Knutson|ssp585': np.float64(0.356)} 14
+unit country x basin {'A_MIT|ssp245': np.float64(0.558), 'A_MIT|ssp370': np.float64(0.749), 'A_MIT|ssp585': np.float64(0.762), 'B_Knutson|ssp245': np.float64(0.274), 'B_Knutson|ssp370': np.float64(0.34), 'B_Knutson|ssp585': np.float64(0.384)} 17
+per-site test (G1-like) {'A_MIT|ssp245': np.float64(0.433), 'A_MIT|ssp370': np.float64(0.546), 'A_MIT|ssp585': np.float64(0.577), 'B_Knutson|ssp245': np.float64(0.261), 'B_Knutson|ssp370': np.float64(0.34), 'B_Knutson|ssp585': np.float64(0.375)} 20
+R = 50 km {'A_MIT|ssp245': np.float64(0.354), 'A_MIT|ssp370': np.float64(0.519), 'A_MIT|ssp585': np.float64(0.566), 'B_Knutson|ssp245': np.float64(0.188), 'B_Knutson|ssp370': np.float64(0.261), 'B_Knutson|ssp585': np.float64(0.281)} 22
+R = 200 km {'A_MIT|ssp245': np.float64(0.597), 'A_MIT|ssp370': np.float64(0.707), 'A_MIT|ssp585': np.float64(0.72), 'B_Knutson|ssp245': np.float64(0.445), 'B_Knutson|ssp370': np.float64(0.495), 'B_Knutson|ssp585': np.float64(0.485)} 27
+kappa x 0.5 {'A_MIT|ssp245': np.float64(0.41), 'A_MIT|ssp370': np.float64(0.578), 'A_MIT|ssp585': np.float64(0.575), 'B_Knutson|ssp245': np.float64(0.198), 'B_Knutson|ssp370': np.float64(0.238), 'B_Knutson|ssp585': np.float64(0.27)} 30
+kappa x 2 {'A_MIT|ssp245': np.float64(0.661), 'A_MIT|ssp370': np.float64(0.702), 'A_MIT|ssp585': np.float64(0.707), 'B_Knutson|ssp245': np.float64(0.331), 'B_Knutson|ssp370': np.float64(0.455), 'B_Knutson|ssp585': np.float64(0.437)} 33
+kappa site-calibrated per basin {'A_MIT|ssp245': np.float64(0.629), 'A_MIT|ssp370': np.float64(0.682), 'A_MIT|ssp585': np.float64(0.697), 'B_Knutson|ssp245': np.float64(0.283), 'B_Knutson|ssp370': np.float64(0.363), 'B_Knutson|ssp585': np.float64(0.392)} 35
+SLR 17th pct {'A_MIT|ssp245': np.float64(0.439), 'A_MIT|ssp370': np.float64(0.539), 'A_MIT|ssp585': np.float64(0.591), 'B_Knutson|ssp245': np.float64(0.203), 'B_Knutson|ssp370': np.float64(0.309), 'B_Knutson|ssp585': np.float64(0.328)} 38
+SLR 83rd pct {'A_MIT|ssp245': np.float64(0.618), 'A_MIT|ssp370': np.float64(0.615), 'A_MIT|ssp585': np.float64(0.618), 'B_Knutson|ssp245': np.float64(0.327), 'B_Knutson|ssp370': np.float64(0.362), 'B_Knutson|ssp585': np.float64(0.382)} 41
+SLR 2080-2100 mean {'A_MIT|ssp245': np.float64(0.614), 'A_MIT|ssp370': np.float64(0.615), 'A_MIT|ssp585': np.float64(0.618), 'B_Knutson|ssp245': np.float64(0.326), 'B_Knutson|ssp370': np.float64(0.362), 'B_Knutson|ssp585': np.float64(0.382)} 43
+all GMW sample points {'A_MIT|ssp245': np.float64(0.543), 'A_MIT|ssp370': np.float64(0.614), 'A_MIT|ssp585': np.float64(0.62), 'B_Knutson|ssp245': np.float64(0.295), 'B_Knutson|ssp370': np.float64(0.371), 'B_Knutson|ssp585': np.float64(0.372)} 48
+exclude newly-affected rule {'A_MIT|ssp245': np.float64(0.465), 'A_MIT|ssp370': np.float64(0.585), 'A_MIT|ssp585': np.float64(0.598), 'B_Knutson|ssp245': np.float64(0.194), 'B_Knutson|ssp370': np.float64(0.266), 'B_Knutson|ssp585': np.float64(0.284)} 51
+SLR thresholds 3.5/6.5 mm/yr {'A_MIT|ssp245': np.float64(0.547), 'A_MIT|ssp370': np.float64(0.615), 'A_MIT|ssp585': np.float64(0.618), 'B_Knutson|ssp245': np.float64(0.302), 'B_Knutson|ssp370': np.float64(0.362), 'B_Knutson|ssp585': np.float64(0.382)}
+SLR thresholds 4.5/7.5 mm/yr {'A_MIT|ssp245': np.float64(0.527), 'A_MIT|ssp370': np.float64(0.6), 'A_MIT|ssp585': np.float64(0.618), 'B_Knutson|ssp245': np.float64(0.287), 'B_Knutson|ssp370': np.float64(0.351), 'B_Knutson|ssp585': np.float64(0.382)}
+A: frequency change only {'A_MIT|ssp245': np.float64(0.495), 'A_MIT|ssp370': np.float64(0.625), 'A_MIT|ssp585': np.float64(0.632)}
+A: intensity change only {'A_MIT|ssp245': np.float64(0.438), 'A_MIT|ssp370': np.float64(0.573), 'A_MIT|ssp585': np.float64(0.585)}
+done 58.953168630599976

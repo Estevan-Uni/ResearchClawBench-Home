@@ -1,0 +1,379 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "data_overview.py",
+    "path": "code/data_overview.py",
+    "type": "file",
+    "size": 3463,
+    "mtime": 1795592004.1121306,
+    "exported": true
+  },
+  {
+    "name": "fig_coupling.py",
+    "path": "code/fig_coupling.py",
+    "type": "file",
+    "size": 7489,
+    "mtime": 1795593052.7548969,
+    "exported": true
+  },
+  {
+    "name": "fig_injection.py",
+    "path": "code/fig_injection.py",
+    "type": "file",
+    "size": 1680,
+    "mtime": 1795592215.549864,
+    "exported": true
+  },
+  {
+    "name": "fig_physics.py",
+    "path": "code/fig_physics.py",
+    "type": "file",
+    "size": 3264,
+    "mtime": 1795591693.105594,
+    "exported": true
+  },
+  {
+    "name": "fig_results.py",
+    "path": "code/fig_results.py",
+    "type": "file",
+    "size": 5291,
+    "mtime": 1795592996.6105392,
+    "exported": true
+  },
+  {
+    "name": "injection.py",
+    "path": "code/injection.py",
+    "type": "file",
+    "size": 3040,
+    "mtime": 1795591627.7970643,
+    "exported": true
+  },
+  {
+    "name": "make_tables.py",
+    "path": "code/make_tables.py",
+    "type": "file",
+    "size": 1116,
+    "mtime": 1795593042.942834,
+    "exported": true
+  },
+  {
+    "name": "pdf_extract.py",
+    "path": "code/pdf_extract.py",
+    "type": "file",
+    "size": 6785,
+    "mtime": 1795590564.8488548,
+    "exported": true
+  },
+  {
+    "name": "physics.py",
+    "path": "code/physics.py",
+    "type": "file",
+    "size": 5899,
+    "mtime": 1795591964.4758062,
+    "exported": true
+  },
+  {
+    "name": "scan1d.py",
+    "path": "code/scan1d.py",
+    "type": "file",
+    "size": 3574,
+    "mtime": 1795590882.9951804,
+    "exported": true
+  },
+  {
+    "name": "scan2d.py",
+    "path": "code/scan2d.py",
+    "type": "file",
+    "size": 1814,
+    "mtime": 1795591741.6539886,
+    "exported": true
+  },
+  {
+    "name": "stats.py",
+    "path": "code/stats.py",
+    "type": "file",
+    "size": 5941,
+    "mtime": 1795590856.3069787,
+    "exported": true
+  },
+  {
+    "name": "validate_kde.py",
+    "path": "code/validate_kde.py",
+    "type": "file",
+    "size": 798,
+    "mtime": 1795592228.0979671,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "coupling_results.json",
+    "path": "outputs/coupling_results.json",
+    "type": "file",
+    "size": 56452,
+    "mtime": 1795593058.0749311,
+    "exported": true
+  },
+  {
+    "name": "coupling_table.md",
+    "path": "outputs/coupling_table.md",
+    "type": "file",
+    "size": 1255,
+    "mtime": 1795593059.5829408,
+    "exported": true
+  },
+  {
+    "name": "inj_IRAS.log",
+    "path": "outputs/inj_IRAS.log",
+    "type": "file",
+    "size": 1833,
+    "mtime": 1795591700.741656,
+    "exported": true
+  },
+  {
+    "name": "inj_M33.log",
+    "path": "outputs/inj_M33.log",
+    "type": "file",
+    "size": 2184,
+    "mtime": 1795591678.697477,
+    "exported": true
+  },
+  {
+    "name": "injection_IRAS.json",
+    "path": "outputs/injection_IRAS.json",
+    "type": "file",
+    "size": 2010,
+    "mtime": 1795591700.741656,
+    "exported": true
+  },
+  {
+    "name": "injection_M33.json",
+    "path": "outputs/injection_M33.json",
+    "type": "file",
+    "size": 2397,
+    "mtime": 1795591678.697477,
+    "exported": true
+  },
+  {
+    "name": "papers",
+    "path": "outputs/papers",
+    "type": "directory"
+  },
+  {
+    "name": "p0.txt",
+    "path": "outputs/papers/p0.txt",
+    "type": "file",
+    "size": 141403,
+    "mtime": 1795590591.949045,
+    "exported": true
+  },
+  {
+    "name": "p3.txt",
+    "path": "outputs/papers/p3.txt",
+    "type": "file",
+    "size": 104760,
+    "mtime": 1795590694.5137796,
+    "exported": true
+  },
+  {
+    "name": "paper_000.txt",
+    "path": "outputs/papers/paper_000.txt",
+    "type": "file",
+    "size": 142502,
+    "mtime": 1795590566.3888655,
+    "exported": true
+  },
+  {
+    "name": "paper_001.txt",
+    "path": "outputs/papers/paper_001.txt",
+    "type": "file",
+    "size": 16979,
+    "mtime": 1795590567.2008712,
+    "exported": true
+  },
+  {
+    "name": "paper_002.txt",
+    "path": "outputs/papers/paper_002.txt",
+    "type": "file",
+    "size": 27877,
+    "mtime": 1795590567.9408765,
+    "exported": true
+  },
+  {
+    "name": "paper_003.txt",
+    "path": "outputs/papers/paper_003.txt",
+    "type": "file",
+    "size": 105236,
+    "mtime": 1795590568.45288,
+    "exported": true
+  },
+  {
+    "name": "posterior_summary.json",
+    "path": "outputs/posterior_summary.json",
+    "type": "file",
+    "size": 2193,
+    "mtime": 1795592009.9761784,
+    "exported": true
+  },
+  {
+    "name": "scan1d.log",
+    "path": "outputs/scan1d.log",
+    "type": "file",
+    "size": 4916,
+    "mtime": 1795592936.6861658,
+    "exported": true
+  },
+  {
+    "name": "scan1d_intervals.json",
+    "path": "outputs/scan1d_intervals.json",
+    "type": "file",
+    "size": 11427,
+    "mtime": 1795592936.6861658,
+    "exported": true
+  },
+  {
+    "name": "scan2d_IRAS.log",
+    "path": "outputs/scan2d_IRAS.log",
+    "type": "file",
+    "size": 545,
+    "mtime": 1795592296.5825298,
+    "exported": true
+  },
+  {
+    "name": "scan2d_M33.log",
+    "path": "outputs/scan2d_M33.log",
+    "type": "file",
+    "size": 2699,
+    "mtime": 1795592135.8292098,
+    "exported": true
+  },
+  {
+    "name": "validation_kde.json",
+    "path": "outputs/validation_kde.json",
+    "type": "file",
+    "size": 186,
+    "mtime": 1795592348.3789554,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig10_coupling_IRAS.png",
+    "path": "report/images/fig10_coupling_IRAS.png",
+    "type": "file",
+    "size": 173751,
+    "mtime": 1795593057.7229288,
+    "exported": true
+  },
+  {
+    "name": "fig11_injection.png",
+    "path": "report/images/fig11_injection.png",
+    "type": "file",
+    "size": 143400,
+    "mtime": 1795592218.2618864,
+    "exported": true
+  },
+  {
+    "name": "fig1_posteriors.png",
+    "path": "report/images/fig1_posteriors.png",
+    "type": "file",
+    "size": 381377,
+    "mtime": 1795592009.5121746,
+    "exported": true
+  },
+  {
+    "name": "fig2_rates.png",
+    "path": "report/images/fig2_rates.png",
+    "type": "file",
+    "size": 173155,
+    "mtime": 1795591695.833616,
+    "exported": true
+  },
+  {
+    "name": "fig3_regge.png",
+    "path": "report/images/fig3_regge.png",
+    "type": "file",
+    "size": 279999,
+    "mtime": 1795591700.0136502,
+    "exported": true
+  },
+  {
+    "name": "fig4_psurv.png",
+    "path": "report/images/fig4_psurv.png",
+    "type": "file",
+    "size": 163567,
+    "mtime": 1795593000.1665616,
+    "exported": true
+  },
+  {
+    "name": "fig5_comparisons.png",
+    "path": "report/images/fig5_comparisons.png",
+    "type": "file",
+    "size": 163665,
+    "mtime": 1795593001.630571,
+    "exported": true
+  },
+  {
+    "name": "fig6_bayesfactor.png",
+    "path": "report/images/fig6_bayesfactor.png",
+    "type": "file",
+    "size": 152820,
+    "mtime": 1795593003.3065815,
+    "exported": true
+  },
+  {
+    "name": "fig7_systematics.png",
+    "path": "report/images/fig7_systematics.png",
+    "type": "file",
+    "size": 163668,
+    "mtime": 1795593004.7825909,
+    "exported": true
+  },
+  {
+    "name": "fig8_coupling_M33.png",
+    "path": "report/images/fig8_coupling_M33.png",
+    "type": "file",
+    "size": 253388,
+    "mtime": 1795593055.106912,
+    "exported": true
+  },
+  {
+    "name": "fig9_gmax_M33.png",
+    "path": "report/images/fig9_gmax_M33.png",
+    "type": "file",
+    "size": 167799,
+    "mtime": 1795593056.34292,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 33405,
+    "mtime": 1795593244.0641627,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5234,
+    "mtime": 1795590525.20858,
+    "exported": true
+  }
+]

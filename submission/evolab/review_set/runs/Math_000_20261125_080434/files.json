@@ -1,0 +1,222 @@
+[
+  {
+    "name": "code",
+    "path": "code",
+    "type": "directory"
+  },
+  {
+    "name": "common.py",
+    "path": "code/common.py",
+    "type": "file",
+    "size": 1045,
+    "mtime": 1795594188.6429558,
+    "exported": true
+  },
+  {
+    "name": "diagnostics.py",
+    "path": "code/diagnostics.py",
+    "type": "file",
+    "size": 5572,
+    "mtime": 1795594720.791241,
+    "exported": true
+  },
+  {
+    "name": "diagnostics_helpers.py",
+    "path": "code/diagnostics_helpers.py",
+    "type": "file",
+    "size": 577,
+    "mtime": 1795594815.960711,
+    "exported": true
+  },
+  {
+    "name": "figures.py",
+    "path": "code/figures.py",
+    "type": "file",
+    "size": 14464,
+    "mtime": 1795594903.8907409,
+    "exported": true
+  },
+  {
+    "name": "metrics.py",
+    "path": "code/metrics.py",
+    "type": "file",
+    "size": 4971,
+    "mtime": 1795594488.8596876,
+    "exported": true
+  },
+  {
+    "name": "pdf_peek.py",
+    "path": "code/pdf_peek.py",
+    "type": "file",
+    "size": 501,
+    "mtime": 1795594041.4458668,
+    "exported": true
+  },
+  {
+    "name": "run_experiments.py",
+    "path": "code/run_experiments.py",
+    "type": "file",
+    "size": 3867,
+    "mtime": 1795594511.7986772,
+    "exported": true
+  },
+  {
+    "name": "tables.py",
+    "path": "code/tables.py",
+    "type": "file",
+    "size": 1927,
+    "mtime": 1795594957.5456867,
+    "exported": true
+  },
+  {
+    "name": "tracker.py",
+    "path": "code/tracker.py",
+    "type": "file",
+    "size": 16128,
+    "mtime": 1795594429.316747,
+    "exported": true
+  },
+  {
+    "name": "outputs",
+    "path": "outputs",
+    "type": "directory"
+  },
+  {
+    "name": "E1_main.json",
+    "path": "outputs/E1_main.json",
+    "type": "file",
+    "size": 26672,
+    "mtime": 1795594519.4943478,
+    "exported": true
+  },
+  {
+    "name": "E2_grid.json",
+    "path": "outputs/E2_grid.json",
+    "type": "file",
+    "size": 156107,
+    "mtime": 1795594564.4165192,
+    "exported": true
+  },
+  {
+    "name": "E3_lowlevels.json",
+    "path": "outputs/E3_lowlevels.json",
+    "type": "file",
+    "size": 17702,
+    "mtime": 1795594572.2962143,
+    "exported": true
+  },
+  {
+    "name": "E4_density.json",
+    "path": "outputs/E4_density.json",
+    "type": "file",
+    "size": 448428,
+    "mtime": 1795594611.214773,
+    "exported": true
+  },
+  {
+    "name": "table_density_paired.csv",
+    "path": "outputs/table_density_paired.csv",
+    "type": "file",
+    "size": 5624,
+    "mtime": 1795594959.6416476,
+    "exported": true
+  },
+  {
+    "name": "table_main.csv",
+    "path": "outputs/table_main.csv",
+    "type": "file",
+    "size": 1791,
+    "mtime": 1795594959.1096575,
+    "exported": true
+  },
+  {
+    "name": "report",
+    "path": "report",
+    "type": "directory"
+  },
+  {
+    "name": "images",
+    "path": "report/images",
+    "type": "directory"
+  },
+  {
+    "name": "fig1_data_overview.png",
+    "path": "report/images/fig1_data_overview.png",
+    "type": "file",
+    "size": 160079,
+    "mtime": 1795594907.0546756,
+    "exported": true
+  },
+  {
+    "name": "fig2_main_comparison.png",
+    "path": "report/images/fig2_main_comparison.png",
+    "type": "file",
+    "size": 100332,
+    "mtime": 1795594907.7946606,
+    "exported": true
+  },
+  {
+    "name": "fig3_level_gate_sweeps.png",
+    "path": "report/images/fig3_level_gate_sweeps.png",
+    "type": "file",
+    "size": 328758,
+    "mtime": 1795594909.3546286,
+    "exported": true
+  },
+  {
+    "name": "fig4_density.png",
+    "path": "report/images/fig4_density.png",
+    "type": "file",
+    "size": 438335,
+    "mtime": 1795594911.6265824,
+    "exported": true
+  },
+  {
+    "name": "fig5_mechanism.png",
+    "path": "report/images/fig5_mechanism.png",
+    "type": "file",
+    "size": 191725,
+    "mtime": 1795594913.5985422,
+    "exported": true
+  },
+  {
+    "name": "fig6_occlusion_breakdown.png",
+    "path": "report/images/fig6_occlusion_breakdown.png",
+    "type": "file",
+    "size": 89431,
+    "mtime": 1795594914.462525,
+    "exported": true
+  },
+  {
+    "name": "fig7_identity_timelines.png",
+    "path": "report/images/fig7_identity_timelines.png",
+    "type": "file",
+    "size": 104204,
+    "mtime": 1795594929.0662332,
+    "exported": true
+  },
+  {
+    "name": "fig8_hota_alpha.png",
+    "path": "report/images/fig8_hota_alpha.png",
+    "type": "file",
+    "size": 81289,
+    "mtime": 1795594931.470186,
+    "exported": true
+  },
+  {
+    "name": "report.md",
+    "path": "report/report.md",
+    "type": "file",
+    "size": 29410,
+    "mtime": 1795595125.9949758,
+    "exported": true
+  },
+  {
+    "name": "INSTRUCTIONS.md",
+    "path": "INSTRUCTIONS.md",
+    "type": "file",
+    "size": 5078,
+    "mtime": 1795593874.4886398,
+    "exported": true
+  }
+]

@@ -1,0 +1,25 @@
+python run_dimer.py --lr_on 1 --tagged 1 --labels corrected --epochs 1200 --seed 0
+python run_dimer.py --lr_on 1 --tagged 0 --labels corrected --epochs 1200 --seed 0
+python run_dimer.py --lr_on 0 --tagged 1 --labels corrected --epochs 1200 --seed 0
+python run_dimer.py --lr_on 0 --tagged 0 --labels corrected --epochs 1200 --seed 0
+python run_dimer.py --lr_on 1 --tagged 1 --labels corrected --epochs 1200 --seed 1
+python run_dimer.py --lr_on 1 --tagged 0 --labels corrected --epochs 1200 --seed 1
+python run_dimer.py --lr_on 0 --tagged 1 --labels corrected --epochs 1200 --seed 1
+python run_dimer.py --lr_on 0 --tagged 0 --labels corrected --epochs 1200 --seed 1
+python run_dimer.py --lr_on 1 --tagged 1 --labels corrected --epochs 1200 --seed 2
+python run_dimer.py --lr_on 1 --tagged 0 --labels corrected --epochs 1200 --seed 2
+python run_dimer.py --lr_on 0 --tagged 1 --labels corrected --epochs 1200 --seed 2
+python run_dimer.py --lr_on 0 --tagged 0 --labels corrected --epochs 1200 --seed 2
+python run_dimer.py --lr_on 1 --tagged 1 --labels energy --epochs 1200
+python run_dimer.py --lr_on 0 --tagged 1 --labels energy --epochs 1200
+python run_dimer.py --lr_on 1 --tagged 1 --labels raw --epochs 1200
+python run_ag3.py --data orig --model sr --epochs 1500
+python run_ag3.py --data orig --model sr_q --epochs 1500
+python run_ag3.py --data orig --model les --epochs 1500
+python run_ag3.py --data orig --model les_q --epochs 1500
+python run_ag3.py --data orig --model sep --epochs 1500
+python run_ag3.py --data mod --model sr --epochs 1500
+python run_ag3.py --data mod --model sr_q --epochs 1500
+python run_ag3.py --data mod --model les --epochs 1500
+python run_ag3.py --data mod --model les_q --epochs 1500
+python run_ag3.py --data mod --model sep --epochs 1500

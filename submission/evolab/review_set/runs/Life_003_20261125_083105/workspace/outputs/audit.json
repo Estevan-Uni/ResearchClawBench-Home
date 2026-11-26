@@ -1,0 +1,240 @@
+{
+ "DNA r9.4.1 (6-mer)": {
+  "shape": [
+   4096,
+   4
+  ],
+  "columns": [
+   "kmer",
+   "current_mean",
+   "current_std",
+   "dwell_time"
+  ],
+  "K": 6,
+  "n_unique": 4096,
+  "complete": true,
+  "nan": 0,
+  "has_U": false,
+  "file_sorted_by_code": false,
+  "current_mean_min": -2.8223267334635755,
+  "current_mean_max": 2.9036246936680166,
+  "current_mean_mean": 3.469446951953614e-17,
+  "current_mean_std": 1.0001220926687902,
+  "current_std_min": 0.10000264134661485,
+  "current_std_max": 0.14997303405298368,
+  "current_std_mean": 0.12457629602574391,
+  "current_std_std": 0.01429390419421082,
+  "dwell_time_min": 5.0,
+  "dwell_time_max": 69.0,
+  "dwell_time_mean": 12.529052734375,
+  "dwell_time_std": 8.059675818029152,
+  "first_rows": [
+   "AAAAAA",
+   "ACAAAA",
+   "AGAAAA",
+   "ATAAAA",
+   "CAAAAA",
+   "CCAAAA"
+  ],
+  "dwell_integer": true
+ },
+ "DNA r10.4.1 (9-mer)": {
+  "shape": [
+   262144,
+   4
+  ],
+  "columns": [
+   "kmer",
+   "current_mean",
+   "current_std",
+   "dwell_time"
+  ],
+  "K": 9,
+  "n_unique": 262144,
+  "complete": true,
+  "nan": 0,
+  "has_U": false,
+  "file_sorted_by_code": false,
+  "current_mean_min": -3.2789043581452644,
+  "current_mean_max": 3.156355198239986,
+  "current_mean_mean": 2.42861286636753e-17,
+  "current_mean_std": 1.0000019073540898,
+  "current_std_min": 0.10000002594222833,
+  "current_std_max": 0.14999991574304772,
+  "current_std_mean": 0.12499407030565321,
+  "current_std_std": 0.01442113743249017,
+  "dwell_time_min": 5.0,
+  "dwell_time_max": 102.0,
+  "dwell_time_mean": 12.540740966796875,
+  "dwell_time_std": 8.02406203639384,
+  "first_rows": [
+   "AAAAAAAAA",
+   "ACAAAAAAA",
+   "AGAAAAAAA",
+   "ATAAAAAAA",
+   "CAAAAAAAA",
+   "CCAAAAAAA"
+  ],
+  "dwell_integer": true
+ },
+ "RNA001 (5-mer)": {
+  "shape": [
+   1024,
+   4
+  ],
+  "columns": [
+   "kmer",
+   "current_mean",
+   "current_std",
+   "dwell_time"
+  ],
+  "K": 5,
+  "n_unique": 1024,
+  "complete": true,
+  "nan": 0,
+  "has_U": false,
+  "file_sorted_by_code": false,
+  "current_mean_min": -2.4602796093744868,
+  "current_mean_max": 2.4082268069952795,
+  "current_mean_mean": 6.938893903907228e-18,
+  "current_mean_std": 1.0004886391691559,
+  "current_std_min": 0.10009726324844795,
+  "current_std_max": 0.14997310531533592,
+  "current_std_mean": 0.1246812769539486,
+  "current_std_std": 0.014004891660015556,
+  "dwell_time_min": 5.0,
+  "dwell_time_max": 81.0,
+  "dwell_time_mean": 12.576171875,
+  "dwell_time_std": 8.534334003622433,
+  "first_rows": [
+   "AAAAA",
+   "ACAAA",
+   "AGAAA",
+   "ATAAA",
+   "CAAAA",
+   "CCAAA"
+  ],
+  "dwell_integer": true
+ },
+ "RNA004 (9-mer)": {
+  "shape": [
+   262144,
+   4
+  ],
+  "columns": [
+   "kmer",
+   "current_mean",
+   "current_std",
+   "dwell_time"
+  ],
+  "K": 9,
+  "n_unique": 262144,
+  "complete": true,
+  "nan": 0,
+  "has_U": false,
+  "file_sorted_by_code": false,
+  "current_mean_min": -3.2024809597905404,
+  "current_mean_max": 3.3179590297390766,
+  "current_mean_mean": -3.469446951953614e-17,
+  "current_mean_std": 1.0000019073540898,
+  "current_std_min": 0.10000016148412047,
+  "current_std_max": 0.14999953424704188,
+  "current_std_mean": 0.12496064529581652,
+  "current_std_std": 0.014418390526513948,
+  "dwell_time_min": 5.0,
+  "dwell_time_max": 119.0,
+  "dwell_time_mean": 12.514026641845703,
+  "dwell_time_std": 8.021345454635796,
+  "first_rows": [
+   "AAAAAAAAA",
+   "ACAAAAAAA",
+   "AGAAAAAAA",
+   "ATAAAAAAA",
+   "CAAAAAAAA",
+   "CCAAAAAAA"
+  ],
+  "dwell_integer": true
+ },
+ "performance": {
+  "shape": [
+   16,
+   4
+  ],
+  "columns": [
+   "Chemistry",
+   "Tool",
+   "Time_min",
+   "FileSize_MB"
+  ],
+  "nan_rows": [
+   [
+    "DNA r10.4",
+    "Nanopolish"
+   ],
+   [
+    "DNA r10.4",
+    "Tombo"
+   ],
+   [
+    "RNA004",
+    "Nanopolish"
+   ],
+   [
+    "RNA004",
+    "Tombo"
+   ]
+  ]
+ },
+ "m6a": {
+  "n": 5000,
+  "n_pos": 1024,
+  "columns": [
+   [
+    "site_id",
+    "label"
+   ],
+   [
+    "site_id",
+    "probability"
+   ],
+   [
+    "site_id",
+    "probability"
+   ]
+  ],
+  "ids_aligned": true,
+  "ids_unique": true,
+  "id_range": [
+   0,
+   4999
+  ],
+  "nan": [
+   0,
+   0
+  ],
+  "u4_exact0": 393,
+  "u4_exact1": 84,
+  "np_exact0": 317,
+  "np_exact1": 27,
+  "u4_range": [
+   0.0,
+   1.0
+  ],
+  "np_range": [
+   0.0,
+   1.0
+  ]
+ },
+ "absent_metadata": [
+  "read coverage per site",
+  "gene / transcript ID",
+  "cell line",
+  "motif (DRACH) context",
+  "per-read predictions",
+  "alignment-quality (model MAD) values",
+  "compressed / gzip file sizes",
+  "replicate timings / CPU-thread counts",
+  "raw signal (FAST5/POD5/BLOW5)",
+  "BAM alignments"
+ ]
+}

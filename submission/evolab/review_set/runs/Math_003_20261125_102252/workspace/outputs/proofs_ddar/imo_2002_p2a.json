@@ -1,0 +1,968 @@
+{
+ "problem": "imo_2002_p2a",
+ "statement": "b c = segment b c; o = midpoint o b c; a = on_circle a o b; d = on_circle d o b, on_bline d a b; e = on_bline e o a, on_circle e o b; f = on_bline f o a, on_circle f o b; j = on_pline j o a d, on_line j a c ? eqangle e c e j e j e f",
+ "coords": {
+  "b": [
+   0.6888437030500962,
+   0.515908805880605
+  ],
+  "c": [
+   -0.45259681840792254,
+   1.1380932929691585
+  ],
+  "o": [
+   0.11812344232108685,
+   0.8270010494248817
+  ],
+  "a": [
+   0.08172585411724015,
+   1.4759811843850692
+  ],
+  "d": [
+   -0.4312488563848206,
+   0.47959627482529854
+  ],
+  "e": [
+   0.6619579316461395,
+   1.1830123529259915
+  ],
+  "f": [
+   -0.46210863520781253,
+   1.1199698808839595
+  ],
+  "j": [
+   0.6310981528231475,
+   1.8233859589846522
+  ]
+ },
+ "goal": [
+  "eqangle",
+  "e",
+  "c",
+  "e",
+  "j",
+  "e",
+  "j",
+  "e",
+  "f"
+ ],
+ "steps": [
+  {
+   "id": 3,
+   "kind": "cong",
+   "args": [
+    "o",
+    "d",
+    "o",
+    "b"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    3,
+    "on_circle",
+    "cong",
+    [
+     "o",
+     "d",
+     "o",
+     "b"
+    ],
+    3
+   ]
+  },
+  {
+   "id": 30,
+   "kind": "eqangle",
+   "args": [
+    "b",
+    "o",
+    "b",
+    "d",
+    "d",
+    "b",
+    "d",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    3
+   ],
+   "src": null
+  },
+  {
+   "id": 2,
+   "kind": "cong",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "b"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    2,
+    "on_circle",
+    "cong",
+    [
+     "o",
+     "a",
+     "o",
+     "b"
+    ],
+    2
+   ]
+  },
+  {
+   "id": 18,
+   "kind": "cong",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "d"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    3
+   ],
+   "src": null
+  },
+  {
+   "id": 19,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o",
+    "a",
+    "d",
+    "d",
+    "a",
+    "d",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    18
+   ],
+   "src": null
+  },
+  {
+   "id": 17,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o",
+    "a",
+    "b",
+    "b",
+    "a",
+    "b",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    2
+   ],
+   "src": null
+  },
+  {
+   "id": 1,
+   "kind": "cong",
+   "args": [
+    "o",
+    "b",
+    "o",
+    "c"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    1,
+    "midpoint",
+    "cong",
+    [
+     "o",
+     "b",
+     "o",
+     "c"
+    ],
+    1
+   ]
+  },
+  {
+   "id": 15,
+   "kind": "cong",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "c"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    1,
+    2
+   ],
+   "src": null
+  },
+  {
+   "id": 16,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o",
+    "a",
+    "c",
+    "c",
+    "a",
+    "c",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    15
+   ],
+   "src": null
+  },
+  {
+   "id": 13,
+   "kind": "coll",
+   "args": [
+    "j",
+    "a",
+    "c"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    6,
+    "on_line",
+    "coll",
+    [
+     "j",
+     "a",
+     "c"
+    ],
+    13
+   ]
+  },
+  {
+   "id": 12,
+   "kind": "para",
+   "args": [
+    "j",
+    "o",
+    "a",
+    "d"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    6,
+    "on_pline",
+    "para",
+    [
+     "j",
+     "o",
+     "a",
+     "d"
+    ],
+    12
+   ]
+  },
+  {
+   "id": 5,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "d",
+    "a",
+    "b",
+    "b",
+    "a",
+    "b",
+    "d"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    3,
+    "on_bline",
+    "eqangle",
+    [
+     "a",
+     "d",
+     "a",
+     "b",
+     "b",
+     "a",
+     "b",
+     "d"
+    ],
+    5
+   ]
+  },
+  {
+   "id": 0,
+   "kind": "coll",
+   "args": [
+    "o",
+    "b",
+    "c"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    1,
+    "midpoint",
+    "coll",
+    [
+     "o",
+     "b",
+     "c"
+    ],
+    0
+   ]
+  },
+  {
+   "id": 139,
+   "kind": "eqangle",
+   "args": [
+    "j",
+    "a",
+    "j",
+    "o",
+    "o",
+    "j",
+    "o",
+    "a"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    0,
+    5,
+    12,
+    13,
+    16,
+    17,
+    19,
+    30
+   ],
+   "src": null
+  },
+  {
+   "id": 140,
+   "kind": "cong",
+   "args": [
+    "a",
+    "j",
+    "a",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso_conv",
+   "prem": [
+    139
+   ],
+   "src": null
+  },
+  {
+   "id": 9,
+   "kind": "cong",
+   "args": [
+    "f",
+    "o",
+    "f",
+    "a"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    5,
+    "on_bline",
+    "cong",
+    [
+     "f",
+     "o",
+     "f",
+     "a"
+    ],
+    9
+   ]
+  },
+  {
+   "id": 8,
+   "kind": "cong",
+   "args": [
+    "o",
+    "e",
+    "o",
+    "b"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    4,
+    "on_circle",
+    "cong",
+    [
+     "o",
+     "e",
+     "o",
+     "b"
+    ],
+    8
+   ]
+  },
+  {
+   "id": 121,
+   "kind": "eqratio",
+   "args": [
+    "o",
+    "a",
+    "f",
+    "a",
+    "o",
+    "e",
+    "f",
+    "o"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    8,
+    9
+   ],
+   "src": null
+  },
+  {
+   "id": 11,
+   "kind": "cong",
+   "args": [
+    "o",
+    "f",
+    "o",
+    "b"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    5,
+    "on_circle",
+    "cong",
+    [
+     "o",
+     "f",
+     "o",
+     "b"
+    ],
+    11
+   ]
+  },
+  {
+   "id": 6,
+   "kind": "cong",
+   "args": [
+    "e",
+    "o",
+    "e",
+    "a"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    4,
+    "on_bline",
+    "cong",
+    [
+     "e",
+     "o",
+     "e",
+     "a"
+    ],
+    6
+   ]
+  },
+  {
+   "id": 120,
+   "kind": "eqratio",
+   "args": [
+    "o",
+    "a",
+    "f",
+    "a",
+    "a",
+    "e",
+    "a",
+    "o"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    6,
+    8,
+    9,
+    11
+   ],
+   "src": null
+  },
+  {
+   "id": 122,
+   "kind": "simtri",
+   "args": [
+    "o",
+    "a",
+    "e",
+    "f",
+    "a",
+    "o"
+   ],
+   "const": "0",
+   "rule": "sim_sss",
+   "prem": [
+    120,
+    121
+   ],
+   "src": null
+  },
+  {
+   "id": 118,
+   "kind": "eqratio",
+   "args": [
+    "o",
+    "a",
+    "a",
+    "o",
+    "o",
+    "e",
+    "a",
+    "f"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    8,
+    9,
+    11
+   ],
+   "src": null
+  },
+  {
+   "id": 117,
+   "kind": "eqratio",
+   "args": [
+    "o",
+    "a",
+    "a",
+    "o",
+    "a",
+    "e",
+    "o",
+    "f"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    6,
+    8,
+    11
+   ],
+   "src": null
+  },
+  {
+   "id": 119,
+   "kind": "simtri",
+   "args": [
+    "o",
+    "a",
+    "e",
+    "a",
+    "o",
+    "f"
+   ],
+   "const": "0",
+   "rule": "sim_sss",
+   "prem": [
+    117,
+    118
+   ],
+   "src": null
+  },
+  {
+   "id": 115,
+   "kind": "eqratio",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "f",
+    "o",
+    "e",
+    "o",
+    "a"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    8,
+    11
+   ],
+   "src": null
+  },
+  {
+   "id": 114,
+   "kind": "eqratio",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "f",
+    "a",
+    "e",
+    "f",
+    "a"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    6,
+    8,
+    9
+   ],
+   "src": null
+  },
+  {
+   "id": 116,
+   "kind": "simtri",
+   "args": [
+    "o",
+    "a",
+    "e",
+    "o",
+    "f",
+    "a"
+   ],
+   "const": "0",
+   "rule": "sim_sss",
+   "prem": [
+    114,
+    115
+   ],
+   "src": null
+  },
+  {
+   "id": 197,
+   "kind": "cong",
+   "args": [
+    "a",
+    "j",
+    "a",
+    "e"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    116,
+    119,
+    122,
+    140
+   ],
+   "src": null
+  },
+  {
+   "id": 198,
+   "kind": "eqangle",
+   "args": [
+    "j",
+    "a",
+    "j",
+    "e",
+    "e",
+    "j",
+    "e",
+    "a"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    197
+   ],
+   "src": null
+  },
+  {
+   "id": 37,
+   "kind": "cong",
+   "args": [
+    "o",
+    "e",
+    "o",
+    "f"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    8,
+    11
+   ],
+   "src": null
+  },
+  {
+   "id": 38,
+   "kind": "eqangle",
+   "args": [
+    "e",
+    "o",
+    "e",
+    "f",
+    "f",
+    "e",
+    "f",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    37
+   ],
+   "src": null
+  },
+  {
+   "id": 26,
+   "kind": "cong",
+   "args": [
+    "o",
+    "c",
+    "o",
+    "e"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    1,
+    8
+   ],
+   "src": null
+  },
+  {
+   "id": 27,
+   "kind": "eqangle",
+   "args": [
+    "c",
+    "o",
+    "c",
+    "e",
+    "e",
+    "c",
+    "e",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    26
+   ],
+   "src": null
+  },
+  {
+   "id": 22,
+   "kind": "cong",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "f"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    11
+   ],
+   "src": null
+  },
+  {
+   "id": 23,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o",
+    "a",
+    "f",
+    "f",
+    "a",
+    "f",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    22
+   ],
+   "src": null
+  },
+  {
+   "id": 20,
+   "kind": "cong",
+   "args": [
+    "o",
+    "a",
+    "o",
+    "e"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    2,
+    8
+   ],
+   "src": null
+  },
+  {
+   "id": 21,
+   "kind": "eqangle",
+   "args": [
+    "a",
+    "o",
+    "a",
+    "e",
+    "e",
+    "a",
+    "e",
+    "o"
+   ],
+   "const": "0",
+   "rule": "iso",
+   "prem": [
+    20
+   ],
+   "src": null
+  },
+  {
+   "id": 10,
+   "kind": "eqangle",
+   "args": [
+    "o",
+    "f",
+    "o",
+    "a",
+    "a",
+    "o",
+    "a",
+    "f"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    5,
+    "on_bline",
+    "eqangle",
+    [
+     "o",
+     "f",
+     "o",
+     "a",
+     "a",
+     "o",
+     "a",
+     "f"
+    ],
+    10
+   ]
+  },
+  {
+   "id": 7,
+   "kind": "eqangle",
+   "args": [
+    "o",
+    "e",
+    "o",
+    "a",
+    "a",
+    "o",
+    "a",
+    "e"
+   ],
+   "const": "0",
+   "rule": "premise",
+   "prem": [],
+   "src": [
+    4,
+    "on_bline",
+    "eqangle",
+    [
+     "o",
+     "e",
+     "o",
+     "a",
+     "a",
+     "o",
+     "a",
+     "e"
+    ],
+    7
+   ]
+  },
+  {
+   "id": 224,
+   "kind": "eqangle",
+   "args": [
+    "e",
+    "c",
+    "e",
+    "j",
+    "e",
+    "j",
+    "e",
+    "f"
+   ],
+   "const": "0",
+   "rule": "ar",
+   "prem": [
+    7,
+    10,
+    13,
+    16,
+    21,
+    23,
+    27,
+    38,
+    198
+   ],
+   "src": null
+  }
+ ],
+ "goal_step": 224,
+ "stats": {
+  "n_steps": 41,
+  "n_premise": 13,
+  "n_ar": 15,
+  "ar_resolved": 15,
+  "nonintegral": 2
+ }
+}

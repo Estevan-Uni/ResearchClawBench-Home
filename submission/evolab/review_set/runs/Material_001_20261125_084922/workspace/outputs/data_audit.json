@@ -1,0 +1,77 @@
+{
+  "lengths": {
+    "atomic_numbers": 100,
+    "node_features": 117,
+    "edge_list": 20,
+    "targets": 97,
+    "lattice_a": 101,
+    "lattice_b": 101,
+    "T_range": 2,
+    "t_range": 2,
+    "T_opt": 1,
+    "t_opt": 1,
+    "noise": 1,
+    "n_iter": 1
+  },
+  "atomic_numbers_unique": [
+    5
+  ],
+  "node_features_grid13x9_maxerr": 4.440892098500626e-16,
+  "node_feature_unique": 61,
+  "edge_list_is_K5": true,
+  "n_edges": 10,
+  "target_unique": 22,
+  "target_mean": 0.08402989690721649,
+  "target_std": 0.5789185476181239,
+  "target_period": 8,
+  "target_period_start": 15,
+  "lattice_a_period": 7,
+  "lattice_unique_a": 7,
+  "lattice_b_is_a_shifted_by": [
+    4
+  ],
+  "unique_ab_pairs": [
+    [
+      5.1234,
+      5.789
+    ],
+    [
+      5.2345,
+      5.9012
+    ],
+    [
+      5.3456,
+      5.1234
+    ],
+    [
+      5.5678,
+      5.2345
+    ],
+    [
+      5.6789,
+      5.3456
+    ],
+    [
+      5.789,
+      5.5678
+    ],
+    [
+      5.9012,
+      5.6789
+    ]
+  ],
+  "optimisation": {
+    "T_range": [
+      200.0,
+      500.0
+    ],
+    "t_range": [
+      10.0,
+      30.0
+    ],
+    "T_opt": 350.0,
+    "t_opt": 20.0,
+    "noise": 0.1,
+    "n_iter": 10
+  }
+}

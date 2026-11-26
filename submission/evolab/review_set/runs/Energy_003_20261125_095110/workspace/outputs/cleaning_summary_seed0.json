@@ -1,0 +1,37 @@
+{
+  "seed": 0,
+  "miss_rate": 0.05,
+  "out_rate": 0.02,
+  "n_missing": 438,
+  "n_outlier": 175,
+  "n_flagged": 175,
+  "detection": {
+    "TP": 175,
+    "FP": 0,
+    "FN": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "F1": 1.0
+  },
+  "detection_by_type": {
+    "spike": {
+      "n": 105,
+      "detected": 105
+    },
+    "zero": {
+      "n": 26,
+      "detected": 26
+    },
+    "scale": {
+      "n": 26,
+      "detected": 26
+    },
+    "stuck": {
+      "n": 18,
+      "detected": 18
+    }
+  },
+  "n_missing_runs": 193,
+  "longest_missing_run": 24,
+  "n_gap_hours_after_stage1": 613
+}

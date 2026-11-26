@@ -1,0 +1,227 @@
+Spin Space Groups: Full Classification and Applications
+Zhenyu Xiao,1,* Jianzhou Zhao ,2,* Yanqi Li,1 Ryuichi Shindou,1 and Zhi-Da Song 1,3,4,†
+1International Center for Quantum Materials, School of Physics, Peking University, Beijing 100871, China
+2Co-Innovation Center for New Energetic Materials, Southwest University of Science and Technology,
+Mianyang 621010, China
+3Hefei National Laboratory, Hefei 230088, China
+4Collaborative Innovation Center of Quantum Matter, Beijing 100871, China
+(Received 31 July 2023; revised 5 February 2024; accepted 16 May 2024; published 28 August 2024)
+In this work, we exhaust all the spin space symmetries, which fully characterize collinear, noncollinear,
+and commensurate spiral as well as incommensurate spiral magnetism, etc., and investigate enriched
+features of electronic bands that respect these symmetries. We achieve this by systematically classifying the
+so-called spin space groups (SSGs)—joint symmetry groups of spatial and spin operations that leave the
+magnetic structure unchanged. Generally speaking, they are accurate (approximate) symmetries in systems
+where spin-orbit coupling (SOC) is negligible (finite but weaker than the energy scale of interest), but we
+also show that specific SSGs could remain valid even in the presence of strong SOC. In recent years, SSGs
+have played increasingly pivotal roles in various fields such as altermagnetism, topological electronic
+states, and topological magnon, etc. However, due to its complexity, a complete SSG classification has not
+been completed up to now. By representing the SSGs as OðNÞ representations, we—for the first time—
+obtain the complete classifications of 1421, 9542, and 56 512 distinct SSGs for collinear (N ¼ 1), coplanar
+(N ¼ 2), and noncoplanar (N ¼ 3) magnetism, respectively. SSG not only fully characterizes the symmetry
+of spin degrees of freedom, but also gives rise to exotic electronic states, which, in general, form projective
+representations of magnetic space groups (MSGs). Surprisingly, electronic bands in SSGs exhibit features
+never seen in MSGs, such as (i) nonsymmorphic SSG Brillouin zone, where SSG operations behave as a
+glide or screw when acting on momentum, (ii) effective π flux, where translation operators anticommute
+with each other and yield duplicate bands, (iii) higher-dimensional representations unexplained by MSGs,
+and (iv) unconventional spin texture on a Fermi surface, which is completely determined by SSGs,
+independent of Hamiltonian details. To apply our theory, we identify the SSG for each of the 1595
+published magnetic structures in the MAGNDATA database on the Bilbao Crystallographic Server.
+Material examples exhibiting the novel features (i)–(iv) are discussed with emphasis. We also investigate
+new types of SSG-protected topological electronic states that are unprecedented in MSGs. In particular, we
+propose a 3D Z2 topological insulator state with a fourfold degenerate Dirac point on the surface and a new
+scenario of anomalous Z2 helical states that appear on magnetic domain walls.
+DOI: 10.1103/PhysRevX.14.031037 Subject Areas: Condensed Matter Physics, Magnetism,
+Topological Insulators
+I. INTRODUCTION
+Symmetry is one of the central concepts in modern physics.
+In condensed matter, symmetry plays determining roles in
+phase transitions, low-energy excitations, transport in disor-
+dered systems, etc., allowing physicists to qualitatively
+understand a realistic system without knowing microscopic
+details. One cannot overemphasize the importance of sym-
+metry in physics. For more than one hundred years, the
+230 space groups have been the standard mathematical
+description of symmetries in solid material crystallography.
+For magnetic materials, the complete symmetry theory was
+generally believed to be the 1651 magnetic space groups
+(MSGs), where a symmetry operation could be a pure spatial
+operation or a combination of the time-reversal symmetry
+(TRS) and a spatial operation. In the 1960s, people realized
+that Heisenberg models with negligible spin-orbit coupling
+(SOC) enjoy higher symmetries, namely, spin space groups
+(SSGs) [1]. In an SSG, an operation can be a combination
+of a spatial operation and an arbitrary spin rotation that is
+compatible with the group structure. Such symmetries are
+found crucial to describe the spin waves correctly. Later, the
+*These authors contributed equally to this work.
+†songzd@pku.edu.cn
+Published by the American Physical Society under the terms of
+the Creative Commons Attribution 4.0 International license.
+Further distribution of this work must maintain attribution to
+the author(s) and the published article’s title, journal citation,
+and DOI.
+PHYSICAL REVIEW X 14, 031037 (2024)
+2160-3308=24=14(3)=031037(33) 031037-1 Published by the American Physical Societyspin point groups, where the spatial operations are limited to
+point group operations, were fully classified by Litvin [2,3].
+However, due to the complexity of joining spatial and spin
+operations, a full classification of SSGs has not been
+completed up to now.
+In recent years, SSGs have drawn growing attention
+because of their applications in magnetic materials with
+negligible or weak SOC, such as magnetic topological
+electronic states [4–7], topological magnon bands [8–14],
+unconventional spin-momentum locking without SOC
+[15–18], which was later realized as a common feature
+of the altermagnetism [19–26], etc. To be specific, SSGs
+can protect (i) exotic nodal-line or -point semimetals, e.g.,
+twelvefold degenerate fermion in three dimensions [5] and
+eightfold degenerate fermion in two dimensions [6],
+that are disallowed by conventional symmetries [27];
+(ii) exotic topological insulators (TIs), e.g., SOC-free
+and TRS-free two-dimensional Z2 TIs [4], that are dis-
+allowed by conventional symmetries [28–32]; and
+(iii) exotic nodal magnon bands, e.g., Dirac points with
+Z-valued monopole charges [12], which evolve into nodal
+lines with Z2-monopole charges [33,34] if weak SOC is
+considered, as confirmed by the experiment [13]. SSGs
+are also crucial for understanding the so-called altermag-
+netism [19,26], where antiparallel spin momenta at
+two sublattices compensate each other exactly (as in
+antiferromagnetism) but the two sublattices are not related
+by inversion or translation. Altermagnetism can exhibit
+unconventional, e.g., d-, g-, and i-wave-like, spin-
+momentum locking [15,25], which can lead to a surpris-
+ingly large anomalous Hall conductivity when a weak
+SOC is introduced [16,17], as confirmed by experiments
+[21–24]. Unconventional momentum-dependent spin
+polarization also exists in noncollinear magnetism without
+SOC [18,35]. Therefore, SSGs not only give rise to
+theoretically exotic states, but also have a strong relevance
+in realistic magnetic materials. It provides a precise
+description of magnetic materials with negligible SOC
+and a good starting point to understand magnetic materials
+with weak SOC. However, due to lacking a complete
+classification of SSGs, most discussions are limited to spin
+point groups or several simple SSGs.
+In this work, by reducing the group classification
+problem to a representation problem, we obtain the full
+classification of SSGs and find that there exist 67 475
+inequivalent SSGs in total (see Sec. F in Supplemental
+Material [36]). These SSGs fully characterize collinear
+magnetism (including ferro-, ferri-, antiferro-, and alter-
+magnetism), coplanar magnetism, noncoplanar magnetism,
+and spiral magnetism (including commensurate and incom-
+mensurate structures).
+The complete classification reveals additional novel
+features of magnetic states beyond those found in previous
+works. To investigate electron bands using SSGs, we
+generalize crystal momentum to SSG momentum ˜k and
+introduce a concept of the SSG Brillouin zone (SBZ)—the
+reciprocal space formed by SSG momenta. Because of
+enriched symmetry algebra, the action of SSG translations
+on electronic states may exhibit anticommutation. An SBZ
+is said to be noncommuting if the SSG translations have
+this property and commuting otherwise. Commuting SBZs
+can be further classified into symmorphic SBZs and non-
+symmorphic SBZs, wherein the latter exhibits nontrivial
+transformations of SSG momentum. In a symmorphic SBZ,
+the momentum transforms normally under an SSG oper-
+ation g, i.e., ˜k → ˜k0 ¼ sgRg ˜k, with Rg being the point group
+part of g and sg being 1 (−1) for unitary (antiunitary) g.Ina
+nonsymmorphic SBZ, ˜k transforms to sgðRg ˜k þ ˜qgÞ, where
+˜qg is not a reciprocal lattice vector of SBZ but a “fractional
+translation” in momentum space. In Secs. III C and IV B,
+we discuss the noncommuting and nonsymmorphic SBZ in
+more detail and present several theoretical and material
+examples. We identify whether the SBZ is noncommuting,
+nonsymmorphic for each of the 67 475 SSGs (see
+Tables S1–S690 in Supplemental Material [36]). We note
+that, while anticommuting translations and nonsymmorphic
+transformation of momentum [41] can arise in systems
+subjected to external magnetic flux, these exotic behaviors
+studied in this work are intrinsically derived from the
+magnetic structures.
+Another advancement from the SSG classification is a
+systematic classification of spin textures of SSG Bloch
+states in the momentum space. Spin expectation of SSG
+Bloch states is transformed under SSG operations, and the
+transformation realizes a representation of the SSG. If the
+realized representation is nontrivial, the spin polarization
+on the Fermi surface must be momentum dependent and
+generally cannot be described by MSGs. This description
+fully characterizes the spin textures not only in altermag-
+netism [15,25], but also in noncollinear magnetism [35],
+which can be p-;d-;f-…-wavelike. We explicitly derive
+the representations formed by spin textures in all SSGs
+that have symmorphic SBZs (see Tables S1–S690 in
+Supplemental Material [36]).
+To apply our theory, we identify the SSGs for the
+1595 published experimental magnetic structures in
+the MAGNDATA database [42,43] on the Bilbao
+Crystallographic Server and tabulate the results in Sec. G
+in Supplemental Material [36]. For every material, we
+further determine whether it has a noncommuting, non-
+symmorphic, or symmorphic SBZ and whether it possesses
+a nontrivial spin texture. Remarkably, these materials
+exhibit all the aforementioned exotic features of SSG.
+Among them, 33 materials have noncommuting SBZs; 153
+materials have nonsymmorphic SBZs; 460 of 1409 remain-
+ing materials with symmorphic SBZs possess nontrivial
+spin textures in the momentum space. Within this group of
+460 materials, 139 are collinear and fall into the category of
+altermagnetism. We believe that this useful information will
+lead to further research for new physics and potential
+XIAO, ZHAO, LI, SHINDOU, and SONG PHYS. REV. X 14, 031037 (2024)
+031037-2applications in fields like spintronics. To illustrate these
+concepts, we perform first-principle calculations on repre-
+sentative examples of materials.
+SSGs also protect novel electron topological states
+that are absent in conventional space groups [44–46] and
+MSGs [47–52]. In Sec. V, we present three examples of
+SSG-protected topological states. The first example is a
+physical realization of a two-dimensional SOC-free and
+TRS-free Z2 TI. The hopping Hamiltonian of this model is
+real, and the topology is introduced by a noncollinear
+magnetic order. The second example is a three-dimensional
+SOC-free and TRS-free Z2 TI possessing a fourfold Dirac
+point on surfaces. The third example is a two-dimensional
+system with a protected helical mode along the domain wall
+between two magnetic domains with the same topological
+invariant. To our knowledge, the latter two states have never
+been discussed in conventional symmetry groups or SSGs.
+In particular, the third example demonstrates a new
+scenario of topological states—topological gapless domain
+wall—that is unseen in previously known free-fermion
+states (in the absence of chiral and particle-hole sym-
+metries). These examples should be the tip of the iceberg of
+the unexplored fruitful topological states in SSGs.
+We summarize the main results of this work in Fig. 1,
+and the rest of this paper is organized as follows. In Sec. II,
+we explain why OðNÞ representations of space groups can
+classify all SSGs (see Sec. II A). We also describe a method
+of constructing all OðNÞ representations (Sec. II B) and
+criteria for determining whether two representations yield
+physically distinct SSGs (Sec. II D). We use O(3) repre-
+sentations of the space group P3 as an example of the
+classification (Sec. II C). We summarize basic information
+of SSGs in Sec. II E and tabulate all the SSGs in Sec. F in
+Supplemental Material [36]. In Sec. III, we investigate
+Materials: 954 (234)
+Materials: 436 (84)
+Materials: 205 (66)
+FIG. 1. Summary of results. We obtain all 1421, 9542, and 56 512 distinct SSGs for collinear (N ¼ 1), coplanar (N ¼ 2), and
+noncoplanar (N ¼ 3) magnetic structures by enumerating OðNÞ representations. Nonspiral and spiral: All the collinear SSGs describe
+commensurate magnetic structures, whereas 775 (7745) of the coplanar (noncoplanar) SSGs describe spiral magnetic structures with either
+commensurate or incommensurate spiral angles. Electron representation: In collinear magnetism, electronic Bloch states form a linear
+representation of a MSG of type II (gray group). In coplanar (noncoplanar) magnetism, they form projective representations of MSGs M of
+type II (I, III, and IV), classified by group cohomology H2½M;Uð1Þ/C138. Topology: We show possible electronic topological states for
+different SSGs, where TSM denotes topological semimetal. We provide concrete models of topological states, e.g., a fourfold degenerate
+surface Dirac fermion, in noncoplanar magnetism. Spin texture: SSGs determine the dimension d of the span of spin expectations on Fermi
+surfaces and, if d>0, whether the spin textures are nontrivial. SBZ: The action of SSG translations on SSG Bloch states might
+anticommute, resulting in a noncommuting SBZ with a duplicated band structure. When the SSG translations commute, the SBZ can be
+symmorphic or nonsymmorphic, and SSG momentum in the latter is transformed nonsymmorphically under SSG symmetries. We also
+identify the SSGs of experimental materials. We list the (blue and italic) number of magnetic materials that are subject to the category at the
+bottom of each cell, and in the parentheses is the number of materials constituent of light elements from the first four periods. Finally, it is
+notable that some SSGs can be applied to systems with significant SOC, such as symmetry-breaking phases in the Kitaev model.
+SPIN SPACE GROUPS: FULL CLASSIFICATION … PHYS. REV. X 14, 031037 (2024)
+031037-3

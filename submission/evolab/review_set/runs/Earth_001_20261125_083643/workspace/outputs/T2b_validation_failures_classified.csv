@@ -1,0 +1,65 @@
+idx,field,filename,cause,in_sample
+199,project,Border Weather Mod. Assn._03-1183_01.01.2003-12.31.2003.pdf,name differs from filename stem (manual check needed),False
+375,project,Kings River_02-1111_01.01.2002-12.31.2002.pdf,name differs from filename stem (manual check needed),False
+409,project,Modification Project_01-1099_11.15.2001-04.15.2002.pdf,uninformative filename stem (name not checkable),True
+435,project,N-A_05-1299_10.15.2005-05.15.2006.pdf,uninformative filename stem (name not checkable),False
+436,project,N.A_04-1247_10.15.2004-05.15.2005.pdf,uninformative filename stem (name not checkable),True
+437,project,N.A._06-1334_10.15.2006-05.15.2007.pdf,uninformative filename stem (name not checkable),True
+438,project,NOAA # 031133_02-1133_03.15.2003-10.07.2003.pdf,uninformative filename stem (name not checkable),True
+439,project,NOAA # 031133_04-1243_03.24.2004-12.31.2004.pdf,uninformative filename stem (name not checkable),True
+440,project,NOAA # 031133_06-1316_01.01.2006-12.31.2006.pdf,uninformative filename stem (name not checkable),False
+441,project,NOAA #031133_03-1205_03.19.2003-12.31.2003.pdf,uninformative filename stem (name not checkable),False
+532,project,Powell Farms_02-1144_03.25.2002-12.31.2002.pdf,name differs from filename stem (manual check needed),False
+558,project,Rockville River Weather Modification Project_03-1158_11.15.2002-04.30.2003.pdf,name differs from filename stem (manual check needed),False
+600,project,Snowfall - Tahoe Project  Previous File NO. 05-1250_05-1296_10.15.2005-09.30.2006.pdf,name differs from filename stem (manual check needed),True
+601,project,"Snowpack_Alta, Utah_03-1157_10.15.2002-12.31.2002.pdf",uninformative filename stem (name not checkable),False
+764,project,West Texas Western Modification Assoc._16-1678_03.15.2016-10.31.2016.pdf,name differs from filename stem (manual check needed),False
+10,year,2018COESJM_ESJ17-4.pdf,probable extraction error (year vs end date),False
+131,year,2023WYKA-1.pdf,probable extraction error (year vs end date),False
+139,year,2024COG-1 copy.pdf,probable extraction error (year vs end date),False
+242,agent,"Clark County, Idaho_12-1567_11.01.2012-04.30.2013.pdf",garbled/non-chemical token in formulation,False
+243,agent,"Clark County, Idaho_13-1595_11.01.2013-04.30.2014.pdf",garbled/non-chemical token in formulation,False
+244,agent,"Clark County, Idaho_14-1625_11.01.2014-04.30.2015.pdf",garbled/non-chemical token in formulation,False
+449,agent,North Dakota Cloud Modification Project - District I_07-1375_06.01.2007-08.31.2007.pdf,probable extraction error (ionized air on aircraft programme),False
+454,agent,North Dakota Cloud Modification Project - District I_12-1553_06.01.2012-08.31.2012.pdf,probable extraction error (ionized air on aircraft programme),False
+457,agent,North Dakota Cloud Modification Project - District I_15-1651_06.01.2015-08.31.2015.pdf,probable extraction error (ionized air on aircraft programme),False
+463,agent,North Dakota Cloud Modification Project - District II_04-1246_06.01.2004-08.31.2004.pdf,probable extraction error (ionized air on aircraft programme),False
+509,agent,PGCD Precipitaion Enhancement Program_interim_2018-2019.pdf,probable extraction error (ionized air on aircraft programme),False
+523,agent,PGCD Precipitation Enhancement Program_17-1714_04.01.2017-09.30.2017.pdf,probable extraction error (ionized air on aircraft programme),False
+765,agent,Western Kansas Weather Modification Program_11-1527_04.16.2011-09.15.2011.pdf,probable extraction error (ionized air on aircraft programme),True
+769,agent,Western Kansas Weather Modification Program_15-1650_04.16.2015-09.15.2015.pdf,probable extraction error (ionized air on aircraft programme),False
+775,agent,Western Kansas Weather Modification_07-1377_04.16.2007-09.21.2007.pdf,probable extraction error (ionized air on aircraft programme),False
+449,apparatus,North Dakota Cloud Modification Project - District I_07-1375_06.01.2007-08.31.2007.pdf,probable extraction error (apparatus missing; ionized-air record),False
+509,apparatus,PGCD Precipitaion Enhancement Program_interim_2018-2019.pdf,probable extraction error (apparatus missing; ionized-air record),False
+769,apparatus,Western Kansas Weather Modification Program_15-1650_04.16.2015-09.15.2015.pdf,probable extraction error (apparatus missing; ionized-air record),False
+775,apparatus,Western Kansas Weather Modification_07-1377_04.16.2007-09.21.2007.pdf,probable extraction error (apparatus missing; ionized-air record),False
+139,purpose,2024COG-1 copy.pdf,extraction artefact (duplicated token),False
+440,purpose,NOAA # 031133_06-1316_01.01.2006-12.31.2006.pdf,extraction artefact (duplicated token),False
+754,purpose,West Central Texas Weather Modification Assoc_02-1134_06.29.2001-10.31.2001.pdf,extraction artefact (duplicated token),True
+348,target_area,Increase Precipitation _00-1036_10.01.1999 - 05.31.2000.pdf,missing target area,True
+435,target_area,N-A_05-1299_10.15.2005-05.15.2006.pdf,missing target area,False
+437,target_area,N.A._06-1334_10.15.2006-05.15.2007.pdf,missing target area,True
+7,start_date,2018CAUSJS_NOAA_SCE_inital_2018.pdf,missing in record (source form incomplete or extraction miss),False
+16,start_date,2018TXSWMA_STWMA.pdf,missing in record (source form incomplete or extraction miss),False
+139,start_date,2024COG-1 copy.pdf,probable extraction or source error (no filename evidence),False
+144,start_date,2024TXWT-1.pdf,missing in record (source form incomplete or extraction miss),False
+248,start_date,District V Cloud Seeding Consortium_04-1225_10.01.2003-04.01.2003.pdf,source error (filename carries same dates),False
+254,start_date,Division V Cloudseeding Consortium_15-1676_12.01.2015-04.10.2015.pdf,source error (filename carries same dates),False
+272,start_date,Eastern Idaho Counties_10-1498_11.01.2010-04.30.2010.pdf,source error (filename carries same dates),False
+513,start_date,PGCD Precipitation Enhancement Program_05-1293_10.01.2004-12.31.2005.pdf,source error (filename carries same dates),False
+728,start_date,Upper Toulumne River Weather Modification Project_16-1710_11.01.2015-04.30.2017.pdf,source error (filename carries same dates),False
+731,start_date,Walker Basin Project_10-1495_11.15.2006.30.2011.pdf,probable extraction or source error (no filename evidence),False
+139,end_date,2024COG-1 copy.pdf,probable extraction or source error (no filename evidence),False
+144,end_date,2024TXWT-1.pdf,missing in record (source form incomplete or extraction miss),False
+248,end_date,District V Cloud Seeding Consortium_04-1225_10.01.2003-04.01.2003.pdf,source error (filename carries same dates),False
+254,end_date,Division V Cloudseeding Consortium_15-1676_12.01.2015-04.10.2015.pdf,source error (filename carries same dates),False
+272,end_date,Eastern Idaho Counties_10-1498_11.01.2010-04.30.2010.pdf,source error (filename carries same dates),False
+301,end_date,Grand Mesa Project_00-1044_12.01.1999-06.31.2000.pdf,missing in record (source form incomplete or extraction miss),False
+302,end_date,Grand Mesa Project_02-1122_12.01.2001-06-31.2002.pdf,missing in record (source form incomplete or extraction miss),True
+303,end_date,Grand Mesa Project_04-1219_12.01.2003-06.31.2004.pdf,missing in record (source form incomplete or extraction miss),False
+305,end_date,Grand Mesa Project_06-1215_12.01.2005-06.31.2006.pdf,missing in record (source form incomplete or extraction miss),False
+513,end_date,PGCD Precipitation Enhancement Program_05-1293_10.01.2004-12.31.2005.pdf,source error (filename carries same dates),False
+638,end_date,Stanislaus Weather Modification Program_14-1437_11.01.2014-04.31.2015.pdf,missing in record (source form incomplete or extraction miss),False
+725,end_date,Upper Toilumne River Weather Modification Project_14-1438_11.01.2014-04.31.2015.pdf,missing in record (source form incomplete or extraction miss),True
+728,end_date,Upper Toulumne River Weather Modification Project_16-1710_11.01.2015-04.30.2017.pdf,source error (filename carries same dates),False
+731,end_date,Walker Basin Project_10-1495_11.15.2006.30.2011.pdf,probable extraction or source error (no filename evidence),False
