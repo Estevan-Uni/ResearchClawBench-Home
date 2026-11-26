@@ -3,7 +3,7 @@
   "task_id": "Life_001",
   "timestamp": "20261125_080434",
   "status": "failed",
-  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Life_001/g1/solve/attempt-00003/Life_001/workspace",
+  "workspace": ".",
   "agent_name": "EvoLab",
   "model": "claude-opus-5-5",
   "duration_seconds": 25.115,
@@ -16,5 +16,6 @@
   "failure_category": "agent_safety_refusal",
   "selected_generation": null,
   "score_source": "assigned_zero_for_agent_safety_refusal",
-  "judge_evaluated": false
+  "judge_evaluated": false,
+  "artifact_scope": "metadata_only"
 }

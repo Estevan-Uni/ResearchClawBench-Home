@@ -9,8 +9,7 @@
     "ended_at": "2026-11-25T05:22:08.205+00:00",
     "wall_seconds": 992.592,
     "cost_usd": 2.3966104,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g1/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -22,8 +21,7 @@
     "ended_at": "2026-11-25T05:26:38.869+00:00",
     "wall_seconds": 270.66,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g1/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g1",
@@ -35,8 +33,7 @@
     "ended_at": "2026-11-25T05:22:35.187+00:00",
     "wall_seconds": 26.96,
     "cost_usd": 0.024206,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g1/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -48,8 +45,7 @@
     "ended_at": "2026-11-25T05:24:50.404+00:00",
     "wall_seconds": 135.216,
     "cost_usd": 0.098708,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g1/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -61,8 +57,7 @@
     "ended_at": "2026-11-25T05:26:38.868+00:00",
     "wall_seconds": 108.463,
     "cost_usd": 0.090174,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g1/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -74,8 +69,7 @@
     "ended_at": "2026-11-25T05:41:37.000+00:00",
     "wall_seconds": 781.832,
     "cost_usd": 2.3756001999999996,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g2",
@@ -87,8 +81,7 @@
     "ended_at": "2026-11-25T05:47:30.996+00:00",
     "wall_seconds": 353.994,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g2",
@@ -100,8 +93,7 @@
     "ended_at": "2026-11-25T05:41:48.456+00:00",
     "wall_seconds": 11.443,
     "cost_usd": 0.026968,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -113,8 +105,7 @@
     "ended_at": "2026-11-25T05:43:49.035+00:00",
     "wall_seconds": 120.576,
     "cost_usd": 0.10703,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -126,8 +117,7 @@
     "ended_at": "2026-11-25T05:45:44.544+00:00",
     "wall_seconds": 111.508,
     "cost_usd": 0.0718886,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/carbon/criteria/01/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -139,8 +129,7 @@
     "ended_at": "2026-11-25T05:47:30.995+00:00",
     "wall_seconds": 106.449,
     "cost_usd": 0.091606,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/g2/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "e1",
@@ -152,7 +141,6 @@
     "ended_at": "2026-11-25T05:28:35.167+00:00",
     "wall_seconds": 116.297,
     "cost_usd": 2.083859,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Astronomy_002/e1/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   }
 ]

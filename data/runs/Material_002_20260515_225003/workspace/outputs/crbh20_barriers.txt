@@ -1,3 +1,0 @@
-Rxn1_cyclobutene: -0.000 eV
-Rxn11_methoxy: -0.000 eV
-Rxn20_cyclopropane: 0.002 eV

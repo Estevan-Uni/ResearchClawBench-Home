@@ -1,9 +1,0 @@
-python run_random_charges.py --rc 3.0 --lr_on 1 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 3.0 --lr_on 0 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 4.0 --lr_on 1 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 4.0 --lr_on 0 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 5.0 --lr_on 1 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 5.0 --lr_on 0 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 6.0 --lr_on 1 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 6.0 --lr_on 0 --epochs 150 --ntrain 40
-python run_random_charges.py --rc 5.0 --lr_on 1 --blind 1 --epochs 150 --ntrain 40

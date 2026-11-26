@@ -1,2 +1,0 @@
-unique rows 44486
-time 32.07481598854065 status counts [44486     0     0]

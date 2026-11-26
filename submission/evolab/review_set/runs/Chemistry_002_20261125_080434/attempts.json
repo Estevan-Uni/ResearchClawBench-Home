@@ -9,8 +9,7 @@
     "ended_at": "2026-11-25T09:35:10.655+00:00",
     "wall_seconds": 5436.265,
     "cost_usd": 5.609760799999999,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Chemistry_002/g1/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -22,8 +21,7 @@
     "ended_at": "2026-11-25T12:03:53.671+00:00",
     "wall_seconds": 8055.386,
     "cost_usd": 8.379130799999997,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Chemistry_002/g1/solve/attempt-00002/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -35,7 +33,6 @@
     "ended_at": "2026-11-25T17:26:10.545+00:00",
     "wall_seconds": 17096.053,
     "cost_usd": 22.723051,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Chemistry_002/g1/solve/attempt-00003/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   }
 ]

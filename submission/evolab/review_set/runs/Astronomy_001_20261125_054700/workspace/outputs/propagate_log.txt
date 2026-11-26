@@ -1,9 +1,0 @@
-lcdm {'n': 250.0, 'theta_mean': 1.04153, 'theta_std': 0.00027, 'hrd_mean': 100.64894, 'hrd_std': 0.53758, 'rd_mean': 147.7261, 'rd_std': 0.22279}
-lcdm_indep {'n': 250.0, 'theta_mean': 1.04169, 'theta_std': 0.00286, 'hrd_mean': 100.62988, 'hrd_std': 0.38156, 'rd_mean': 147.69645, 'rd_std': 0.59936}
-ede {'n': 250.0, 'theta_mean': 1.0408, 'theta_std': 0.00318, 'hrd_mean': 101.02799, 'hrd_std': 0.56595, 'rd_mean': 142.40673, 'rd_std': 1.85608}
-ede_indep {'n': 250.0, 'theta_mean': 1.04102, 'theta_std': 0.00941, 'hrd_mean': 101.15542, 'hrd_std': 0.90458, 'rd_mean': 142.70273, 'rd_std': 1.40044}
-w0wa {'n': 250.0, 'theta_mean': 1.03971, 'theta_std': 0.00603, 'hrd_mean': 93.64246, 'hrd_std': 2.85609, 'rd_mean': 147.59841, 'rd_std': 0.65776}
-w0wa_indep {'n': 250.0, 'theta_mean': 1.04929, 'theta_std': 0.03711, 'hrd_mean': 93.75718, 'hrd_std': 2.00555, 'rd_mean': 147.39959, 'rd_std': 3.10817}
-lcdm {'sigma8_camb': 0.81026, 'sigma8_table': 0.8101, 'sigma_table': 0.0055, 'pull': 0.02837, 'rd': 147.72534, 'theta_star': 1.04156, 'zdrag': 1059.60166, 'zstar': 1089.83159}
-ede {'sigma8_camb': 0.83229, 'sigma8_table': 0.8283, 'sigma_table': 0.0093, 'pull': 0.42936, 'rd': 142.5613, 'theta_star': 1.04093, 'zdrag': 1060.69099, 'zstar': 1090.6867}
-w0wa {'sigma8_camb': 0.77969, 'sigma8_table': 0.78, 'sigma_table': 0.016, 'pull': -0.01966, 'rd': 147.44314, 'theta_star': 1.0405, 'zdrag': 1059.45598, 'zstar': 1090.1048}

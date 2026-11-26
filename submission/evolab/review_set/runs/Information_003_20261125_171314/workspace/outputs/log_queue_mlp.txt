@@ -1,5 +1,0 @@
-finished code/static.py --method mlp --protocol fewshot --seed 0
-finished code/static.py --method mlp --protocol fewshot --seed 1
-finished code/static.py --method mlp --protocol fewshot --seed 2
-finished code/static.py --method mlp --protocol fewshot --seed 3
-finished code/static.py --method mlp --protocol fewshot --seed 4

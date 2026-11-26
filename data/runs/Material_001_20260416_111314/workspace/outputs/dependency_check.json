@@ -1,8 +1,0 @@
-{
-    "dependencies": [
-        "numpy",
-        "matplotlib"
-    ],
-    "status": "available",
-    "notes": "All required libraries are available and functioning correctly."
-}

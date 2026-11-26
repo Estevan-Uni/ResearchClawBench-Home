@@ -9,8 +9,7 @@
     "ended_at": "2026-11-25T09:33:49.899+00:00",
     "wall_seconds": 5355.467,
     "cost_usd": 6.6295246,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -22,8 +21,7 @@
     "ended_at": "2026-11-25T09:46:37.169+00:00",
     "wall_seconds": 767.264,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g1",
@@ -35,8 +33,7 @@
     "ended_at": "2026-11-25T09:35:35.915+00:00",
     "wall_seconds": 105.97,
     "cost_usd": 0.09772,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -48,8 +45,7 @@
     "ended_at": "2026-11-25T09:36:38.566+00:00",
     "wall_seconds": 62.65,
     "cost_usd": 0.061402,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -61,8 +57,7 @@
     "ended_at": "2026-11-25T09:38:44.266+00:00",
     "wall_seconds": 125.698,
     "cost_usd": 0.117022,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -74,8 +69,7 @@
     "ended_at": "2026-11-25T09:40:14.608+00:00",
     "wall_seconds": 86.341,
     "cost_usd": 0.07346,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/02/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -87,8 +81,7 @@
     "ended_at": "2026-11-25T09:42:15.490+00:00",
     "wall_seconds": 120.88,
     "cost_usd": 0.106066,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/03/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -100,8 +93,7 @@
     "ended_at": "2026-11-25T09:45:15.916+00:00",
     "wall_seconds": 176.423,
     "cost_usd": 0.145866,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/03/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -113,8 +105,7 @@
     "ended_at": "2026-11-25T09:46:37.168+00:00",
     "wall_seconds": 81.25,
     "cost_usd": 0.07469,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g1/carbon/criteria/04/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -126,8 +117,7 @@
     "ended_at": "2026-11-25T10:22:02.181+00:00",
     "wall_seconds": 1698.772,
     "cost_usd": 2.9976249999999993,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g2",
@@ -139,8 +129,7 @@
     "ended_at": "2026-11-25T10:30:00.941+00:00",
     "wall_seconds": 478.754,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g2",
@@ -152,8 +141,7 @@
     "ended_at": "2026-11-25T10:23:00.763+00:00",
     "wall_seconds": 58.532,
     "cost_usd": 0.057844,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -165,8 +153,7 @@
     "ended_at": "2026-11-25T10:24:01.422+00:00",
     "wall_seconds": 60.655,
     "cost_usd": 0.058958,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -178,8 +165,7 @@
     "ended_at": "2026-11-25T10:25:27.322+00:00",
     "wall_seconds": 85.898,
     "cost_usd": 0.075146,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -191,8 +177,7 @@
     "ended_at": "2026-11-25T10:25:57.366+00:00",
     "wall_seconds": 30.041,
     "cost_usd": null,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/criteria/03/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -204,8 +189,7 @@
     "ended_at": "2026-11-25T10:28:51.340+00:00",
     "wall_seconds": 169.971,
     "cost_usd": 0.149798,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/criteria/03/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -217,8 +201,7 @@
     "ended_at": "2026-11-25T10:30:00.939+00:00",
     "wall_seconds": 69.596,
     "cost_usd": 0.069646,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/g2/carbon/criteria/04/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "e1",
@@ -230,8 +213,7 @@
     "ended_at": "2026-11-25T09:47:11.263+00:00",
     "wall_seconds": 34.092,
     "cost_usd": 0,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/e1/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "e1",
@@ -243,8 +225,7 @@
     "ended_at": "2026-11-25T09:49:57.375+00:00",
     "wall_seconds": 18.424,
     "cost_usd": null,
-    "cost_source": null,
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/e1/attempt-00002/attempt.json"
+    "cost_source": null
   },
   {
     "phase": "e1",
@@ -256,7 +237,6 @@
     "ended_at": "2026-11-25T09:53:43.406+00:00",
     "wall_seconds": 103.521,
     "cost_usd": 1.703169,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Physics_002/e1/attempt-00003/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   }
 ]

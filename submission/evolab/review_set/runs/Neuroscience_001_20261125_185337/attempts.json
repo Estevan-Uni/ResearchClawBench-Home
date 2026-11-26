@@ -9,8 +9,7 @@
     "ended_at": "2026-11-25T09:21:54.850+00:00",
     "wall_seconds": 4640.431,
     "cost_usd": 5.363292600000002,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -22,8 +21,7 @@
     "ended_at": "2026-11-25T12:10:15.588+00:00",
     "wall_seconds": 8436.655,
     "cost_usd": 9.152813799999997,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/solve/attempt-00002/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -35,8 +33,7 @@
     "ended_at": "2026-11-25T18:43:18.780+00:00",
     "wall_seconds": 21724.278,
     "cost_usd": 21.821068200000003,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/solve/attempt-00003/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -48,8 +45,7 @@
     "ended_at": "2026-11-25T18:51:28.254+00:00",
     "wall_seconds": 489.455,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g1",
@@ -61,8 +57,7 @@
     "ended_at": "2026-11-25T18:44:37.606+00:00",
     "wall_seconds": 78.309,
     "cost_usd": 0.07279,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -74,8 +69,7 @@
     "ended_at": "2026-11-25T18:45:53.227+00:00",
     "wall_seconds": 75.62,
     "cost_usd": 0.069552,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -87,8 +81,7 @@
     "ended_at": "2026-11-25T18:47:54.897+00:00",
     "wall_seconds": 121.666,
     "cost_usd": 0.111348,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -100,8 +93,7 @@
     "ended_at": "2026-11-25T18:48:25.150+00:00",
     "wall_seconds": 30.244,
     "cost_usd": null,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/criteria/03/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -113,8 +105,7 @@
     "ended_at": "2026-11-25T18:50:01.244+00:00",
     "wall_seconds": 92.089,
     "cost_usd": 0.09404,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/criteria/03/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -126,8 +117,7 @@
     "ended_at": "2026-11-25T18:51:28.249+00:00",
     "wall_seconds": 87.0,
     "cost_usd": 0.081582,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g1/carbon/criteria/04/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -139,8 +129,7 @@
     "ended_at": "2026-11-25T23:08:45.422+00:00",
     "wall_seconds": 15308.17,
     "cost_usd": 29.412485400000005,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g2",
@@ -152,8 +141,7 @@
     "ended_at": "2026-11-25T23:19:09.161+00:00",
     "wall_seconds": 623.732,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g2",
@@ -165,8 +153,7 @@
     "ended_at": "2026-11-25T23:09:54.382+00:00",
     "wall_seconds": 68.61,
     "cost_usd": 0.073164,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -178,8 +165,7 @@
     "ended_at": "2026-11-25T23:11:42.325+00:00",
     "wall_seconds": 107.941,
     "cost_usd": 0.106818,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -191,8 +177,7 @@
     "ended_at": "2026-11-25T23:13:25.327+00:00",
     "wall_seconds": 102.998,
     "cost_usd": 0.104372,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -204,8 +189,7 @@
     "ended_at": "2026-11-25T23:14:46.162+00:00",
     "wall_seconds": 80.833,
     "cost_usd": 0.088204,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/criteria/03/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -217,8 +201,7 @@
     "ended_at": "2026-11-25T23:16:56.636+00:00",
     "wall_seconds": 130.473,
     "cost_usd": 0.127298,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/criteria/04/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -230,8 +213,7 @@
     "ended_at": "2026-11-25T23:19:09.158+00:00",
     "wall_seconds": 128.519,
     "cost_usd": 0.091492,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/g2/carbon/criteria/04/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "e1",
@@ -243,7 +225,6 @@
     "ended_at": "2026-11-25T18:53:37.249+00:00",
     "wall_seconds": 126.239,
     "cost_usd": 1.856003,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Neuroscience_001/e1/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   }
 ]

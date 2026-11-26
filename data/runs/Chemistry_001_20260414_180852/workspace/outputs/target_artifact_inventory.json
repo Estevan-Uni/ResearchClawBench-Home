@@ -1,5 +1,0 @@
-{
-  \"primary\": [\"Data overview figure\", \"Architecture diagram\", \"Result overlay plot\", \"RMSD table\"],
-  \"secondary\": [\"Embedding visualizations\", \"Diffusion trajectory samples (mock)\"],
-  \"interpretability\": [\"Attention maps\"]
-}

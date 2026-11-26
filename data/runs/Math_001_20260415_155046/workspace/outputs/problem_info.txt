@@ -1,3 +1,0 @@
-A_shape: (1000, 2000)
-b_shape: (1000,)
-x_true_nnz: 100

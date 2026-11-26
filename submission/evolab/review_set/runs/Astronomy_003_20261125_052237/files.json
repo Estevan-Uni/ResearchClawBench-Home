@@ -1,55 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "analysis.py",
-    "path": "code/analysis.py",
-    "type": "file",
-    "size": 12771,
-    "mtime": 1795584213.1856089,
-    "exported": true
-  },
-  {
-    "name": "figures.py",
-    "path": "code/figures.py",
-    "type": "file",
-    "size": 15356,
-    "mtime": 1795584495.3325446,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "family_fits.csv",
-    "path": "outputs/family_fits.csv",
-    "type": "file",
-    "size": 1649,
-    "mtime": 1795584471.4362972,
-    "exported": true
-  },
-  {
-    "name": "fig7_per_ell_stats.csv",
-    "path": "outputs/fig7_per_ell_stats.csv",
-    "type": "file",
-    "size": 1410,
-    "mtime": 1795584471.4322972,
-    "exported": true
-  },
-  {
-    "name": "summary.json",
-    "path": "outputs/summary.json",
-    "type": "file",
-    "size": 25381,
-    "mtime": 1795584471.428297,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -64,7 +14,6 @@
     "path": "report/images/data_overview.png",
     "type": "file",
     "size": 57824,
-    "mtime": 1795584504.9046438,
     "exported": true
   },
   {
@@ -72,7 +21,6 @@
     "path": "report/images/fig6_resolution_cdf.png",
     "type": "file",
     "size": 70207,
-    "mtime": 1795584498.6285787,
     "exported": true
   },
   {
@@ -80,7 +28,6 @@
     "path": "report/images/fig6_resolution_histogram.png",
     "type": "file",
     "size": 150331,
-    "mtime": 1795584498.2725751,
     "exported": true
   },
   {
@@ -88,7 +35,6 @@
     "path": "report/images/fig7_per_ell_errors.png",
     "type": "file",
     "size": 223977,
-    "mtime": 1795584500.0805938,
     "exported": true
   },
   {
@@ -96,7 +42,6 @@
     "path": "report/images/fig7_supplementary.png",
     "type": "file",
     "size": 141609,
-    "mtime": 1795584500.764601,
     "exported": true
   },
   {
@@ -104,7 +49,6 @@
     "path": "report/images/fig8_extrapolation_histogram.png",
     "type": "file",
     "size": 154569,
-    "mtime": 1795584501.8966126,
     "exported": true
   },
   {
@@ -112,7 +56,6 @@
     "path": "report/images/structure_diagnostics.png",
     "type": "file",
     "size": 134100,
-    "mtime": 1795584504.432639,
     "exported": true
   },
   {
@@ -120,7 +63,6 @@
     "path": "report/images/validation_aic.png",
     "type": "file",
     "size": 57052,
-    "mtime": 1795584503.3086271,
     "exported": true
   },
   {
@@ -128,7 +70,6 @@
     "path": "report/images/validation_qq.png",
     "type": "file",
     "size": 168859,
-    "mtime": 1795584502.788622,
     "exported": true
   },
   {
@@ -136,15 +77,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 23553,
-    "mtime": 1795584441.2439842,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 7069,
-    "mtime": 1795584157.485025,
     "exported": true
   }
 ]

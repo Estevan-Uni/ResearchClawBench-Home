@@ -1,351 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "build_report.py",
-    "path": "code/build_report.py",
-    "type": "file",
-    "size": 357,
-    "mtime": 1795626287.2451801,
-    "exported": true
-  },
-  {
-    "name": "core.py",
-    "path": "code/core.py",
-    "type": "file",
-    "size": 14612,
-    "mtime": 1795624405.2010221,
-    "exported": true
-  },
-  {
-    "name": "fig_rpe.py",
-    "path": "code/fig_rpe.py",
-    "type": "file",
-    "size": 2828,
-    "mtime": 1795624584.386762,
-    "exported": true
-  },
-  {
-    "name": "fig_rpe_noise.py",
-    "path": "code/fig_rpe_noise.py",
-    "type": "file",
-    "size": 1334,
-    "mtime": 1795625328.4142506,
-    "exported": true
-  },
-  {
-    "name": "fig_seeds.py",
-    "path": "code/fig_seeds.py",
-    "type": "file",
-    "size": 1219,
-    "mtime": 1795625347.6816542,
-    "exported": true
-  },
-  {
-    "name": "fig_sim.py",
-    "path": "code/fig_sim.py",
-    "type": "file",
-    "size": 3548,
-    "mtime": 1795624584.394761,
-    "exported": true
-  },
-  {
-    "name": "freeze_config.py",
-    "path": "code/freeze_config.py",
-    "type": "file",
-    "size": 993,
-    "mtime": 1795624339.9198928,
-    "exported": true
-  },
-  {
-    "name": "make_tables.py",
-    "path": "code/make_tables.py",
-    "type": "file",
-    "size": 2579,
-    "mtime": 1795625524.906988,
-    "exported": true
-  },
-  {
-    "name": "report_template.md",
-    "path": "code/report_template.md",
-    "type": "file",
-    "size": 28291,
-    "mtime": 1795626287.2371807,
-    "exported": true
-  },
-  {
-    "name": "rpe_diagnose.py",
-    "path": "code/rpe_diagnose.py",
-    "type": "file",
-    "size": 1291,
-    "mtime": 1795624700.779197,
-    "exported": true
-  },
-  {
-    "name": "rpe_eval.py",
-    "path": "code/rpe_eval.py",
-    "type": "file",
-    "size": 2627,
-    "mtime": 1795624491.084181,
-    "exported": true
-  },
-  {
-    "name": "rpe_noise.py",
-    "path": "code/rpe_noise.py",
-    "type": "file",
-    "size": 1432,
-    "mtime": 1795624724.9848106,
-    "exported": true
-  },
-  {
-    "name": "rpe_overview.py",
-    "path": "code/rpe_overview.py",
-    "type": "file",
-    "size": 2958,
-    "mtime": 1795624465.8827558,
-    "exported": true
-  },
-  {
-    "name": "rpe_phate.py",
-    "path": "code/rpe_phate.py",
-    "type": "file",
-    "size": 2192,
-    "mtime": 1795624505.8746767,
-    "exported": true
-  },
-  {
-    "name": "rpe_select.py",
-    "path": "code/rpe_select.py",
-    "type": "file",
-    "size": 1511,
-    "mtime": 1795624420.303453,
-    "exported": true
-  },
-  {
-    "name": "rpe_stability.py",
-    "path": "code/rpe_stability.py",
-    "type": "file",
-    "size": 1152,
-    "mtime": 1795624594.1977801,
-    "exported": true
-  },
-  {
-    "name": "run_sim.py",
-    "path": "code/run_sim.py",
-    "type": "file",
-    "size": 3395,
-    "mtime": 1795624521.445098,
-    "exported": true
-  },
-  {
-    "name": "simulate.py",
-    "path": "code/simulate.py",
-    "type": "file",
-    "size": 3189,
-    "mtime": 1795624333.1126184,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "config_frozen.json",
-    "path": "outputs/config_frozen.json",
-    "type": "file",
-    "size": 1805,
-    "mtime": 1795624342.2916405,
-    "exported": true
-  },
-  {
-    "name": "leakage_grep.txt",
-    "path": "outputs/leakage_grep.txt",
-    "type": "file",
-    "size": 2110,
-    "mtime": 1795626139.118101,
-    "exported": true
-  },
-  {
-    "name": "pip.log",
-    "path": "outputs/pip.log",
-    "type": "file",
-    "size": 4529,
-    "mtime": 1795624493.9878852,
-    "exported": true
-  },
-  {
-    "name": "rpe_bootstrap_ci_k30.csv",
-    "path": "outputs/rpe_bootstrap_ci_k30.csv",
-    "type": "file",
-    "size": 2437,
-    "mtime": 1795624668.2384138,
-    "exported": true
-  },
-  {
-    "name": "rpe_bootstrap_k30.csv",
-    "path": "outputs/rpe_bootstrap_k30.csv",
-    "type": "file",
-    "size": 320514,
-    "mtime": 1795624658.3153973,
-    "exported": true
-  },
-  {
-    "name": "rpe_delve_faithful_scores.csv",
-    "path": "outputs/rpe_delve_faithful_scores.csv",
-    "type": "file",
-    "size": 14797,
-    "mtime": 1795624449.924394,
-    "exported": true
-  },
-  {
-    "name": "rpe_eval.log",
-    "path": "outputs/rpe_eval.log",
-    "type": "file",
-    "size": 5366,
-    "mtime": 1795624658.3153973,
-    "exported": true
-  },
-  {
-    "name": "rpe_metrics.csv",
-    "path": "outputs/rpe_metrics.csv",
-    "type": "file",
-    "size": 11526,
-    "mtime": 1795624616.3635674,
-    "exported": true
-  },
-  {
-    "name": "rpe_noise.csv",
-    "path": "outputs/rpe_noise.csv",
-    "type": "file",
-    "size": 5025,
-    "mtime": 1795625307.533871,
-    "exported": true
-  },
-  {
-    "name": "rpe_noise.log",
-    "path": "outputs/rpe_noise.log",
-    "type": "file",
-    "size": 59,
-    "mtime": 1795625307.533871,
-    "exported": true
-  },
-  {
-    "name": "rpe_overview_summary.csv",
-    "path": "outputs/rpe_overview_summary.csv",
-    "type": "file",
-    "size": 298,
-    "mtime": 1795624472.7980478,
-    "exported": true
-  },
-  {
-    "name": "rpe_paired_diff_k30.csv",
-    "path": "outputs/rpe_paired_diff_k30.csv",
-    "type": "file",
-    "size": 766,
-    "mtime": 1795624668.258412,
-    "exported": true
-  },
-  {
-    "name": "rpe_pc_age.csv",
-    "path": "outputs/rpe_pc_age.csv",
-    "type": "file",
-    "size": 1321,
-    "mtime": 1795624472.8380437,
-    "exported": true
-  },
-  {
-    "name": "rpe_phate.log",
-    "path": "outputs/rpe_phate.log",
-    "type": "file",
-    "size": 830,
-    "mtime": 1795624903.7104013,
-    "exported": true
-  },
-  {
-    "name": "rpe_seed_diagnostics.csv",
-    "path": "outputs/rpe_seed_diagnostics.csv",
-    "type": "file",
-    "size": 468,
-    "mtime": 1795624705.9546862,
-    "exported": true
-  },
-  {
-    "name": "rpe_select.log",
-    "path": "outputs/rpe_select.log",
-    "type": "file",
-    "size": 4896,
-    "mtime": 1795624537.2794971,
-    "exported": true
-  },
-  {
-    "name": "rpe_stability.csv",
-    "path": "outputs/rpe_stability.csv",
-    "type": "file",
-    "size": 958,
-    "mtime": 1795625502.9133725,
-    "exported": true
-  },
-  {
-    "name": "rpe_stability.log",
-    "path": "outputs/rpe_stability.log",
-    "type": "file",
-    "size": 776,
-    "mtime": 1795625502.9253733,
-    "exported": true
-  },
-  {
-    "name": "rpe_top50_features.csv",
-    "path": "outputs/rpe_top50_features.csv",
-    "type": "file",
-    "size": 13983,
-    "mtime": 1795624553.7298393,
-    "exported": true
-  },
-  {
-    "name": "sim.log",
-    "path": "outputs/sim.log",
-    "type": "file",
-    "size": 10273,
-    "mtime": 1795626104.7193792,
-    "exported": true
-  },
-  {
-    "name": "sim_clean_table.csv",
-    "path": "outputs/sim_clean_table.csv",
-    "type": "file",
-    "size": 2047,
-    "mtime": 1795626114.4641464,
-    "exported": true
-  },
-  {
-    "name": "sim_results.csv",
-    "path": "outputs/sim_results.csv",
-    "type": "file",
-    "size": 92552,
-    "mtime": 1795626104.715379,
-    "exported": true
-  },
-  {
-    "name": "sim_sweep_table.csv",
-    "path": "outputs/sim_sweep_table.csv",
-    "type": "file",
-    "size": 7342,
-    "mtime": 1795626116.436302,
-    "exported": true
-  },
-  {
-    "name": "tables.md",
-    "path": "outputs/tables.md",
-    "type": "file",
-    "size": 27519,
-    "mtime": 1795626288.149126,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -360,7 +14,6 @@
     "path": "report/images/fig1_data_overview.png",
     "type": "file",
     "size": 310833,
-    "mtime": 1795624475.9577246,
     "exported": true
   },
   {
@@ -368,7 +21,6 @@
     "path": "report/images/fig2_seed_diagnostics.png",
     "type": "file",
     "size": 76998,
-    "mtime": 1795625351.2572,
     "exported": true
   },
   {
@@ -376,7 +28,6 @@
     "path": "report/images/fig3_phate_panels.png",
     "type": "file",
     "size": 1285771,
-    "mtime": 1795624902.757652,
     "exported": true
   },
   {
@@ -384,7 +35,6 @@
     "path": "report/images/fig4_rpe_kcurves.png",
     "type": "file",
     "size": 399957,
-    "mtime": 1795624665.8226533,
     "exported": true
   },
   {
@@ -392,7 +42,6 @@
     "path": "report/images/fig5_rpe_k30_bars.png",
     "type": "file",
     "size": 98635,
-    "mtime": 1795624667.7984574,
     "exported": true
   },
   {
@@ -400,7 +49,6 @@
     "path": "report/images/fig6_sim_clean.png",
     "type": "file",
     "size": 116273,
-    "mtime": 1795626115.9202611,
     "exported": true
   },
   {
@@ -408,7 +56,6 @@
     "path": "report/images/fig7_sim_noise_sweeps.png",
     "type": "file",
     "size": 722520,
-    "mtime": 1795626119.224522,
     "exported": true
   },
   {
@@ -416,7 +63,6 @@
     "path": "report/images/fig8_sim_topology_dpt.png",
     "type": "file",
     "size": 552963,
-    "mtime": 1795626121.7807243,
     "exported": true
   },
   {
@@ -424,7 +70,6 @@
     "path": "report/images/fig9_rpe_noise.png",
     "type": "file",
     "size": 284539,
-    "mtime": 1795625333.7245502,
     "exported": true
   },
   {
@@ -432,15 +77,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 49541,
-    "mtime": 1795626288.6410968,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 4708,
-    "mtime": 1795624193.8439662,
     "exported": true
   }
 ]

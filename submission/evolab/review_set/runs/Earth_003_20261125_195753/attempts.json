@@ -9,8 +9,7 @@
     "ended_at": "2026-11-25T12:08:12.364+00:00",
     "wall_seconds": 14617.971,
     "cost_usd": 16.3493806,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -22,8 +21,7 @@
     "ended_at": "2026-11-25T12:08:17.993+00:00",
     "wall_seconds": 2.945,
     "cost_usd": 0,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/solve/attempt-00002/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -35,8 +33,7 @@
     "ended_at": "2026-11-25T19:48:23.485+00:00",
     "wall_seconds": 25628.993,
     "cost_usd": 17.568987999999997,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/solve/attempt-00003/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g1",
@@ -48,8 +45,7 @@
     "ended_at": "2026-11-25T19:54:59.022+00:00",
     "wall_seconds": 395.53,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g1",
@@ -61,8 +57,7 @@
     "ended_at": "2026-11-25T19:50:04.032+00:00",
     "wall_seconds": 100.45,
     "cost_usd": 0.086914,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -74,8 +69,7 @@
     "ended_at": "2026-11-25T19:50:34.173+00:00",
     "wall_seconds": 30.139,
     "cost_usd": null,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -87,8 +81,7 @@
     "ended_at": "2026-11-25T19:51:39.422+00:00",
     "wall_seconds": 61.248,
     "cost_usd": 0.077202,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/carbon/criteria/01/attempt-00002/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -100,8 +93,7 @@
     "ended_at": "2026-11-25T19:52:50.105+00:00",
     "wall_seconds": 70.682,
     "cost_usd": 0.075224,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g1",
@@ -113,8 +105,7 @@
     "ended_at": "2026-11-25T19:54:59.021+00:00",
     "wall_seconds": 128.915,
     "cost_usd": 0.101788,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g1/carbon/criteria/03/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -126,8 +117,7 @@
     "ended_at": "2026-11-26T00:27:53.156+00:00",
     "wall_seconds": 16199.46,
     "cost_usd": 23.0067184,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g2/solve/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   },
   {
     "phase": "g2",
@@ -139,8 +129,7 @@
     "ended_at": "2026-11-26T00:34:16.632+00:00",
     "wall_seconds": 383.471,
     "cost_usd": null,
-    "cost_source": "recorded_per_request",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g2/carbon/attempt-00001/attempt.json"
+    "cost_source": "recorded_per_request"
   },
   {
     "phase": "g2",
@@ -152,8 +141,7 @@
     "ended_at": "2026-11-26T00:29:27.748+00:00",
     "wall_seconds": 94.523,
     "cost_usd": 0.081722,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g2/carbon/criteria/00/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -165,8 +153,7 @@
     "ended_at": "2026-11-26T00:30:45.197+00:00",
     "wall_seconds": 77.446,
     "cost_usd": 0.075906,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g2/carbon/criteria/01/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -178,8 +165,7 @@
     "ended_at": "2026-11-26T00:32:00.505+00:00",
     "wall_seconds": 75.307,
     "cost_usd": 0.078268,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g2/carbon/criteria/02/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "g2",
@@ -191,8 +177,7 @@
     "ended_at": "2026-11-26T00:34:16.631+00:00",
     "wall_seconds": 136.125,
     "cost_usd": 0.118612,
-    "cost_source": "openrouter.usage.cost",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/g2/carbon/criteria/03/attempt-00001/attempt.json"
+    "cost_source": "openrouter.usage.cost"
   },
   {
     "phase": "e1",
@@ -204,7 +189,6 @@
     "ended_at": "2026-11-25T19:57:53.695+00:00",
     "wall_seconds": 171.86,
     "cost_usd": 1.864068,
-    "cost_source": "claude_code.total_cost_usd",
-    "source_path": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Earth_003/e1/attempt-00001/attempt.json"
+    "cost_source": "claude_code.total_cost_usd"
   }
 ]

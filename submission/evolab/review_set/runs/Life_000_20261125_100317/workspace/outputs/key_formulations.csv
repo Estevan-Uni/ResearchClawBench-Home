@@ -1,6 +1,0 @@
-name,ID,source,HEA,BA,CBEA,ATAC,PEA,AAm,Fa_glass_kPa
-G-max (best DM/protein-derived gel),G-042,184_verified,0.1409,0.5912,0.0762,0.0959,0.0958,0.0,146.6
-Best GPRFR pilot (in 184 training set),GPRFR-2,184_verified,0.0,0.5301,0.0,0.0501,0.3697,0.0501,304.6
-R1-max (best round-1 ML design),PRED:old-SM-GP#1,lists with same value: PRED:old-SM-GP#1,0.0,0.5881,0.0,0.0939,0.318,0.0,353.3
-R2-max (best round-2 ML design),EI:GP-GP-2rd-ei#5,lists with same value: EI:GP-GP-2rd-ei#5;PRED:GP-GP-2rd-pred#10,0.0,0.6295,0.0,0.0607,0.3098,0.0,281.6
-R3-max (best round-3 ML design),EI:GP-GP-3rd-ei#7,lists with same value: EI:GP-GP-3rd-ei#7;PRED:GP-GP-3rd-pred#9,0.0,0.68,0.0,0.0702,0.2498,0.0,251.0

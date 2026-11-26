@@ -1,8 +1,0 @@
-n_models=13
-spearman(DockQ, rho_mut)=0.039 p=0.901
-spearman(DockQ, -score)=0.044 p=0.886
-                 ensemble  n_models  spearman      p  pearson
-0   correct (DockQ>=0.23)         7     0.536  0.002    0.562
-1  incorrect (DockQ<0.23)         6     0.613  0.000    0.597
-2           all 13 models        13     0.588  0.001    0.598
-mean pairwise spearman (correct models) = 0.446

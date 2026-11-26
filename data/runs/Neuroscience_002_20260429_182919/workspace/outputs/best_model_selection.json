@@ -1,4 +1,0 @@
-{
-  "selection_rule": "highest held-out average_precision, tie by roc_auc",
-  "best_model": "HistGradientBoosting"
-}

@@ -1,668 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "convergence_check.py",
-    "path": "code/convergence_check.py",
-    "type": "file",
-    "size": 1589,
-    "mtime": 1795629280.6036904,
-    "exported": true
-  },
-  {
-    "name": "data_prep.py",
-    "path": "code/data_prep.py",
-    "type": "file",
-    "size": 4210,
-    "mtime": 1795627895.6449056,
-    "exported": true
-  },
-  {
-    "name": "dev_checks",
-    "path": "code/dev_checks",
-    "type": "directory"
-  },
-  {
-    "name": "pb_bisect.py",
-    "path": "code/dev_checks/pb_bisect.py",
-    "type": "file",
-    "size": 1844,
-    "mtime": 1795629177.5253444,
-    "exported": true
-  },
-  {
-    "name": "pb_bisect2.py",
-    "path": "code/dev_checks/pb_bisect2.py",
-    "type": "file",
-    "size": 1096,
-    "mtime": 1795629236.0146573,
-    "exported": true
-  },
-  {
-    "name": "pb_test.py",
-    "path": "code/dev_checks/pb_test.py",
-    "type": "file",
-    "size": 1016,
-    "mtime": 1795628223.7422597,
-    "exported": true
-  },
-  {
-    "name": "pb_test10.py",
-    "path": "code/dev_checks/pb_test10.py",
-    "type": "file",
-    "size": 550,
-    "mtime": 1795631267.0478911,
-    "exported": true
-  },
-  {
-    "name": "pb_test2.py",
-    "path": "code/dev_checks/pb_test2.py",
-    "type": "file",
-    "size": 1295,
-    "mtime": 1795628254.4183016,
-    "exported": true
-  },
-  {
-    "name": "pb_test3.py",
-    "path": "code/dev_checks/pb_test3.py",
-    "type": "file",
-    "size": 1578,
-    "mtime": 1795628266.97008,
-    "exported": true
-  },
-  {
-    "name": "pb_test4.py",
-    "path": "code/dev_checks/pb_test4.py",
-    "type": "file",
-    "size": 358,
-    "mtime": 1795628343.8050253,
-    "exported": true
-  },
-  {
-    "name": "pb_test5.py",
-    "path": "code/dev_checks/pb_test5.py",
-    "type": "file",
-    "size": 768,
-    "mtime": 1795629248.0349333,
-    "exported": true
-  },
-  {
-    "name": "pb_test6.py",
-    "path": "code/dev_checks/pb_test6.py",
-    "type": "file",
-    "size": 475,
-    "mtime": 1795629321.8886693,
-    "exported": true
-  },
-  {
-    "name": "pb_test7.py",
-    "path": "code/dev_checks/pb_test7.py",
-    "type": "file",
-    "size": 676,
-    "mtime": 1795630533.8361878,
-    "exported": true
-  },
-  {
-    "name": "pb_test8.py",
-    "path": "code/dev_checks/pb_test8.py",
-    "type": "file",
-    "size": 721,
-    "mtime": 1795630720.3283079,
-    "exported": true
-  },
-  {
-    "name": "pb_test9.py",
-    "path": "code/dev_checks/pb_test9.py",
-    "type": "file",
-    "size": 483,
-    "mtime": 1795631232.9836185,
-    "exported": true
-  },
-  {
-    "name": "ecat_model.py",
-    "path": "code/ecat_model.py",
-    "type": "file",
-    "size": 7675,
-    "mtime": 1795632935.9626253,
-    "exported": true
-  },
-  {
-    "name": "figs_ablation.py",
-    "path": "code/figs_ablation.py",
-    "type": "file",
-    "size": 1722,
-    "mtime": 1795631737.8057418,
-    "exported": true
-  },
-  {
-    "name": "figs_real.py",
-    "path": "code/figs_real.py",
-    "type": "file",
-    "size": 7420,
-    "mtime": 1795633947.0315874,
-    "exported": true
-  },
-  {
-    "name": "figs_step3.py",
-    "path": "code/figs_step3.py",
-    "type": "file",
-    "size": 5885,
-    "mtime": 1795630479.825882,
-    "exported": true
-  },
-  {
-    "name": "figs_steps12.py",
-    "path": "code/figs_steps12.py",
-    "type": "file",
-    "size": 6769,
-    "mtime": 1795634183.8965726,
-    "exported": true
-  },
-  {
-    "name": "ga.py",
-    "path": "code/ga.py",
-    "type": "file",
-    "size": 2162,
-    "mtime": 1795629403.3426578,
-    "exported": true
-  },
-  {
-    "name": "metamodel.py",
-    "path": "code/metamodel.py",
-    "type": "file",
-    "size": 857,
-    "mtime": 1795629374.7099507,
-    "exported": true
-  },
-  {
-    "name": "nasa_structure_test.py",
-    "path": "code/nasa_structure_test.py",
-    "type": "file",
-    "size": 1715,
-    "mtime": 1795632660.156863,
-    "exported": true
-  },
-  {
-    "name": "step1_lhs.py",
-    "path": "code/step1_lhs.py",
-    "type": "file",
-    "size": 3308,
-    "mtime": 1795629274.0275364,
-    "exported": true
-  },
-  {
-    "name": "step2_ann.py",
-    "path": "code/step2_ann.py",
-    "type": "file",
-    "size": 6246,
-    "mtime": 1795634183.8965726,
-    "exported": true
-  },
-  {
-    "name": "step3_identify.py",
-    "path": "code/step3_identify.py",
-    "type": "file",
-    "size": 7646,
-    "mtime": 1795629440.5315883,
-    "exported": true
-  },
-  {
-    "name": "step3b_ablation.py",
-    "path": "code/step3b_ablation.py",
-    "type": "file",
-    "size": 2756,
-    "mtime": 1795630510.5168834,
-    "exported": true
-  },
-  {
-    "name": "step5_cs2.py",
-    "path": "code/step5_cs2.py",
-    "type": "file",
-    "size": 3371,
-    "mtime": 1795633175.8919876,
-    "exported": true
-  },
-  {
-    "name": "step5_nasa.py",
-    "path": "code/step5_nasa.py",
-    "type": "file",
-    "size": 5523,
-    "mtime": 1795633175.8919876,
-    "exported": true
-  },
-  {
-    "name": "step6_oxford.py",
-    "path": "code/step6_oxford.py",
-    "type": "file",
-    "size": 6272,
-    "mtime": 1795633187.5799055,
-    "exported": true
-  },
-  {
-    "name": "style.py",
-    "path": "code/style.py",
-    "type": "file",
-    "size": 748,
-    "mtime": 1795630141.8867767,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "ann_core.log",
-    "path": "outputs/ann_core.log",
-    "type": "file",
-    "size": 2801,
-    "mtime": 1795630082.025061,
-    "exported": true
-  },
-  {
-    "name": "ann_core_history.json",
-    "path": "outputs/ann_core_history.json",
-    "type": "file",
-    "size": 44206,
-    "mtime": 1795630082.025061,
-    "exported": true
-  },
-  {
-    "name": "ann_core_metrics.json",
-    "path": "outputs/ann_core_metrics.json",
-    "type": "file",
-    "size": 2800,
-    "mtime": 1795630082.025061,
-    "exported": true
-  },
-  {
-    "name": "ann_cs2.log",
-    "path": "outputs/ann_cs2.log",
-    "type": "file",
-    "size": 1687,
-    "mtime": 1795631711.9933476,
-    "exported": true
-  },
-  {
-    "name": "ann_cs2_7.log",
-    "path": "outputs/ann_cs2_7.log",
-    "type": "file",
-    "size": 1684,
-    "mtime": 1795633603.5588145,
-    "exported": true
-  },
-  {
-    "name": "ann_cs2_7_history.json",
-    "path": "outputs/ann_cs2_7_history.json",
-    "type": "file",
-    "size": 17798,
-    "mtime": 1795633603.5548146,
-    "exported": true
-  },
-  {
-    "name": "ann_cs2_7_metrics.json",
-    "path": "outputs/ann_cs2_7_metrics.json",
-    "type": "file",
-    "size": 1683,
-    "mtime": 1795633603.5588145,
-    "exported": true
-  },
-  {
-    "name": "ann_cs2_history.json",
-    "path": "outputs/ann_cs2_history.json",
-    "type": "file",
-    "size": 17986,
-    "mtime": 1795631711.9933476,
-    "exported": true
-  },
-  {
-    "name": "ann_cs2_metrics.json",
-    "path": "outputs/ann_cs2_metrics.json",
-    "type": "file",
-    "size": 1686,
-    "mtime": 1795631711.9933476,
-    "exported": true
-  },
-  {
-    "name": "ann_nasa.log",
-    "path": "outputs/ann_nasa.log",
-    "type": "file",
-    "size": 1677,
-    "mtime": 1795632076.8073826,
-    "exported": true
-  },
-  {
-    "name": "ann_nasa8.log",
-    "path": "outputs/ann_nasa8.log",
-    "type": "file",
-    "size": 1675,
-    "mtime": 1795633561.898799,
-    "exported": true
-  },
-  {
-    "name": "ann_nasa8_history.json",
-    "path": "outputs/ann_nasa8_history.json",
-    "type": "file",
-    "size": 22316,
-    "mtime": 1795633561.898799,
-    "exported": true
-  },
-  {
-    "name": "ann_nasa8_metrics.json",
-    "path": "outputs/ann_nasa8_metrics.json",
-    "type": "file",
-    "size": 1674,
-    "mtime": 1795633561.898799,
-    "exported": true
-  },
-  {
-    "name": "ann_nasa_history.json",
-    "path": "outputs/ann_nasa_history.json",
-    "type": "file",
-    "size": 22451,
-    "mtime": 1795632076.8073826,
-    "exported": true
-  },
-  {
-    "name": "ann_nasa_metrics.json",
-    "path": "outputs/ann_nasa_metrics.json",
-    "type": "file",
-    "size": 1676,
-    "mtime": 1795632076.8073826,
-    "exported": true
-  },
-  {
-    "name": "convergence_check.json",
-    "path": "outputs/convergence_check.json",
-    "type": "file",
-    "size": 1446,
-    "mtime": 1795629289.6759036,
-    "exported": true
-  },
-  {
-    "name": "cs2_7_mmga.json",
-    "path": "outputs/cs2_7_mmga.json",
-    "type": "file",
-    "size": 1599,
-    "mtime": 1795633820.9951916,
-    "exported": true
-  },
-  {
-    "name": "cs2_mmga.json",
-    "path": "outputs/cs2_mmga.json",
-    "type": "file",
-    "size": 1455,
-    "mtime": 1795631763.094134,
-    "exported": true
-  },
-  {
-    "name": "data_prep.log",
-    "path": "outputs/data_prep.log",
-    "type": "file",
-    "size": 2228,
-    "mtime": 1795628230.070465,
-    "exported": true
-  },
-  {
-    "name": "data_summary.json",
-    "path": "outputs/data_summary.json",
-    "type": "file",
-    "size": 1547,
-    "mtime": 1795628230.070465,
-    "exported": true
-  },
-  {
-    "name": "db_baseline20.json",
-    "path": "outputs/db_baseline20.json",
-    "type": "file",
-    "size": 492,
-    "mtime": 1795629301.7241886,
-    "exported": true
-  },
-  {
-    "name": "db_core3000.json",
-    "path": "outputs/db_core3000.json",
-    "type": "file",
-    "size": 496,
-    "mtime": 1795629753.7598555,
-    "exported": true
-  },
-  {
-    "name": "db_core3000.log",
-    "path": "outputs/db_core3000.log",
-    "type": "file",
-    "size": 497,
-    "mtime": 1795629753.7598555,
-    "exported": true
-  },
-  {
-    "name": "db_cs2_3000.json",
-    "path": "outputs/db_cs2_3000.json",
-    "type": "file",
-    "size": 622,
-    "mtime": 1795631253.2717776,
-    "exported": true
-  },
-  {
-    "name": "db_cs2_3000.log",
-    "path": "outputs/db_cs2_3000.log",
-    "type": "file",
-    "size": 530,
-    "mtime": 1795630802.2113872,
-    "exported": true
-  },
-  {
-    "name": "db_cs2_7.json",
-    "path": "outputs/db_cs2_7.json",
-    "type": "file",
-    "size": 555,
-    "mtime": 1795633304.0752704,
-    "exported": true
-  },
-  {
-    "name": "db_cs2_7.log",
-    "path": "outputs/db_cs2_7.log",
-    "type": "file",
-    "size": 556,
-    "mtime": 1795633304.0752704,
-    "exported": true
-  },
-  {
-    "name": "db_nasa4000.json",
-    "path": "outputs/db_nasa4000.json",
-    "type": "file",
-    "size": 611,
-    "mtime": 1795631253.219777,
-    "exported": true
-  },
-  {
-    "name": "db_nasa4000.log",
-    "path": "outputs/db_nasa4000.log",
-    "type": "file",
-    "size": 519,
-    "mtime": 1795630357.062937,
-    "exported": true
-  },
-  {
-    "name": "db_nasa8.json",
-    "path": "outputs/db_nasa8.json",
-    "type": "file",
-    "size": 544,
-    "mtime": 1795633124.816391,
-    "exported": true
-  },
-  {
-    "name": "db_nasa8.log",
-    "path": "outputs/db_nasa8.log",
-    "type": "file",
-    "size": 545,
-    "mtime": 1795633124.816391,
-    "exported": true
-  },
-  {
-    "name": "db_oxford.json",
-    "path": "outputs/db_oxford.json",
-    "type": "file",
-    "size": 281,
-    "mtime": 1795632532.4695024,
-    "exported": true
-  },
-  {
-    "name": "db_oxford.log",
-    "path": "outputs/db_oxford.log",
-    "type": "file",
-    "size": 236,
-    "mtime": 1795632532.4695024,
-    "exported": true
-  },
-  {
-    "name": "nasa8_mmga.json",
-    "path": "outputs/nasa8_mmga.json",
-    "type": "file",
-    "size": 222047,
-    "mtime": 1795633904.243441,
-    "exported": true
-  },
-  {
-    "name": "nasa_mmga.json",
-    "path": "outputs/nasa_mmga.json",
-    "type": "file",
-    "size": 212082,
-    "mtime": 1795632484.9836032,
-    "exported": true
-  },
-  {
-    "name": "nasa_structure_test.json",
-    "path": "outputs/nasa_structure_test.json",
-    "type": "file",
-    "size": 1217,
-    "mtime": 1795632912.3110027,
-    "exported": true
-  },
-  {
-    "name": "nasa_structure_test.log",
-    "path": "outputs/nasa_structure_test.log",
-    "type": "file",
-    "size": 1053,
-    "mtime": 1795632912.3110027,
-    "exported": true
-  },
-  {
-    "name": "oxford_fit.log",
-    "path": "outputs/oxford_fit.log",
-    "type": "file",
-    "size": 710,
-    "mtime": 1795633308.543252,
-    "exported": true
-  },
-  {
-    "name": "oxford_mmga.json",
-    "path": "outputs/oxford_mmga.json",
-    "type": "file",
-    "size": 8598,
-    "mtime": 1795633308.543252,
-    "exported": true
-  },
-  {
-    "name": "pip_pybamm.log",
-    "path": "outputs/pip_pybamm.log",
-    "type": "file",
-    "size": 7795,
-    "mtime": 1795628203.9056199,
-    "exported": true
-  },
-  {
-    "name": "step3.log",
-    "path": "outputs/step3.log",
-    "type": "file",
-    "size": 2278,
-    "mtime": 1795630441.675263,
-    "exported": true
-  },
-  {
-    "name": "step3_physga_baseline.json",
-    "path": "outputs/step3_physga_baseline.json",
-    "type": "file",
-    "size": 3412,
-    "mtime": 1795630441.675263,
-    "exported": true
-  },
-  {
-    "name": "step3_synthetic.json",
-    "path": "outputs/step3_synthetic.json",
-    "type": "file",
-    "size": 145094,
-    "mtime": 1795630127.266357,
-    "exported": true
-  },
-  {
-    "name": "step3_table.md",
-    "path": "outputs/step3_table.md",
-    "type": "file",
-    "size": 835,
-    "mtime": 1795633980.903711,
-    "exported": true
-  },
-  {
-    "name": "step3b.log",
-    "path": "outputs/step3b.log",
-    "type": "file",
-    "size": 1357,
-    "mtime": 1795631360.792773,
-    "exported": true
-  },
-  {
-    "name": "step3b_ablation.json",
-    "path": "outputs/step3b_ablation.json",
-    "type": "file",
-    "size": 11847,
-    "mtime": 1795631360.8007731,
-    "exported": true
-  },
-  {
-    "name": "step3b_summary.json",
-    "path": "outputs/step3b_summary.json",
-    "type": "file",
-    "size": 1231,
-    "mtime": 1795631738.8857584,
-    "exported": true
-  },
-  {
-    "name": "step5_cs2.log",
-    "path": "outputs/step5_cs2.log",
-    "type": "file",
-    "size": 1315,
-    "mtime": 1795631763.094134,
-    "exported": true
-  },
-  {
-    "name": "step5_cs2_7.log",
-    "path": "outputs/step5_cs2_7.log",
-    "type": "file",
-    "size": 1441,
-    "mtime": 1795633820.9911916,
-    "exported": true
-  },
-  {
-    "name": "step5_nasa.log",
-    "path": "outputs/step5_nasa.log",
-    "type": "file",
-    "size": 9065,
-    "mtime": 1795632484.9556046,
-    "exported": true
-  },
-  {
-    "name": "step5_nasa8.log",
-    "path": "outputs/step5_nasa8.log",
-    "type": "file",
-    "size": 9879,
-    "mtime": 1795633904.2194412,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -677,7 +14,6 @@
     "path": "report/images/fig01_data_overview.png",
     "type": "file",
     "size": 457540,
-    "mtime": 1795634185.712581,
     "exported": true
   },
   {
@@ -685,7 +21,6 @@
     "path": "report/images/fig02_lhs_simulations.png",
     "type": "file",
     "size": 610852,
-    "mtime": 1795634187.7325904,
     "exported": true
   },
   {
@@ -693,7 +28,6 @@
     "path": "report/images/fig03_lhs_design.png",
     "type": "file",
     "size": 243799,
-    "mtime": 1795634188.4325938,
     "exported": true
   },
   {
@@ -701,7 +35,6 @@
     "path": "report/images/fig04_ann_loss.png",
     "type": "file",
     "size": 159215,
-    "mtime": 1795634188.8085954,
     "exported": true
   },
   {
@@ -709,7 +42,6 @@
     "path": "report/images/fig05_ann_parity.png",
     "type": "file",
     "size": 222288,
-    "mtime": 1795634190.6286042,
     "exported": true
   },
   {
@@ -717,7 +49,6 @@
     "path": "report/images/fig06_ga_convergence.png",
     "type": "file",
     "size": 190054,
-    "mtime": 1795630485.0697045,
     "exported": true
   },
   {
@@ -725,7 +56,6 @@
     "path": "report/images/fig07_identification_errors.png",
     "type": "file",
     "size": 85483,
-    "mtime": 1795630485.9456751,
     "exported": true
   },
   {
@@ -733,7 +63,6 @@
     "path": "report/images/fig08_synthetic_overlays.png",
     "type": "file",
     "size": 329837,
-    "mtime": 1795630488.3615944,
     "exported": true
   },
   {
@@ -741,7 +70,6 @@
     "path": "report/images/fig09_identifiability_profiles.png",
     "type": "file",
     "size": 215282,
-    "mtime": 1795630490.785514,
     "exported": true
   },
   {
@@ -749,7 +77,6 @@
     "path": "report/images/fig10_ablation.png",
     "type": "file",
     "size": 45319,
-    "mtime": 1795631739.497768,
     "exported": true
   },
   {
@@ -757,7 +84,6 @@
     "path": "report/images/fig11_nasa_fits.png",
     "type": "file",
     "size": 335985,
-    "mtime": 1795633948.2515917,
     "exported": true
   },
   {
@@ -765,7 +91,6 @@
     "path": "report/images/fig12_nasa_aging_params.png",
     "type": "file",
     "size": 190676,
-    "mtime": 1795633948.7115934,
     "exported": true
   },
   {
@@ -773,7 +98,6 @@
     "path": "report/images/fig13_cs2_oxford.png",
     "type": "file",
     "size": 266889,
-    "mtime": 1795633949.191595,
     "exported": true
   },
   {
@@ -781,7 +105,6 @@
     "path": "report/images/fig14_cost_comparison.png",
     "type": "file",
     "size": 118027,
-    "mtime": 1795633949.7355971,
     "exported": true
   },
   {
@@ -789,15 +112,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 36880,
-    "mtime": 1795634183.8965726,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5930,
-    "mtime": 1795627857.6600888,
     "exported": true
   }
 ]

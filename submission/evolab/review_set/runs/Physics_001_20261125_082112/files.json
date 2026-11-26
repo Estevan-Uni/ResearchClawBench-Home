@@ -1,47 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "analysis.py",
-    "path": "code/analysis.py",
-    "type": "file",
-    "size": 43676,
-    "mtime": 1795595657.022199,
-    "exported": true
-  },
-  {
-    "name": "parse_data.py",
-    "path": "code/parse_data.py",
-    "type": "file",
-    "size": 1306,
-    "mtime": 1795594906.938678,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "results.json",
-    "path": "outputs/results.json",
-    "type": "file",
-    "size": 21701,
-    "mtime": 1795595712.3699014,
-    "exported": true
-  },
-  {
-    "name": "run_log.txt",
-    "path": "outputs/run_log.txt",
-    "type": "file",
-    "size": 13849,
-    "mtime": 1795595712.3779013,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -56,7 +14,6 @@
     "path": "report/images/fig1_data_overview.png",
     "type": "file",
     "size": 258754,
-    "mtime": 1795595712.3659015,
     "exported": true
   },
   {
@@ -64,7 +21,6 @@
     "path": "report/images/fig2_density.png",
     "type": "file",
     "size": 132989,
-    "mtime": 1795595659.8341832,
     "exported": true
   },
   {
@@ -72,7 +28,6 @@
     "path": "report/images/fig3_templates_theory.png",
     "type": "file",
     "size": 202079,
-    "mtime": 1795595703.1059494,
     "exported": true
   },
   {
@@ -80,7 +35,6 @@
     "path": "report/images/fig4_temperature.png",
     "type": "file",
     "size": 351936,
-    "mtime": 1795595705.7379358,
     "exported": true
   },
   {
@@ -88,7 +42,6 @@
     "path": "report/images/fig5_injection_recovery.png",
     "type": "file",
     "size": 87475,
-    "mtime": 1795595706.7779303,
     "exported": true
   },
   {
@@ -96,7 +49,6 @@
     "path": "report/images/fig6_dc_current.png",
     "type": "file",
     "size": 150761,
-    "mtime": 1795595708.597921,
     "exported": true
   },
   {
@@ -104,7 +56,6 @@
     "path": "report/images/fig7_microwave.png",
     "type": "file",
     "size": 239795,
-    "mtime": 1795595710.2579124,
     "exported": true
   },
   {
@@ -112,15 +63,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 27896,
-    "mtime": 1795595861.7732112,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5204,
-    "mtime": 1795594872.9713974,
     "exported": true
   }
 ]

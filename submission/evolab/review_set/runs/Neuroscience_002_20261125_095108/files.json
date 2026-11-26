@@ -1,231 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "ag_nn.py",
-    "path": "code/ag_nn.py",
-    "type": "file",
-    "size": 1103,
-    "mtime": 1795600574.0866556,
-    "exported": true
-  },
-  {
-    "name": "common.py",
-    "path": "code/common.py",
-    "type": "file",
-    "size": 926,
-    "mtime": 1795600342.6961894,
-    "exported": true
-  },
-  {
-    "name": "eda.py",
-    "path": "code/eda.py",
-    "type": "file",
-    "size": 2925,
-    "mtime": 1795600342.7001894,
-    "exported": true
-  },
-  {
-    "name": "eval_perdeg_threshold.py",
-    "path": "code/eval_perdeg_threshold.py",
-    "type": "file",
-    "size": 1150,
-    "mtime": 1795601240.8233998,
-    "exported": true
-  },
-  {
-    "name": "evaluate.py",
-    "path": "code/evaluate.py",
-    "type": "file",
-    "size": 4007,
-    "mtime": 1795601944.9698036,
-    "exported": true
-  },
-  {
-    "name": "exp_a_fusion.py",
-    "path": "code/exp_a_fusion.py",
-    "type": "file",
-    "size": 4147,
-    "mtime": 1795600402.9528327,
-    "exported": true
-  },
-  {
-    "name": "exp_c_embedding_ag.py",
-    "path": "code/exp_c_embedding_ag.py",
-    "type": "file",
-    "size": 5340,
-    "mtime": 1795601122.0824234,
-    "exported": true
-  },
-  {
-    "name": "exp_d_pca.py",
-    "path": "code/exp_d_pca.py",
-    "type": "file",
-    "size": 3081,
-    "mtime": 1795600497.7898436,
-    "exported": true
-  },
-  {
-    "name": "exp_gate_ag.py",
-    "path": "code/exp_gate_ag.py",
-    "type": "file",
-    "size": 2551,
-    "mtime": 1795600606.6389978,
-    "exported": true
-  },
-  {
-    "name": "fig_ablation_gate.py",
-    "path": "code/fig_ablation_gate.py",
-    "type": "file",
-    "size": 3306,
-    "mtime": 1795601747.5639386,
-    "exported": true
-  },
-  {
-    "name": "fig_pr.py",
-    "path": "code/fig_pr.py",
-    "type": "file",
-    "size": 1926,
-    "mtime": 1795601183.7549248,
-    "exported": true
-  },
-  {
-    "name": "make_tables.py",
-    "path": "code/make_tables.py",
-    "type": "file",
-    "size": 967,
-    "mtime": 1795601228.595297,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "bootstrap_ci_MIE.csv",
-    "path": "outputs/bootstrap_ci_MIE.csv",
-    "type": "file",
-    "size": 5067,
-    "mtime": 1795601140.5945725,
-    "exported": true
-  },
-  {
-    "name": "cohens_d.csv",
-    "path": "outputs/cohens_d.csv",
-    "type": "file",
-    "size": 1632,
-    "mtime": 1795600348.568252,
-    "exported": true
-  },
-  {
-    "name": "dataset_summary.csv",
-    "path": "outputs/dataset_summary.csv",
-    "type": "file",
-    "size": 482,
-    "mtime": 1795600348.2202485,
-    "exported": true
-  },
-  {
-    "name": "embedding_ablation_raw.csv",
-    "path": "outputs/embedding_ablation_raw.csv",
-    "type": "file",
-    "size": 5384,
-    "mtime": 1795601676.1872742,
-    "exported": true
-  },
-  {
-    "name": "embedding_ablation_summary.csv",
-    "path": "outputs/embedding_ablation_summary.csv",
-    "type": "file",
-    "size": 4843,
-    "mtime": 1795601676.2152743,
-    "exported": true
-  },
-  {
-    "name": "embedding_separability.csv",
-    "path": "outputs/embedding_separability.csv",
-    "type": "file",
-    "size": 1147,
-    "mtime": 1795601715.8276424,
-    "exported": true
-  },
-  {
-    "name": "exp_a.log",
-    "path": "outputs/exp_a.log",
-    "type": "file",
-    "size": 1955,
-    "mtime": 1795600868.3885305,
-    "exported": true
-  },
-  {
-    "name": "exp_c.log",
-    "path": "outputs/exp_c.log",
-    "type": "file",
-    "size": 16099,
-    "mtime": 1795601676.2232745,
-    "exported": true
-  },
-  {
-    "name": "exp_gate.log",
-    "path": "outputs/exp_gate.log",
-    "type": "file",
-    "size": 1538,
-    "mtime": 1795600704.8755083,
-    "exported": true
-  },
-  {
-    "name": "f1_perdeg_threshold.csv",
-    "path": "outputs/f1_perdeg_threshold.csv",
-    "type": "file",
-    "size": 3746,
-    "mtime": 1795601253.2675047,
-    "exported": true
-  },
-  {
-    "name": "fusion_table.csv",
-    "path": "outputs/fusion_table.csv",
-    "type": "file",
-    "size": 10164,
-    "mtime": 1795600888.1686664,
-    "exported": true
-  },
-  {
-    "name": "fusion_table.md",
-    "path": "outputs/fusion_table.md",
-    "type": "file",
-    "size": 5095,
-    "mtime": 1795601229.6233058,
-    "exported": true
-  },
-  {
-    "name": "metrics_long.csv",
-    "path": "outputs/metrics_long.csv",
-    "type": "file",
-    "size": 22380,
-    "mtime": 1795600888.136666,
-    "exported": true
-  },
-  {
-    "name": "modality_gain.csv",
-    "path": "outputs/modality_gain.csv",
-    "type": "file",
-    "size": 5346,
-    "mtime": 1795601140.762574,
-    "exported": true
-  },
-  {
-    "name": "se_gate_means.csv",
-    "path": "outputs/se_gate_means.csv",
-    "type": "file",
-    "size": 1420,
-    "mtime": 1795600704.7595077,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -240,7 +14,6 @@
     "path": "report/images/fig0_dataset_counts.png",
     "type": "file",
     "size": 35542,
-    "mtime": 1795600357.0883431,
     "exported": true
   },
   {
@@ -248,7 +21,6 @@
     "path": "report/images/fig1_feature_structure.png",
     "type": "file",
     "size": 113626,
-    "mtime": 1795600351.5362837,
     "exported": true
   },
   {
@@ -256,7 +28,6 @@
     "path": "report/images/fig2_block_means.png",
     "type": "file",
     "size": 113831,
-    "mtime": 1795600356.048332,
     "exported": true
   },
   {
@@ -264,7 +35,6 @@
     "path": "report/images/fig3_pr_curves_per_degradation.png",
     "type": "file",
     "size": 425955,
-    "mtime": 1795601194.9990175,
     "exported": true
   },
   {
@@ -272,7 +42,6 @@
     "path": "report/images/fig3b_pr_curves_per_degradation.png",
     "type": "file",
     "size": 457139,
-    "mtime": 1795601200.1070597,
     "exported": true
   },
   {
@@ -280,7 +49,6 @@
     "path": "report/images/fig4_modality_subset_f1.png",
     "type": "file",
     "size": 253390,
-    "mtime": 1795601151.490661,
     "exported": true
   },
   {
@@ -288,7 +56,6 @@
     "path": "report/images/fig5_embedding_loss_schedule_ablation.png",
     "type": "file",
     "size": 136490,
-    "mtime": 1795601752.9239888,
     "exported": true
   },
   {
@@ -296,7 +63,6 @@
     "path": "report/images/fig5a_schedules.png",
     "type": "file",
     "size": 43059,
-    "mtime": 1795601753.6079953,
     "exported": true
   },
   {
@@ -304,7 +70,6 @@
     "path": "report/images/fig6_embedding_pca.png",
     "type": "file",
     "size": 554907,
-    "mtime": 1795601714.8436334,
     "exported": true
   },
   {
@@ -312,7 +77,6 @@
     "path": "report/images/fig7_embedding_rgb.png",
     "type": "file",
     "size": 39411,
-    "mtime": 1795601716.5836496,
     "exported": true
   },
   {
@@ -320,7 +84,6 @@
     "path": "report/images/fig8_se_gates.png",
     "type": "file",
     "size": 37721,
-    "mtime": 1795601754.0839996,
     "exported": true
   },
   {
@@ -328,15 +91,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 44767,
-    "mtime": 1795601952.9338794,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5350,
-    "mtime": 1795600268.583397,
     "exported": true
   }
 ]

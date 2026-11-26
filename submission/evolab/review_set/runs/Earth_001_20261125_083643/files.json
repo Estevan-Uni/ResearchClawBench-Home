@@ -1,207 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "analysis.py",
-    "path": "code/analysis.py",
-    "type": "file",
-    "size": 48052,
-    "mtime": 1795596444.7475047,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "T1_validation_filename_agreement.csv",
-    "path": "outputs/T1_validation_filename_agreement.csv",
-    "type": "file",
-    "size": 531,
-    "mtime": 1795596449.9394937,
-    "exported": true
-  },
-  {
-    "name": "T1b_validation_filename_disagreements.csv",
-    "path": "outputs/T1b_validation_filename_disagreements.csv",
-    "type": "file",
-    "size": 10637,
-    "mtime": 1795596449.9914937,
-    "exported": true
-  },
-  {
-    "name": "T2_validation_rule_pass_rates.csv",
-    "path": "outputs/T2_validation_rule_pass_rates.csv",
-    "type": "file",
-    "size": 1656,
-    "mtime": 1795596450.815492,
-    "exported": true
-  },
-  {
-    "name": "T2b_validation_failures_classified.csv",
-    "path": "outputs/T2b_validation_failures_classified.csv",
-    "type": "file",
-    "size": 8138,
-    "mtime": 1795596450.8194919,
-    "exported": true
-  },
-  {
-    "name": "T3_state_counts.csv",
-    "path": "outputs/T3_state_counts.csv",
-    "type": "file",
-    "size": 1140,
-    "mtime": 1795596454.1394851,
-    "exported": true
-  },
-  {
-    "name": "T4_annual_by_state.csv",
-    "path": "outputs/T4_annual_by_state.csv",
-    "type": "file",
-    "size": 933,
-    "mtime": 1795596455.3034825,
-    "exported": true
-  },
-  {
-    "name": "T4b_annual_totals.csv",
-    "path": "outputs/T4b_annual_totals.csv",
-    "type": "file",
-    "size": 308,
-    "mtime": 1795596455.3794825,
-    "exported": true
-  },
-  {
-    "name": "T5_purpose_mentions.csv",
-    "path": "outputs/T5_purpose_mentions.csv",
-    "type": "file",
-    "size": 546,
-    "mtime": 1795596457.3434784,
-    "exported": true
-  },
-  {
-    "name": "T5b_purpose_combinations.csv",
-    "path": "outputs/T5b_purpose_combinations.csv",
-    "type": "file",
-    "size": 386,
-    "mtime": 1795596457.3474784,
-    "exported": true
-  },
-  {
-    "name": "T5c_purpose_by_state_pct_records.csv",
-    "path": "outputs/T5c_purpose_by_state_pct_records.csv",
-    "type": "file",
-    "size": 798,
-    "mtime": 1795596457.3954782,
-    "exported": true
-  },
-  {
-    "name": "T6_agent_by_apparatus_full.csv",
-    "path": "outputs/T6_agent_by_apparatus_full.csv",
-    "type": "file",
-    "size": 889,
-    "mtime": 1795596458.923475,
-    "exported": true
-  },
-  {
-    "name": "T6b_agent_by_apparatus_top10.csv",
-    "path": "outputs/T6b_agent_by_apparatus_top10.csv",
-    "type": "file",
-    "size": 509,
-    "mtime": 1795596458.927475,
-    "exported": true
-  },
-  {
-    "name": "T6c_agent_family_by_apparatus.csv",
-    "path": "outputs/T6c_agent_family_by_apparatus.csv",
-    "type": "file",
-    "size": 357,
-    "mtime": 1795596458.939475,
-    "exported": true
-  },
-  {
-    "name": "T6d_west_airborne_use_by_family.csv",
-    "path": "outputs/T6d_west_airborne_use_by_family.csv",
-    "type": "file",
-    "size": 558,
-    "mtime": 1795596509.495427,
-    "exported": true
-  },
-  {
-    "name": "T7_robustness_units.csv",
-    "path": "outputs/T7_robustness_units.csv",
-    "type": "file",
-    "size": 853,
-    "mtime": 1795596511.199592,
-    "exported": true
-  },
-  {
-    "name": "T8_operators.csv",
-    "path": "outputs/T8_operators.csv",
-    "type": "file",
-    "size": 1283,
-    "mtime": 1795596511.2075927,
-    "exported": true
-  },
-  {
-    "name": "T8b_project_persistence.csv",
-    "path": "outputs/T8b_project_persistence.csv",
-    "type": "file",
-    "size": 7314,
-    "mtime": 1795596511.2155936,
-    "exported": true
-  },
-  {
-    "name": "T_validation_filename_checks_long.csv",
-    "path": "outputs/T_validation_filename_checks_long.csv",
-    "type": "file",
-    "size": 115319,
-    "mtime": 1795596449.9154937,
-    "exported": true
-  },
-  {
-    "name": "T_validation_rules_all_records.csv",
-    "path": "outputs/T_validation_rules_all_records.csv",
-    "type": "file",
-    "size": 49146,
-    "mtime": 1795596450.771492,
-    "exported": true
-  },
-  {
-    "name": "records_normalised.csv",
-    "path": "outputs/records_normalised.csv",
-    "type": "file",
-    "size": 351252,
-    "mtime": 1795596513.2037857,
-    "exported": true
-  },
-  {
-    "name": "run_log.txt",
-    "path": "outputs/run_log.txt",
-    "type": "file",
-    "size": 2727,
-    "mtime": 1795596513.2157867,
-    "exported": true
-  },
-  {
-    "name": "summary.json",
-    "path": "outputs/summary.json",
-    "type": "file",
-    "size": 18925,
-    "mtime": 1795596513.175783,
-    "exported": true
-  },
-  {
-    "name": "validation_sample_idx.csv",
-    "path": "outputs/validation_sample_idx.csv",
-    "type": "file",
-    "size": 784,
-    "mtime": 1795596450.771492,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -216,7 +14,6 @@
     "path": "report/images/fig1_validation_proxy_accuracy.png",
     "type": "file",
     "size": 139719,
-    "mtime": 1795596451.74749,
     "exported": true
   },
   {
@@ -224,7 +21,6 @@
     "path": "report/images/fig2_spatial_map.png",
     "type": "file",
     "size": 258638,
-    "mtime": 1795596455.039483,
     "exported": true
   },
   {
@@ -232,7 +28,6 @@
     "path": "report/images/fig3_annual_stacked_by_state.png",
     "type": "file",
     "size": 193125,
-    "mtime": 1795596456.9554791,
     "exported": true
   },
   {
@@ -240,7 +35,6 @@
     "path": "report/images/fig4_purposes.png",
     "type": "file",
     "size": 215665,
-    "mtime": 1795596458.535476,
     "exported": true
   },
   {
@@ -248,7 +42,6 @@
     "path": "report/images/fig5_agent_apparatus_heatmap.png",
     "type": "file",
     "size": 155682,
-    "mtime": 1795596510.8155549,
     "exported": true
   },
   {
@@ -256,7 +49,6 @@
     "path": "report/images/fig6_operators_persistence_seasonality.png",
     "type": "file",
     "size": 137311,
-    "mtime": 1795596512.2476933,
     "exported": true
   },
   {
@@ -264,7 +56,6 @@
     "path": "report/images/fig7_robustness_units.png",
     "type": "file",
     "size": 81535,
-    "mtime": 1795596513.031769,
     "exported": true
   },
   {
@@ -272,15 +63,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 25366,
-    "mtime": 1795596649.3834758,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5346,
-    "mtime": 1795595803.7534614,
     "exported": true
   }
 ]

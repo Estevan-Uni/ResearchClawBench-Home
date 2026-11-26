@@ -1,215 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "analysis.py",
-    "path": "code/analysis.py",
-    "type": "file",
-    "size": 12889,
-    "mtime": 1795594369.7123024,
-    "exported": true
-  },
-  {
-    "name": "explore2.py",
-    "path": "code/explore2.py",
-    "type": "file",
-    "size": 1173,
-    "mtime": 1795594122.666467,
-    "exported": true
-  },
-  {
-    "name": "explore3.py",
-    "path": "code/explore3.py",
-    "type": "file",
-    "size": 1008,
-    "mtime": 1795594136.1985672,
-    "exported": true
-  },
-  {
-    "name": "explore4.py",
-    "path": "code/explore4.py",
-    "type": "file",
-    "size": 474,
-    "mtime": 1795594147.5106509,
-    "exported": true
-  },
-  {
-    "name": "explore5.py",
-    "path": "code/explore5.py",
-    "type": "file",
-    "size": 993,
-    "mtime": 1795594158.5107324,
-    "exported": true
-  },
-  {
-    "name": "figures.py",
-    "path": "code/figures.py",
-    "type": "file",
-    "size": 14983,
-    "mtime": 1795594591.4714909,
-    "exported": true
-  },
-  {
-    "name": "polarization.py",
-    "path": "code/polarization.py",
-    "type": "file",
-    "size": 6185,
-    "mtime": 1795594437.8368106,
-    "exported": true
-  },
-  {
-    "name": "quicklook.py",
-    "path": "code/quicklook.py",
-    "type": "file",
-    "size": 847,
-    "mtime": 1795594023.0697312,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "analysis_results.json",
-    "path": "outputs/analysis_results.json",
-    "type": "file",
-    "size": 5919,
-    "mtime": 1795594778.1896615,
-    "exported": true
-  },
-  {
-    "name": "floquet_fit_per_angle.csv",
-    "path": "outputs/floquet_fit_per_angle.csv",
-    "type": "file",
-    "size": 3373,
-    "mtime": 1795594766.5139692,
-    "exported": true
-  },
-  {
-    "name": "gap_scan.csv",
-    "path": "outputs/gap_scan.csv",
-    "type": "file",
-    "size": 2311,
-    "mtime": 1795594778.173662,
-    "exported": true
-  },
-  {
-    "name": "hw_scan.csv",
-    "path": "outputs/hw_scan.csv",
-    "type": "file",
-    "size": 1103,
-    "mtime": 1795594776.489706,
-    "exported": true
-  },
-  {
-    "name": "paper_0.txt",
-    "path": "outputs/paper_0.txt",
-    "type": "file",
-    "size": 19829,
-    "mtime": 1795594065.0740411,
-    "exported": true
-  },
-  {
-    "name": "paper_1.txt",
-    "path": "outputs/paper_1.txt",
-    "type": "file",
-    "size": 34343,
-    "mtime": 1795594066.3820508,
-    "exported": true
-  },
-  {
-    "name": "paper_2.txt",
-    "path": "outputs/paper_2.txt",
-    "type": "file",
-    "size": 45718,
-    "mtime": 1795594067.63806,
-    "exported": true
-  },
-  {
-    "name": "paper_3.txt",
-    "path": "outputs/paper_3.txt",
-    "type": "file",
-    "size": 42833,
-    "mtime": 1795594068.714068,
-    "exported": true
-  },
-  {
-    "name": "polarization_results.json",
-    "path": "outputs/polarization_results.json",
-    "type": "file",
-    "size": 5371,
-    "mtime": 1795594783.4055264,
-    "exported": true
-  },
-  {
-    "name": "pumpoff_mdc_fits.csv",
-    "path": "outputs/pumpoff_mdc_fits.csv",
-    "type": "file",
-    "size": 20417,
-    "mtime": 1795594764.9700105,
-    "exported": true
-  },
-  {
-    "name": "quicklook.png",
-    "path": "outputs/quicklook.png",
-    "type": "file",
-    "size": 328753,
-    "mtime": 1795594024.7097433,
-    "exported": true
-  },
-  {
-    "name": "replica_box_integrals.csv",
-    "path": "outputs/replica_box_integrals.csv",
-    "type": "file",
-    "size": 653,
-    "mtime": 1795594778.1896615,
-    "exported": true
-  },
-  {
-    "name": "replica_mdc_fits.csv",
-    "path": "outputs/replica_mdc_fits.csv",
-    "type": "file",
-    "size": 11215,
-    "mtime": 1795594776.7017004,
-    "exported": true
-  },
-  {
-    "name": "resid_G.png",
-    "path": "outputs/resid_G.png",
-    "type": "file",
-    "size": 95659,
-    "mtime": 1795594160.9387505,
-    "exported": true
-  },
-  {
-    "name": "resid_L.png",
-    "path": "outputs/resid_L.png",
-    "type": "file",
-    "size": 120336,
-    "mtime": 1795594160.458747,
-    "exported": true
-  },
-  {
-    "name": "resid_try.png",
-    "path": "outputs/resid_try.png",
-    "type": "file",
-    "size": 80642,
-    "mtime": 1795594137.0345733,
-    "exported": true
-  },
-  {
-    "name": "single_alpha_consistency.csv",
-    "path": "outputs/single_alpha_consistency.csv",
-    "type": "file",
-    "size": 1108,
-    "mtime": 1795594783.3975265,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -224,7 +14,6 @@
     "path": "report/images/fig1_data_overview.png",
     "type": "file",
     "size": 197844,
-    "mtime": 1795594786.1014569,
     "exported": true
   },
   {
@@ -232,7 +21,6 @@
     "path": "report/images/fig2_floquet_fit.png",
     "type": "file",
     "size": 427230,
-    "mtime": 1795594788.0734065,
     "exported": true
   },
   {
@@ -240,7 +28,6 @@
     "path": "report/images/fig3_dispersion.png",
     "type": "file",
     "size": 158876,
-    "mtime": 1795594789.3333743,
     "exported": true
   },
   {
@@ -248,7 +35,6 @@
     "path": "report/images/fig4_polarization_maps.png",
     "type": "file",
     "size": 214911,
-    "mtime": 1795594790.637341,
     "exported": true
   },
   {
@@ -256,7 +42,6 @@
     "path": "report/images/fig5_polarization_dependence.png",
     "type": "file",
     "size": 194440,
-    "mtime": 1795594792.5252929,
     "exported": true
   },
   {
@@ -264,7 +49,6 @@
     "path": "report/images/fig6_validation.png",
     "type": "file",
     "size": 202722,
-    "mtime": 1795594794.2452493,
     "exported": true
   },
   {
@@ -272,7 +56,6 @@
     "path": "report/images/fig7_cuts_components.png",
     "type": "file",
     "size": 155678,
-    "mtime": 1795594795.521217,
     "exported": true
   },
   {
@@ -280,15 +63,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 28507,
-    "mtime": 1795594753.8943095,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5167,
-    "mtime": 1795593874.5086398,
     "exported": true
   }
 ]

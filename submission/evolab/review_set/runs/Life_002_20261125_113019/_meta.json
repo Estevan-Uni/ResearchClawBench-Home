@@ -3,7 +3,7 @@
   "task_id": "Life_002",
   "timestamp": "20261125_113019",
   "status": "completed",
-  "workspace": "/data0/hyliu/experiments/researchclawbench/runs/rcb_20261125_full_g1g2_10rounds/Life_002/g2/solve/attempt-00003/Life_002/workspace",
+  "workspace": ".",
   "agent_name": "EvoLab",
   "model": "claude-opus-5-5",
   "duration_seconds": 10209.329,
@@ -14,5 +14,8 @@
   "duration_scope": "sum of active phase wall times, including retries; queue wait excluded",
   "elapsed_including_queue_seconds": 13315.203,
   "selected_generation": 2,
-  "selection": "higher of G1 and G2 judge scores"
+  "selection": "higher of G1 and G2 judge scores",
+  "score_source": "gemini_4_carbon_judge",
+  "judge_evaluated": true,
+  "artifact_scope": "selected_workspace"
 }

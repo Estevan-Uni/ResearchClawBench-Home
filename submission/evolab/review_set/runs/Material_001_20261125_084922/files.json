@@ -1,151 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "01_audit.py",
-    "path": "code/01_audit.py",
-    "type": "file",
-    "size": 3584,
-    "mtime": 1795596611.096462,
-    "exported": true
-  },
-  {
-    "name": "02_gnn_trackB.py",
-    "path": "code/02_gnn_trackB.py",
-    "type": "file",
-    "size": 9856,
-    "mtime": 1795596865.197275,
-    "exported": true
-  },
-  {
-    "name": "02b_replot_trackB.py",
-    "path": "code/02b_replot_trackB.py",
-    "type": "file",
-    "size": 2608,
-    "mtime": 1795599215.019759,
-    "exported": true
-  },
-  {
-    "name": "03_gnn_trackA.py",
-    "path": "code/03_gnn_trackA.py",
-    "type": "file",
-    "size": 4939,
-    "mtime": 1795596959.6859548,
-    "exported": true
-  },
-  {
-    "name": "04_vae.py",
-    "path": "code/04_vae.py",
-    "type": "file",
-    "size": 10861,
-    "mtime": 1795597062.886346,
-    "exported": true
-  },
-  {
-    "name": "05_bo.py",
-    "path": "code/05_bo.py",
-    "type": "file",
-    "size": 10382,
-    "mtime": 1795597202.843336,
-    "exported": true
-  },
-  {
-    "name": "common.py",
-    "path": "code/common.py",
-    "type": "file",
-    "size": 3544,
-    "mtime": 1795597449.8221576,
-    "exported": true
-  },
-  {
-    "name": "gnn_np.py",
-    "path": "code/gnn_np.py",
-    "type": "file",
-    "size": 4788,
-    "mtime": 1795596849.5444298,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "bo_results.json",
-    "path": "outputs/bo_results.json",
-    "type": "file",
-    "size": 79576,
-    "mtime": 1795597446.3300748,
-    "exported": true
-  },
-  {
-    "name": "data_audit.json",
-    "path": "outputs/data_audit.json",
-    "type": "file",
-    "size": 1172,
-    "mtime": 1795596611.4004867,
-    "exported": true
-  },
-  {
-    "name": "gnn_trackA_results.json",
-    "path": "outputs/gnn_trackA_results.json",
-    "type": "file",
-    "size": 3492,
-    "mtime": 1795597144.1533632,
-    "exported": true
-  },
-  {
-    "name": "gnn_trackB_results.json",
-    "path": "outputs/gnn_trackB_results.json",
-    "type": "file",
-    "size": 1528,
-    "mtime": 1795599186.263421,
-    "exported": true
-  },
-  {
-    "name": "log_bo.txt",
-    "path": "outputs/log_bo.txt",
-    "type": "file",
-    "size": 2228,
-    "mtime": 1795597450.8061807,
-    "exported": true
-  },
-  {
-    "name": "log_gnn_trackA.txt",
-    "path": "outputs/log_gnn_trackA.txt",
-    "type": "file",
-    "size": 2671,
-    "mtime": 1795597146.177434,
-    "exported": true
-  },
-  {
-    "name": "log_gnn_trackB.txt",
-    "path": "outputs/log_gnn_trackB.txt",
-    "type": "file",
-    "size": 2067,
-    "mtime": 1795599189.2074559,
-    "exported": true
-  },
-  {
-    "name": "log_vae.txt",
-    "path": "outputs/log_vae.txt",
-    "type": "file",
-    "size": 2916,
-    "mtime": 1795597590.9772496,
-    "exported": true
-  },
-  {
-    "name": "vae_results.json",
-    "path": "outputs/vae_results.json",
-    "type": "file",
-    "size": 3613,
-    "mtime": 1795597590.9772496,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -160,7 +14,6 @@
     "path": "report/images/fig1_data_overview.png",
     "type": "file",
     "size": 290591,
-    "mtime": 1795596614.2247157,
     "exported": true
   },
   {
@@ -168,7 +21,6 @@
     "path": "report/images/fig2_gnn_trackB.png",
     "type": "file",
     "size": 190529,
-    "mtime": 1795599217.5517886,
     "exported": true
   },
   {
@@ -176,7 +28,6 @@
     "path": "report/images/fig3_gnn_ablation_embedding.png",
     "type": "file",
     "size": 114158,
-    "mtime": 1795599189.2074559,
     "exported": true
   },
   {
@@ -184,7 +35,6 @@
     "path": "report/images/fig4_gnn_trackA_provided.png",
     "type": "file",
     "size": 188762,
-    "mtime": 1795597146.177434,
     "exported": true
   },
   {
@@ -192,7 +42,6 @@
     "path": "report/images/fig5_vae.png",
     "type": "file",
     "size": 295880,
-    "mtime": 1795597594.3973188,
     "exported": true
   },
   {
@@ -200,7 +49,6 @@
     "path": "report/images/fig6_vae_validation.png",
     "type": "file",
     "size": 63491,
-    "mtime": 1795597594.9213295,
     "exported": true
   },
   {
@@ -208,7 +56,6 @@
     "path": "report/images/fig7_bo_convergence.png",
     "type": "file",
     "size": 202002,
-    "mtime": 1795597447.9821138,
     "exported": true
   },
   {
@@ -216,7 +63,6 @@
     "path": "report/images/fig8_bo_contour.png",
     "type": "file",
     "size": 150066,
-    "mtime": 1795597450.014162,
     "exported": true
   },
   {
@@ -224,7 +70,6 @@
     "path": "report/images/fig9_bo_offsets.png",
     "type": "file",
     "size": 97490,
-    "mtime": 1795597450.8061807,
     "exported": true
   },
   {
@@ -232,15 +77,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 29180,
-    "mtime": 1795599256.3882415,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5192,
-    "mtime": 1795596562.2163143,
     "exported": true
   }
 ]

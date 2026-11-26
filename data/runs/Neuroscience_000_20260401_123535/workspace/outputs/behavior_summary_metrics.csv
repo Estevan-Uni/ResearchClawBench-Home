@@ -1,3 +1,0 @@
-behavior,precision,recall,f1,support
-Attack,1.0,1.0,1.0,587.0
-Sniffing,1.0,1.0,1.0,232.0

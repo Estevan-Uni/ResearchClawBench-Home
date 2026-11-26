@@ -1,4 +1,0 @@
-HYB_rate_W8 maps_50_10_10_0.175 0 succ True cp 0 soc 929 t 0.2
-HYB_rate_W8 maps_55_10_10_0.175 0 succ True cp 0 soc 849 t 1.9
-HYB_rate_W8 maps_60_10_10_0.175 0 succ False cp 1 soc 1073 t 10.0
-HYB_rate_W8 maps_65_10_10_0.175 0 succ False cp 3 soc 1147 t 10.0

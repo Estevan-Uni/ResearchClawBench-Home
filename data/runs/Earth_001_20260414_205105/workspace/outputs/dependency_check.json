@@ -1,8 +1,0 @@
-{
-  \"geopandas\": \"available after pip install\",
-  \"pandas\": \"available\",
-  \"matplotlib\": \"available\",
-  \"seaborn\": \"available\",
-  \"folium\": \"not installed, not needed\",
-  \"plotly\": \"not needed\"
-}

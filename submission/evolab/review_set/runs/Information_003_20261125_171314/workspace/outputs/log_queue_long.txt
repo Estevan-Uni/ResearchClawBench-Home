@@ -1,9 +1,0 @@
-finished code/dyn.py --protocol known --variant tgn --seed 0 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant tgn --seed 1 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant tgn --seed 2 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant 3dids --seed 0 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant 3dids --seed 1 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant 3dids --seed 2 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant dids_mfl --seed 1 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant dids_mfl --seed 2 --epochs 20 --patience 6 --tag _long
-finished code/dyn.py --protocol known --variant mfl_noDiff --seed 1 --epochs 20 --patience 6 --tag _long

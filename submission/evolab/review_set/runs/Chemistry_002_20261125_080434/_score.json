@@ -2,48 +2,7 @@
   "run_id": "Chemistry_002_20261125_080434",
   "task_id": "Chemistry_002",
   "agent_name": "EvoLab",
-  "items": [
-    {
-      "index": 0,
-      "type": "image",
-      "content": "Scatter plot comparing ΔHADDOCK scores (wt-mut) from alanine scanning with experimental ΔΔG values from SKEMPI for 28 single-point mutations in the barnase-barstar complex. Points are colored by the a",
-      "weight": 0.3,
-      "score": 0,
-      "reasoning": "Agent safety refusal; no judge evaluation was performed."
-    },
-    {
-      "index": 1,
-      "type": "text",
-      "content": "Based on alanine scanning results from HADDOCK3, several residues in the barnase-barstar interface are identified as potential hot spots, where mutation to alanine causes large destabilization (most n",
-      "weight": 0.2,
-      "score": 0,
-      "reasoning": "Agent safety refusal; no judge evaluation was performed."
-    },
-    {
-      "index": 2,
-      "type": "text",
-      "content": "HADDOCK3 successfully performed alanine scanning on the barnase-barstar complex (PDB 1BRS), mutating interface residues to alanine and recalculating the HADDOCK score. The ΔHADDOCK scores range from -",
-      "weight": 0.2,
-      "score": 0,
-      "reasoning": "Agent safety refusal; no judge evaluation was performed."
-    },
-    {
-      "index": 3,
-      "type": "text",
-      "content": "HADDOCK3's modular architecture enables handling of multi‑interface targeting and protein–glycan docking. For an antibody–antigen complex, multiple restraint sets in one run correctly identified the n",
-      "weight": 0.15,
-      "score": 0,
-      "reasoning": "Agent safety refusal; no judge evaluation was performed."
-    },
-    {
-      "index": 4,
-      "type": "text",
-      "content": "In CAPRI round 57, HADDOCK3 implemented a consensus scoring workflow combining HADDOCK EM scores with VorolF‑jury. For target 268 (antibody–peptide), this approach submitted the best overall model (Do",
-      "weight": 0.15,
-      "score": 0,
-      "reasoning": "Agent safety refusal; no judge evaluation was performed."
-    }
-  ],
+  "items": [],
   "total_score": 0.0,
   "total_weight": 1.0,
   "score_source": "assigned_zero_for_agent_safety_refusal",

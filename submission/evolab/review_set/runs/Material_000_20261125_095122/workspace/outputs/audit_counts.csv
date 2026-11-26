@@ -1,4 +1,0 @@
-set,graphs,positives,pos_frac,meta_pos_ratio,onehot_valid,edge_symmetric,consecutive_pairs,self_loops,odd_atoms,odd_mag,dup_exact,dup_invariant,atoms_min,atoms_max,mean_undirected_bonds
-pretrain,5000,2474,0.4948,0.5,True,4359,4394,0,0,0,0,0,4,24,5.9247
-finetune,2000,99,0.0495,0.05,True,1773,1784,0,0,0,0,0,4,24,5.8485
-candidate,1000,43,0.043,0.05,True,875,881,0,0,0,0,0,4,24,5.879

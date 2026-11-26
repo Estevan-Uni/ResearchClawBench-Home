@@ -1,204 +1,5 @@
 [
   {
-    "name": "code",
-    "path": "code",
-    "type": "directory"
-  },
-  {
-    "name": "analysis.py",
-    "path": "code/analysis.py",
-    "type": "file",
-    "size": 53801,
-    "mtime": 1795626789.905214,
-    "exported": true
-  },
-  {
-    "name": "assemble.py",
-    "path": "code/assemble.py",
-    "type": "file",
-    "size": 7133,
-    "mtime": 1795626478.2685397,
-    "exported": true
-  },
-  {
-    "name": "chain.py",
-    "path": "code/chain.py",
-    "type": "file",
-    "size": 4483,
-    "mtime": 1795625077.1412103,
-    "exported": true
-  },
-  {
-    "name": "figstyle.py",
-    "path": "code/figstyle.py",
-    "type": "file",
-    "size": 2871,
-    "mtime": 1795625777.2314107,
-    "exported": true
-  },
-  {
-    "name": "model.py",
-    "path": "code/model.py",
-    "type": "file",
-    "size": 10532,
-    "mtime": 1795625455.254861,
-    "exported": true
-  },
-  {
-    "name": "params.py",
-    "path": "code/params.py",
-    "type": "file",
-    "size": 11687,
-    "mtime": 1795626289.785029,
-    "exported": true
-  },
-  {
-    "name": "prep.py",
-    "path": "code/prep.py",
-    "type": "file",
-    "size": 2670,
-    "mtime": 1795624790.0824177,
-    "exported": true
-  },
-  {
-    "name": "run_batch.py",
-    "path": "code/run_batch.py",
-    "type": "file",
-    "size": 9319,
-    "mtime": 1795626289.785029,
-    "exported": true
-  },
-  {
-    "name": "outputs",
-    "path": "outputs",
-    "type": "directory"
-  },
-  {
-    "name": "hex_prepared.csv",
-    "path": "outputs/hex_prepared.csv",
-    "type": "file",
-    "size": 9075,
-    "mtime": 1795624796.5057888,
-    "exported": true
-  },
-  {
-    "name": "key_numbers.json",
-    "path": "outputs/key_numbers.json",
-    "type": "file",
-    "size": 31939,
-    "mtime": 1795626827.9589348,
-    "exported": true
-  },
-  {
-    "name": "log_eu2.txt",
-    "path": "outputs/log_eu2.txt",
-    "type": "file",
-    "size": 591,
-    "mtime": 1795626434.2846098,
-    "exported": true
-  },
-  {
-    "name": "log_hourly.txt",
-    "path": "outputs/log_hourly.txt",
-    "type": "file",
-    "size": 82,
-    "mtime": 1795626513.048796,
-    "exported": true
-  },
-  {
-    "name": "log_main.txt",
-    "path": "outputs/log_main.txt",
-    "type": "file",
-    "size": 4908,
-    "mtime": 1795626221.098287,
-    "exported": true
-  },
-  {
-    "name": "log_second.txt",
-    "path": "outputs/log_second.txt",
-    "type": "file",
-    "size": 1493,
-    "mtime": 1795626493.38862,
-    "exported": true
-  },
-  {
-    "name": "lp_eu2.csv",
-    "path": "outputs/lp_eu2.csv",
-    "type": "file",
-    "size": 53166,
-    "mtime": 1795626434.2126102,
-    "exported": true
-  },
-  {
-    "name": "lp_hourly.csv",
-    "path": "outputs/lp_hourly.csv",
-    "type": "file",
-    "size": 5887,
-    "mtime": 1795626512.9767952,
-    "exported": true
-  },
-  {
-    "name": "lp_main.csv",
-    "path": "outputs/lp_main.csv",
-    "type": "file",
-    "size": 507592,
-    "mtime": 1795626289.785029,
-    "exported": true
-  },
-  {
-    "name": "lp_second.csv",
-    "path": "outputs/lp_second.csv",
-    "type": "file",
-    "size": 146338,
-    "mtime": 1795626493.3206193,
-    "exported": true
-  },
-  {
-    "name": "papers",
-    "path": "outputs/papers",
-    "type": "directory"
-  },
-  {
-    "name": "p0.txt",
-    "path": "outputs/papers/p0.txt",
-    "type": "file",
-    "size": 41641,
-    "mtime": 1795624354.7583177,
-    "exported": true
-  },
-  {
-    "name": "p1.txt",
-    "path": "outputs/papers/p1.txt",
-    "type": "file",
-    "size": 76261,
-    "mtime": 1795624357.022078,
-    "exported": true
-  },
-  {
-    "name": "p2.txt",
-    "path": "outputs/papers/p2.txt",
-    "type": "file",
-    "size": 87700,
-    "mtime": 1795624363.1574297,
-    "exported": true
-  },
-  {
-    "name": "p3.txt",
-    "path": "outputs/papers/p3.txt",
-    "type": "file",
-    "size": 49975,
-    "mtime": 1795624365.2892048,
-    "exported": true
-  },
-  {
-    "name": "results_all.csv",
-    "path": "outputs/results_all.csv",
-    "type": "file",
-    "size": 828760,
-    "mtime": 1795626551.2693498,
-    "exported": true
-  },
-  {
     "name": "report",
     "path": "report",
     "type": "directory"
@@ -213,7 +14,6 @@
     "path": "report/images/fig01_data_overview.png",
     "type": "file",
     "size": 203171,
-    "mtime": 1795626799.8536553,
     "exported": true
   },
   {
@@ -221,7 +21,6 @@
     "path": "report/images/fig02_production_lcoh_maps.png",
     "type": "file",
     "size": 230496,
-    "mtime": 1795626805.3219004,
     "exported": true
   },
   {
@@ -229,7 +28,6 @@
     "path": "report/images/fig03_delivered_maps.png",
     "type": "file",
     "size": 177293,
-    "mtime": 1795626813.838286,
     "exported": true
   },
   {
@@ -237,7 +35,6 @@
     "path": "report/images/fig04_cost_breakdown.png",
     "type": "file",
     "size": 112485,
-    "mtime": 1795626815.0743423,
     "exported": true
   },
   {
@@ -245,7 +42,6 @@
     "path": "report/images/fig05_scenario_matrix.png",
     "type": "file",
     "size": 189192,
-    "mtime": 1795626816.9624286,
     "exported": true
   },
   {
@@ -253,7 +49,6 @@
     "path": "report/images/fig06_fossil_benchmarks.png",
     "type": "file",
     "size": 184934,
-    "mtime": 1795626819.026523,
     "exported": true
   },
   {
@@ -261,7 +56,6 @@
     "path": "report/images/fig07_shipping_distance.png",
     "type": "file",
     "size": 152913,
-    "mtime": 1795626820.2385786,
     "exported": true
   },
   {
@@ -269,7 +63,6 @@
     "path": "report/images/fig08_infrastructure_drivers.png",
     "type": "file",
     "size": 261404,
-    "mtime": 1795626822.722693,
     "exported": true
   },
   {
@@ -277,7 +70,6 @@
     "path": "report/images/fig09_tornado.png",
     "type": "file",
     "size": 136216,
-    "mtime": 1795626823.830744,
     "exported": true
   },
   {
@@ -285,7 +77,6 @@
     "path": "report/images/fig10_crp_and_rates.png",
     "type": "file",
     "size": 171000,
-    "mtime": 1795626824.8427906,
     "exported": true
   },
   {
@@ -293,7 +84,6 @@
     "path": "report/images/fig11_validation.png",
     "type": "file",
     "size": 332603,
-    "mtime": 1795626827.402909,
     "exported": true
   },
   {
@@ -301,7 +91,6 @@
     "path": "report/images/fig12_country_sensitivity.png",
     "type": "file",
     "size": 55073,
-    "mtime": 1795626827.942934,
     "exported": true
   },
   {
@@ -309,15 +98,6 @@
     "path": "report/report.md",
     "type": "file",
     "size": 45251,
-    "mtime": 1795627020.5526996,
-    "exported": true
-  },
-  {
-    "name": "INSTRUCTIONS.md",
-    "path": "INSTRUCTIONS.md",
-    "type": "file",
-    "size": 5779,
-    "mtime": 1795624169.114817,
     "exported": true
   }
 ]

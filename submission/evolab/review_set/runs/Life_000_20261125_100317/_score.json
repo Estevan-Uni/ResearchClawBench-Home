@@ -69,5 +69,7 @@
     }
   ],
   "total_score": 39.25,
-  "total_weight": 1.0
+  "total_weight": 1.0,
+  "score_source": "gemini_4_carbon_judge",
+  "judge_evaluated": true
 }
